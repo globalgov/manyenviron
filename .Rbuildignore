@@ -7,3 +7,5 @@
 ^data-raw/agreements/GVA$
 ^data-raw/members$
 ^data-raw/members/IEA$
+^data-raw/members/MEM-IEADB$
+^data-raw/members/MEM_IEADB$
