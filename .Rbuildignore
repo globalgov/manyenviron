@@ -10,3 +10,5 @@
 ^data-raw/members/MEM-IEADB$
 ^data-raw/members/MEM_IEADB$
 ^data-raw/agreements/ECOLEX$
+^data-raw/memberships$
+^data-raw/memberships/ECOLEX$
