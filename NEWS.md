@@ -1,6 +1,6 @@
-# qEnviron 0.0.1
+# qEnvironDev 0.0.1
 
-* Set up qEnviron package using qData::setup_package()
+* Set up qEnvironDev package using qData::setup_package()
   * Added `DESCRIPTION` file
   * Added `R` folder
   * Added `License` file

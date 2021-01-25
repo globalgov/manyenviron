@@ -1,10 +1,13 @@
-Package: qEnviron
+Package: qEnvironDev
 Title: Quantum Data for the 21st Century
 Version: 0.0.1
 Authors@R: 
-    c(person(given = "c("James", "Hollway")",
-             family = "c("Henrique", "Sposito")",
-             role = c("cre", "aut", "ctb")))
+    c(person(given = "James",
+             family = "Hollway",
+             role = c("cre", "aut", "ctb", "dtc")),
+      person(given = "",
+             family = "Henrique",
+             role = c("cre", "aut", "ctb", "dtc")))
 Description: Collection, correction, and connection.
 License: CC BY 4.0
 Depends: 
