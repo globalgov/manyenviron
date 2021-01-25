@@ -7,13 +7,12 @@ library(qData)
 # Stage one: Collecting data
 GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1.csv")
 retain("GNEVAR")
-
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'GNEVAR' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR <- as_tibble(GNEVAR) %>%
-  mutate(Beg = standardise_dates(DocSign),
+  transmutate(Beg = standardise_dates(DocSign),
          End = standardise_dates(DocEnd),
          ID = GENG) %>%
   dplyr::arrange(Beg, ID)

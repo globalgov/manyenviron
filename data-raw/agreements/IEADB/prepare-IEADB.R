@@ -16,10 +16,11 @@ IEADB <- as_tibble(IEADB) %>%
   filter(Inclusion == "MEA" | Inclusion == "BEA") %>%
   transmutate(IEADB_ID = `IEA# (click for add'l info)`,
               Title = standardise_titles(`Treaty Name`),
-              Signature = `Signature Date`,
+              Signature = standardise_dates(`Signature Date`),
               Force = `Date IEA entered into force`) %>% 
   dplyr::select(IEADB_ID, Title, Signature, Force) %>% 
   arrange(Signature)
+
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 

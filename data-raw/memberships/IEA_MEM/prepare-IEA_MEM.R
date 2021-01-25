@@ -1,31 +1,33 @@
-# MEM_IEADB Preparation Script
+# IEA_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qData)
 
 # Stage one: Collecting data
-MEM_IEADB <- readxl::read_excel("data-raw/members/MEM_IEADB/iea-memb.xlsx")
+IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
-# formats of the 'MEM_IEADB' object until the object created
+# formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
-MEM_IEADB <- as_tibble(MEM_IEADB) %>%
-  transmutate(ID = {country},
-              Title = standardise_titles(`treatyname`),
+IEA_MEM <- as_tibble(IEA_MEM) %>%
+  transmutate(ID = standardise_titles(country),
+              Title = standardise_titles(treatyname),
               Signature = `tsig`,
-              Term = `tterm`,
+              Beg = `csig`,
+              Rat = `crat`,
+              End = `tterm`,
               Force = `ceif3`) %>%
-  dplyr::select(ID, Title, Signature, Force) %>% 
+  dplyr::select(ID, Title, Signature, Beg, Rat, Force, End) %>% 
   dplyr::arrange(Signature, ID)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make MEM_IEADB available within the qPackage.
-export_data(MEM_IEADB, database = "members")
+# Next run the following line to make IEA_MEM available within the qPackage.
+export_data(IEA_MEM, database = "memberships")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
