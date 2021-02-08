@@ -12,22 +12,28 @@ IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 IEA_MEM <- as_tibble(IEA_MEM) %>%
-  transmutate(ID = standardise_titles(country),
-              Title = standardise_titles(treatyname),
-              Signature = `tsig`,
-              Beg = `csig`,
-              Rat = `crat`,
-              End = `tterm`,
-              Force = `ceif3`) %>%
-  dplyr::select(ID, Title, Signature, Beg, Rat, Force, End) %>% 
-  dplyr::arrange(Signature, ID)
+  dplyr::rename(IEA_ID = mitch_id) %>% 
+  transmutate(ID = country,
+              Title = treatyname,
+              Begg = standardise_dates(tsig),
+              Signature = standardise_dates(csig),
+              Rat = standardise_dates(crat),
+              End = standardise_dates(tterm),
+              Force = standardise_dates(ceif3),
+              Force2 = standardise_dates(ceif4)) %>%
+  dplyr::select(ID, IEA_ID, Title, Begg, End, Rat, Force, Force2, Signature) %>% 
+  pivot_longer(c(Force2, Force), values_to = "Force")
 
+IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>% 
+  dplyr::mutate(Beg = coalesce(Signature, Rat, Force)) %>% 
+  dplyr::select(ID, IEA_ID, Title, Beg, End) %>% 
+  dplyr::arrange(Beg, ID)
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make IEA_MEM available within the qPackage.
-export_data(IEA_MEM, database = "memberships")
+export_data(IEA_MEM, database = "memberships", link = "https://iea.uoregon.edu/country-members")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
