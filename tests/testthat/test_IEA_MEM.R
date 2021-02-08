@@ -3,7 +3,7 @@
 # Requires the following package
 library(pointblank)
 
-# Report missing values 
+# Report missing values
 test_that("missing observations are reported correctly", {
   expect_false(any(grepl("^.$", memberships[["IEA_MEM"]])))
   expect_false(any(grepl("^n/a$", memberships[["IEA_MEM"]])))

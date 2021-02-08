@@ -8,3 +8,4 @@
 ^\.Rproj\.user$
 ^data-raw/agreements/GNEVAR$
 ^data-raw/memberships/GNEVAR_MEM$
+^data-raw/memberships/ECOLEX_MEM$
