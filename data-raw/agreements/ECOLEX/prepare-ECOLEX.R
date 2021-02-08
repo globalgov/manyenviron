@@ -15,16 +15,17 @@ retain(c("ECOLEX"))
 # below (in stage three) passes all the tests. 
 ECOLEX <- as_tibble(ECOLEX) %>%
   transmutate(ECOLEX_ID = `EcolexID`,
-              Signature = standardise_dates(Date)) %>% 
-              # Force = standardise_dates(`Entry.into.force`)) %>%
-  dplyr::select(ECOLEX_ID, Title, Signature) %>% 
-  dplyr::arrange(Signature)
+              Beg = standardise_dates(Date), 
+              Force = standardise_dates(`Entry.into.force`)) %>%
+  dplyr::select(ECOLEX_ID, Title, Beg) %>% 
+  dplyr::arrange(Beg)
+
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make ECOLEX available within the qPackage.
-export_data(ECOLEX, database = "agreements")
+export_data(ECOLEX, database = "agreements", link = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
