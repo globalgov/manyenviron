@@ -6,13 +6,13 @@ Authors@R:
              family = "Hollway",
              role = c("cre", "aut", "ctb"),
              email = "james.hollway@graduateinstitute.ch"),
-      person(given = "",
-             family = "Henrique",
+      person(given = "Henrique",
+             family = "Sposito",
              role = c("ctb")))
 Description: Collection, correction, and connection.
 License: CC BY 4.0
 Depends: 
-    R (>= 2.10),
+    R (>= 3.5.0),
     tibble,
     pointblank
 Imports: 
@@ -21,6 +21,8 @@ Imports:
     lubridate,
     roxygen2,
     usethis
+Remotes:
+    globalgov/qData
 Suggests: 
     purrr,
     rlang,
