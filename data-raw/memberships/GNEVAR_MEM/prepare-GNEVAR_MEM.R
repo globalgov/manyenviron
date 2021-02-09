@@ -23,8 +23,8 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
               Endd = standardise_dates(DocEnd),
               Force1 = standardise_dates(InForce1)) %>% 
   dplyr::select(ID, GNEVAR_ID, Title, Begg, Endd, Withdrawal, Signature, Rat, Force, Force1) %>% 
-  dplyr::mutate(Beg = coalesce(Signature, Rat, Force1)) %>% 
-  dplyr::mutate(End = coalesce(Withdrawal, Endd)) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force1)) %>% 
+  dplyr::mutate(End = dplyr::coalesce(Withdrawal, Endd)) %>% 
   dplyr::select(ID, GNEVAR_ID, Title, Beg, End) %>% 
   dplyr::arrange(Beg, ID)
   

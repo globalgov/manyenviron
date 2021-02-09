@@ -25,7 +25,7 @@ IEA_MEM <- as_tibble(IEA_MEM) %>%
   pivot_longer(c(Force2, Force), values_to = "Force")
 
 IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>% 
-  dplyr::mutate(Beg = coalesce(Signature, Rat, Force)) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force)) %>% 
   dplyr::select(ID, IEA_ID, Title, Beg, End) %>% 
   dplyr::arrange(Beg, ID)
 # qData includes several functions that should help cleaning and standardising your data.

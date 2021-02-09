@@ -18,13 +18,14 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
                 Rati = Rat,
                 ECOLEX_ID = EcolexID,
                 ID = StatID) %>% 
-  transmutate(Beg = standardise_dates(Sign),
+  transmutate(Begg = standardise_dates(Sign),
               End = standardise_dates(Term),
               Force = standardise_dates(For),
               Rat = standardise_dates(Rati)) %>%
-  dplyr::select(ID, ECOLEX_ID, Beg, End, Force, Rat) %>% 
-  dplyr::mutate(Beg = coalesce(Beg, Rat, Force)) %>% 
+  dplyr::select(ID, ECOLEX_ID, Begg, End, Force, Rat) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(Begg, Rat, Force)) %>% 
   dplyr::select(ID, ECOLEX_ID, Beg, End)
+
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
