@@ -1,3 +1,6 @@
+---
+output: github_document
+---
 # qEnviron <img src="inst/qenviron_hexlogo.png" align="right" width="220"/>
 
 <!-- badges: start -->
@@ -23,5 +26,5 @@ Check out [qData](https://github.com/globalgov/qData) for more.
 ## Data included
 
 ```{r datasets}
-qData::report_data(package = "qEnviron")
+qData::report_data(pkg = "qEnviron")
 ```
