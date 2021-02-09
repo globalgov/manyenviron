@@ -13,8 +13,7 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/EnvGov Edges-Tabl
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   rename(Signa = Signature) %>% 
-  transmutate(ID = Country,
-              GNEVAR_ID = GENG,
+  transmutate(ID = GENG,
               Signature = standardise_dates(Signa),
               Rat = standardise_dates(Approval),
               Withdrawal = standardise_dates(Withdrawal1),
@@ -22,10 +21,10 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
               Force = standardise_dates(DocForce), 
               Endd = standardise_dates(DocEnd),
               Force1 = standardise_dates(InForce1)) %>% 
-  dplyr::select(ID, GNEVAR_ID, Title, Begg, Endd, Withdrawal, Signature, Rat, Force, Force1) %>% 
+  dplyr::select(ID, Country, Title, Begg, Endd, Withdrawal, Signature, Rat, Force, Force1) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force1)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Endd)) %>% 
-  dplyr::select(ID, GNEVAR_ID, Title, Beg, End) %>% 
+  dplyr::select(ID, Country, Title, Beg, End) %>% 
   dplyr::arrange(Beg, ID)
   
 # qData includes several functions that should help cleaning and standardising your data.
