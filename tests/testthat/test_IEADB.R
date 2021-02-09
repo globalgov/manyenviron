@@ -1,5 +1,4 @@
 # Test if  meets the q ecosystem requirements
-library(pointblank)
 
 # Report missing values
 test_that("missing observations are reported correctly", {
