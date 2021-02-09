@@ -4,7 +4,8 @@ Version: 0.0.1
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
-             role = c("cre", "aut", "ctb")),
+             role = c("cre", "aut", "ctb"),
+             email = "james.hollway@graduateinstitute.ch"),
       person(given = "",
              family = "Henrique",
              role = c("ctb")))
