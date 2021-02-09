@@ -4,10 +4,10 @@ Version: 0.0.1
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
-             role = c("cre", "aut", "ctb", "dtc")),
+             role = c("cre", "aut", "ctb")),
       person(given = "",
              family = "Henrique",
-             role = c("cre", "aut", "ctb", "dtc")))
+             role = c("ctb")))
 Description: Collection, correction, and connection.
 License: CC BY 4.0
 Depends: 
@@ -18,7 +18,8 @@ Imports:
     dplyr,
     lubridate,
     roxygen2,
-    usethis
+    usethis,
+    pointblank
 Suggests: 
     purrr,
     rlang,
