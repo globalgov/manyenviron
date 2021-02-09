@@ -1,4 +1,19 @@
-# qEnviron
+# qEnviron <img src="inst/qenviron_hexlogo.png" align="right" width="220"/>
+
+<!-- badges: start -->
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+![GitHub release (latest by
+date)](https://img.shields.io/github/v/release/globalgov/qStates)
+![GitHub Release
+Date](https://img.shields.io/github/release-date/globalgov/qstates)
+![GitHub
+issues](https://img.shields.io/github/issues-raw/globalgov/qStates)
+<!-- [![HitCount](http://hits.dwyl.com/globalgov/qStates.svg)](http://hits.dwyl.com/globalgov/qStates) -->
+<!-- [![Codecov test
+coverage](https://codecov.io/gh/globalgov/qStates/branch/main/graph/badge.svg)](https://codecov.io/gh/globalgov/qStates?branch=main) -->
+<!-- ![GitHub All Releases](https://img.shields.io/github/downloads/jhollway/roctopus/total) -->
+<!-- badges: end -->
 
 qEnviron is a hush-hush secret project (for now) by James Hollway, Henrique Sposito. 
 Please watch this space. 
