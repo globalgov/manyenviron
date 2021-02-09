@@ -1,6 +1,7 @@
 Package: qEnviron
 Title: Environmental agreements for qData
 Version: 0.0.1
+Date: 2021-02-09
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
