@@ -1,4 +1,4 @@
-# qEnvironDev 0.0.2
+# qEnvironDev 0.0.1
 
 Updated the agreements and memberships databases with new datasets and used the new version of the functions from qData which created new tests and R files.
 
@@ -12,9 +12,6 @@ Updated the agreements and memberships databases with new datasets and used the 
 * Organized datasets in the two databases so the names are consistent
 * Modified description file to add pointblank as dependency and precise authors' role
 * Cleaned the datasets by making some long instead of wide and by standardizing the dates
-
-
-# qEnvironDev 0.0.1
 
 * Set up qEnvironDev package using qData::setup_package()
   * Added `DESCRIPTION` file
