@@ -23,7 +23,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
 
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR available within the qPackage.
-export_data(GNEVAR, database = "agreements", URL = "https://github.com/jhollway/gnevar")
+export_data(GNEVAR, database = "agreements", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
