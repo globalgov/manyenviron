@@ -93,9 +93,6 @@ jobs:
           name: ${{ matrix.config.asset_name }}
           path: build/
 
-      - name: Calculate code coverage
-        run: Rscript -e "covr::codecov()"
-
   release:
     name: Bump version and release
     needs: build
@@ -185,9 +182,13 @@ jobs:
 
       # install packages needed
       - name: install required packages
-        run: Rscript -e 'install.packages(c("rmarkdown","gratia"))'
+        run: Rscript -e 'install.packages(c("rmarkdown","remotes"))'
 
-      # Render READEME.md using rmarkdown
+      # install packages needed
+      - name: install qData
+        run: Rscript -e 'remotes::install_github("globalgov/qData")'
+
+      # Render README.md using rmarkdown
       - name: render README
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
 
