@@ -1,0 +1,13 @@
+^data-raw$
+^data-raw/agreements$
+^data-raw/agreements/IEADB$
+^data-raw/memberships$
+^data-raw/memberships/IEA_MEM$
+^data-raw/agreements/ECOLEX$
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw/agreements/GNEVAR$
+^data-raw/memberships/GNEVAR_MEM$
+^data-raw/memberships/ECOLEX_MEM$
+^\.github$
+^README\.Rmd$
