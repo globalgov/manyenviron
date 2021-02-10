@@ -174,7 +174,7 @@ jobs:
           asset_name: winOS_version.zip
           asset_content_type: application/zip
 
-  render:
+ render:
     name: Update README.md and push
     runs-on: macOS-latest
     steps:
