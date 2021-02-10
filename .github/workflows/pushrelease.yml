@@ -136,7 +136,7 @@ jobs:
         run: mv ./macOS/*.tgz macOS_version.tgz
 
       - name: Upload Mac binary
-        id: upload-binary
+        id: upload-mac
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -150,7 +150,7 @@ jobs:
         run: mv ./linuxOS/*.tar.gz linuxOS_version.tar.gz
 
       - name: Upload Linux binary
-        id: upload-binary
+        id: upload-linux
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -164,7 +164,7 @@ jobs:
         run: mv ./winOS/*.zip winOS_version.zip
 
       - name: Upload Windows binary
-        id: upload-binary
+        id: upload-win
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
