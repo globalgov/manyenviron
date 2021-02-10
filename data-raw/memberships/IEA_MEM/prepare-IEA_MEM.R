@@ -22,7 +22,7 @@ IEA_MEM <- as_tibble(IEA_MEM) %>%
               Force = standardise_dates(ceif3),
               Force2 = standardise_dates(ceif4)) %>%
   dplyr::select(ID, Country, Title, Begg, End, Rat, Force, Force2, Signature) %>% 
-  pivot_longer(c(Force2, Force), values_to = "Force")
+  tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 
 IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force)) %>% 
