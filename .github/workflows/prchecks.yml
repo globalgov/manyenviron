@@ -114,7 +114,7 @@ jobs:
         
   buildtests:
     name: Lint and SpellCheck
-    needs: Build for ${{ matrix.config.os }}
+    needs: build
     runs-on: macOS-latest
     r: 'release'
     artifact_name: '*.tar.gz'
