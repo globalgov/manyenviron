@@ -5,17 +5,17 @@
 \alias{agreements}
 \title{agreements database documentation}
 \format{
-The agreements database is a list that contains the following  datasets: IEADB, GNEVAR, ECOLEX. For more info, please use the report_data() function.
+The agreements database is a list that contains the following  datasets: IEADB, GNEVAR, ECOLEX. For more information and references to each of the datasets used, please use the report_data() function.
 \describe{
-\item{IEADB: A dataset with 3666 observations and the following 3 variables: ID, Title, Beg.}{Describe dataset here}
-\item{GNEVAR: A dataset with 2733 observations and the following 4 variables: ID, Title, Beg, End.}{Describe dataset here}
-\item{ECOLEX: A dataset with 2174 observations and the following 3 variables: ID, Title, Beg.}{Describe dataset here}
+\item{IEADB: }{A dataset with 3666 observations and the following 3 variables: ID, Title, Beg.}
+\item{GNEVAR: }{A dataset with 2733 observations and the following 4 variables: ID, Title, Beg, End.}
+\item{ECOLEX: }{A dataset with 2174 observations and the following 3 variables: ID, Title, Beg.}
 }
 }
 \usage{
 agreements
 }
 \description{
-Write the database citation here.
+agreements database documentation
 }
 \keyword{datasets}
