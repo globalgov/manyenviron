@@ -3,10 +3,9 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qData)
-library(tidyverse)
 
 # Stage one: Collecting data
-IEADB <- read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
+IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
