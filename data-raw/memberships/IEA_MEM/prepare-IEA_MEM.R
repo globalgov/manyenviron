@@ -33,7 +33,7 @@ IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>%
 
 # Stage three: Connecting data
 # Next run the following line to make IEA_MEM available within the qPackage.
-export_data(IEA_MEM, database = "memberships", link = "https://iea.uoregon.edu/country-members")
+export_data(IEA_MEM, database = "memberships", URL = "https://iea.uoregon.edu/country-members")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

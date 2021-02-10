@@ -32,7 +32,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
 
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR_MEM available within the qPackage.
-export_data(GNEVAR_MEM, database = "memberships", link = "https://github.com/jhollway/gnevar")
+export_data(GNEVAR_MEM, database = "memberships", URL = "https://github.com/jhollway/gnevar")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
