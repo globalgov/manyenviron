@@ -46,7 +46,7 @@ qData::report_data("qEnviron")
     ##        Reference                                                                                                        
     ## IEADB  "Mitchell RB, Andonova LB, Axelrod M, Balsiger J, Bernauer T, Green JF,Hollway J, Kim RE, Morin J (2" [truncated]
     ## GNEVAR "Hollway J, Koskinen J (2016). "Multilevel embeddedness: The case of theglobal fisheries governance " [truncated]
-    ## ECOLEX "Parris TM (2001). "Keeping tracks of treaties revisited."_Environment_, *43*(7), 3."
+    ## ECOLEX "Sommer J (2020). "Global governance in forestry: a cross-nationalanalysis." _International Journal " [truncated]
 
 Working with ensembles of related data has many advantages for robust
 analysis. Just take a look at our vignettes
