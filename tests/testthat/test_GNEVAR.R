@@ -16,6 +16,7 @@ test_that("missing observations are reported correctly", {
 test_that("datasets have the correct variables", {
   expect_col_exists(agreements[["GNEVAR"]], vars(Title))
   expect_col_exists(agreements[["GNEVAR"]], vars(Beg))
+  expect_col_exists(agreements[["GNEVAR"]], vars(ID))
 })
 
 # Dates are standardized for mandatory column

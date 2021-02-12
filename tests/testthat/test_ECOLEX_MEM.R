@@ -11,6 +11,11 @@ test_that("missing observations are reported correctly", {
   expect_false(any(grepl("n\\.a\\.$", memberships[["ECOLEX_MEM"]])))
 })
 
+# At least one column named ID 
+test_that("a column ID exists", {
+  expect_col_exists(memberships[["ECOLEX_MEM"]], vars(ID))
+})
+
 # Labels are standardized
 test_that("labels are standardised", {
   if(!is.null(memberships[["ECOLEX_MEM"]]$Label)) {
