@@ -11,3 +11,4 @@
 ^data-raw/memberships/ECOLEX_MEM$
 ^\.github$
 ^README\.Rmd$
+^LICENSE\.md$
