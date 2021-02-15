@@ -16,7 +16,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
               Force = standardise_dates(DocForce),# some dates formats are failing to pass (e.i 0000-00-00)
               GNEVAR_ID = GENG) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,T, Signature, Force) %>% 
+  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J, Signature, Force) %>% 
   dplyr::arrange(Beg, GNEVAR_ID)
 
 # qData includes several functions that should help cleaning and standardising your data.
