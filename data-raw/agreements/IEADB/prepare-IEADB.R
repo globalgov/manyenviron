@@ -13,11 +13,14 @@ IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
 # below (in stage three) passes all the tests. 
 IEADB <- as_tibble(IEADB)  %>% 
   dplyr::filter(Inclusion == "MEA" | Inclusion == "BEA") %>%
-  transmutate(ID = `IEA# (click for add'l info)`,
+  transmutate(IEADB_ID = `IEA# (click for add'l info)`,
               Title = `Treaty Name`,
-              Beg = standardise_dates(`Signature Date`),
-              Force = standardise_dates(`Date IEA entered into force`)) %>% 
-  dplyr::select(ID, Title, Beg) %>% 
+              Signature = standardise_dates(`Signature Date`),
+              Force = standardise_dates(`Date IEA entered into force`),
+              L = Inclusion,
+              T = `Agreement Type (level 2)`) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
+  dplyr::select(IEADB_ID, Title, Beg, L, T, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
