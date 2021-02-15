@@ -9,16 +9,18 @@ load("data-raw/agreements/ECOLEX/ecoagree.RData")
 ECOLEX <- eco_agree
 retain(c("ECOLEX"))
 
+
+ECOLEX$L<-  plyr::revalue(ECOLEX$Document.type, c("Bilateral" = "B", "Multilateral" = "M"))
+ECOLEX$J<-  plyr::revalue(ECOLEX$Field.of.application, c("Global" = "G", "Regional/restricted" = "R"))
+
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'ECOLEX' object until the object created
 # below (in stage three) passes all the tests. 
-ECOLEX <- as_tibble(ECOLEX) %>%
+ECOLEX <- as_tibble(ECOLEX) %>% 
   transmutate(ECOLEX_ID = `EcolexID`,
               Signature = standardise_dates(Date), 
-              Force = standardise_dates(`Entry.into.force`),
-              L = `Document.type`,
-              J = `Field.of.application`) %>%
+              Force = standardise_dates(`Entry.into.force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)
