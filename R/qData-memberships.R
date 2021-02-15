@@ -7,5 +7,4 @@
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following 5 variables: ID, Country, Title, Beg, End.}
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following 4 variables: ID, Country, Beg, End.}
 #' }
-
 "memberships"

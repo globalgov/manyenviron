@@ -7,5 +7,4 @@
 #' \item{GNEVAR: }{A dataset with 2733 observations and the following 4 variables: ID, Title, Beg, End.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following 3 variables: ID, Title, Beg.}
 #' }
-
 "agreements"
