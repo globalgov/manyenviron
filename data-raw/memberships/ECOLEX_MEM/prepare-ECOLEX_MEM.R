@@ -16,14 +16,14 @@ retain(c("ECOLEX_MEM"))
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>% 
-  transmutate(Signature = standardise_dates(Sign),
+  transmutate(SignatureC = standardise_dates(Sign),
               End = standardise_dates(Term),
               Force = standardise_dates(For),
               Rat = standardise_dates(Rati),
               Country = StatID,
               ECOLEX_ID = EcolexID) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force)) %>% 
-  dplyr::select(ECOLEX_ID, Country, Beg, End, Signature, Force, Rat) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% # Check Signature date is for the country and not document signature date
+  dplyr::select(ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat) %>% 
   dplyr::arrange(Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
