@@ -12,8 +12,8 @@ test_that("missing observations are reported correctly", {
 })
 
 # At least one column named ID 
-test_that("a column ID exists", {
-  expect_col_exists(memberships[["GNEVAR_MEM"]], vars(ID))
+test_that("a column indicating an ID source exists", {
+  expect_true(any(grepl("_ID$", colnames(memberships[["GNEVAR_MEM"]]))))
 })
 
 # Labels are standardized
@@ -63,5 +63,32 @@ test_that("Columns with dates are standardized", {
     expect_false(any(grepl("^[:digit:]{1}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Rat)))
     expect_false(any(grepl("^[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Rat)))
     expect_false(any(grepl("^[:alpha:]$", memberships[["GNEVAR_MEM"]]$Rat)))
+  }
+  if (!is.null(memberships[["GNEVAR_MEM"]]$Signature)) {
+    expect_false(any(grepl("/", memberships[["GNEVAR_MEM"]]$Signature)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Signature)))
+    expect_false(any(grepl("^[:digit:]{1}-[:digit:]{1}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Signature)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{1}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Signature)))
+    expect_false(any(grepl("^[:digit:]{1}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Signature)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Signature)))
+    expect_false(any(grepl("^[:alpha:]$", memberships[["GNEVAR_MEM"]]$Signature)))
+  }
+  if (!is.null(memberships[["GNEVAR_MEM"]]$Term)) {
+    expect_false(any(grepl("/", memberships[["GNEVAR_MEM"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{1}-[:digit:]{1}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{1}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{1}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Term)))
+    expect_false(any(grepl("^[:alpha:]$", memberships[["GNEVAR_MEM"]]$Term)))
+  }
+  if (!is.null(memberships[["GNEVAR_MEM"]]$Withdrawal)) {
+    expect_false(any(grepl("/", memberships[["GNEVAR_MEM"]]$Withdrawal)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Withdrawal)))
+    expect_false(any(grepl("^[:digit:]{1}-[:digit:]{1}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Withdrawal)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{1}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Withdrawal)))
+    expect_false(any(grepl("^[:digit:]{1}-[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Withdrawal)))
+    expect_false(any(grepl("^[:digit:]{2}-[:digit:]{4}$", memberships[["GNEVAR_MEM"]]$Withdrawal)))
+    expect_false(any(grepl("^[:alpha:]$", memberships[["GNEVAR_MEM"]]$Withdrawal)))
   }
 })
