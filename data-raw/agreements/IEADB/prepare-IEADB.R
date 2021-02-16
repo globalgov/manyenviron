@@ -11,16 +11,19 @@ IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
 # In this stage you will want to correct the variable names and
 # formats of the 'IEADB' object until the object created
 # below (in stage three) passes all the tests. 
-IEADB <- as_tibble(IEADB)  %>% 
-  dplyr::filter(Inclusion == "MEA" | Inclusion == "BEA") %>%
+IEADB <- as_tibble(IEADB)  %>%
+  dplyr::mutate(D = dplyr::recode(`Agreement Type (level 2)`, "Agreement" = "A", "Amendment" = "E",
+                                  "Agreed Minute (non-binding)" ="Q", "Declaration" = "V",
+                                  "Resolution" = "W", "Exchange of Notes" = "X",
+                                  "Memorandum of Understanding" = "Y", "Protocol" = "P")) %>% 
+  dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
+  dplyr::filter(L == "M" | L == "B") %>%
   transmutate(IEADB_ID = `IEA# (click for add'l info)`,
-              Title = `Treaty Name`,
+              Title = standardise_titles(`Treaty Name`),
               Signature = standardise_dates(`Signature Date`),
-              Force = standardise_dates(`Date IEA entered into force`),
-              L = Inclusion,
-              T = `Agreement Type (level 2)`) %>% 
+              Force = standardise_dates(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(IEADB_ID, Title, Beg, L, T, Signature, Force) %>% 
+  dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.

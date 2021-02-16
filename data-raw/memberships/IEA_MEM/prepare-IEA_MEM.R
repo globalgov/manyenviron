@@ -13,8 +13,8 @@ IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")
 # below (in stage three) passes all the tests. 
 IEA_MEM <- as_tibble(IEA_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
-  transmutate(Country = country,
-              Title = treatyname,
+  transmutate(Country = standardise_titles(country),
+              Title = standardise_titles(treatyname),
               Signature = standardise_dates(tsig),
               SignatureC = standardise_dates(csig),
               Rat = standardise_dates(crat),

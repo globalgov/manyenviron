@@ -15,13 +15,13 @@ retain(c("ECOLEX_MEM"))
 # below (in stage three) passes all the tests. 
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
-                Rati = Rat,
-                ECOLEX_ID = EcolexID,
-                Country = StatID) %>% 
+                Rati = Rat) %>% 
   transmutate(Signature = standardise_dates(Sign),
               End = standardise_dates(Term),
               Force = standardise_dates(For),
-              Rat = standardise_dates(Rati)) %>%
+              Rat = standardise_dates(Rati),
+              Country = StatID,
+              ECOLEX_ID = EcolexID) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force)) %>% 
   dplyr::select(ECOLEX_ID, Country, Beg, End, Signature, Force, Rat) %>% 
   dplyr::arrange(Beg)
