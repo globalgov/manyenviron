@@ -28,7 +28,7 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 
 # Stage three: Connecting data
 # Next run the following line to make TFDD_MEM available within the qPackage.
-export_data(TFDD_MEM, database = "memberships")
+export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
