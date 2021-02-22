@@ -11,7 +11,9 @@ GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1 VERS2
 # formats of the 'GNEVAR' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR <- as_tibble(GNEVAR)  %>%
-  dplyr::rename("title" = "Title") %>% 
+  tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>% 
+  dplyr::rename("title" = "Title",
+                "ECOLEX_ID" = "ECOLEX") %>% 
   dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q", D="V", R="W", N="X", U="Y")) %>% 
   transmutate(Signature = standardise_dates(DocSign),
               End = standardise_dates(DocEnd),
@@ -19,7 +21,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
               GNEVAR_ID = GENG,
               Title = standardise_titles(title)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
+  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force, IEADB_ID, ECOLEX_ID) %>% 
   dplyr::arrange(Beg, GNEVAR_ID)
 
 # qData includes several functions that should help cleaning and standardising your data.
