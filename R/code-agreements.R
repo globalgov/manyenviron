@@ -31,7 +31,7 @@ FINAL_TABLE <- df_NEW2 %>%
 
 FINAL_TABLE <- FINAL_TABLE[!duplicated(FINAL_TABLE$IEADB_ID, incomparables = NA),]
 
-# Apply the ID in the agreement database
+# Apply the ID in the agreements database
 IEA <- FINAL_TABLE %>% 
   dplyr::select(ID, IEADB_ID)
 
@@ -41,8 +41,11 @@ GNE <- FINAL_TABLE %>%
 ECO <- FINAL_TABLE %>% 
   dplyr::select(ID, ECOLEX_ID)
 
+
 agreements$IEADB <- merge(agreements$IEADB, IEA, all.x = TRUE)
 agreements$GNEVAR <- merge(agreements$GNEVAR, GNE, all.x = TRUE)
 agreements$ECOLEX <- merge(agreements$ECOLEX, ECO, all.x = TRUE)
 
+# Save database with new ID
+save(agreements, file= "data/agreements.rda")
 
