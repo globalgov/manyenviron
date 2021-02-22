@@ -1,7 +1,7 @@
 # Create table of reference for ID
 
 #Load the agreements database with the 3 main datasets (IEADB, ECOLEX, GNEVAR)
-load("~/Desktop/GITHUB/qEnviron/data/agreements.rda")
+# load("~/Desktop/GITHUB/qEnviron/data/agreements.rda")
 
 # Select the variables needed for the table
 IEADB2 <- agreements$IEADB %>% dplyr::rename("IEADB Title" = "Title", 
@@ -26,10 +26,23 @@ df_NEW2$ID <- paste0("ID-",formatC(1:nrow(df_NEW2), width = 5, flag = 0))
 
 # Select the variables needed for the final table
 FINAL_TABLE <- df_NEW2 %>% 
-  dplyr::select(ID, IEADB_ID, `IEADB Title`, `GNEVAR Title`, `ECOLEX Title`, `IEADB Beg`,`GNEVAR Beg`, `ECOLEX Beg`) %>% 
+  dplyr::select(ID, IEADB_ID, `IEADB Title`, `GNEVAR Title`, `ECOLEX Title`, `IEADB Beg`,`GNEVAR Beg`, `ECOLEX Beg`, GNEVAR_ID, ECOLEX_ID) %>% 
   dplyr::arrange(ID)
 
 FINAL_TABLE <- FINAL_TABLE[!duplicated(FINAL_TABLE$IEADB_ID, incomparables = NA),]
 
+# Apply the ID in the agreement database
+IEA <- FINAL_TABLE %>% 
+  dplyr::select(ID, IEADB_ID)
+
+GNE <- FINAL_TABLE %>% 
+  dplyr::select(ID, GNEVAR_ID)
+
+ECO <- FINAL_TABLE %>% 
+  dplyr::select(ID, ECOLEX_ID)
+
+agreements$IEADB <- merge(agreements$IEADB, IEA, all.x = TRUE)
+agreements$GNEVAR <- merge(agreements$GNEVAR, GNE, all.x = TRUE)
+agreements$ECOLEX <- merge(agreements$ECOLEX, ECO, all.x = TRUE)
 
 
