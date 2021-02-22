@@ -1,7 +1,7 @@
 # Create table of reference for ID
 
 #Load the agreements database with the 3 main datasets (IEADB, ECOLEX, GNEVAR)
-# load("~/Desktop/GITHUB/qEnviron/data/agreements.rda")
+load(file= "data/agreements.rda")
 
 # Select the variables needed for the table
 IEADB2 <- agreements$IEADB %>% dplyr::rename("IEADB Title" = "Title", 
