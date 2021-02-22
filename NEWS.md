@@ -2,11 +2,12 @@
 
 2020-02-22
 
-## Package changes
+## Package
 
 * Closed #9 by fixing GitHub PushRelease actions
+* Fixed logo aspect ratio and added globalgov/ direction
 
-## Data changes
+## Data
 
 * Added variables in databases such as Signature, Force, Rat, Term, L, J and D
 * Updated the tests when export the datasets to be more in line with new variables
