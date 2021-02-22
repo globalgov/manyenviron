@@ -6,6 +6,7 @@
 
 * Closed #9 by fixing GitHub PushRelease actions
 * Fixed logo aspect ratio and added globalgov/ direction
+* Added a LICENSE.md file
 
 ## Data
 
