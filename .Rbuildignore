@@ -11,3 +11,8 @@
 ^data-raw/memberships/ECOLEX_MEM$
 ^\.github$
 ^README\.Rmd$
+^LICENSE\.md$
+^data-raw/agreements/CIESIN$
+^data-raw/agreements/TFDD$
+^data-raw/memberships/TFDD$
+^data-raw/memberships/TFDD_MEM$

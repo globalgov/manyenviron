@@ -12,20 +12,19 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/EnvGov Edges-Tabl
 # formats of the 'GNEVAR_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
-  dplyr::rename(Signa = Signature) %>% 
-  transmutate(ID = GENG,
-              Signature = standardise_dates(Signa),
+  transmutate(GNEVAR_ID = GENG,
               Rat = standardise_dates(Approval),
               Withdrawal = standardise_dates(Withdrawal1),
-              Begg = standardise_dates(DocSign),
+              Signature = standardise_dates(DocSign),
               Force = standardise_dates(DocForce), 
-              Endd = standardise_dates(DocEnd),
-              Force1 = standardise_dates(InForce1)) %>% 
-  dplyr::select(ID, Country, Title, Begg, Endd, Withdrawal, Signature, Rat, Force, Force1) %>% 
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force1)) %>% 
-  dplyr::mutate(End = dplyr::coalesce(Withdrawal, Endd)) %>% 
-  dplyr::select(ID, Country, Title, Beg, End) %>% 
-  dplyr::arrange(Beg, ID)
+              Term = standardise_dates(DocEnd),
+              Force = standardise_dates(InForce1)) %>% 
+  dplyr::mutate(SignatureC = standardise_dates(Signature)) %>% 
+  dplyr::mutate(Title = standardise_titles(Title)) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
+  dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
+  dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
+  dplyr::arrange(Beg)
   
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

@@ -1,3 +1,23 @@
+# qEnvironDev 0.0.2
+
+2020-02-22
+
+## Package
+
+* Closed #9 by fixing GitHub PushRelease actions
+* Fixed logo aspect ratio and added globalgov/ direction
+* Added a LICENSE.md file
+
+## Data
+
+* Added variables in databases such as Signature, Force, Rat, Term, L, J and D
+* Updated the tests when export the datasets to be more in line with new variables
+* Added `standardise_titles()` function to the Title variables 
+* Closed #14 by adding TFDD in membership database
+* Closed #8 by changing the citation for ECOLEX with a more recent one
+* Fixed #17 by adding one table of reference for IDs and ID columns in agreements database
+
+
 # qEnvironDev 0.0.1
 
 2020-02-10

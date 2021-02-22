@@ -13,11 +13,16 @@ retain(c("ECOLEX"))
 # In this stage you will want to correct the variable names and
 # formats of the 'ECOLEX' object until the object created
 # below (in stage three) passes all the tests. 
-ECOLEX <- as_tibble(ECOLEX) %>%
-  transmutate(ID = `EcolexID`,
-              Beg = standardise_dates(Date), 
+ECOLEX <- as_tibble(ECOLEX) %>% 
+  dplyr::rename("title" = "Title") %>% 
+  dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
+  dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
+  transmutate(ECOLEX_ID = `EcolexID`,
+              Title = standardise_titles(title),
+              Signature = standardise_dates(Date), 
               Force = standardise_dates(`Entry.into.force`)) %>%
-  dplyr::select(ID, Title, Beg) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
+  dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.

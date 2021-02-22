@@ -12,22 +12,22 @@ IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 IEA_MEM <- as_tibble(IEA_MEM) %>%
-  dplyr::rename(ID = mitch_id) %>% 
-  transmutate(Country = country,
-              Title = treatyname,
-              Begg = standardise_dates(tsig),
-              Signature = standardise_dates(csig),
+  dplyr::rename(IEADB_ID = mitch_id) %>% 
+  transmutate(Country = standardise_titles(country),
+              Title = standardise_titles(treatyname),
+              Signature = standardise_dates(tsig),
+              SignatureC = standardise_dates(csig),
               Rat = standardise_dates(crat),
               End = standardise_dates(tterm),
               Force = standardise_dates(ceif3),
               Force2 = standardise_dates(ceif4)) %>%
-  dplyr::select(ID, Country, Title, Begg, End, Rat, Force, Force2, Signature) %>% 
+  dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 
 IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>% 
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Rat, Force)) %>% 
-  dplyr::select(ID, Country, Title, Beg, End) %>% 
-  dplyr::arrange(Beg, ID)
+  dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
+  dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
+  dplyr::arrange(Beg)
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
