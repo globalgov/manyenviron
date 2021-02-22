@@ -12,17 +12,15 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/EnvGov Edges-Tabl
 # formats of the 'GNEVAR_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
-  dplyr::rename(Signa = Signature,
-                title = Title) %>% 
   transmutate(GNEVAR_ID = GENG,
-              SignatureC = standardise_dates(Signa),
               Rat = standardise_dates(Approval),
               Withdrawal = standardise_dates(Withdrawal1),
               Signature = standardise_dates(DocSign),
               Force = standardise_dates(DocForce), 
               Term = standardise_dates(DocEnd),
-              Force = standardise_dates(InForce1),
-              Title = standardise_titles(title)) %>% 
+              Force = standardise_dates(InForce1)) %>% 
+  dplyr::mutate(SignatureC = standardise_dates(Signature)) %>% 
+  dplyr::mutate(Title = standardise_titles(Title)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 

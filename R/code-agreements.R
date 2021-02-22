@@ -48,4 +48,3 @@ agreements$ECOLEX <- merge(agreements$ECOLEX, ECO, all.x = TRUE)
 
 # Save database with new ID
 save(agreements, file= "data/agreements.rda")
-

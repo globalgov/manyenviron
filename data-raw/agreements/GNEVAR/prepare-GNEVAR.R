@@ -13,13 +13,12 @@ GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1 VERS2
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>% 
   dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q", D="V", R="W", N="X", U="Y")) %>% 
-  dplyr::rename("title" = "Title") %>% 
   transmutate(Signature = standardise_dates(DocSign),
               End = standardise_dates(DocEnd),
               Force = standardise_dates(DocForce),# some dates formats are failing to pass (e.i 0000-00-00)
               GNEVAR_ID = GENG,
-              ECOLEX_ID = ECOLEX,
-              Title = standardise_titles(title)) %>%
+              ECOLEX_ID = ECOLEX) %>% 
+  dplyr::mutate(Title = standardise_titles(Title)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force, IEADB_ID, ECOLEX_ID) %>% 
   dplyr::arrange(Beg, GNEVAR_ID)
