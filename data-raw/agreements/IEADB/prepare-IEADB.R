@@ -18,7 +18,7 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Memorandum of Understanding" = "Y", "Protocol" = "P")) %>% 
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
-  transmutate(IEADB_ID = `IEA# (click for add'l info)`,
+  transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
               Title = standardise_titles(`Treaty Name`),
               Signature = standardise_dates(`Signature Date`),
               Force = standardise_dates(`Date IEA entered into force`)) %>% 
