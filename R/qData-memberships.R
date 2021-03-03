@@ -8,4 +8,4 @@
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following 7 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 4 variables: TFDD_ID, Country, Title, Signature.}
 #' }
- "memberships"
+"memberships"
