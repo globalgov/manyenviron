@@ -13,10 +13,11 @@ CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
   transmutate(Title = standardise_titles(`Treaty Title`),
-              Beg = standardise_dates(`Year of Agreement`), # standardise_dates do not take into account range date yet
-              Force = standardise_dates(`Year of Entry into Force`)) %>% # Same for this variable
-  dplyr::select(Title, Beg) %>% 
-  dplyr::arrange(Beg, Title)
+              Signature = standardise_dates(`Year of Agreement`), 
+              Force = standardise_dates(`Year of Entry into Force`)) %>% 
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(Title, Beg, Signature, Force) %>% 
+  dplyr::arrange(Signature)
 # qData includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
@@ -24,7 +25,7 @@ CIESIN <- as_tibble(CIESIN) %>%
 # Stage three: Connecting data
 # Next run the following line to make CIESIN available within the qPackage.
 
-# export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/") 
+export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/") 
 # can not export yet as standardise_dates() do not function on dates range
 
 # This function also does two additional things.
