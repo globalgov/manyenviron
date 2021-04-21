@@ -24,7 +24,7 @@ IEADB <- as_tibble(IEADB)  %>%
               Force = standardise_dates(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
-  dplyr::arrange(Beg)
+  dplyr::arrange(Signature)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

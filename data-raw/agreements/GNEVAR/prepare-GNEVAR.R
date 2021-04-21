@@ -20,8 +20,8 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
               ECOLEX_ID = ECOLEX) %>% 
   dplyr::mutate(Title = standardise_titles(Title)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force, IEADB_ID, ECOLEX_ID) %>% 
-  dplyr::arrange(Beg, GNEVAR_ID)
+  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
+  dplyr::arrange(Signature)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

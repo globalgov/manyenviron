@@ -23,7 +23,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
               Force = standardise_dates(`Entry.into.force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
-  dplyr::arrange(Beg)
+  dplyr::arrange(Signature)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
