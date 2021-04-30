@@ -25,6 +25,7 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Signature)
+IEADB <- qData::code_agreements(IEADB$Title, IEADB$Beg, IEADB)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

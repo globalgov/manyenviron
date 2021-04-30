@@ -22,6 +22,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Signature)
+GNEVAR<- qData::code_agreements(GNEVAR$Title, GNEVAR$Beg, GNEVAR)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

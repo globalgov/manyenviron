@@ -18,6 +18,9 @@ CIESIN <- as_tibble(CIESIN) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
   dplyr::arrange(Signature)
+
+CIESIN <- qData::code_agreements(CIESIN$Title, CIESIN$Beg, CIESIN)
+
 # qData includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
@@ -25,7 +28,7 @@ CIESIN <- as_tibble(CIESIN) %>%
 # Stage three: Connecting data
 # Next run the following line to make CIESIN available within the qPackage.
 
-export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/") 
+export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/")
 # can not export yet as standardise_dates() do not function on dates range
 
 # This function also does two additional things.
