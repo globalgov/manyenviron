@@ -2,7 +2,7 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
+library(qCreate)
 
 # Stage one: Collecting data
 IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")

@@ -2,7 +2,7 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
+library(qCreate)
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
@@ -19,7 +19,7 @@ CIESIN <- as_tibble(CIESIN) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
   dplyr::arrange(Signature)
 
-CIESIN <- qData::code_agreements(CIESIN$Title, CIESIN$Beg, CIESIN)
+CIESIN$qID <- qCreate::code_agreements(CIESIN$Title, CIESIN$Beg)
 
 # qData includes several functions that should help cleaning
 # and standardising your data.

@@ -2,7 +2,7 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
+library(qCreate)
 
 # Stage one: Collecting data
 load("data-raw/agreements/ECOLEX/ecoagree.RData")
@@ -24,7 +24,8 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Signature)
-ECOLEX <- qData::code_agreements(ECOLEX$Title, ECOLEX$Beg, ECOLEX)
+
+ECOLEX$qID <- qCreate::code_agreements(ECOLEX$Title, ECOLEX$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

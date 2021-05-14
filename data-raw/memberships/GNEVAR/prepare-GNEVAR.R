@@ -2,7 +2,7 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
+library(qCreate)
 
 # Stage one: Collecting data
 GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/EnvGov Edges-Table 1.csv")

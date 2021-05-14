@@ -2,7 +2,7 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
+library(qCreate)
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
@@ -25,7 +25,8 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Signature)
-IEADB <- qData::code_agreements(IEADB$Title, IEADB$Beg, IEADB)
+
+IEADB$qID <- qCreate::code_agreements(IEADB$Title, IEADB$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

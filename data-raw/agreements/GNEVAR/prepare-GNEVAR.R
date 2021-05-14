@@ -2,10 +2,11 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
+library(qCreate)
 
 # Stage one: Collecting data
 GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1 VERS2.csv")
+GNEVAR2 <- readr::read_csv2("data-raw/agreements/GNEVAR/endb4beg.csv")
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'GNEVAR' object until the object created
@@ -22,7 +23,8 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Signature)
-GNEVAR<- qData::code_agreements(GNEVAR$Title, GNEVAR$Beg, GNEVAR)
+
+GNEVAR$qID<- qCreate::code_agreements(GNEVAR$Title, GNEVAR$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
