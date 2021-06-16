@@ -11,6 +11,7 @@ GNEVAR3 <- readr::read_csv("data-raw/agreements/GNEVAR/gnevar.csv")
 GNEVAR4 <- readr::read_csv("data-raw/agreements/GNEVAR/GENG v1.2 (31.10.2015).csv")
 GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
 
+GNEVAR <- link_metadata(GNEVAR)
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'GNEVAR' object until the object created

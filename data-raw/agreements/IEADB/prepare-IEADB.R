@@ -6,7 +6,7 @@ library(qCreate)
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
-
+IEADB <- link_metadata(IEADB)
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'IEADB' object until the object created

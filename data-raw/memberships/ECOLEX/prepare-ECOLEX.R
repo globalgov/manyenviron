@@ -8,6 +8,7 @@ library(qCreate)
 ECOLEX_MEM <- load("data-raw/memberships/ECOLEX_MEM/ecomembs.RData")
 ECOLEX_MEM <- eco_membs
 retain(c("ECOLEX_MEM"))
+ECOLEX_MEM <- link_metadata(ECOLEX_MEM)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
