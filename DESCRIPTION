@@ -25,17 +25,16 @@ Description: qEnviron provides an ensemble of data on international environmenta
 License: CC BY 4.0
 Depends: 
     R (>= 3.5.0),
-    tibble,
-    pointblank
+    tibble
 Imports: 
     qData,
     dplyr,
     lubridate,
     roxygen2,
-    usethis
+    usethis,
+    pointblank
 Remotes:
-    globalgov/qData,
-    globalgov/qStates
+    globalgov/qData
 Suggests: 
     purrr,
     rlang,
