@@ -18,9 +18,9 @@ CIESIN <- as_tibble(CIESIN) %>%
               Force = standardise_dates(`Year of Entry into Force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
-  dplyr::arrange(Signature)
+  dplyr::arrange(Beg)
 
-CIESIN$qID <- qCreate::code_agreements(CIESIN$Title, CIESIN$Beg)
+CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
 # qData includes several functions that should help cleaning
 # and standardising your data.

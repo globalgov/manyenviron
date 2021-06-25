@@ -24,9 +24,9 @@ ECOLEX <- as_tibble(ECOLEX) %>%
               Force = standardise_dates(`Entry.into.force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
-  dplyr::arrange(Signature)
+  dplyr::arrange(Beg)
 
-ECOLEX$qID <- qCreate::code_agreements(ECOLEX$Title, ECOLEX$Beg)
+ECOLEX$qID <- qCreate::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

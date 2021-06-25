@@ -5,15 +5,15 @@
 library(qCreate)
 
 # Stage one: Collecting data
-TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
-TFDD_MEM <- link_metadata(TFDD_MEM)
+TFDD <- readxl::read_excel("data-raw/memberships/TFDD/TFDD.xlsx")
+TFDD <- link_metadata(TFDD)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
-TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(signature = openxlsx::convertToDate(TFDD_MEM$DateSigned)) %>% 
+TFDD <- as_tibble(TFDD) %>%
+  dplyr::mutate(signature = openxlsx::convertToDate(TFDD$DateSigned)) %>% 
   dplyr::mutate(sign = as.character(signature)) %>% 
   dplyr::mutate(Signature1 = dplyr::coalesce(sign, DateSigned)) %>% 
   transmutate(TFDD_ID = `2016Update ID`,
@@ -29,7 +29,7 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 
 # Stage three: Connecting data
 # Next run the following line to make TFDD_MEM available within the qPackage.
-export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
+export_data(TFDD, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

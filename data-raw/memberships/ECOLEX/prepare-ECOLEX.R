@@ -5,16 +5,16 @@
 library(qCreate)
 
 # Stage one: Collecting data
-ECOLEX_MEM <- load("data-raw/memberships/ECOLEX_MEM/ecomembs.RData")
-ECOLEX_MEM <- eco_membs
-retain(c("ECOLEX_MEM"))
-ECOLEX_MEM <- link_metadata(ECOLEX_MEM)
+ECOLEX <- load("data-raw/memberships/ECOLEX/ecomembs.RData")
+ECOLEX <- eco_membs
+retain(c("ECOLEX"))
+ECOLEX <- link_metadata(ECOLEX)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'ECOLEX_MEM' object until the object created
 # below (in stage three) passes all the tests. 
-ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
+ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>% 
   transmutate(SignatureC = standardise_dates(Sign),
@@ -32,7 +32,7 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
 
 # Stage three: Connecting data
 # Next run the following line to make ECOLEX_MEM available within the qPackage.
-export_data(ECOLEX_MEM, database = "memberships", URL = "https://www.ecolex.org/result/?type=treaty")
+export_data(ECOLEX, database = "memberships", URL = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

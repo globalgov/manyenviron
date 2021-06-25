@@ -5,14 +5,14 @@
 library(qCreate)
 
 # Stage one: Collecting data
-IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")
-IEA_MEM <- link_metadata(IEA_MEM)
+IEADB <- readxl::read_excel("data-raw/memberships/IEADB/iea-memb.xlsx")
+IEADB <- link_metadata(IEADB)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
-IEA_MEM <- as_tibble(IEA_MEM) %>%
+IEADB <- as_tibble(IEADB) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
   transmutate(Country = standardise_titles(country),
               Title = standardise_titles(treatyname),
@@ -25,7 +25,7 @@ IEA_MEM <- as_tibble(IEA_MEM) %>%
   dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 
-IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>% 
+IEADB <- IEADB[!(is.na(IEADB$Force) & IEADB$name =="Force2"),] %>% 
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
   dplyr::arrange(Beg)
@@ -34,7 +34,7 @@ IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>%
 
 # Stage three: Connecting data
 # Next run the following line to make IEA_MEM available within the qPackage.
-export_data(IEA_MEM, database = "memberships", URL = "https://iea.uoregon.edu/country-members")
+export_data(IEADB, database = "memberships", URL = "https://iea.uoregon.edu/country-members")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
