@@ -5,14 +5,14 @@
 library(qCreate)
 
 # Stage one: Collecting data
-GNEVAR <- readr::read_csv("data-raw/memberships/GNEVAR/gnevar.csv")
-GNEVAR <- link_metadata(GNEVAR)
+GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR/gnevar.csv")
+GNEVAR_MEM <- link_metadata(GNEVAR_MEM)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'GNEVAR_MEM' object until the object created
 # below (in stage three) passes all the tests. 
-GNEVAR <- as_tibble(GNEVAR) %>%
+GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   transmutate(GNEVAR_ID = GENG,
               Rat = standardise_dates(Approval),
               Withdrawal = standardise_dates(Withdrawal1),
@@ -32,7 +32,7 @@ GNEVAR <- as_tibble(GNEVAR) %>%
 
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR_MEM available within the qPackage.
-export_data(GNEVAR, database = "memberships", URL = "NA")
+export_data(GNEVAR_MEM, database = "memberships", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
