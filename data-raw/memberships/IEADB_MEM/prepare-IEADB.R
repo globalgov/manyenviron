@@ -15,13 +15,13 @@ IEADB_MEM <- link_metadata(IEADB_MEM)
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
   transmutate(Country = standardise_titles(country),
-              Title = standardise_titles(treatyname),
-              Signature = standardise_dates(tsig),
-              SignatureC = standardise_dates(csig),
-              Rat = standardise_dates(crat),
-              End = standardise_dates(tterm),
-              Force = standardise_dates(ceif3),
-              Force2 = standardise_dates(ceif4)) %>%
+              Title = messydates::as_messydate(standardise_titles(treatyname)),
+              Signature = messydates::as_messydate(standardise_dates(tsig)),
+              SignatureC = messydates::as_messydate(standardise_dates(csig)),
+              Rat = messydates::as_messydate(standardise_dates(crat)),
+              End = messydates::as_messydate(standardise_dates(tterm)),
+              Force = messydates::as_messydate(standardise_dates(ceif3)),
+              Force2 = messydates::as_messydate(standardise_dates(ceif4))) %>%
   dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 

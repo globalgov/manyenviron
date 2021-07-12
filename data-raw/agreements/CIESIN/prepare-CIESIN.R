@@ -14,8 +14,8 @@ CIESIN <- link_metadata(CIESIN)
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
   transmutate(Title = standardise_titles(`Treaty Title`),
-              Signature = standardise_dates(`Year of Agreement`), 
-              Force = standardise_dates(`Year of Entry into Force`)) %>% 
+              Signature = messydates::as_messydate(standardise_dates(`Year of Agreement`)), 
+              Force = messydates::as_messydate(standardise_dates(`Year of Entry into Force`))) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
   dplyr::arrange(Beg)

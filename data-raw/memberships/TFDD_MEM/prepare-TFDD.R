@@ -5,7 +5,7 @@
 library(qCreate)
 
 # Stage one: Collecting data
-TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD/TFDD.xlsx")
+TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 TFDD_MEM <- link_metadata(TFDD_MEM)
 
 # Stage two: Correcting data
@@ -13,13 +13,13 @@ TFDD_MEM <- link_metadata(TFDD_MEM)
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(signature = openxlsx::convertToDate(TFDD$DateSigned)) %>% 
-  dplyr::mutate(sign = as.character(signature)) %>% 
+  dplyr::mutate(signature = messydates::as_messydate(openxlsx::convertToDate(TFDD_MEM$DateSigned))) %>% 
+  dplyr::mutate(sign = messydates::as_messydate(as.character(signature))) %>% 
   dplyr::mutate(Signature1 = dplyr::coalesce(sign, DateSigned)) %>% 
   transmutate(TFDD_ID = `2016Update ID`,
               Country = CCODE,
               Title = standardise_titles(DocumentName),
-              Signature = standardise_dates(Signature1)) %>%
+              Signature = messydates::as_messydate(standardise_dates(Signature1))) %>%
   dplyr::select(TFDD_ID, Country, Title, Signature) %>% 
   dplyr::arrange(Signature)
 
