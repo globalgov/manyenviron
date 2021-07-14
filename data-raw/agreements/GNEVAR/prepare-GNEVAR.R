@@ -19,9 +19,9 @@ GNEVAR <- link_metadata(GNEVAR)
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>% 
   dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q", D="V", R="W", N="X", U="Y")) %>% 
-  transmutate(Signature = messydates::as_messydate(standardise_dates(DocSign)),
-              End = messydates::as_messydate(standardise_dates(DocEnd)),
-              Force = messydates::as_messydate(standardise_dates(DocForce)),# some dates formats are failing to pass (e.i 0000-00-00)
+  transmutate(Signature = messydates::as_messydate(DocSign),
+              End = messydates::as_messydate(DocEnd),
+              Force = messydates::as_messydate(DocForce),# some dates formats are failing to pass (e.i 0000-00-00)
               GNEVAR_ID = GENG,
               ECOLEX_ID = ECOLEX) %>% 
   dplyr::mutate(Title = standardise_titles(Title)) %>%
@@ -29,22 +29,21 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Clean GNEVAR 3
-GNEVAR3 <- as_tibble(GNEVAR3) %>% 
-  transmutate()
-
-# Clean GNEVAR 4
-GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
-GNEVAR4 <- as_tibble(GNEVAR4) %>% 
-  transmutate(Signature = standardise_dates(DocDate),
-              Force = standardise_dates(InForce)) %>% 
-  dplyr::mutate(End = standardise_dates(End)) %>% 
-  dplyr::mutate(Title = standardise_titles(Title)) %>% 
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(Title, Beg, Signature, Force, End, Parties)
-  
-
 GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
+
+# # Clean GNEVAR 3
+# GNEVAR3 <- as_tibble(GNEVAR3) %>% 
+#   transmutate()
+# 
+# # Clean GNEVAR 4
+# GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
+# GNEVAR4 <- as_tibble(GNEVAR4) %>% 
+#   transmutate(Signature = standardise_dates(DocDate),
+#               Force = standardise_dates(InForce)) %>% 
+#   dplyr::mutate(End = standardise_dates(End)) %>% 
+#   dplyr::mutate(Title = standardise_titles(Title)) %>% 
+#   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
+#   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

@@ -19,9 +19,9 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
   transmutate(ECOLEX_ID = `EcolexID`,
-              Title = messydates::as_messydate(standardise_titles(title)),
-              Signature = messydates::as_messydate(standardise_dates(Date)), 
-              Force = messydates::as_messydate(standardise_dates(`Entry.into.force`))) %>%
+              Title = messydates::as_messydate(title),
+              Signature = messydates::as_messydate(Date), 
+              Force = messydates::as_messydate(`Entry.into.force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)

@@ -1,7 +1,10 @@
 #' memberships database documentation
 #'
-#' @format The memberships database is a list that contains the following 9 datasets: IEA_MEM, GNEVAR_MEM, ECOLEX_MEM, TFDD_MEM, TFDD, ECOLEX, GNEVAR, IEADB, IEADB_MEM.
-#' For more information and references to each of the datasets used, please use the report_data() function.
+#' @format The memberships database is a list that contains the
+#' following 9 datasets: IEA_MEM, GNEVAR_MEM, ECOLEX_MEM, TFDD_MEM, TFDD, ECOLEX, GNEVAR, IEADB, IEADB_MEM.
+#' For more information and references to each of the datasets used,
+#' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
+#' functions.
 #'\describe{
 #' \item{IEA_MEM: }{A dataset with 27410 observations and the following 9 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following 11 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal.}

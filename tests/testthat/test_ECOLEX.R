@@ -23,7 +23,7 @@ test_that("datasets have the required variables", {
 
 # Dates are standardized for mandatory column
 test_that("Column `Beg` has standardised dates", {
-  expect_col_is_date(agreements[["ECOLEX"]], vars(Beg))
+  expect_equal(class(agreements[["ECOLEX"]]$Beg), "messydt")
   expect_false(any(grepl("/", agreements[["ECOLEX"]]$Beg)))
   expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$",
                          agreements[["ECOLEX"]]$Beg)))
@@ -40,7 +40,7 @@ test_that("Column `Beg` has standardised dates", {
 })
 
 test_that("Column `Signature` has standardised dates", {
-  expect_col_is_date(agreements[["ECOLEX"]], vars(Signature))
+  expect_equal(class(agreements[["ECOLEX"]]$Signature), "messydt")
   expect_false(any(grepl("/", agreements[["ECOLEX"]]$Signature)))
   expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$",
                          agreements[["ECOLEX"]]$Signature)))
@@ -57,7 +57,7 @@ test_that("Column `Signature` has standardised dates", {
 })
 
 test_that("Column `Force` has standardised dates", {
-  expect_col_is_date(agreements[["ECOLEX"]], vars(Force))
+  expect_equal(class(agreements[["ECOLEX"]]$Force), "messydt")
   expect_false(any(grepl("/", agreements[["ECOLEX"]]$Force)))
   expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$",
                          agreements[["ECOLEX"]]$Force)))
@@ -106,6 +106,7 @@ test_that("Columns with dates are standardized", {
                            agreements[["ECOLEX"]]$Rat)))
   }
   if (!is.null(agreements[["ECOLEX"]]$Term)) {
+    expect_equal(class(agreements[["ECOLEX"]]$Term), "messydt")
     expect_false(any(grepl("/", agreements[["ECOLEX"]]$Term)))
     expect_false(any(grepl("^[:digit:]{2}-[:digit:]{2}-[:digit:]{4}$",
                            agreements[["ECOLEX"]]$Term)))
