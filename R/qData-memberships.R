@@ -14,6 +14,6 @@
 #' \item{ECOLEX: }{A dataset with 25003 observations and the following 7 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat.}
 #' \item{GNEVAR: }{A dataset with 35671 observations and the following 11 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal.}
 #' \item{IEADB: }{A dataset with 27410 observations and the following 9 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force.}
-#' \item{IEADB_MEM: }{A dataset with 27410 observations and the following 9 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force.}
+#' \item{IEADB_MEM: }{A dataset with 27410 observations and the following 10 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, qID.}
 #' }
  "memberships"

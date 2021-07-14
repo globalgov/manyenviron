@@ -5,7 +5,7 @@
 library(qCreate)
 
 # Stage one: Collecting data
-IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB/iea-memb.xlsx")
+IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 IEADB_MEM <- link_metadata(IEADB_MEM)
 
 # Stage two: Correcting data
@@ -15,13 +15,13 @@ IEADB_MEM <- link_metadata(IEADB_MEM)
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
   transmutate(Country = standardise_titles(country),
-              Title = messydates::as_messydate(standardise_titles(treatyname)),
-              Signature = messydates::as_messydate(standardise_dates(tsig)),
-              SignatureC = messydates::as_messydate(standardise_dates(csig)),
-              Rat = messydates::as_messydate(standardise_dates(crat)),
-              End = messydates::as_messydate(standardise_dates(tterm)),
-              Force = messydates::as_messydate(standardise_dates(ceif3)),
-              Force2 = messydates::as_messydate(standardise_dates(ceif4))) %>%
+              Title = standardise_titles(treatyname),
+              Signature = messydates::as_messydate(tsig),
+              SignatureC = messydates::as_messydate(csig),
+              Rat = messydates::as_messydate(crat),
+              End = messydates::as_messydate(tterm),
+              Force = messydates::as_messydate(ceif3),
+              Force2 = messydates::as_messydate(ceif4)) %>%
   dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 
@@ -29,6 +29,9 @@ IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
   dplyr::arrange(Beg)
+
+IEADB_MEM$qID <- code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
+
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
