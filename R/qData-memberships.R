@@ -9,7 +9,7 @@
 #' \item{IEA_MEM: }{A dataset with 27410 observations and the following 9 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following 11 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal.}
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following 7 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat.}
-#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 4 variables: TFDD_ID, Country, Title, Signature.}
+#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 6 variables: TFDD_ID, Country, Title, Beg, Signature, qID.}
 #' \item{TFDD: }{A dataset with 2118 observations and the following 4 variables: TFDD_ID, Country, Title, Signature.}
 #' \item{ECOLEX: }{A dataset with 25003 observations and the following 7 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat.}
 #' \item{GNEVAR: }{A dataset with 35671 observations and the following 11 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal.}

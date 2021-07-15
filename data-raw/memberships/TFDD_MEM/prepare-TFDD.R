@@ -13,15 +13,18 @@ TFDD_MEM <- link_metadata(TFDD_MEM)
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(signature = messydates::as_messydate(openxlsx::convertToDate(TFDD_MEM$DateSigned))) %>% 
-  dplyr::mutate(sign = messydates::as_messydate(as.character(signature))) %>% 
-  dplyr::mutate(Signature1 = dplyr::coalesce(sign, DateSigned)) %>% 
+  dplyr::mutate(Signature = openxlsx::convertToDate(DateSigned)) %>% 
+  dplyr::mutate(Signature = messydates::as_messydate(as.character(Signature))) %>% 
+  dplyr::mutate(Beg = Signature)
+
+TFDD_MEM <- TFDD_MEM %>%
   transmutate(TFDD_ID = `2016Update ID`,
               Country = CCODE,
-              Title = standardise_titles(DocumentName),
-              Signature = messydates::as_messydate(standardise_dates(Signature1))) %>%
-  dplyr::select(TFDD_ID, Country, Title, Signature) %>% 
-  dplyr::arrange(Signature)
+              Title = standardise_titles(DocumentName)) %>%
+  dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
+  dplyr::arrange(Beg)
+
+TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # qData includes several functions that should help cleaning
 # and standardising your data.
