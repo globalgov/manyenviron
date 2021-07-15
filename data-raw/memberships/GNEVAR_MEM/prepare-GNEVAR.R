@@ -27,7 +27,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
   dplyr::arrange(Beg)
   
-# GNEVAR_MEM$qID <- code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
+GNEVAR_MEM$qID <- code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

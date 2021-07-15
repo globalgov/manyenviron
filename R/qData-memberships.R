@@ -1,19 +1,14 @@
 #' memberships database documentation
 #'
 #' @format The memberships database is a list that contains the
-#' following 9 datasets: IEA_MEM, GNEVAR_MEM, ECOLEX_MEM, TFDD_MEM, TFDD, ECOLEX, GNEVAR, IEADB, IEADB_MEM.
+#' following 4 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
 #' functions.
 #'\describe{
-#' \item{IEA_MEM: }{A dataset with 27410 observations and the following 9 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force.}
-#' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following 11 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal.}
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following 7 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat.}
-#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 6 variables: TFDD_ID, Country, Title, Beg, Signature, qID.}
-#' \item{TFDD: }{A dataset with 2118 observations and the following 4 variables: TFDD_ID, Country, Title, Signature.}
-#' \item{ECOLEX: }{A dataset with 25003 observations and the following 7 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat.}
-#' \item{GNEVAR: }{A dataset with 35671 observations and the following 11 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal.}
-#' \item{IEADB: }{A dataset with 27410 observations and the following 9 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force.}
+#' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following 12 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, qID.}
 #' \item{IEADB_MEM: }{A dataset with 27410 observations and the following 10 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, qID.}
+#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 5 variables: TFDD_ID, Country, Title, Beg, Signature.}
 #' }
  "memberships"
