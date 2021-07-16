@@ -6,12 +6,12 @@ List any dependencies that are required for this change,
 indicating whether this is a major (breaking), minor, or patch change.
 Please also indicate if these are package changes, data changes, or both.  
 
-## Package changes
+## Package
 
 * Fixes #(issue no.)
 * Closes #(issue no.)
 
-## Data changes
+## Data
 
 * Fixes #(issue no.)
 * Closes #(issue no.)
@@ -27,6 +27,8 @@ Please also indicate if these are package changes, data changes, or both.
   - [ ] Package builds on Mac
   - [ ] Package builds on Windows
   - [ ] Package builds on Linux
+  - [ ] CodeCov check: Package improves or maintains good test coverage
+  - [ ] CodeFactor check: Package improves or maintains good style
 - [ ] Documentation
   - [ ] Any new or modified functions or data have roxygen style documentation in their .R scripts
   - [ ] Any longer functions are commented inline so that it is easier to debug in the future
