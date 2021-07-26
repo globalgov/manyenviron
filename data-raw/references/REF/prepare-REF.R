@@ -19,7 +19,15 @@ REF <- as_tibble(REF)
 REF$References <-gsub("c|\\(|\\)|\"", "", as.character(REF$References))
 REF$References <-gsub("\\,", " ", as.character(REF$References))
 
-# Replace the current ID (e.g. TRE-170087) with qID?
+# Replace ECOLEX_ID by qID
+ECOLEX <- qEnviron::agreements$ECOLEX
+ECOLEX <- ECOLEX %>% 
+  dplyr::select(ECOLEX_ID, qID)
+  
+ECOLEX <- as.data.frame(ECOLEX)
+for (k in seq_len(nrow(ECOLEX))) {
+  REF$References <- gsub(paste0(ECOLEX$ECOLEX_ID[[k]]), paste0(ECOLEX$qID[[k]]), REF$References, ignore.case = TRUE, perl = T)
+}
 
 # qData includes several functions that should help cleaning
 # and standardising your data.
