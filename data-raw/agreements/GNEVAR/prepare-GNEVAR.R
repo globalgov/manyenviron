@@ -34,11 +34,13 @@ GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(Title = standardise_titles(Title)) %>%
-  dplyr::mutate(Beg = as_messydate(Beg)) %>% 
-  dplyr::mutate(End = as_messydate(End)) %>% 
-  dplyr::mutate(Force = as_messydate(Force)) %>% 
-  dplyr::mutate(Term = as_messydate(Term)) %>% 
-  transmutate(Signature = as_messydate(Sign))
+  dplyr::mutate(Beg = messydates::as_messydate(Beg)) %>% 
+  dplyr::mutate(End = messydates::as_messydate(End)) %>% 
+  dplyr::mutate(Force = messydates::as_messydate(Force)) %>% 
+  dplyr::mutate(Term = messydates::as_messydate(Term)) %>% 
+  qData::transmutate(Signature = messydates::as_messydate(Sign))
+
+GNEVAR2$qID<- qCreate::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
 
 # Clean GNEVAR3 is the same as GNEVAR, no need to include it
   
@@ -53,9 +55,16 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
-# Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
+GNEVAR4$qID<- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 
-# Put 
+# Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
+# Could not intergrate it into GNEVAR
+
+# Create a GNEVAR "database" to apply consoldiate()
+GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
+
+# Join the datasets together
+GNEVAR <- consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
@@ -63,6 +72,7 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR available within the qPackage.
 export_data(GNEVAR, database = "agreements", URL = "NA")
+
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
