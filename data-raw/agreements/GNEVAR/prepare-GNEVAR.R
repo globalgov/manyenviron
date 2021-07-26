@@ -31,19 +31,31 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
 
 GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
-# # Clean GNEVAR 3
-# GNEVAR3 <- as_tibble(GNEVAR3) %>% 
-#   transmutate()
+# # Clean GNEVAR 2
+GNEVAR2 <- as_tibble(GNEVAR2) %>%
+  dplyr::mutate(Title = standardise_titles(Title)) %>%
+  dplyr::mutate(Beg = as_messydate(Beg)) %>% 
+  dplyr::mutate(End = as_messydate(End)) %>% 
+  dplyr::mutate(Force = as_messydate(Force)) %>% 
+  dplyr::mutate(Term = as_messydate(Term)) %>% 
+  transmutate(Signature = as_messydate(Sign))
+
+# Clean GNEVAR3 is the same as GNEVAR, no need to include it
+  
 # 
-# # Clean GNEVAR 4
-# GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
-# GNEVAR4 <- as_tibble(GNEVAR4) %>% 
-#   transmutate(Signature = standardise_dates(DocDate),
-#               Force = standardise_dates(InForce)) %>% 
-#   dplyr::mutate(End = standardise_dates(End)) %>% 
-#   dplyr::mutate(Title = standardise_titles(Title)) %>% 
-#   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-#   dplyr::select(Title, Beg, Signature, Force, End, Parties)
+# Clean GNEVAR4
+GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
+GNEVAR4 <- as_tibble(GNEVAR4) %>%
+  transmutate(Signature = standardise_dates(DocDate),
+              Force = standardise_dates(InForce)) %>%
+  dplyr::mutate(End = standardise_dates(End)) %>%
+  dplyr::mutate(Title = standardise_titles(Title)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(Title, Beg, Signature, Force, End, Parties)
+
+# Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
+
+# Put 
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
