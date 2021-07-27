@@ -7,7 +7,7 @@ library(qCreate)
 # Stage one: Collecting data
 load("data-raw/agreements/ECOLEX/ecoagree.RData")
 ECOLEX <- eco_agree
-retain(c("ECOLEX"))
+retain("ECOLEX")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
