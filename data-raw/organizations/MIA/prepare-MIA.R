@@ -5,8 +5,7 @@
 library(qData)
 
 # Stage one: Collecting data
-MIA <- haven::read_dta("data-raw/international organizations/MIA/DP_volIII_june2019_15.dta")
-
+MIA <- haven::read_dta("data-raw/organizations/MIA/DP_volIII_june2019_15.dta")
 MIA <- link_metadata(MIA)
 
 # Stage two: Correcting data
@@ -19,8 +18,9 @@ MIA <- as_tibble(MIA) %>%
   dplyr::ungroup() %>% 
   dplyr::rename(Name = ioname,
                 COW = ionumber) %>% 
-  transmutate(Beg = standardise_dates(inception)) %>%
-  dplyr::select(Name, Beg, COW) %>% 
+  transmutate(Beg = standardise_dates(as.character(inception)),
+              End = standardise_dates(as.character(end))) %>%
+  dplyr::select(Name, Beg, End, COW) %>% 
   dplyr::arrange(Beg)
 # qData includes several functions that should help cleaning
 # and standardising your data.
@@ -29,7 +29,7 @@ MIA <- as_tibble(MIA) %>%
 # Stage three: Connecting data
 # Next run the following line to make MIA available 
 # within the qPackage.
-export_data(MIA, database = "international organizations")
+export_data(MIA, database = "organizations", URL = "https://garymarks.web.unc.edu/data/international-authority/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
