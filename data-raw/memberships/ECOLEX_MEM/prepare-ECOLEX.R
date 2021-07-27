@@ -27,6 +27,14 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::select(ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat) %>% 
   dplyr::arrange(Beg)
 
+# Add a Title column
+ECOLEX <- qEnviron::agreements$ECOLEX %>% 
+  dplyr::select(Title, ECOLEX_ID)
+ECOLEX_MEM <- merge(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID", all.x = TRUE)
+
+#Add a qID column
+ECOLEX_MEM$qID <- code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
+
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 

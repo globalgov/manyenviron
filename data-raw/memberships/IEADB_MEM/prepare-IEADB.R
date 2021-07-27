@@ -30,6 +30,7 @@ IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %
   dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
   dplyr::arrange(Beg)
 
+# Add a qID column
 IEADB_MEM$qID <- code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.

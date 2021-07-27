@@ -24,6 +24,7 @@ TFDD_MEM <- TFDD_MEM %>%
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
+# Add a qID column
 TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # qData includes several functions that should help cleaning
