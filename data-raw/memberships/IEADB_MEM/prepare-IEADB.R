@@ -6,7 +6,6 @@ library(qCreate)
 
 # Stage one: Collecting data
 IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
-IEADB_MEM <- link_metadata(IEADB_MEM)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and

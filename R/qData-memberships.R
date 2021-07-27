@@ -9,6 +9,6 @@
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following 9 variables: ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat, Title, qID.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following 12 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, qID.}
 #' \item{IEADB_MEM: }{A dataset with 27410 observations and the following 10 variables: IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, qID.}
-#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 5 variables: TFDD_ID, Country, Title, Beg, Signature.}
+#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following 6 variables: TFDD_ID, Country, Title, Beg, Signature, qID.}
 #' }
  "memberships"

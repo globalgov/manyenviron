@@ -15,7 +15,6 @@ test_that("missing observations are reported correctly", {
 test_that("datasets have the required variables", {
   expect_col_exists(memberships[["IEADB_MEM"]], vars(Country))
   expect_col_exists(memberships[["IEADB_MEM"]], vars(Beg))
-  expect_true(any(grepl("ID", colnames(memberships[["IEADB_MEM"]]))))
 })
 
 # Date columns should be in messydt class

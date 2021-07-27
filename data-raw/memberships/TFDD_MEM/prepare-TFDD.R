@@ -6,7 +6,6 @@ library(qCreate)
 
 # Stage one: Collecting data
 TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
-TFDD_MEM <- link_metadata(TFDD_MEM)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and

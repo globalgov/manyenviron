@@ -6,7 +6,6 @@ library(qCreate)
 
 # Stage one: Collecting data
 GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
-GNEVAR_MEM <- link_metadata(GNEVAR_MEM)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and

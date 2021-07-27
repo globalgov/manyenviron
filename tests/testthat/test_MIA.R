@@ -10,11 +10,6 @@ test_that("missing observations are reported correctly", {
   expect_false(any(grepl("n\\.a\\.$", organizations[["MIA"]])))
 })
 
-# At least one column named ID
-test_that("a column indicating an ID source exists", {
-  expect_true(any(grepl("ID", colnames(organizations[["MIA"]]))))
-})
-
 # Labels are standardized
 test_that("labels are standardised", {
   if (!is.null(organizations[["MIA"]]$Label)) {
@@ -52,7 +47,6 @@ test_that("Columns with dates are standardized", {
 # if the column exists
   test_that("dataset is arranged by date variable", {
     if (!is.null(organizations[["MIA"]]$Beg)) {
-  expect_true(organizations[["MIA"]]$Beg[50] < organizations[["MIA"]]$Beg[75])
-  expect_true(organizations[["MIA"]]$Beg[100] < organizations[["MIA"]]$Beg[120])
+  expect_true(organizations[["MIA"]]$Beg[25] < organizations[["MIA"]]$Beg[50])
     }
 })

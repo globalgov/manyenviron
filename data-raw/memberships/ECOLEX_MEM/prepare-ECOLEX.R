@@ -8,7 +8,6 @@ library(qCreate)
 ECOLEX_MEM <- load("data-raw/memberships/ECOLEX_MEM/ecomembs.RData")
 ECOLEX_MEM <- eco_membs
 retain(c("ECOLEX_MEM"))
-ECOLEX_MEM <- link_metadata(ECOLEX_MEM)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
@@ -17,10 +16,10 @@ ECOLEX_MEM <- link_metadata(ECOLEX_MEM)
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>% 
-  transmutate(SignatureC = messydates::as_messydate(Sign),
-              End = messydates::as_messydate(Term),
-              Force = messydates::as_messydate(For),
-              Rat = messydates::as_messydate(Rati),
+  transmutate(SignatureC = standardise_dates(Sign),
+              End = standardise_dates(Term),
+              Force = standardise_dates(For),
+              Rat = standardise_dates(Rati),
               Country = StatID,
               ECOLEX_ID = EcolexID) %>%
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% # Check Signature date is for the country and not document signature date
@@ -30,7 +29,8 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
 # Add a Title column
 ECOLEX <- qEnviron::agreements$ECOLEX %>% 
   dplyr::select(Title, ECOLEX_ID)
-ECOLEX_MEM <- merge(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID", all.x = TRUE)
+ECOLEX_MEM <- merge(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID", all.x = TRUE) %>% 
+  dplyr::arrange(Beg)
 
 #Add a qID column
 ECOLEX_MEM$qID <- code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)

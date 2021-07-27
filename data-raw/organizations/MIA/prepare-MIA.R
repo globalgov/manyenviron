@@ -6,7 +6,6 @@ library(qData)
 
 # Stage one: Collecting data
 MIA <- haven::read_dta("data-raw/organizations/MIA/DP_volIII_june2019_15.dta")
-MIA <- link_metadata(MIA)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
