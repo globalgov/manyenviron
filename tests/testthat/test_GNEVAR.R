@@ -21,17 +21,25 @@ test_that("datasets have the required variables", {
   expect_col_exists(agreements[["GNEVAR"]], vars(Force))
 })
 
+# Date columns should be in messydt class
+test_that("Columns are not in date, POSIXct or POSIXlt class", {
+  expect_false(lubridate::is.Date(agreements[["GNEVAR"]]))
+  expect_false(lubridate::is.POSIXct(agreements[["GNEVAR"]]))
+  expect_false(lubridate::is.POSIXlt(agreements[["GNEVAR"]]))
+})
+
 # Dates are standardized for mandatory column
 test_that("Column `Beg` has standardised dates", {
   expect_equal(class(agreements[["GNEVAR"]]$Beg), "messydt")
   expect_false(any(grepl("/", agreements[["GNEVAR"]]$Beg)))
   expect_false(any(grepl("^[:alpha:]$",
                          agreements[["GNEVAR"]]$Beg)))
-  #                        agreements[["GNEVAR"]]$Beg)))
-  # expect_false(any(grepl("^[:digit:]{3}$",
-  #                        agreements[["GNEVAR"]]$Beg)))
-  # expect_false(any(grepl("^[:digit:]{1}$",
-  #                        agreements[["GNEVAR"]]$Beg)))
+  expect_false(any(grepl("^[:digit:]{2}$",
+                         agreements[["GNEVAR"]]$Beg)))
+  expect_false(any(grepl("^[:digit:]{3}$",
+                         agreements[["GNEVAR"]]$Beg)))
+  expect_false(any(grepl("^[:digit:]{1}$",
+                         agreements[["GNEVAR"]]$Beg)))
 })
 
 test_that("Column `Signature` has standardised dates", {
@@ -39,12 +47,12 @@ test_that("Column `Signature` has standardised dates", {
   expect_false(any(grepl("/", agreements[["GNEVAR"]]$Signature)))
   expect_false(any(grepl("^[:alpha:]$",
                          agreements[["GNEVAR"]]$Signature)))
-  # expect_false(any(grepl("^[:digit:]{2}$",
-  #                        agreements[["GNEVAR"]]$Signature)))
-  # expect_false(any(grepl("^[:digit:]{3}$",
-  #                        agreements[["GNEVAR"]]$Sighature)))
-  # expect_false(any(grepl("^[:digit:]{1}$",
-  #                        agreements[["GNEVAR"]]$Signature)))
+  expect_false(any(grepl("^[:digit:]{2}$",
+                         agreements[["GNEVAR"]]$Signature)))
+  expect_false(any(grepl("^[:digit:]{3}$",
+                         agreements[["GNEVAR"]]$Sighature)))
+  expect_false(any(grepl("^[:digit:]{1}$",
+                         agreements[["GNEVAR"]]$Signature)))
 })
 
 test_that("Column `Force` has standardised dates", {
@@ -52,12 +60,12 @@ test_that("Column `Force` has standardised dates", {
   expect_false(any(grepl("/", agreements[["GNEVAR"]]$Force)))
   expect_false(any(grepl("^[:alpha:]$",
                          agreements[["GNEVAR"]]$Force)))
-  # expect_false(any(grepl("^[:digit:]{2}$",
-  #                        agreements[["GNEVAR"]]$Force)))
-  # expect_false(any(grepl("^[:digit:]{3}$",
-  #                        agreements[["GNEVAR"]]$Force)))
-  # expect_false(any(grepl("^[:digit:]{1}$",
-  #                        agreements[["GNEVAR"]]$Force)))
+  expect_false(any(grepl("^[:digit:]{2}$",
+                         agreements[["GNEVAR"]]$Force)))
+  expect_false(any(grepl("^[:digit:]{3}$",
+                         agreements[["GNEVAR"]]$Force)))
+  expect_false(any(grepl("^[:digit:]{1}$",
+                         agreements[["GNEVAR"]]$Force)))
 })
 
 # Dates are standardized for optional columns
@@ -66,35 +74,35 @@ test_that("Columns with dates are standardized", {
     expect_false(any(grepl("/", agreements[["GNEVAR"]]$End)))
     expect_false(any(grepl("^[:alpha:]$",
                            agreements[["GNEVAR"]]$End)))
-    # expect_false(any(grepl("^[:digit:]{2}$",
-    #                        agreements[["GNEVAR"]]$End)))
-    # expect_false(any(grepl("^[:digit:]{3}$",
-    #                        agreements[["GNEVAR"]]$End)))
-    # expect_false(any(grepl("^[:digit:]{1}$",
-    #                        agreements[["GNEVAR"]]$End)))
+    expect_false(any(grepl("^[:digit:]{2}$",
+                           agreements[["GNEVAR"]]$End)))
+    expect_false(any(grepl("^[:digit:]{3}$",
+                           agreements[["GNEVAR"]]$End)))
+    expect_false(any(grepl("^[:digit:]{1}$",
+                           agreements[["GNEVAR"]]$End)))
   }
   if (!is.null(agreements[["GNEVAR"]]$Rat)) {
     expect_false(any(grepl("/", agreements[["GNEVAR"]]$Rat)))
     expect_false(any(grepl("^[:alpha:]$",
                            agreements[["GNEVAR"]]$Rat)))
-    # expect_false(any(grepl("^[:digit:]{2}$",
-    #                        agreements[["GNEVAR"]]$Rat)))
-    # expect_false(any(grepl("^[:digit:]{3}$",
-    #                        agreements[["GNEVAR"]]$Rat)))
-    # expect_false(any(grepl("^[:digit:]{1}$",
-    #                        agreements[["GNEVAR"]]$Rat)))
+    expect_false(any(grepl("^[:digit:]{2}$",
+                           agreements[["GNEVAR"]]$Rat)))
+    expect_false(any(grepl("^[:digit:]{3}$",
+                           agreements[["GNEVAR"]]$Rat)))
+    expect_false(any(grepl("^[:digit:]{1}$",
+                           agreements[["GNEVAR"]]$Rat)))
   }
   if (!is.null(agreements[["GNEVAR"]]$Term)) {
     expect_equal(class(agreements[["GNEVAR"]]$Term), "messydt")
     expect_false(any(grepl("/", agreements[["GNEVAR"]]$Term)))
     expect_false(any(grepl("^[:alpha:]$",
                            agreements[["GNEVAR"]]$Term)))
-    # expect_false(any(grepl("^[:digit:]{2}$",
-    #                        agreements[["GNEVAR"]]$Term)))
-    # expect_false(any(grepl("^[:digit:]{3}$",
-    #                        agreements[["GNEVAR"]]$Term)))
-    # expect_false(any(grepl("^[:digit:]{1}$",
-    #                        agreements[["GNEVAR"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{2}$",
+                           agreements[["GNEVAR"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{3}$",
+                           agreements[["GNEVAR"]]$Term)))
+    expect_false(any(grepl("^[:digit:]{1}$",
+                           agreements[["GNEVAR"]]$Term)))
   }
 })
 

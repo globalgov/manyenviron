@@ -29,6 +29,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
+# Add qID column
 GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
@@ -40,11 +41,11 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(Term = messydates::as_messydate(Term)) %>% 
   qData::transmutate(Signature = messydates::as_messydate(Sign))
 
+# Add qID column
 GNEVAR2$qID<- qCreate::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
 
 # Clean GNEVAR3 is the same as GNEVAR, no need to include it
-  
-# 
+
 # Clean GNEVAR4
 GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
 GNEVAR4 <- as_tibble(GNEVAR4) %>%
@@ -55,6 +56,7 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
+# Add qID column
 GNEVAR4$qID<- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 
 # Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
