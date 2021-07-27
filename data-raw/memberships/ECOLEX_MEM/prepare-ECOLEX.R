@@ -38,7 +38,8 @@ ECOLEX_MEM$Force <- standardise_dates(ECOLEX_MEM$Force)
 ECOLEX_MEM$Rat <- standardise_dates(ECOLEX_MEM$Rat)
 
 ECOLEX_MEM <- ECOLEX_MEM %>% 
-  dplyr::select(ECOLEX_ID, Title, Country, Beg, End, SignatureC, Force, Rat)
+  dplyr::select(ECOLEX_ID, Title, Country, Beg, End, SignatureC, Force, Rat) %>% 
+  dplyr::arrange(Beg)
 
 #Add a qID column
 ECOLEX_MEM$qID <- code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
