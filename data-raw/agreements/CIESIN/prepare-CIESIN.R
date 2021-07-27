@@ -6,7 +6,6 @@ library(qCreate)
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
-CIESIN <- link_metadata(CIESIN)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and

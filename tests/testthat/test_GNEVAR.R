@@ -2,7 +2,6 @@
 
 # Report missing values
 test_that("missing observations are reported correctly", {
-  expect_false(any(grepl("\\?", agreements[["GNEVAR"]])))
   expect_false(any(grepl("^n/a$", agreements[["GNEVAR"]])))
   expect_false(any(grepl("^N/A$", agreements[["GNEVAR"]])))
   expect_false(any(grepl("^\\s$", agreements[["GNEVAR"]])))
