@@ -29,8 +29,16 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
 # Add a Title column
 ECOLEX <- qEnviron::agreements$ECOLEX %>% 
   dplyr::select(Title, ECOLEX_ID)
-ECOLEX_MEM <- merge(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID", all.x = TRUE) %>% 
-  dplyr::arrange(Beg)
+ECOLEX_MEM <- merge(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID", all.x = TRUE)
+
+ECOLEX_MEM$Beg <- standardise_dates(ECOLEX_MEM$Beg)
+ECOLEX_MEM$End <- standardise_dates(ECOLEX_MEM$End)
+ECOLEX_MEM$SignatureC <- standardise_dates(ECOLEX_MEM$SignatureC)
+ECOLEX_MEM$Force <- standardise_dates(ECOLEX_MEM$Force)
+ECOLEX_MEM$Rat <- standardise_dates(ECOLEX_MEM$Rat)
+
+ECOLEX_MEM <- ECOLEX_MEM %>% 
+  dplyr::select(ECOLEX_ID, Title, Country, Beg, End, SignatureC, Force, Rat)
 
 #Add a qID column
 ECOLEX_MEM$qID <- code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
