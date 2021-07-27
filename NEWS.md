@@ -4,7 +4,7 @@
 
 ## Package changes
 
-No package change
+* Updated LICENSE.md with `update_package()` function
 
 ## Data changes
 
