@@ -6,6 +6,7 @@
 #' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
 #' functions.
 #'\describe{
-#' \item{MIA: }{A dataset with 78 observations and the following 4 variables: Name, Beg, End, COW.}
+#' \item{MIA: }{A dataset with 78 observations and the following
+#' 4 variables: Name, Beg, End, COW.}
 #' }
  "organizations"
