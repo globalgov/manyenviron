@@ -14,7 +14,7 @@
 * Added CIESIN dataset into agreements database
 * Used new version of `standardise_dates()` to transform dates column in `messydt` class
 * Used new version of `standardise_titles()` on title columns to better standardise specific words spelling
-* Simplified the tests of the databases according to these changes (`messydt` class allowing for uncertain, unspecified and approximate dates)
+* Simplified the tests of the databases according to these changes
 
 # qEnvironDev 0.0.2
 
