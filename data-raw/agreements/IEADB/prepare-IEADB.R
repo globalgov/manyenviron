@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
@@ -19,16 +18,16 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Memorandum of Understanding" = "Y", "Protocol" = "P")) %>% 
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
-  transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
-              Title = standardise_titles(`Treaty Name`),
-              Signature = messydates::as_messydate(`Signature Date`),
-              Force = messydates::as_messydate(`Date IEA entered into force`)) %>% 
+  qData::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
+                     Title = standardise_titles(`Treaty Name`),
+                     Signature = messydates::as_messydate(`Signature Date`),
+                     Force = messydates::as_messydate(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-IEADB$qID <- qCreate::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
+IEADB$qID <- code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

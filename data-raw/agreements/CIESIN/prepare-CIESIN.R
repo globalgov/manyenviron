@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
@@ -13,15 +12,15 @@ CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
 # formats of the 'CIESIN' object until the object created
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
-  transmutate(Title = standardise_titles(`Treaty Title`),
-              Signature = messydates::as_messydate(`Year of Agreement`), 
-              Force = messydates::as_messydate(`Year of Entry into Force`)) %>% 
+  qData::transmutate(Title = standardise_titles(`Treaty Title`),
+                     Signature = messydates::as_messydate(`Year of Agreement`),
+                     Force = messydates::as_messydate(`Year of Entry into Force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
+CIESIN$qID <- code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
 # qData includes several functions that should help cleaning
 # and standardising your data.

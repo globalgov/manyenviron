@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
@@ -13,13 +12,13 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
 # formats of the 'GNEVAR_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
-  transmutate(GNEVAR_ID = GENG,
-              Rat = messydates::as_messydate(Approval),
-              Withdrawal = messydates::as_messydate(Withdrawal1),
-              Signature = messydates::as_messydate(DocSign),
-              Force = messydates::as_messydate(DocForce), 
-              Term = messydates::as_messydate(DocEnd),
-              Force = messydates::as_messydate(InForce1)) %>% 
+  qData::transmutate(GNEVAR_ID = GENG,
+                     Rat = messydates::as_messydate(Approval),
+                     Withdrawal = messydates::as_messydate(Withdrawal1),
+                     Signature = messydates::as_messydate(DocSign),
+                     Force = messydates::as_messydate(DocForce),
+                     Term = messydates::as_messydate(DocEnd),
+                     Force = messydates::as_messydate(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
   dplyr::mutate(Title = standardise_titles(Title)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 

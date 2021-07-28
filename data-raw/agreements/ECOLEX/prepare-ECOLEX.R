@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 load("data-raw/agreements/ECOLEX/ecoagree.RData")
@@ -18,16 +17,16 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::rename("title" = "Title") %>% 
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
-  transmutate(ECOLEX_ID = `EcolexID`,
-              Title = standardise_titles(title),
-              Signature = messydates::as_messydate(lubridate::mdy(Date)), 
-              Force = messydates::as_messydate(lubridate::mdy(`Entry.into.force`))) %>%
+  qData::transmutate(ECOLEX_ID = `EcolexID`,
+                     Title = standardise_titles(title),
+                     Signature = messydates::as_messydate(lubridate::mdy(Date)),
+                     Force = messydates::as_messydate(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-ECOLEX$qID <- qCreate::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
+ECOLEX$qID <- code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

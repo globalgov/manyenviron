@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
@@ -14,14 +13,14 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # below (in stage three) passes all the tests. 
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
-  transmutate(Country = standardise_titles(country),
-              Title = standardise_titles(treatyname),
-              Signature = messydates::as_messydate(tsig),
-              SignatureC = messydates::as_messydate(csig),
-              Rat = messydates::as_messydate(crat),
-              End = messydates::as_messydate(tterm),
-              Force = messydates::as_messydate(ceif3),
-              Force2 = messydates::as_messydate(ceif4)) %>%
+  qData::transmutate(Country = standardise_titles(country),
+                     Title = standardise_titles(treatyname),
+                     Signature = messydates::as_messydate(tsig),
+                     SignatureC = messydates::as_messydate(csig),
+                     Rat = messydates::as_messydate(crat),
+                     End = messydates::as_messydate(tterm),
+                     Force = messydates::as_messydate(ceif3),
+                     Force2 = messydates::as_messydate(ceif4)) %>%
   dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 

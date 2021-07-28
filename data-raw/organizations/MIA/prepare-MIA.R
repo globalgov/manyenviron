@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 MIA <- haven::read_dta("data-raw/organizations/MIA/DP_volIII_june2019_15.dta")
@@ -18,8 +17,8 @@ MIA <- as_tibble(MIA) %>%
   dplyr::ungroup() %>% 
   dplyr::rename(Name = ioname,
                 COW = ionumber) %>% 
-  transmutate(Beg = standardise_dates(as.character(inception)),
-              End = standardise_dates(as.character(end))) %>%
+  qData::transmutate(Beg = standardise_dates(as.character(inception)),
+                     End = standardise_dates(as.character(end))) %>%
   dplyr::select(Name, Beg, End, COW) %>% 
   dplyr::arrange(Beg)
 # qData includes several functions that should help cleaning

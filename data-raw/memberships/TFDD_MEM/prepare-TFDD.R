@@ -3,7 +3,6 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 library(qCreate)
-library(qData)
 
 # Stage one: Collecting data
 TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
@@ -18,14 +17,14 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Beg = Signature)
 
 TFDD_MEM <- TFDD_MEM %>%
-  transmutate(TFDD_ID = `2016Update ID`,
-              Country = CCODE,
-              Title = standardise_titles(DocumentName)) %>%
+  qData::transmutate(TFDD_ID = `2016Update ID`,
+                     Country = CCODE,
+                     Title = standardise_titles(DocumentName)) %>%
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
-TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
+TFDD_MEM$qID <- code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # qData includes several functions that should help cleaning
 # and standardising your data.
