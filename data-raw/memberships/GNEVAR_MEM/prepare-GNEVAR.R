@@ -2,7 +2,6 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qCreate)
 
 # Stage one: Collecting data
 GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
@@ -13,28 +12,28 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   qData::transmutate(GNEVAR_ID = GENG,
-                     Rat = messydates::as_messydate(Approval),
-                     Withdrawal = messydates::as_messydate(Withdrawal1),
-                     Signature = messydates::as_messydate(DocSign),
-                     Force = messydates::as_messydate(DocForce),
-                     Term = messydates::as_messydate(DocEnd),
-                     Force = messydates::as_messydate(InForce1)) %>% 
+                     Rat = qCreate::standardise_dates(Approval),
+                     Withdrawal = qCreate::standardise_dates(Withdrawal1),
+                     Signature = qCreate::standardise_dates(DocSign),
+                     Force = qCreate::standardise_dates(DocForce),
+                     Term = qCreate::standardise_dates(DocEnd),
+                     Force = qCreate::standardise_dates(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
-  dplyr::mutate(Title = standardise_titles(Title)) %>% 
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-GNEVAR_MEM$qID <- code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
+GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
 # qData includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR_MEM available within the qPackage.
-export_data(GNEVAR_MEM, database = "memberships", URL = "NA")
+qCreate::export_data(GNEVAR_MEM, database = "memberships", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

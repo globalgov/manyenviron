@@ -2,7 +2,6 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qCreate)
 
 # Stage one: Collecting data
 REF <- load("data-raw/references/ref/ecorefer.RData")
@@ -36,7 +35,7 @@ for (k in seq_len(nrow(ECOLEX))) {
 # Stage three: Connecting data
 # Next run the following line to make ref available
 # within the qPackage.
-export_data(REF, database = "references", URL = "NA")
+qCreate::export_data(REF, database = "references", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

@@ -2,7 +2,6 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qCreate)
 
 # Stage one: Collecting data
 TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
@@ -19,12 +18,12 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 TFDD_MEM <- TFDD_MEM %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
                      Country = CCODE,
-                     Title = standardise_titles(DocumentName)) %>%
+                     Title = qCreate::standardise_titles(DocumentName)) %>%
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
-TFDD_MEM$qID <- code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
+TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # qData includes several functions that should help cleaning
 # and standardising your data.
@@ -32,7 +31,7 @@ TFDD_MEM$qID <- code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # Stage three: Connecting data
 # Next run the following line to make TFDD_MEM available within the qPackage.
-export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
+qCreate::export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
