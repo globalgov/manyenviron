@@ -101,7 +101,10 @@ test_that("Optional dates columns are standardized", {
 
 # Dataset should be ordered according to the "Beg" column
 test_that("dataset is arranged by the `Beg` variable", {
-  expect_true(memberships[["TFDD_MEM"]]$Beg[1] < memberships[["TFDD_MEM"]]$Beg[10])
-  expect_true(memberships[["TFDD_MEM"]]$Beg[50] < memberships[["TFDD_MEM"]]$Beg[75])
-  expect_true(memberships[["TFDD_MEM"]]$Beg[100] < memberships[["TFDD_MEM"]]$Beg[120])
+  expect_true(memberships[["TFDD_MEM"]]$Beg[1] <
+                memberships[["TFDD_MEM"]]$Beg[10])
+  expect_true(memberships[["TFDD_MEM"]]$Beg[50] <
+                memberships[["TFDD_MEM"]]$Beg[75])
+  expect_true(memberships[["TFDD_MEM"]]$Beg[100] <
+                memberships[["TFDD_MEM"]]$Beg[120])
 })
