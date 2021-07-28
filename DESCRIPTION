@@ -31,11 +31,11 @@ Imports:
     dplyr,
     lubridate,
     roxygen2,
-    usethis
+    usethis,
+    qData,
+    qCreate
 Suggests: 
     purrr,
-    qData,
-    qCreate,
     rlang,
     testthat (>= 3.0.0)
 Remotes:

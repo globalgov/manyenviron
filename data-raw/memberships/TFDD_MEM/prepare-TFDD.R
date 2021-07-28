@@ -12,7 +12,7 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = openxlsx::convertToDate(DateSigned)) %>% 
-  dplyr::mutate(Signature = messydates::as_messydate(as.character(Signature))) %>% 
+  dplyr::mutate(Signature = qCreate::standardise_dates(as.character(Signature))) %>% 
   dplyr::mutate(Beg = Signature)
 
 TFDD_MEM <- TFDD_MEM %>%
