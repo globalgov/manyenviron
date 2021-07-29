@@ -36,7 +36,7 @@ ECOLEX_MEM$SignatureC <- qCreate::standardise_dates(ECOLEX_MEM$SignatureC)
 ECOLEX_MEM$Force <- qCreate::standardise_dates(ECOLEX_MEM$Force)
 ECOLEX_MEM$Rat <- qCreate::standardise_dates(ECOLEX_MEM$Rat)
 
-ECOLEX_MEM <- ECOLEX_MEM %>% 
+ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>% 
   dplyr::select(ECOLEX_ID, Title, Country, Beg, End, SignatureC, Force, Rat) %>% 
   dplyr::arrange(Beg)
 
