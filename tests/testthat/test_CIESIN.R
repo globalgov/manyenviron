@@ -49,7 +49,7 @@ test_that("Column `Signature` has standardised dates", {
   expect_false(any(grepl("^[:digit:]{2}$",
                          agreements[["CIESIN"]]$Signature)))
   expect_false(any(grepl("^[:digit:]{3}$",
-                         agreements[["CIESIN"]]$Sighature)))
+                         agreements[["CIESIN"]]$Signature)))
   expect_false(any(grepl("^[:digit:]{1}$",
                          agreements[["CIESIN"]]$Signature)))
 })
@@ -65,44 +65,6 @@ test_that("Column `Force` has standardised dates", {
                          agreements[["CIESIN"]]$Force)))
   expect_false(any(grepl("^[:digit:]{1}$",
                          agreements[["CIESIN"]]$Force)))
-})
-
-# Dates are standardized for optional columns
-test_that("Columns with dates are standardized", {
-  if (!is.null(agreements[["CIESIN"]]$End)) {
-    expect_false(any(grepl("/", agreements[["CIESIN"]]$End)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           agreements[["CIESIN"]]$End)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           agreements[["CIESIN"]]$End)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           agreements[["CIESIN"]]$End)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           agreements[["CIESIN"]]$End)))
-  }
-  if (!is.null(agreements[["CIESIN"]]$Rat)) {
-    expect_false(any(grepl("/", agreements[["CIESIN"]]$Rat)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           agreements[["CIESIN"]]$Rat)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           agreements[["CIESIN"]]$Rat)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           agreements[["CIESIN"]]$Rat)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           agreements[["CIESIN"]]$Rat)))
-  }
-  if (!is.null(agreements[["CIESIN"]]$Term)) {
-    expect_equal(class(agreements[["CIESIN"]]$Term), "messydt")
-    expect_false(any(grepl("/", agreements[["CIESIN"]]$Term)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           agreements[["CIESIN"]]$Term)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           agreements[["CIESIN"]]$Term)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           agreements[["CIESIN"]]$Term)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           agreements[["CIESIN"]]$Term)))
-  }
 })
 
 # Dataset should be ordered according to the "Beg" column

@@ -38,67 +38,6 @@ test_that("Column `Beg` has standardised dates", {
                          memberships[["TFDD_MEM"]]$Beg)))
 })
 
-# Dates are standardized for optional columns
-test_that("Optional dates columns are standardized", {
-  if (!is.null(memberships[["TFDD_MEM"]]$Force)) {
-    expect_equal(class(memberships[["TFDD_MEM"]]$Force), "messydt")
-    expect_false(any(grepl("/", memberships[["TFDD_MEM"]]$Force)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           memberships[["TFDD_MEM"]]$Force)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           memberships[["TFDD_MEM"]]$Force)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           memberships[["TFDD_MEM"]]$Force)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           memberships[["TFDD_MEM"]]$Force)))
-  }
-  if (!is.null(memberships[["TFDD_MEM"]]$Signature)) {
-    expect_equal(class(memberships[["TFDD_MEM"]]$Signature), "messydt")
-    expect_false(any(grepl("/", memberships[["TFDD_MEM"]]$Signature)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           memberships[["TFDD_MEM"]]$Signature)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           memberships[["TFDD_MEM"]]$Signature)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           memberships[["TFDD_MEM"]]$Signature)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           memberships[["TFDD_MEM"]]$Signature)))
-  }
-  if (!is.null(memberships[["TFDD_MEM"]]$End)) {
-    expect_false(any(grepl("/", memberships[["TFDD_MEM"]]$End)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           memberships[["TFDD_MEM"]]$End)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           memberships[["TFDD_MEM"]]$End)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           memberships[["TFDD_MEM"]]$End)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           memberships[["TFDD_MEM"]]$End)))
-  }
-  if (!is.null(memberships[["TFDD_MEM"]]$Rat)) {
-    expect_false(any(grepl("/", memberships[["TFDD_MEM"]]$Rat)))
-    expect_false(any(grepl("^[:alpha:]$",
-                           memberships[["TFDD_MEM"]]$Rat)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           memberships[["TFDD_MEM"]]$Rat)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           memberships[["TFDD_MEM"]]$Rat)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           memberships[["TFDD_MEM"]]$Rat)))
-  }
-  if (!is.null(memberships[["TFDD_MEM"]]$Term)) {
-    expect_equal(class(memberships[["TFDD_MEM"]]$Term), "messydt")
-    expect_false(any(grepl("^[:alpha:]$",
-                           memberships[["TFDD_MEM"]]$Term)))
-    expect_false(any(grepl("^[:digit:]{2}$",
-                           memberships[["TFDD_MEM"]]$Term)))
-    expect_false(any(grepl("^[:digit:]{3}$",
-                           memberships[["TFDD_MEM"]]$Term)))
-    expect_false(any(grepl("^[:digit:]{1}$",
-                           memberships[["TFDD_MEM"]]$Term)))
-  }
-})
-
 # Dataset should be ordered according to the "Beg" column
 test_that("dataset is arranged by the `Beg` variable", {
   expect_true(memberships[["TFDD_MEM"]]$Beg[1] <
