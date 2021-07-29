@@ -1,6 +1,6 @@
 # qEnvironDev 0.0.3
 
-2021-07-28
+2021-07-29
 
 ## Package changes
 
@@ -8,13 +8,19 @@
 
 ## Data changes
 
-* Closes #6 by adding MIA dataset into organizations database
-* Closes #21 by joining numerous GNEVAR datasets with the `consolidate()` function
-* Closes #22 by adding REF dataset into references database
-* Added CIESIN dataset into agreements database
 * Used new version of `standardise_dates()` to transform dates column in `messydt` class
 * Used new version of `standardise_titles()` on title columns to better standardise specific words spelling
 * Simplified the tests of the databases according to these changes
+
+### organizations database
+* Closes #6 by adding MIA dataset into organizations database
+
+### agreements database
+* Closes #21 by joining numerous GNEVAR datasets with the `consolidate()` function
+* Added CIESIN dataset into agreements database
+
+### references database
+* Closes #22 by adding REF dataset into references database
 
 # qEnvironDev 0.0.2
 
