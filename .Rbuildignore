@@ -16,7 +16,7 @@
 ^data-raw/agreements/TFDD$
 ^data-raw/memberships/TFDD$
 ^data-raw/memberships/TFDD_MEM$
-^data-raw/international organizations$
-^data-raw/international organizations/MIA$
+^data-raw/organizations$
+^data-raw/organizations/MIA$
 ^data-raw/references$
 ^data-raw/references/ref$
