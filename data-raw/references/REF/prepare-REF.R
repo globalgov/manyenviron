@@ -16,7 +16,7 @@ REF <- as.data.frame(as.matrix(eco_refer)) %>%
 REF <- as_tibble(REF)
 
 REF$References <-gsub("c|\\(|\\)|\"", "", as.character(REF$References))
-REF$References <-gsub("\\,", " ", as.character(REF$References))
+REF$References <-gsub("\\,", "", as.character(REF$References))
 
 # Replace ECOLEX_ID by qID
 ECOLEX <- qEnviron::agreements$ECOLEX
@@ -28,14 +28,23 @@ for (k in seq_len(nrow(ECOLEX))) {
   REF$References <- gsub(paste0(ECOLEX$ECOLEX_ID[[k]]), paste0(ECOLEX$qID[[k]]), REF$References, ignore.case = TRUE, perl = T)
 }
 
-# qData includes several functions that should help cleaning
+REF$References <- stringr::str_replace_all(REF$References, "\\sby", "-by")
+REF <- tidyr::separate(REF, References, into = c("Treaty1", "Action", "Treaty2", "Treaty3",
+                                                 "Treaty4", "Treaty5", "Treaty6", "Treaty7",
+                                                 "Treaty8", "Treaty9", "Treaty10", "Treaty11",
+                                                 "Treaty12", "Treaty13", "Treaty14", "Treaty15",
+                                                 "Treaty16", "Treaty17", "Treaty18", "Treaty19",
+                                                 "Treaty20", "Treaty21", "Treaty22", "Treaty23",
+                                                 "Treaty24", "Treaty25", "Treaty26", "Treaty27",
+                                                 "Treaty28", "Treaty29", "Treaty30", "Treaty31"), sep = "\\s")
+# qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make ref available
 # within the qPackage.
-qCreate::export_data(REF, database = "references", URL = "NA")
+qCreate::export_data(REF, database = "references", URL = "NA", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
