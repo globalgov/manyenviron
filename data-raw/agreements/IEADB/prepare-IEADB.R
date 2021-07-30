@@ -28,12 +28,12 @@ IEADB <- as_tibble(IEADB)  %>%
 # Add qID column
 IEADB$qID <- qCreate::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 
-# qData includes several functions that should help cleaning and standardising your data.
+# qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make IEADB available within the qPackage.
-qCreate::export_data(IEADB, database = "agreements", URL = "https://iea.uoregon.edu/base-agreement-list")
+qCreate::export_data(IEADB, database = "agreements", URL = "https://iea.uoregon.edu/base-agreement-list", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.
