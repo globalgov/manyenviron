@@ -29,7 +29,7 @@ for (k in seq_len(nrow(ECOLEX))) {
 }
 
 REF$References <- stringr::str_replace_all(REF$References, "\\sby", "-by")
-REF <- tidyr::separate(REF, References, into = c("Treaty1", "Action", "Treaty2", "Treaty3",
+REF <- tidyr::separate(REF, References, into = c("Treaty1", "ReferenceType", "Treaty2", "Treaty3",
                                                  "Treaty4", "Treaty5", "Treaty6", "Treaty7",
                                                  "Treaty8", "Treaty9", "Treaty10", "Treaty11",
                                                  "Treaty12", "Treaty13", "Treaty14", "Treaty15",
@@ -37,6 +37,14 @@ REF <- tidyr::separate(REF, References, into = c("Treaty1", "Action", "Treaty2",
                                                  "Treaty20", "Treaty21", "Treaty22", "Treaty23",
                                                  "Treaty24", "Treaty25", "Treaty26", "Treaty27",
                                                  "Treaty28", "Treaty29", "Treaty30", "Treaty31"), sep = "\\s")
+
+REF <- REF %>% 
+  tidyr::unite(Treaty2, Treaty2:Treaty31, sep=", ")
+
+REF$Treaty2 <- stringr::str_replace_all(REF$Treaty2, ", NA", "")
+
+REF <- REF %>% 
+  dplyr::select(Treaty1, Treaty2, ReferenceType)
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
