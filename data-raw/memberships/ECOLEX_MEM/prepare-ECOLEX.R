@@ -37,18 +37,18 @@ ECOLEX_MEM$Force <- qCreate::standardise_dates(ECOLEX_MEM$Force)
 ECOLEX_MEM$Rat <- qCreate::standardise_dates(ECOLEX_MEM$Rat)
 
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>% 
-  dplyr::select(ECOLEX_ID, Title, Country, Beg, End, SignatureC, Force, Rat) %>% 
+  dplyr::select(ECOLEX_ID, Country, Title, Beg, End, SignatureC, Rat, Force) %>% 
   dplyr::arrange(Beg)
 
 #Add a qID column
 ECOLEX_MEM$qID <- qCreate::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
 
-# qData includes several functions that should help cleaning and standardising your data.
+# qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make ECOLEX_MEM available within the qPackage.
-qCreate::export_data(ECOLEX_MEM, database = "memberships", URL = "https://www.ecolex.org/result/?type=treaty")
+qCreate::export_data(ECOLEX_MEM, database = "memberships", URL = "https://www.ecolex.org/result/?type=treaty", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

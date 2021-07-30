@@ -28,7 +28,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
 # Add qID column
 GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
-# qData includes several functions that should help cleaning and standardising your data.
+# qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data

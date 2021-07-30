@@ -6,8 +6,9 @@
 #' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
 #' functions.
 #'\describe{
-#' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following 9
-#' variables: ECOLEX_ID, Title, Country, Beg, End, SignatureC, Force, Rat, qID.}
+#' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
+#' 9 variables: ECOLEX_ID, Country, Title, Beg, End, SignatureC, Rat, Force,
+#' qID.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
 #' 12 variables: GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature,
 #' Rat, Force, Term, Withdrawal, qID.}
