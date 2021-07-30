@@ -1,10 +1,10 @@
 # qEnvironDev 0.0.3
 
-2021-07-29
+2021-07-30
 
 ## Package changes
 
-* Updated LICENSE.md with `update_package()` function
+* Updated LICENSE.md with `qCreate::update_package()` function
 
 ## Data changes
 
