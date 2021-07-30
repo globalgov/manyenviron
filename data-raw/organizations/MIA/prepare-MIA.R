@@ -20,14 +20,15 @@ MIA <- as_tibble(MIA) %>%
                      End = qCreate::standardise_dates(as.character(end))) %>%
   dplyr::select(Name, Beg, End, COW) %>% 
   dplyr::arrange(Beg)
-# qData includes several functions that should help cleaning
+
+# qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make MIA available 
 # within the qPackage.
-qCreate::export_data(MIA, database = "organizations", URL = "https://garymarks.web.unc.edu/data/international-authority/")
+qCreate::export_data(MIA, database = "organizations", URL = "https://garymarks.web.unc.edu/data/international-authority/", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
