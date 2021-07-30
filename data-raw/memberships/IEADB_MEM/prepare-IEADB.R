@@ -12,7 +12,7 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # below (in stage three) passes all the tests. 
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
-  qData::transmutate(Country = qCreate::standardise_titles(country),
+  qData::transmutate(Country = qStates::code_states(country),
                      Title = qCreate::standardise_titles(treatyname),
                      Signature = qCreate::standardise_dates(tsig),
                      SignatureC = qCreate::standardise_dates(csig),
