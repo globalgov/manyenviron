@@ -42,6 +42,7 @@ REF <- REF %>%
   tidyr::unite(Treaty2, Treaty2:Treaty31, sep=", ")
 
 REF$Treaty2 <- stringr::str_replace_all(REF$Treaty2, ", NA", "")
+REF$ReferenceType <- stringr::str_replace_all(REF$ReferenceType, "-", " ")
 
 REF <- REF %>% 
   dplyr::select(Treaty1, Treaty2, ReferenceType)
