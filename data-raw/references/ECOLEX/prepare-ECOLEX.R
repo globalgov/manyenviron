@@ -31,3 +31,32 @@ ECOLEX <- as_tibble(t(do.call(cbind, ECOLEX)))
 colnames(ECOLEX) <- c("Treaty1", "RefType", "Treaty2")
 ECOLEX
 
+# Replace ECOLEX_ID by qID
+ecoid <- qEnviron::agreements$ECOLEX
+ecoid <- ecoid %>% 
+  dplyr::select(ECOLEX_ID, qID)
+
+ECOLEX <- dplyr::left_join(ECOLEX, ecoid, by = c("Treaty1" = "ECOLEX_ID")) %>%
+  dplyr::rename(qID1 = "qID")
+ECOLEX <- dplyr::left_join(ECOLEX, ecoid, by = c("Treaty2" = "ECOLEX_ID")) %>%
+  dplyr::rename(qID2 = "qID") %>% dplyr::select(qID1, RefType, qID2)
+ECOLEX
+
+# qCreate includes several functions that should help cleaning
+# and standardising your data.
+# Please see the vignettes or website for more details.
+
+# Stage three: Connecting data
+# Next run the following line to make ref available
+# within the qPackage.
+qCreate::export_data(ECOLEX, database = "references", URL = "NA", package = "qEnviron")
+# This function also does two additional things.
+# First, it creates a set of tests for this object to ensure adherence
+# to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
+# to run these tests locally at any point.
+# Any test failures should be pretty self-explanatory and may require
+# you to return to stage two and further clean, standardise, or wrangle
+# your data into the expected format.
+# Second, it also creates a documentation file for you to fill in.
+# Please make sure that you cite any sources appropriately and fill in as
+# much detail about the variables etc as possible.
