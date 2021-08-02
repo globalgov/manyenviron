@@ -4,16 +4,23 @@
 # ready for the qPackage.
 
 # Stage one: Collecting data
-REF <- load("data-raw/references/ref/ecorefer.RData")
+load("data-raw/references/REF/ecorefer.RData")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
-# formats of the 'ref' object until the object created
+# formats of the 'REF' object until the object created
 # below (in stage three) passes all the tests.
-REF <- as.data.frame(as.matrix(eco_refer)) %>% 
+REF <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
+  purrr::map(function(x){
+    treatyrefs <- grepl("^TRE", x)
+    if(sum(!treatyrefs)==1) paste(x[1], x[2], x[3:length(x)], sep = "_")
+  } )
+REF
+
+REF <- unlist(eco_refer) %>% 
   dplyr::rename(References = V1)
 
-REF <- as_tibble(REF)
+REF <- as_tibble(eco_refer)
 
 REF$References <-gsub("c|\\(|\\)|\"", "", as.character(REF$References))
 REF$References <-gsub("\\,", "", as.character(REF$References))
