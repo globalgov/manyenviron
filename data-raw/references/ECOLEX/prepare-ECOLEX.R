@@ -27,3 +27,7 @@ ECOLEX <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
       k
     } 
   } ) %>% unlist() %>% stringr::str_split("_")
+ECOLEX <- as_tibble(t(do.call(cbind, ECOLEX)))
+colnames(ECOLEX) <- c("Treaty1", "RefType", "Treaty2")
+ECOLEX
+
