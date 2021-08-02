@@ -15,15 +15,13 @@ REF <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
     treatyrefs <- grepl("^TRE", x)
     if(sum(!treatyrefs)==1) paste(x[1], x[2], x[3:length(x)], sep = "_")
   } )
-REF
 
-REF <- unlist(eco_refer) %>% 
-  dplyr::rename(References = V1)
+# Make REF a tibble
+REF <- unlist(REF)
+REF <- as_tibble(REF)
 
-REF <- as_tibble(eco_refer)
-
-REF$References <-gsub("c|\\(|\\)|\"", "", as.character(REF$References))
-REF$References <-gsub("\\,", "", as.character(REF$References))
+# Divide REF into three columns 
+REF <- tidyr::separate(REF, value, into = c("Treaty1", "ReferenceType", "Treaty2"), sep = "_")
 
 # Replace ECOLEX_ID by qID
 ECOLEX <- qEnviron::agreements$ECOLEX
@@ -32,27 +30,16 @@ ECOLEX <- ECOLEX %>%
   
 ECOLEX <- as.data.frame(ECOLEX)
 for (k in seq_len(nrow(ECOLEX))) {
-  REF$References <- gsub(paste0(ECOLEX$ECOLEX_ID[[k]]), paste0(ECOLEX$qID[[k]]), REF$References, ignore.case = TRUE, perl = T)
+  REF$Treaty1 <- gsub(paste0(ECOLEX$ECOLEX_ID[[k]]), paste0(ECOLEX$qID[[k]]), REF$Treaty1, ignore.case = TRUE, perl = T)
+}
+for (k in seq_len(nrow(ECOLEX))) {
+  REF$Treaty2 <- gsub(paste0(ECOLEX$ECOLEX_ID[[k]]), paste0(ECOLEX$qID[[k]]), REF$Treaty2, ignore.case = TRUE, perl = T)
 }
 
-REF$References <- stringr::str_replace_all(REF$References, "\\sby", "-by")
-REF <- tidyr::separate(REF, References, into = c("Treaty1", "ReferenceType", "Treaty2", "Treaty3",
-                                                 "Treaty4", "Treaty5", "Treaty6", "Treaty7",
-                                                 "Treaty8", "Treaty9", "Treaty10", "Treaty11",
-                                                 "Treaty12", "Treaty13", "Treaty14", "Treaty15",
-                                                 "Treaty16", "Treaty17", "Treaty18", "Treaty19",
-                                                 "Treaty20", "Treaty21", "Treaty22", "Treaty23",
-                                                 "Treaty24", "Treaty25", "Treaty26", "Treaty27",
-                                                 "Treaty28", "Treaty29", "Treaty30", "Treaty31"), sep = "\\s")
-
-REF <- REF %>% 
-  tidyr::unite(Treaty2, Treaty2:Treaty31, sep=", ")
-
-REF$Treaty2 <- stringr::str_replace_all(REF$Treaty2, ", NA", "")
-REF$ReferenceType <- stringr::str_replace_all(REF$ReferenceType, "-", " ")
-
+# Order the columns
 REF <- REF %>% 
   dplyr::select(Treaty1, Treaty2, ReferenceType)
+
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.

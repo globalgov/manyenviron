@@ -6,7 +6,7 @@
 #' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
 #' functions.
 #'\describe{
-#' \item{REF: }{A dataset with 2174 observations and the following
+#' \item{REF: }{A dataset with 595 observations and the following
 #' 3 variables: Treaty1, Treaty2, ReferenceType.}
 #' }
  "references"
