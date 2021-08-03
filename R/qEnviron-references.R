@@ -9,6 +9,6 @@
 #' \item{ECOLEX: }{A dataset with 1164 observations and the following
 #' 3 variables: qID1, RefType, qID2.}
 #' \item{ECOLEX_REF: }{A dataset with 1164 observations and the following
-#' 3 variables: Treaty1, RefType, Treaty2.}
+#' 3 variables: qID1, RefType, qID2.}
 #' }
  "references"
