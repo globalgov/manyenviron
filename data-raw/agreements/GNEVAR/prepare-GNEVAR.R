@@ -2,10 +2,14 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
 
 # Stage one: Collecting data
 GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1 VERS2.csv")
+GNEVAR2 <- readr::read_csv2("data-raw/agreements/GNEVAR/endb4beg.csv")
+GNEVAR3 <- readr::read_csv("data-raw/agreements/GNEVAR/gnevar.csv")
+GNEVAR4 <- readr::read_csv("data-raw/agreements/GNEVAR/GENG v1.2 (31.10.2015).csv")
+GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
+
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'GNEVAR' object until the object created
@@ -13,22 +17,67 @@ GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1 VERS2
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>% 
   dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q", D="V", R="W", N="X", U="Y")) %>% 
-  transmutate(Signature = standardise_dates(DocSign),
-              End = standardise_dates(DocEnd),
-              Force = standardise_dates(DocForce),# some dates formats are failing to pass (e.i 0000-00-00)
-              GNEVAR_ID = GENG,
-              ECOLEX_ID = ECOLEX) %>% 
-  dplyr::mutate(Title = standardise_titles(Title)) %>%
+  qData::transmutate(Signature = qCreate::standardise_dates(DocSign),
+                     End = qCreate::standardise_dates(DocEnd),
+                     Force = qCreate::standardise_dates(DocForce),
+                     GNEVAR_ID = GENG,
+                     ECOLEX_ID = ECOLEX) %>% 
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force, IEADB_ID, ECOLEX_ID) %>% 
-  dplyr::arrange(Beg, GNEVAR_ID)
+  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
+  dplyr::arrange(Beg)
 
-# qData includes several functions that should help cleaning and standardising your data.
+# Add qID column
+GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
+
+# # Clean GNEVAR 2
+GNEVAR2 <- as_tibble(GNEVAR2) %>%
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>%
+  dplyr::mutate(Beg = qCreate::standardise_dates(Beg)) %>% 
+  dplyr::mutate(End = qCreate::standardise_dates(End)) %>% 
+  dplyr::mutate(Force = qCreate::standardise_dates(Force)) %>% 
+  dplyr::mutate(Term = qCreate::standardise_dates(Term)) %>% 
+  qData::transmutate(Signature = qCreate::standardise_dates(Sign))
+
+# Add qID column
+GNEVAR2$qID<- qCreate::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
+
+# Clean GNEVAR3 is the same as GNEVAR, no need to include it
+
+# Clean GNEVAR4
+GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
+GNEVAR4 <- as_tibble(GNEVAR4) %>%
+  qData::transmutate(Signature = qCreate::standardise_dates(DocDate),
+                     Force = qCreate::standardise_dates(InForce)) %>%
+  dplyr::mutate(End = qCreate::standardise_dates(End)) %>%
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(Title, Beg, Signature, Force, End, Parties)
+
+# Add qID column
+GNEVAR4$qID<- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
+
+# Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
+# Can not integrate it into GNEVAR
+
+# Create a GNEVAR "database" to apply consoldiate()
+GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
+
+# Join the datasets together
+GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
+
+# Select some columns
+GNEVAR <- GNEVAR %>% 
+  dplyr::select(GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID) %>% 
+  dplyr::arrange(Beg)
+
+# qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR available within the qPackage.
-export_data(GNEVAR, database = "agreements", URL = "NA")
+qCreate::export_data(GNEVAR, database = "agreements", URL = "NA", package = "qEnviron")
+
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

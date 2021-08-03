@@ -2,7 +2,6 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
@@ -18,20 +17,23 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Memorandum of Understanding" = "Y", "Protocol" = "P")) %>% 
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
-  transmutate(IEADB_ID = `IEA# (click for add'l info)`,
-              Title = standardise_titles(`Treaty Name`),
-              Signature = standardise_dates(`Signature Date`),
-              Force = standardise_dates(`Date IEA entered into force`)) %>% 
+  qData::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
+                     Title = qCreate::standardise_titles(`Treaty Name`),
+                     Signature = qCreate::standardise_dates(`Signature Date`),
+                     Force = qCreate::standardise_dates(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# qData includes several functions that should help cleaning and standardising your data.
+# Add qID column
+IEADB$qID <- qCreate::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
+
+# qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make IEADB available within the qPackage.
-export_data(IEADB, database = "agreements", URL = "https://iea.uoregon.edu/base-agreement-list")
+qCreate::export_data(IEADB, database = "agreements", URL = "https://iea.uoregon.edu/base-agreement-list", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

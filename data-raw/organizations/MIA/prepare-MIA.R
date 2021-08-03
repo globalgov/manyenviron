@@ -1,34 +1,34 @@
-# TFDD_MEM Preparation Script
+# MIA Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
 
 # Stage one: Collecting data
-TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
+MIA <- haven::read_dta("data-raw/organizations/MIA/DP_volIII_june2019_15.dta")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
-# formats of the 'TFDD_MEM' object until the object created
+# formats of the 'MIA' object until the object created
 # below (in stage three) passes all the tests.
-TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(signature = openxlsx::convertToDate(TFDD_MEM$DateSigned)) %>% 
-  dplyr::mutate(sign = as.character(signature)) %>% 
-  dplyr::mutate(Signature1 = dplyr::coalesce(sign, DateSigned)) %>% 
-  transmutate(TFDD_ID = `2016Update ID`,
-              Country = CCODE,
-              Title = standardise_titles(DocumentName),
-              Signature = standardise_dates(Signature1)) %>%
-  dplyr::select(TFDD_ID, Country, Title, Signature) %>% 
-  dplyr::arrange(Signature)
+MIA <- as_tibble(MIA) %>%
+  dplyr::group_by(ioname) %>% 
+  dplyr::slice(1) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::rename(Name = ioname,
+                COW = ionumber) %>% 
+  qData::transmutate(Beg = qCreate::standardise_dates(as.character(inception)),
+                     End = qCreate::standardise_dates(as.character(end))) %>%
+  dplyr::select(Name, Beg, End, COW) %>% 
+  dplyr::arrange(Beg)
 
-# qData includes several functions that should help cleaning
+# qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make TFDD_MEM available within the qPackage.
-export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
+# Next run the following line to make MIA available 
+# within the qPackage.
+qCreate::export_data(MIA, database = "organizations", URL = "https://garymarks.web.unc.edu/data/international-authority/", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

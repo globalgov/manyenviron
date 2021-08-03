@@ -2,38 +2,41 @@
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
-library(qData)
 
 # Stage one: Collecting data
-IEA_MEM <- readxl::read_excel("data-raw/memberships/IEA_MEM/iea-memb.xlsx")
+IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
-IEA_MEM <- as_tibble(IEA_MEM) %>%
+IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
-  transmutate(Country = standardise_titles(country),
-              Title = standardise_titles(treatyname),
-              Signature = standardise_dates(tsig),
-              SignatureC = standardise_dates(csig),
-              Rat = standardise_dates(crat),
-              End = standardise_dates(tterm),
-              Force = standardise_dates(ceif3),
-              Force2 = standardise_dates(ceif4)) %>%
+  qData::transmutate(Country = qStates::code_states(country),
+                     Title = qCreate::standardise_titles(treatyname),
+                     Signature = qCreate::standardise_dates(tsig),
+                     SignatureC = qCreate::standardise_dates(csig),
+                     Rat = qCreate::standardise_dates(crat),
+                     End = qCreate::standardise_dates(tterm),
+                     Force = qCreate::standardise_dates(ceif3),
+                     Force2 = qCreate::standardise_dates(ceif4)) %>%
   dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 
-IEA_MEM <- IEA_MEM[!(is.na(IEA_MEM$Force) & IEA_MEM$name =="Force2"),] %>% 
+IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %>% 
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
   dplyr::arrange(Beg)
-# qData includes several functions that should help cleaning and standardising your data.
+
+# Add a qID column
+IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
+
+# qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make IEA_MEM available within the qPackage.
-export_data(IEA_MEM, database = "memberships", URL = "https://iea.uoregon.edu/country-members")
+qCreate::export_data(IEADB_MEM, database = "memberships", URL = "https://iea.uoregon.edu/country-members", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

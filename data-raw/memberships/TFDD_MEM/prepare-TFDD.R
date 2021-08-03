@@ -1,35 +1,37 @@
-# CIESIN Preparation Script
+# TFDD_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the qPackage.
 
 # Stage one: Collecting data
-CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
+TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
-# formats of the 'CIESIN' object until the object created
+# formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
-CIESIN <- as_tibble(CIESIN) %>%
-  qData::transmutate(Title = qCreate::standardise_titles(`Treaty Title`),
-                     Signature = qCreate::standardise_dates(`Year of Agreement`),
-                     Force = qCreate::standardise_dates(`Year of Entry into Force`)) %>% 
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(Title, Beg, Signature, Force) %>% 
+TFDD_MEM <- as_tibble(TFDD_MEM) %>%
+  dplyr::mutate(Signature = openxlsx::convertToDate(DateSigned)) %>% 
+  dplyr::mutate(Signature = qCreate::standardise_dates(as.character(Signature))) %>% 
+  dplyr::mutate(Beg = Signature)
+
+TFDD_MEM <- TFDD_MEM %>%
+  qData::transmutate(TFDD_ID = `2016Update ID`,
+                     Country = CCODE,
+                     Title = qCreate::standardise_titles(DocumentName)) %>%
+  dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
-# Add qID column
-CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
+# Add a qID column
+TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make CIESIN available within the qPackage.
-qCreate::export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/", package = "qEnviron")
-# can not export yet as standardise_dates() do not function on dates range
-
+# Next run the following line to make TFDD_MEM available within the qPackage.
+qCreate::export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

@@ -1,0 +1,11 @@
+citHeader("To cite qEnviron in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "qEnviron: Environmental agreements for qData",
+  author   = "James Hollway",
+  year     = "2021",
+  url      = "https://github.com/globalgov/qEnviron",
+  textVersion = paste("J. Hollway. Environmental agreements for qData. 2021."
+  )
+)
