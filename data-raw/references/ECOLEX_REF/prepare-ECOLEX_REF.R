@@ -10,7 +10,7 @@ load("data-raw/references/REF/ecorefer.RData")
 # In this stage you will want to correct the variable names and
 # formats of the 'REF' object until the object created
 # below (in stage three) passes all the tests.
-ECOLEX <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
+ECOLEX_REF <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
   purrr::map(function(x){
     treatyrefs <- grepl("^TRE", x)
     index <- x[1]
@@ -27,20 +27,20 @@ ECOLEX <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
       k
     } 
   } ) %>% unlist() %>% stringr::str_split("_")
-ECOLEX <- as_tibble(t(do.call(cbind, ECOLEX)))
-colnames(ECOLEX) <- c("Treaty1", "RefType", "Treaty2")
-ECOLEX
+ECOLEX_REF <- as_tibble(t(do.call(cbind, ECOLEX_REF)))
+colnames(ECOLEX_REF) <- c("Treaty1", "RefType", "Treaty2")
+ECOLEX_REF
 
 # Replace ECOLEX_ID by qID
 ecoid <- qEnviron::agreements$ECOLEX
 ecoid <- ecoid %>% 
   dplyr::select(ECOLEX_ID, qID)
 
-ECOLEX <- dplyr::left_join(ECOLEX, ecoid, by = c("Treaty1" = "ECOLEX_ID")) %>%
+ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty1" = "ECOLEX_ID")) %>%
   dplyr::rename(qID1 = "qID")
-ECOLEX <- dplyr::left_join(ECOLEX, ecoid, by = c("Treaty2" = "ECOLEX_ID")) %>%
+ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty2" = "ECOLEX_ID")) %>%
   dplyr::rename(qID2 = "qID") %>% dplyr::select(qID1, RefType, qID2)
-ECOLEX
+ECOLEX_REF
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
@@ -49,7 +49,7 @@ ECOLEX
 # Stage three: Connecting data
 # Next run the following line to make ref available
 # within the qPackage.
-qCreate::export_data(ECOLEX, database = "references", URL = "NA", package = "qEnviron")
+qCreate::export_data(ECOLEX_REF, database = "references", URL = "NA", package = "qEnviron")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
