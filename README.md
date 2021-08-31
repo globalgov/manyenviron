@@ -33,20 +33,45 @@ qData::get_packages("qStates") # this downloads and installs the named package
 ## Data included
 
 Once you have installed the package, you can see the different databases
-and datasets include in the package using the following function.
+and datasets included in the package using the following function.
 
 ``` r
-qData::report_data("qEnviron")
+qData::data_contrast("qEnviron")
 ```
 
-    ##        Unique ID Rows Columns Beg          End          URL 
-    ## IEADB  3666      3666 3       "NA"         "NA"         NULL
-    ## GNEVAR 2733      2733 4       "NA"         "NA"         NULL
-    ## ECOLEX 2174      2174 3       "1868-10-17" "2018-03-04" NULL
-    ##        Reference                                                                                                        
-    ## IEADB  "Mitchell RB, Andonova LB, Axelrod M, Balsiger J, Bernauer T, Green JF,Hollway J, Kim RE, Morin J (2" [truncated]
-    ## GNEVAR "Hollway J, Koskinen J (2016). "Multilevel embeddedness: The case of theglobal fisheries governance " [truncated]
-    ## ECOLEX "Sommer J (2020). "Global governance in forestry: a cross-nationalanalysis." _International Journal " [truncated]
+    ## agreements :
+    ##        Unique ID Missing Data Rows Columns        Beg       End
+    ## IEADB          0        3.4 % 3666       8 1351-08-01        NA
+    ## GNEVAR         0      40.53 % 3469      14 1351-08-01 Obsolete?
+    ## ECOLEX         0       6.65 % 2174       8 1868-10-17        NA
+    ## CIESIN         0          0 %  666       5       1868        NA
+    ##                                                URL
+    ## IEADB  https://iea.uoregon.edu/base-agreement-list
+    ## GNEVAR                                          NA
+    ## ECOLEX  https://www.ecolex.org/result/?type=treaty
+    ## CIESIN    https://sedac.ciesin.columbia.edu/entri/
+    ## 
+    ## memberships :
+    ##            Unique ID Missing Data  Rows Columns        Beg        End
+    ## ECOLEX_MEM         0      24.96 % 25003       9 1192-06-12 2017-12-31
+    ## GNEVAR_MEM         0       28.6 % 35671      12 1192-06-12 9999-12-31
+    ## IEADB_MEM          0      28.94 % 27410      10 1900-05-19 2020-11-14
+    ## TFDD_MEM           0       2.14 %  2118       6 1900-01-03         NA
+    ##                                                             URL
+    ## ECOLEX_MEM           https://www.ecolex.org/result/?type=treaty
+    ## GNEVAR_MEM                                                   NA
+    ## IEADB_MEM               https://iea.uoregon.edu/country-members
+    ## TFDD_MEM   https://transboundarywaters.science.oregonstate.edu/
+    ## 
+    ## organizations :
+    ##     Unique ID Missing Data Rows Columns  Beg End
+    ## MIA         0         25 %   78       4 1831  NA
+    ##                                                             URL
+    ## MIA https://garymarks.web.unc.edu/data/international-authority/
+    ## 
+    ## references :
+    ##     Unique ID Missing Data Rows Columns Beg End URL
+    ## REF         0          0 % 2174       1  NA  NA  NA
 
 Working with ensembles of related data has many advantages for robust
 analysis. Just take a look at our vignettes
@@ -65,10 +90,9 @@ citation("qEnviron")
 ```
 
     ## 
-    ## To cite package 'qEnviron' in publications use:
+    ## To cite qEnviron in publications use:
     ## 
-    ##   James Hollway (2021). qEnviron: Environmental agreements for qData. R
-    ##   package version 0.0.1.
+    ##   J. Hollway. Environmental agreements for qData. 2021.
     ## 
     ## A BibTeX entry for LaTeX users is
     ## 
@@ -76,7 +100,7 @@ citation("qEnviron")
     ##     title = {qEnviron: Environmental agreements for qData},
     ##     author = {James Hollway},
     ##     year = {2021},
-    ##     note = {R package version 0.0.1},
+    ##     url = {https://github.com/globalgov/qEnviron},
     ##   }
 
 ## Contributing

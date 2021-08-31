@@ -31,8 +31,8 @@ qData::get_packages("qStates") # this downloads and installs the named package
 Once you have installed the package, you can see the different databases and datasets
 included in the package using the following function.
 
-```{r datasets}
-qData::report_data("qEnviron")
+```{r datasets, warning = FALSE}
+qData::data_contrast("qEnviron")
 ```
 
 Working with ensembles of related data has many advantages for robust analysis.
