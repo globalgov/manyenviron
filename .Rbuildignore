@@ -20,3 +20,5 @@
 ^data-raw/organizations/MIA$
 ^data-raw/references$
 ^data-raw/references/REF$
+^data-raw/texts$
+^data-raw/texts/IEADB_TXT$
