@@ -21,40 +21,17 @@ IEADB_TXT <- as_tibble(IEADB_TXT) %>%
 
 # Step two: replace second column by the actual treaty texts
 base <- "https://iea.uoregon.edu/treaty-text/"
-# IEADB_TXT$TreatyText <- lapply(IEADB_TXT$ID, function(s) read_html(paste0(base, s)) %>%
-#                                  html_text())
-# Not working because of large number of webpages to copy
-  
-
-# Test on smaller datasets: is working
-IEADB_TXT1 <- IEADB_TXT[1:100,]
-IEADB_TXT1$TreatyText <- lapply(IEADB_TXT1$ID, function(s) read_html(paste0(base, s)) %>%
-                                 html_text())
-
-IEADB_TXT2 <- IEADB_TXT[101:200,]
-IEADB_TXT2$TreatyText <- lapply(IEADB_TXT2$ID, function(s) read_html(paste0(base, s)) %>%
-                                  html_text())
+IEADB_TXT$TreatyText <- lapply(IEADB_TXT$ID, function(s) tryCatch(read_html(paste0(base, s)) %>% html_text(), error = function(e){as.character("Not found")}))
 
 # Step three: keep only the treaty text from the website text
 # IEADB_TEXT1
-IEADB_TXT1$TreatyText_Shorter <- lapply(IEADB_TXT1$TreatyText, function(s) gsub(".*Source:","", s))
-IEADB_TXT1$TreatyText_Shorter <- lapply(IEADB_TXT1$TreatyText_Shorter, function(s) gsub("Citation.*","", s))
-# IEADB_TXT2
-IEADB_TXT2$TreatyText_Shorter <- lapply(IEADB_TXT2$TreatyText, function(s) gsub(".*Source:","", s))
-IEADB_TXT2$TreatyText_Shorter <- lapply(IEADB_TXT2$TreatyText_Shorter, function(s) gsub("Citation.*","", s))
-IEADB_TXT2 = subset(IEADB_TXT2, select = - c(Text))
+IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText, function(s) gsub(".*Source:","", s))
+IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText_Shorter, function(s) gsub("Citation.*","", s))
 
 # Step four: select only the ID and treaty texts variables
-IEADB_TXT1 <- rbind(IEADB_TXT1, IEADB_TXT2)
-
-IEADB_TXT <- dplyr::left_join(IEADB_TXT, IEADB_TXT1, by = "ID")
-
-IEADB_TXT = subset(IEADB_TXT, select = - c(Text))
-
+IEADB_TXT = subset(IEADB_TXT, select = - c(TreatyText))
 IEADB_TXT <- IEADB_TXT %>% 
-  dplyr::rename(Text = TreatyText_Shorter) %>% 
-  dplyr::select(ID, Text)
-
+  dplyr::rename(Text = TreatyText_Shorter)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
