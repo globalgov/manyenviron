@@ -4,7 +4,7 @@
 # ready for the qPackage.
 
 # Stage one: Collecting data
-load("data-raw/references/REF/ecorefer.RData")
+load("data-raw/references/ECOLEX_REF/ecorefer.RData")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
