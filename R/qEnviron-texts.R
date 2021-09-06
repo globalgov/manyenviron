@@ -7,6 +7,6 @@
 #' functions.
 #'\describe{
 #' \item{IEADB_TXT: }{A dataset with 2075 observations and the following
-#' 2 variables: ID, Text.}
+#' 5 variables: ID, Title, Beg, qID, Text.}
 #' }
  "texts"

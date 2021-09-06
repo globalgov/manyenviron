@@ -10,25 +10,29 @@ IEADB_TXT <- readr::read_csv("data-raw/texts/IEADB_TXT/IEADB_Text.csv")
 # In this stage you will want to correct the variable names and
 # formats of the 'IEADB_TXT' object until the object created
 # below (in stage three) passes all the tests.
-
-# First setp: extract only useful variables and rename ID column
+# First step: rename, extract and standardise useful variables
 IEADB_TXT <- as_tibble(IEADB_TXT) %>%
-  dplyr::rename(ID = `IEA# (click for add'l info)`) %>%
-  dplyr::rename(TreatyText = `Treaty Text`) %>% 
-  dplyr::select(ID, TreatyText) %>% 
+  dplyr::rename(ID = `IEA# (click for add'l info)`,
+                TreatyText = `Treaty Text`) %>% 
+  qData::transmutate(Title = standardise_titles(`Treaty Name`),
+                     Beg = qCreate::standardise_dates(`Signature Date`)) %>% 
+  dplyr::select(ID, TreatyText, Title, Beg) %>% 
   dplyr::filter(TreatyText == "Treaty Text**") %>% 
   dplyr::arrange(ID)
 
-# Step two: replace second column by the actual treaty texts
-base <- "https://iea.uoregon.edu/treaty-text/"
-IEADB_TXT$TreatyText <- lapply(IEADB_TXT$ID, function(s) tryCatch(read_html(paste0(base, s)) %>% html_text(), error = function(e){as.character("Not found")}))
+# Step two: add qID column
+IEADB_TXT$qID <- qCreate::code_agreements(IEADB_TXT, IEADB_TXT$Title, IEADB_TXT$Beg)
 
-# Step three: keep only the treaty text from the website text
+# Step three: add a column with treaty texts by web scraping IEADB pages
+base <- "https://iea.uoregon.edu/treaty-text/"
+IEADB_TXT$TreatyText <- lapply(IEADB_TXT$ID, function(s) tryCatch(rvest::read_html(paste0(base, s)) %>% rvest::html_text(), error = function(e){as.character("Not found")}))
+
+# Step four: keep only the treaty text from the website text
 # IEADB_TEXT1
 IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText, function(s) gsub(".*Source:","", s))
 IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText_Shorter, function(s) gsub("Citation.*","", s))
 
-# Step four: select only the ID and treaty texts variables
+# Step five: remove variable with all the webpages text and rename text variable
 IEADB_TXT = subset(IEADB_TXT, select = - c(TreatyText))
 IEADB_TXT <- IEADB_TXT %>% 
   dplyr::rename(Text = TreatyText_Shorter)
