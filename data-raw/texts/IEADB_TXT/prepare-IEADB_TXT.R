@@ -45,6 +45,9 @@ IEADB_TXT <- IEADB_TXT %>%
 # Next run the following line to make IEADB_TXT available
 # within the qPackage.
 qCreate::export_data(IEADB_TXT, database = "texts", URL = "https://iea.uoregon.edu/text-index")
+
+# Save in RDS file
+saveRDS(IEADB_TXT, "data/texts2.rds")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
