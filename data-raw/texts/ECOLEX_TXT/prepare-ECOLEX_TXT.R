@@ -11,19 +11,28 @@ qCreate::retain("ECOLEX_TXT")
 # In this stage you will want to correct the variable names and
 # formats of the 'ECOLEX_TXT' object until the object created
 # below (in stage three) passes all the tests.
-ECOLEX_TXT <- ECOLEX_TXT %>% 
-  dplyr::mutate(Title = qCreate::standardise_titles(Title))
-  dplyr::select(EcolexID, `Full.text`) %>% 
-  dplyr::mutate(TreatyText = ifelse(stringr::str_detect(ECOLEX_TXT$Full.text, "English"), "English", NA))
+# First step: standardise, select and add useful variables
+ECOLEX_TXT <- as_tibble(ECOLEX_TXT) %>% 
+  dplyr::mutate(Title = qCreate::standardise_titles(Title),
+                Beg = qCreate::standardise_dates(lubridate::mdy(Date)),
+                ID = EcolexID,
+                TreatyText = ifelse(stringr::str_detect(ECOLEX_TXT$Full.text, "English"), "English", NA)) %>% 
+  dplyr::select(ID, Title, Beg, TreatyText)
 
-ECOLEX_TXT$EcolexID <- stringr::str_remove_all(ECOLEX_TXT$EcolexID, "-")
+ECOLEX_TXT$ID <- stringr::str_remove_all(ECOLEX_TXT$ID, "-")
 
-ECOLEX_TXT <- ECOLEX_TXT %>% 
+ECOLEX_TXT$qID <- qCreate::code_agreements(ECOLEX_TXT, ECOLEX_TXT$Title, ECOLEX_TXT$Beg)
+
+# Step two: extract treaty texts from ecolex website (only the ones in english for now)
+ECOLEX_TXT1 <- ECOLEX_TXT %>% 
   dplyr::filter(TreatyText == "English")
-ECOLEX_TXT <- as_tibble(ECOLEX_TXT) %>%
-  qData::transmutate(ID = {id_variable_name_here},
-              Beg = qCreate::standardise_dates({date_variable_name_here})) %>%
-  dplyr::arrange(Beg)
+
+base = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/"
+ECOLEX_TXT1$Text <- lapply(ECOLEX_TXT1$ID, function(s) tryCatch(pdftools::pdf_text(paste0(base, s, ".pdf")), error = function(e){as.character("Not found")}))
+ECOLEX_TXT1 <- ECOLEX_TXT1 %>% 
+  dplyr::select(ID, Text)
+
+ECOLEX_TXT <- left_join(ECOLEX_TXT, ECOLEX_TXT1, by = "ID")
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
@@ -31,7 +40,7 @@ ECOLEX_TXT <- as_tibble(ECOLEX_TXT) %>%
 # Stage three: Connecting data
 # Next run the following line to make ECOLEX_TXT available
 # within the qPackage.
-qCreate::export_data(ECOLEX_TXT, database = "texts")
+qCreate::export_data(ECOLEX_TXT, database = "texts", URL = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
