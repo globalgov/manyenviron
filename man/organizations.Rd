@@ -3,7 +3,7 @@
 \docType{data}
 \name{organizations}
 \alias{organizations}
-\title{organizations database documentation}
+\title{Òrganizations database documentation}
 \format{
 The organizations database is a list that contains the
 following 1 datasets: MIA.
@@ -19,6 +19,6 @@ functions.
 organizations
 }
 \description{
-organizations database documentation
+Òrganizations database documentation
 }
 \keyword{datasets}

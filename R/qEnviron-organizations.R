@@ -1,4 +1,4 @@
-#' organizations database documentation
+#' Òrganizations database documentation
 #'
 #' @format The organizations database is a list that contains the
 #' following 1 datasets: MIA.

@@ -1,4 +1,4 @@
-#' memberships database documentation
+#' Memberships database documentation
 #'
 #' @format The memberships database is a list that contains the
 #' following 4 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM.

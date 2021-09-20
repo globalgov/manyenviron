@@ -3,7 +3,7 @@
 \docType{data}
 \name{references}
 \alias{references}
-\title{references database documentation}
+\title{References database documentation}
 \format{
 The references database is a list that contains the
 following 1 datasets: ECOLEX_REF.
@@ -19,6 +19,6 @@ functions.
 references
 }
 \description{
-references database documentation
+References database documentation
 }
 \keyword{datasets}

@@ -1,4 +1,4 @@
-#' references database documentation
+#' References database documentation
 #'
 #' @format The references database is a list that contains the
 #' following 1 datasets: ECOLEX_REF.

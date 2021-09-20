@@ -3,7 +3,7 @@
 \docType{data}
 \name{agreements}
 \alias{agreements}
-\title{agreements database documentation}
+\title{Agreements database documentation}
 \format{
 The agreements database is a list that contains the
 following 4 datasets: IEADB, GNEVAR, ECOLEX, CIESIN.
@@ -25,6 +25,6 @@ functions.
 agreements
 }
 \description{
-agreements database documentation
+Agreements database documentation
 }
 \keyword{datasets}

@@ -1,4 +1,4 @@
-#' agreements database documentation
+#' Agreements database documentation
 #'
 #' @format The agreements database is a list that contains the
 #' following 4 datasets: IEADB, GNEVAR, ECOLEX, CIESIN.

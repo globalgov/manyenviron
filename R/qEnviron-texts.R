@@ -1,4 +1,4 @@
-#' texts database documentation
+#' Texts database documentation
 #'
 #' @format The texts database is a list that contains the
 #' following 2 datasets: IEADB_TXT, ECOLEX_TXT.

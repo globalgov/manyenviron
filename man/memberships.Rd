@@ -3,7 +3,7 @@
 \docType{data}
 \name{memberships}
 \alias{memberships}
-\title{memberships database documentation}
+\title{Memberships database documentation}
 \format{
 The memberships database is a list that contains the
 following 4 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM.
@@ -28,6 +28,6 @@ Rat, Force, qID.}
 memberships
 }
 \description{
-memberships database documentation
+Memberships database documentation
 }
 \keyword{datasets}
