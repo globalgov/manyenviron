@@ -10,11 +10,15 @@ date)](https://img.shields.io/github/v/release/globalgov/qEnviron)
 Date](https://img.shields.io/github/release-date/globalgov/qEnviron)
 <!-- badges: end -->
 
-qEnviron is the second qPackage in the
-[qData](https://github.com/globalgov/qData) ecosystem. It currently
-includes an ensemble of datasets on international environmental
-agreements, and [states](https://github.com/globalgov/qStates)’
-membership or other relationships to those agreements.
+qEnviron is a data package in the
+[qData](https://github.com/globalgov/qData) ecosystem of qPackages. It
+currently includes an ensemble of datasets on international
+environmental agreements, and
+[states](https://github.com/globalgov/qStates)’ membership or other
+relationships to those agreements.
+
+Please also check out [`{qData}`](https://github.com/globalgov) for more
+information about the other packages in the `{qData}` ecosystem.
 
 ## How to install
 
@@ -27,13 +31,14 @@ can discover, install and update various qPackages from the console.
 # install.packages(remotes)
 remotes::install_github("globalgov/qData") # this installs our core package, the only one you need to do independently
 qData::get_packages() # this prints a list of the publicly available data packages currently available
-qData::get_packages("qStates") # this downloads and installs the named package
+qData::get_packages("qEnviron") # this downloads and installs the named package
 ```
 
 ## Data included
 
 Once you have installed the package, you can see the different databases
-and datasets included in the package using the following function.
+and datasets included in the `{qEnviron}` package using the following
+function.
 
 ``` r
 qData::data_contrast("qEnviron")
@@ -42,7 +47,7 @@ qData::data_contrast("qEnviron")
     ## agreements :
     ##        Unique ID Missing Data Rows Columns        Beg       End
     ## IEADB          0        3.4 % 3666       8 1351-08-01        NA
-    ## GNEVAR         0      40.53 % 3469      14 1351-08-01 Obsolete?
+    ## GNEVAR         0      23.06 % 3450      10 1351-08-01 Obsolete?
     ## ECOLEX         0       6.65 % 2174       8 1868-10-17        NA
     ## CIESIN         0          0 %  666       5       1868        NA
     ##                                                URL
@@ -55,7 +60,7 @@ qData::data_contrast("qEnviron")
     ##            Unique ID Missing Data  Rows Columns        Beg        End
     ## ECOLEX_MEM         0      24.96 % 25003       9 1192-06-12 2017-12-31
     ## GNEVAR_MEM         0       28.6 % 35671      12 1192-06-12 9999-12-31
-    ## IEADB_MEM          0      28.94 % 27410      10 1900-05-19 2020-11-14
+    ## IEADB_MEM          0      28.99 % 27410      10 1900-05-19 2020-11-14
     ## TFDD_MEM           0       2.14 %  2118       6 1900-01-03         NA
     ##                                                             URL
     ## ECOLEX_MEM           https://www.ecolex.org/result/?type=treaty
@@ -70,20 +75,35 @@ qData::data_contrast("qEnviron")
     ## MIA https://garymarks.web.unc.edu/data/international-authority/
     ## 
     ## references :
-    ##     Unique ID Missing Data Rows Columns Beg End URL
-    ## REF         0          0 % 2174       1  NA  NA  NA
+    ##            Unique ID Missing Data Rows Columns Beg End URL
+    ## ECOLEX_REF         0          0 % 1164       3  NA  NA  NA
+    ## 
+    ## texts :
+    ##            Unique ID Missing Data Rows Columns        Beg End
+    ## IEADB_TXT       2075       0.09 % 2075       5 1656-07-17  NA
+    ## ECOLEX_TXT      2174      12.07 % 2174       6 1868-10-17  NA
+    ##                                                   URL
+    ## IEADB_TXT          https://iea.uoregon.edu/text-index
+    ## ECOLEX_TXT https://www.ecolex.org/result/?type=treaty
 
-Working with ensembles of related data has many advantages for robust
+Working with an ensemble of related data has many advantages for robust
 analysis. Just take a look at our vignettes
 [here](https://globalgov.github.io/qData/articles/user.html).
+
+## qPackages
+
+The [`{qData}`](https://github.com/globalgov/qData) ecosystem is aimed
+at collecting, connecting and correcting network data across
+issue-domains of global governance.
 
 While some qPackages can and do include novel data, much of what they
 offer involves standing on the shoulders of giants. qPackages endeavour
 to be as transparent as possible about where data comes from, how it has
-been coded and/or relabelled, and who has done the work. As such, we
-make it easy to cite both the particular datasets you use by listing the
+been coded and/or relabeled, and who has done the work. As such, we make
+it easy to cite both the particular datasets you use by listing the
 official references in the function above, as well as the package
-providers for their work assembling the data using the function below.
+providers for their work assembling the data by using the function
+below.
 
 ``` r
 citation("qEnviron")
@@ -105,8 +125,8 @@ citation("qEnviron")
 
 ## Contributing
 
-[qData](https://github.com/globalgov/qData) also makes it easy to
-contribute in lots of different ways.
+[`{qCreate}`](https://github.com/globalgov/qCreate) also makes it easy
+to contribute in lots of different ways.
 
 If you have already developed a dataset salient to this package, please
 reach out by flagging this as an
@@ -117,7 +137,7 @@ can be used easily.
 
 If you have collected or developed other data that may not be best for
 this package, but could be useful within the wider ecosystem,
-[qData](https://github.com/globalgov/qData) includes a number of
+[`{qCreate}`](https://github.com/globalgov/qData) includes a number of
 functions that make it easy to create a new qPackage and populate with
 clean, consistent global governance data.
 

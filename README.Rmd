@@ -31,7 +31,7 @@ qData::get_packages("qEnviron") # this downloads and installs the named package
 ## Data included
 
 Once you have installed the package, you can see the different databases and datasets
-included in the {qEnviron} package using the following function.
+included in the `{qEnviron}` package using the following function.
 
 ```{r datasets, warning = FALSE}
 qData::data_contrast("qEnviron")
@@ -42,7 +42,7 @@ Just take a look at our vignettes [here](https://globalgov.github.io/qData/artic
 
 ## qPackages
 
-The [qData](https://github.com/globalgov/qData) ecosystem is aimed at collecting, connecting and correcting network data across issue-domains of global governance. 
+The [`{qData}`](https://github.com/globalgov/qData) ecosystem is aimed at collecting, connecting and correcting network data across issue-domains of global governance. 
 
 While some qPackages can and do include novel data,
 much of what they offer involves standing on the shoulders of giants.
@@ -59,7 +59,7 @@ citation("qEnviron")
 
 ## Contributing
 
-[qData](https://github.com/globalgov/qData) also makes it easy to contribute in lots of different ways.
+[`{qCreate}`](https://github.com/globalgov/qCreate) also makes it easy to contribute in lots of different ways.
 
 If you have already developed a dataset salient to this package,
 please reach out by flagging this as an [issue](https://github.com/globalgov/qEnviron/issues) for us,
@@ -68,7 +68,7 @@ so that your data can be used easily.
 
 If you have collected or developed other data that may not be best for this package,
 but could be useful within the wider ecosystem, 
-[qData](https://github.com/globalgov/qData) includes a number of functions that make it easy
+[`{qCreate}`](https://github.com/globalgov/qData) includes a number of functions that make it easy
 to create a new qPackage and populate with clean, consistent global governance data.
 
 If you have any other ideas about how this package or the qData ecosystem more broadly
