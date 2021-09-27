@@ -21,13 +21,22 @@ CIESIN <- as_tibble(CIESIN) %>%
 # Add qID column
 CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
+# Add qID_ref column
+qID_ref <- condense_qID(qEnviron::agreements)
+CIESIN <- merge(CIESIN, qID_ref, by = "qID")
+
+# Re-order the columns
+CIESIN <- CIESIN %>% 
+  dplyr::select(Title, Beg, Signature, Force, qID, qID_ref) %>% 
+  dplyr::arrange(Beg)
+
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make CIESIN available within the qPackage.
-qCreate::export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/", package = "qEnviron")
+qCreate::export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/")
 # can not export yet as standardise_dates() do not function on dates range
 
 # This function also does two additional things.

@@ -66,9 +66,14 @@ GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 # Join the datasets together
 GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
 
+# Add qID_ref column
+qID_ref <- condense_qID(qEnviron::agreements)
+GNEVAR <- merge(GNEVAR, qID_ref, by = "qID")
+
+
 # Select some columns
 GNEVAR <- GNEVAR %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID) %>% 
+  dplyr::select(GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
@@ -76,7 +81,7 @@ GNEVAR <- GNEVAR %>%
 
 # Stage three: Connecting data
 # Next run the following line to make GNEVAR available within the qPackage.
-qCreate::export_data(GNEVAR, database = "agreements", URL = "NA", package = "qEnviron")
+qCreate::export_data(GNEVAR, database = "agreements", URL = "NA")
 
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
