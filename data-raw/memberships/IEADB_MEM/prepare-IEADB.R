@@ -31,12 +31,21 @@ IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %
 # Add a qID column
 IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
+# Add qID_ref column
+qID_ref <- condense_qID(qEnviron::agreements)
+IEADB_MEM <- merge(IEADB_MEM, qID_ref, by = "qID", all.x = TRUE)
+
+# Re-order the columns
+IEADB_MEM <- IEADB_MEM %>% 
+  dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, qID_ref) %>% 
+  dplyr::arrange(Beg)
+
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make IEA_MEM available within the qPackage.
-qCreate::export_data(IEADB_MEM, database = "memberships", URL = "https://iea.uoregon.edu/country-members", package = "qEnviron")
+qCreate::export_data(IEADB_MEM, database = "memberships", URL = "https://iea.uoregon.edu/country-members")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

@@ -28,6 +28,16 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
 # Add qID column
 GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
+# Add qID_ref column
+qID_ref <- condense_qID(qEnviron::agreements)
+GNEVAR_MEM <- merge(GNEVAR_MEM, qID_ref, by = "qID", all.x = TRUE)
+
+# Re-order the columns
+GNEVAR_MEM <- GNEVAR_MEM %>% 
+  dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force,
+                Term, Withdrawal, qID, qID_ref) %>% 
+  dplyr::arrange(Beg)
+
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
