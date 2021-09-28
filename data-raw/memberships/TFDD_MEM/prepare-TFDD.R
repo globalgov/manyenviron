@@ -18,7 +18,8 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 TFDD_MEM <- TFDD_MEM %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
                      Country = CCODE,
-                     Title = qCreate::standardise_titles(DocumentName)) %>%
+                     Title = qCreate::standardise_titles(DocumentName)) %>% # key API has been used
+  # to translate some of the treaties that were not in english
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
