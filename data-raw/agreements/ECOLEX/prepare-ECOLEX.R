@@ -17,7 +17,8 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
   qData::transmutate(ECOLEX_ID = `EcolexID`,
-                     Title = qCreate::standardise_titles(title),
+                     Title = qCreate::standardise_titles(title), #Key API has been used here
+                     # to translate treaties not in english
                      Signature = qCreate::standardise_dates(lubridate::mdy(Date)),
                      Force = qCreate::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
@@ -29,7 +30,7 @@ ECOLEX$qID <- qCreate::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
 # Add qID_ref column
 qID_ref <- condense_qID(qEnviron::agreements)
-ECOLEX <- merge(ECOLEX, qID_ref, by = "qID")
+ECOLEX <- merge(ECOLEX, qID_ref, by = "qID", all.x = TRUE)
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 

@@ -22,7 +22,8 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
                      Force = qCreate::standardise_dates(DocForce),
                      GNEVAR_ID = GENG,
                      ECOLEX_ID = ECOLEX) %>% 
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>%
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API has been used to translate 
+  # treaties not in english
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
@@ -32,7 +33,7 @@ GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>%
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # key API also used here
   dplyr::mutate(Beg = qCreate::standardise_dates(Beg)) %>% 
   dplyr::mutate(End = qCreate::standardise_dates(End)) %>% 
   dplyr::mutate(Force = qCreate::standardise_dates(Force)) %>% 
@@ -50,7 +51,7 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   qData::transmutate(Signature = qCreate::standardise_dates(DocDate),
                      Force = qCreate::standardise_dates(InForce)) %>%
   dplyr::mutate(End = qCreate::standardise_dates(End)) %>%
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>%
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
@@ -68,7 +69,7 @@ GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
 
 # Add qID_ref column
 qID_ref <- condense_qID(qEnviron::agreements)
-GNEVAR <- merge(GNEVAR, qID_ref, by = "qID")
+GNEVAR <- merge(GNEVAR, qID_ref, by = "qID", all.x = TRUE)
 
 
 # Select some columns

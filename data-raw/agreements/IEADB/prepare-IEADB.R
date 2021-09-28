@@ -30,7 +30,7 @@ IEADB$qID <- qCreate::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 
 # Add qID_ref column
 qID_ref <- condense_qID(qEnviron::agreements)
-IEADB <- merge(IEADB, qID_ref, by = "qID")
+IEADB <- merge(IEADB, qID_ref, by = "qID", all.x = TRUE)
 
 # Re-order the columns
 IEADB <- IEADB %>% 

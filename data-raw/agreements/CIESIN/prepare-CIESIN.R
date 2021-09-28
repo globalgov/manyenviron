@@ -11,7 +11,8 @@ CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
 # formats of the 'CIESIN' object until the object created
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
-  qData::transmutate(Title = qCreate::standardise_titles(`Treaty Title`),
+  qData::transmutate(Title = qCreate::standardise_titles(`Treaty Title`),# Key API has been used here
+                     # to translate treaties title to english
                      Signature = qCreate::standardise_dates(`Year of Agreement`),
                      Force = qCreate::standardise_dates(`Year of Entry into Force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
@@ -23,7 +24,7 @@ CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
 # Add qID_ref column
 qID_ref <- condense_qID(qEnviron::agreements)
-CIESIN <- merge(CIESIN, qID_ref, by = "qID")
+CIESIN <- merge(CIESIN, qID_ref, by = "qID", all.x = TRUE)
 
 # Re-order the columns
 CIESIN <- CIESIN %>% 
