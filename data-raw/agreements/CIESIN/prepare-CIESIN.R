@@ -31,6 +31,11 @@ CIESIN <- CIESIN %>%
   dplyr::select(Title, Beg, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
 
+# Merge function removed the messydt class
+CIESIN$Beg <- standardise_dates(CIESIN$Beg)
+CIESIN$Signature <- standardise_dates(CIESIN$Signature)
+CIESIN$Force <- standardise_dates(CIESIN$Force)
+
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.

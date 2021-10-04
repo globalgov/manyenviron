@@ -37,6 +37,11 @@ IEADB <- IEADB %>%
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
 
+# Merge function removed the messydt class
+IEADB$Beg <- standardise_dates(IEADB$Beg)
+IEADB$Signature <- standardise_dates(IEADB$Signature)
+IEADB$Force <- standardise_dates(IEADB$Force)
+
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 

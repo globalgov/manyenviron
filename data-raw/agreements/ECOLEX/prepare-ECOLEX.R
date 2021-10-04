@@ -37,6 +37,11 @@ ECOLEX <- ECOLEX %>%
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
 
+# Merge function removed the messydt class
+ECOLEX$Beg <- standardise_dates(ECOLEX$Beg)
+ECOLEX$Signature <- standardise_dates(ECOLEX$Signature)
+ECOLEX$Force <- standardise_dates(ECOLEX$Force)
+
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 

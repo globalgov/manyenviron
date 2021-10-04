@@ -61,7 +61,7 @@ GNEVAR4$qID<- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 # Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
 # Can not integrate it into GNEVAR
 
-# Create a GNEVAR "database" to apply consoldiate()
+# Create a GNEVAR "database" to apply consolidate()
 GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 
 # Join the datasets together
@@ -76,6 +76,12 @@ GNEVAR <- merge(GNEVAR, qID_ref, by = "qID", all.x = TRUE)
 GNEVAR <- GNEVAR %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
+
+# Merge function removed the messydt class
+GNEVAR$Beg <- standardise_dates(GNEVAR$Beg)
+GNEVAR$End <- standardise_dates(GNEVAR$End)
+GNEVAR$Signature <- standardise_dates(GNEVAR$Signature)
+GNEVAR$Force <- standardise_dates(GNEVAR$Force)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
