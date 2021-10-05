@@ -29,16 +29,8 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
 ECOLEX <- qEnviron::agreements$ECOLEX %>% 
   dplyr::select(Title, ECOLEX_ID)
 ECOLEX_MEM <- merge(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID", all.x = TRUE)
-
-ECOLEX_MEM$Beg <- qCreate::standardise_dates(ECOLEX_MEM$Beg)
-ECOLEX_MEM$End <- qCreate::standardise_dates(ECOLEX_MEM$End)
-ECOLEX_MEM$SignatureC <- qCreate::standardise_dates(ECOLEX_MEM$SignatureC)
-ECOLEX_MEM$Force <- qCreate::standardise_dates(ECOLEX_MEM$Force)
-ECOLEX_MEM$Rat <- qCreate::standardise_dates(ECOLEX_MEM$Rat)
-
-ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>% 
-  dplyr::select(ECOLEX_ID, Country, Title, Beg, End, SignatureC, Rat, Force) %>% 
-  dplyr::arrange(Beg)
+ECOLEX_MEM$Title <- standardise_titles(ECOLEX_MEM$Title) # Used a key API to 
+# translate treaty titles to english
 
 #Add a qID column
 ECOLEX_MEM$qID <- qCreate::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
@@ -51,6 +43,12 @@ ECOLEX_MEM <- merge(ECOLEX_MEM, qID_ref, by = "qID", all.x = TRUE)
 ECOLEX_MEM <- ECOLEX_MEM %>% 
   dplyr::select(ECOLEX_ID, Country, Title, Beg, End, SignatureC, Rat, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
+
+ECOLEX_MEM$Beg <- qCreate::standardise_dates(ECOLEX_MEM$Beg)
+ECOLEX_MEM$End <- qCreate::standardise_dates(ECOLEX_MEM$End)
+ECOLEX_MEM$SignatureC <- qCreate::standardise_dates(ECOLEX_MEM$SignatureC)
+ECOLEX_MEM$Force <- qCreate::standardise_dates(ECOLEX_MEM$Force)
+ECOLEX_MEM$Rat <- qCreate::standardise_dates(ECOLEX_MEM$Rat)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
