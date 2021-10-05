@@ -1,3 +1,18 @@
+# qEnvironDev 0.0.4
+
+2021-10-05
+
+## Package
+
+* Closes #26 by adding a website using pkgdown package
+
+## Data
+
+* Closes #24 by adding IEADB texts using web scraping functions
+* Closes #25 by translating treaty titles using key API in `standardise_titles()`
+* Closes #27 by adding a qID_ref column using `condense_qID()` from qCreate
+* Closes #20 by preparing coding scheme based on treaty titles and texts
+
 # qEnvironDev 0.0.3
 
 2021-07-30
