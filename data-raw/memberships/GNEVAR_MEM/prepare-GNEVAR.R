@@ -19,7 +19,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
                      Term = qCreate::standardise_dates(DocEnd),
                      Force = qCreate::standardise_dates(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
+  dplyr::mutate(Title = qCreate::standardise_titles(Title, api_key = api)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
@@ -37,6 +37,16 @@ GNEVAR_MEM <- GNEVAR_MEM %>%
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force,
                 Term, Withdrawal, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
+
+# Merge function removed the messydt class
+GNEVAR_MEM$Beg <- standardise_dates(GNEVAR_MEM$Beg)
+GNEVAR_MEM$End <- standardise_dates(GNEVAR_MEM$End)
+GNEVAR_MEM$SignatureC <- standardise_dates(GNEVAR_MEM$SignatureC)
+GNEVAR_MEM$Signature <- standardise_dates(GNEVAR_MEM$Signature)
+GNEVAR_MEM$Rat <- standardise_dates(GNEVAR_MEM$Rat)
+GNEVAR_MEM$Force <- standardise_dates(GNEVAR_MEM$Force)
+GNEVAR_MEM$Term <- standardise_dates(GNEVAR_MEM$Term)
+GNEVAR_MEM$Withdrawal <- standardise_dates(GNEVAR_MEM$Withdrawal)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

@@ -35,6 +35,10 @@ TFDD_MEM <- TFDD_MEM %>%
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
 
+# Merge function removed the messydt class
+TFDD_MEM$Beg <- standardise_dates(TFDD_MEM$Beg)
+TFDD_MEM$Signature <- standardise_dates(TFDD_MEM$Signature)
+
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
