@@ -44,48 +44,6 @@ function.
 qData::data_contrast("qEnviron")
 ```
 
-    ## agreements :
-    ##        Unique ID Missing Data Rows Columns        Beg       End
-    ## IEADB          0        3.4 % 3666       8 1351-08-01        NA
-    ## GNEVAR         0      23.06 % 3450      10 1351-08-01 Obsolete?
-    ## ECOLEX         0       6.65 % 2174       8 1868-10-17        NA
-    ## CIESIN         0          0 %  666       5       1868        NA
-    ##                                                URL
-    ## IEADB  https://iea.uoregon.edu/base-agreement-list
-    ## GNEVAR                                          NA
-    ## ECOLEX  https://www.ecolex.org/result/?type=treaty
-    ## CIESIN    https://sedac.ciesin.columbia.edu/entri/
-    ## 
-    ## memberships :
-    ##            Unique ID Missing Data  Rows Columns        Beg        End
-    ## ECOLEX_MEM         0      24.96 % 25003       9 1192-06-12 2017-12-31
-    ## GNEVAR_MEM         0       28.6 % 35671      12 1192-06-12 9999-12-31
-    ## IEADB_MEM          0      28.99 % 27410      10 1900-05-19 2020-11-14
-    ## TFDD_MEM           0       2.14 %  2118       6 1900-01-03         NA
-    ##                                                             URL
-    ## ECOLEX_MEM           https://www.ecolex.org/result/?type=treaty
-    ## GNEVAR_MEM                                                   NA
-    ## IEADB_MEM               https://iea.uoregon.edu/country-members
-    ## TFDD_MEM   https://transboundarywaters.science.oregonstate.edu/
-    ## 
-    ## organizations :
-    ##     Unique ID Missing Data Rows Columns  Beg End
-    ## MIA         0         25 %   78       4 1831  NA
-    ##                                                             URL
-    ## MIA https://garymarks.web.unc.edu/data/international-authority/
-    ## 
-    ## references :
-    ##            Unique ID Missing Data Rows Columns Beg End URL
-    ## ECOLEX_REF         0          0 % 1164       3  NA  NA  NA
-    ## 
-    ## texts :
-    ##            Unique ID Missing Data Rows Columns        Beg End
-    ## IEADB_TXT       2075       0.09 % 2075       5 1656-07-17  NA
-    ## ECOLEX_TXT      2174      12.07 % 2174       6 1868-10-17  NA
-    ##                                                   URL
-    ## IEADB_TXT          https://iea.uoregon.edu/text-index
-    ## ECOLEX_TXT https://www.ecolex.org/result/?type=treaty
-
 Working with an ensemble of related data has many advantages for robust
 analysis. Just take a look at our vignettes
 [here](https://globalgov.github.io/qData/articles/user.html).
