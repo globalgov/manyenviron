@@ -19,7 +19,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
                      Term = qCreate::standardise_dates(DocEnd),
                      Force = qCreate::standardise_dates(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
-  dplyr::mutate(Title = qCreate::standardise_titles(Title, api_key = api)) %>% # Key API used here
+  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
