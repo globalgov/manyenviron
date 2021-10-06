@@ -1,0 +1,14 @@
+#' Texts database documentation
+#'
+#' @format The texts database is a list that contains the
+#' following 2 datasets: IEADB_TXT, ECOLEX_TXT.
+#' For more information and references to each of the datasets used,
+#' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
+#' functions.
+#'\describe{
+#' \item{IEADB_TXT: }{A dataset with 2075 observations and the following
+#' 5 variables: ID, Title, Beg, qID, Text.}
+#' \item{ECOLEX_TXT: }{A dataset with 2174 observations and the following
+#' 6 variables: ID, Title, Beg, TreatyText, qID, Text.}
+#' }
+ "texts"

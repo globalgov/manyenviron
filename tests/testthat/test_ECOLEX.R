@@ -22,9 +22,9 @@ test_that("datasets have the required variables", {
 
 # Date columns should be in messydt class
 test_that("Columns are not in date, POSIXct or POSIXlt class", {
-  expect_false(lubridate::is.Date(agreements[["ECOLEX"]]))
-  expect_false(lubridate::is.POSIXct(agreements[["ECOLEX"]]))
-  expect_false(lubridate::is.POSIXlt(agreements[["ECOLEX"]]))
+  expect_false(any(lubridate::is.Date(agreements[["ECOLEX"]])))
+  expect_false(any(lubridate::is.POSIXct(agreements[["ECOLEX"]])))
+  expect_false(any(lubridate::is.POSIXlt(agreements[["ECOLEX"]])))
 })
 
 # Dates are standardized for mandatory column
@@ -69,7 +69,10 @@ test_that("Column `Force` has standardised dates", {
 
 # Dataset should be ordered according to the "Beg" column
 test_that("dataset is arranged by date variable", {
-  expect_true(agreements[["ECOLEX"]]$Beg[1] < agreements[["ECOLEX"]]$Beg[10])
-  expect_true(agreements[["ECOLEX"]]$Beg[50] < agreements[["ECOLEX"]]$Beg[75])
-  expect_true(agreements[["ECOLEX"]]$Beg[100] < agreements[["ECOLEX"]]$Beg[120])
+  expect_true(agreements[["ECOLEX"]]$Beg[1] <
+                agreements[["ECOLEX"]]$Beg[10])
+  expect_true(agreements[["ECOLEX"]]$Beg[50] <
+                agreements[["ECOLEX"]]$Beg[75])
+  expect_true(agreements[["ECOLEX"]]$Beg[100] <
+                agreements[["ECOLEX"]]$Beg[120])
 })

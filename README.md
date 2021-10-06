@@ -10,11 +10,15 @@ date)](https://img.shields.io/github/v/release/globalgov/qEnviron)
 Date](https://img.shields.io/github/release-date/globalgov/qEnviron)
 <!-- badges: end -->
 
-qEnviron is the second qPackage in the
-[qData](https://github.com/globalgov/qData) ecosystem. It currently
-includes an ensemble of datasets on international environmental
-agreements, and [states](https://github.com/globalgov/qStates)’
-membership or other relationships to those agreements.
+qEnviron is a data package in the
+[qData](https://github.com/globalgov/qData) ecosystem of qPackages. It
+currently includes an ensemble of datasets on international
+environmental agreements, and
+[states](https://github.com/globalgov/qStates)’ membership or other
+relationships to those agreements.
+
+Please also check out [`{qData}`](https://github.com/globalgov) for more
+information about the other packages in the `{qData}` ecosystem.
 
 ## How to install
 
@@ -27,48 +31,46 @@ can discover, install and update various qPackages from the console.
 # install.packages(remotes)
 remotes::install_github("globalgov/qData") # this installs our core package, the only one you need to do independently
 qData::get_packages() # this prints a list of the publicly available data packages currently available
-qData::get_packages("qStates") # this downloads and installs the named package
+qData::get_packages("qEnviron") # this downloads and installs the named package
 ```
 
 ## Data included
 
 Once you have installed the package, you can see the different databases
-and datasets include in the package using the following function.
+and datasets included in the `{qEnviron}` package using the following
+function.
 
 ``` r
-qData::report_data("qEnviron")
+qData::data_contrast("qEnviron")
 ```
 
-    ##        Unique ID Rows Columns Beg          End          URL 
-    ## IEADB  3666      3666 3       "NA"         "NA"         NULL
-    ## GNEVAR 2733      2733 4       "NA"         "NA"         NULL
-    ## ECOLEX 2174      2174 3       "1868-10-17" "2018-03-04" NULL
-    ##        Reference                                                                                                        
-    ## IEADB  "Mitchell RB, Andonova LB, Axelrod M, Balsiger J, Bernauer T, Green JF,Hollway J, Kim RE, Morin J (2" [truncated]
-    ## GNEVAR "Hollway J, Koskinen J (2016). "Multilevel embeddedness: The case of theglobal fisheries governance " [truncated]
-    ## ECOLEX "Sommer J (2020). "Global governance in forestry: a cross-nationalanalysis." _International Journal " [truncated]
-
-Working with ensembles of related data has many advantages for robust
+Working with an ensemble of related data has many advantages for robust
 analysis. Just take a look at our vignettes
 [here](https://globalgov.github.io/qData/articles/user.html).
+
+## qPackages
+
+The [`{qData}`](https://github.com/globalgov/qData) ecosystem is aimed
+at collecting, connecting and correcting network data across
+issue-domains of global governance.
 
 While some qPackages can and do include novel data, much of what they
 offer involves standing on the shoulders of giants. qPackages endeavour
 to be as transparent as possible about where data comes from, how it has
-been coded and/or relabelled, and who has done the work. As such, we
-make it easy to cite both the particular datasets you use by listing the
+been coded and/or relabeled, and who has done the work. As such, we make
+it easy to cite both the particular datasets you use by listing the
 official references in the function above, as well as the package
-providers for their work assembling the data using the function below.
+providers for their work assembling the data by using the function
+below.
 
 ``` r
 citation("qEnviron")
 ```
 
     ## 
-    ## To cite package 'qEnviron' in publications use:
+    ## To cite qEnviron in publications use:
     ## 
-    ##   James Hollway (2021). qEnviron: Environmental agreements for qData. R
-    ##   package version 0.0.1.
+    ##   J. Hollway. Environmental agreements for qData. 2021.
     ## 
     ## A BibTeX entry for LaTeX users is
     ## 
@@ -76,13 +78,13 @@ citation("qEnviron")
     ##     title = {qEnviron: Environmental agreements for qData},
     ##     author = {James Hollway},
     ##     year = {2021},
-    ##     note = {R package version 0.0.1},
+    ##     url = {https://github.com/globalgov/qEnviron},
     ##   }
 
 ## Contributing
 
-[qData](https://github.com/globalgov/qData) also makes it easy to
-contribute in lots of different ways.
+[`{qCreate}`](https://github.com/globalgov/qCreate) also makes it easy
+to contribute in lots of different ways.
 
 If you have already developed a dataset salient to this package, please
 reach out by flagging this as an
@@ -93,7 +95,7 @@ can be used easily.
 
 If you have collected or developed other data that may not be best for
 this package, but could be useful within the wider ecosystem,
-[qData](https://github.com/globalgov/qData) includes a number of
+[`{qCreate}`](https://github.com/globalgov/qData) includes a number of
 functions that make it easy to create a new qPackage and populate with
 clean, consistent global governance data.
 

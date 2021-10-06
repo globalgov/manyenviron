@@ -4,7 +4,7 @@
 # ready for the qPackage.
 
 # Stage one: Collecting data
-load("data-raw/references/REF/ecorefer.RData")
+load("data-raw/references/ECOLEX_REF/ecorefer.RData")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
@@ -49,7 +49,7 @@ ECOLEX_REF
 # Stage three: Connecting data
 # Next run the following line to make ref available
 # within the qPackage.
-qCreate::export_data(ECOLEX_REF, database = "references", URL = "NA", package = "qEnviron")
+qCreate::export_data(ECOLEX_REF, database = "references", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

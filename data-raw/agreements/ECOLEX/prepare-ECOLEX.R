@@ -17,7 +17,8 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
   qData::transmutate(ECOLEX_ID = `EcolexID`,
-                     Title = qCreate::standardise_titles(title),
+                     Title = qCreate::standardise_titles(title), #Key API has been used here
+                     # to translate treaties not in english
                      Signature = qCreate::standardise_dates(lubridate::mdy(Date)),
                      Force = qCreate::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
@@ -27,12 +28,21 @@ ECOLEX <- as_tibble(ECOLEX) %>%
 # Add qID column
 ECOLEX$qID <- qCreate::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
+# Add qID_ref column
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+ECOLEX <- dplyr::left_join(ECOLEX, qID_ref, by = "qID")
+
+# Re-order the columns
+ECOLEX <- ECOLEX %>% 
+  dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force, qID, qID_ref) %>% 
+  dplyr::arrange(Beg)
+
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make ECOLEX available within the qPackage.
-qCreate::export_data(ECOLEX, database = "agreements", URL = "https://www.ecolex.org/result/?type=treaty", package = "qEnviron")
+qCreate::export_data(ECOLEX, database = "agreements", URL = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

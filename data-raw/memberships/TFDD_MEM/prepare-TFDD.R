@@ -18,12 +18,22 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 TFDD_MEM <- TFDD_MEM %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
                      Country = CCODE,
-                     Title = qCreate::standardise_titles(DocumentName)) %>%
+                     Title = qCreate::standardise_titles(DocumentName)) %>% # key API has been used
+  # to translate some of the treaties that were not in english
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
 TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
+
+# Add qID_ref column
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
+
+# Re-order the columns
+TFDD_MEM <- TFDD_MEM %>% 
+  dplyr::select(TFDD_ID, Country, Title, Beg, Signature, qID, qID_ref) %>% 
+  dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
@@ -31,7 +41,7 @@ TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # Stage three: Connecting data
 # Next run the following line to make TFDD_MEM available within the qPackage.
-qCreate::export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/", package = "qEnviron")
+qCreate::export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
