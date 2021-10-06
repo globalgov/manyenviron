@@ -29,24 +29,14 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
 GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-GNEVAR_MEM <- merge(GNEVAR_MEM, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 GNEVAR_MEM <- GNEVAR_MEM %>% 
   dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force,
                 Term, Withdrawal, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-# Merge function removed the messydt class
-GNEVAR_MEM$Beg <- standardise_dates(GNEVAR_MEM$Beg)
-GNEVAR_MEM$End <- standardise_dates(GNEVAR_MEM$End)
-GNEVAR_MEM$SignatureC <- standardise_dates(GNEVAR_MEM$SignatureC)
-GNEVAR_MEM$Signature <- standardise_dates(GNEVAR_MEM$Signature)
-GNEVAR_MEM$Rat <- standardise_dates(GNEVAR_MEM$Rat)
-GNEVAR_MEM$Force <- standardise_dates(GNEVAR_MEM$Force)
-GNEVAR_MEM$Term <- standardise_dates(GNEVAR_MEM$Term)
-GNEVAR_MEM$Withdrawal <- standardise_dates(GNEVAR_MEM$Withdrawal)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

@@ -36,19 +36,13 @@ ECOLEX_MEM$Title <- standardise_titles(ECOLEX_MEM$Title) # Used a key API to
 ECOLEX_MEM$qID <- qCreate::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-ECOLEX_MEM <- merge(ECOLEX_MEM, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 ECOLEX_MEM <- ECOLEX_MEM %>% 
   dplyr::select(ECOLEX_ID, Country, Title, Beg, End, SignatureC, Rat, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-ECOLEX_MEM$Beg <- qCreate::standardise_dates(ECOLEX_MEM$Beg)
-ECOLEX_MEM$End <- qCreate::standardise_dates(ECOLEX_MEM$End)
-ECOLEX_MEM$SignatureC <- qCreate::standardise_dates(ECOLEX_MEM$SignatureC)
-ECOLEX_MEM$Force <- qCreate::standardise_dates(ECOLEX_MEM$Force)
-ECOLEX_MEM$Rat <- qCreate::standardise_dates(ECOLEX_MEM$Rat)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

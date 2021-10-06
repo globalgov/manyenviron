@@ -27,17 +27,13 @@ TFDD_MEM <- TFDD_MEM %>%
 TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-TFDD_MEM <- merge(TFDD_MEM, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 TFDD_MEM <- TFDD_MEM %>% 
   dplyr::select(TFDD_ID, Country, Title, Beg, Signature, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-# Merge function removed the messydt class
-TFDD_MEM$Beg <- standardise_dates(TFDD_MEM$Beg)
-TFDD_MEM$Signature <- standardise_dates(TFDD_MEM$Signature)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.

@@ -32,21 +32,13 @@ IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %
 IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-IEADB_MEM <- merge(IEADB_MEM, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 IEADB_MEM <- IEADB_MEM %>% 
   dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-# Merge function removed the messydt class
-IEADB_MEM$Beg <- standardise_dates(IEADB_MEM$Beg)
-IEADB_MEM$End <- standardise_dates(IEADB_MEM$End)
-IEADB_MEM$SignatureC <- standardise_dates(IEADB_MEM$SignatureC)
-IEADB_MEM$Signature <- standardise_dates(IEADB_MEM$Signature)
-IEADB_MEM$Rat <- standardise_dates(IEADB_MEM$Rat)
-IEADB_MEM$Force <- standardise_dates(IEADB_MEM$Force)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
