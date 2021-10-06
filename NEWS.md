@@ -1,17 +1,17 @@
 # qEnvironDev 0.0.4
 
-2021-10-05
+2021-10-06
 
 ## Package
 
-* Closes #26 by adding a website using pkgdown package
+* Closed #26 by adding a website using pkgdown package
 
 ## Data
 
-* Closes #24 by adding IEADB texts using web scraping functions
-* Closes #25 by translating treaty titles using key API in `standardise_titles()`
-* Closes #27 by adding a qID_ref column using `condense_qID()` from qCreate
-* Closes #20 by preparing coding scheme based on treaty titles and texts
+* Closed #24 by adding IEADB texts using web scraping functions
+* Closed #25 by translating treaty titles using key API in `standardise_titles()`
+* Closed #27 by adding a qID_ref column using `condense_qID()` from qCreate
+* Closed #20 by preparing coding scheme based on treaty titles and texts
 
 # qEnvironDev 0.0.3
 
@@ -27,15 +27,18 @@
 * Used new version of `standardise_titles()` on title columns to better standardise specific words spelling
 * Simplified the tests of the databases according to these changes
 
-### organizations database
-* Closes #6 by adding MIA dataset into organizations database
+## Organizations database
 
-### agreements database
-* Closes #21 by joining numerous GNEVAR datasets with the `consolidate()` function
+* Closed #6 by adding MIA dataset into organizations database
+
+## Agreements database
+
+* Closed #21 by joining numerous GNEVAR datasets with the `consolidate()` function
 * Added CIESIN dataset into agreements database
 
-### references database
-* Closes #22 by adding REF dataset into references database
+## References database
+
+* Closed #22 by adding REF dataset into references database
 
 # qEnvironDev 0.0.2
 
