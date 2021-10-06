@@ -23,18 +23,13 @@ CIESIN <- as_tibble(CIESIN) %>%
 CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-CIESIN <- merge(CIESIN, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+CIESIN <- dplyr::left_join(CIESIN, qID_ref, by = "qID")
 
 # Re-order the columns
 CIESIN <- CIESIN %>% 
   dplyr::select(Title, Beg, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-# Merge function removed the messydt class
-CIESIN$Beg <- standardise_dates(CIESIN$Beg)
-CIESIN$Signature <- standardise_dates(CIESIN$Signature)
-CIESIN$Force <- standardise_dates(CIESIN$Force)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.

@@ -29,7 +29,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   dplyr::arrange(Beg)
 
 # Add qID column
-GNEVAR$qID<- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
+GNEVAR$qID <- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
@@ -41,7 +41,7 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   qData::transmutate(Signature = qCreate::standardise_dates(Sign))
 
 # Add qID column
-GNEVAR2$qID<- qCreate::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
+GNEVAR2$qID <- qCreate::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
 
 # Clean GNEVAR3 is the same as GNEVAR, no need to include it
 
@@ -56,7 +56,7 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
 # Add qID column
-GNEVAR4$qID<- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
+GNEVAR4$qID <- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 
 # Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
 # Can not integrate it into GNEVAR
@@ -68,20 +68,13 @@ GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-GNEVAR <- merge(GNEVAR, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+GNEVAR <- dplyr::left_join(GNEVAR, qID_ref, by = "qID")
 
-
-# Select some columns
+# Select and arrange columns
 GNEVAR <- GNEVAR %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-# Merge function removed the messydt class
-GNEVAR$Beg <- standardise_dates(GNEVAR$Beg)
-GNEVAR$End <- standardise_dates(GNEVAR$End)
-GNEVAR$Signature <- standardise_dates(GNEVAR$Signature)
-GNEVAR$Force <- standardise_dates(GNEVAR$Force)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

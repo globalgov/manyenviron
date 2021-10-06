@@ -29,18 +29,13 @@ ECOLEX <- as_tibble(ECOLEX) %>%
 ECOLEX$qID <- qCreate::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
 # Add qID_ref column
-qID_ref <- condense_qID(qEnviron::agreements)
-ECOLEX <- merge(ECOLEX, qID_ref, by = "qID", all.x = TRUE)
+qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+ECOLEX <- dplyr::left_join(ECOLEX, qID_ref, by = "qID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force, qID, qID_ref) %>% 
   dplyr::arrange(Beg)
-
-# Merge function removed the messydt class
-ECOLEX$Beg <- standardise_dates(ECOLEX$Beg)
-ECOLEX$Signature <- standardise_dates(ECOLEX$Signature)
-ECOLEX$Force <- standardise_dates(ECOLEX$Force)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
