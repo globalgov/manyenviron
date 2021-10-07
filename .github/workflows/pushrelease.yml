@@ -97,7 +97,7 @@ jobs:
 
   release:
     name: Bump version and release
-    needs: [build, release]
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout one
