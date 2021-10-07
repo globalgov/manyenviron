@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">qEnviron</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.4</span>
       </span>
     </div>
 
@@ -116,47 +116,6 @@
 <p>Once you have installed the package, you can see the different databases and datasets included in the <code>{qEnviron}</code> package using the following function.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">qData</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/qData/man/report.html">data_contrast</a></span><span class="op">(</span><span class="st">"qEnviron"</span><span class="op">)</span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## agreements :</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="do">##        Unique ID Missing Data Rows Columns        Beg       End</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="do">## IEADB          0        3.4 % 3666       8 1351-08-01        NA</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="do">## GNEVAR         0      23.06 % 3450      10 1351-08-01 Obsolete?</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX         0       6.65 % 2174       8 1868-10-17        NA</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="do">## CIESIN         0          0 %  666       5       1868        NA</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                URL</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="do">## IEADB  https://iea.uoregon.edu/base-agreement-list</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="do">## GNEVAR                                          NA</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX  https://www.ecolex.org/result/?type=treaty</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="do">## CIESIN    https://sedac.ciesin.columbia.edu/entri/</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="do">## memberships :</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="do">##            Unique ID Missing Data  Rows Columns        Beg        End</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX_MEM         0      24.96 % 25003       9 1192-06-12 2017-12-31</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="do">## GNEVAR_MEM         0       28.6 % 35671      12 1192-06-12 9999-12-31</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="do">## IEADB_MEM          0      28.99 % 27410      10 1900-05-19 2020-11-14</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="do">## TFDD_MEM           0       2.14 %  2118       6 1900-01-03         NA</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                             URL</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX_MEM           https://www.ecolex.org/result/?type=treaty</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="do">## GNEVAR_MEM                                                   NA</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="do">## IEADB_MEM               https://iea.uoregon.edu/country-members</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="do">## TFDD_MEM   https://transboundarywaters.science.oregonstate.edu/</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="do">## organizations :</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="do">##     Unique ID Missing Data Rows Columns  Beg End</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="do">## MIA         0         25 %   78       4 1831  NA</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                             URL</span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="do">## MIA https://garymarks.web.unc.edu/data/international-authority/</span></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="do">## references :</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="do">##            Unique ID Missing Data Rows Columns Beg End URL</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX_REF         0          0 % 1164       3  NA  NA  NA</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="do">## texts :</span></span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="do">##            Unique ID Missing Data Rows Columns        Beg End</span></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="do">## IEADB_TXT       2075       0.09 % 2075       5 1656-07-17  NA</span></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX_TXT      2174      12.07 % 2174       6 1868-10-17  NA</span></span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                   URL</span></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="do">## IEADB_TXT          https://iea.uoregon.edu/text-index</span></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="do">## ECOLEX_TXT https://www.ecolex.org/result/?type=treaty</span></span></code></pre></div>
 <p>Working with an ensemble of related data has many advantages for robust analysis. Just take a look at our vignettes <a href="https://globalgov.github.io/qData/articles/user.html">here</a>.</p>
 </div>
 <div id="qpackages" class="section level2">
@@ -164,21 +123,21 @@
 <a href="#qpackages" class="anchor"></a>qPackages</h2>
 <p>The <a href="https://github.com/globalgov/qData"><code>{qData}</code></a> ecosystem is aimed at collecting, connecting and correcting network data across issue-domains of global governance.</p>
 <p>While some qPackages can and do include novel data, much of what they offer involves standing on the shoulders of giants. qPackages endeavour to be as transparent as possible about where data comes from, how it has been coded and/or relabeled, and who has done the work. As such, we make it easy to cite both the particular datasets you use by listing the official references in the function above, as well as the package providers for their work assembling the data by using the function below.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span><span class="op">(</span><span class="st">"qEnviron"</span><span class="op">)</span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="do">## To cite qEnviron in publications use:</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   J. Hollway. Environmental agreements for qData. 2021.</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="do">## A BibTeX entry for LaTeX users is</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="do">##   @Manual{,</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="do">##     title = {qEnviron: Environmental agreements for qData},</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="do">##     author = {James Hollway},</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="do">##     year = {2021},</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="do">##     url = {https://github.com/globalgov/qEnviron},</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="do">##   }</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">## </span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co">## To cite qEnviron in publications use:</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">## </span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">##   J. Hollway. Environmental agreements for qData. 2021.</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">## </span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">## A BibTeX entry for LaTeX users is</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">## </span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co">##   @Manual{,</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="co">##     title = {qEnviron: Environmental agreements for qData},</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">##     author = {James Hollway},</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="co">##     year = {2021},</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co">##     url = {https://github.com/globalgov/qEnviron},</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co">##   }</span></span></code></pre></div>
 </div>
 <div id="contributing" class="section level2">
 <h2 class="hasAnchor">
