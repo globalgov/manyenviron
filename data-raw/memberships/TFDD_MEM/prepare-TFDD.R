@@ -17,10 +17,10 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 
 TFDD_MEM <- TFDD_MEM %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
-                     Country = CCODE,
+                     CountryID = CCODE,
                      Title = qCreate::standardise_titles(DocumentName)) %>% # key API has been used
   # to translate some of the treaties that were not in english
-  dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
+  dplyr::select(TFDD_ID, CountryID, Title, Beg, Signature) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
@@ -31,8 +31,8 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-TFDD_MEM <- TFDD_MEM %>% 
-  dplyr::select(TFDD_ID, Country, Title, Beg, Signature, qID, qID_ref) %>% 
+TFDD_MEM <- as_tibble(TFDD_MEM) %>% 
+  dplyr::select(CountryID, Title, Beg, Signature, qID, qID_ref, TFDD_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning

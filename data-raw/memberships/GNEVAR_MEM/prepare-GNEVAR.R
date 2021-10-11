@@ -19,10 +19,11 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
                      Term = qCreate::standardise_dates(DocEnd),
                      Force = qCreate::standardise_dates(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
+  dplyr::mutate(CountryID = Country) %>% 
   dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
-  dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
+  dplyr::select(GNEVAR_ID, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
@@ -33,9 +34,9 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-GNEVAR_MEM <- GNEVAR_MEM %>% 
-  dplyr::select(GNEVAR_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force,
-                Term, Withdrawal, qID, qID_ref) %>% 
+GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force,
+                Term, Withdrawal, qID, qID_ref, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.

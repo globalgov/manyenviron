@@ -19,10 +19,10 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
                      End = qCreate::standardise_dates(Term),
                      Force = qCreate::standardise_dates(For),
                      Rat = qCreate::standardise_dates(Rati),
-                     Country = StatID,
+                     CountryID = StatID,
                      ECOLEX_ID = EcolexID) %>%
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% # Check Signature date is for the country and not document signature date
-  dplyr::select(ECOLEX_ID, Country, Beg, End, SignatureC, Force, Rat) %>% 
+  dplyr::select(ECOLEX_ID, CountryID, Beg, End, SignatureC, Force, Rat) %>% 
   dplyr::arrange(Beg)
 
 # Add a Title column
@@ -40,8 +40,8 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-ECOLEX_MEM <- ECOLEX_MEM %>% 
-  dplyr::select(ECOLEX_ID, Country, Title, Beg, End, SignatureC, Rat, Force, qID, qID_ref) %>% 
+ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Rat, Force, qID, ECOLEX_ID, qID_ref) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.

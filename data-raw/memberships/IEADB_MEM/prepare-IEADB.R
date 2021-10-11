@@ -12,7 +12,7 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # below (in stage three) passes all the tests. 
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::rename(IEADB_ID = mitch_id) %>% 
-  qData::transmutate(Country = qStates::code_states(country),
+  qData::transmutate(CountryID = qStates::code_states(country),
                      Title = qCreate::standardise_titles(treatyname),
                      Signature = qCreate::standardise_dates(tsig),
                      SignatureC = qCreate::standardise_dates(csig),
@@ -20,12 +20,12 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                      End = qCreate::standardise_dates(tterm),
                      Force = qCreate::standardise_dates(ceif3),
                      Force2 = qCreate::standardise_dates(ceif4)) %>%
-  dplyr::select(IEADB_ID, Country, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
+  dplyr::select(IEADB_ID, CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
 
 IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %>% 
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
-  dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
+  dplyr::select(IEADB_ID, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
@@ -36,8 +36,8 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-IEADB_MEM <- IEADB_MEM %>% 
-  dplyr::select(IEADB_ID, Country, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, qID_ref) %>% 
+IEADB_MEM <- as_tibble(IEADB_MEM) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, qID_ref, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
