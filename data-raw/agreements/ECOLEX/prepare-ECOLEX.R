@@ -34,7 +34,7 @@ ECOLEX <- dplyr::left_join(ECOLEX, qID_ref, by = "qID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 
-  dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force, qID, qID_ref) %>% 
+  dplyr::select(qID_ref, Title, Beg, L, J, Signature, Force, qID, ECOLEX_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.

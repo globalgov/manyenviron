@@ -7,12 +7,12 @@
 #' functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 9 variables: IEADB_ID, Title, Beg, L, D, Signature, Force, qID, qID_ref.}
-#' \item{GNEVAR: }{A dataset with 3431 observations and the following
-#' 11 variables: GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID, qID_ref.}
+#' 9 variables: qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID.}
+#' \item{GNEVAR: }{A dataset with 3450 observations and the following
+#' 11 variables: qID_ref, Title, Beg, End, L, D, J, Signature, Force, qID, GNEVAR_ID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 9 variables: ECOLEX_ID, Title, Beg, L, J, Signature, Force, qID, qID_ref.}
+#' 9 variables: qID_ref, Title, Beg, L, J, Signature, Force, qID, ECOLEX_ID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
-#' 6 variables: Title, Beg, Signature, Force, qID, qID_ref.}
+#' 6 variables: qID_ref, Title, Beg, Signature, Force, qID.}
 #' }
  "agreements"

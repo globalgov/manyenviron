@@ -28,7 +28,7 @@ CIESIN <- dplyr::left_join(CIESIN, qID_ref, by = "qID")
 
 # Re-order the columns
 CIESIN <- CIESIN %>% 
-  dplyr::select(Title, Beg, Signature, Force, qID, qID_ref) %>% 
+  dplyr::select(qID_ref, Title, Beg, Signature, Force, qID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning

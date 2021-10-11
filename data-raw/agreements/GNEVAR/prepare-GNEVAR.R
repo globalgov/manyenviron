@@ -73,7 +73,7 @@ GNEVAR <- dplyr::left_join(GNEVAR, qID_ref, by = "qID")
 
 # Select and arrange columns
 GNEVAR <- GNEVAR %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L, D, J, Signature, Force, qID, qID_ref) %>% 
+  dplyr::select(qID_ref, Title, Beg, End, L, D, J, Signature, Force, qID, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.

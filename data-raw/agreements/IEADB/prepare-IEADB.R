@@ -34,7 +34,7 @@ IEADB <- dplyr::left_join(IEADB, qID_ref, by = "qID")
 
 # Re-order the columns
 IEADB <- IEADB %>% 
-  dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force, qID, qID_ref) %>% 
+  dplyr::select(qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
