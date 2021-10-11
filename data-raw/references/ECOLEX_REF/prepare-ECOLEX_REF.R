@@ -39,7 +39,7 @@ ecoid <- ecoid %>%
 ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty1" = "ECOLEX_ID")) %>%
   dplyr::rename(qID1 = "qID")
 ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty2" = "ECOLEX_ID")) %>%
-  dplyr::rename(qID2 = "qID") %>% dplyr::select(qID1, RefType, qID2)
+  dplyr::rename(qID2 = "qID") %>% dplyr::select(qID1, qID2, RefType)
 ECOLEX_REF
 
 # qCreate includes several functions that should help cleaning
