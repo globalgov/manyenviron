@@ -32,7 +32,7 @@ TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 TFDD_MEM <- as_tibble(TFDD_MEM) %>% 
-  dplyr::select(CountryID, Title, Beg, Signature, qID, qID_ref, TFDD_ID) %>% 
+  dplyr::select(CountryID, qID_ref, Title, Beg, Signature, qID, TFDD_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning

@@ -37,7 +37,7 @@ IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 IEADB_MEM <- as_tibble(IEADB_MEM) %>% 
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, qID_ref, IEADB_ID) %>% 
+  dplyr::select(CountryID, qID_ref, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.

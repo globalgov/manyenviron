@@ -35,8 +35,8 @@ GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>% 
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force,
-                Term, Withdrawal, qID, qID_ref, GNEVAR_ID) %>% 
+  dplyr::select(CountryID, qID_ref, Title, Beg, End, SignatureC, Signature, Rat, Force,
+                Term, Withdrawal, qID, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.

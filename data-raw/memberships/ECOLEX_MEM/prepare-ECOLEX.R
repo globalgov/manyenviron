@@ -41,7 +41,7 @@ ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>% 
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Rat, Force, qID, ECOLEX_ID, qID_ref) %>% 
+  dplyr::select(CountryID, qID_ref, Title, Beg, End, SignatureC, Rat, Force, qID, ECOLEX_ID) %>% 
   dplyr::arrange(Beg)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
