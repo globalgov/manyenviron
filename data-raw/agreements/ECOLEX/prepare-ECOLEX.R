@@ -18,7 +18,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
   qData::transmutate(ECOLEX_ID = `EcolexID`,
                      Title = qCreate::standardise_titles(title), #Key API has been used here
-                     # to translate treaties not in english
+                     # to translate treaties to English
                      Signature = qCreate::standardise_dates(lubridate::mdy(Date)),
                      Force = qCreate::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
