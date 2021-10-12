@@ -26,25 +26,24 @@ With this qID, spotting the relationship between the treaties becomes easier as 
 
 ### By references
 
-The graph below illustrates a sample of 50 treaties from the references database for which only one type of relationship has been selected. Treaties that "cites" other treaties are showed in this graph. Instead of having the treaty tiles, the qIDs are used to facilitate the reading and illustration of the relationships.
+The graph below illustrates a sample of 25 treaties from the references database for which only one type of relationship has been selected. Treaties that "cites" other treaties are showed in this graph. Instead of having the treaty tiles, the qIDs are used to facilitate the reading and illustration of the relationships.
 
 ```{r references, warning=FALSE, message=FALSE}
 library(dplyr)
 library(migraph)
 references <- qEnviron::references$ECOLEX_REF
 references <- references %>% dplyr::distinct()
-migraph::gglineage(subset(references, RefType == "Cites")[1:50,c(1,2,3)])
-
+migraph::gglineage(subset(references, RefType == "Cites")[1:25,c(1,2,3)])
 ```
 
 
 ### By memberships
 
-With this graph, countries are represented by the dots and the treaties by the edges. A sample of 50 observations has been extracted from the memberships database for this example. qIDs are also used to refer to treaty titles. 
+With this graph, countries are represented by the squares, the treaties by the dots, and memberships by the edges. A sample of 25 observations has been extracted from the memberships database for this example. qIDs are also used to refer to treaty titles. 
 
 ```{r memberships, warning=FALSE, message=FALSE}
-sample <- qEnviron::memberships$IEADB_MEM[15000:15050,]
-sample <- sample %>% dplyr::select(CountryID, qID, Title)
+sample <- qEnviron::memberships$IEADB_MEM[15100:15125,]
+sample <- sample %>% dplyr::select(qID, CountryID, Title)
 sample <- migraph::as_tidygraph(sample)
 migraph::autographr(sample)
 ```
