@@ -1,0 +1,57 @@
+---
+title: "How Do Environmental Treaties Connect?"
+author: "James Hollway"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How Do Environmental Treaties Connect?}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Connecting qEnviron databases
+
+ `{qEnviron}` is composed of environmental treaties whose data are stored differently depending on the database. For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with specific information such as the type (e.g. agreements, protocols, amendments, declarations), if they are bilateral or multilateral, and some important dates such as the signature or entry into force. The **Memberships** database contains some lists of countries with the treaties to which they are parties. It also includes significant dates like the signature of the treaty or the withdrawal date. The **References** database is composed of one dataset that indicates the relationship (e.g. amended by, cites, superseded by) between two treaties. The **Texts** database stores the whole text of each environmental treaty.
+
+There are many different ways in which treaties could be linked to other treaties. For example, a treaty can be substituted by another, complemented by protocols, changed through amendments or can simply cite another treaty. Family treaties are spread over `{qEnviron}` databases. To facilitate the connection between the databases, the `code_agreements()` function has been developed in `{qCreate}` to generate unique qID to treaties. Each of the `{qEnviron}` dataset contains a column with this qID. To understand what are the information provided through this qID, please visit this [article](https://globalgov.github.io/qCreate/articles/agreements.html) on `{qCreate}` website.
+
+With this qID, spotting the relationship between the treaties becomes easier as it allows the identification of each treaties through all `{qEnviron}` datasets. Here below are two examples of visualization of treaties connecting through the references database and the memberships database.
+
+
+### By references
+
+The graph below illustrates a sample of 50 treaties from the references database for which only one type of relationship has been selected. Treaties that "cites" other treaties are showed in this graph. Instead of having the treaty tiles, the qIDs are used to facilitate the reading and illustration of the relationships.
+
+```{r references, warning=FALSE, message=FALSE}
+library(tidyverse)
+references <- qEnviron::references$ECOLEX_REF
+references <- references %>% 
+  dplyr::distinct()
+migraph::gglineage(subset(references, RefType == "Cites")[1:50,c(1,2,3)])
+
+```
+
+
+### By memberships
+
+With this graph, countries are represented by the dots and the treaties by the edges. A sample of 50 observations has been extracted from the memberships database for this example. qIDs are also used to refer to treaty titles. 
+
+```{r memberships, warning=FALSE, message=FALSE}
+library(ggraph)
+sample <- qEnviron::memberships$IEADB_MEM[15000:15050,]
+sample <- sample %>% 
+  dplyr::select(CountryID, qID, Title)
+
+sample <- migraph::as_tidygraph(sample)
+migraph::autographr(sample)
+
+```
+
+
