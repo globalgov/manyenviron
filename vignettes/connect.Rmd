@@ -33,30 +33,101 @@ The graph below illustrates a sample of earliest 25 treaties from the references
 ```{r references, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 library(dplyr)
 library(migraph)
+library(ggplot2)
 references <- qEnviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(qID2, "[:digit:]{4}")) %>%
   dplyr::filter(RefType == "Cites") %>%
   dplyr::arrange(year)
-migraph::gglineage(references[1:25,c(1,2,3)])
+migraph::gglineage(references[1:25,c(1,2,3)]) +
+  labs(title = "Treaty Lineage of Selected Agreements",
+       caption = "Source: qEnviron") +
+  theme(plot.title = element_text(family = "sans",
+                                  size = 18,
+                                  hjust = 0.5))
 ```
 
-### Visualising How Agreements Connect by Membership
+### Visualising How Agreements Connect by Country Membership
 
-The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. qIDs are also used to refer to treaty titles. 
+#### In 2D
 
-```{r memberships, warning=FALSE, message=FALSE, fig.align='center'}
+The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. qIDs are also used to refer to treaty titles.
+
+```{r memberships, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
 library(ggplot2)
 membership_1960 <- qEnviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1960") %>%
   dplyr::select(qID, CountryID, Title) %>%
   migraph::as_tidygraph()
-migraph::autographr(membership_1960) + ggplot2::ggtitle("Membership in Environmental Treaties in 1960")
+migraph::autographr(membership_1960) +
+  labs(title = "Membership in Environmental Treaties\nSigned in 1960",
+       caption = "Source: qEnviron") +
+  theme(plot.title = element_text(family = "sans",
+                                  size = 18,
+                                  hjust = 0.5))
 membership_1980 <- qEnviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
   dplyr::select(qID, CountryID, Title) %>%
   migraph::as_tidygraph()
-migraph::autographr(membership_1980) + ggplot2::ggtitle("Membership in Environmental Treaties in 1980")
+migraph::autographr(membership_1980) +
+  labs(title = "Membership in Environmental Treaties\nSigned in 1980",
+       caption = "Source: qEnviron") +
+  theme(plot.title = element_text(family = "sans",
+                                  size = 18,
+                                  hjust = 0.5))
+```
+#### And in 3D!
+
+Visualizing the network in 3D is a neat way of presenting your data in HTML
+documents. This allows you to let the visitors of your site interact with
+your network by allowing them to move things around. To get there, we leverage
+the [`{threejs}`](https://bwlewis.github.io/rthreejs/) package, an interface
+between R and the eponymous JS library.
+
+We start by importing the membership data for agreements signed in 1980 and
+set a node attribute `lvl` identifying the set a node belongs to. We move on to
+subsetting the graph by only retaining the biggest component and applying the
+`layout_as_multilevel()` layout function. We finally make some cosmetic
+adjustments before rendering the graph. Note that you can hover over a node
+to display its name!
+
+```{r memberships3D, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+# Loading additional packages
+library(threejs)
+library(graphlayouts)
+
+# Importing things
+membership_1980 <- qEnviron::memberships$IEADB_MEM %>%
+  dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
+  dplyr::filter(year == "1980") %>%
+  dplyr::select(qID, CountryID, Title) %>%
+  migraph::as_tidygraph()
+
+# Set node attributes "lvl" to separate between countries and agreements
+V(membership_1980)$lvl <- if_else(V(membership_1980)$type, 2, 1)
+
+# Subset the graph to only include the biggest component
+componentsNeedles <- igraph::components(membership_1980, mode = "strong")
+biggest_component_id <- which.max(componentsNeedles$csize)
+vert_ids <- V(membership_1980)[componentsNeedles$membership == biggest_component_id]
+membership_1980 <- igraph::induced_subgraph(membership_1980, vert_ids)
+
+# Define the 3D layout
+membership_1980$layout <- graphlayouts::layout_as_multilevel(membership_1980,
+                                                             type = "all",
+                                                             alpha = 25,
+                                                             beta = 45,
+                                                             project2D = FALSE)
+V(membership_1980)$color <- c("#014D23", "#36648A")[V(membership_1980)$lvl]
+V(membership_1980)$vertex.label <- V(membership_1980)$name
+
+# Render the graph
+graphjs(membership_1980,
+        main = "Membership in Environmental Treaties\nSigned in 1980 (Main Component)",
+        bg = "white",
+        vertex.label = V(membership_1980)$vertex.label,
+        vertex.size = ifelse(V(membership_1980)$lvl == 1, 0.8, 2),
+        vertex.shape = ifelse(V(membership_1980)$lvl == 1, "square", "sphere"))
 ```
