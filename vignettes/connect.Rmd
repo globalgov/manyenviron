@@ -45,11 +45,36 @@ migraph::gglineage(references[1:25,c(1,2,3)]) +
   theme(plot.title = element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
+
+# More minimal example attempt with treaty titles; not very pretty...
+
+referencesmin <- qEnviron::references$ECOLEX_REF %>% 
+  dplyr::distinct() %>%
+  dplyr::mutate(year = stringr::str_extract(qID2, "[:digit:]{4}")) %>%
+  dplyr::filter(RefType == "Cites" & qID2 == "RAMSA_1971A") %>%
+  dplyr::arrange(year)
+agreementinfo <- qEnviron::agreements$ECOLEX %>%
+  dplyr::filter(qID == "RAMSA_1971A") %>%
+  dplyr::slice(rep(dplyr::row_number(), 3))
+agreementinfonames <- qEnviron::agreements$ECOLEX %>%
+  filter(qID == "ST04DC_2014P" | qID == "MDA-UKR[SDD]_2012A" |
+           qID == "NGWCHA_2008O") %>%
+  dplyr::select(Title)
+referencesmin$qID2  <- agreementinfo$Title
+referencesmin$qID1 <- agreementinfonames$Title
+
+# Plot things
+migraph::gglineage(referencesmin) +
+  labs(title = "Treaty Lineage of RAMSA",
+       caption = "Source: qEnviron") +
+  theme(plot.title = element_text(family = "sans",
+                                  size = 18,
+                                  hjust = 0.5))
 ```
 
 ### Visualising How Agreements Connect by Country Membership
 
-#### In 2D
+#### In 2D...
 
 The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. qIDs are also used to refer to treaty titles.
 
@@ -78,7 +103,8 @@ migraph::autographr(membership_1980) +
                                   size = 18,
                                   hjust = 0.5))
 ```
-#### And in 3D!
+
+#### ...And in 3D!
 
 Visualizing the network in 3D is a neat way of presenting your data in HTML
 documents. This allows you to let the visitors of your site interact with
@@ -125,9 +151,13 @@ V(membership_1980)$vertex.label <- V(membership_1980)$name
 
 # Render the graph
 graphjs(membership_1980,
-        main = "Membership in Environmental Treaties\nSigned in 1980 (Main Component)",
+        main = "Membership in Environmental Treaties Signed in 1980 (Main Component)",
         bg = "white",
         vertex.label = V(membership_1980)$vertex.label,
         vertex.size = ifelse(V(membership_1980)$lvl == 1, 0.8, 2),
-        vertex.shape = ifelse(V(membership_1980)$lvl == 1, "square", "sphere"))
+        vertex.shape = ifelse(V(membership_1980)$lvl == 1, "square", "sphere"),
+        top = 1,
+        left = 45,
+        font.main = "18px Arial")
 ```
+
