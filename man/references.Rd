@@ -3,7 +3,7 @@
 \docType{data}
 \name{references}
 \alias{references}
-\title{References database documentation}
+\title{references database documentation}
 \format{
 The references database is a list that contains the
 following 1 datasets: ECOLEX_REF.
@@ -12,13 +12,13 @@ please use the \code{data_source()}, \code{data_contrast()}, and \code{data_evol
 functions.
 \describe{
 \item{ECOLEX_REF: }{A dataset with 1164 observations and the following
-3 variables: qID1, RefType, qID2.}
+3 variables: qID1, qID2, RefType.}
 }
 }
 \usage{
 references
 }
 \description{
-References database documentation
+references database documentation
 }
 \keyword{datasets}

@@ -20,12 +20,11 @@ navbar:
     reference:
       text: Reference
       href: reference/index.html
-    # Uncomment if you need to add vignettes and add in structure
-    # articles:
-    #   text: Articles
-    #   menu:
-    #   - text: Creating historical maps
-    #     href: articles/CShapesMaps.html
+    articles:
+      text: Articles
+      menu:
+      - text: How Do Environmental Treaties Connect?
+        href: articles/connect.html
     news:
       text: News
       href: news/index.html
