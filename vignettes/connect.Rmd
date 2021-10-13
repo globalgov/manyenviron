@@ -43,7 +43,7 @@ migraph::gglineage(references[1:25,c(1,2,3)])
 
 ### Visualising How Agreements Connect by Membership
 
-The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the squares, the treaties by the dots, and memberships by the edges. qIDs are also used to refer to treaty titles. 
+The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. qIDs are also used to refer to treaty titles. 
 
 ```{r memberships, warning=FALSE, message=FALSE, fig.align='center'}
 library(ggplot2)
