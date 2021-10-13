@@ -30,7 +30,7 @@ Below are two examples of how to visualise treaty linkages for the references an
 
 The graph below illustrates a sample of earliest 25 treaties from the references database. We select only treaties that cite other treaties. The qIDs are used to facilitate the reading and illustration of the relationships.
 
-```{r references, warning=FALSE, message=FALSE}
+```{r references, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 library(dplyr)
 library(migraph)
 references <- qEnviron::references$ECOLEX_REF %>% 
@@ -45,7 +45,7 @@ migraph::gglineage(references[1:25,c(1,2,3)])
 
 The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the squares, the treaties by the dots, and memberships by the edges. qIDs are also used to refer to treaty titles. 
 
-```{r memberships, warning=FALSE, message=FALSE}
+```{r memberships, warning=FALSE, message=FALSE, fig.align='center'}
 library(ggplot2)
 membership_1960 <- qEnviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
