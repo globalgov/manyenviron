@@ -11,7 +11,6 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
-  dplyr::rename(IEADB_ID = mitch_id) %>% 
   qData::transmutate(CountryID = qStates::code_states(country),
                      Title = qCreate::standardise_titles(treatyname),
                      Signature = qCreate::standardise_dates(tsig),
@@ -19,13 +18,13 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                      Rat = qCreate::standardise_dates(crat),
                      End = qCreate::standardise_dates(tterm),
                      Force = qCreate::standardise_dates(ceif3),
-                     Force2 = qCreate::standardise_dates(ceif4)) %>%
-  dplyr::select(IEADB_ID, CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC) %>% 
-  tidyr::pivot_longer(c(Force2, Force), values_to = "Force")
-
-IEADB_MEM <- IEADB_MEM[!(is.na(IEADB_MEM$Force) & IEADB_MEM$name =="Force2"),] %>% 
+                     Force2 = qCreate::standardise_dates(ceif4),
+                     IEADB_ID = mitch_id) %>%
+  dplyr::select(CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC, IEADB_ID) %>% 
+  tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%
+  dplyr::filter(!is.na(Force) & name != "Force2") %>%  
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
-  dplyr::select(IEADB_ID, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force) %>% 
+  dplyr::select(-Force2) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
@@ -36,9 +35,7 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-IEADB_MEM <- as_tibble(IEADB_MEM) %>% 
-  dplyr::select(CountryID, qID_ref, Title, Beg, End, SignatureC, Signature, Rat, Force, qID, IEADB_ID) %>% 
-  dplyr::arrange(Beg)
+IEADB_MEM <- relocate(IEADB_MEM, qID_ref)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

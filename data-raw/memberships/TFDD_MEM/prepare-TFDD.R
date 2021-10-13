@@ -12,15 +12,12 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = openxlsx::convertToDate(DateSigned)) %>% 
-  dplyr::mutate(Signature = qCreate::standardise_dates(as.character(Signature))) %>% 
-  dplyr::mutate(Beg = Signature)
-
-TFDD_MEM <- TFDD_MEM %>%
+  dplyr::mutate(Beg = qCreate::standardise_dates(as.character(Signature))) %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
                      CountryID = CCODE,
-                     Title = qCreate::standardise_titles(DocumentName)) %>% # key API has been used
-  # to translate some of the treaties that were not in english
-  dplyr::select(TFDD_ID, CountryID, Title, Beg, Signature) %>% 
+                     Title = qCreate::standardise_titles(DocumentName)) %>% 
+  # API has been used to translate some of the treaties that were not in english
+  dplyr::select(CountryID, Title, Beg, Signature, TFDD_ID) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
@@ -31,9 +28,7 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-TFDD_MEM <- as_tibble(TFDD_MEM) %>% 
-  dplyr::select(CountryID, qID_ref, Title, Beg, Signature, qID, TFDD_ID) %>% 
-  dplyr::arrange(Beg)
+TFDD_MEM <- dplyr::relocate(TFDD_MEM, qID_ref)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.

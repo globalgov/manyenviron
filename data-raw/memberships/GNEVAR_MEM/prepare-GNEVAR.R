@@ -23,7 +23,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
-  dplyr::select(GNEVAR_ID, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
@@ -34,10 +34,7 @@ qID_ref <- qCreate::condense_qID(qEnviron::agreements)
 GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>% 
-  dplyr::select(CountryID, qID_ref, Title, Beg, End, SignatureC, Signature, Rat, Force,
-                Term, Withdrawal, qID, GNEVAR_ID) %>% 
-  dplyr::arrange(Beg)
+GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, qID_ref)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
