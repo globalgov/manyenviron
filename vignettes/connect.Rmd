@@ -30,10 +30,10 @@ Below are two examples of how to visualise treaty linkages for the references an
 
 The graph below illustrates a sample of earliest 25 treaties from the references database. We select only treaties that cite other treaties. The qIDs are used to facilitate the reading and illustration of the relationships.
 
-```{r references, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
+```{r lineage, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 library(dplyr)
-library(migraph)
 library(ggplot2)
+library(migraph)
 references <- qEnviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(qID2, "[:digit:]{4}")) %>%
@@ -45,41 +45,43 @@ migraph::gglineage(references[1:25,c(1,2,3)]) +
   theme(plot.title = element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
+```
 
-# More minimal example attempt with treaty titles; not very pretty...
+We can also take a look at a single lineage of Enviromental treaties. Let's look at treaties that ammend the Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
-referencesmin <- qEnviron::references$ECOLEX_REF %>% 
+```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
+ramsa <- qEnviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(qID2, "[:digit:]{4}")) %>%
-  dplyr::filter(RefType == "Cites" & qID2 == "RAMSA_1971A") %>%
+  dplyr::filter(RefType == "Amends" & qID2 == "RAMSA_1971A") %>%
   dplyr::arrange(year)
-agreementinfo <- qEnviron::agreements$ECOLEX %>%
-  dplyr::filter(qID == "RAMSA_1971A") %>%
-  dplyr::slice(rep(dplyr::row_number(), 3))
-agreementinfonames <- qEnviron::agreements$ECOLEX %>%
-  filter(qID == "ST04DC_2014P" | qID == "MDA-UKR[SDD]_2012A" |
-           qID == "NGWCHA_2008O") %>%
-  dplyr::select(Title)
-referencesmin$qID2  <- agreementinfo$Title
-referencesmin$qID1 <- agreementinfonames$Title
 
-# Plot things
-migraph::gglineage(referencesmin) +
-  labs(title = "Treaty Lineage of RAMSA",
+# Get agreement titles
+agreementtitles <- qEnviron::agreements$ECOLEX %>%
+  dplyr::select(Title, qID) %>% 
+  dplyr::rename(qID1 = qID)
+
+# Join information
+ramsa <- dplyr::left_join(ramsa, agreementtitles, by = "qID1")
+ramsa$qID2 <- "Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat - 1971"
+ramsa$Title <- paste0(ramsa$Title, "-", stringr::str_extract(ramsa$qID1, "[:digit:]{4}"))
+ramsa <- dplyr::relocate(ramsa, qID2, Title)
+
+# Plot with migraph
+migraph::gglineage(ramsa) +
+  labs(title = "Treaties that Amend the Ramsar Convention",
        caption = "Source: qEnviron") +
   theme(plot.title = element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
 ```
 
+
 ### Visualising How Agreements Connect by Country Membership
 
-#### In 2D...
-
-The graph below illustrates the connection between parties and treaties in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. qIDs are also used to refer to treaty titles.
+The graph below illustrates the connection between parties and treaties for environmental agreements signed into force in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. qIDs are also used to refer to treaty titles.
 
 ```{r memberships, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-library(ggplot2)
 membership_1960 <- qEnviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1960") %>%
@@ -104,7 +106,7 @@ migraph::autographr(membership_1980) +
                                   hjust = 0.5))
 ```
 
-#### ...And in 3D!
+### Visulaizing the Plots in 3D
 
 Visualizing the network in 3D is a neat way of presenting your data in HTML
 documents. This allows you to let the visitors of your site interact with
@@ -112,24 +114,17 @@ your network by allowing them to move things around. To get there, we leverage
 the [`{threejs}`](https://bwlewis.github.io/rthreejs/) package, an interface
 between R and the eponymous JS library.
 
-We start by importing the membership data for agreements signed in 1980 and
-set a node attribute `lvl` identifying the set a node belongs to. We move on to
+We will use the membership data for agreements signed in 1980 from above and
+set a node attribute `lvl` identifying the set a node belongs to. We then move on to
 subsetting the graph by only retaining the biggest component and applying the
-`layout_as_multilevel()` layout function. We finally make some cosmetic
-adjustments before rendering the graph. Note that you can hover over a node
-to display its name!
+`layout_as_multilevel()` function. We finally make some cosmetic
+adjustments before rendering the graph. (Note that you can hover over a node
+to display its name!)
 
 ```{r memberships3D, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
 # Loading additional packages
 library(threejs)
 library(graphlayouts)
-
-# Importing things
-membership_1980 <- qEnviron::memberships$IEADB_MEM %>%
-  dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
-  dplyr::filter(year == "1980") %>%
-  dplyr::select(qID, CountryID, Title) %>%
-  migraph::as_tidygraph()
 
 # Set node attributes "lvl" to separate between countries and agreements
 V(membership_1980)$lvl <- if_else(V(membership_1980)$type, 2, 1)
@@ -151,7 +146,7 @@ V(membership_1980)$vertex.label <- V(membership_1980)$name
 
 # Render the graph
 graphjs(membership_1980,
-        main = "Membership in Environmental Treaties Signed in 1980 (Main Component)",
+        main = "Membership in Environmental Treaties Signed in 1980",
         bg = "white",
         vertex.label = V(membership_1980)$vertex.label,
         vertex.size = ifelse(V(membership_1980)$lvl == 1, 0.8, 2),
@@ -160,4 +155,3 @@ graphjs(membership_1980,
         left = 45,
         font.main = "18px Arial")
 ```
-
