@@ -13,7 +13,7 @@ test_that("missing observations are reported correctly", {
 # Uniformity tests (agreements have a source ID, a string title, a signature and
 # entry into force date)
 test_that("datasets have the required variables", {
-  expect_col_exists(memberships[["GNEVAR_MEM"]], vars(Country))
+  expect_col_exists(memberships[["GNEVAR_MEM"]], vars(CountryID))
   expect_col_exists(memberships[["GNEVAR_MEM"]], vars(Beg))
 })
 
