@@ -28,19 +28,18 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
 # Add a Title column
 ECOLEX <- qEnviron::agreements$ECOLEX %>% 
   dplyr::select(Title, ECOLEX_ID)
-ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID") %>% 
-  qData::transmutate(Title = standardise_titles(Title)) 
-# API was used to translate some treaty titles to english
+ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID")
+
 
 #Add a qID column
 ECOLEX_MEM$qID <- qCreate::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- qCreate::condense_qID(qEnviron::memberships)
 ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM, qID_ref)
+ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM, c("qID_ref", "CountryID", "Title"))
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

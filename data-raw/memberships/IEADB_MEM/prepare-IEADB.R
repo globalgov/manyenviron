@@ -24,14 +24,14 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%
   dplyr::filter(!is.na(Force) & name != "Force2") %>%  
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
-  dplyr::select(-Force2) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
 IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- qCreate::condense_qID(qEnviron::memberships)
 IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
 
 # Re-order the columns

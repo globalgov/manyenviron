@@ -11,7 +11,7 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(Signature = openxlsx::convertToDate(DateSigned)) %>% 
+  dplyr::mutate(Signature = standardise_dates(openxlsx::convertToDate(DateSigned))) %>% 
   dplyr::mutate(Beg = qCreate::standardise_dates(as.character(Signature))) %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
                      CountryID = CCODE,
@@ -24,7 +24,7 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
 TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- qCreate::condense_qID(qEnviron::memberships)
 TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
