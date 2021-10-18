@@ -1,6 +1,6 @@
 ---
 title: "How Do Environmental Treaties Connect?"
-authors: "James Hollway, Esther Peev, and Henrique Sposito"
+authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -154,4 +154,68 @@ graphjs(membership_1980,
         top = 1,
         left = 45,
         font.main = "18px Arial")
+```
+
+### Projecting the Network on a Globe:
+
+As a little bonus example, let's look at what the "country projection" of
+the bimodal network above looks like on a globe. Before, we start, note that
+projections such as the ones we're about to perform are obscuring information
+about the underlying bimodal network. Now that we mentioned this caveat, let's
+look at how we can create this visualisation.
+
+There are essentially two elements we need for this visualization. First,
+the country projection of reaties signed in 1980 which we computed before.
+Second, a dataframe of the centroids of every country in the world which we get
+from the `{rgeos}` and the `{rworldmap}` packages. Once we have these elements,
+we merge them and create a specific dataframe for the arcs to be displayed in
+the `globejs()` visualization. Finally, we plot it and adjust colors and
+inital longitude and latitude of the plotted globe.
+
+``` {r, membershipsGlobe, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=9}
+library(rgeos)
+library(rworldmap)
+
+# Step 1: Create the projection
+membership_1980 <- project_cols(membership_1980)
+membership_1980 <- igraph::get.data.frame(membership_1980,
+                                                "edges")
+# Step 2: Get the coordinates of the centroids of each territory
+wmap <- getMap(resolution="high")
+centroids <- gCentroid(wmap, byid=TRUE)
+centroids$ID <- countrycode::countrycode(rownames(as.data.frame(centroids)),
+                                         "country.name",
+                                         "cowc")
+centroids <- dplyr::as_tibble(centroids) %>%
+  dplyr::rename(lat = y,
+         long = x) %>%
+  tidyr::drop_na(ID)
+
+# Step 3: Merge centroids and links dataframes
+
+merged <- merge(centroids, membership_1980, by.x = "ID", by.y = "from")
+merged <- dplyr::rename(merged,
+                      origin_long = long,
+                      origin_lat = lat)
+merged <- merge(centroids, merged, by.x = "ID", by.y = "to")
+merged <- dplyr::rename(merged,
+                      dest_lat = lat,
+                      dest_long = long,
+                      ID_from = ID,
+                      ID_to = ID.y) %>%
+  dplyr::relocate(ID_from, ID_to, origin_lat, origin_long, dest_lat, dest_long)
+
+# Step 4: Create arcs dataframe
+keeps <- c("origin_lat", "origin_long", "dest_lat", "dest_long")
+arcs <- merged[keeps]
+
+# Step 5: Create the visualization
+globejs(lat=merged$dest_lat, long=merged$dest_long,
+        arcs = arcs,
+        bodycolor="#aaaaff",
+        rotationlong = 200,
+        rotationlat = -100,
+        arcsHeight=0.3, arcsLwd=2.5,
+        arcsColor="#2fff00", arcsOpacity=0.15,
+        atmosphere=TRUE, color="#00aaff", pointsize=0.5)
 ```
