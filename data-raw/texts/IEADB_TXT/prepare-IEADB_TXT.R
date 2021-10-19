@@ -30,12 +30,18 @@ IEADB_TXT$TreatyText <- lapply(IEADB_TXT$ID, function(s) tryCatch(rvest::read_ht
 # Step four: keep only the treaty text from the website text
 # IEADB_TEXT1
 IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText, function(s) gsub(".*Source:","", s))
+IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText_Shorter, function(s) sub(".*?\n","", s))
 IEADB_TXT$TreatyText_Shorter <- lapply(IEADB_TXT$TreatyText_Shorter, function(s) gsub("Citation.*","", s))
 
 # Step five: remove variable with all the webpages text and rename text variable
 IEADB_TXT = subset(IEADB_TXT, select = - c(TreatyText))
 IEADB_TXT <- IEADB_TXT %>% 
   dplyr::rename(Text = TreatyText_Shorter)
+
+# Step six: translate treaty texts to English (to do once the lingua() function
+# from qCreate is ready to be used)
+# IEADB_TXT$Text2 <- as.character(IEADB_TXT$Text)
+# IEADB_TXT$language <- cld2::detect_language(IEADB_TXT$Text2)
 
 # qCreate includes several functions that should help cleaning
 # and standardising your data.
