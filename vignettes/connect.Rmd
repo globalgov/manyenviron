@@ -127,6 +127,7 @@ membership_1980 <- qEnviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
   dplyr::select(qID, CountryID, Title) %>%
+  tidyr::drop_na() %>%
   migraph::as_tidygraph()
 
 # Plot with migraph
@@ -159,8 +160,7 @@ library(threejs)
 library(graphlayouts)
 
 # Set node attributes "lvl" to separate between countries and agreements
-V(membership_1980)$type <- if_else(nchar(V(membership_1980)$name) == 3 |
-                                     V(membership_1980)$name == "GIN_PNG",
+V(membership_1980)$type <- if_else(nchar(V(membership_1980)$name) == 3,
                                    TRUE,
                                    FALSE)
 V(membership_1980)$lvl <- if_else(V(membership_1980)$type, 2, 1)
