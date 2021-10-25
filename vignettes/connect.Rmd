@@ -159,12 +159,16 @@ library(threejs)
 library(graphlayouts)
 
 # Set node attributes "lvl" to separate between countries and agreements
+V(membership_1980)$type <- if_else(nchar(V(membership_1980)$name) == 3 |
+                                     V(membership_1980)$name == "GIN_PNG",
+                                   TRUE,
+                                   FALSE)
 V(membership_1980)$lvl <- if_else(V(membership_1980)$type, 2, 1)
 
 # Subset the graph to only include the biggest component
-componentsNeedles <- igraph::components(membership_1980, mode = "strong")
-biggest_component_id <- which.max(componentsNeedles$csize)
-vert_ids <- V(membership_1980)[componentsNeedles$membership == biggest_component_id]
+components <- igraph::components(membership_1980)
+biggest_component_id <- which.max(components$csize)
+vert_ids <- V(membership_1980)[components$membership == biggest_component_id]
 membership_1980 <- igraph::induced_subgraph(membership_1980, vert_ids)
 
 # Define the 3D layout
@@ -175,11 +179,11 @@ V(membership_1980)$color <- c("#014D23", "#36648A")[V(membership_1980)$lvl]
 V(membership_1980)$vertex.label <- V(membership_1980)$name
 
 # Render the graph
-graphjs(membership_1980,mmain = "Membership in Environmental Treaties Signed in 1980",
+graphjs(membership_1980, main = "Membership in Environmental Treaties Signed in 1980",
         bg = "white", vertex.label = V(membership_1980)$vertex.label,
         vertex.size = ifelse(V(membership_1980)$lvl == 1, 0.8, 2),
         vertex.shape = ifelse(V(membership_1980)$lvl == 1, "square", "sphere"),
-        top = 1, left = 45, font.main = "18px Arial")
+        top = 1, left = 45, font.main = "18px Arial", brush = TRUE)
 ```
 
 ### Projecting the Network on a Globe:
