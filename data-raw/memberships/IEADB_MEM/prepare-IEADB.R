@@ -35,7 +35,7 @@ qID_ref <- qCreate::condense_qID(qEnviron::memberships)
 IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-IEADB_MEM <- relocate(IEADB_MEM, qID_ref)
+IEADB_MEM <- dplyr::relocate(IEADB_MEM, qID_ref)
 
 # qCreate includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
