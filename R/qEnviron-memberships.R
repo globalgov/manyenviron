@@ -7,12 +7,12 @@
 #' functions.
 #'\describe{
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-#' 10 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Force, Rat, ECOLEX_ID, qID.}
+#' 11 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Force, Rat, ECOLEX_ID, Memberships, qID.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-#' 13 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID, qID.}
+#' 14 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID, Memberships, qID.}
 #' \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-#' 11 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, IEADB_ID, qID.}
+#' 13 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID, Memberships, qID.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-#' 7 variables: qID_ref, CountryID, Title, Beg, Signature, TFDD_ID, qID.}
+#' 9 variables: qID_ref, CountryID, Title, Beg, Signature, TFDD_ID, Memberships, Signatories, qID.}
 #' }
  "memberships"

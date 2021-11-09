@@ -17,11 +17,14 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
                      CountryID = CCODE,
                      Title = qCreate::standardise_titles(DocumentName)) %>% 
   # API has been used to translate some of the treaties that were not in english
-  dplyr::select(CountryID, Title, Beg, Signature, TFDD_ID) %>% 
+  dplyr::mutate(Memberships = qStates::code_states(Signatories)) %>% 
+  dplyr::select(CountryID, Title, Beg, Signature, TFDD_ID, Memberships, Signatories) %>% 
   dplyr::arrange(Beg)
 
+TFDD_MEM$Memberships <- stringr::str_replace_all(TFDD_MEM$Memberships, "\\,\\s", "-")
+
 # Add a qID column
-TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
+TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg, TFDD_MEM$Memberships)
 
 # Add qID_ref column
 qID_ref <- qCreate::condense_qID(qEnviron::memberships)

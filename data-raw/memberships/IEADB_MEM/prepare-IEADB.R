@@ -20,15 +20,26 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                      Force = qCreate::standardise_dates(ceif3),
                      Force2 = qCreate::standardise_dates(ceif4),
                      IEADB_ID = mitch_id) %>%
-  dplyr::select(CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC, IEADB_ID) %>% 
+  dplyr::mutate(L = dplyr::recode(inclusion, "BEA" = "B", "MEA" = "M")) %>% 
+  dplyr::select(CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC, L, IEADB_ID) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%
   dplyr::filter(!is.na(Force) & name != "Force2") %>%  
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, IEADB_ID) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
+#Add memberships column
+IEAMEM <- IEADB_MEM %>% 
+  dplyr::select(IEADB_ID, CountryID) %>% 
+  dplyr::group_by(IEADB_ID) %>% dplyr::summarise(Memberships = toString(CountryID)) %>% 
+  dplyr::ungroup()
+
+IEAMEM$Memberships <- stringr::str_replace_all(IEAMEM$Memberships, "\\,\\s", "-")
+
+IEADB_MEM <- dplyr::left_join(IEADB_MEM, IEAMEM, by = "IEADB_ID")
+
 # Add a qID column
-IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
+IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg, IEADB_MEM$Memberships)
 
 # Add qID_ref column
 qID_ref <- qCreate::condense_qID(qEnviron::memberships)
