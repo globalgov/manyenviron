@@ -13,6 +13,6 @@
 #' \item{IEADB_MEM: }{A dataset with 15466 observations and the following
 #' 13 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID, Memberships, qID.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-#' 9 variables: qID_ref, CountryID, Title, Beg, Signature, TFDD_ID, Memberships, Signatories, qID.}
+#' 8 variables: qID_ref, CountryID, Title, Beg, Signature, TFDD_ID, Memberships, qID.}
 #' }
  "memberships"

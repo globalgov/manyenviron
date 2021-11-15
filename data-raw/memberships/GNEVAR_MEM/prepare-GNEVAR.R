@@ -27,17 +27,10 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   dplyr::arrange(Beg)
 
 #Add memberships column
-GNEVARM <- GNEVAR_MEM %>% 
-  dplyr::select(GNEVAR_ID, CountryID) %>% 
-  dplyr::group_by(GNEVAR_ID) %>% dplyr::summarise(Memberships = toString(CountryID)) %>% 
-  dplyr::ungroup()
-
-GNEVARM$Memberships <- stringr::str_replace_all(GNEVARM$Memberships, "\\,\\s", "-")
-
-GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, GNEVARM, by = "GNEVAR_ID")
+GNEVAR_MEM$Memberships <- qCreate::get_memberships(GNEVAR_MEM$CountryID, GNEVAR_MEM$GNEVAR_ID)
 
 # Add qID column
-GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg, GNEVAR_MEM$Memberships)
+GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
 # Add qID_ref column
 qID_ref <- qCreate::condense_qID(qEnviron::memberships)

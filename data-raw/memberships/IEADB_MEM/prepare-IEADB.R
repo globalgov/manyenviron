@@ -29,17 +29,10 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::arrange(Beg)
 
 #Add memberships column
-IEAMEM <- IEADB_MEM %>% 
-  dplyr::select(IEADB_ID, CountryID) %>% 
-  dplyr::group_by(IEADB_ID) %>% dplyr::summarise(Memberships = toString(CountryID)) %>% 
-  dplyr::ungroup()
-
-IEAMEM$Memberships <- stringr::str_replace_all(IEAMEM$Memberships, "\\,\\s", "-")
-
-IEADB_MEM <- dplyr::left_join(IEADB_MEM, IEAMEM, by = "IEADB_ID")
+IEADB_MEM$Memberships <- qCreate::get_memberships(IEADB_MEM$CountryID, IEADB_MEM$IEADB_ID)
 
 # Add a qID column
-IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg, IEADB_MEM$Memberships)
+IEADB_MEM$qID <- qCreate::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
 # Add qID_ref column
 qID_ref <- qCreate::condense_qID(qEnviron::memberships)

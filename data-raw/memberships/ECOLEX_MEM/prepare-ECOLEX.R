@@ -32,17 +32,10 @@ ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID")
 
 
 #Add memberships column
-ECOLEXM <- ECOLEX_MEM %>% 
-  dplyr::select(ECOLEX_ID, CountryID) %>% 
-  dplyr::group_by(ECOLEX_ID) %>% dplyr::summarise(Memberships = toString(CountryID)) %>% 
-  dplyr::ungroup()
-
-ECOLEXM$Memberships <- stringr::str_replace_all(ECOLEXM$Memberships, "\\,\\s", "-")
-
-ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEXM, by = "ECOLEX_ID")
+ECOLEX_MEM$Memberships <- qCreate::get_memberships(ECOLEX_MEM$CountryID, ECOLEX_MEM$ECOLEX_ID)
 
 #Add a qID column
-ECOLEX_MEM$qID <- qCreate::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg, ECOLEX_MEM$Memberships)
+ECOLEX_MEM$qID <- qCreate::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
 
 # Add qID_ref column
 qID_ref <- qCreate::condense_qID(qEnviron::memberships)
