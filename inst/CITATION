@@ -1,11 +1,11 @@
-citHeader("To cite qEnviron in publications use:")
+citHeader("To cite manyenviron in publications use:")
 
 citEntry(
   entry    = "Manual",
-  title    = "qEnviron: Environmental agreements for qData",
+  title    = "Manyenviron: Environmental agreements for manydata",
   author   = "James Hollway",
   year     = "2021",
-  url      = "https://github.com/globalgov/qEnviron",
-  textVersion = paste("J. Hollway. Environmental agreements for qData. 2021."
+  url      = "https://github.com/globalgov/manyenviron",
+  textVersion = paste("J. Hollway. Environmental agreements for manydata. 2021."
   )
 )

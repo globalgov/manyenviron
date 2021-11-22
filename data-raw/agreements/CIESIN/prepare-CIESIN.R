@@ -1,7 +1,7 @@
 # CIESIN Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for many packages universe.
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
@@ -11,19 +11,19 @@ CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
 # formats of the 'CIESIN' object until the object created
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
-  qData::transmutate(Title = qCreate::standardise_titles(`Treaty Title`),# Key API has been used here
+  qData::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`),# Key API has been used here
                      # to translate treaties title to English
-                     Signature = qCreate::standardise_dates(`Year of Agreement`),
-                     Force = qCreate::standardise_dates(`Year of Entry into Force`)) %>% 
+                     Signature = manypkgs::standardise_dates(`Year of Agreement`),
+                     Force = manypkgs::standardise_dates(`Year of Entry into Force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-CIESIN$qID <- qCreate::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
+CIESIN$qID <- manypkgs::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
 CIESIN <- dplyr::left_join(CIESIN, qID_ref, by = "qID")
 
 # Re-order the columns
@@ -31,13 +31,14 @@ CIESIN <- CIESIN %>%
   dplyr::select(qID_ref, Title, Beg, Signature, Force, qID) %>% 
   dplyr::arrange(Beg)
 
-# qCreate includes several functions that should help cleaning
+# manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make CIESIN available within the qPackage.
-qCreate::export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/")
+# Next run the following line to make CIESIN available
+# within the package.
+manypkgs::export_data(CIESIN, database = "agreements", URL = "https://sedac.ciesin.columbia.edu/entri/")
 # can not export yet as standardise_dates() do not function on dates range
 
 # This function also does two additional things.

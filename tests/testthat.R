@@ -1,4 +1,4 @@
 library(testthat)
-library(qEnviron)
+library(manyEnviron)
 
-test_check("qEnviron")
+test_check("manyenviron")

@@ -1,7 +1,7 @@
 # IEADB Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for many packages universe.
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
@@ -18,18 +18,18 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
   qData::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
-                     Title = qCreate::standardise_titles(`Treaty Name`),
-                     Signature = qCreate::standardise_dates(`Signature Date`),
-                     Force = qCreate::standardise_dates(`Date IEA entered into force`)) %>% 
+                     Title = manypkgs::standardise_titles(`Treaty Name`),
+                     Signature = manypkgs::standardise_dates(`Signature Date`),
+                     Force = manypkgs::standardise_dates(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-IEADB$qID <- qCreate::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
+IEADB$qID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
 IEADB <- dplyr::left_join(IEADB, qID_ref, by = "qID")
 
 # Re-order the columns
@@ -37,12 +37,14 @@ IEADB <- IEADB %>%
   dplyr::select(qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
-# qCreate includes several functions that should help cleaning and standardising your data.
+# manypkgs includes several functions that should help cleaning
+# and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make IEADB available within the qPackage.
-qCreate::export_data(IEADB, database = "agreements", URL = "https://iea.uoregon.edu/base-agreement-list")
+# Next run the following line to make IEADB available
+# within the package.
+manypkgs::export_data(IEADB, database = "agreements", URL = "https://iea.uoregon.edu/base-agreement-list")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

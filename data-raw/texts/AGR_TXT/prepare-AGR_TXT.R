@@ -3,8 +3,8 @@
 # Due to the specificities of the text database,
 # the usual script preparation format has been adapted.
 
-# Step one: create a consolidated version of qEnviron agreements database
-AGR_TXT <- qData::consolidate(qEnviron::agreements, "any", "any")
+# Step one: create a consolidated version of manyenviron agreements database
+AGR_TXT <- qData::consolidate(manyenviron::agreements, "any", "any")
 
 # Step two: extract treaty texts from IEADB website
 # This requires the original IEADB dataset with the IEADB_ID column
@@ -30,7 +30,7 @@ IEADB_original$Source <- lapply(IEADB_original$IEADB_ID, function(s) tryCatch(rv
                                                                                 paste(collapse = ",")))
 
 # Step three: join IEADB text column with the consolidated version of
-# qEnviron 
+# manyenviron 
 AGR_TXT <- dplyr::left_join(AGR_TXT, IEADB_original, by = "IEADB_ID")
 AGR_TXT <- as_tibble(AGR_TXT) %>% 
   dplyr::select(qID, IEADB_ID, GNEVAR_ID, ECOLEX_ID, qID_ref, Title, Beg, TreatyText, Source)
@@ -88,6 +88,6 @@ AGR_TXT <- dplyr::as_tibble(AGR_TXT) %>%
   dplyr::select(qID_ref, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID)
 
 # Step six: export data into rda format 2 possible solutions
-qCreate::export_data(AGR_TXT, database = "texts", URL = "NA")
+manypkgs::export_data(AGR_TXT, database = "texts", URL = "NA")
 # usethis::use_data(AGR_TXT, internal = T, overwrite = T)
 

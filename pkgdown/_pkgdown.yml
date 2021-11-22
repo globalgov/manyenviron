@@ -1,4 +1,4 @@
-url: https://globalgov.github.io/qEnviron/
+url: https://globalgov.github.io/manyenviron/
 development:
     mode: auto
 template:
@@ -30,21 +30,21 @@ navbar:
       href: news/index.html
     github:
       icon: "fab fa-github fa-lg"
-      href: https://github.com/globalgov/qEnviron
+      href: https://github.com/globalgov/manyenviron
     packages:
       text: Other packages
       menu:
         - text: qData
           href: https://globalgov.github.io/qData/
-        - text: qCreate
-          href: https://globalgov.github.io/qCreate/
+        - text: manypkgs
+          href: https://globalgov.github.io/manypkgs/
         - text: qStates
           href: https://globalgov.github.io/qStates/
         - text: qTrade
           href: https://globalgov.github.io/qTrade/
 reference:
   - title: "Data"
-    desc: "The following databases are contained in qEnviron"
+    desc: "The following databases are contained in manyenviron"
     contents:
     - agreements
     - memberships

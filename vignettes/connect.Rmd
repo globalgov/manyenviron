@@ -16,9 +16,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-## qEnviron Data
+## manyenviron Data
 
-`{qEnviron}` stores several datasets on various aspects of environmental treaties in different databases.
+`{manyenviron}` stores several datasets on various aspects of environmental treaties in different databases.
 For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with
 specific information such as the agreement type (e.g. agreements, protocols, amendments, declarations), if
 they are bilateral or multilateral, and some important dates such as the signature or entry into force.
@@ -33,15 +33,15 @@ environmental treaties.
 There are many different ways in which treaties could be linked.
 For example, a treaty can be substituted by another, complemented by protocols,
 changed through amendments, and/or cite another treaty.
-To facilitate the identification and connection between the databases in the package, the `qCreate::code_agreements()` function has been developed to generate a qID for treaties in a database.
-Each of the `{qEnviron}` dataset contains a qID column.
+To facilitate the identification and connection between the databases in the package, the `manypkgs::code_agreements()` function has been developed to generate a qID for treaties in a database.
+Each of the `{manyenviron}` dataset contains a qID column.
 To understand what are the information provided through by the qID,
 as well as the benefits of using qID to spot the relationships between the treaties across several datasets
-in a database, please visit this [article](https://globalgov.github.io/qCreate/articles/agreements.html)
-on the `{qCreate}` website.
+in a database, please visit this [article](https://globalgov.github.io/manypkgs/articles/agreements.html)
+on the `{manypkgs}` website.
 
 Below are two examples of how to visualise treaty linkages for the references and the
-memberships databases in `{qEnviron}`.
+memberships databases in `{manyenviron}`.
 We use `{migraph}` to create the network plots, more information about the package can be found
 [here](https://snlab-ch.github.io/migraph/).
 
@@ -55,7 +55,7 @@ library(ggplot2)
 library(migraph)
 
 # Get dataset
-references <- qEnviron::references$ECOLEX_REF %>% 
+references <- manyenviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(qID2, "[:digit:]{4}")) %>%
   dplyr::filter(RefType == "Cites") %>%
@@ -64,7 +64,7 @@ references <- qEnviron::references$ECOLEX_REF %>%
 # Plot with migraph
 migraph::gglineage(references[1:25,c(1,2,3)]) +
   labs(title = "Treaty Lineage of Selected Agreements",
-       caption = "Source: qEnviron") +
+       caption = "Source: manyenviron") +
   theme(plot.title = element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
@@ -76,14 +76,14 @@ Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 # Subset dataset
-ramsa <- qEnviron::references$ECOLEX_REF %>% 
+ramsa <- manyenviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(qID2, "[:digit:]{4}")) %>%
   dplyr::filter(RefType == "Amends" & qID2 == "RAMSA_1971A") %>%
   dplyr::arrange(year)
 
 # Get agreement titles
-agreementtitles <- qEnviron::agreements$ECOLEX %>%
+agreementtitles <- manyenviron::agreements$ECOLEX %>%
   dplyr::select(Title, qID) %>% 
   dplyr::rename(qID1 = qID)
 
@@ -96,7 +96,7 @@ ramsa <- dplyr::relocate(ramsa, qID2, Title)
 # Plot with migraph
 migraph::gglineage(ramsa) +
   labs(title = "Treaties that Amend the Ramsar Convention",
-       caption = "Source: qEnviron") +
+       caption = "Source: manyenviron") +
   theme(plot.title = element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
@@ -109,7 +109,7 @@ The graph below illustrates the connection between parties and treaties for envi
 
 ```{r memberships, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
 # Subset dataset
-membership_1960 <- qEnviron::memberships$IEADB_MEM %>%
+membership_1960 <- manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1960") %>%
   dplyr::select(qID, CountryID, Title) %>%
@@ -117,13 +117,13 @@ membership_1960 <- qEnviron::memberships$IEADB_MEM %>%
 
 # Plot with migraph
 migraph::autographr(membership_1960) +
-  labs(title = "Membership in Environmental Treaties\nSigned in 1960",
-       caption = "Source: qEnviron") +
-  theme(plot.title = element_text(family = "sans",
+  ggplot2::labs(title = "Membership in Environmental Treaties\nSigned in 1960",
+       caption = "Source: manyenviron") +
+  ggplot2::theme(plot.title = ggplot2::element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
 # Subset dataset
-membership_1980 <- qEnviron::memberships$IEADB_MEM %>%
+membership_1980 <- manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(qID_ref, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
   dplyr::select(qID, CountryID, Title) %>%
@@ -132,9 +132,9 @@ membership_1980 <- qEnviron::memberships$IEADB_MEM %>%
 
 # Plot with migraph
 migraph::autographr(membership_1980) +
-  labs(title = "Membership in Environmental Treaties\nSigned in 1980",
-       caption = "Source: qEnviron") +
-  theme(plot.title = element_text(family = "sans",
+  ggplot2::labs(title = "Membership in Environmental Treaties\nSigned in 1980",
+       caption = "Source: manyenviron") +
+  ggplot2::theme(plot.title = ggplot2::element_text(family = "sans",
                                   size = 18,
                                   hjust = 0.5))
 ```
@@ -228,7 +228,7 @@ keeps <- c("origin_lat", "origin_long", "dest_lat", "dest_long")
 arcs <- merged[keeps]
 
 # Visualize
-globejs(lat=merged$dest_lat, long=merged$dest_long,
+threejs::globejs(lat=merged$dest_lat, long=merged$dest_long,
         arcs = arcs, bodycolor = "#aaaaff",
         rotationlong = 200, rotationlat = -100,
         arcsHeight = 0.3, arcsLwd = 2.5,

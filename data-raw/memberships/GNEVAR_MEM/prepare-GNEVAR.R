@@ -1,7 +1,7 @@
 # GNEVAR_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for many packages universe.
 
 # Stage one: Collecting data
 GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
@@ -12,39 +12,39 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   qData::transmutate(GNEVAR_ID = GENG,
-                     Rat = qCreate::standardise_dates(Approval),
-                     Withdrawal = qCreate::standardise_dates(Withdrawal1),
-                     Signature = qCreate::standardise_dates(DocSign),
-                     Force = qCreate::standardise_dates(DocForce),
-                     Term = qCreate::standardise_dates(DocEnd),
-                     Force = qCreate::standardise_dates(InForce1)) %>% 
+                     Rat = manypkgs::standardise_dates(Approval),
+                     Withdrawal = manypkgs::standardise_dates(Withdrawal1),
+                     Signature = manypkgs::standardise_dates(DocSign),
+                     Force = manypkgs::standardise_dates(DocForce),
+                     Term = manypkgs::standardise_dates(DocEnd),
+                     Force = manypkgs::standardise_dates(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
   dplyr::mutate(CountryID = Country) %>% 
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
   dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
 #Add memberships column
-GNEVAR_MEM$Memberships <- qCreate::get_memberships(GNEVAR_MEM$CountryID, GNEVAR_MEM$GNEVAR_ID)
+GNEVAR_MEM$Memberships <- manypkgs::get_memberships(GNEVAR_MEM$CountryID, GNEVAR_MEM$GNEVAR_ID)
 
 # Add qID column
-GNEVAR_MEM$qID <- qCreate::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
+GNEVAR_MEM$qID <- manypkgs::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::memberships)
+qID_ref <- manypkgs::condense_qID(manyenviron::memberships)
 GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
 GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, qID_ref)
 
-# qCreate includes several functions that should help cleaning and standardising your data.
+# manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make GNEVAR_MEM available within the qPackage.
-qCreate::export_data(GNEVAR_MEM, database = "memberships", URL = "NA")
+# Next run the following line to make GNEVAR_MEM available within the package.
+manypkgs::export_data(GNEVAR_MEM, database = "memberships", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

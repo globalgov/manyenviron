@@ -1,7 +1,7 @@
 # GNEVAR Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for many packages universe.
 
 # Stage one: Collecting data
 GNEVAR <- readr::read_csv("data-raw/agreements/GNEVAR/EnvGov Nodes-Table 1 VERS2.csv")
@@ -17,46 +17,46 @@ GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>% 
   dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q", D="V", R="W", N="X", U="Y")) %>% 
-  qData::transmutate(Signature = qCreate::standardise_dates(DocSign),
-                     End = qCreate::standardise_dates(DocEnd),
-                     Force = qCreate::standardise_dates(DocForce),
+  qData::transmutate(Signature = manypkgs::standardise_dates(DocSign),
+                     End = manypkgs::standardise_dates(DocEnd),
+                     Force = manypkgs::standardise_dates(DocForce),
                      GNEVAR_ID = GENG,
                      ECOLEX_ID = ECOLEX) %>% 
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API has been used to translate 
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API has been used to translate 
   # treaties not in english
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-GNEVAR$qID <- qCreate::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
+GNEVAR$qID <- manypkgs::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # key API also used here
-  dplyr::mutate(Beg = qCreate::standardise_dates(Beg)) %>% 
-  dplyr::mutate(End = qCreate::standardise_dates(End)) %>% 
-  dplyr::mutate(Force = qCreate::standardise_dates(Force)) %>% 
-  dplyr::mutate(Term = qCreate::standardise_dates(Term)) %>% 
-  qData::transmutate(Signature = qCreate::standardise_dates(Sign))
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # key API also used here
+  dplyr::mutate(Beg = manypkgs::standardise_dates(Beg)) %>% 
+  dplyr::mutate(End = manypkgs::standardise_dates(End)) %>% 
+  dplyr::mutate(Force = manypkgs::standardise_dates(Force)) %>% 
+  dplyr::mutate(Term = manypkgs::standardise_dates(Term)) %>% 
+  qData::transmutate(Signature = manypkgs::standardise_dates(Sign))
 
 # Add qID column
-GNEVAR2$qID <- qCreate::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
+GNEVAR2$qID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
 
 # Clean GNEVAR3 is the same as GNEVAR, no need to include it
 
 # Clean GNEVAR4
 GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
 GNEVAR4 <- as_tibble(GNEVAR4) %>%
-  qData::transmutate(Signature = qCreate::standardise_dates(DocDate),
-                     Force = qCreate::standardise_dates(InForce)) %>%
-  dplyr::mutate(End = qCreate::standardise_dates(End)) %>%
-  dplyr::mutate(Title = qCreate::standardise_titles(Title)) %>% # Key API used here
+  qData::transmutate(Signature = manypkgs::standardise_dates(DocDate),
+                     Force = manypkgs::standardise_dates(InForce)) %>%
+  dplyr::mutate(End = manypkgs::standardise_dates(End)) %>%
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API used here
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
 # Add qID column
-GNEVAR4$qID <- qCreate::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
+GNEVAR4$qID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 
 # Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
 # Can not integrate it into GNEVAR
@@ -68,7 +68,7 @@ GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
 GNEVAR <- dplyr::left_join(GNEVAR, qID_ref, by = "qID")
 
 # Select and arrange columns
@@ -76,12 +76,14 @@ GNEVAR <- GNEVAR %>%
   dplyr::select(qID_ref, Title, Beg, End, L, D, J, Signature, Force, qID, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
-# qCreate includes several functions that should help cleaning and standardising your data.
+# manypkgs includes several functions that should help cleaning
+# and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make GNEVAR available within the qPackage.
-qCreate::export_data(GNEVAR, database = "agreements", URL = "NA")
+# Next run the following line to make GNEVAR available
+# within the package.
+manypkgs::export_data(GNEVAR, database = "agreements", URL = "NA")
 
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
