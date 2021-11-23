@@ -4,7 +4,7 @@
 \name{manyenviron-package}
 \alias{manyenviron}
 \alias{manyenviron-package}
-\title{manyenviron: Environmental agreements for manydata}
+\title{manyenviron: Environmental agreements for the many universe}
 \description{
 Manyenviron provides an ensemble of data on international environmental agreements,
     and states membership in them for research use.

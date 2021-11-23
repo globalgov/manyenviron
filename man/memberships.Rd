@@ -8,8 +8,7 @@
 The memberships database is a list that contains the
 following 4 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM.
 For more information and references to each of the datasets used,
-please use the \code{data_source()}, \code{data_contrast()}, and \code{data_evolution()}
-functions.
+please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
 11 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Force, Rat, ECOLEX_ID, Memberships, qID.}
