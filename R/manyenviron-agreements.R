@@ -3,8 +3,7 @@
 #' @format The agreements database is a list that contains the
 #' following 4 datasets: IEADB, GNEVAR, ECOLEX, CIESIN.
 #' For more information and references to each of the datasets used,
-#' please use the `data_source()`, `data_contrast()`, and `data_evolution()`
-#' functions.
+#' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
 #' 9 variables: qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID.}
