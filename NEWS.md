@@ -1,3 +1,21 @@
+# manyenviron 0.1.0
+
+2021-11-23
+
+## Package
+
+* Closed #39 by renaming qEnviron to manyenviron
+* Closed #38, #37, #35 by adding a vignette to manyenviron website with memberships and lineage plot
+* Fixed #32 by deleting "Title.rda" file
+
+## Data
+
+* Fixed #40 by changing the order in which condense_qID() function is ran in preparation script
+* Closed #41 by creating one single script preparation that scraped some agreement datasets websites to extract texts
+* Fixed #34 by putting id column first in reference dataset
+* Closed #36 by re-ordering the datasets columns
+* Fixed #33 by making sure all datasets are in tibble format
+
 # qEnvironDev 0.0.4
 
 2021-10-06

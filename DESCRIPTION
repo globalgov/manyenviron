@@ -1,7 +1,7 @@
 Package: manyenviron
-Title: Environmental agreements for manydata
-Version: 0.0.4
-Date: 2021-10-06
+Title: Environmental Agreements for Manydata
+Version: 0.1.0
+Date: 2021-11-23
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
