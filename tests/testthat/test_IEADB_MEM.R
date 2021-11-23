@@ -13,8 +13,7 @@ test_that("missing observations are reported correctly", {
 # Uniformity tests (agreements have a source ID, a string title, a signature and
 # entry into force date)
 test_that("datasets have the required variables", {
-  expect_col_exists(memberships[["IEADB_MEM"]], vars(CountryID))
-  expect_col_exists(memberships[["IEADB_MEM"]], vars(Beg))
+  expect_col_exists(memberships[["IEADB_MEM"]], c("Beg", ".*ID$"))
 })
 
 # Date columns should be in messydt class
