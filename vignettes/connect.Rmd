@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-## manyenviron Data
+## Manyenviron Data
 
 `{manyenviron}` stores several datasets on various aspects of environmental treaties in different databases.
 For example, the **Agreements** database is made of multiple datasets of environmental treaty titles with
@@ -27,6 +27,23 @@ also includes information on the signature date of the treaty or the withdrawal 
 The **References** database is composed of a dataset that indicates the relationship (e.g. amended by,
 cites, superseded by) between two treaties. Finally, the **Texts** database stores the text of
 environmental treaties.
+
+### Explore the data composition and sources with `{qData}` functions
+
+To have a quick overview of each of the database and dataset within the `{manyenviron}`, the function `data_contrast()` from the `{qData}` package return a table with useful information such as number of unique ID, the percentage of missing data, the number of rows and columns, the earliest Beg date, the oldest End date, as well as the URL link to the data source website.
+The function allows the user to choose between displaying these information for only one dataset, or for the 
+whole database, as showed in the example below. 
+```{r, eval=FALSE}
+qData::data_contrast("manyenviron", "agreements", "IEADB")
+qData::data_contrast("manyenviron", "memberships")
+```
+
+Another useful function from `{qData}` package to contrast information from `{manyenviron}` databases is `code_source()`, which displays bibliographic references for a dataset, a database or the whole package.
+```{r, eval=FALSE}
+qData::data_source("manyenviron", "agreements", "IEADB")
+qData::data_source("manyenviron", "memberships")
+qData::data_source("manyenviron")
+```
 
 ## Connecting Environmental Treaties
 
