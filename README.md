@@ -10,9 +10,8 @@ date)](https://img.shields.io/github/v/release/globalgov/manyenviron)
 Date](https://img.shields.io/github/release-date/globalgov/manyenviron)
 <!-- badges: end -->
 
-Manyenviron is a data package in the
-[qData](https://github.com/globalgov/qData) universe of many packages.
-It currently includes an ensemble of datasets on international
+Manyenviron is a data package in the many universe of packages. It
+currently includes an ensemble of datasets on international
 environmental agreements, and
 [states](https://github.com/globalgov/qStates)’ membership or other
 relationships to those agreements.
@@ -96,9 +95,9 @@ data can be used easily.
 
 If you have collected or developed other data that may not be best for
 this package, but could be useful within the wider universe,
-[`{manypkgs}`](https://github.com/globalgov/qData) includes a number of
-functions that make it easy to create a new “many” package and populate
-with clean, consistent global governance data.
+[`{manypkgs}`](https://github.com/globalgov/manypkgs) includes a number
+of functions that make it easy to create a new “many” package and
+populate with clean, consistent global governance data.
 
 If you have any other ideas about how this package or the qData universe
 more broadly might better facilitate your empirical analysis, we’d be
