@@ -1,7 +1,7 @@
 # ECOLEX References Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for many packages universe.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 load("data-raw/references/ECOLEX_REF/ecorefer.RData")

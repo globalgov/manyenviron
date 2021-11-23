@@ -1,7 +1,7 @@
 # MIA Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for many packages universe.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 MIA <- haven::read_dta("data-raw/organizations/MIA/DP_volIII_june2019_15.dta")

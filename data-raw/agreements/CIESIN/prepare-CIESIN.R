@@ -1,7 +1,7 @@
 # CIESIN Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for many packages universe.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
