@@ -13,7 +13,7 @@ Manyenviron is a data package in the many universe of packages.
 It currently includes an ensemble of datasets on international environmental agreements,
 and [states](https://github.com/globalgov/qStates)' membership or other relationships to those agreements.
 
-Please also check out [`{qData}`](https://github.com/globalgov) for more information about the other packages in the `{qData}` ecosystem. 
+Please also check out [`{qData}`](https://github.com/globalgov) for more information about the other packages in the many universe. 
 
 ## How to install
 
@@ -42,7 +42,7 @@ Just take a look at our vignettes [here](https://globalgov.github.io/qData/artic
 
 ## Many Packages
 
-The [`{qData}`](https://github.com/globalgov/qData) ecosystem is aimed at collecting, connecting and correcting network data across issue-domains of global governance. 
+The [`{qData}`](https://github.com/globalgov/qData) universe is aimed at collecting, connecting, and correcting network data across issue-domains of global governance. 
 
 While some many packages can and do include novel data,
 much of what they offer involves standing on the shoulders of giants.
