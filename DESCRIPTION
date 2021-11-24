@@ -31,16 +31,11 @@ Imports:
     dplyr,
     lubridate,
     roxygen2,
-    usethis,
-    qData,
-    manypkgs
-Suggests: 
+    usethis
+Suggests:
     purrr,
     rlang,
     testthat (>= 3.0.0)
-Remotes:
-    globalgov/manypkgs,
-    globalgov/qData
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
