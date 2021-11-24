@@ -14,11 +14,11 @@
 ## Data
 
 * Modified the ways in which treaty texts are gathered and stored
-  * Fixed #40 by setting up a scraping script for treaty text to avoid storing raw data
-  *Treaty texts data are stored in one dataset from multiple sources to avoid redundancy
-* Closed #41 by creating one single script preparation for text database that scraped some agreement datasets websites to extract texts
-* Fixed #34 by putting id column first in references dataset
+  * Closed #41 by setting up a scraping script for treaty text to avoid storing raw data
+  * Treaty texts data are stored in one dataset from multiple sources to avoid redundancy
+* Fixed #40 by correcting the class and order in which variables appear in datasets
 * Closed #36 by re-ordering the datasets columns in all databases
+* Fixed #34 by putting id column first in references dataset
 * Fixed #33 by making sure all datasets are in tibble format
 
 # qEnviron 0.0.4
