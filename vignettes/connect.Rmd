@@ -170,16 +170,18 @@ and applying the `layout_as_multilevel()` function.
 We finally make some cosmetic adjustments before rendering the graph.
 (Note that you can hover over a node to display its name!)
 
-```{r memberships3D, eval=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+```{r memberships3D, eval=TRUE, fig.align='center', fig.asp=1, fig.width=7}
 library(igraph)
 library(threejs)
 library(graphlayouts)
-
-# Set node attributes "lvl" to separate between countries and agreements
-V(membership_1980)$type <- if_else(nchar(V(membership_1980)$name) == 3,
+# Set node attribute "type" to separate between countries and agreements
+V(membership_1980)$type <- ifelse(nchar(V(membership_1980)$name) == 3,
                                    TRUE,
                                    FALSE)
-V(membership_1980)$lvl <- if_else(V(membership_1980)$type, 2, 1)
+# Save a clean version for the globe plot
+membership_1980_globe <- membership_1980
+# Set node attribute "lvl" to separate between countries and agreements
+V(membership_1980)$lvl <- ifelse(nchar(V(membership_1980)$name) == 3, 2, 1)
 
 # Subset the graph to only include the biggest component
 components <- igraph::components(membership_1980)
@@ -214,13 +216,13 @@ Once we have these elements, we merge them to create dataframe
 for the arcs to be displayed in the `globejs()` visualization.
 Finally, we adjust colors and inital longitude and latitude for the plotted globe.
 
-``` {r, membershipsGlobe, eval=FALSE, fig.align='center', fig.asp=1, fig.width=9}
+``` {r, membershipsGlobe, eval=TRUE, fig.align='center', fig.asp=1, fig.width=9}
 library(rgeos)
 library(rworldmap)
 library(tidyr)
 
 # Create the projection
-membership_1980 <- migraph::project_cols(membership_1980)
+membership_1980 <- migraph::project_cols(membership_1980_globe)
 membership_1980 <- igraph::get.data.frame(membership_1980, "edges")
 
 # Get the coordinates of the centroids of each territory
