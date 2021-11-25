@@ -31,14 +31,14 @@ Imports:
     dplyr,
     lubridate,
     roxygen2,
-    usethis
+    usethis,
+    migraph
 Suggests:
     purrr,
     rlang,
     testthat (>= 3.0.0),
-    migraph,
-    ggplot2,
     igraph,
+    ggplot2,
     threejs,
     graphlayouts,
     rgeos,
