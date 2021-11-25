@@ -40,9 +40,6 @@ Suggests:
     ggplot2,
     threejs,
     graphlayouts,
-    rgeos,
-    rworldmap,
-    tidyr,
     rmarkdown,
     remotes,
     igraph
