@@ -35,7 +35,15 @@ Imports:
 Suggests:
     purrr,
     rlang,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    migraph,
+    ggplot2,
+    igraph,
+    threejs,
+    graphlayouts,
+    rgeos,
+    rworldmap,
+    tidyr
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
