@@ -38,11 +38,8 @@ Suggests:
     rlang,
     testthat (>= 3.0.0),
     ggplot2,
-    threejs,
-    graphlayouts,
     rmarkdown,
-    remotes,
-    igraph
+    remotes
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
