@@ -1,12 +1,12 @@
 # ECOLEX Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 load("data-raw/agreements/ECOLEX/ecoagree.RData")
 ECOLEX <- eco_agree
-qCreate::retain("ECOLEX")
+manypkgs::retain("ECOLEX")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
@@ -17,32 +17,34 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
   qData::transmutate(ECOLEX_ID = `EcolexID`,
-                     Title = qCreate::standardise_titles(title), #Key API has been used here
-                     # to translate treaties not in english
-                     Signature = qCreate::standardise_dates(lubridate::mdy(Date)),
-                     Force = qCreate::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
+                     Title = manypkgs::standardise_titles(title), #Key API has been used here
+                     # to translate treaties to English
+                     Signature = manypkgs::standardise_dates(lubridate::mdy(Date)),
+                     Force = manypkgs::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
 # Add qID column
-ECOLEX$qID <- qCreate::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
+ECOLEX$qID <- manypkgs::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
 ECOLEX <- dplyr::left_join(ECOLEX, qID_ref, by = "qID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 
-  dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force, qID, qID_ref) %>% 
+  dplyr::select(qID_ref, Title, Beg, L, J, Signature, Force, qID, ECOLEX_ID) %>% 
   dplyr::arrange(Beg)
 
-# qCreate includes several functions that should help cleaning and standardising your data.
+# manypkgs includes several functions that should help cleaning
+# and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make ECOLEX available within the qPackage.
-qCreate::export_data(ECOLEX, database = "agreements", URL = "https://www.ecolex.org/result/?type=treaty")
+# Next run the following line to make ECOLEX available
+# within the package.
+manypkgs::export_data(ECOLEX, database = "agreements", URL = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence to certain standards.
 # You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows) to run these tests locally at any point.

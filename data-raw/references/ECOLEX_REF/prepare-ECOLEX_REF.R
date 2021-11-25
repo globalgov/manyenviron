@@ -1,7 +1,7 @@
 # ECOLEX References Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 load("data-raw/references/ECOLEX_REF/ecorefer.RData")
@@ -32,24 +32,24 @@ colnames(ECOLEX_REF) <- c("Treaty1", "RefType", "Treaty2")
 ECOLEX_REF
 
 # Replace ECOLEX_ID by qID
-ecoid <- qEnviron::agreements$ECOLEX
+ecoid <- manyenviron::agreements$ECOLEX
 ecoid <- ecoid %>% 
   dplyr::select(ECOLEX_ID, qID)
 
 ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty1" = "ECOLEX_ID")) %>%
   dplyr::rename(qID1 = "qID")
 ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty2" = "ECOLEX_ID")) %>%
-  dplyr::rename(qID2 = "qID") %>% dplyr::select(qID1, RefType, qID2)
+  dplyr::rename(qID2 = "qID") %>% dplyr::select(qID1, qID2, RefType)
 ECOLEX_REF
 
-# qCreate includes several functions that should help cleaning
+# manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make ref available
-# within the qPackage.
-qCreate::export_data(ECOLEX_REF, database = "references", URL = "NA")
+# within the package.
+manypkgs::export_data(ECOLEX_REF, database = "references", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

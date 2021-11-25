@@ -1,7 +1,7 @@
 # TFDD_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
@@ -11,37 +11,33 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(Signature = openxlsx::convertToDate(DateSigned)) %>% 
-  dplyr::mutate(Signature = qCreate::standardise_dates(as.character(Signature))) %>% 
-  dplyr::mutate(Beg = Signature)
-
-TFDD_MEM <- TFDD_MEM %>%
+  dplyr::mutate(Signature = standardise_dates(openxlsx::convertToDate(DateSigned))) %>% 
+  dplyr::mutate(Beg = manypkgs::standardise_dates(as.character(Signature))) %>%
   qData::transmutate(TFDD_ID = `2016Update ID`,
-                     Country = CCODE,
-                     Title = qCreate::standardise_titles(DocumentName)) %>% # key API has been used
-  # to translate some of the treaties that were not in english
-  dplyr::select(TFDD_ID, Country, Title, Beg, Signature) %>% 
+                     CountryID = CCODE,
+                     Title = manypkgs::standardise_titles(DocumentName)) %>% 
+  # API has been used to translate some of the treaties that were not in english
+  dplyr::mutate(Memberships = qStates::code_states(Signatories)) %>% 
+  dplyr::select(CountryID, Title, Beg, Signature, TFDD_ID, Memberships) %>% 
   dplyr::arrange(Beg)
 
 # Add a qID column
-TFDD_MEM$qID <- qCreate::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
+TFDD_MEM$qID <- manypkgs::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
 # Add qID_ref column
-qID_ref <- qCreate::condense_qID(qEnviron::agreements)
+qID_ref <- manypkgs::condense_qID(manyenviron::memberships)
 TFDD_MEM <- dplyr::left_join(TFDD_MEM, qID_ref, by = "qID")
 
 # Re-order the columns
-TFDD_MEM <- TFDD_MEM %>% 
-  dplyr::select(TFDD_ID, Country, Title, Beg, Signature, qID, qID_ref) %>% 
-  dplyr::arrange(Beg)
+TFDD_MEM <- dplyr::relocate(TFDD_MEM, qID_ref)
 
-# qCreate includes several functions that should help cleaning
+# manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make TFDD_MEM available within the qPackage.
-qCreate::export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
+# Next run the following line to make TFDD_MEM available within the package.
+manypkgs::export_data(TFDD_MEM, database = "memberships", URL = "https://transboundarywaters.science.oregonstate.edu/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

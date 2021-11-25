@@ -1,4 +1,27 @@
-# qEnvironDev 0.0.4
+# manyenviron 0.1.0
+
+2021-11-23
+
+## Package
+
+* Closed #39 by renaming qEnviron to manyenviron
+* Added a vignette about connecting environmental treaties
+  * Closed #38 by adding memberships plot to vignette
+  * Closed #37 by adding lineage plot to vignette
+  * Closed #35 by fixing issues with lineage plots
+* Fixed #32 by deleting "Title.rda" file
+
+## Data
+
+* Modified the ways in which treaty texts are gathered and stored
+  * Closed #41 by setting up a scraping script for treaty text to avoid storing raw data
+  * Treaty texts data are stored in one dataset from multiple sources to avoid redundancy
+* Fixed #40 by correcting the class and order in which variables appear in datasets
+* Closed #36 by re-ordering the datasets columns in all databases
+* Fixed #34 by putting id column first in references dataset
+* Fixed #33 by making sure all datasets are in tibble format
+
+# qEnviron 0.0.4
 
 2021-10-06
 
@@ -13,7 +36,7 @@
 * Closed #27 by adding a qID_ref column using `condense_qID()` from qCreate
 * Closed #20 by preparing coding scheme based on treaty titles and texts
 
-# qEnvironDev 0.0.3
+# qEnviron 0.0.3
 
 2021-07-30
 
@@ -40,7 +63,7 @@
 
 * Closed #22 by adding REF dataset into references database
 
-# qEnvironDev 0.0.2
+# qEnviron 0.0.2
 
 2021-02-22
 

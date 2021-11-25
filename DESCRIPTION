@@ -1,7 +1,7 @@
-Package: qEnviron
-Title: Environmental agreements for qData
-Version: 0.0.4
-Date: 2021-10-06
+Package: manyenviron
+Title: Environmental Agreements for the many Universe
+Version: 0.1.0
+Date: 2021-11-24
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
@@ -20,7 +20,7 @@ Authors@R:
              family = "Peev",
              role = c("ctb"),
              comment = c("IHEID", ORCID = "0000-0002-9678-2777")))
-Description: qEnviron provides an ensemble of data on international environmental agreements,
+Description: Ensemble of data on international environmental agreements,
     and states membership in them for research use.
 License: CC BY 4.0
 Depends: 
@@ -31,16 +31,11 @@ Imports:
     dplyr,
     lubridate,
     roxygen2,
-    usethis,
-    qData,
-    qCreate
-Suggests: 
+    usethis
+Suggests:
     purrr,
     rlang,
     testthat (>= 3.0.0)
-Remotes:
-    globalgov/qCreate,
-    globalgov/qData
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz

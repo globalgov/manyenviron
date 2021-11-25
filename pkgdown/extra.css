@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono');
 
 /* Color Palette
-qEnviron green #014D23 #014D23, used for standard links
+manyenviron green #014D23 #014D23, used for standard links
 Light Green #8AEA92, used for hovered links
 Green Sheen #80ADA0, Used for active things
 Dark White #f3f3f3, used for discrete active things, like the active dropdown
@@ -194,7 +194,7 @@ pre {
   color: #014D23;
   font-size: 14px;
 }
-/*qPackage name in the navbar*/
+/*Package name in the navbar*/
 .navbar-default .navbar-link{
   color: #014D23;
   font-size: 30px;

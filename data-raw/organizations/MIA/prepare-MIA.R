@@ -1,7 +1,7 @@
 # MIA Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the qPackage.
+# ready for the many packages universe.
 
 # Stage one: Collecting data
 MIA <- haven::read_dta("data-raw/organizations/MIA/DP_volIII_june2019_15.dta")
@@ -16,19 +16,19 @@ MIA <- as_tibble(MIA) %>%
   dplyr::ungroup() %>% 
   dplyr::rename(Name = ioname,
                 COW = ionumber) %>% 
-  qData::transmutate(Beg = qCreate::standardise_dates(as.character(inception)),
-                     End = qCreate::standardise_dates(as.character(end))) %>%
+  qData::transmutate(Beg = manypkgs::standardise_dates(as.character(inception)),
+                     End = manypkgs::standardise_dates(as.character(end))) %>%
   dplyr::select(Name, Beg, End, COW) %>% 
   dplyr::arrange(Beg)
 
-# qCreate includes several functions that should help cleaning
+# manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
 # Next run the following line to make MIA available 
-# within the qPackage.
-qCreate::export_data(MIA, database = "organizations", URL = "https://garymarks.web.unc.edu/data/international-authority/", package = "qEnviron")
+# within the package.
+manypkgs::export_data(MIA, database = "organizations", URL = "https://garymarks.web.unc.edu/data/international-authority/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
