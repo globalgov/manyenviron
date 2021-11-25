@@ -37,13 +37,15 @@ Suggests:
     purrr,
     rlang,
     testthat (>= 3.0.0),
-    igraph,
     ggplot2,
     threejs,
     graphlayouts,
     rgeos,
     rworldmap,
-    tidyr
+    tidyr,
+    rmarkdown,
+    remotes,
+    igraph
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
