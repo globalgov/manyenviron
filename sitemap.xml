@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://globalgov.github.io/qEnviron//index.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//index.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/qEnviron//reference/agreements.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//reference/agreements.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/qEnviron//reference/memberships.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//reference/manyenviron-package.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/qEnviron//reference/organizations.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//reference/memberships.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/qEnviron//reference/qEnviron-package.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//reference/organizations.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/qEnviron//reference/references.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//reference/references.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/qEnviron//reference/texts.html</loc>
+    <loc>https://globalgov.github.io/manyenviron//reference/texts.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron//articles/connect.html</loc>
   </url>
 </urlset>

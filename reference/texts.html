@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Texts database documentation — texts • qEnviron</title>
+<title>texts database documentation — texts • manyenviron</title>
 
 
 <!-- jquery -->
@@ -41,8 +41,8 @@
   <link href="../extra.css" rel="stylesheet">
   
 
-<meta property="og:title" content="Texts database documentation — texts" />
-<meta property="og:description" content="Texts database documentation" />
+<meta property="og:title" content="texts database documentation — texts" />
+<meta property="og:description" content="texts database documentation" />
 
 
 
@@ -73,8 +73,8 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">qEnviron</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.4</span>
+        <a class="navbar-link" href="../index.html">manyenviron</a>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -92,6 +92,18 @@
 <li>
   <a href="../news/index.html">News</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/connect.html">How Do Environmental Treaties Connect?</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -105,7 +117,7 @@
       <a href="https://globalgov.github.io/qData/">qData</a>
     </li>
     <li>
-      <a href="https://globalgov.github.io/qCreate/">qCreate</a>
+      <a href="https://globalgov.github.io/manypkgs/">manypkgs</a>
     </li>
     <li>
       <a href="https://globalgov.github.io/qStates/">qStates</a>
@@ -116,7 +128,7 @@
   </ul>
 </li>
 <li>
-  <a href="https://github.com/globalgov/qEnviron">
+  <a href="https://github.com/globalgov/manyenviron">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -134,13 +146,13 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Texts database documentation</h1>
+    <h1>texts database documentation</h1>
     
     <div class="hidden name"><code>texts.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Texts database documentation</p>
+    <p>texts database documentation</p>
     </div>
 
     <pre class="usage"><span class='va'>texts</span></pre>
@@ -149,14 +161,22 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>The texts database is a list that contains the
-following 2 datasets: IEADB_TXT, ECOLEX_TXT.
-For more information and references to each of the datasets used,
-please use the <code>data_source()</code>, <code>data_contrast()</code>, and <code>data_evolution()</code>
-functions.</p><dl>
-<dt>IEADB_TXT: </dt><dd><p>A dataset with 2075 observations and the following
-5 variables: ID, Title, Beg, qID, Text.</p></dd>
-<dt>ECOLEX_TXT: </dt><dd><p>A dataset with 2174 observations and the following
-6 variables: ID, Title, Beg, TreatyText, qID, Text.</p></dd>
+following 1 datasets: AGR_TXT.
+This database differs from the other ones in this package
+as the goal is not to compare the datasets from multiple sources
+but rather to extract the maximum number of treaty texts.
+For that, the first step was to create a consolidate version
+of agreements databases to have a comprehensive list of all
+environmental treaties. The second step was to extract treaty
+texts from IEADB website by scrapping the webpages where the
+treaty texts were available. The observations left in this dataset
+have been completed with ECOLEX texts by scrapping ECOLEX website.
+The dataset will be progressively complemented when other treaty
+texts sources will be found.
+The aim is to obtain a comprehensive list of environmental treaties
+with their corresponding texts, if possible in English.</p><dl>
+<dt>AGR_TXT: </dt><dd><p>A dataset with 6377 observations and the following
+8 variables: qID_ref, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID.</p></dd>
 
 </dl>
 

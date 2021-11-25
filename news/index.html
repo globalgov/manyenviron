@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Changelog • qEnviron</title>
+<title>Changelog • manyenviron</title>
 
 
 <!-- jquery -->
@@ -72,8 +72,8 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">qEnviron</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.4</span>
+        <a class="navbar-link" href="../index.html">manyenviron</a>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -91,6 +91,18 @@
 <li>
   <a href="../news/index.html">News</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/connect.html">How Do Environmental Treaties Connect?</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -104,7 +116,7 @@
       <a href="https://globalgov.github.io/qData/">qData</a>
     </li>
     <li>
-      <a href="https://globalgov.github.io/qCreate/">qCreate</a>
+      <a href="https://globalgov.github.io/manypkgs/">manypkgs</a>
     </li>
     <li>
       <a href="https://globalgov.github.io/qStates/">qStates</a>
@@ -115,7 +127,7 @@
   </ul>
 </li>
 <li>
-  <a href="https://github.com/globalgov/qEnviron">
+  <a href="https://github.com/globalgov/manyenviron">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -137,20 +149,56 @@
       
     </div>
 
-    <div id="qenvirondev-004" class="section level1">
-<h1 class="page-header" data-toc-text="0.0.4">
-<a href="#qenvirondev-004" class="anchor"></a>qEnvironDev 0.0.4</h1>
-<p>2021-10-06</p>
+    <div id="manyenviron-010" class="section level1">
+<h1 class="page-header" data-toc-text="0.1.0">
+<a href="#manyenviron-010" class="anchor"></a>manyenviron 0.1.0</h1>
+<p>2021-11-23</p>
 <div id="package" class="section level2">
 <h2 class="hasAnchor">
 <a href="#package" class="anchor"></a>Package</h2>
 <ul>
-<li>Closed #26 by adding a website using pkgdown package</li>
+<li>Closed #39 by renaming qEnviron to manyenviron</li>
+<li>Added a vignette about connecting environmental treaties
+<ul>
+<li>Closed #38 by adding memberships plot to vignette</li>
+<li>Closed #37 by adding lineage plot to vignette</li>
+<li>Closed #35 by fixing issues with lineage plots</li>
+</ul>
+</li>
+<li>Fixed #32 by deleting “Title.rda” file</li>
 </ul>
 </div>
 <div id="data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#data" class="anchor"></a>Data</h2>
+<ul>
+<li>Modified the ways in which treaty texts are gathered and stored
+<ul>
+<li>Closed #41 by setting up a scraping script for treaty text to avoid storing raw data</li>
+<li>Treaty texts data are stored in one dataset from multiple sources to avoid redundancy</li>
+</ul>
+</li>
+<li>Fixed #40 by correcting the class and order in which variables appear in datasets</li>
+<li>Closed #36 by re-ordering the datasets columns in all databases</li>
+<li>Fixed #34 by putting id column first in references dataset</li>
+<li>Fixed #33 by making sure all datasets are in tibble format</li>
+</ul>
+</div>
+</div>
+    <div id="qenviron-004" class="section level1">
+<h1 class="page-header" data-toc-text="0.0.4">
+<a href="#qenviron-004" class="anchor"></a>qEnviron 0.0.4</h1>
+<p>2021-10-06</p>
+<div id="package-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#package-1" class="anchor"></a>Package</h2>
+<ul>
+<li>Closed #26 by adding a website using pkgdown package</li>
+</ul>
+</div>
+<div id="data-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#data-1" class="anchor"></a>Data</h2>
 <ul>
 <li>Closed #24 by adding IEADB texts using web scraping functions</li>
 <li>Closed #25 by translating treaty titles using key API in <code>standardise_titles()</code>
@@ -160,15 +208,15 @@
 </ul>
 </div>
 </div>
-    <div id="qenvirondev-003" class="section level1">
+    <div id="qenviron-003" class="section level1">
 <h1 class="page-header" data-toc-text="0.0.3">
-<a href="#qenvirondev-003" class="anchor"></a>qEnvironDev 0.0.3</h1>
+<a href="#qenviron-003" class="anchor"></a>qEnviron 0.0.3</h1>
 <p>2021-07-30</p>
 <div id="package-changes" class="section level2">
 <h2 class="hasAnchor">
 <a href="#package-changes" class="anchor"></a>Package changes</h2>
 <ul>
-<li>Updated LICENSE.md with <code><a href="https://rdrr.io/pkg/qCreate/man/update_package.html">qCreate::update_package()</a></code> function</li>
+<li>Updated LICENSE.md with <code>qCreate::update_package()</code> function</li>
 </ul>
 </div>
 <div id="data-changes" class="section level2">
@@ -203,22 +251,22 @@
 </ul>
 </div>
 </div>
-    <div id="qenvirondev-002" class="section level1">
+    <div id="qenviron-002" class="section level1">
 <h1 class="page-header" data-toc-text="0.0.2">
-<a href="#qenvirondev-002" class="anchor"></a>qEnvironDev 0.0.2</h1>
+<a href="#qenviron-002" class="anchor"></a>qEnviron 0.0.2</h1>
 <p>2021-02-22</p>
-<div id="package-1" class="section level2">
+<div id="package-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#package-1" class="anchor"></a>Package</h2>
+<a href="#package-2" class="anchor"></a>Package</h2>
 <ul>
 <li>Closed #9 by fixing GitHub PushRelease actions</li>
 <li>Fixed logo aspect ratio and added globalgov/ direction</li>
 <li>Added a LICENSE.md file</li>
 </ul>
 </div>
-<div id="data-1" class="section level2">
+<div id="data-2" class="section level2">
 <h2 class="hasAnchor">
-<a href="#data-1" class="anchor"></a>Data</h2>
+<a href="#data-2" class="anchor"></a>Data</h2>
 <ul>
 <li>Added variables in databases such as Signature, Force, Rat, Term, L, J and D</li>
 <li>Updated the tests when export the datasets to be more in line with new variables</li>
@@ -233,9 +281,9 @@
 <h1 class="page-header" data-toc-text="0.0.1">
 <a href="#qenvirondev-001" class="anchor"></a>qEnvironDev 0.0.1</h1>
 <p>2020-02-10</p>
-<div id="package-2" class="section level2">
+<div id="package-3" class="section level2">
 <h2 class="hasAnchor">
-<a href="#package-2" class="anchor"></a>Package</h2>
+<a href="#package-3" class="anchor"></a>Package</h2>
 <ul>
 <li>Set up qEnvironDev package using <code>qData::setup_package()</code>
 <ul>
@@ -246,9 +294,9 @@
 </li>
 </ul>
 </div>
-<div id="data-2" class="section level2">
+<div id="data-3" class="section level2">
 <h2 class="hasAnchor">
-<a href="#data-2" class="anchor"></a>Data</h2>
+<a href="#data-3" class="anchor"></a>Data</h2>
 <ul>
 <li>Imported initial datasets in qEnviron, cleaned them and export them in the databases.
 <ul>
