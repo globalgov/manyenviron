@@ -25,16 +25,16 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add qID column
-ECOLEX$qID <- manypkgs::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
+# Add treaty_ID column
+ECOLEX$treaty_ID <- manypkgs::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
 
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
-ECOLEX <- dplyr::left_join(ECOLEX, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
+ECOLEX <- dplyr::left_join(ECOLEX, many_ID, by = "treaty_ID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 
-  dplyr::select(qID_ref, Title, Beg, L, J, Signature, Force, qID, ECOLEX_ID) %>% 
+  dplyr::select(many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning

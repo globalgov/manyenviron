@@ -25,16 +25,16 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add qID column
-IEADB$qID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
+# Add treaty_ID column
+IEADB$treaty_ID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
-IEADB <- dplyr::left_join(IEADB, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
+IEADB <- dplyr::left_join(IEADB, many_ID, by = "treaty_ID")
 
 # Re-order the columns
 IEADB <- IEADB %>% 
-  dplyr::select(qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID) %>% 
+  dplyr::select(many_ID, Title, Beg, L, D, Signature, Force, treaty_ID, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning

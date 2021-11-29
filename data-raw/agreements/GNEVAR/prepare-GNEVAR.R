@@ -28,8 +28,8 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add qID column
-GNEVAR$qID <- manypkgs::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
+# Add treaty_ID column
+GNEVAR$treaty_ID <- manypkgs::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
@@ -40,8 +40,8 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(Term = manypkgs::standardise_dates(Term)) %>% 
   qData::transmutate(Signature = manypkgs::standardise_dates(Sign))
 
-# Add qID column
-GNEVAR2$qID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
+# Add treaty_ID column
+GNEVAR2$treaty_ID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
 
 # Clean GNEVAR3 is the same as GNEVAR, no need to include it
 
@@ -55,8 +55,8 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
-# Add qID column
-GNEVAR4$qID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
+# Add treaty_ID column
+GNEVAR4$treaty_ID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 
 # Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
 # Can not integrate it into GNEVAR
@@ -65,15 +65,15 @@ GNEVAR4$qID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 
 # Join the datasets together
-GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", key = "qID")
+GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", resolve = "coalesce", key = "treaty_ID")
 
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
-GNEVAR <- dplyr::left_join(GNEVAR, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
+GNEVAR <- dplyr::left_join(GNEVAR, many_ID, by = "treaty_ID")
 
 # Select and arrange columns
 GNEVAR <- GNEVAR %>% 
-  dplyr::select(qID_ref, Title, Beg, End, L, D, J, Signature, Force, qID, GNEVAR_ID) %>% 
+  dplyr::select(many_ID, Title, Beg, End, L, D, J, Signature, Force, treaty_ID, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning

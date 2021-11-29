@@ -6,12 +6,12 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 9 variables: qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID.}
+#' 9 variables: many_ID, Title, Beg, L, D, Signature, Force, treaty_ID, IEADB_ID.}
 #' \item{GNEVAR: }{A dataset with 3450 observations and the following
-#' 11 variables: qID_ref, Title, Beg, End, L, D, J, Signature, Force, qID, GNEVAR_ID.}
+#' 11 variables: many_ID, Title, Beg, End, L, D, J, Signature, Force, treaty_ID, GNEVAR_ID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 9 variables: qID_ref, Title, Beg, L, J, Signature, Force, qID, ECOLEX_ID.}
+#' 9 variables: many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
-#' 6 variables: qID_ref, Title, Beg, Signature, Force, qID.}
+#' 6 variables: many_ID, Title, Beg, Signature, Force, treaty_ID.}
 #' }
  "agreements"

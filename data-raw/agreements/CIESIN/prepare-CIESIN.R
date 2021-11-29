@@ -19,16 +19,16 @@ CIESIN <- as_tibble(CIESIN) %>%
   dplyr::select(Title, Beg, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add qID column
-CIESIN$qID <- manypkgs::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
+# Add treaty_ID column
+CIESIN$treaty_ID <- manypkgs::code_agreements(CIESIN, CIESIN$Title, CIESIN$Beg)
 
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::agreements)
-CIESIN <- dplyr::left_join(CIESIN, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
+CIESIN <- dplyr::left_join(CIESIN, many_ID, by = "treaty_ID")
 
 # Re-order the columns
 CIESIN <- CIESIN %>% 
-  dplyr::select(qID_ref, Title, Beg, Signature, Force, qID) %>% 
+  dplyr::select(many_ID, Title, Beg, Signature, Force, treaty_ID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning
