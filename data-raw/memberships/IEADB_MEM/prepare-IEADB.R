@@ -28,18 +28,15 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID) %>% 
   dplyr::arrange(Beg)
 
-#Add memberships column
-IEADB_MEM$Memberships <- manypkgs::get_memberships(IEADB_MEM$CountryID, IEADB_MEM$IEADB_ID)
+# Add a treaty_ID column
+IEADB_MEM$treaty_ID <- manypkgs::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
-# Add a qID column
-IEADB_MEM$qID <- manypkgs::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
-
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::memberships)
-IEADB_MEM <- dplyr::left_join(IEADB_MEM, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
+IEADB_MEM <- dplyr::left_join(IEADB_MEM, many_ID, by = "treaty_ID")
 
 # Re-order the columns
-IEADB_MEM <- dplyr::relocate(IEADB_MEM, qID_ref)
+IEADB_MEM <- dplyr::relocate(IEADB_MEM, many_ID)
 
 # manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

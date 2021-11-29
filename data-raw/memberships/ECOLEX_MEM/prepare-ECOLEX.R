@@ -30,19 +30,15 @@ ECOLEX <- manyenviron::agreements$ECOLEX %>%
   dplyr::select(Title, ECOLEX_ID)
 ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID")
 
+#Add a treaty_ID column
+ECOLEX_MEM$treaty_ID <- manypkgs::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
 
-#Add memberships column
-ECOLEX_MEM$Memberships <- manypkgs::get_memberships(ECOLEX_MEM$CountryID, ECOLEX_MEM$ECOLEX_ID)
-
-#Add a qID column
-ECOLEX_MEM$qID <- manypkgs::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
-
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::memberships)
-ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
+ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, many_ID, by = "treaty_ID")
 
 # Re-order the columns
-ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM, c("qID_ref", "CountryID", "Title"))
+ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM, c("many_ID", "CountryID", "Title"))
 
 # manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

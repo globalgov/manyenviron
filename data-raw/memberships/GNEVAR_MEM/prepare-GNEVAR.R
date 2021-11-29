@@ -26,18 +26,15 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID) %>% 
   dplyr::arrange(Beg)
 
-#Add memberships column
-GNEVAR_MEM$Memberships <- manypkgs::get_memberships(GNEVAR_MEM$CountryID, GNEVAR_MEM$GNEVAR_ID)
+# Add treaty_ID column
+GNEVAR_MEM$treaty_ID <- manypkgs::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
-# Add qID column
-GNEVAR_MEM$qID <- manypkgs::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
-
-# Add qID_ref column
-qID_ref <- manypkgs::condense_qID(manyenviron::memberships)
-GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, qID_ref, by = "qID")
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
+GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, many_ID, by = "treaty_ID")
 
 # Re-order the columns
-GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, qID_ref)
+GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, many_ID)
 
 # manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
