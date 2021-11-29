@@ -199,9 +199,9 @@ jobs:
       - name: install required packages
         run: Rscript -e 'install.packages("rmarkdown")'
 
-      # install qData
-      #- name: install qData package
-      #  run: Rscript -e 'remotes::install_github("globalgov/qData")'
+      # install manydata
+      #- name: install manydata package
+      #  run: Rscript -e 'remotes::install_github("globalgov/manydata")'
       
       # Install manyenviron
       - name: Install package

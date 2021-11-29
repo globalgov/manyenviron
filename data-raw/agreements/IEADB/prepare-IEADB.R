@@ -17,7 +17,7 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Memorandum of Understanding" = "Y", "Protocol" = "P")) %>% 
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
-  qData::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
+  manydata::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
                      Title = manypkgs::standardise_titles(`Treaty Name`),
                      Signature = manypkgs::standardise_dates(`Signature Date`),
                      Force = manypkgs::standardise_dates(`Date IEA entered into force`)) %>% 

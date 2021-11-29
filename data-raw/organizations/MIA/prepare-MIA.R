@@ -16,7 +16,7 @@ MIA <- as_tibble(MIA) %>%
   dplyr::ungroup() %>% 
   dplyr::rename(Name = ioname,
                 COW = ionumber) %>% 
-  qData::transmutate(Beg = manypkgs::standardise_dates(as.character(inception)),
+  manydata::transmutate(Beg = manypkgs::standardise_dates(as.character(inception)),
                      End = manypkgs::standardise_dates(as.character(end))) %>%
   dplyr::select(Name, Beg, End, COW) %>% 
   dplyr::arrange(Beg)

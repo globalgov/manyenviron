@@ -16,7 +16,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::rename("title" = "Title") %>% 
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
-  qData::transmutate(ECOLEX_ID = `EcolexID`,
+  manydata::transmutate(ECOLEX_ID = `EcolexID`,
                      Title = manypkgs::standardise_titles(title), #Key API has been used here
                      # to translate treaties to English
                      Signature = manypkgs::standardise_dates(lubridate::mdy(Date)),

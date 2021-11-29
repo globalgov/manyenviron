@@ -13,19 +13,19 @@ Manyenviron is a data package in the many universe of packages.
 It currently includes an ensemble of datasets on international environmental agreements,
 and [states](https://github.com/globalgov/qStates)' membership or other relationships to those agreements.
 
-Please also check out [`{qData}`](https://github.com/globalgov) for more information about the other packages in the many universe. 
+Please also check out [`{manydata}`](https://github.com/globalgov) for more information about the other packages in the many universe. 
 
 ## How to install
 
 We've made it easier than ever to install and start analysing global governance data in R.
-Simply install the core package, [qData](https://github.com/globalgov/qData), as follows,
+Simply install the core package, [manydata](https://github.com/globalgov/manydata), as follows,
 and then you can discover, install and update various "many" packages from the console.
 
 ```{r install, eval = FALSE}
 # install.packages(remotes)
-remotes::install_github("globalgov/qData") # this installs our core package, the only one you need to do independently
-qData::get_packages() # this prints a list of the publicly available data packages currently available
-qData::get_packages("manyenviron") # this downloads and installs the named package
+remotes::install_github("globalgov/manydata") # this installs our core package, the only one you need to do independently
+manydata::get_packages() # this prints a list of the publicly available data packages currently available
+manydata::get_packages("manyenviron") # this downloads and installs the named package
 ```
 
 ## Data included
@@ -34,15 +34,15 @@ Once you have installed the package, you can see the different databases and dat
 included in the `{manyenviron}` package using the following function.
 
 ```{r datasets, eval= FALSE}
-qData::data_contrast("manyenviron")
+manydata::data_contrast("manyenviron")
 ```
 
 Working with an ensemble of related data has many advantages for robust analysis.
-Just take a look at our vignettes [here](https://globalgov.github.io/qData/articles/user.html).
+Just take a look at our vignettes [here](https://globalgov.github.io/manydata/articles/user.html).
 
 ## Many Packages
 
-The [`{qData}`](https://github.com/globalgov/qData) universe is aimed at collecting, connecting, and correcting network data across issue-domains of global governance. 
+The [`{manydata}`](https://github.com/globalgov/manydata) universe is aimed at collecting, connecting, and correcting network data across issue-domains of global governance. 
 
 While some many packages can and do include novel data,
 much of what they offer involves standing on the shoulders of giants.
@@ -71,5 +71,5 @@ but could be useful within the wider universe,
 [`{manypkgs}`](https://github.com/globalgov/manypkgs) includes a number of functions that make it easy
 to create a new "many" package and populate with clean, consistent global governance data.
 
-If you have any other ideas about how this package or the qData universe more broadly
+If you have any other ideas about how this package or the manydata universe more broadly
 might better facilitate your empirical analysis, we'd be very happy to hear from you.

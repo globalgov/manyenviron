@@ -28,20 +28,20 @@ The **References** database is composed of a dataset that indicates the relation
 cites, superseded by) between two treaties. Finally, the **Texts** database stores the text of
 environmental treaties.
 
-For a quick overview of the database and dataset in `{manyenviron}`, we can use the `data_contrast()` function from `{qData}`.
+For a quick overview of the database and dataset in `{manyenviron}`, we can use the `data_contrast()` function from `{manydata}`.
 
 ```{r, eval=FALSE}
-library(qData)
-qData::data_contrast("manyenviron", "agreements", "IEADB")
-qData::data_contrast("manyenviron", "memberships")
+library(manydata)
+manydata::data_contrast("manyenviron", "agreements", "IEADB")
+manydata::data_contrast("manyenviron", "memberships")
 ```
 
-To view the bibliographic references for a dataset, a database, or the whole package, we can also use `code_source()` from `{qData}`.
+To view the bibliographic references for a dataset, a database, or the whole package, we can also use `code_source()` from `{manydata}`.
 
 ```{r, eval=FALSE}
-qData::data_source("manyenviron", "agreements", "IEADB")
-qData::data_source("manyenviron", "memberships")
-qData::data_source("manyenviron")
+manydata::data_source("manyenviron", "agreements", "IEADB")
+manydata::data_source("manyenviron", "memberships")
+manydata::data_source("manyenviron")
 ```
 
 ## Connecting Environmental Treaties

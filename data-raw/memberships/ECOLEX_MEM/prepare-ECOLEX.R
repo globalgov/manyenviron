@@ -15,7 +15,7 @@ manypkgs::retain("ECOLEX_MEM")
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>% 
-  qData::transmutate(SignatureC = manypkgs::standardise_dates(Sign),
+  manydata::transmutate(SignatureC = manypkgs::standardise_dates(Sign),
                      End = manypkgs::standardise_dates(Term),
                      Force = manypkgs::standardise_dates(For),
                      Rat = manypkgs::standardise_dates(Rati),

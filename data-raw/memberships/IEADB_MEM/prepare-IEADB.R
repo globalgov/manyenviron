@@ -11,7 +11,7 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
-  qData::transmutate(CountryID = qStates::code_states(country),
+  manydata::transmutate(CountryID = qStates::code_states(country),
                      Title = manypkgs::standardise_titles(treatyname),
                      Signature = manypkgs::standardise_dates(tsig),
                      SignatureC = manypkgs::standardise_dates(csig),

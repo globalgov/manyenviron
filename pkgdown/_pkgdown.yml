@@ -34,8 +34,8 @@ navbar:
     packages:
       text: Other packages
       menu:
-        - text: qData
-          href: https://globalgov.github.io/qData/
+        - text: manydata
+          href: https://globalgov.github.io/manydata/
         - text: manypkgs
           href: https://globalgov.github.io/manypkgs/
         - text: qStates

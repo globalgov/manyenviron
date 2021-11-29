@@ -17,7 +17,7 @@ GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>% 
   dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q", D="V", R="W", N="X", U="Y")) %>% 
-  qData::transmutate(Signature = manypkgs::standardise_dates(DocSign),
+  manydata::transmutate(Signature = manypkgs::standardise_dates(DocSign),
                      End = manypkgs::standardise_dates(DocEnd),
                      Force = manypkgs::standardise_dates(DocForce),
                      GNEVAR_ID = GENG,
@@ -38,7 +38,7 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(End = manypkgs::standardise_dates(End)) %>% 
   dplyr::mutate(Force = manypkgs::standardise_dates(Force)) %>% 
   dplyr::mutate(Term = manypkgs::standardise_dates(Term)) %>% 
-  qData::transmutate(Signature = manypkgs::standardise_dates(Sign))
+  manydata::transmutate(Signature = manypkgs::standardise_dates(Sign))
 
 # Add treaty_ID column
 GNEVAR2$treaty_ID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
@@ -48,7 +48,7 @@ GNEVAR2$treaty_ID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$B
 # Clean GNEVAR4
 GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
 GNEVAR4 <- as_tibble(GNEVAR4) %>%
-  qData::transmutate(Signature = manypkgs::standardise_dates(DocDate),
+  manydata::transmutate(Signature = manypkgs::standardise_dates(DocDate),
                      Force = manypkgs::standardise_dates(InForce)) %>%
   dplyr::mutate(End = manypkgs::standardise_dates(End)) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API used here
@@ -65,7 +65,7 @@ GNEVAR4$treaty_ID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$B
 GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 
 # Join the datasets together
-GNEVAR <- qData::consolidate(GNEVAR, row = "any", cols = "any", resolve = "coalesce", key = "treaty_ID")
+GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any", resolve = "coalesce", key = "treaty_ID")
 
 # Add many_ID column
 many_ID <- manypkgs::condense_agreements(manyenviron::agreements)

@@ -13,7 +13,7 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = manypkgs::standardise_dates(openxlsx::convertToDate(DateSigned))) %>% 
   dplyr::mutate(Beg = manypkgs::standardise_dates(as.character(Signature))) %>%
-  qData::transmutate(TFDD_ID = `2016Update ID`,
+  manydata::transmutate(TFDD_ID = `2016Update ID`,
                      CountryID = CCODE,
                      Title = manypkgs::standardise_titles(DocumentName)) %>% 
   # API has been used to translate some of the treaties that were not in english

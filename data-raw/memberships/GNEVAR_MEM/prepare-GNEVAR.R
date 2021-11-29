@@ -11,7 +11,7 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
 # formats of the 'GNEVAR_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
-  qData::transmutate(GNEVAR_ID = GENG,
+  manydata::transmutate(GNEVAR_ID = GENG,
                      Rat = manypkgs::standardise_dates(Approval),
                      Withdrawal = manypkgs::standardise_dates(Withdrawal1),
                      Signature = manypkgs::standardise_dates(DocSign),
