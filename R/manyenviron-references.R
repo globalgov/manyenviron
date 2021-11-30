@@ -6,6 +6,6 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{ECOLEX_REF: }{A dataset with 1164 observations and the following
-#' 3 variables: qID1, qID2, RefType.}
+#' 3 variables: treaty_ID1, treaty_ID2, RefType.}
 #' }
  "references"
