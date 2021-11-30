@@ -4,7 +4,7 @@
 # the usual script preparation format has been adapted.
 
 # Step one: create a consolidated version of manyenviron agreements database
-AGR_TXT <- qData::consolidate(manyenviron::agreements, "any", "any")
+AGR_TXT <- qData::consolidate(manyenviron::agreements, "any", "any",resolve = "coalesce", key = "many_ID")
 
 # Step two: extract treaty texts from IEADB website
 # This requires the original IEADB dataset with the IEADB_ID column
@@ -33,7 +33,7 @@ IEADB_original$Source <- lapply(IEADB_original$IEADB_ID, function(s) tryCatch(rv
 # manyenviron 
 AGR_TXT <- dplyr::left_join(AGR_TXT, IEADB_original, by = "IEADB_ID")
 AGR_TXT <- as_tibble(AGR_TXT) %>% 
-  dplyr::select(qID, IEADB_ID, GNEVAR_ID, ECOLEX_ID, qID_ref, Title, Beg, TreatyText, Source)
+  dplyr::select(treaty_ID, IEADB_ID, GNEVAR_ID, ECOLEX_ID, many_ID, Title, Beg, TreatyText, Source)
 
 # Step four: complement the dataset with ECOLEX treaty texts (TO BE IMPROVED)
 # Filter observations with text = NULL and with an ECOLEX_ID
@@ -85,7 +85,7 @@ AGR_TXT$Text <- dplyr::coalesce(AGR_TXT$TreatyText, AGR_TXT$Text)
 
 AGR_TXT <- dplyr::as_tibble(AGR_TXT) %>% 
   dplyr::rename(Source = `Source.x`) %>% 
-  dplyr::select(qID_ref, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID)
+  dplyr::select(many_ID, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID)
 
 # Step six: export data into rda format 2 possible solutions
 manypkgs::export_data(AGR_TXT, database = "texts", URL = "NA") #!Make sure to delete

@@ -17,6 +17,6 @@
 #' with their corresponding texts, if possible in English.
 #'\describe{
 #' \item{AGR_TXT: }{A dataset with 6377 observations and the following
-#' 8 variables: qID_ref, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID.}
+#' 8 variables: many_ID, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID.}
 #' }
  "texts"
