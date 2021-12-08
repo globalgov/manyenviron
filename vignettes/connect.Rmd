@@ -175,7 +175,8 @@ library(igraph)
 library(threejs)
 library(graphlayouts)
 # Set node attribute "type" to separate between countries and agreements
-V(membership_1980)$type <- ifelse(nchar(V(membership_1980)$name) == 3,
+V(membership_1980)$type <- ifelse(nchar(V(membership_1980)$name) == 3 |
+                                    V(membership_1980)$name == "GRC_EC",
                                    TRUE,
                                    FALSE)
 # Save a clean version for the globe plot

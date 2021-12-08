@@ -2,8 +2,9 @@ url: https://globalgov.github.io/manyenviron/
 development:
     mode: auto
 template:
+  bootstrap: 5
   params:
-    bootswatch: paper
+    bootswatch: litera
 authors:
   James Hollway:
     href: https://jameshollway.com
@@ -12,7 +13,7 @@ authors:
 navbar:
   structure:
     left: [home, reference, news]
-    right: [packages, github]
+    right: [packages, search, github]
   components:
     home:
       icon: fa-home fa-lg
@@ -38,10 +39,10 @@ navbar:
           href: https://globalgov.github.io/manydata/
         - text: manypkgs
           href: https://globalgov.github.io/manypkgs/
-        - text: qStates
-          href: https://globalgov.github.io/qStates/
-        - text: qTrade
-          href: https://globalgov.github.io/qTrade/
+        - text: manystates
+          href: https://globalgov.github.io/manystates/
+        - text: manytrade
+          href: https://globalgov.github.io/manytrade/
 reference:
   - title: "Data"
     desc: "The following databases are contained in manyenviron"
@@ -51,3 +52,10 @@ reference:
     - organizations
     - references
     - texts
+footer:
+  structure:
+    left: devs
+    right: panarchic
+  components:
+    devs: Developed by [James Hollway](https://jameshollway.com/).
+    panarchic: Part of the [PANARCHIC project](https://panarchic.ch/).
