@@ -20,7 +20,7 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
                      Force = manypkgs::standardise_dates(InForce1)) %>% 
   dplyr::mutate(SignatureC = Signature) %>% 
   dplyr::mutate(CountryID = Country) %>% 
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API used here
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title, api_key = api)) %>% # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
   dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID) %>% 

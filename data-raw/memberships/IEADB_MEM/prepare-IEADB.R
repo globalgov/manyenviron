@@ -12,7 +12,7 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # below (in stage three) passes all the tests. 
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   manydata::transmutate(CountryID = qStates::code_states(country),
-                     Title = manypkgs::standardise_titles(treatyname),
+                     Title = manypkgs::standardise_titles(treatyname, api_key = api),# Define Key API
                      Signature = manypkgs::standardise_dates(tsig),
                      SignatureC = manypkgs::standardise_dates(csig),
                      Rat = manypkgs::standardise_dates(crat),

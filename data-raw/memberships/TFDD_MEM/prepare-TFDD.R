@@ -15,8 +15,7 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Beg = manypkgs::standardise_dates(as.character(Signature))) %>%
   manydata::transmutate(TFDD_ID = `2016Update ID`,
                      CountryID = CCODE,
-                     Title = manypkgs::standardise_titles(DocumentName)) %>% 
-  # API has been used to translate some of the treaties that were not in english
+                     Title = manypkgs::standardise_titles(DocumentName, api_key = api)) %>% # Define Key API
   dplyr::mutate(Memberships = qStates::code_states(Signatories)) %>% 
   dplyr::select(CountryID, Title, Beg, Signature, TFDD_ID, Memberships) %>% 
   dplyr::arrange(Beg)
