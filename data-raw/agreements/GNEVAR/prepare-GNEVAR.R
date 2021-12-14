@@ -22,8 +22,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
                      Force = manypkgs::standardise_dates(DocForce),
                      GNEVAR_ID = GENG,
                      ECOLEX_ID = ECOLEX) %>% 
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API has been used to translate 
-  # treaties not in english
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title, api_key = api)) %>% # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
   dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
@@ -33,7 +32,7 @@ GNEVAR$treaty_ID <- manypkgs::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # key API also used here
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title, api_key = api)) %>% # Define Key API
   dplyr::mutate(Beg = manypkgs::standardise_dates(Beg)) %>% 
   dplyr::mutate(End = manypkgs::standardise_dates(End)) %>% 
   dplyr::mutate(Force = manypkgs::standardise_dates(Force)) %>% 
@@ -51,7 +50,7 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   manydata::transmutate(Signature = manypkgs::standardise_dates(DocDate),
                      Force = manypkgs::standardise_dates(InForce)) %>%
   dplyr::mutate(End = manypkgs::standardise_dates(End)) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% # Key API used here
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title, api_key = api)) %>% # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 

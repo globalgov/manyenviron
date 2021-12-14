@@ -17,8 +17,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
   manydata::transmutate(ECOLEX_ID = `EcolexID`,
-                     Title = manypkgs::standardise_titles(title), #Key API has been used here
-                     # to translate treaties to English
+                     Title = manypkgs::standardise_titles(title, api_key = api), # Define Key API
                      Signature = manypkgs::standardise_dates(lubridate::mdy(Date)),
                      Force = manypkgs::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 

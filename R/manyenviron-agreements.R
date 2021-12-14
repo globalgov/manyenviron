@@ -7,7 +7,7 @@
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
 #' 9 variables: many_ID, Title, Beg, L, D, Signature, Force, treaty_ID, IEADB_ID.}
-#' \item{GNEVAR: }{A dataset with 3450 observations and the following
+#' \item{GNEVAR: }{A dataset with 3431 observations and the following
 #' 11 variables: many_ID, Title, Beg, End, L, D, J, Signature, Force, treaty_ID, GNEVAR_ID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
 #' 9 variables: many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID.}

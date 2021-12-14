@@ -18,7 +18,7 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
   manydata::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
-                     Title = manypkgs::standardise_titles(`Treaty Name`),
+                     Title = manypkgs::standardise_titles(`Treaty Name`, api_key = api),# Define Key API
                      Signature = manypkgs::standardise_dates(`Signature Date`),
                      Force = manypkgs::standardise_dates(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
