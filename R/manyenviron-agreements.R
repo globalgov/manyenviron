@@ -1,7 +1,7 @@
 #' agreements database documentation
 #'
 #' @format The agreements database is a list that contains the
-#' following 4 datasets: IEADB, GNEVAR, ECOLEX, CIESIN.
+#' following 5 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
@@ -13,5 +13,7 @@
 #' 9 variables: many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
 #' 6 variables: many_ID, Title, Beg, Signature, Force, treaty_ID.}
+#' \item{HEIDI: }{A dataset with 2280 observations and the following
+#' 4 variables: ID, Title, Beg, Signature.}
 #' }
  "agreements"
