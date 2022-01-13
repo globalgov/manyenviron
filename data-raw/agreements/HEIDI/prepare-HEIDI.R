@@ -12,10 +12,24 @@ HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
 # below (in stage three) passes all the tests.
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
-                        Signature = manypkgs::standardise_dates(`signature.date`)) %>%
+                        Signature = manypkgs::standardise_dates(`signature.date`)) %>%#has to change the dates format
   dplyr::mutate(Beg = Signature) %>%
-  dplyr::select(ID, Title, Beg, Signature) %>%
-  dplyr::arrange(Beg, ID)
+  dplyr::rename(HEIDI_ID = ID) %>% 
+  dplyr::select(HEIDI_ID, Title, Beg, Signature) %>%
+  dplyr::arrange(Beg)
+
+# Add treaty_ID column
+HEIDI$treaty_ID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Beg)
+
+# Add many_ID column
+many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
+HEIDI <- dplyr::left_join(HEIDI, many_ID, by = "treaty_ID")
+
+# Re-order the columns
+HEIDI <- HEIDI %>% 
+  dplyr::select(many_ID, Title, Beg, Signature, treaty_ID, HEIDI_ID) %>% 
+  dplyr::arrange(Beg)
+
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
