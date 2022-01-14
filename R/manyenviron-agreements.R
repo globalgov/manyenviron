@@ -14,6 +14,6 @@
 #' \item{CIESIN: }{A dataset with 666 observations and the following
 #' 6 variables: many_ID, Title, Beg, Signature, Force, treaty_ID.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
-#' 4 variables: ID, Title, Beg, Signature.}
+#' 6 variables: many_ID, Title, Beg, Signature, treaty_ID, HEIDI_ID.}
 #' }
  "agreements"

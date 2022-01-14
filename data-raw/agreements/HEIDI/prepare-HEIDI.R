@@ -12,7 +12,7 @@ HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
 # below (in stage three) passes all the tests.
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
-                        Signature = manypkgs::standardise_dates(`signature.date`)) %>%#has to change the dates format
+                        Signature = manypkgs::standardise_dates(as.Date(`signature.date`))) %>%
   dplyr::mutate(Beg = Signature) %>%
   dplyr::rename(HEIDI_ID = ID) %>% 
   dplyr::select(HEIDI_ID, Title, Beg, Signature) %>%
