@@ -47,6 +47,11 @@ YIO2$Title <- extr_titles
 
 YIO <- as_tibble(rbind(YIO1, YIO2))
 
+YIO$Title <- stringr::str_remove_all(YIO$Title, "\n")
+YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s\\s")
+YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s$")
+
+
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
