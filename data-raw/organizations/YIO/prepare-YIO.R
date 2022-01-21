@@ -4,8 +4,8 @@
 # ready for many packages universe.
 
 # Stage one: Creating empty dataset
-Title <- 1:75071
-YIO <- as.data.frame(Title)
+Title <- 1:25
+YIO1 <- as.data.frame(Title)
 
 
 # Stage two: scraping information from https://uia.org/ybio website
@@ -20,30 +20,33 @@ extr_title <- purrr::map(
   url_1,
   . %>%
     rvest::read_html() %>%
-    rvest::html_nodes("h3") %>%
+    rvest::html_nodes(".views-field-name-en") %>%
     rvest::html_text()
 )
 extr_title <- unlist(extr_title)
-extr_title <- extr_title[-c(1:21)]
+extr_title <- extr_title[-c(1)]
 
-extr_title2 <- purrr::map(
+YIO1$Title <- extr_title
+
+
+extr_titles <- tryCatch(purrr::map(
   urls,
   . %>%
     rvest::read_html() %>%
-    rvest::html_nodes("h3") %>%
+    rvest::html_nodes(".views-field-name-en") %>%
     rvest::html_text()
-)
+))
 
+extr_titles <- lapply(extr_titles, function(x) x[-1])
+extr_titles <- unlist(extr_titles)
 
-for(i in seq_len(length(extr_title2))) {
-  extr_title2 <- extr_title2[[i]][-c(1:21)]
-}
+Title <- 1:75046
+YIO2 <- as.data.frame(Title)
 
+YIO2$Title <- extr_titles
 
-YIO <- as_tibble(YIO) %>%
-  qData::transmutate(ID = {id_variable_name_here},
-              Beg = manypkgs::standardise_dates({date_variable_name_here})) %>%
-  dplyr::arrange(Beg)
+YIO <- as_tibble(rbind(YIO1, YIO2))
+
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
@@ -66,4 +69,4 @@ YIO <- as_tibble(YIO) %>%
 # To add a template of .bib file to package,
 # run `manypkgs::add_bib(organizations, YIO)`.
 manypkgs::export_data(YIO, database = "organizations",
-                     URL = NULL)
+                     URL = "https://uia.org/ybio")
