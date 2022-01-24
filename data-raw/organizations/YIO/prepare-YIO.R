@@ -12,6 +12,7 @@ YIO1 <- as.data.frame(Title)
 # In this stage you will want to correct the variable names and
 # formats of the 'YIO' object until the object created
 # below (in stage three) passes all the tests.
+# Extract first page of website because of different URL
 url_1 <- "https://uia.org/ybio"
 
 urls <- paste0("https://uia.org/ybio?page=", 1:3002)
@@ -28,7 +29,7 @@ extr_title <- extr_title[-c(1)]
 
 YIO1$Title <- extr_title
 
-
+# Extract the rest of the pages of website
 extr_titles <- tryCatch(purrr::map(
   urls,
   . %>%
@@ -37,6 +38,7 @@ extr_titles <- tryCatch(purrr::map(
     rvest::html_text()
 ))
 
+#Remove the "Name" observation from top of the page
 extr_titles <- lapply(extr_titles, function(x) x[-1])
 extr_titles <- unlist(extr_titles)
 
@@ -47,9 +49,12 @@ YIO2$Title <- extr_titles
 
 YIO <- as_tibble(rbind(YIO1, YIO2))
 
+# Clean the output
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\n")
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s\\s")
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s$")
+
+
 
 
 # manypkgs includes several functions that should help cleaning
