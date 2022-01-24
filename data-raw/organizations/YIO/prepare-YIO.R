@@ -55,8 +55,38 @@ YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s\\s")
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s$")
 
 
+# Extract abbreviationss
+extr_abbrev1 <- purrr::map(
+  url_1,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-abbr-en") %>%
+    rvest::html_text()
+)
+extr_abbrev1 <- unlist(extr_abbrev1)
+extr_abbrev1 <- extr_abbrev1[-c(1)]
 
+extr_abbrev2 <- tryCatch(purrr::map(
+  urls,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-abbr-en") %>%
+    rvest::html_text()
+))
 
+#Remove the "Name" observation from top of the page
+extr_abbrev2 <- lapply(extr_abbrev2, function(x) x[-1])
+extr_abbrev2 <- unlist(extr_abbrev2)
+
+extr_abbrev <- c(extr_abbrev1, extr_abbrev2)
+
+YIO$Abbreviation <- extr_abbrev
+
+YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\n")
+YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\\s\\s")
+YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\\s$")
+
+YIO$Abbreviation <- dplyr::na_if(YIO$Abbreviation, "")
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
