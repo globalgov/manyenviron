@@ -85,8 +85,39 @@ YIO$Abbreviation <- extr_abbrev
 YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\n")
 YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\\s\\s")
 YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\\s$")
-
 YIO$Abbreviation <- dplyr::na_if(YIO$Abbreviation, "")
+
+# Extract year of creation
+extr_beg1 <- purrr::map(
+  url_1,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-birthyear") %>%
+    rvest::html_text()
+)
+extr_beg1 <- unlist(extr_beg1)
+extr_beg1 <- extr_beg1[-c(1)]
+
+extr_beg2 <- purrr::map(
+  urls,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-birthyear") %>%
+    rvest::html_text()
+)
+extr_beg2 <- lapply(extr_beg2, function(x) x[-1])
+extr_beg2 <- unlist(extr_beg2)
+
+YIO$Beg <- c(extr_beg1, extr_beg2)
+
+YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\n")
+YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s\\s")
+YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s$")
+YIO$Beg <- dplyr::na_if(YIO$Beg, "")
+
+YIO$Beg <- manypkgs::standardise_dates(YIO$Beg)
+
+
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
