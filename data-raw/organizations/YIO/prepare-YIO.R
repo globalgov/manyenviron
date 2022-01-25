@@ -128,6 +128,34 @@ extr_city1 <- purrr::map(
 extr_city1 <- unlist(extr_city1)
 extr_city1 <- extr_city1[-c(1)]
 
+extr_city2 <- purrr::map(
+  urls,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-addcity-1-en") %>%
+    rvest::html_text()
+)
+
+
+# # Extract country
+# extr_country1 <- purrr::map(
+#   url_1,
+#   . %>%
+#     rvest::read_html() %>%
+#     rvest::html_nodes(".views-field-addpays-1-en") %>%
+#     rvest::html_text()
+# )
+# extr_country1 <- unlist(extr_country1)
+# extr_country1 <- extr_country1[-c(1)]
+# 
+# extr_country2 <- purrr::map(
+#   urls,
+#   . %>%
+#     rvest::read_html() %>%
+#     rvest::html_nodes(".views-field-addpays-1-en") %>%
+#     rvest::html_text()
+# )
+
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
