@@ -116,27 +116,27 @@ YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s$")
 YIO$Beg <- dplyr::na_if(YIO$Beg, "")
 
 YIO$Beg <- manypkgs::standardise_dates(YIO$Beg)
-
-# Extract city of HQ
-extr_city1 <- purrr::map(
-  url_1,
-  . %>%
-    rvest::read_html() %>%
-    rvest::html_nodes(".views-field-addcity-1-en") %>%
-    rvest::html_text()
-)
-extr_city1 <- unlist(extr_city1)
-extr_city1 <- extr_city1[-c(1)]
-
-extr_city2 <- purrr::map(
-  urls,
-  . %>%
-    rvest::read_html() %>%
-    rvest::html_nodes(".views-field-addcity-1-en") %>%
-    rvest::html_text()
-)
-
-
+# 
+# # Extract city of HQ
+# extr_city1 <- purrr::map(
+#   url_1,
+#   . %>%
+#     rvest::read_html() %>%
+#     rvest::html_nodes(".views-field-addcity-1-en") %>%
+#     rvest::html_text()
+# )
+# extr_city1 <- unlist(extr_city1)
+# extr_city1 <- extr_city1[-c(1)]
+# 
+# extr_city2 <- purrr::map(
+#   urls,
+#   . %>%
+#     rvest::read_html() %>%
+#     rvest::html_nodes(".views-field-addcity-1-en") %>%
+#     rvest::html_text()
+# )
+# 
+# 
 # # Extract country
 # extr_country1 <- purrr::map(
 #   url_1,
