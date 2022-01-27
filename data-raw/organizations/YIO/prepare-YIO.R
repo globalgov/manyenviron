@@ -4,8 +4,8 @@
 # ready for many packages universe.
 
 # Stage one: Creating empty dataset
-Title <- 1:25
-YIO1 <- as.data.frame(Title)
+Title <- 1:75115
+YIO <- as.data.frame(Title)
 
 
 # Stage two: scraping information from https://uia.org/ybio website
@@ -15,22 +15,21 @@ YIO1 <- as.data.frame(Title)
 # Extract first page of website because of different URL
 url_1 <- "https://uia.org/ybio"
 
-urls <- paste0("https://uia.org/ybio?page=", 1:3002)
+urls <- paste0("https://uia.org/ybio?page=", 1:3004)
 
-extr_title <- purrr::map(
+extr_title1 <- purrr::map(
   url_1,
   . %>%
     rvest::read_html() %>%
     rvest::html_nodes(".views-field-name-en") %>%
     rvest::html_text()
 )
-extr_title <- unlist(extr_title)
-extr_title <- extr_title[-c(1)]
+extr_title1 <- unlist(extr_title1)
+extr_title1 <- extr_title1[-c(1)]
 
-YIO1$Title <- extr_title
 
 # Extract the rest of the pages of website
-extr_titles <- tryCatch(purrr::map(
+extr_titles2 <- tryCatch(purrr::map(
   urls,
   . %>%
     rvest::read_html() %>%
@@ -39,15 +38,10 @@ extr_titles <- tryCatch(purrr::map(
 ))
 
 #Remove the "Name" observation from top of the page
-extr_titles <- lapply(extr_titles, function(x) x[-1])
-extr_titles <- unlist(extr_titles)
+extr_titles2 <- lapply(extr_titles2, function(x) x[-1])
+extr_titles2 <- unlist(extr_titles2)
 
-Title <- 1:75046
-YIO2 <- as.data.frame(Title)
-
-YIO2$Title <- extr_titles
-
-YIO <- as_tibble(rbind(YIO1, YIO2))
+YIO$Title <- c(extr_title1, extr_titles2)
 
 # Clean the output
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\n")
@@ -78,10 +72,9 @@ extr_abbrev2 <- tryCatch(purrr::map(
 extr_abbrev2 <- lapply(extr_abbrev2, function(x) x[-1])
 extr_abbrev2 <- unlist(extr_abbrev2)
 
-extr_abbrev <- c(extr_abbrev1, extr_abbrev2)
+YIO$Abbreviation <- c(extr_abbrev1, extr_abbrev2)
 
-YIO$Abbreviation <- extr_abbrev
-
+#Clean the columns strings
 YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\n")
 YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\\s\\s")
 YIO$Abbreviation <- stringr::str_remove_all(YIO$Abbreviation, "\\s$")
@@ -110,13 +103,14 @@ extr_beg2 <- unlist(extr_beg2)
 
 YIO$Beg <- c(extr_beg1, extr_beg2)
 
+#Clean the column strings
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\n")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s\\s")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s$")
 YIO$Beg <- dplyr::na_if(YIO$Beg, "")
 
 YIO$Beg <- manypkgs::standardise_dates(YIO$Beg)
-# 
+
 # # Extract city of HQ
 # extr_city1 <- purrr::map(
 #   url_1,
@@ -136,25 +130,30 @@ YIO$Beg <- manypkgs::standardise_dates(YIO$Beg)
 #     rvest::html_text()
 # )
 # 
-# 
-# # Extract country
-# extr_country1 <- purrr::map(
-#   url_1,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".views-field-addpays-1-en") %>%
-#     rvest::html_text()
-# )
-# extr_country1 <- unlist(extr_country1)
-# extr_country1 <- extr_country1[-c(1)]
-# 
-# extr_country2 <- purrr::map(
-#   urls,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".views-field-addpays-1-en") %>%
-#     rvest::html_text()
-# )
+
+# Extract country
+extr_country1 <- purrr::map(
+  url_1,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-addpays-1-en") %>%
+    rvest::html_text()
+)
+extr_country1 <- unlist(extr_country1)
+extr_country1 <- extr_country1[-c(1)]
+
+extr_country2 <- purrr::map(
+  urls,
+  . %>%
+    rvest::read_html() %>%
+    rvest::html_nodes(".views-field-addpays-1-en") %>%
+    rvest::html_text()
+)
+
+extr_country2 <- lapply(extr_country2, function(x) x[-1])
+extr_country2 <- unlist(extr_country2)
+
+extr_country <- c(extr_country1,extr_country2)
 
 
 # manypkgs includes several functions that should help cleaning
