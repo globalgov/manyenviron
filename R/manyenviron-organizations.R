@@ -7,7 +7,7 @@
 #'\describe{
 #' \item{MIA: }{A dataset with 78 observations and the following
 #' 4 variables: Name, Beg, End, COW.}
-#' \item{YIO: }{A dataset with 75071 observations and the following
-#' 3 variables: Title, Abbreviation, Beg.}
+#' \item{YIO: }{A dataset with 75115 observations and the following
+#' 4 variables: Title, Abbreviation, Beg, Country.}
 #' }
  "organizations"

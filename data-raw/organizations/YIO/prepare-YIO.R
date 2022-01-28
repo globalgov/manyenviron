@@ -7,14 +7,13 @@
 Title <- 1:75115
 YIO <- as.data.frame(Title)
 
-
 # Stage two: scraping information from https://uia.org/ybio website
 # In this stage you will want to correct the variable names and
 # formats of the 'YIO' object until the object created
 # below (in stage three) passes all the tests.
 # Extract first page of website because of different URL
-url_1 <- "https://uia.org/ybio"
 
+url_1 <- "https://uia.org/ybio" #First page has different URL than other pages
 urls <- paste0("https://uia.org/ybio?page=", 1:3004)
 
 extr_title1 <- purrr::map(
@@ -101,15 +100,13 @@ extr_beg2 <- purrr::map(
 extr_beg2 <- lapply(extr_beg2, function(x) x[-1])
 extr_beg2 <- unlist(extr_beg2)
 
-YIO$Beg <- c(extr_beg1, extr_beg2)
+YIO$Beg <- manypkgs::standardise_dates(c(extr_beg1, extr_beg2))
 
 #Clean the column strings
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\n")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s\\s")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s$")
 YIO$Beg <- dplyr::na_if(YIO$Beg, "")
-
-YIO$Beg <- manypkgs::standardise_dates(YIO$Beg)
 
 # # Extract city of HQ
 # extr_city1 <- purrr::map(
@@ -153,7 +150,7 @@ extr_country2 <- purrr::map(
 extr_country2 <- lapply(extr_country2, function(x) x[-1])
 extr_country2 <- unlist(extr_country2)
 
-extr_country <- c(extr_country1,extr_country2)
+YIO$Country <- c(extr_country1,extr_country2)
 
 
 # manypkgs includes several functions that should help cleaning
