@@ -14,4 +14,9 @@
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
 #' 8 variables: many_ID, CountryID, Title, Beg, Signature, TFDD_ID, Memberships, treaty_ID.}
 #' }
+#' 
+#' @details
+#' ``` {r, echo = FALSE, warning = FALSE}
+#' lapply(memberships, skimr::skim_without_charts)
+#' ```
  "memberships"

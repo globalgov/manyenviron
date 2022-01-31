@@ -16,4 +16,9 @@
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 6 variables: many_ID, Title, Beg, Signature, treaty_ID, HEIDI_ID.}
 #' }
+#' 
+#' @details
+#' ``` {r, echo = FALSE, warning = FALSE}
+#' lapply(agreements, skimr::skim_without_charts)
+#' ```
  "agreements"

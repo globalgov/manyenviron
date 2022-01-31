@@ -3,21 +3,76 @@
 \docType{data}
 \name{organizations}
 \alias{organizations}
-\title{Òrganizations database documentation}
+\title{organizations database documentation}
 \format{
 The organizations database is a list that contains the
-following 1 datasets: MIA.
+following 2 datasets: MIA, YIO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{MIA: }{A dataset with 78 observations and the following
 4 variables: Name, Beg, End, COW.}
+\item{YIO: }{A dataset with 75115 observations and the following
+4 variables: Title, Abbreviation, Beg, Country.}
 }
 }
 \usage{
 organizations
 }
 \description{
-Òrganizations database documentation
+organizations database documentation
+}
+\details{
+\preformatted{## $MIA
+## -- Data Summary ------------------------
+##                            Values
+## Name                       X[[i]]
+## Number of rows             78    
+## Number of columns          4     
+## _______________________          
+## Column type frequency:           
+##   character                3     
+##   numeric                  1     
+## ________________________         
+## Group variables            None  
+## 
+## -- Variable type: character ----------------------------------------------------
+## # A tibble: 3 x 8
+##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
+## 1 Name                  0             1     2     8     0       78          0
+## 2 Beg                   0             1     4     4     0       44          0
+## 3 End                  78             0    NA    NA     0        0          0
+## 
+## -- Variable type: numeric ------------------------------------------------------
+## # A tibble: 1 x 10
+##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
+## * <chr>             <int>         <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
+## 1 COW                   0             1 2671. 1348.   270 1538.  2636 3838.
+##    p100
+## * <dbl>
+## 1  5550
+## 
+## $YIO
+## -- Data Summary ------------------------
+##                            Values
+## Name                       X[[i]]
+## Number of rows             75115 
+## Number of columns          4     
+## _______________________          
+## Column type frequency:           
+##   character                4     
+## ________________________         
+## Group variables            None  
+## 
+## -- Variable type: character ----------------------------------------------------
+## # A tibble: 4 x 8
+##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
+## 1 Title                 0         1         2   329     0    74963          0
+## 2 Abbreviation      29296         0.610     2    53     0    33609          0
+## 3 Beg               23141         0.692     4     5     0      390          0
+## 4 Country               0         1        23    44     0      217      28101
+}
 }
 \keyword{datasets}

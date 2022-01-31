@@ -19,4 +19,9 @@
 #' \item{AGR_TXT: }{A dataset with 6377 observations and the following
 #' 8 variables: many_ID, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID.}
 #' }
+#' 
+#' @details
+#' ``` {r, echo = FALSE, warning = FALSE}
+#' lapply(texts, skimr::skim_without_charts)
+#' ```
  "texts"
