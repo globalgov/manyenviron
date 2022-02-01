@@ -100,14 +100,14 @@ extr_beg2 <- purrr::map(
 extr_beg2 <- lapply(extr_beg2, function(x) x[-1])
 extr_beg2 <- unlist(extr_beg2)
 
-YIO$Beg <- manypkgs::standardise_dates(c(extr_beg1, extr_beg2))
+YIO$Beg <- c(extr_beg1, extr_beg2)
+YIO$Beg <- manypkgs::standardise_dates(YIO$Beg)
 
 #Clean the column strings
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\n")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s\\s")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s$")
 YIO$Beg <- dplyr::na_if(YIO$Beg, "")
-
 
 # Extract country
 extr_country1 <- purrr::map(
@@ -133,86 +133,11 @@ extr_country2 <- unlist(extr_country2)
 
 YIO$Country <- c(extr_country1,extr_country2)
 
-# Extract city of HQ
-extr_city1 <- purrr::map(
-  url_1,
-  . %>%
-    rvest::read_html() %>%
-    rvest::html_nodes(".views-field-addcity-1-en") %>%
-    rvest::html_text()
-)
-extr_city1 <- unlist(extr_city1)
-extr_city1 <- extr_city1[-c(1)]
-
-# extr_city2 <- purrr::map(
-#   urls,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".views-field-addcity-1-en") %>%
-#     rvest::html_text()
-# )
-# 
-# # Organisation type I
-extr_typeI1 <- purrr::map(
-  url_1,
-  . %>%
-    rvest::read_html() %>%
-    rvest::html_nodes(".views-field-type1") %>%
-    rvest::html_text()
-)
-extr_typeI1 <- unlist(extr_typeI1)
-extr_typeI1 <- extr_typeI1[-c(1)]
-
-# extr_typeI2 <- purrr::map(
-#   urls,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".views-field-type1") %>%
-#     rvest::html_text()
-# )
-# 
-
-# Organisation type II
-extr_typeI2 <- purrr::map(
-  url_1,
-  . %>%
-    rvest::read_html() %>%
-    rvest::html_nodes(".views-field-type2") %>%
-    rvest::html_text()
-)
-extr_typeI2 <- unlist(extr_typeI2)
-extr_typeI2 <- extr_typeI2[-c(1)]
-
-# extr_typeI2 <- purrr::map(
-#   urls,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".views-field-type2") %>%
-#     rvest::html_text()
-# )
-# 
-
-# Organisation type II
-# extr_YIO_ID <- purrr::map(
-#   url_1,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".views-field-uiaid") %>%
-#     rvest::html_text()
-# )
-# extr_YIO_ID <- unlist(extr_YIO_ID)
-# extr_YIO_ID <- extr_YIO_ID[-c(1)]
-
-# extr_YIO_ID2 <- purrr::map(
-#   urls,
-#   . %>%
-#     rvest::read_html() %>%
-#     rvest::html_nodes(".footable-last-column") %>%
-#     rvest::html_text()
-# )
-# 
-
-
+#Clean the column strings
+YIO$Country <- stringr::str_remove_all(YIO$Country, "\n")
+YIO$Country <- stringr::str_remove_all(YIO$Country, "\\s\\s")
+YIO$Country <- stringr::str_remove_all(YIO$Country, "\\s$")
+YIO$Country <- dplyr::na_if(YIO$Country, "")
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.

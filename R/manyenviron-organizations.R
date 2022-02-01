@@ -10,9 +10,4 @@
 #' \item{YIO: }{A dataset with 75115 observations and the following
 #' 4 variables: Title, Abbreviation, Beg, Country.}
 #' }
-#' 
-#' @details
-#' ``` {r, echo = FALSE, warning = FALSE}
-#' lapply(organizations, skimr::skim_without_charts)
-#' ```
  "organizations"
