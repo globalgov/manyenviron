@@ -11,7 +11,7 @@ GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
 # formats of the 'GNEVAR_MEM' object until the object created
 # below (in stage three) passes all the tests. 
 GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
-  manydata::transmutate(GNEVAR_ID = GENG,
+  manydata::transmutate(gnevarID = GENG,
                      Rat = manypkgs::standardise_dates(Approval),
                      Withdrawal = manypkgs::standardise_dates(Withdrawal1),
                      Signature = manypkgs::standardise_dates(DocSign),
@@ -23,18 +23,18 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title, api_key = api)) %>% # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>% 
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, gnevarID) %>% 
   dplyr::arrange(Beg)
 
-# Add treaty_ID column
-GNEVAR_MEM$treaty_ID <- manypkgs::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
+# Add treatyID column
+GNEVAR_MEM$treatyID <- manypkgs::code_agreements(GNEVAR_MEM, GNEVAR_MEM$Title, GNEVAR_MEM$Beg)
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
-GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, many_ID, by = "treaty_ID")
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::memberships)
+GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
-GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, many_ID)
+GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, manyID)
 
 # manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

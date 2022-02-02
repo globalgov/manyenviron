@@ -6,17 +6,22 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-#' 10 variables: many_ID, CountryID, Title, Beg, End, SignatureC, Force, Rat, ECOLEX_ID, treaty_ID.}
+#' 10 variables: manyID, CountryID, Title, Beg, End, SignatureC, Force, Rat,
+#' ecolexID, treatyID.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-#' 13 variables: many_ID, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID, treaty_ID.}
+#' 13 variables: manyID, CountryID, Title, Beg, End, SignatureC, Signature,
+#' Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
 #' \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-#' 12 variables: many_ID, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID, treaty_ID.}
+#' 12 variables: manyID, CountryID, Title, Beg, End, SignatureC, Signature,
+#' Rat, Force, L, ieadbID, treatyID.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-#' 8 variables: many_ID, CountryID, Title, Beg, Signature, TFDD_ID, Memberships, treaty_ID.}
+#' 8 variables: manyID, CountryID, Title, Beg, Signature, tfddID,
+#' Memberships, treatyID.}
 #' }
-#' 
+
+#'
 #' @details
 #' ``` {r, echo = FALSE, warning = FALSE}
 #' lapply(memberships, skimr::skim_without_charts)
 #' ```
- "memberships"
+"memberships"

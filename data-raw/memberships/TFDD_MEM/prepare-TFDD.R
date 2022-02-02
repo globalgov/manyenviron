@@ -13,22 +13,22 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = manypkgs::standardise_dates(openxlsx::convertToDate(DateSigned))) %>% 
   dplyr::mutate(Beg = manypkgs::standardise_dates(as.character(Signature))) %>%
-  manydata::transmutate(TFDD_ID = `2016Update ID`,
+  manydata::transmutate(tfddID = `2016Update ID`,
                      CountryID = CCODE,
                      Title = manypkgs::standardise_titles(DocumentName, api_key = api)) %>% # Define Key API
   dplyr::mutate(Memberships = qStates::code_states(Signatories)) %>% 
-  dplyr::select(CountryID, Title, Beg, Signature, TFDD_ID, Memberships) %>% 
+  dplyr::select(CountryID, Title, Beg, Signature, tfddID, Memberships) %>% 
   dplyr::arrange(Beg)
 
-# Add a treaty_ID column
-TFDD_MEM$treaty_ID <- manypkgs::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
+# Add a treatyID column
+TFDD_MEM$treatyID <- manypkgs::code_agreements(TFDD_MEM, TFDD_MEM$Title, TFDD_MEM$Beg)
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
-TFDD_MEM <- dplyr::left_join(TFDD_MEM, many_ID, by = "treaty_ID")
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::memberships)
+TFDD_MEM <- dplyr::left_join(TFDD_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
-TFDD_MEM <- dplyr::relocate(TFDD_MEM, many_ID)
+TFDD_MEM <- dplyr::relocate(TFDD_MEM, manyID)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.

@@ -19,24 +19,24 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                      End = manypkgs::standardise_dates(tterm),
                      Force = manypkgs::standardise_dates(ceif3),
                      Force2 = manypkgs::standardise_dates(ceif4),
-                     IEADB_ID = mitch_id) %>%
+                     ieadbID = mitch_id) %>%
   dplyr::mutate(L = dplyr::recode(inclusion, "BEA" = "B", "MEA" = "M")) %>% 
-  dplyr::select(CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC, L, IEADB_ID) %>% 
+  dplyr::select(CountryID, Title, Signature, End, Rat, Force, Force2, SignatureC, L, ieadbID) %>% 
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%
   dplyr::filter(!is.na(Force) & name != "Force2") %>%  
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% 
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID) %>% 
+  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, ieadbID) %>% 
   dplyr::arrange(Beg)
 
-# Add a treaty_ID column
-IEADB_MEM$treaty_ID <- manypkgs::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
+# Add a treatyID column
+IEADB_MEM$treatyID <- manypkgs::code_agreements(IEADB_MEM, IEADB_MEM$Title, IEADB_MEM$Beg)
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
-IEADB_MEM <- dplyr::left_join(IEADB_MEM, many_ID, by = "treaty_ID")
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::memberships)
+IEADB_MEM <- dplyr::left_join(IEADB_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
-IEADB_MEM <- dplyr::relocate(IEADB_MEM, many_ID)
+IEADB_MEM <- dplyr::relocate(IEADB_MEM, manyID)
 
 # manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.

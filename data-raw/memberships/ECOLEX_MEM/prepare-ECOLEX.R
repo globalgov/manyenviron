@@ -20,25 +20,25 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
                      Force = manypkgs::standardise_dates(For),
                      Rat = manypkgs::standardise_dates(Rati),
                      CountryID = StatID,
-                     ECOLEX_ID = EcolexID) %>%
+                     ecolexID = EcolexID) %>%
   dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>% # Check Signature date is for the country and not document signature date
-  dplyr::select(CountryID, Beg, End, SignatureC, Force, Rat, ECOLEX_ID) %>% 
+  dplyr::select(CountryID, Beg, End, SignatureC, Force, Rat, ecolexID) %>% 
   dplyr::arrange(Beg)
 
 # Add a Title column
 ECOLEX <- manyenviron::agreements$ECOLEX %>% 
-  dplyr::select(Title, ECOLEX_ID)
-ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ECOLEX_ID")
+  dplyr::select(Title, ecolexID)
+ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ecolexID")
 
-#Add a treaty_ID column
-ECOLEX_MEM$treaty_ID <- manypkgs::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
+#Add a treatyID column
+ECOLEX_MEM$treatyID <- manypkgs::code_agreements(ECOLEX_MEM, ECOLEX_MEM$Title, ECOLEX_MEM$Beg)
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::memberships)
-ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, many_ID, by = "treaty_ID")
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::memberships)
+ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
-ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM, c("many_ID", "CountryID", "Title"))
+ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM, c("manyID", "CountryID", "Title"))
 
 # manypkgs includes several functions that should help cleaning and standardising your data.
 # Please see the vignettes or website for more details.
