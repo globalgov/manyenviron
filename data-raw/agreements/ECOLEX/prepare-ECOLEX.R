@@ -16,24 +16,26 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::rename("title" = "Title") %>% 
   dplyr::mutate(L = dplyr::recode(Document.type, "Bilateral" = "B", "Multilateral" = "M")) %>% 
   dplyr::mutate(J = dplyr::recode(Field.of.application, "Global" = "G", "Regional/restricted" = "R")) %>% 
-  manydata::transmutate(ECOLEX_ID = `EcolexID`,
+  manydata::transmutate(ecolexID = `EcolexID`,
                      Title = manypkgs::standardise_titles(title, api_key = api), # Define Key API
                      Signature = manypkgs::standardise_dates(lubridate::mdy(Date)),
                      Force = manypkgs::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(ECOLEX_ID, Title, Beg, L, J, Signature, Force) %>% 
+  dplyr::select(ecolexID, Title, Beg, L, J, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add treaty_ID column
-ECOLEX$treaty_ID <- manypkgs::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
+# Add treatyID column
+ECOLEX$treatyID <- manypkgs::code_agreements(ECOLEX, ECOLEX$Title, ECOLEX$Beg)
+# Add Lineage column
+ECOLEX$Lineage <- manypkgs::code_lineage(ECOLEX$Title)
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
-ECOLEX <- dplyr::left_join(ECOLEX, many_ID, by = "treaty_ID")
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+ECOLEX <- dplyr::left_join(ECOLEX, manyID, by = "treatyID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 
-  dplyr::select(many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID) %>% 
+  dplyr::select(manyID, Title, Beg, L, J, Signature, Force, Lineage, treatyID, ecolexID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning

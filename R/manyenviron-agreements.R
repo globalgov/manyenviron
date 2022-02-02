@@ -6,14 +6,23 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 9 variables: many_ID, Title, Beg, L, D, Signature, Force, treaty_ID, IEADB_ID.}
-#' \item{GNEVAR: }{A dataset with 3431 observations and the following
-#' 11 variables: many_ID, Title, Beg, End, L, D, J, Signature, Force, treaty_ID, GNEVAR_ID.}
+#' 10 variables: manyID, Title, Beg, L, D, Signature, Force, Lineage,
+#' treatyID, ieadbID.}
+#' \item{GNEVAR: }{A dataset with 3428 observations and the following
+#' 12 variables: manyID, Title, Beg, End, L, D, J, Signature, Force,
+#' Lineage, treatyID, gnevarID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 9 variables: many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID.}
+#' 10 variables: manyID, Title, Beg, L, J, Signature, Force, Lineage,
+#' treatyID, ecolexID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
-#' 6 variables: many_ID, Title, Beg, Signature, Force, treaty_ID.}
+#' 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
-#' 6 variables: many_ID, Title, Beg, Signature, treaty_ID, HEIDI_ID.}
+#' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 #' }
- "agreements"
+
+#'
+#' @details
+#' ``` {r, echo = FALSE, warning = FALSE}
+#' lapply(agreements, skimr::skim_without_charts)
+#' ```
+"agreements"

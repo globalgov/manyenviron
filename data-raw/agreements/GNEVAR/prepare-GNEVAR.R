@@ -20,15 +20,15 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   manydata::transmutate(Signature = manypkgs::standardise_dates(DocSign),
                      End = manypkgs::standardise_dates(DocEnd),
                      Force = manypkgs::standardise_dates(DocForce),
-                     GNEVAR_ID = GENG,
-                     ECOLEX_ID = ECOLEX) %>% 
+                     gnevarID = GENG,
+                     ecolexID = ECOLEX) %>% 
   dplyr::mutate(Title = manypkgs::standardise_titles(Title, api_key = api)) %>% # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(GNEVAR_ID, Title, Beg, End, L,J,D, Signature, Force) %>% 
+  dplyr::select(gnevarID, Title, Beg, End, L,J,D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add treaty_ID column
-GNEVAR$treaty_ID <- manypkgs::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
+# Add treatyID column
+GNEVAR$treatyID <- manypkgs::code_agreements(GNEVAR, GNEVAR$Title, GNEVAR$Beg)
 
 # # Clean GNEVAR 2
 GNEVAR2 <- as_tibble(GNEVAR2) %>%
@@ -39,8 +39,8 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(Term = manypkgs::standardise_dates(Term)) %>% 
   manydata::transmutate(Signature = manypkgs::standardise_dates(Sign))
 
-# Add treaty_ID column
-GNEVAR2$treaty_ID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
+# Add treatyID column
+GNEVAR2$treatyID <- manypkgs::code_agreements(GNEVAR2, GNEVAR2$Title, GNEVAR2$Beg)
 
 # Clean GNEVAR3 is the same as GNEVAR, no need to include it
 
@@ -54,8 +54,8 @@ GNEVAR4 <- as_tibble(GNEVAR4) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force, End, Parties)
 
-# Add treaty_ID column
-GNEVAR4$treaty_ID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
+# Add treatyID column
+GNEVAR4$treatyID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$Beg)
 
 # Clean GNEVAR5: the current ID format (MGENG-002) is not found in other GNEVAR datasets
 # Can not integrate it into GNEVAR
@@ -64,15 +64,18 @@ GNEVAR4$treaty_ID <- manypkgs::code_agreements(GNEVAR4, GNEVAR4$Title, GNEVAR4$B
 GNEVAR <- list(GNEVAR, GNEVAR2, GNEVAR4)
 
 # Join the datasets together
-GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any", resolve = "coalesce", key = "treaty_ID")
+GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any", resolve = "coalesce", key = "treatyID")
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
-GNEVAR <- dplyr::left_join(GNEVAR, many_ID, by = "treaty_ID")
+# Add Lineage Column
+GNEVAR$Lineage <- manypkgs::code_lineage(GNEVAR$Title)
+
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
 
 # Select and arrange columns
 GNEVAR <- GNEVAR %>% 
-  dplyr::select(many_ID, Title, Beg, End, L, D, J, Signature, Force, treaty_ID, GNEVAR_ID) %>% 
+  dplyr::select(manyID, Title, Beg, End, L, D, J, Signature, Force, Lineage, treatyID, gnevarID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning

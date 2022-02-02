@@ -17,24 +17,26 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Memorandum of Understanding" = "Y", "Protocol" = "P")) %>% 
   dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>% 
   dplyr::filter(L == "M" | L == "B") %>%
-  manydata::transmutate(IEADB_ID = as.character(`IEA# (click for add'l info)`),
+  manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
                      Title = manypkgs::standardise_titles(`Treaty Name`, api_key = api),# Define Key API
                      Signature = manypkgs::standardise_dates(`Signature Date`),
                      Force = manypkgs::standardise_dates(`Date IEA entered into force`)) %>% 
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>% 
-  dplyr::select(IEADB_ID, Title, Beg, L, D, Signature, Force) %>% 
+  dplyr::select(ieadbID, Title, Beg, L, D, Signature, Force) %>% 
   dplyr::arrange(Beg)
 
-# Add treaty_ID column
-IEADB$treaty_ID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
+# Add treatyID column
+IEADB$treatyID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
+# Add Lineage column
+IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 
-# Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
-IEADB <- dplyr::left_join(IEADB, many_ID, by = "treaty_ID")
+# Add manyID column
+manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID")
 
 # Re-order the columns
 IEADB <- IEADB %>% 
-  dplyr::select(many_ID, Title, Beg, L, D, Signature, Force, treaty_ID, IEADB_ID) %>% 
+  dplyr::select(manyID, Title, Beg, L, D, Signature, Force, Lineage, treatyID, ieadbID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning

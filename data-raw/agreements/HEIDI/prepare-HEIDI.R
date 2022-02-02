@@ -12,23 +12,25 @@ HEIDI$signature.date <- openxlsx::convertToDate(HEIDI1$signature.date)
 # formats of the 'HEIDI' object until the object created
 # below (in stage three) passes all the tests.
 HEIDI <- as_tibble(HEIDI) %>%
-  manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
+  manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`, api_key = api),
                         Signature = manypkgs::standardise_dates(`signature.date`)) %>%
   dplyr::mutate(Beg = Signature) %>%
-  dplyr::rename(HEIDI_ID = ID) %>% 
-  dplyr::select(HEIDI_ID, Title, Beg, Signature) %>%
+  dplyr::rename(heidiID = ID) %>% 
+  dplyr::select(heidiID, Title, Beg, Signature) %>%
   dplyr::arrange(Beg)
 
 # Add treaty_ID column
-HEIDI$treaty_ID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Beg)
+HEIDI$treatyID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Beg)
+# Add Lineage column
+HEIDI$Lineage <- manypkgs::code_lineage(HEIDI$Title)
 
 # Add many_ID column
-many_ID <- manypkgs::condense_agreements(manyenviron::agreements)
-HEIDI <- dplyr::left_join(HEIDI, many_ID, by = "treaty_ID")
+manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+HEIDI <- dplyr::left_join(HEIDI, manyID, by = "treatyID")
 
 # Re-order the columns
 HEIDI <- HEIDI %>% 
-  dplyr::select(many_ID, Title, Beg, Signature, treaty_ID, HEIDI_ID) %>% 
+  dplyr::select(manyID, Title, Beg, Signature, Lineage, treatyID, heidiID) %>% 
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning
