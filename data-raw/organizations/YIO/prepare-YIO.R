@@ -3,16 +3,12 @@
 # This is a template for importing, cleaning, and exporting data
 # ready for many packages universe.
 
-# Stage one: Creating empty dataset
-Title <- 1:75115
-YIO <- as.data.frame(Title)
-
-# Stage two: scraping information from https://uia.org/ybio website
+# Stage one: scraping information from https://uia.org/ybio website
 # In this stage you will want to correct the variable names and
 # formats of the 'YIO' object until the object created
 # below (in stage three) passes all the tests.
-# Extract first page of website because of different URL
 
+# Extract first page of website because of different URL
 url_1 <- "https://uia.org/ybio" #First page has different URL than other pages
 urls <- paste0("https://uia.org/ybio?page=", 1:3004)
 
@@ -40,7 +36,8 @@ extr_titles2 <- tryCatch(purrr::map(
 extr_titles2 <- lapply(extr_titles2, function(x) x[-1])
 extr_titles2 <- unlist(extr_titles2)
 
-YIO$Title <- c(extr_title1, extr_titles2)
+Title <- c(extr_title1, extr_titles2)
+YIO <- as.data.frame(Title)
 
 # Clean the output
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\n")
@@ -48,7 +45,7 @@ YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s\\s")
 YIO$Title <- stringr::str_remove_all(YIO$Title, "\\s$")
 
 
-# Extract abbreviationss
+# Extract abbreviations column
 extr_abbrev1 <- purrr::map(
   url_1,
   . %>%
@@ -109,7 +106,7 @@ YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s\\s")
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\\s$")
 YIO$Beg <- dplyr::na_if(YIO$Beg, "")
 
-# Extract country
+# Extract country column
 extr_country1 <- purrr::map(
   url_1,
   . %>%
@@ -139,6 +136,7 @@ YIO$Country <- stringr::str_remove_all(YIO$Country, "\\s\\s")
 YIO$Country <- stringr::str_remove_all(YIO$Country, "\\s$")
 YIO$Country <- dplyr::na_if(YIO$Country, "")
 
+YIO <- as_tibble(YIO)
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
