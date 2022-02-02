@@ -1,3 +1,23 @@
+# manyenviron 0.1.1
+
+2022-02-02
+
+## Package
+
+* Fixed #46 by simplifying tests for texts database
+* Fixed #48 by moving to bootstrap 5 in pkgdown file
+* Closed #43 by using treaty texts to create `code_lineage`
+
+## Data
+
+**Added datasets**
+* Closed #13 by web scraping YIO pages
+* Added HEIDI dataset
+
+**Added columns in datasets**
+* Closed #42 by adding Lineage column in datasets in agreements database
+* Closed #44 by adding membership column
+
 # manyenviron 0.1.0
 
 2021-11-23
