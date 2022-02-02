@@ -31,15 +31,15 @@ ECOLEX_REF <- as_tibble(t(do.call(cbind, ECOLEX_REF)))
 colnames(ECOLEX_REF) <- c("Treaty1", "RefType", "Treaty2")
 ECOLEX_REF
 
-# Replace ECOLEX_ID by treaty_ID
+# Replace ECOLEX_ID by treatyID
 ecoid <- manyenviron::agreements$ECOLEX
 ecoid <- ecoid %>% 
-  dplyr::select(ECOLEX_ID, many_ID)
+  dplyr::select(ecolexID, manyID)
 
-ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty1" = "ECOLEX_ID")) %>%
-  dplyr::rename(treaty_ID1 = "many_ID")
-ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty2" = "ECOLEX_ID")) %>%
-  dplyr::rename(treaty_ID2 = "many_ID") %>% dplyr::select(treaty_ID1, treaty_ID2, RefType)
+ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty1" = "ecolexID")) %>%
+  dplyr::rename(treatyID1 = "manyID")
+ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty2" = "ecolexID")) %>%
+  dplyr::rename(treatyID2 = "manyID") %>% dplyr::select(treatyID1, treatyID2, RefType)
 ECOLEX_REF
 
 # manypkgs includes several functions that should help cleaning
