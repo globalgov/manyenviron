@@ -4,7 +4,7 @@
 # the usual script preparation format has been adapted.
 
 # Step one: create a consolidated version of manyenviron agreements database
-AGR_TXT <- qData::consolidate(manyenviron::agreements, "any", "any",resolve = "coalesce", key = "many_ID")
+AGR_TXT <- manydata::consolidate(manyenviron::agreements, "any", "any",resolve = "coalesce", key = "many_ID")
 
 # Step two: extract treaty texts from IEADB website
 # This requires the original IEADB dataset with the IEADB_ID column
