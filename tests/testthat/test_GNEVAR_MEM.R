@@ -10,8 +10,7 @@ test_that("missing observations are reported correctly", {
   expect_false(any(grepl("n\\.a\\.$", memberships[["GNEVAR_MEM"]])))
 })
 
-# Uniformity tests (agreements have a source ID, a string title, a signature and
-# entry into force date)
+# Uniformity tests (agreements have a countryID and Beg columns)
 test_that("datasets have the required variables", {
   expect_col_exists(memberships[["GNEVAR_MEM"]], vars(CountryID))
   expect_col_exists(memberships[["GNEVAR_MEM"]], vars(Beg))

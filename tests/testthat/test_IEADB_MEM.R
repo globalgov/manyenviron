@@ -10,10 +10,10 @@ test_that("missing observations are reported correctly", {
   expect_false(any(grepl("n\\.a\\.$", memberships[["IEADB_MEM"]])))
 })
 
-# Uniformity tests (agreements have a source ID, a string title, a signature and
-# entry into force date)
+# Uniformity tests (agreements have a countryID and Beg columns)
 test_that("datasets have the required variables", {
-  expect_col_exists(memberships[["IEADB_MEM"]], c("Beg", ".*ID$"))
+  expect_col_exists(memberships[["IEADB_MEM"]], vars(CountryID))
+  expect_col_exists(memberships[["IEADB_MEM"]], vars(Beg))
 })
 
 # Date columns should be in messydt class
