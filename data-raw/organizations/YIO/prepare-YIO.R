@@ -24,7 +24,7 @@ extr_title1 <- purrr::map(
     rvest::html_text()
 )
 extr_title1 <- unlist(extr_title1)
-extr_title1 <- extr_title1[-c(1)]
+extr_title1 <- extr_title1[-(1)]
 
 
 # Extract the rest of the pages of website
@@ -57,7 +57,7 @@ extr_abbrev1 <- purrr::map(
     rvest::html_text()
 )
 extr_abbrev1 <- unlist(extr_abbrev1)
-extr_abbrev1 <- extr_abbrev1[-c(1)]
+extr_abbrev1 <- extr_abbrev1[-(1)]
 
 extr_abbrev2 <- tryCatch(purrr::map(
   urls,
@@ -88,7 +88,7 @@ extr_beg1 <- purrr::map(
     rvest::html_text()
 )
 extr_beg1 <- unlist(extr_beg1)
-extr_beg1 <- extr_beg1[-c(1)]
+extr_beg1 <- extr_beg1[-(1)]
 
 extr_beg2 <- purrr::map(
   urls,
@@ -118,7 +118,7 @@ extr_country1 <- purrr::map(
     rvest::html_text()
 )
 extr_country1 <- unlist(extr_country1)
-extr_country1 <- extr_country1[-c(1)]
+extr_country1 <- extr_country1[-(1)]
 
 extr_country2 <- purrr::map(
   urls,
