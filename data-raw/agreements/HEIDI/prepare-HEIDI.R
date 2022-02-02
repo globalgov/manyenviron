@@ -5,6 +5,7 @@
 
 # Stage one: Collecting data
 HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
+HEIDI$signature.date <- openxlsx::convertToDate(HEIDI1$signature.date)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
@@ -12,7 +13,7 @@ HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
 # below (in stage three) passes all the tests.
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
-                        Signature = manypkgs::standardise_dates(as.Date(`signature.date`))) %>%
+                        Signature = manypkgs::standardise_dates(`signature.date`)) %>%
   dplyr::mutate(Beg = Signature) %>%
   dplyr::rename(HEIDI_ID = ID) %>% 
   dplyr::select(HEIDI_ID, Title, Beg, Signature) %>%
@@ -53,4 +54,3 @@ HEIDI <- HEIDI %>%
 # run `manypkgs::add_bib(agreements, HEIDI)`.
 manypkgs::export_data(HEIDI, database = "agreements",
                       URL = "https://www.chaire-epi.ulaval.ca/en/data/heidi")
-
