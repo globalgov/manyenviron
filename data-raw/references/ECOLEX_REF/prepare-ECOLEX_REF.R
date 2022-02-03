@@ -19,13 +19,13 @@ ECOLEX_REF <- purrr::discard(eco_refer, function(x) length(x)==1) %>%
       reftypes <- which(!treatyrefs)
       k <- vector()
       for(i in reftypes){
-        j <- ifelse(i == max(reftypes), 
-                    length(treatyrefs), 
+        j <- ifelse(i == max(reftypes),
+                    length(treatyrefs),
                     reftypes[which(reftypes==i)+1]-1)
         k <- c(k, paste(index, x[i], x[(i+1):j], sep = "_"))
       }
       k
-    } 
+    }
   } ) %>% unlist() %>% stringr::str_split("_")
 ECOLEX_REF <- as_tibble(t(do.call(cbind, ECOLEX_REF)))
 colnames(ECOLEX_REF) <- c("Treaty1", "RefType", "Treaty2")
@@ -33,13 +33,18 @@ ECOLEX_REF
 
 # Replace ECOLEX_ID by treatyID
 ecoid <- manyenviron::agreements$ECOLEX
-ecoid <- ecoid %>% 
+ecoid <- ecoid %>%
   dplyr::select(ecolexID, manyID)
 
-ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty1" = "ecolexID")) %>%
+ECOLEX_REF <- dplyr::left_join(ECOLEX_REF,
+                               ecoid,
+                               by = c("Treaty1" = "ecolexID")) %>%
   dplyr::rename(treatyID1 = "manyID")
-ECOLEX_REF <- dplyr::left_join(ECOLEX_REF, ecoid, by = c("Treaty2" = "ecolexID")) %>%
-  dplyr::rename(treatyID2 = "manyID") %>% dplyr::select(treatyID1, treatyID2, RefType)
+ECOLEX_REF <- dplyr::left_join(ECOLEX_REF,
+                               ecoid,
+                               by = c("Treaty2" = "ecolexID")) %>%
+  dplyr::rename(treatyID2 = "manyID") %>%
+  dplyr::select(treatyID1, treatyID2, RefType)
 ECOLEX_REF
 
 # manypkgs includes several functions that should help cleaning
@@ -49,14 +54,16 @@ ECOLEX_REF
 # Stage three: Connecting data
 # Next run the following line to make ref available
 # within the package.
-manypkgs::export_data(ECOLEX_REF, database = "references", URL = "NA")
+manypkgs::export_data(ECOLEX_REF,
+                      database = "references",
+                      URL = "NA")
 # This function also does two additional things.
-# First, it creates a set of tests for this object to ensure adherence
-# to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)
-# to run these tests locally at any point.
+# First, it creates a set of tests for this object to ensure
+# adherence to certain standards. You can hit Cmd-Shift-T (Mac)
+# or Ctrl-Shift-T (Windows) to run these tests locally at any point.
 # Any test failures should be pretty self-explanatory and may require
 # you to return to stage two and further clean, standardise, or wrangle
-# your data into the expected format.
+# your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
-# Please make sure that you cite any sources appropriately and fill in as
-# much detail about the variables etc as possible.
+# Please make sure that you cite any sources appropriately and fill
+#in as much detail about the variables etc as possible.

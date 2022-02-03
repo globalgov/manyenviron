@@ -9,7 +9,8 @@
 # below (in stage three) passes all the tests.
 
 # Extract first page of website because of different URL
-url_1 <- "https://uia.org/ybio" #First page has different URL than other pages
+url_1 <- "https://uia.org/ybio"
+#First page has different URL than other pages
 urls <- paste0("https://uia.org/ybio?page=", 1:3004)
 
 extr_title1 <- purrr::map(
@@ -21,7 +22,6 @@ extr_title1 <- purrr::map(
 )
 extr_title1 <- unlist(extr_title1)
 extr_title1 <- extr_title1[-(1)]
-
 
 # Extract the rest of the pages of website
 extr_titles2 <- tryCatch(purrr::map(
