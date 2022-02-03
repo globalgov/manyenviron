@@ -49,10 +49,10 @@ manydata::data_source("manyenviron")
 There are many different ways in which treaties could be linked.
 For example, a treaty can be substituted by another, complemented by protocols,
 changed through amendments, and/or cite another treaty.
-To facilitate the identification and connection between the databases in the package, the `manypkgs::code_agreements()` function has been developed to generate a treaty_ID for treaties in a database.
-Each of the `{manyenviron}` dataset contains a treaty_ID column.
-To understand what are the information provided through by the treaty_ID,
-as well as the benefits of using treaty_ID to spot the relationships between the treaties across several datasets
+To facilitate the identification and connection between the databases in the package, the `manypkgs::code_agreements()` function has been developed to generate a treatyID for treaties in a database.
+Each of the `{manyenviron}` dataset contains a treatyID column.
+To understand what are the information provided through by the treatyID,
+as well as the benefits of using treatyID to spot the relationships between the treaties across several datasets
 in a database, please visit this [article](https://globalgov.github.io/manypkgs/articles/agreements.html)
 on the `{manypkgs}` website.
 
@@ -63,7 +63,7 @@ We use `{migraph}` to create the network plots, more information about the packa
 
 ### Visualising How Agreements Connect by References
 
-The graph below illustrates a sample of earliest 25 treaties from the references database. We select only treaties that cite other treaties. The treaty_IDs are used to facilitate the reading and illustration of the relationships.
+The graph below illustrates a sample of earliest 25 treaties from the references database. We select only treaties that cite other treaties. The treatyIDs are used to facilitate the reading and illustration of the relationships.
 
 ```{r lineage, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 library(dplyr)
@@ -73,7 +73,7 @@ library(migraph)
 # Get dataset
 references <- manyenviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
-  dplyr::mutate(year = stringr::str_extract(treaty_ID2, "[:digit:]{4}")) %>%
+  dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
   dplyr::filter(RefType == "Cites") %>%
   dplyr::arrange(year)
 
@@ -94,20 +94,20 @@ Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 # Subset dataset
 ramsa <- manyenviron::references$ECOLEX_REF %>% 
   dplyr::distinct() %>%
-  dplyr::mutate(year = stringr::str_extract(treaty_ID2, "[:digit:]{4}")) %>%
-  dplyr::filter(RefType == "Amends" & treaty_ID2 == "RAMSA_1971A") %>%
+  dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
+  dplyr::filter(RefType == "Amends" & treatyID2 == "RAMSA_1971A") %>%
   dplyr::arrange(year)
 
 # Get agreement titles
 agreementtitles <- manyenviron::agreements$ECOLEX %>%
-  dplyr::select(Title, treaty_ID) %>% 
-  dplyr::rename(treaty_ID1 = treaty_ID)
+  dplyr::select(Title, treatyID) %>% 
+  dplyr::rename(treatyID1 = treatyID)
 
 # Join information
-ramsa <- dplyr::left_join(ramsa, agreementtitles, by = "treaty_ID1")
-ramsa$treaty_ID2 <- "Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat - 1971"
-ramsa$Title <- paste0(ramsa$Title, "-", stringr::str_extract(ramsa$treaty_ID1, "[:digit:]{4}"))
-ramsa <- dplyr::relocate(ramsa, treaty_ID2, Title)
+ramsa <- dplyr::left_join(ramsa, agreementtitles, by = "treatyID1")
+ramsa$treatyID2 <- "Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat - 1971"
+ramsa$Title <- paste0(ramsa$Title, "-", stringr::str_extract(ramsa$treatyID1, "[:digit:]{4}"))
+ramsa <- dplyr::relocate(ramsa, treatyID2, Title)
 
 # Plot with migraph
 migraph::gglineage(ramsa) +
@@ -121,14 +121,14 @@ migraph::gglineage(ramsa) +
 
 ### Visualising How Agreements Connect by Country Membership
 
-The graph below illustrates the connection between parties and treaties for environmental agreements signed into force in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. treaty_IDs are also used to refer to treaty titles.
+The graph below illustrates the connection between parties and treaties for environmental agreements signed into force in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. treatyIDs are also used to refer to treaty titles.
 
 ```{r memberships, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
 # Subset dataset
 membership_1960 <- manyenviron::memberships$IEADB_MEM %>%
-  dplyr::mutate(year = stringr::str_extract(many_ID, "[:digit:]{4}")) %>%
+  dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1960") %>%
-  dplyr::select(treaty_ID, CountryID, Title) %>%
+  dplyr::select(treatyID, CountryID, Title) %>%
   migraph::as_tidygraph()
 
 # Plot with migraph
@@ -140,9 +140,9 @@ migraph::autographr(membership_1960) +
                                   hjust = 0.5))
 # Subset dataset
 membership_1980 <- manyenviron::memberships$IEADB_MEM %>%
-  dplyr::mutate(year = stringr::str_extract(many_ID, "[:digit:]{4}")) %>%
+  dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
-  dplyr::select(treaty_ID, CountryID, Title) %>%
+  dplyr::select(treatyID, CountryID, Title) %>%
   tidyr::drop_na() %>%
   migraph::as_tidygraph()
 
