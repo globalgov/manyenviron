@@ -44,7 +44,7 @@ IEADB_MEM <- dplyr::left_join(IEADB_MEM, manyID, by = "treatyID")
 # Re-order the columns
 IEADB_MEM <- dplyr::relocate(IEADB_MEM, manyID)
 
-# manypkgs includes several functions that should help 
+# manypkgs includes several functions that should help
 # cleaning and standardising your data.
 # Please see the vignettes or website for more details.
 

@@ -128,7 +128,7 @@ extr_country2 <- purrr::map(
 extr_country2 <- lapply(extr_country2, function(x) x[-1])
 extr_country2 <- unlist(extr_country2)
 
-YIO$Country <- c(extr_country1,extr_country2)
+YIO$Country <- c(extr_country1, extr_country2)
 
 #Clean the column strings
 YIO$Country <- stringr::str_remove_all(YIO$Country, "\n")

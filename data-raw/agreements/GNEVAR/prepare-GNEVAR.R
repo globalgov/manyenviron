@@ -27,7 +27,7 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
                                                      api_key = api)) %>%
   # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(gnevarID, Title, Beg, End, L,J,D, Signature, Force) %>%
+  dplyr::select(gnevarID, Title, Beg, End, L, J, D, Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column

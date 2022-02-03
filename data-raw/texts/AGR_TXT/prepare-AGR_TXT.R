@@ -26,17 +26,23 @@ base <- "https://iea.uoregon.edu/treaty-text/"
 IEADB_original$TreatyText <- lapply(IEADB_original$ieadbID,
                                     function(s) tryCatch(rvest::read_html(paste0(base, s)) %>%
                                                            rvest::html_nodes(".even") %>%
-                                                           rvest::html_text(),error = function(e){as.character("Not found")} %>%
+                                                           rvest::html_text(),
+                                                         error = function(e) {
+                                                           as.character("Not found")
+                                                           } %>%
                                                            paste(collapse = ",")))
 # A source column is also added
 IEADB_original$Source <- lapply(IEADB_original$ieadbID,
                                 function(s) tryCatch(rvest::read_html(paste0(base, s)) %>%
                                                        rvest::html_nodes(".views-field-views-conditional") %>%
-                                                       rvest::html_text(),error = function(e){as.character("Not found")} %>%
+                                                       rvest::html_text(),
+                                                     error = function(e) {
+                                                       as.character("Not found")
+                                                       } %>%
                                                        paste(collapse = ",")))
 
 # Step three: join IEADB text column with the consolidated version of
-# manyenviron 
+# manyenviron
 AGR_TXT <- dplyr::left_join(AGR_TXT,
                             IEADB_original,
                             by = "ieadbID")
@@ -52,22 +58,30 @@ ecolex_text <- AGR_TXT %>%
 ecolex_text$ecolexID2 <- stringr::str_remove_all(ecolex_text$ecolexID, "-")
 
 # Use pdftools package to extract treaty texts
-base = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/"
+base <- "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/"
 ecolex_text$TreatyText <- lapply(ecolex_text$ecolexID,
                                  function(s) tryCatch(pdftools::pdf_text(paste0(base, s, ".pdf")),
-                                                      error = function(e){as.character("Not found")}))
+                                                      error = function(e) {
+                                                        as.character("Not found")
+                                                        }))
 ecolex_text$TreatyTextb <- lapply(ecolex_text$ecolexID2,
                                   function(s) tryCatch(pdftools::pdf_text(paste0(base, s, ".pdf")),
-                                                       error = function(e){as.character("Not found")}))
+                                                       error = function(e) {
+                                                         as.character("Not found")
+                                                         }))
 
 
 base2 = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/"
 ecolex_text$TreatyText2 <- lapply(ecolex_text$ecolexID,
                                   function(s) tryCatch(pdftools::pdf_text(paste0(base2, s, ".pdf")),
-                                                       error = function(e){as.character("Not found")}))
+                                                       error = function(e) {
+                                                         as.character("Not found")
+                                                         }))
 ecolex_text$TreatyText2b <- lapply(ecolex_text$ecolexID2,
                                    function(s) tryCatch(pdftools::pdf_text(paste0(base2, s, ".pdf")),
-                                                        error = function(e){as.character("Not found")}))
+                                                        error = function(e) {
+                                                          as.character("Not found")
+                                                          }))
 
 # base3 = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Fr/"
 # ecolex_text$TreatyText3 <- lapply(ecolex_text$ecolexID,
@@ -76,7 +90,7 @@ ecolex_text$TreatyText2b <- lapply(ecolex_text$ecolexID2,
 # ecolex_text$TreatyText3b <- lapply(ecolex_text$ecolexID2,
 #                                    function(s) tryCatch(pdftools::pdf_text(paste0(base3, s, ".pdf")),
 #                                                         error = function(e){as.character("Not found")}))
-# 
+#
 # base4 = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Sp/"
 # ecolex_text$TreatyText4 <- lapply(ecolex_text$ecolexID,
 #                                   function(s) tryCatch(pdftools::pdf_text(paste0(base4, s, ".pdf")),
@@ -120,4 +134,3 @@ manypkgs::export_data(AGR_TXT, database = "texts", URL = "NA")
 # !Make sure to deletethe database before exporting the data,
 # and do not re-write the texts documentation.
 # usethis::use_data(AGR_TXT, internal = T, overwrite = T)
-
