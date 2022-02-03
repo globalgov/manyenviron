@@ -32,7 +32,8 @@ Imports:
     lubridate,
     roxygen2,
     usethis,
-    migraph
+    migraph,
+    skimr
 Suggests:
     purrr,
     rlang,
