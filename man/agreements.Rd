@@ -11,15 +11,18 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{IEADB: }{A dataset with 3666 observations and the following
-9 variables: many_ID, Title, Beg, L, D, Signature, Force, treaty_ID, IEADB_ID.}
-\item{GNEVAR: }{A dataset with 3431 observations and the following
-11 variables: many_ID, Title, Beg, End, L, D, J, Signature, Force, treaty_ID, GNEVAR_ID.}
+10 variables: manyID, Title, Beg, L, D, Signature, Force, Lineage,
+treatyID, ieadbID.}
+\item{GNEVAR: }{A dataset with 3428 observations and the following
+12 variables: manyID, Title, Beg, End, L, D, J, Signature, Force,
+Lineage, treatyID, gnevarID.}
 \item{ECOLEX: }{A dataset with 2174 observations and the following
-9 variables: many_ID, Title, Beg, L, J, Signature, Force, treaty_ID, ECOLEX_ID.}
+10 variables: manyID, Title, Beg, L, J, Signature, Force, Lineage,
+treatyID, ecolexID.}
 \item{CIESIN: }{A dataset with 666 observations and the following
-6 variables: many_ID, Title, Beg, Signature, Force, treaty_ID.}
+7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
 \item{HEIDI: }{A dataset with 2280 observations and the following
-6 variables: many_ID, Title, Beg, Signature, treaty_ID, HEIDI_ID.}
+7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 }
 }
 \usage{
@@ -29,140 +32,9 @@ agreements
 agreements database documentation
 }
 \details{
-\preformatted{## $IEADB
-## -- Data Summary ------------------------
-##                            Values
-## Name                       X[[i]]
-## Number of rows             3666  
-## Number of columns          9     
-## _______________________          
-## Column type frequency:           
-##   character                9     
-## ________________________         
-## Group variables            None  
-## 
-## -- Variable type: character ----------------------------------------------------
-## # A tibble: 9 x 8
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
-## 1 many_ID               0         1         9    41     0     3539          0
-## 2 Title                 0         1        16   550     0     3375          0
-## 3 Beg                  65         0.982    10    10     0     2813          0
-## 4 L                     0         1         1     1     0        2          0
-## 5 D                     0         1         1    26     0        4          0
-## 6 Signature            65         0.982    10    10     0     2813          0
-## 7 Force               867         0.764    10    10     0     2138          0
-## 8 treaty_ID             0         1         9    39     0     3606          0
-## 9 IEADB_ID              0         1         1     4     0     3666          0
-## 
-## $GNEVAR
-## -- Data Summary ------------------------
-##                            Values
-## Name                       X[[i]]
-## Number of rows             3431  
-## Number of columns          11    
-## _______________________          
-## Column type frequency:           
-##   character                11    
-## ________________________         
-## Group variables            None  
-## 
-## -- Variable type: character ----------------------------------------------------
-## # A tibble: 11 x 8
-##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-##  * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
-##  1 many_ID               0         1         9    41     0     3311          0
-##  2 Title                 0         1        15   550     0     3160          0
-##  3 Beg                  57         0.983    10    10     0     2702          0
-##  4 End                2755         0.197     4    10     0      405          0
-##  5 L                   681         0.802     1     1     0        2          0
-##  6 D                   719         0.790     1     1     0        9          0
-##  7 J                  1283         0.626     1     1     0        6          0
-##  8 Signature            57         0.983    10    10     0     2702          0
-##  9 Force              1612         0.530     4    11     0     1545          0
-## 10 treaty_ID             0         1         9    41     0     3372          0
-## 11 GNEVAR_ID           685         0.800     9     9     0     2733          0
-## 
-## $ECOLEX
-## -- Data Summary ------------------------
-##                            Values
-## Name                       X[[i]]
-## Number of rows             2174  
-## Number of columns          9     
-## _______________________          
-## Column type frequency:           
-##   character                9     
-## ________________________         
-## Group variables            None  
-## 
-## -- Variable type: character ----------------------------------------------------
-## # A tibble: 9 x 8
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
-## 1 many_ID               0         1         9    39     0     2130          0
-## 2 Title                 0         1        15   492     0     2147          0
-## 3 Beg                   0         1        10    10     0     1718          0
-## 4 L                     0         1         1     1     0        2          0
-## 5 J                    90         0.959     1     1     0        2          0
-## 6 Signature             0         1        10    10     0     1718          0
-## 7 Force              1066         0.510    10    10     0      966          0
-## 8 treaty_ID             0         1         9    39     0     2160          0
-## 9 ECOLEX_ID             0         1        10    10     0     2174          0
-## 
-## $CIESIN
-## -- Data Summary ------------------------
-##                            Values
-## Name                       X[[i]]
-## Number of rows             666   
-## Number of columns          6     
-## _______________________          
-## Column type frequency:           
-##   character                6     
-## ________________________         
-## Group variables            None  
-## 
-## -- Variable type: character ----------------------------------------------------
-## # A tibble: 6 x 8
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
-## 1 many_ID               0             1     6    27     0      656          0
-## 2 Title                 0             1    18   465     0      649          0
-## 3 Beg                   0             1     4     4     0       80          0
-## 4 Signature             0             1     4     4     0       80          0
-## 5 Force                 0             1     2     4     0       75          0
-## 6 treaty_ID             0             1     6    27     0      657          0
-## 
-## $HEIDI
-## -- Data Summary ------------------------
-##                            Values
-## Name                       X[[i]]
-## Number of rows             2280  
-## Number of columns          6     
-## _______________________          
-## Column type frequency:           
-##   character                5     
-##   numeric                  1     
-## ________________________         
-## Group variables            None  
-## 
-## -- Variable type: character ----------------------------------------------------
-## # A tibble: 5 x 8
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
-## 1 many_ID               0        1          9    37     0     2085          0
-## 2 Title                 0        1         16   520     0     2204          0
-## 3 Beg                2255        0.0110    10    10     0       23          0
-## 4 Signature          2255        0.0110    10    10     0       23          0
-## 5 treaty_ID             0        1          9    37     0     2091          0
-## 
-## -- Variable type: numeric ------------------------------------------------------
-## # A tibble: 1 x 10
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
-## * <chr>             <int>         <dbl> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>
-## 1 HEIDI_ID              0             1 3193. 2410.     7  915.  2882 4645.
-##    p100
-## * <dbl>
-## 1  8506
+\subsection{NA}{
+
+NA
 }
 }
 \keyword{datasets}

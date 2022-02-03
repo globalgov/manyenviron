@@ -7,22 +7,11 @@
 \format{
 The texts database is a list that contains the
 following 1 datasets: AGR_TXT.
-This database differs from the other ones in this package
-as the goal is not to compare the datasets from multiple sources
-but rather to extract the maximum number of treaty texts.
-For that, the first step was to create a consolidate version
-of agreements databases to have a comprehensive list of all
-environmental treaties. The second step was to extract treaty
-texts from IEADB website by scrapping the webpages where the
-treaty texts were available. The observations left in this dataset
-have been completed with ECOLEX texts by scrapping ECOLEX website.
-The dataset will be progressively complemented when other treaty
-texts sources will be found.
-The aim is to obtain a comprehensive list of environmental treaties
-with their corresponding texts, if possible in English.
+For more information and references to each of the datasets used,
+please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{AGR_TXT: }{A dataset with 6377 observations and the following
-8 variables: many_ID, Title, Beg, Text, Source, IEADB_ID, GNEVAR_ID, ECOLEX_ID.}
+8 variables: manyID, Title, Beg, Text, Source, ieadbID, gnevarID, ecolexID.}
 }
 }
 \usage{
@@ -32,36 +21,9 @@ texts
 texts database documentation
 }
 \details{
-\preformatted{## $AGR_TXT
-## -- Data Summary ------------------------
-##                            Values
-## Name                       X[[i]]
-## Number of rows             6377  
-## Number of columns          8     
-## _______________________          
-## Column type frequency:           
-##   character                6     
-##   list                     2     
-## ________________________         
-## Group variables            None  
-## 
-## -- Variable type: character ----------------------------------------------------
-## # A tibble: 6 x 8
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## * <chr>             <int>         <dbl> <int> <int> <int>    <int>      <int>
-## 1 many_ID             207         0.968     6    34     0     5794          0
-## 2 Title                 0         1        15   550     0     5649          0
-## 3 Beg                 122         0.981     4    10     0     4148          0
-## 4 IEADB_ID           2657         0.583     1     4     0     3666          0
-## 5 GNEVAR_ID          3587         0.438     9     9     0     2733          0
-## 6 ECOLEX_ID          4167         0.347    10    10     0     2174          0
-## 
-## -- Variable type: list ---------------------------------------------------------
-## # A tibble: 2 x 6
-##   skim_variable n_missing complete_rate n_unique min_length max_length
-## * <chr>             <int>         <dbl>    <int>      <int>      <int>
-## 1 Text               3911         0.387     2123          0        287
-## 2 Source             4749         0.255     1357          1          1
+\subsection{NA}{
+
+NA
 }
 }
 \keyword{datasets}
