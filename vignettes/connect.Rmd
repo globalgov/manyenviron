@@ -170,7 +170,7 @@ and applying the `layout_as_multilevel()` function.
 We finally make some cosmetic adjustments before rendering the graph.
 (Note that you can hover over a node to display its name!)
 
-```{r memberships3D, eval=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+```{r memberships3D, eval=TRUE, fig.align='center', fig.asp=1, fig.width=7}
 library(igraph)
 library(threejs)
 library(graphlayouts)
@@ -217,7 +217,7 @@ Once we have these elements, we merge them to create dataframe
 for the arcs to be displayed in the `globejs()` visualization.
 Finally, we adjust colors and inital longitude and latitude for the plotted globe.
 
-``` {r, membershipsGlobe, eval=FALSE, fig.align='center', fig.asp=1, fig.width=9}
+``` {r, membershipsGlobe, eval=TRUE, fig.align='center', fig.asp=1, fig.width=9}
 library(rgeos)
 library(rworldmap)
 library(tidyr)
