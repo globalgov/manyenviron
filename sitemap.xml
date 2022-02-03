@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://globalgov.github.io/manyenviron//index.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/404.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//reference/agreements.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//reference/manyenviron-package.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/CONTRIBUTING.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//reference/memberships.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//reference/organizations.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/articles/connect.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//reference/references.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//reference/texts.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/authors.html</loc>
   </url>
   <url>
-    <loc>https://globalgov.github.io/manyenviron//articles/connect.html</loc>
+    <loc>https://globalgov.github.io/manyenviron/index.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/pull_request_template.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/agreements.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/manyenviron-package.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/memberships.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/organizations.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/references.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/texts.html</loc>
   </url>
 </urlset>
