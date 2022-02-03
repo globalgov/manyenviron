@@ -6,6 +6,12 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{ECOLEX_REF: }{A dataset with 1164 observations and the following
-#' 3 variables: qID1, qID2, RefType.}
+#' 3 variables: treatyID1, treatyID2, RefType.}
 #' }
- "references"
+
+#'
+#' @details
+#' ``` {r, echo = FALSE, warning = FALSE}
+#' lapply(references, skimr::skim_without_charts)
+#' ```
+"references"

@@ -3,21 +3,23 @@
 \docType{data}
 \name{organizations}
 \alias{organizations}
-\title{Òrganizations database documentation}
+\title{organizations database documentation}
 \format{
 The organizations database is a list that contains the
-following 1 datasets: MIA.
+following 2 datasets: MIA, YIO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{MIA: }{A dataset with 78 observations and the following
 4 variables: Name, Beg, End, COW.}
+\item{YIO: }{A dataset with 75115 observations and the following
+4 variables: Title, Abbreviation, Beg, Country.}
 }
 }
 \usage{
 organizations
 }
 \description{
-Òrganizations database documentation
+organizations database documentation
 }
 \keyword{datasets}

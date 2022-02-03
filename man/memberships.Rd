@@ -11,13 +11,17 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-11 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Force, Rat, ECOLEX_ID, Memberships, qID.}
+10 variables: manyID, CountryID, Title, Beg, End, SignatureC, Force, Rat,
+ecolexID, treatyID.}
 \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-14 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, Term, Withdrawal, GNEVAR_ID, Memberships, qID.}
+13 variables: manyID, CountryID, Title, Beg, End, SignatureC, Signature,
+Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
 \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-13 variables: qID_ref, CountryID, Title, Beg, End, SignatureC, Signature, Rat, Force, L, IEADB_ID, Memberships, qID.}
+12 variables: manyID, CountryID, Title, Beg, End, SignatureC, Signature,
+Rat, Force, L, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-8 variables: qID_ref, CountryID, Title, Beg, Signature, TFDD_ID, Memberships, qID.}
+8 variables: manyID, CountryID, Title, Beg, Signature, tfddID,
+Memberships, treatyID.}
 }
 }
 \usage{
@@ -25,5 +29,11 @@ memberships
 }
 \description{
 memberships database documentation
+}
+\details{
+\subsection{NA}{
+
+NA
+}
 }
 \keyword{datasets}

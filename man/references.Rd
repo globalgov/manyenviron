@@ -11,7 +11,7 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{ECOLEX_REF: }{A dataset with 1164 observations and the following
-3 variables: qID1, qID2, RefType.}
+3 variables: treatyID1, treatyID2, RefType.}
 }
 }
 \usage{
@@ -19,5 +19,11 @@ references
 }
 \description{
 references database documentation
+}
+\details{
+\subsection{NA}{
+
+NA
+}
 }
 \keyword{datasets}

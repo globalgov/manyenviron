@@ -1,17 +1,28 @@
 #' agreements database documentation
 #'
 #' @format The agreements database is a list that contains the
-#' following 4 datasets: IEADB, GNEVAR, ECOLEX, CIESIN.
+#' following 5 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 9 variables: qID_ref, Title, Beg, L, D, Signature, Force, qID, IEADB_ID.}
-#' \item{GNEVAR: }{A dataset with 3450 observations and the following
-#' 11 variables: qID_ref, Title, Beg, End, L, D, J, Signature, Force, qID, GNEVAR_ID.}
+#' 10 variables: manyID, Title, Beg, L, D, Signature, Force, Lineage,
+#' treatyID, ieadbID.}
+#' \item{GNEVAR: }{A dataset with 3428 observations and the following
+#' 12 variables: manyID, Title, Beg, End, L, D, J, Signature, Force,
+#' Lineage, treatyID, gnevarID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 9 variables: qID_ref, Title, Beg, L, J, Signature, Force, qID, ECOLEX_ID.}
+#' 10 variables: manyID, Title, Beg, L, J, Signature, Force, Lineage,
+#' treatyID, ecolexID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
-#' 6 variables: qID_ref, Title, Beg, Signature, Force, qID.}
+#' 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
+#' \item{HEIDI: }{A dataset with 2280 observations and the following
+#' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 #' }
- "agreements"
+
+#'
+#' @details
+#' ``` {r, echo = FALSE, warning = FALSE}
+#' lapply(agreements, skimr::skim_without_charts)
+#' ```
+"agreements"
