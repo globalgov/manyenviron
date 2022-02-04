@@ -12,7 +12,7 @@ authors:
     href: https://bernhardbieri.ch
 navbar:
   structure:
-    left: [home, reference, news]
+    left: [home, reference, articles, news]
     right: [packages, search, github]
   components:
     home:
