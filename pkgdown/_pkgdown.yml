@@ -26,6 +26,8 @@ navbar:
       menu:
       - text: How Do Environmental Treaties Connect?
         href: articles/connect.html
+      - text: Lineage Chain of Environmental Treaties
+        href: articles/dashboard.html
     news:
       text: News
       href: news/index.html
