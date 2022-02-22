@@ -22,6 +22,6 @@ vignette: >
 }
 </style>
 <div class="dashboard"> 
-<iframe src="https://globalgov.shinyapps.io/lineage/">
+<iframe src="https://genevaglobalgov.shinyapps.io/lineage/">
 </iframe>
 </div>
