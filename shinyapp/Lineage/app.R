@@ -1,20 +1,14 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+# This is a Shiny web application. You can run the application by clicking the 'Run App' button above.
+# Find out more about building applications with Shiny here: http://shiny.rstudio.com/
 
-# First step: prepare the dataset
+# First step: load packages
 library(shiny)
 library(shinydashboard)
-library(tidyverse)
-library(migraph)
+library(dplyr)
 
 # Set working directory in this folder first using setwd() function
-references <- read_csv("references.csv")
+# setwd()
+references <- readr::read_csv("references.csv")
 references <- references[, -1]
 
 references <- references %>% 
