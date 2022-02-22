@@ -22,4 +22,10 @@ organizations
 \description{
 organizations database documentation
 }
+\details{
+\subsection{NA}{
+
+NA
+}
+}
 \keyword{datasets}
