@@ -1,3 +1,14 @@
+# manyenviron 0.1.2
+
+2022-03-11
+
+## Package
+* Closed #53 by adding Shinyapp folders, dashboard vignette and connecting to a Shinyapp account.
+
+## Data
+* Closed #15 by adding `International Regimes Database` to the `regimes` database.
+* Fixed #55 by renaming 'Lineage' variable to 'R' in agreements database to avoid clashing with the variable 'L'.
+
 # manyenviron 0.1.1
 
 2022-02-03

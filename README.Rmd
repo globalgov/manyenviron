@@ -1,7 +1,7 @@
 ---
 output: github_document
 ---
-# Manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
+# manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
 
 <!-- badges: start -->
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
@@ -9,7 +9,7 @@ output: github_document
 ![GitHub Release Date](https://img.shields.io/github/release-date/globalgov/manyenviron)
 <!-- badges: end -->
 
-Manyenviron is a data package in the many universe of packages.
+manyenviron is a data package in the many universe of packages.
 It currently includes an ensemble of datasets on international environmental agreements,
 and [states](https://github.com/globalgov/qStates)' membership or other relationships to those agreements.
 
@@ -40,9 +40,11 @@ manydata::data_contrast("manyenviron")
 Working with an ensemble of related data has many advantages for robust analysis.
 Just take a look at our vignettes [here](https://globalgov.github.io/manydata/articles/user.html).
 
-## Many Packages
+## The many packages universe
 
-The [`{manydata}`](https://github.com/globalgov/manydata) universe is aimed at collecting, connecting, and correcting network data across issue-domains of global governance. 
+The [many universe of packages](https://github.com/globalgov/manydata) is aimed 
+at collecting, connecting, and correcting network data across issue-domains of 
+global governance. 
 
 While some many packages can and do include novel data,
 much of what they offer involves standing on the shoulders of giants.

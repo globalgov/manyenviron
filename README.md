@@ -1,5 +1,5 @@
-Manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
-==========================================================================
+
+# manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
 
 <!-- badges: start -->
 
@@ -10,7 +10,7 @@ date)](https://img.shields.io/github/v/release/globalgov/manyenviron)
 Date](https://img.shields.io/github/release-date/globalgov/manyenviron)
 <!-- badges: end -->
 
-Manyenviron is a data package in the many universe of packages. It
+manyenviron is a data package in the many universe of packages. It
 currently includes an ensemble of datasets on international
 environmental agreements, and
 [states](https://github.com/globalgov/qStates)’ membership or other
@@ -19,8 +19,7 @@ relationships to those agreements.
 Please also check out [`{manydata}`](https://github.com/globalgov) for
 more information about the other packages in the many universe.
 
-How to install
---------------
+## How to install
 
 We’ve made it easier than ever to install and start analysing global
 governance data in R. Simply install the core package,
@@ -28,29 +27,31 @@ governance data in R. Simply install the core package,
 you can discover, install and update various “many” packages from the
 console.
 
-    # install.packages(remotes)
-    remotes::install_github("globalgov/manydata") # this installs our core package, the only one you need to do independently
-    manydata::get_packages() # this prints a list of the publicly available data packages currently available
-    manydata::get_packages("manyenviron") # this downloads and installs the named package
+``` r
+# install.packages(remotes)
+remotes::install_github("globalgov/manydata") # this installs our core package, the only one you need to do independently
+manydata::get_packages() # this prints a list of the publicly available data packages currently available
+manydata::get_packages("manyenviron") # this downloads and installs the named package
+```
 
-Data included
--------------
+## Data included
 
 Once you have installed the package, you can see the different databases
 and datasets included in the `{manyenviron}` package using the following
 function.
 
-    manydata::data_contrast("manyenviron")
+``` r
+manydata::data_contrast("manyenviron")
+```
 
 Working with an ensemble of related data has many advantages for robust
 analysis. Just take a look at our vignettes
 [here](https://globalgov.github.io/manydata/articles/user.html).
 
-Many Packages
--------------
+## The many packages universe
 
-The [`{manydata}`](https://github.com/globalgov/manydata) universe is
-aimed at collecting, connecting, and correcting network data across
+The [many universe of packages](https://github.com/globalgov/manydata)
+is aimed at collecting, connecting, and correcting network data across
 issue-domains of global governance.
 
 While some many packages can and do include novel data, much of what
@@ -62,7 +63,9 @@ listing the official references in the function above, as well as the
 package providers for their work assembling the data by using the
 function below.
 
-    citation("manyenviron")
+``` r
+citation("manyenviron")
+```
 
     ## 
     ## To cite manyenviron in publications use:
@@ -78,8 +81,7 @@ function below.
     ##     url = {https://github.com/globalgov/manyenviron},
     ##   }
 
-Contributing
-------------
+## Contributing
 
 [`{manypkgs}`](https://github.com/globalgov/manypkgs) also makes it easy
 to contribute in lots of different ways.
