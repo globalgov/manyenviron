@@ -36,7 +36,7 @@ IEADB$treatyID <- manypkgs::code_agreements(IEADB,
                                             IEADB$Title,
                                             IEADB$Beg)
 # Add Lineage column
-IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
+IEADB$R <- manypkgs::code_lineage(IEADB$Title)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)

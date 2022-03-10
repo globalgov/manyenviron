@@ -25,7 +25,7 @@ CIESIN$treatyID <- manypkgs::code_agreements(CIESIN,
                                              CIESIN$Title,
                                              CIESIN$Beg)
 #Add Lineage column
-CIESIN$Lineage <- manypkgs::code_lineage(CIESIN$Title)
+CIESIN$R <- manypkgs::code_lineage(CIESIN$Title)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)

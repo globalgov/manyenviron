@@ -82,7 +82,7 @@ GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any",
                                 resolve = "coalesce", key = "treatyID")
 
 # Add Lineage Column
-GNEVAR$Lineage <- manypkgs::code_lineage(GNEVAR$Title)
+GNEVAR$R <- manypkgs::code_lineage(GNEVAR$Title)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)

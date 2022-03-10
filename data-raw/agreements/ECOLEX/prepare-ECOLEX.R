@@ -35,7 +35,7 @@ ECOLEX$treatyID <- manypkgs::code_agreements(ECOLEX,
                                              ECOLEX$Title,
                                              ECOLEX$Beg)
 # Add Lineage column
-ECOLEX$Lineage <- manypkgs::code_lineage(ECOLEX$Title)
+ECOLEX$R <- manypkgs::code_lineage(ECOLEX$Title)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
