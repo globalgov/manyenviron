@@ -21,9 +21,23 @@ references
 references database documentation
 }
 \details{
-\subsection{NA}{
-
-NA
+\preformatted{## $ECOLEX_REF
+## ── Data Summary ────────────────────────
+##                            Values
+## Name                       X[[i]]
+## Number of rows             1164  
+## Number of columns          3     
+## _______________________          
+## Column type frequency:           
+##   character                3     
+## ________________________         
+## Group variables            None  
+## 
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
+## 1 treatyID1             0             1     9    40     0      648          0
+## 2 treatyID2             0             1     9    40     0      648          0
+## 3 RefType               0             1     5    13     0        8          0
 }
 }
 \keyword{datasets}

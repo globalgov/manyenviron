@@ -21,9 +21,27 @@ regimes
 regimes database documentation
 }
 \details{
-\subsection{NA}{
-
-NA
+\preformatted{## $IRD
+## ── Data Summary ────────────────────────
+##                            Values
+## Name                       X[[i]]
+## Number of rows             92    
+## Number of columns          7     
+## _______________________          
+## Column type frequency:           
+##   character                7     
+## ________________________         
+## Group variables            None  
+## 
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+##   skim_variable   n_missing complete_rate   min   max empty n_unique whitespace
+## 1 Regime                  0         1        26    63     0       23          0
+## 2 RegimeComponent        33         0.641    12    85     0       59          0
+## 3 Beg                    36         0.609     4     9     0       31          0
+## 4 Wat                    34         0.630     4     9     0       14          0
+## 5 Wat2                   78         0.152     4     9     0        3          0
+## 6 End                    36         0.609     4     4     0        2          0
+## 7 RegimeElement           0         1        12    94     0       92          0
 }
 }
 \keyword{datasets}
