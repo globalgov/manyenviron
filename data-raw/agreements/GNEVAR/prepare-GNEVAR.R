@@ -16,8 +16,8 @@ GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
 # below (in stage three) passes all the tests.
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>%
-  dplyr::mutate(D=dplyr::recode(T, G="A", M="E", "T"="Q",
-                                D="V", R="W", N="X", U="Y")) %>%
+  dplyr::mutate(AgreementType=dplyr::recode(T, G="A", M="E", "T"="Q",
+                                            D="V", R="W", N="X", U="Y")) %>%
   manydata::transmutate(Signature = manypkgs::standardise_dates(DocSign),
                      End = manypkgs::standardise_dates(DocEnd),
                      Force = manypkgs::standardise_dates(DocForce),
@@ -27,7 +27,10 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
                                                      api_key = api)) %>%
   # Define Key API
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(gnevarID, Title, Beg, End, L, J, D, Signature, Force) %>%
+  dplyr::rename(DocType = L) %>%
+  dplyr::rename(GeogArea = J) %>%
+  dplyr::select(gnevarID, Title, Beg, End, DocType, GeogArea, AgreementType,
+                Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
@@ -82,7 +85,7 @@ GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any",
                                 resolve = "coalesce", key = "treatyID")
 
 # Add Lineage Column
-GNEVAR$R <- manypkgs::code_lineage(GNEVAR$Title)
+GNEVAR$Lineage <- manypkgs::code_lineage(GNEVAR$Title)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
@@ -90,7 +93,7 @@ GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
 
 # Select and arrange columns
 GNEVAR <- GNEVAR %>%
-  dplyr::select(manyID, Title, Beg, End, L, D, J,
+  dplyr::select(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
                 Signature, Force, Lineage, treatyID, gnevarID) %>%
   dplyr::arrange(Beg)
 

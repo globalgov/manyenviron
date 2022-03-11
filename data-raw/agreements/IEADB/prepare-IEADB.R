@@ -11,7 +11,7 @@ IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
 # formats of the 'IEADB' object until the object created
 # below (in stage three) passes all the tests.
 IEADB <- as_tibble(IEADB)  %>%
-  dplyr::mutate(D = dplyr::recode(`Agreement Type (level 2)`,
+  dplyr::mutate(AgreementType = dplyr::recode(`Agreement Type (level 2)`,
                                   "Agreement" = "A",
                                   "Amendment" = "E",
                                   "Agreed Minute (non-binding)" ="Q",
@@ -20,15 +20,15 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Exchange of Notes" = "X",
                                   "Memorandum of Understanding" = "Y",
                                   "Protocol" = "P")) %>%
-  dplyr::mutate(L = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>%
-  dplyr::filter(L == "M" | L == "B") %>%
+  dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>%
+  dplyr::filter(DocType == "M" | DocType == "B") %>%
   manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
                      Title = manypkgs::standardise_titles(`Treaty Name`, api_key = api),
                      # Define Key API
                      Signature = manypkgs::standardise_dates(`Signature Date`),
                      Force = manypkgs::standardise_dates(`Date IEA entered into force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ieadbID, Title, Beg, L, D, Signature, Force) %>%
+  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
@@ -36,7 +36,7 @@ IEADB$treatyID <- manypkgs::code_agreements(IEADB,
                                             IEADB$Title,
                                             IEADB$Beg)
 # Add Lineage column
-IEADB$R <- manypkgs::code_lineage(IEADB$Title)
+IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
@@ -44,7 +44,7 @@ IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID")
 
 # Re-order the columns
 IEADB <- IEADB %>%
-  dplyr::select(manyID, Title, Beg, L, D, Signature,
+  dplyr::select(manyID, Title, Beg, DocType, AgreementType, Signature,
                 Force, Lineage, treatyID, ieadbID) %>%
   dplyr::arrange(Beg)
 
