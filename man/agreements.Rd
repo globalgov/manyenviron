@@ -41,7 +41,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
 ##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ##  1 manyID                0         1         9    41     0     3542          0
 ##  2 Title                 0         1        16   550     0     3375          0
@@ -66,7 +66,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
 ##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ##  1 manyID                0         1         9    41     0     3310          0
 ##  2 Title                 0         1        15   550     0     3157          0
@@ -93,7 +93,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
 ##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ##  1 manyID                0         1         9    40     0     2130          0
 ##  2 Title                 0         1        15   492     0     2146          0
@@ -118,7 +118,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0             1     6    27     0      657          0
 ## 2 Title                 0             1    18   456     0      649          0
@@ -141,7 +141,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0         1         9    37     0     2232          0
 ## 2 Title                 0         1        16   517     0     2204          0
@@ -150,11 +150,9 @@ agreements database documentation
 ## 5 Lineage               0         1         2    63     0     1237          0
 ## 6 treatyID              0         1         9    37     0     2271          0
 ## 
-## ── Variable type: numeric ──────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
-## 1 heidiID               0             1 3193. 2410.     7  915.  2882 4645.
-##    p100
-## 1  8506
+## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
+## 1 heidiID               0             1 3193. 2410.     7  915.  2882 4645.  8506
 }
 }
 \keyword{datasets}
