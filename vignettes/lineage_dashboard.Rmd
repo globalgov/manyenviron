@@ -1,5 +1,5 @@
 ---
-title: "Lineage Chain of Environmental Treaties"
+title: "Lineage of Environmental Treaties"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Lineage Chain of Environmental Treaties}
