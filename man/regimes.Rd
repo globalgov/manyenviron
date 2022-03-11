@@ -33,7 +33,7 @@ regimes database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ────────────────────────────────────────────────────
 ##   skim_variable   n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 Regime                  0         1        26    63     0       23          0
 ## 2 RegimeComponent        33         0.641    12    85     0       59          0
