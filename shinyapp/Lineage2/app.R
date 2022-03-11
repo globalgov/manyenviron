@@ -7,35 +7,35 @@
 #    http://shiny.rstudio.com/
 #
 
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-library(migraph)
+# library(shiny)
+# library(shinydashboard)
+# library(tidyverse)
+# library(migraph)
 
 # Set working directory in this folder first using setwd() function
-references <- read_csv2("references.csv")
+references <- readr::read_csv2("references.csv")
 references$action <- stringr::str_replace_na(references$action, "other")
 
 # Prepare dashboard interface
-ui <- dashboardPage(
-    dashboardHeader(title = "Lineage Chain of Environmental Treaties", titleWidth = "400"),
-    dashboardSidebar(
-        sidebarMenu(
-            checkboxGroupInput("ref_choices", 
+ui <- shinydashboard::dashboardPage(
+  shinydashboard::dashboardHeader(title = "Lineage Chain of Environmental Treaties", titleWidth = "400"),
+  shinydashboard::dashboardSidebar(
+    shinydashboard::sidebarMenu(
+      shiny::checkboxGroupInput("ref_choices", 
                                "Select relation type:",
                                choices = c("Amends" = "Amends",
                                            "Cites" = "Cites",
                                            "Enables" = "Enables",
                                            "Supersedes" = "Supersedes"),
                                selected = c("Amends", "Cites", "Enables", "Supersedes")),
-            selectInput("known",
+      shiny::selectInput("known",
                         "Select known agreement:",
                         choices = c("choose" = "","UNCLOS", "CBD", "CITES", "CLC", "LRTAP",
                                     "MARPOL", "OSPAR", "PARIS", "PIC", "RAMSA",
                                     "UNFCCC", "VIENNA"),
                         selected = "MARPOL",
                         multiple = T),
-            selectInput("actions",
+      shiny::selectInput("actions",
                         "OR select activity:",
                         choices = c("choose" = "" ,"agriculture", "alliance", "biodiversity", "climate change", "delimitation",
                                     "economic integration", "energy", "fishing", "forestry", "health","management", "research",
@@ -44,30 +44,30 @@ ui <- dashboardPage(
                         multiple = T)
             
         )),
-    dashboardBody(
-        plotOutput("distPlot", height = "550px")
+  shinydashboard::dashboardBody(
+    shiny::plotOutput("distPlot", height = "550px")
     )
 )
 
 # Connect with the data
 server <- function(input, output){
-    filteredData <- reactive({
+    filteredData <- shiny::reactive({
         references <- references %>%
             dplyr::filter(RefType %in% input$ref_choices)
     })
     
-    filteredData2 <- reactive({
+    filteredData2 <- shiny::reactive({
         references <- references %>%
             dplyr::filter(RefType %in% input$ref_choices) %>% 
             dplyr::filter(familyLineage %in% input$known)
     })
     
-    filteredData3 <- reactive({
+    filteredData3 <- shiny::reactive({
         references <- references %>%
             dplyr::filter(RefType %in% input$ref_choices) %>% 
             dplyr::filter(action %in% input$actions)
     })
-    filteredData4 <- reactive({
+    filteredData4 <- shiny::reactive({
         references <- references %>%
             dplyr::filter(RefType %in% input$ref_choices) %>% 
             dplyr::filter(action %in% input$actions) %>% 
@@ -75,7 +75,7 @@ server <- function(input, output){
     })
     
     
-    output$distPlot <- renderPlot({
+    output$distPlot <- shiny::renderPlot({
         if(is.null(input$known) & is.null(input$actions)){
             migraph::gglineage(filteredData())
         }
@@ -94,4 +94,4 @@ server <- function(input, output){
     })
 }
 
-shinyApp(ui, server)
+shiny::shinyApp(ui, server)
