@@ -11,25 +11,25 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests.
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
-  manydata::transmutate(CountryID = qStates::code_states(country),
+  manydata::transmutate(CountryID = manystates::code_states(country),
                      Title = manypkgs::standardise_titles(treatyname,
                                                           api_key = api),
                      # Define Key API
                      Signature = manypkgs::standardise_dates(tsig),
-                     SignatureC = manypkgs::standardise_dates(csig),
+                     SignatureCountry = manypkgs::standardise_dates(csig),
                      Rat = manypkgs::standardise_dates(crat),
                      End = manypkgs::standardise_dates(tterm),
                      Force = manypkgs::standardise_dates(ceif3),
                      Force2 = manypkgs::standardise_dates(ceif4),
                      ieadbID = mitch_id) %>%
-  dplyr::mutate(L = dplyr::recode(inclusion, "BEA" = "B", "MEA" = "M")) %>%
+  dplyr::mutate(DocType = dplyr::recode(inclusion, "BEA" = "B", "MEA" = "M")) %>%
   dplyr::select(CountryID, Title, Signature, End, Rat, Force,
-                Force2, SignatureC, L, ieadbID) %>%
+                Force2, SignatureCountry, DocType, ieadbID) %>%
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%
   dplyr::filter(!is.na(Force) & name != "Force2") %>%
-  dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>%
-  dplyr::select(CountryID, Title, Beg, End, SignatureC,
-                Signature, Rat, Force, L, ieadbID) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
+  dplyr::select(CountryID, Title, Beg, End, SignatureCountry,
+                Signature, Rat, Force, DocType, ieadbID) %>%
   dplyr::arrange(Beg)
 
 # Add a treatyID column

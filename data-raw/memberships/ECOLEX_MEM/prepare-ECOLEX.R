@@ -15,15 +15,15 @@ manypkgs::retain("ECOLEX_MEM")
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>%
-  manydata::transmutate(SignatureC = manypkgs::standardise_dates(Sign),
+  manydata::transmutate(SignatureCountry = manypkgs::standardise_dates(Sign),
                      End = manypkgs::standardise_dates(Term),
                      Force = manypkgs::standardise_dates(For),
                      Rat = manypkgs::standardise_dates(Rati),
                      CountryID = StatID,
                      ecolexID = EcolexID) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
   # Check Signature date is for the country and not document signature date
-  dplyr::select(CountryID, Beg, End, SignatureC, Force, Rat, ecolexID) %>%
+  dplyr::select(CountryID, Beg, End, SignatureCountry, Force, Rat, ecolexID) %>%
   dplyr::arrange(Beg)
 
 # Add a Title column

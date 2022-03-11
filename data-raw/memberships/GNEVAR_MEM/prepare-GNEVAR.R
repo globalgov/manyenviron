@@ -18,14 +18,14 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
                      Force = manypkgs::standardise_dates(DocForce),
                      Term = manypkgs::standardise_dates(DocEnd),
                      Force = manypkgs::standardise_dates(InForce1)) %>%
-  dplyr::mutate(SignatureC = Signature) %>%
+  dplyr::mutate(SignatureCountry = Signature) %>%
   dplyr::mutate(CountryID = Country) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
   # Define Key API
-  dplyr::mutate(Beg = dplyr::coalesce(SignatureC, Rat, Force)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>%
-  dplyr::select(CountryID, Title, Beg, End, SignatureC, Signature,
+  dplyr::select(CountryID, Title, Beg, End, SignatureCountry, Signature,
                 Rat, Force, Term, Withdrawal, gnevarID) %>%
   dplyr::arrange(Beg)
 
