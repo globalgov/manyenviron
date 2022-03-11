@@ -13,9 +13,12 @@ IRD <- readxl::read_excel("data-raw/regimes/IRD/IRD.xlsx")
 IRD <- as_tibble(IRD) %>%
   manydata::transmutate(Beg = manypkgs::standardise_dates(Formation),
                         End = manypkgs::standardise_dates(as.character(Endpoint)),
+                        # Watershed and Watershed2 refer to periods of fundamental change in the regime
                         Wat = manypkgs::standardise_dates(Watershed),
                         Wat2 = manypkgs::standardise_dates(Watershed2)) %>%
   dplyr::arrange(Beg) %>% 
+  # RegimeComponent is an institutional arrangement that is part of a given regime, such as a protocol
+  # RegimeElement refers to a regulatory area of a given regime for a given time period
   dplyr::select(Regime, RegimeComponent, Beg, Wat, Wat2, End, RegimeElement)
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
