@@ -1,7 +1,7 @@
 Package: manyenviron
 Title: Environmental Agreements for the many Universe
 Version: 0.1.2
-Date: 2022-03-11
+Date: 2022-03-14
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
