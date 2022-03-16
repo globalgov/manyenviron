@@ -1,6 +1,6 @@
 # manyenviron 0.1.2
 
-2022-03-14
+2022-03-16
 
 ## Package
 * Closed #53 by adding Shinyapp folders, dashboard vignette and connecting to a Shinyapp account.
@@ -9,7 +9,7 @@
 * Closed #15 by adding `International Regimes Database` to the `regimes` database.
 * Fixed #55 by renaming variables in database to avoid ambiguity
   * Renamed variables "L", "D", and "J" in the agreements database "DocType", "AgreementType", and "GeogArea" respectively
-  * Renamed variables "L" and "signatureC" in memberships database "DocType" and "SignatureCountry" respectively
+  * Renamed variables "L" and "SignatureC" in memberships database "DocType" and "SignatureCountry" respectively
 
 
 # manyenviron 0.1.1
