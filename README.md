@@ -1,5 +1,5 @@
-
-# manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
+manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
+==========================================================================
 
 <!-- badges: start -->
 
@@ -19,7 +19,8 @@ relationships to those agreements.
 Please also check out [`{manydata}`](https://github.com/globalgov) for
 more information about the other packages in the many universe.
 
-## How to install
+How to install
+--------------
 
 We’ve made it easier than ever to install and start analysing global
 governance data in R. Simply install the core package,
@@ -27,28 +28,26 @@ governance data in R. Simply install the core package,
 you can discover, install and update various “many” packages from the
 console.
 
-``` r
-# install.packages(remotes)
-remotes::install_github("globalgov/manydata") # this installs our core package, the only one you need to do independently
-manydata::get_packages() # this prints a list of the publicly available data packages currently available
-manydata::get_packages("manyenviron") # this downloads and installs the named package
-```
+    # install.packages(remotes)
+    remotes::install_github("globalgov/manydata") # this installs our core package, the only one you need to do independently
+    manydata::get_packages() # this prints a list of the publicly available data packages currently available
+    manydata::get_packages("manyenviron") # this downloads and installs the named package
 
-## Data included
+Data included
+-------------
 
 Once you have installed the package, you can see the different databases
 and datasets included in the `{manyenviron}` package using the following
 function.
 
-``` r
-manydata::data_contrast("manyenviron")
-```
+    manydata::data_contrast("manyenviron")
 
 Working with an ensemble of related data has many advantages for robust
 analysis. Just take a look at our vignettes
 [here](https://globalgov.github.io/manydata/articles/user.html).
 
-## The many packages universe
+The many packages universe
+--------------------------
 
 The [many universe of packages](https://github.com/globalgov/manydata)
 is aimed at collecting, connecting, and correcting network data across
@@ -63,9 +62,7 @@ listing the official references in the function above, as well as the
 package providers for their work assembling the data by using the
 function below.
 
-``` r
-citation("manyenviron")
-```
+    citation("manyenviron")
 
     ## 
     ## To cite manyenviron in publications use:
@@ -81,7 +78,8 @@ citation("manyenviron")
     ##     url = {https://github.com/globalgov/manyenviron},
     ##   }
 
-## Contributing
+Contributing
+------------
 
 [`{manypkgs}`](https://github.com/globalgov/manypkgs) also makes it easy
 to contribute in lots of different ways.
