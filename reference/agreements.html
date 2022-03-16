@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">manyenviron</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,8 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/connect.html">How Do Environmental Treaties Connect?</a>
+    <a class="dropdown-item" href="../articles/lineage_dashboard.html">Lineage of Environmental Treaties</a>
+    <a class="dropdown-item" href="../articles/membership_dashboard.html">Types of Environmental Treaties</a>
   </div>
 </li>
 <li class="nav-item">
@@ -82,18 +84,15 @@ following 5 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI.
 For more information and references to each of the datasets used,
 please use the <code>data_source()</code> and <code>data_contrast()</code> functions.</p><dl><dt>IEADB: </dt>
 <dd><p>A dataset with 3666 observations and the following
-10 variables: manyID, Title, Beg, L, D, Signature, Force, Lineage,
-treatyID, ieadbID.</p></dd>
+10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force, Lineage, treatyID, ieadbID.</p></dd>
 
 <dt>GNEVAR: </dt>
 <dd><p>A dataset with 3428 observations and the following
-12 variables: manyID, Title, Beg, End, L, D, J, Signature, Force,
-Lineage, treatyID, gnevarID.</p></dd>
+12 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea, Signature, Force, Lineage, treatyID, gnevarID.</p></dd>
 
 <dt>ECOLEX: </dt>
 <dd><p>A dataset with 2174 observations and the following
-10 variables: manyID, Title, Beg, L, J, Signature, Force, Lineage,
-treatyID, ecolexID.</p></dd>
+10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force, Lineage, treatyID, ecolexID.</p></dd>
 
 <dt>CIESIN: </dt>
 <dd><p>A dataset with 666 observations and the following
@@ -108,12 +107,130 @@ treatyID, ecolexID.</p></dd>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     
-<div class="section">
-<h3 id="na">NA<a class="anchor" aria-label="anchor" href="#na"></a></h3>
-
-
-<p>NA</p>
-</div>
+<div class="sourceCode"><pre><code><span class="co">## $IEADB</span>
+<span class="co">## ── Data Summary ────────────────────────</span>
+<span class="co">##                            Values</span>
+<span class="co">## Name                       X[[i]]</span>
+<span class="co">## Number of rows             3666  </span>
+<span class="co">## Number of columns          10    </span>
+<span class="co">## _______________________          </span>
+<span class="co">## Column type frequency:           </span>
+<span class="co">##   character                10    </span>
+<span class="co">## ________________________         </span>
+<span class="co">## Group variables            None  </span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace</span>
+<span class="co">##  1 manyID                0         1         9    41     0     3542          0</span>
+<span class="co">##  2 Title                 0         1        16   550     0     3375          0</span>
+<span class="co">##  3 Beg                  65         0.982    10    10     0     2813          0</span>
+<span class="co">##  4 DocType               0         1         1     1     0        2          0</span>
+<span class="co">##  5 AgreementType         0         1         1    26     0        4          0</span>
+<span class="co">##  6 Signature            65         0.982    10    10     0     2813          0</span>
+<span class="co">##  7 Force               867         0.764    10    10     0     2138          0</span>
+<span class="co">##  8 Lineage               0         1         2    88     0     1745          0</span>
+<span class="co">##  9 treatyID              0         1         9    39     0     3606          0</span>
+<span class="co">## 10 ieadbID               0         1         1     4     0     3666          0</span>
+<span class="co">## </span>
+<span class="co">## $GNEVAR</span>
+<span class="co">## ── Data Summary ────────────────────────</span>
+<span class="co">##                            Values</span>
+<span class="co">## Name                       X[[i]]</span>
+<span class="co">## Number of rows             3428  </span>
+<span class="co">## Number of columns          12    </span>
+<span class="co">## _______________________          </span>
+<span class="co">## Column type frequency:           </span>
+<span class="co">##   character                12    </span>
+<span class="co">## ________________________         </span>
+<span class="co">## Group variables            None  </span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace</span>
+<span class="co">##  1 manyID                0         1         9    41     0     3310          0</span>
+<span class="co">##  2 Title                 0         1        15   550     0     3157          0</span>
+<span class="co">##  3 Beg                  57         0.983    10    10     0     2702          0</span>
+<span class="co">##  4 End                2753         0.197     9    10     0      405          0</span>
+<span class="co">##  5 DocType             678         0.802     1     1     0        2          0</span>
+<span class="co">##  6 AgreementType       716         0.791     1     1     0        9          0</span>
+<span class="co">##  7 GeogArea           1280         0.627     1     1     0        6          0</span>
+<span class="co">##  8 Signature            57         0.983    10    10     0     2702          0</span>
+<span class="co">##  9 Force              1611         0.530    10    11     0     1545          0</span>
+<span class="co">## 10 Lineage               0         1         2    88     0     1721          0</span>
+<span class="co">## 11 treatyID              0         1         9    41     0     3370          0</span>
+<span class="co">## 12 gnevarID            682         0.801     9     9     0     2733          0</span>
+<span class="co">## </span>
+<span class="co">## $ECOLEX</span>
+<span class="co">## ── Data Summary ────────────────────────</span>
+<span class="co">##                            Values</span>
+<span class="co">## Name                       X[[i]]</span>
+<span class="co">## Number of rows             2174  </span>
+<span class="co">## Number of columns          10    </span>
+<span class="co">## _______________________          </span>
+<span class="co">## Column type frequency:           </span>
+<span class="co">##   character                10    </span>
+<span class="co">## ________________________         </span>
+<span class="co">## Group variables            None  </span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##    skim_variable n_missing complete_rate   min   max empty n_unique whitespace</span>
+<span class="co">##  1 manyID                0         1         9    40     0     2130          0</span>
+<span class="co">##  2 Title                 0         1        15   492     0     2146          0</span>
+<span class="co">##  3 Beg                   0         1        10    10     0     1718          0</span>
+<span class="co">##  4 DocType               0         1         1     1     0        2          0</span>
+<span class="co">##  5 GeogArea             90         0.959     1     1     0        2          0</span>
+<span class="co">##  6 Signature             0         1        10    10     0     1718          0</span>
+<span class="co">##  7 Force              1066         0.510    10    10     0      966          0</span>
+<span class="co">##  8 Lineage               0         1         2    64     0     1349          0</span>
+<span class="co">##  9 treatyID              0         1         9    40     0     2160          0</span>
+<span class="co">## 10 ecolexID              0         1        10    10     0     2174          0</span>
+<span class="co">## </span>
+<span class="co">## $CIESIN</span>
+<span class="co">## ── Data Summary ────────────────────────</span>
+<span class="co">##                            Values</span>
+<span class="co">## Name                       X[[i]]</span>
+<span class="co">## Number of rows             666   </span>
+<span class="co">## Number of columns          7     </span>
+<span class="co">## _______________________          </span>
+<span class="co">## Column type frequency:           </span>
+<span class="co">##   character                7     </span>
+<span class="co">## ________________________         </span>
+<span class="co">## Group variables            None  </span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace</span>
+<span class="co">## 1 manyID                0             1     6    27     0      657          0</span>
+<span class="co">## 2 Title                 0             1    18   456     0      649          0</span>
+<span class="co">## 3 Beg                   0             1     4     4     0       80          0</span>
+<span class="co">## 4 Signature             0             1     4     4     0       80          0</span>
+<span class="co">## 5 Force                 0             1     2     4     0       75          0</span>
+<span class="co">## 6 Lineage               0             1     2    79     0      120          0</span>
+<span class="co">## 7 treatyID              0             1     6    27     0      658          0</span>
+<span class="co">## </span>
+<span class="co">## $HEIDI</span>
+<span class="co">## ── Data Summary ────────────────────────</span>
+<span class="co">##                            Values</span>
+<span class="co">## Name                       X[[i]]</span>
+<span class="co">## Number of rows             2280  </span>
+<span class="co">## Number of columns          7     </span>
+<span class="co">## _______________________          </span>
+<span class="co">## Column type frequency:           </span>
+<span class="co">##   character                6     </span>
+<span class="co">##   numeric                  1     </span>
+<span class="co">## ________________________         </span>
+<span class="co">## Group variables            None  </span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace</span>
+<span class="co">## 1 manyID                0         1         9    37     0     2232          0</span>
+<span class="co">## 2 Title                 0         1        16   517     0     2204          0</span>
+<span class="co">## 3 Beg                  27         0.988    10    10     0     1813          0</span>
+<span class="co">## 4 Signature            27         0.988    10    10     0     1813          0</span>
+<span class="co">## 5 Lineage               0         1         2    63     0     1237          0</span>
+<span class="co">## 6 treatyID              0         1         9    37     0     2271          0</span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100</span>
+<span class="co">## 1 heidiID               0             1 3193. 2410.     7  915.  2882 4645.  8506</span></code></pre></div>
 
     </div>
 

@@ -19,6 +19,12 @@
     <loc>https://globalgov.github.io/manyenviron/articles/index.html</loc>
   </url>
   <url>
+    <loc>https://globalgov.github.io/manyenviron/articles/lineage_dashboard.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/articles/membership_dashboard.html</loc>
+  </url>
+  <url>
     <loc>https://globalgov.github.io/manyenviron/authors.html</loc>
   </url>
   <url>
@@ -47,6 +53,9 @@
   </url>
   <url>
     <loc>https://globalgov.github.io/manyenviron/reference/references.html</loc>
+  </url>
+  <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/regimes.html</loc>
   </url>
   <url>
     <loc>https://globalgov.github.io/manyenviron/reference/texts.html</loc>

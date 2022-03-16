@@ -3,7 +3,9 @@ pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   connect: connect.html
-last_built: 2022-02-04T13:21Z
+  lineage_dashboard: lineage_dashboard.html
+  membership_dashboard: membership_dashboard.html
+last_built: 2022-03-16T09:50Z
 urls:
   reference: https://globalgov.github.io/manyenviron/reference
   article: https://globalgov.github.io/manyenviron/articles

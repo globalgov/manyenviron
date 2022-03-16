@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">manyenviron</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,8 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/connect.html">How Do Environmental Treaties Connect?</a>
+    <a class="dropdown-item" href="../articles/lineage_dashboard.html">Lineage of Environmental Treaties</a>
+    <a class="dropdown-item" href="../articles/membership_dashboard.html">Types of Environmental Treaties</a>
   </div>
 </li>
 <li class="nav-item">
@@ -89,12 +91,32 @@ please use the <code>data_source()</code> and <code>data_contrast()</code> funct
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     
-<div class="section">
-<h3 id="na">NA<a class="anchor" aria-label="anchor" href="#na"></a></h3>
-
-
-<p>NA</p>
-</div>
+<div class="sourceCode"><pre><code><span class="co">## $AGR_TXT</span>
+<span class="co">## ── Data Summary ────────────────────────</span>
+<span class="co">##                            Values</span>
+<span class="co">## Name                       X[[i]]</span>
+<span class="co">## Number of rows             6377  </span>
+<span class="co">## Number of columns          8     </span>
+<span class="co">## _______________________          </span>
+<span class="co">## Column type frequency:           </span>
+<span class="co">##   character                6     </span>
+<span class="co">##   list                     2     </span>
+<span class="co">## ________________________         </span>
+<span class="co">## Group variables            None  </span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace</span>
+<span class="co">## 1 manyID              207         0.968     6    34     0     5794          0</span>
+<span class="co">## 2 Title                 0         1        15   550     0     5649          0</span>
+<span class="co">## 3 Beg                 122         0.981     4    10     0     4148          0</span>
+<span class="co">## 4 ieadbID            2657         0.583     1     4     0     3666          0</span>
+<span class="co">## 5 gnevarID           3587         0.438     9     9     0     2733          0</span>
+<span class="co">## 6 ecolexID           4167         0.347    10    10     0     2174          0</span>
+<span class="co">## </span>
+<span class="co">## ── Variable type: list ───────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="co">##   skim_variable n_missing complete_rate n_unique min_length max_length</span>
+<span class="co">## 1 Text               3911         0.387     2123          0        287</span>
+<span class="co">## 2 Source             4749         0.255     1357          1          1</span></code></pre></div>
 
     </div>
 

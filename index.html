@@ -29,7 +29,7 @@
     
     <a class="navbar-brand me-2" href="index.html">manyenviron</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +51,8 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="articles/connect.html">How Do Environmental Treaties Connect?</a>
+    <a class="dropdown-item" href="articles/lineage_dashboard.html">Lineage of Environmental Treaties</a>
+    <a class="dropdown-item" href="articles/membership_dashboard.html">Types of Environmental Treaties</a>
   </div>
 </li>
 <li class="nav-item">
@@ -85,48 +87,50 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="manyenviron-">Manyenviron <img src="reference/figures/manyenviron_hexlogo.png" align="right"><a class="anchor" aria-label="anchor" href="#manyenviron-"></a>
+<div class="page-header"><h1 id="manyenviron-">manyenviron <img src="reference/figures/manyenviron_hexlogo.png" align="right"><a class="anchor" aria-label="anchor" href="#manyenviron-"></a>
 </h1></div>
 <!-- badges: start -->
 
-<p>Manyenviron is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and <a href="https://github.com/globalgov/qStates" class="external-link">states</a>’ membership or other relationships to those agreements.</p>
+<p>manyenviron is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and <a href="https://github.com/globalgov/qStates" class="external-link">states</a>’ membership or other relationships to those agreements.</p>
 <p>Please also check out <a href="https://github.com/globalgov" class="external-link"><code>{manydata}</code></a> for more information about the other packages in the many universe.</p>
 <div class="section level2">
 <h2 id="how-to-install">How to install<a class="anchor" aria-label="anchor" href="#how-to-install"></a>
 </h2>
 <p>We’ve made it easier than ever to install and start analysing global governance data in R. Simply install the core package, <a href="https://github.com/globalgov/manydata" class="external-link">manydata</a>, as follows, and then you can discover, install and update various “many” packages from the console.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages(remotes)</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a>remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"globalgov/manydata"</span>) <span class="co"># this installs our core package, the only one you need to do independently</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>manydata<span class="op">::</span><span class="kw">get_packages</span>() <span class="co"># this prints a list of the publicly available data packages currently available</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>manydata<span class="op">::</span><span class="kw">get_packages</span>(<span class="st">"manyenviron"</span>) <span class="co"># this downloads and installs the named package</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># install.packages(remotes)</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"globalgov/manydata"</span><span class="op">)</span> <span class="co"># this installs our core package, the only one you need to do independently</span>
+<span class="fu">manydata</span><span class="fu">::</span><span class="fu">get_packages</span><span class="op">(</span><span class="op">)</span> <span class="co"># this prints a list of the publicly available data packages currently available</span>
+<span class="fu">manydata</span><span class="fu">::</span><span class="fu">get_packages</span><span class="op">(</span><span class="st">"manyenviron"</span><span class="op">)</span> <span class="co"># this downloads and installs the named package</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="data-included">Data included<a class="anchor" aria-label="anchor" href="#data-included"></a>
 </h2>
 <p>Once you have installed the package, you can see the different databases and datasets included in the <code>{manyenviron}</code> package using the following function.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>manydata<span class="op">::</span><span class="kw">data_contrast</span>(<span class="st">"manyenviron"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">manydata</span><span class="fu">::</span><span class="fu">data_contrast</span><span class="op">(</span><span class="st">"manyenviron"</span><span class="op">)</span></code></pre></div>
 <p>Working with an ensemble of related data has many advantages for robust analysis. Just take a look at our vignettes <a href="https://globalgov.github.io/manydata/articles/user.html" class="external-link">here</a>.</p>
 </div>
 <div class="section level2">
-<h2 id="many-packages">Many Packages<a class="anchor" aria-label="anchor" href="#many-packages"></a>
+<h2 id="the-many-packages-universe">The many packages universe<a class="anchor" aria-label="anchor" href="#the-many-packages-universe"></a>
 </h2>
-<p>The <a href="https://github.com/globalgov/manydata" class="external-link"><code>{manydata}</code></a> universe is aimed at collecting, connecting, and correcting network data across issue-domains of global governance.</p>
+<p>The <a href="https://github.com/globalgov/manydata" class="external-link">many universe of packages</a> is aimed at collecting, connecting, and correcting network data across issue-domains of global governance.</p>
 <p>While some many packages can and do include novel data, much of what they offer involves standing on the shoulders of giants. Many packages endeavour to be as transparent as possible about where data comes from, how it has been coded and/or relabeled, and who has done the work. As such, we make it easy to cite both the particular datasets you use by listing the official references in the function above, as well as the package providers for their work assembling the data by using the function below.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">citation</span>(<span class="st">"manyenviron"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="co">## </span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="co">## To cite manyenviron in publications use:</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co">## </span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="co">##   J. Hollway. Environmental agreements for manydata. 2021.</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co">## </span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co">## A BibTeX entry for LaTeX users is</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co">## </span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="co">##   @Manual{,</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="co">##     title = {Manyenviron: Environmental agreements for manydata},</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="co">##     author = {James Hollway},</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="co">##     year = {2021},</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a><span class="co">##     url = {https://github.com/globalgov/manyenviron},</span></span>
-<span id="cb3-15"><a href="#cb3-15"></a><span class="co">##   }</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"manyenviron"</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">## </span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co">## To cite manyenviron in publications use:</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">## </span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">##   J. Hollway. Environmental agreements for manydata. 2021.</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">## </span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">## A BibTeX entry for LaTeX users is</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">## </span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co">##   @Manual{,</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="co">##     title = {Manyenviron: Environmental agreements for manydata},</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">##     author = {James Hollway},</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="co">##     year = {2021},</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co">##     url = {https://github.com/globalgov/manyenviron},</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="co">##   }</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="contributing">Contributing<a class="anchor" aria-label="anchor" href="#contributing"></a>
