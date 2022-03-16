@@ -11,3 +11,4 @@
 ^data-raw/agreements$
 ^data-raw/organizations$
 ^data-raw/regimes$
+^shinyapp$

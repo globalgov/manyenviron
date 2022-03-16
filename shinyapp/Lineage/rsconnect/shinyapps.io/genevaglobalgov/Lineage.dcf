@@ -1,0 +1,13 @@
+name: Lineage
+title: Lineage
+username:
+account: genevaglobalgov
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5708965
+bundleId: 5605873
+url: https://genevaglobalgov.shinyapps.io/lineage/
+when: 1645543356.24173
+lastSyncTime: 1645543356.24173
+asMultiple: FALSE
+asStatic: FALSE

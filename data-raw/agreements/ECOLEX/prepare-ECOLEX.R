@@ -14,10 +14,10 @@ manypkgs::retain("ECOLEX")
 # below (in stage three) passes all the tests.
 ECOLEX <- as_tibble(ECOLEX) %>%
   dplyr::rename("title" = "Title") %>%
-  dplyr::mutate(L = dplyr::recode(Document.type,
+  dplyr::mutate(DocType = dplyr::recode(Document.type,
                                   "Bilateral" = "B",
                                   "Multilateral" = "M")) %>%
-  dplyr::mutate(J = dplyr::recode(Field.of.application,
+  dplyr::mutate(GeogArea = dplyr::recode(Field.of.application,
                                   "Global" = "G",
                                   "Regional/restricted" = "R")) %>%
   manydata::transmutate(ecolexID = `EcolexID`,
@@ -27,7 +27,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                      Signature = manypkgs::standardise_dates(lubridate::mdy(Date)),
                      Force = manypkgs::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ecolexID, Title, Beg, L, J, Signature, Force) %>%
+  dplyr::select(ecolexID, Title, Beg, DocType, GeogArea, Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
@@ -43,7 +43,7 @@ ECOLEX <- dplyr::left_join(ECOLEX, manyID, by = "treatyID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>% 
-  dplyr::select(manyID, Title, Beg, L, J, Signature,
+  dplyr::select(manyID, Title, Beg, DocType, GeogArea, Signature,
                 Force, Lineage, treatyID, ecolexID) %>%
   dplyr::arrange(Beg)
 

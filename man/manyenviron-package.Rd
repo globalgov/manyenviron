@@ -6,8 +6,7 @@
 \alias{manyenviron-package}
 \title{manyenviron: Environmental Agreements for the many Universe}
 \description{
-Ensemble of data on international environmental agreements,
-    and states membership in them for research use.
+Ensemble of data on international environmental agreements, and states membership in them for research use.
 }
 \author{
 \strong{Maintainer}: James Hollway \email{james.hollway@graduateinstitute.ch} (\href{https://orcid.org/0000-0002-8361-9647}{ORCID}) (IHEID) [contributor]
@@ -17,6 +16,7 @@ Other contributors:
   \item Henrique Sposito (\href{https://orcid.org/0000-0003-3420-6085}{ORCID}) (IHEID) [contributor]
   \item Bernhard Bieri (\href{https://orcid.org/0000-0001-5943-9059}{ORCID}) (IHEID) [contributor]
   \item Esther Peev (\href{https://orcid.org/0000-0002-9678-2777}{ORCID}) (IHEID) [contributor]
+  \item Jael Tan (\href{https://orcid.org/0000-0002-6234-9764}{ORCID}) (IHEID) [contributor]
 }
 
 }

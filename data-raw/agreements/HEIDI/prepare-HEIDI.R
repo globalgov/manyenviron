@@ -22,6 +22,7 @@ HEIDI <- as_tibble(HEIDI) %>%
 
 # Add treaty_ID column
 HEIDI$treatyID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Beg)
+
 # Add Lineage column
 HEIDI$Lineage <- manypkgs::code_lineage(HEIDI$Title)
 
