@@ -1,14 +1,9 @@
-# This is a Shiny web application. You can run the application by clicking the 'Run App' button above.
-# Find out more about building applications with Shiny here: http://shiny.rstudio.com/
-
 # First step: load packages
 # library(shiny)
 # library(shinydashboard)
 # library(dplyr)
 
-# Set working directory in this folder first using setwd() function
-# setwd()
-references <- readr::read_csv("references.csv")
+references <- manyenviron::references
 references <- references[, -1]
 
 references <- references %>% 

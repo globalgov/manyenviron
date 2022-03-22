@@ -11,13 +11,17 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force, Rat, ecolexID, treatyID.}
+10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force,
+Rat, ecolexID, treatyID.}
 \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
+13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
+Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
 \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Signature, Rat, Force, DocType, ieadbID, treatyID.}
+12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
+Signature, Rat, Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships, treatyID.}
+8 variables: manyID, CountryID, Title, Beg, Signature, tfddID,
+Memberships, treatyID.}
 }
 }
 \usage{
@@ -39,7 +43,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
 ##    skim_variable    n_missing complete_rate   min   max empty n_unique whitespace
 ##  1 manyID                   0        1          9    41     0     5956          0
 ##  2 CountryID               22        0.999      3     3     0      214          0
@@ -64,7 +68,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
 ##    skim_variable    n_missing complete_rate   min   max empty n_unique whitespace
 ##  1 manyID                   0        1          9    41     0     2288          0
 ##  2 CountryID                0        1          3    40     0      239          0
@@ -93,7 +97,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
 ##    skim_variable    n_missing complete_rate   min   max empty n_unique whitespace
 ##  1 manyID                   0        1          9    41     0     4390          0
 ##  2 CountryID                0        1          3     7     0      196          0
@@ -107,7 +111,7 @@ memberships database documentation
 ## 10 DocType                  0        1          1     1     0        2          0
 ## 11 treatyID                 0        1          9    41     0     4427          0
 ## 
-## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: numeric ───────────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
 ## 1 ieadbID               0             1 3232. 1627.    32  2702  3003  3346  8919
 ## 
@@ -124,7 +128,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0         1         6    41     0      627          0
 ## 2 CountryID             2         0.999     3     3     0      158          0
@@ -134,7 +138,7 @@ memberships database documentation
 ## 6 Memberships          28         0.987     3   622     0      239          0
 ## 7 treatyID              0         1         6    41     0      634          0
 ## 
-## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: numeric ───────────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
 ## 1 tfddID                2         0.999  331.  189.     1   174   329   497   646
 }

@@ -131,6 +131,6 @@ AGR_TXT <- dplyr::as_tibble(AGR_TXT) %>%
 
 # Step six: export data into rda format 2 possible solutions
 manypkgs::export_data(AGR_TXT, database = "texts", URL = "NA")
-# !Make sure to deletethe database before exporting the data,
+# !Make sure to delete the database before exporting the data,
 # and do not re-write the texts documentation.
 # usethis::use_data(AGR_TXT, internal = T, overwrite = T)

@@ -33,7 +33,7 @@ references database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 treatyID1             0             1     9    40     0      648          0
 ## 2 treatyID2             0             1     9    40     0      648          0

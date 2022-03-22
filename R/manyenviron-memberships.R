@@ -6,13 +6,17 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-#' 10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force, Rat, ecolexID, treatyID.}
+#' 10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force,
+#' Rat, ecolexID, treatyID.}
 #' \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-#' 13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
+#' 13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
+#' Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
 #' \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-#' 12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Signature, Rat, Force, DocType, ieadbID, treatyID.}
+#' 12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
+#' Signature, Rat, Force, DocType, ieadbID, treatyID.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-#' 8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships, treatyID.}
+#' 8 variables: manyID, CountryID, Title, Beg, Signature, tfddID,
+#' Memberships, treatyID.}
 #' }
 
 #'
