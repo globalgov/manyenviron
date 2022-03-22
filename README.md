@@ -1,5 +1,5 @@
 
-# manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right"/>
+# manyenviron <img src="man/figures/manyenviron_hexlogo.png" align="right" width="220"/>
 
 <!-- badges: start -->
 
