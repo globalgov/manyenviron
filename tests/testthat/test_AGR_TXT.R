@@ -1,9 +1,9 @@
 # Test that certain columns exist
 test_that("datasets have the required variables", {
-  expect_col_exists(texts[["AGR_TXT"]], vars(Title))
-  expect_col_exists(texts[["AGR_TXT"]], vars(Beg))
+  pointblank::expect_col_exists(texts[["AGR_TXT"]], vars(Title))
+  pointblank::expect_col_exists(texts[["AGR_TXT"]], vars(Beg))
   expect_true(any(grepl("ID$", colnames(texts[["AGR_TXT"]]))))
-  expect_col_exists(texts[["AGR_TXT"]], vars(Text))
+  pointblank::expect_col_exists(texts[["AGR_TXT"]], vars(Text))
 })
 
 # Date columns should be in messydt class

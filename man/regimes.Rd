@@ -29,19 +29,23 @@ regimes database documentation
 ## Number of columns          7     
 ## _______________________          
 ## Column type frequency:           
-##   character                7     
+##   character                3     
+##   messydt                  4     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ────────────────────────────────────────────────────
 ##   skim_variable   n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 Regime                  0         1        26    63     0       23          0
 ## 2 RegimeComponent        33         0.641    12    85     0       59          0
-## 3 Beg                    36         0.609     4     9     0       31          0
-## 4 Wat                    34         0.630     4     9     0       14          0
-## 5 Wat2                   78         0.152     4     9     0        3          0
-## 6 End                    36         0.609     4     4     0        2          0
-## 7 RegimeElement           0         1        12    94     0       92          0
+## 3 RegimeElement           0         1        12    94     0       92          0
+## 
+## ── Variable type: messydt ──────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate n_empty n_unique
+## 1 Beg                  36         0.609       0       31
+## 2 Wat                  34         0.630       0       14
+## 3 Wat2                 78         0.152       0        3
+## 4 End                  36         0.609       0        2
 }
 }
 \keyword{datasets}

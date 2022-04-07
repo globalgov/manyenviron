@@ -31,20 +31,26 @@ organizations database documentation
 ## Number of columns          4     
 ## _______________________          
 ## Column type frequency:           
-##   character                3     
+##   character                1     
+##   messydt                  2     
 ##   numeric                  1     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 Name                  0             1     2     8     0       78          0
-## 2 Beg                   0             1     4     4     0       44          0
-## 3 End                  78             0    NA    NA     0        0          0
 ## 
-## ── Variable type: numeric ───────────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
-## 1 COW                   0             1 2671. 1348.   270 1538.  2636 3838.  5550
+## ── Variable type: messydt ──────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate n_empty n_unique
+## 1 Beg                   0             1       0       44
+## 2 End                  78             0       0        0
+## 
+## ── Variable type: numeric ──────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
+## 1 COW                   0             1 2671. 1348.   270 1538.  2636 3838.
+##    p100
+## 1  5550
 ## 
 ## $YIO
 ## ── Data Summary ────────────────────────
@@ -54,16 +60,20 @@ organizations database documentation
 ## Number of columns          4     
 ## _______________________          
 ## Column type frequency:           
-##   character                4     
+##   character                3     
+##   messydt                  1     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: character ────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 Title                 0         1         2   329     0    74963          0
 ## 2 Abbreviation      29296         0.610     2    53     0    33609          0
-## 3 Beg               23141         0.692     4     5     0      390          0
-## 4 Country           28101         0.626     2    21     0      216          0
+## 3 Country           28101         0.626     2    21     0      216          0
+## 
+## ── Variable type: messydt ──────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate n_empty n_unique
+## 1 Beg               23141         0.692       0      390
 }
 }
 \keyword{datasets}
