@@ -13,10 +13,10 @@ test_that("missing observations are reported correctly", {
 # Uniformity tests (agreements have a source ID, a string title, a signature and
 # entry into force date)
 test_that("datasets have the required variables", {
-  pointblank::expect_col_exists(agreements[["HEIDI"]], vars(Title))
-  pointblank::expect_col_exists(agreements[["HEIDI"]], vars(Beg))
+  pointblank::expect_col_exists(agreements[["HEIDI"]], pointblank::vars(Title))
+  pointblank::expect_col_exists(agreements[["HEIDI"]], pointblank::vars(Beg))
   expect_true(any(grepl("ID$", colnames(agreements[["HEIDI"]]))))
-  pointblank::expect_col_exists(agreements[["HEIDI"]], vars(Signature))
+  pointblank::expect_col_exists(agreements[["HEIDI"]], pointblank::vars(Signature))
 })
 
 # Date columns should be in messydt class
