@@ -28,16 +28,17 @@ Description: Ensemble of data on international environmental agreements,
     and states membership in them for research use.
 License: CC BY 4.0
 Depends: 
-    R (>= 3.5.0),
-    tibble,
-    pointblank
+    R (>= 3.5.0)
 Imports:
+    manydata,
     dplyr,
     lubridate,
     roxygen2,
     usethis,
     migraph,
-    skimr
+    skimr,
+    tibble,
+    pointblank
 Suggests:
     purrr,
     rlang,
