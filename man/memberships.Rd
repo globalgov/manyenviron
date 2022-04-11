@@ -44,7 +44,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0         1         9    41     0     5956          0
 ## 2 CountryID            22         0.999     3     3     0      214          0
@@ -52,7 +52,7 @@ memberships database documentation
 ## 4 ecolexID              0         1        10    10     0     2169          0
 ## 5 treatyID              0         1         9    41     0     6145          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable    n_missing complete_rate n_empty n_unique
 ## 1 Beg                   3447        0.862        0     7510
 ## 2 End                  24539        0.0186       0      271
@@ -73,7 +73,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0         1         9    41     0     2288          0
 ## 2 CountryID             0         1         3    40     0      239          0
@@ -81,7 +81,7 @@ memberships database documentation
 ## 4 gnevarID             17         1.00      9     9     0     2322          0
 ## 5 treatyID              0         1         9    41     0     2307          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable    n_missing complete_rate n_empty n_unique
 ## 1 Beg                     15        1.00         0     1974
 ## 2 End                  31818        0.108        0      663
@@ -106,7 +106,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0             1     9    41     0     4390          0
 ## 2 CountryID             0             1     3     7     0      196          0
@@ -114,7 +114,7 @@ memberships database documentation
 ## 4 DocType               0             1     1     1     0        2          0
 ## 5 treatyID              0             1     9    41     0     4427          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable    n_missing complete_rate n_empty n_unique
 ## 1 Beg                      0        1            0     6312
 ## 2 End                  14595        0.0563       0       70
@@ -123,11 +123,9 @@ memberships database documentation
 ## 5 Rat                   5486        0.645        0     6426
 ## 6 Force                    0        1            0     6607
 ## 
-## ── Variable type: numeric ──────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
-## 1 ieadbID               0             1 3232. 1627.    32  2702  3003  3346
-##    p100
-## 1  8919
+## ── Variable type: numeric ─────────────────────────────────────────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
+## 1 ieadbID               0             1 3232. 1627.    32  2702  3003  3346  8919
 ## 
 ## $TFDD_MEM
 ## ── Data Summary ────────────────────────
@@ -143,7 +141,7 @@ memberships database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0         1         6    41     0      627          0
 ## 2 CountryID             2         0.999     3     3     0      158          0
@@ -151,16 +149,14 @@ memberships database documentation
 ## 4 Memberships          28         0.987     3   622     0      239          0
 ## 5 treatyID              0         1         6    41     0      634          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
 ## 1 Beg                 133         0.937       0      553
 ## 2 Signature           133         0.937       0      553
 ## 
-## ── Variable type: numeric ──────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
-## 1 tfddID                2         0.999  331.  189.     1   174   329   497
-##    p100
-## 1   646
+## ── Variable type: numeric ─────────────────────────────────────────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
+## 1 tfddID                2         0.999  331.  189.     1   174   329   497   646
 }
 }
 \keyword{datasets}

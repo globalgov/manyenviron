@@ -34,13 +34,13 @@ regimes database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable   n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 Regime                  0         1        26    63     0       23          0
 ## 2 RegimeComponent        33         0.641    12    85     0       59          0
 ## 3 RegimeElement           0         1        12    94     0       92          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
 ## 1 Beg                  36         0.609       0       31
 ## 2 Wat                  34         0.630       0       14

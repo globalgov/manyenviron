@@ -11,14 +11,12 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{IEADB: }{A dataset with 3666 observations and the following
-10 variables: manyID, Title, Beg, DocType, AgreementType,
-Signature, Force, Lineage, treatyID, ieadbID.}
-\item{GNEVAR: }{A dataset with 3428 observations and the following
-12 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-Signature, Force, Lineage, treatyID, gnevarID.}
+10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force, Lineage, treatyID, ieadbID.}
+\item{GNEVAR: }{A dataset with 3785 observations and the following
+14 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
+Signature, Force, Lineage, Memb.conditions, Memb.procedures, treatyID, gnevarID.}
 \item{ECOLEX: }{A dataset with 2174 observations and the following
-10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
-Lineage, treatyID, ecolexID.}
+10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force, Lineage, treatyID, ecolexID.}
 \item{CIESIN: }{A dataset with 666 observations and the following
 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
 \item{HEIDI: }{A dataset with 2280 observations and the following
@@ -45,7 +43,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0             1     9    41     0     3542          0
 ## 2 Title                 0             1    16   550     0     3375          0
@@ -55,7 +53,7 @@ agreements database documentation
 ## 6 treatyID              0             1     9    39     0     3606          0
 ## 7 ieadbID               0             1     1     4     0     3666          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
 ## 1 Beg                  65         0.982       0     2813
 ## 2 Signature            65         0.982       0     2813
@@ -65,32 +63,34 @@ agreements database documentation
 ## ── Data Summary ────────────────────────
 ##                            Values
 ## Name                       X[[i]]
-## Number of rows             3428  
-## Number of columns          12    
+## Number of rows             3785  
+## Number of columns          14    
 ## _______________________          
 ## Column type frequency:           
-##   character                8     
+##   character                10    
 ##   messydt                  4     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID                0         1         9    41     0     3310          0
-## 2 Title                 0         1        15   550     0     3157          0
-## 3 DocType             678         0.802     1     1     0        2          0
-## 4 AgreementType       716         0.791     1     1     0        9          0
-## 5 GeogArea           1280         0.627     1     1     0        6          0
-## 6 Lineage               0         1         2    88     0     1721          0
-## 7 treatyID              0         1         9    41     0     3370          0
-## 8 gnevarID            682         0.801     9     9     0     2733          0
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
+##    skim_variable   n_missing complete_rate   min   max empty n_unique whitespace
+##  1 manyID                  0         1         9    41     0     3310          0
+##  2 Title                   0         1        15   550     0     3157          0
+##  3 DocType               749         0.802     1     1     0        2          0
+##  4 AgreementType         793         0.790     1     1     0        9          0
+##  5 GeogArea             1425         0.624     1     1     0        6          0
+##  6 Lineage                 0         1         2    88     0     1721          0
+##  7 Memb.conditions       683         0.820     2   104     0      359          0
+##  8 Memb.procedures       683         0.820     2    52     0       11          0
+##  9 treatyID                0         1         9    41     0     3370          0
+## 10 gnevarID              753         0.801     9     9     0     2733          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
-## 1 Beg                  57         0.983       0     2702
-## 2 End                2753         0.197       0      405
-## 3 Signature            57         0.983       0     2702
-## 4 Force              1611         0.530       0     1545
+## 1 Beg                  57         0.985       0     2702
+## 2 End                3044         0.196       0      405
+## 3 Signature            57         0.985       0     2702
+## 4 Force              1769         0.533       0     1545
 ## 
 ## $ECOLEX
 ## ── Data Summary ────────────────────────
@@ -105,7 +105,7 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0         1         9    40     0     2130          0
 ## 2 Title                 0         1        15   492     0     2146          0
@@ -115,7 +115,7 @@ agreements database documentation
 ## 6 treatyID              0         1         9    40     0     2160          0
 ## 7 ecolexID              0         1        10    10     0     2174          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
 ## 1 Beg                   0         1           0     1718
 ## 2 Signature             0         1           0     1718
@@ -134,14 +134,14 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0             1     6    27     0      657          0
 ## 2 Title                 0             1    18   456     0      649          0
 ## 3 Lineage               0             1     2    79     0      120          0
 ## 4 treatyID              0             1     6    27     0      658          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
 ## 1 Beg                   0             1       0       80
 ## 2 Signature             0             1       0       80
@@ -161,23 +161,21 @@ agreements database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
+## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
 ## 1 manyID                0             1     9    37     0     2232          0
 ## 2 Title                 0             1    16   517     0     2204          0
 ## 3 Lineage               0             1     2    63     0     1237          0
 ## 4 treatyID              0             1     9    37     0     2271          0
 ## 
-## ── Variable type: messydt ──────────────────────────────────────────────────────
+## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_empty n_unique
 ## 1 Beg                  27         0.988       0     1813
 ## 2 Signature            27         0.988       0     1813
 ## 
-## ── Variable type: numeric ──────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75
-## 1 heidiID               0             1 3193. 2410.     7  915.  2882 4645.
-##    p100
-## 1  8506
+## ── Variable type: numeric ─────────────────────────────────────────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
+## 1 heidiID               0             1 3193. 2410.     7  915.  2882 4645.  8506
 }
 }
 \keyword{datasets}
