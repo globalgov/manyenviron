@@ -87,6 +87,17 @@ GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any",
 # Add Lineage Column
 GNEVAR$Lineage <- manypkgs::code_lineage(GNEVAR$Title)
 
+# Add membership conditions and procedures columns
+AGR_TXT <- manyenviron::texts$AGR_TXT
+AGR_TXT$Memb.conditions <- manypkgs::code_memberships(AGR_TXT$Text, 
+                                                      AGR_TXT$Title, 
+                                                      memberships = "condition")
+AGR_TXT$Memb.procedures <- manypkgs::code_memberships(AGR_TXT$Text, 
+                                                      memberships = "process")
+AGR_TXT <- dplyr::select(AGR_TXT, manyID, Memb.conditions, Memb.procedures)
+GNEVAR <- dplyr::left_join(GNEVAR, AGR_TXT,
+                           by = "manyID")
+
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
@@ -94,7 +105,8 @@ GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
 # Select and arrange columns
 GNEVAR <- GNEVAR %>%
   dplyr::select(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-                Signature, Force, Lineage, treatyID, gnevarID) %>%
+                Signature, Force, Lineage, Memb.conditions, Memb.procedures, 
+                treatyID, gnevarID) %>%
   dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning
