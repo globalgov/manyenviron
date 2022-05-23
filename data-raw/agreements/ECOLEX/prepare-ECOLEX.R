@@ -24,8 +24,8 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                      Title = manypkgs::standardise_titles(title,
                                                           api_key = api),
                      # Define Key API
-                     Signature = manypkgs::messydates::make_messydates(lubridate::mdy(Date)),
-                     Force = manypkgs::messydates::make_messydates(lubridate::mdy(`Entry.into.force`))) %>%
+                     Signature = messydates::make_messydates(lubridate::mdy(Date)),
+                     Force = messydates::make_messydates(lubridate::mdy(`Entry.into.force`))) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(ecolexID, Title, Beg, DocType, GeogArea, Signature, Force) %>%
   dplyr::arrange(Beg)

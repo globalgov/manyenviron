@@ -18,9 +18,9 @@ GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>%
   dplyr::mutate(AgreementType=dplyr::recode(T, G="A", M="E", "T"="Q",
                                             D="V", R="W", N="X", U="Y")) %>%
-  manydata::transmutate(Signature = manypkgs::messydates::make_messydates(DocSign),
-                     End = manypkgs::messydates::make_messydates(DocEnd),
-                     Force = manypkgs::messydates::make_messydates(DocForce),
+  manydata::transmutate(Signature = messydates::make_messydates(DocSign),
+                     End = messydates::make_messydates(DocEnd),
+                     Force = messydates::make_messydates(DocForce),
                      gnevarID = GENG,
                      ecolexID = ECOLEX) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
@@ -43,11 +43,11 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
   # Define Key API
-  dplyr::mutate(Beg = manypkgs::messydates::make_messydates(Beg)) %>%
-  dplyr::mutate(End = manypkgs::messydates::make_messydates(End)) %>%
-  dplyr::mutate(Force = manypkgs::messydates::make_messydates(Force)) %>%
-  dplyr::mutate(Term = manypkgs::messydates::make_messydates(Term)) %>%
-  manydata::transmutate(Signature = manypkgs::messydates::make_messydates(Sign))
+  dplyr::mutate(Beg = messydates::make_messydates(Beg)) %>%
+  dplyr::mutate(End = messydates::make_messydates(End)) %>%
+  dplyr::mutate(Force = messydates::make_messydates(Force)) %>%
+  dplyr::mutate(Term = messydates::make_messydates(Term)) %>%
+  manydata::transmutate(Signature = messydates::make_messydates(Sign))
 
 # Add treatyID column
 GNEVAR2$treatyID <- manypkgs::code_agreements(GNEVAR2,
@@ -59,9 +59,9 @@ GNEVAR2$treatyID <- manypkgs::code_agreements(GNEVAR2,
 # Clean GNEVAR4
 GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
 GNEVAR4 <- as_tibble(GNEVAR4) %>%
-  manydata::transmutate(Signature = manypkgs::messydates::make_messydates(DocDate),
-                     Force = manypkgs::messydates::make_messydates(InForce)) %>%
-  dplyr::mutate(End = manypkgs::messydates::make_messydates(End)) %>%
+  manydata::transmutate(Signature = messydates::make_messydates(DocDate),
+                     Force = messydates::make_messydates(InForce)) %>%
+  dplyr::mutate(End = messydates::make_messydates(End)) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
   # Define Key API

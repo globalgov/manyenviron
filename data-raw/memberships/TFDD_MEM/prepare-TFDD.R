@@ -11,8 +11,8 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
-  dplyr::mutate(Signature = manypkgs::messydates::make_messydates(openxlsx::convertToDate(DateSigned))) %>%
-  dplyr::mutate(Beg = manypkgs::messydates::make_messydates(as.character(Signature))) %>%
+  dplyr::mutate(Signature = messydates::make_messydates(openxlsx::convertToDate(DateSigned))) %>%
+  dplyr::mutate(Beg = messydates::make_messydates(as.character(Signature))) %>%
   manydata::transmutate(tfddID = `2016Update ID`,
                      CountryID = CCODE,
                      Title = manypkgs::standardise_titles(DocumentName,

@@ -11,11 +11,11 @@ IRD <- readxl::read_excel("data-raw/regimes/IRD/IRD.xlsx")
 # formats of the 'IRD' object until the object created
 # below (in stage three) passes all the tests.
 IRD <- as_tibble(IRD) %>%
-  manydata::transmutate(Beg = manypkgs::messydates::make_messydates(Formation),
-                        End = manypkgs::messydates::make_messydates(as.character(Endpoint)),
+  manydata::transmutate(Beg = messydates::make_messydates(Formation),
+                        End = messydates::make_messydates(as.character(Endpoint)),
                         # Watershed and Watershed2 refer to periods of fundamental change in the regime
-                        Wat = manypkgs::messydates::make_messydates(Watershed),
-                        Wat2 = manypkgs::messydates::make_messydates(Watershed2)) %>%
+                        Wat = messydates::make_messydates(Watershed),
+                        Wat2 = messydates::make_messydates(Watershed2)) %>%
   dplyr::arrange(Beg) %>% 
   # RegimeComponent is an institutional arrangement that is part of a given regime, such as a protocol
   # RegimeElement refers to a regulatory area of a given regime for a given time period
