@@ -14,7 +14,7 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(AgreementType = dplyr::recode(`Agreement Type (level 2)`,
                                   "Agreement" = "A",
                                   "Amendment" = "E",
-                                  "Agreed Minute (non-binding)" ="Q",
+                                  "Agreed Minute (non-binding)" = "Q",
                                   "Declaration" = "V",
                                   "Resolution" = "W",
                                   "Exchange of Notes" = "X",
