@@ -14,8 +14,8 @@ CIESIN <- as_tibble(CIESIN) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`,
                                                              api_key = api),
                         # Define Key API
-                     Signature = manypkgs::standardise_dates(`Year of Agreement`),
-                     Force = manypkgs::standardise_dates(`Year of Entry into Force`)) %>%
+                     Signature = manypkgs::messydates::make_messydates(`Year of Agreement`),
+                     Force = manypkgs::messydates::make_messydates(`Year of Entry into Force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(Title, Beg, Signature, Force) %>%
   dplyr::arrange(Beg)

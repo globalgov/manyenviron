@@ -14,7 +14,7 @@ HEIDI$signature.date <- openxlsx::convertToDate(HEIDI1$signature.date)
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`,
                                                              api_key = api),
-                        Signature = manypkgs::standardise_dates(`signature.date`)) %>%
+                        Signature = manypkgs::messydates::make_messydates(`signature.date`)) %>%
   dplyr::mutate(Beg = Signature) %>%
   dplyr::rename(heidiID = ID) %>%
   dplyr::select(heidiID, Title, Beg, Signature) %>%

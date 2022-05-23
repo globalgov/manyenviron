@@ -80,7 +80,7 @@
 
 ## Data changes
 
-* Used new version of `standardise_dates()` to transform dates column in `messydt` class
+* Used new version of `messydates::make_messydates()` to transform dates column in `messydt` class
 * Used new version of `standardise_titles()` on title columns to better standardise specific words spelling
 * Simplified the tests of the databases according to these changes
 
