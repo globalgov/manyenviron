@@ -15,8 +15,8 @@
 #' 12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
 #' Signature, Rat, Force, DocType, ieadbID, treatyID.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-#' 8 variables: manyID, CountryID, Title, Beg, Signature, tfddID,
-#' Memberships, treatyID.}
+#' 8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships,
+#' treatyID.}
 #' }
 
 #'
