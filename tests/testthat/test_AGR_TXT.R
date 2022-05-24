@@ -5,7 +5,7 @@ test_that("datasets have the required variables", {
   pointblank::expect_col_exists(texts[["AGR_TXT"]], pointblank::vars(Beg))
   expect_true(any(grepl("ID$", colnames(texts[["AGR_TXT"]]))))
   pointblank::expect_col_exists(texts[["AGR_TXT"]],
-                                pointblank::vars(TreatyText))
+                                pointblank::vars(Text))
 })
 
 # Date columns should be in messydt class
