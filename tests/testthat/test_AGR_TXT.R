@@ -1,9 +1,11 @@
+# Test if the dataset meets the many packages universe requirements
 # Test that certain columns exist
 test_that("datasets have the required variables", {
   pointblank::expect_col_exists(texts[["AGR_TXT"]], pointblank::vars(Title))
   pointblank::expect_col_exists(texts[["AGR_TXT"]], pointblank::vars(Beg))
   expect_true(any(grepl("ID$", colnames(texts[["AGR_TXT"]]))))
-  pointblank::expect_col_exists(texts[["AGR_TXT"]], pointblank::vars(Text))
+  pointblank::expect_col_exists(texts[["AGR_TXT"]],
+                                pointblank::vars(TreatyText))
 })
 
 # Date columns should be in messydt class

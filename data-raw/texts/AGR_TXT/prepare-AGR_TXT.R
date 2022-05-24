@@ -133,4 +133,4 @@ AGR_TXT <- dplyr::as_tibble(AGR_TXT) %>%
 manypkgs::export_data(AGR_TXT, database = "texts", URL = "NA")
 # !Make sure to delete the database before exporting the data,
 # and do not re-write the texts documentation.
-# usethis::use_data(AGR_TXT, internal = T, overwrite = T)
+# usethis::use_data(texts, internal = F, overwrite = T, compress = "xz")
