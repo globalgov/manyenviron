@@ -21,7 +21,7 @@ texts
 texts database documentation
 }
 \details{
-\preformatted{## $AGR_TXT
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $AGR_TXT
 ## ── Data Summary ────────────────────────
 ##                            Values
 ## Name                       X[[i]]
@@ -31,26 +31,26 @@ texts database documentation
 ## Column type frequency:           
 ##   character                5     
 ##   list                     2     
-##   messydt                  1     
+##   mdate                    1     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID              207         0.968     6    34     0     5794          0
-## 2 Title                 0         1        15   550     0     5649          0
-## 3 ieadbID            2657         0.583     1     4     0     3666          0
-## 4 gnevarID           3587         0.438     9     9     0     2733          0
-## 5 ecolexID           4167         0.347    10    10     0     2174          0
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate min max empty n_unique whitespace
+## 1 manyID              207         0.968   6  34     0     5794          0
+## 2 Title                 0         1      15 550     0     5649          0
+## 3 ieadbID            2657         0.583   1   4     0     3666          0
+## 4 gnevarID           3587         0.438   9   9     0     2733          0
+## 5 ecolexID           4167         0.347  10  10     0     2174          0
 ## 
-## ── Variable type: list ────────────────────────────────────────────────────────────────────────────────────────────────
+## ── Variable type: list ─────────────────────────────────────────────────────────
 ##   skim_variable n_missing complete_rate n_unique min_length max_length
 ## 1 Text               3911         0.387     2123          0        287
 ## 2 Source             4749         0.255     1357          1          1
 ## 
-## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique
-## 1 Beg                 122         0.981       0     4148
-}
+## ── Variable type: mdate ────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate n_empty n_unique max        min       
+## 1 Beg                 122         0.981       0     4148 2068-12-06 1351-08-01
+}\if{html}{\out{</div>}}
 }
 \keyword{datasets}

@@ -21,7 +21,7 @@ references
 references database documentation
 }
 \details{
-\preformatted{## $ECOLEX_REF
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $ECOLEX_REF
 ## ── Data Summary ────────────────────────
 ##                            Values
 ## Name                       X[[i]]
@@ -33,11 +33,11 @@ references database documentation
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 treatyID1             0             1     9    40     0      648          0
-## 2 treatyID2             0             1     9    40     0      648          0
-## 3 RefType               0             1     5    13     0        8          0
-}
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate min max empty n_unique whitespace
+## 1 treatyID1             0             1   9  40     0      648          0
+## 2 treatyID2             0             1   9  40     0      648          0
+## 3 RefType               0             1   5  13     0        8          0
+}\if{html}{\out{</div>}}
 }
 \keyword{datasets}

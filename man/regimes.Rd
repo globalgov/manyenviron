@@ -21,7 +21,7 @@ regimes
 regimes database documentation
 }
 \details{
-\preformatted{## $IRD
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $IRD
 ## ── Data Summary ────────────────────────
 ##                            Values
 ## Name                       X[[i]]
@@ -29,23 +29,23 @@ regimes database documentation
 ## Number of columns          7     
 ## _______________________          
 ## Column type frequency:           
-##   character                3     
-##   messydt                  4     
+##   character                5     
+##   mdate                    2     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable   n_missing complete_rate   min   max empty n_unique whitespace
-## 1 Regime                  0         1        26    63     0       23          0
-## 2 RegimeComponent        33         0.641    12    85     0       59          0
-## 3 RegimeElement           0         1        12    94     0       92          0
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable   n_missing complete_rate min max empty n_unique whitespace
+## 1 Regime                  0         1      26  63     0       23          0
+## 2 RegimeComponent        33         0.641  12  85     0       59          0
+## 3 Wat                    34         0.630   4   9     0       14          0
+## 4 Wat2                   78         0.152   4   9     0        3          0
+## 5 RegimeElement           0         1      12  94     0       92          0
 ## 
-## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique
-## 1 Beg                  36         0.609       0       31
-## 2 Wat                  34         0.630       0       14
-## 3 Wat2                 78         0.152       0        3
-## 4 End                  36         0.609       0        2
-}
+## ── Variable type: mdate ────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate n_empty n_unique max        min       
+## 1 Beg                  36         0.609       0       31 1997-12-31 1946-01-01
+## 2 End                  36         0.609       0        2 1998-12-31 1978-01-01
+}\if{html}{\out{</div>}}
 }
 \keyword{datasets}

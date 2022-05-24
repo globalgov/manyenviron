@@ -20,8 +20,8 @@ Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
 12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
 Signature, Rat, Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-8 variables: manyID, CountryID, Title, Beg, Signature, tfddID,
-Memberships, treatyID.}
+8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships,
+treatyID.}
 }
 }
 \usage{
@@ -31,7 +31,7 @@ memberships
 memberships database documentation
 }
 \details{
-\preformatted{## $ECOLEX_MEM
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $ECOLEX_MEM
 ## ── Data Summary ────────────────────────
 ##                            Values
 ## Name                       X[[i]]
@@ -40,25 +40,31 @@ memberships database documentation
 ## _______________________          
 ## Column type frequency:           
 ##   character                5     
-##   messydt                  5     
+##   mdate                    5     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID                0         1         9    41     0     5956          0
-## 2 CountryID            22         0.999     3     3     0      214          0
-## 3 Title                 0         1        15   492     0     2141          0
-## 4 ecolexID              0         1        10    10     0     2169          0
-## 5 treatyID              0         1         9    41     0     6145          0
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate min max empty n_unique whitespace
+## 1 manyID                0         1       9  41     0     5956          0
+## 2 CountryID            22         0.999   3   3     0      214          0
+## 3 Title                 0         1      15 492     0     2141          0
+## 4 ecolexID              0         1      10  10     0     2169          0
+## 5 treatyID              0         1       9  41     0     6145          0
 ## 
-## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable    n_missing complete_rate n_empty n_unique
-## 1 Beg                   3447        0.862        0     7510
-## 2 End                  24539        0.0186       0      271
-## 3 SignatureCountry     15339        0.387        0     2630
-## 4 Force                 5809        0.768        0     7292
-## 5 Rat                   7021        0.719        0     8383
+## ── Variable type: mdate ────────────────────────────────────────────────────────
+##   skim_variable    n_missing complete_rate n_empty n_unique max       
+## 1 Beg                   3447        0.862        0     7510 2018-11-20
+## 2 End                  24539        0.0186       0      271 2017-12-31
+## 3 SignatureCountry     15339        0.387        0     2630 2018-11-02
+## 4 Force                 5809        0.768        0     7292 2019-02-28
+## 5 Rat                   7021        0.719        0     8383 2018-11-20
+##   min       
+## 1 1192-06-12
+## 2 1959-06-30
+## 3 1192-06-12
+## 4 1869-07-01
+## 5 1905-12-06
 ## 
 ## $GNEVAR_MEM
 ## ── Data Summary ────────────────────────
@@ -68,29 +74,36 @@ memberships database documentation
 ## Number of columns          13    
 ## _______________________          
 ## Column type frequency:           
-##   character                5     
-##   messydt                  8     
+##   character                7     
+##   mdate                    6     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID                0         1         9    41     0     2288          0
-## 2 CountryID             0         1         3    40     0      239          0
-## 3 Title               221         0.994    15   550     0     2167          0
-## 4 gnevarID             17         1.00      9     9     0     2322          0
-## 5 treatyID              0         1         9    41     0     2307          0
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate min max empty n_unique whitespace
+## 1 manyID                0        1        9  41     0     2288          0
+## 2 CountryID             0        1        3  40     0      239          0
+## 3 Title               221        0.994   15 550     0     2167          0
+## 4 Term              34514        0.0324  10  10     0      287          0
+## 5 Withdrawal        31968        0.104   10  10     0      660          0
+## 6 gnevarID             17        1.00     9   9     0     2322          0
+## 7 treatyID              0        1        9  41     0     2307          0
 ## 
-## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable    n_missing complete_rate n_empty n_unique
-## 1 Beg                     15        1.00         0     1974
-## 2 End                  31818        0.108        0      663
-## 3 SignatureCountry        46        0.999        0     1947
-## 4 Signature               46        0.999        0     1947
-## 5 Rat                  19419        0.456        0     7221
-## 6 Force                 4359        0.878        0     6751
-## 7 Term                 34514        0.0324       0      287
-## 8 Withdrawal           31968        0.104        0      660
+## ── Variable type: mdate ────────────────────────────────────────────────────────
+##   skim_variable    n_missing complete_rate n_empty n_unique max       
+## 1 Beg                     15         1.00        0     1974 9999-12-31
+## 2 End                  31818         0.108       0      663 9999-12-31
+## 3 SignatureCountry        46         0.999       0     1947 9999-12-31
+## 4 Signature               46         0.999       0     1947 9999-12-31
+## 5 Rat                  19419         0.456       0     7221 9999-12-31
+## 6 Force                 4359         0.878       0     6751 9999-12-31
+##   min       
+## 1 1192-06-12
+## 2 1371-07-31
+## 3 1192-06-12
+## 4 1192-06-12
+## 5 1857-12-02
+## 6 1351-08-01
 ## 
 ## $IEADB_MEM
 ## ── Data Summary ────────────────────────
@@ -101,31 +114,38 @@ memberships database documentation
 ## _______________________          
 ## Column type frequency:           
 ##   character                5     
-##   messydt                  6     
+##   mdate                    6     
 ##   numeric                  1     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID                0             1     9    41     0     4390          0
-## 2 CountryID             0             1     3     7     0      196          0
-## 3 Title                 0             1    16   517     0     2153          0
-## 4 DocType               0             1     1     1     0        2          0
-## 5 treatyID              0             1     9    41     0     4427          0
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate min max empty n_unique whitespace
+## 1 manyID                0             1   9  41     0     4390          0
+## 2 CountryID             0             1   3   7     0      196          0
+## 3 Title                 0             1  16 517     0     2153          0
+## 4 DocType               0             1   1   1     0        2          0
+## 5 treatyID              0             1   9  41     0     4427          0
 ## 
-## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable    n_missing complete_rate n_empty n_unique
-## 1 Beg                      0        1            0     6312
-## 2 End                  14595        0.0563       0       70
-## 3 SignatureCountry      5799        0.625        0     3154
-## 4 Signature                0        1            0     1933
-## 5 Rat                   5486        0.645        0     6426
-## 6 Force                    0        1            0     6607
+## ── Variable type: mdate ────────────────────────────────────────────────────────
+##   skim_variable    n_missing complete_rate n_empty n_unique max       
+## 1 Beg                      0        1            0     6312 2899-01-01
+## 2 End                  14595        0.0563       0       70 2020-11-14
+## 3 SignatureCountry      5799        0.625        0     3154 2699-01-01
+## 4 Signature                0        1            0     1933 2017-07-07
+## 5 Rat                   5486        0.645        0     6426 2020-10-27
+## 6 Force                    0        1            0     6607 2999-01-01
+##   min       
+## 1 1901-02-22
+## 2 1911-12-15
+## 3 1901-02-22
+## 4 1901-02-22
+## 5 1902-04-28
+## 6 1902-03-15
 ## 
-## ── Variable type: numeric ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
-## 1 ieadbID               0             1 3232. 1627.    32  2702  3003  3346  8919
+## ── Variable type: numeric ──────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate  mean    sd p0  p25  p50  p75 p100
+## 1 ieadbID               0             1 3232. 1627. 32 2702 3003 3346 8919
 ## 
 ## $TFDD_MEM
 ## ── Data Summary ────────────────────────
@@ -136,27 +156,27 @@ memberships database documentation
 ## _______________________          
 ## Column type frequency:           
 ##   character                5     
-##   messydt                  2     
+##   mdate                    2     
 ##   numeric                  1     
 ## ________________________         
 ## Group variables            None  
 ## 
-## ── Variable type: character ───────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID                0         1         6    41     0      627          0
-## 2 CountryID             2         0.999     3     3     0      158          0
-## 3 Title                 2         0.999    17   455     0      630          0
-## 4 Memberships          28         0.987     3   622     0      239          0
-## 5 treatyID              0         1         6    41     0      634          0
+## ── Variable type: character ────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate min max empty n_unique whitespace
+## 1 manyID                0         1       6  41     0      627          0
+## 2 CountryID             2         0.999   3   3     0      158          0
+## 3 Title                 2         0.999  17 455     0      630          0
+## 4 Memberships          28         0.987   3 622     0      239          0
+## 5 treatyID              0         1       6  41     0      634          0
 ## 
-## ── Variable type: messydt ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique
-## 1 Beg                 133         0.937       0      553
-## 2 Signature           133         0.937       0      553
+## ── Variable type: mdate ────────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate n_empty n_unique max        min       
+## 1 Beg                 133         0.937       0      553 2007-01-19 1900-01-03
+## 2 Signature           133         0.937       0      553 2007-01-19 1900-01-03
 ## 
-## ── Variable type: numeric ─────────────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
-## 1 tfddID                2         0.999  331.  189.     1   174   329   497   646
-}
+## ── Variable type: numeric ──────────────────────────────────────────────────────
+##   skim_variable n_missing complete_rate mean   sd p0 p25 p50 p75 p100
+## 1 tfddID                2         0.999 331. 189.  1 174 329 497  646
+}\if{html}{\out{</div>}}
 }
 \keyword{datasets}
