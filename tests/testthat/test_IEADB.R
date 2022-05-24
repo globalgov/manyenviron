@@ -16,7 +16,8 @@ test_that("datasets have the required variables", {
   pointblank::expect_col_exists(agreements[["IEADB"]], pointblank::vars(Title))
   pointblank::expect_col_exists(agreements[["IEADB"]], pointblank::vars(Beg))
   expect_true(any(grepl("ID$", colnames(agreements[["IEADB"]]))))
-  pointblank::expect_col_exists(agreements[["IEADB"]], pointblank::vars(Signature))
+  pointblank::expect_col_exists(agreements[["IEADB"]],
+                                pointblank::vars(Signature))
 })
 
 # Date columns should be in messydt class
@@ -28,7 +29,7 @@ test_that("Columns are not in date, POSIXct or POSIXlt class", {
 
 # Dates are standardized for mandatory column
 test_that("Column `Beg` has standardised dates", {
-  expect_equal(class(agreements[["IEADB"]]$Beg), "messydt")
+  expect_equal(class(agreements[["IEADB"]]$Beg), "mdate")
   expect_false(any(grepl("/", agreements[["IEADB"]]$Beg)))
   expect_false(any(grepl("^[:alpha:]$",
                          agreements[["IEADB"]]$Beg)))
@@ -41,7 +42,7 @@ test_that("Column `Beg` has standardised dates", {
 })
 
 test_that("Column `Signature` has standardised dates", {
-  expect_equal(class(agreements[["IEADB"]]$Signature), "messydt")
+  expect_equal(class(agreements[["IEADB"]]$Signature), "mdate")
   expect_false(any(grepl("/", agreements[["IEADB"]]$Signature)))
   expect_false(any(grepl("^[:alpha:]$",
                          agreements[["IEADB"]]$Signature)))
