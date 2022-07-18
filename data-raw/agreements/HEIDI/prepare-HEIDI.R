@@ -14,7 +14,7 @@ HEIDI$signature.date <- openxlsx::convertToDate(HEIDI1$signature.date)
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`,
                                                              api_key = api),
-                        Signature = messydates::make_messydates(`signature.date`)) %>%
+                        Signature = messydates::as_messydate(`signature.date`)) %>%
   dplyr::mutate(Beg = Signature) %>%
   dplyr::rename(heidiID = ID) %>%
   dplyr::select(heidiID, Title, Beg, Signature) %>%
@@ -54,4 +54,4 @@ manypkgs::export_data(HEIDI, database = "agreements",
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# in as much detail about the variables etc as possible.

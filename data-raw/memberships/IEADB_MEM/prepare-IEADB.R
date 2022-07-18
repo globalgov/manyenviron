@@ -15,12 +15,12 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                      Title = manypkgs::standardise_titles(treatyname,
                                                           api_key = api),
                      # Define Key API
-                     Signature = messydates::make_messydates(tsig),
-                     SignatureCountry = messydates::make_messydates(csig),
-                     Rat = messydates::make_messydates(crat),
-                     End = messydates::make_messydates(tterm),
-                     Force = messydates::make_messydates(ceif3),
-                     Force2 = messydates::make_messydates(ceif4),
+                     Signature = messydates::as_messydate(tsig),
+                     SignatureCountry = messydates::as_messydate(csig),
+                     Rat = messydates::as_messydate(crat),
+                     End = messydates::as_messydate(tterm),
+                     Force = messydates::as_messydate(ceif3),
+                     Force2 = messydates::as_messydate(ceif4),
                      ieadbID = mitch_id) %>%
   dplyr::mutate(DocType = dplyr::recode(inclusion, "BEA" = "B", "MEA" = "M")) %>%
   dplyr::select(CountryID, Title, Signature, End, Rat, Force,

@@ -25,8 +25,8 @@ IEADB <- as_tibble(IEADB)  %>%
   manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
                      Title = manypkgs::standardise_titles(`Treaty Name`, api_key = api),
                      # Define Key API
-                     Signature = messydates::make_messydates(`Signature Date`),
-                     Force = messydates::make_messydates(`Date IEA entered into force`)) %>%
+                     Signature = messydates::as_messydate(`Signature Date`),
+                     Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
   dplyr::arrange(Beg)
@@ -66,4 +66,4 @@ manypkgs::export_data(IEADB, database = "agreements",
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# in as much detail about the variables etc as possible.

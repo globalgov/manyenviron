@@ -16,8 +16,8 @@ MIA <- as_tibble(MIA) %>%
   dplyr::ungroup() %>%
   dplyr::rename(Name = ioname,
                 COW = ionumber) %>%
-  manydata::transmutate(Beg = messydates::make_messydates(as.character(inception)),
-                     End = messydates::make_messydates(as.character(end))) %>%
+  manydata::transmutate(Beg = messydates::as_messydate(as.character(inception)),
+                     End = messydates::as_messydate(as.character(end))) %>%
   dplyr::select(Name, Beg, End, COW) %>%
   dplyr::arrange(Beg)
 

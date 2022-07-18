@@ -98,7 +98,7 @@ extr_beg2 <- lapply(extr_beg2, function(x) x[-1])
 extr_beg2 <- unlist(extr_beg2)
 
 YIO$Beg <- c(extr_beg1, extr_beg2)
-YIO$Beg <- messydates::make_messydates(YIO$Beg)
+YIO$Beg <- messydates::as_messydate(YIO$Beg)
 
 #Clean the column strings
 YIO$Beg <- stringr::str_remove_all(YIO$Beg, "\n")
