@@ -29,8 +29,7 @@ regimes database documentation
 ## Number of columns          7     
 ## _______________________          
 ## Column type frequency:           
-##   character                5     
-##   mdate                    2     
+##   character                7     
 ## ________________________         
 ## Group variables            None  
 ## 
@@ -38,14 +37,11 @@ regimes database documentation
 ##   skim_variable   n_missing complete_rate min max empty n_unique whitespace
 ## 1 Regime                  0         1      26  63     0       23          0
 ## 2 RegimeComponent        33         0.641  12  85     0       59          0
-## 3 Wat                    34         0.630   4   9     0       14          0
-## 4 Wat2                   78         0.152   4   9     0        3          0
-## 5 RegimeElement           0         1      12  94     0       92          0
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                  36         0.609       0       31 1997-12-31 1946-01-01
-## 2 End                  36         0.609       0        2 1998-12-31 1978-01-01
+## 3 Beg                    36         0.609   4   9     0       31          0
+## 4 Wat                    34         0.630   4   9     0       14          0
+## 5 Wat2                   78         0.152   4   9     0        3          0
+## 6 End                    36         0.609   4   4     0        2          0
+## 7 RegimeElement           0         1      12  94     0       92          0
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

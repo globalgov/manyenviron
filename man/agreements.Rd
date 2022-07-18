@@ -33,151 +33,86 @@ agreements database documentation
 }
 \details{
 \if{html}{\out{<div class="sourceCode">}}\preformatted{## $IEADB
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             3666  
-## Number of columns          10    
-## _______________________          
-## Column type frequency:           
-##   character                7     
-##   mdate                    3     
-## ________________________         
-## Group variables            None  
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            3666|     0     |       0       |
+## |     Title     |  character  |            3666|     0     |       0       |
+## |      Beg      |    mdate    |            3666|    65     |     1.77      |
+## |    DocType    |  character  |            3666|     0     |       0       |
+## | AgreementType |  character  |            3666|     0     |       0       |
+## |   Signature   |    mdate    |            3666|    65     |     1.77      |
+## |     Force     |    mdate    |            3666|    867    |     23.65     |
+## |    Lineage    |  character  |            3666|     0     |       0       |
+## |   treatyID    |  character  |            3666|     0     |       0       |
+## |    ieadbID    |  character  |            3666|     0     |       0       |
+## ----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate min max empty n_unique whitespace
-## 1 manyID                0             1   9  41     0     3542          0
-## 2 Title                 0             1  16 550     0     3375          0
-## 3 DocType               0             1   1   1     0        2          0
-## 4 AgreementType         0             1   1  26     0        4          0
-## 5 Lineage               0             1   2  88     0     1745          0
-## 6 treatyID              0             1   9  39     0     3606          0
-## 7 ieadbID               0             1   1   4     0     3666          0
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                  65         0.982       0     2813 2019-12-13 1351-08-01
-## 2 Signature            65         0.982       0     2813 2019-12-13 1351-08-01
-## 3 Force               867         0.764       0     2138 2999-01-01 1815-07-03
 ## 
 ## $GNEVAR
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             3785  
-## Number of columns          14    
-## _______________________          
-## Column type frequency:           
-##   character                10    
-##   mdate                    4     
-## ________________________         
-## Group variables            None  
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            3785|     0     |       0       |
+## |     Title     |  character  |            3785|     0     |       0       |
+## |      Beg      |    mdate    |            3785|    57     |     1.51      |
+## |      End      |    mdate    |            3785|   3045    |     80.45     |
+## |    DocType    |  character  |            3785|    749    |     19.79     |
+## | AgreementType |  character  |            3785|    793    |     20.95     |
+## |   GeogArea    |  character  |            3785|   1425    |     37.65     |
+## |   Signature   |    mdate    |            3785|    57     |     1.51      |
+## |     Force     |    mdate    |            3785|   1770    |     46.76     |
+## |    Lineage    |  character  |            3785|     0     |       0       |
+## |Memb.conditions|  character  |            3785|    683    |     18.04     |
+## |Memb.procedures|  character  |            3785|    683    |     18.04     |
+## |   treatyID    |  character  |            3785|     0     |       0       |
+## |   gnevarID    |  character  |            3785|    753    |     19.89     |
+## ----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##    skim_variable   n_missing complete_rate min max empty n_unique whitespace
-##  1 manyID                  0         1       9  41     0     3310          0
-##  2 Title                   0         1      15 550     0     3157          0
-##  3 DocType               749         0.802   1   1     0        2          0
-##  4 AgreementType         793         0.790   1   1     0        9          0
-##  5 GeogArea             1425         0.624   1   1     0        6          0
-##  6 Lineage                 0         1       2  88     0     1721          0
-##  7 Memb.conditions       683         0.820   2 104     0      359          0
-##  8 Memb.procedures       683         0.820   2  52     0       11          0
-##  9 treatyID                0         1       9  41     0     3370          0
-## 10 gnevarID              753         0.801   9   9     0     2733          0
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                  57         0.985       0     2702 2068-12-06 1351-08-01
-## 2 End                3045         0.196       0      404 9999-12-31 1371-07-31
-## 3 Signature            57         0.985       0     2702 2068-12-06 1351-08-01
-## 4 Force              1770         0.532       0     1544 2015-05-08 1351-08-01
 ## 
 ## $ECOLEX
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             2174  
-## Number of columns          10    
-## _______________________          
-## Column type frequency:           
-##   character                7     
-##   mdate                    3     
-## ________________________         
-## Group variables            None  
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            2174|     0     |       0       |
+## |     Title     |  character  |            2174|     0     |       0       |
+## |      Beg      |    mdate    |            2174|     0     |       0       |
+## |    DocType    |  character  |            2174|     0     |       0       |
+## |   GeogArea    |  character  |            2174|    90     |     4.14      |
+## |   Signature   |    mdate    |            2174|     0     |       0       |
+## |     Force     |    mdate    |            2174|   1066    |     49.03     |
+## |    Lineage    |  character  |            2174|     0     |       0       |
+## |   treatyID    |  character  |            2174|     0     |       0       |
+## |   ecolexID    |  character  |            2174|     0     |       0       |
+## ----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate min max empty n_unique whitespace
-## 1 manyID                0         1       9  40     0     2130          0
-## 2 Title                 0         1      15 492     0     2146          0
-## 3 DocType               0         1       1   1     0        2          0
-## 4 GeogArea             90         0.959   1   1     0        2          0
-## 5 Lineage               0         1       2  64     0     1349          0
-## 6 treatyID              0         1       9  40     0     2160          0
-## 7 ecolexID              0         1      10  10     0     2174          0
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                   0         1           0     1718 2018-03-04 1868-10-17
-## 2 Signature             0         1           0     1718 2018-03-04 1868-10-17
-## 3 Force              1066         0.510       0      966 2104-08-04 1869-07-01
 ## 
 ## $CIESIN
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             666   
-## Number of columns          7     
-## _______________________          
-## Column type frequency:           
-##   character                4     
-##   mdate                    3     
-## ________________________         
-## Group variables            None  
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |             666|     0     |       0       |
+## |     Title     |  character  |             666|     0     |       0       |
+## |      Beg      |    mdate    |             666|     0     |       0       |
+## |   Signature   |    mdate    |             666|     0     |       0       |
+## |     Force     |    mdate    |             666|     0     |       0       |
+## |    Lineage    |  character  |             666|     0     |       0       |
+## |   treatyID    |  character  |             666|     0     |       0       |
+## ----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate min max empty n_unique whitespace
-## 1 manyID                0             1   6  27     0      657          0
-## 2 Title                 0             1  18 456     0      649          0
-## 3 Lineage               0             1   2  79     0      120          0
-## 4 treatyID              0             1   6  27     0      658          0
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                   0             1       0       80 2012-12-31 1868-01-01
-## 2 Signature             0             1       0       80 2012-12-31 1868-01-01
-## 3 Force                 0             1       0       75 2012-12-31 1869-01-01
 ## 
 ## $HEIDI
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             2280  
-## Number of columns          7     
-## _______________________          
-## Column type frequency:           
-##   character                4     
-##   mdate                    2     
-##   numeric                  1     
-## ________________________         
-## Group variables            None  
-## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate min max empty n_unique whitespace
-## 1 manyID                0             1   9  37     0     2232          0
-## 2 Title                 0             1  16 517     0     2204          0
-## 3 Lineage               0             1   2  63     0     1237          0
-## 4 treatyID              0             1   9  37     0     2271          0
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                  27         0.988       0     1813 2015-12-12 1900-05-11
-## 2 Signature            27         0.988       0     1813 2015-12-12 1900-05-11
-## 
-## ── Variable type: numeric ──────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd p0  p25  p50   p75 p100
-## 1 heidiID               0             1 3193. 2410.  7 915. 2882 4645. 8506
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            2280|     0     |       0       |
+## |     Title     |  character  |            2280|     0     |       0       |
+## |      Beg      |    mdate    |            2280|    27     |     1.18      |
+## |   Signature   |    mdate    |            2280|    27     |     1.18      |
+## |    Lineage    |  character  |            2280|     0     |       0       |
+## |   treatyID    |  character  |            2280|     0     |       0       |
+## |    heidiID    |   numeric   |            2280|     0     |       0       |
+## ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

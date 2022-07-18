@@ -6,12 +6,12 @@
 \title{texts database documentation}
 \format{
 The texts database is a list that contains the
-following 1 datasets: AGR_TXT.
+following 1 datasets: GNEVAR_TXT.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
-\item{AGR_TXT: }{A dataset with 6377 observations and the following
-8 variables: manyID, Title, Beg, Text, Source, ieadbID, gnevarID, ecolexID.}
+\item{GNEVAR_TXT: }{A dataset with 6377 observations and the following
+8 variables: manyID, Title, Beg, TreatyText, Source, ieadbID, gnevarID, ecolexID.}
 }
 }
 \usage{
@@ -21,36 +21,19 @@ texts
 texts database documentation
 }
 \details{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{## $AGR_TXT
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             6377  
-## Number of columns          8     
-## _______________________          
-## Column type frequency:           
-##   character                5     
-##   list                     2     
-##   mdate                    1     
-## ________________________         
-## Group variables            None  
-## 
-## ── Variable type: character ────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate min max empty n_unique whitespace
-## 1 manyID              207         0.968   6  34     0     5794          0
-## 2 Title                 0         1      15 550     0     5649          0
-## 3 ieadbID            2657         0.583   1   4     0     3666          0
-## 4 gnevarID           3587         0.438   9   9     0     2733          0
-## 5 ecolexID           4167         0.347  10  10     0     2174          0
-## 
-## ── Variable type: list ─────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_unique min_length max_length
-## 1 Text               3911         0.387     2123          0        287
-## 2 Source             4749         0.255     1357          1          1
-## 
-## ── Variable type: mdate ────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate n_empty n_unique max        min       
-## 1 Beg                 122         0.981       0     4148 2068-12-06 1351-08-01
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $GNEVAR_TXT
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            6377|    207    |     3.25      |
+## |     Title     |  character  |            6377|     0     |       0       |
+## |      Beg      |    mdate    |            6377|    122    |     1.91      |
+## |  TreatyText   |    list     |            6377|   3911    |     61.33     |
+## |    Source     |    list     |            6377|   4749    |     74.47     |
+## |    ieadbID    |  character  |            6377|   2657    |     41.67     |
+## |   gnevarID    |  character  |            6377|   3587    |     56.25     |
+## |   ecolexID    |  character  |            6377|   4167    |     65.34     |
+## ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}
