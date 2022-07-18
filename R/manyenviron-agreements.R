@@ -19,10 +19,9 @@
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 #' }
-
 #'
 #' @details
 #' ``` {r, echo = FALSE, warning = FALSE}
-#' lapply(agreements, skimr::skim_without_charts)
+#' lapply(agreements, messydates::mreport)
 #' ```
 "agreements"
