@@ -11,8 +11,7 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{GNEVAR_TXT: }{A dataset with 6377 observations and the following
-8 variables: manyID, Title, Beg, TreatyText, Source,
-ieadbID, gnevarID, ecolexID.}
+8 variables: manyID, Title, Beg, TreatyText, Source, ieadbID, gnevarID, ecolexID.}
 }
 }
 \usage{
@@ -29,7 +28,7 @@ texts database documentation
 ## |    manyID     |  character  |            6377|    207    |     3.25      |
 ## |     Title     |  character  |            6377|     0     |       0       |
 ## |      Beg      |    mdate    |            6377|    122    |     1.91      |
-## |  TreatyText   |    list     |            6377|   3912    |     61.35     |
+## |  TreatyText   |    list     |            6377|   3911    |     61.33     |
 ## |    Source     |    list     |            6377|   4749    |     74.47     |
 ## |    ieadbID    |  character  |            6377|   2657    |     41.67     |
 ## |   gnevarID    |  character  |            6377|   3587    |     56.25     |
