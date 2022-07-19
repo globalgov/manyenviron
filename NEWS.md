@@ -1,3 +1,14 @@
+# manyenviron 0.1.3
+
+2022-07-19
+
+## Package
+* Closed #57 by switching back to original logo size 
+* Changed class from 'messydt' to 'mdate' for date variables (`Beg`, `Signature`, `Force`, `End`, `Rat`, `SignatureCountry`, and `Term`) across all databases using `messydates::as_messydate()`
+* Re-exported treaty texts after standardising with `manypkgs::standardise_treaty_text()`
+* Added `accessionC` and `accessionP` variables for accession conditions and procedures respectively in `GNEVAR` dataset in `agreements` database.
+* Updated workflow files to include package caching.
+
 # manyenviron 0.1.2
 
 2022-03-16
@@ -10,7 +21,6 @@
 * Fixed #55 by renaming variables in database to avoid ambiguity
   * Renamed variables "L", "D", and "J" in the agreements database "DocType", "AgreementType", and "GeogArea" respectively
   * Renamed variables "L" and "SignatureC" in memberships database "DocType" and "SignatureCountry" respectively
-
 
 # manyenviron 0.1.1
 
@@ -80,7 +90,7 @@
 
 ## Data changes
 
-* Used new version of `messydates::make_messydates()` to transform dates column in `messydt` class
+* Used new version of `standardise_dates()` to transform dates column in `messydt` class
 * Used new version of `standardise_titles()` on title columns to better standardise specific words spelling
 * Simplified the tests of the databases according to these changes
 
