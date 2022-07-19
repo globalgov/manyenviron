@@ -102,6 +102,9 @@ GNEVAR <- dplyr::left_join(GNEVAR, AGR_TXT,
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
 
+# Add accession conditions and procedures
+
+
 # Select and arrange columns
 GNEVAR <- GNEVAR %>%
   dplyr::select(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
