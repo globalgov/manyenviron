@@ -124,10 +124,6 @@ GNEVAR_TXT$TreatyText <- dplyr::na_if(GNEVAR_TXT$TreatyText, "NULL")
 GNEVAR_TXT$Text <- dplyr::na_if(GNEVAR_TXT$Text, "NULL")
 GNEVAR_TXT$TreatyText <- dplyr::coalesce(GNEVAR_TXT$TreatyText, GNEVAR_TXT$Text)
 
-# Clean texts
-GNEVAR_TXT <- GNEVAR_TXT %>%
-  dplyr::mutate(TreatyText = manypkgs::standardise_texts(TreatyText))
-
 GNEVAR_TXT <- dplyr::as_tibble(GNEVAR_TXT) %>%
   dplyr::rename(Source = `Source.x`) %>%
   dplyr::select(manyID, Title, Beg, Text,

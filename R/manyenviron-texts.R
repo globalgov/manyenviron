@@ -6,8 +6,7 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{GNEVAR_TXT: }{A dataset with 6377 observations and the following
-#' 8 variables: manyID, Title, Beg, TreatyText, Source,
-#' ieadbID, gnevarID, ecolexID.}
+#' 8 variables: manyID, Title, Beg, TreatyText, Source, ieadbID, gnevarID, ecolexID.}
 #' }
 #'
 #' @details
