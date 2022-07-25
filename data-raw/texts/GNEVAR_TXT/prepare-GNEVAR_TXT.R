@@ -124,12 +124,16 @@ GNEVAR_TXT$TreatyText <- dplyr::na_if(GNEVAR_TXT$TreatyText, "NULL")
 GNEVAR_TXT$Text <- dplyr::na_if(GNEVAR_TXT$Text, "NULL")
 GNEVAR_TXT$TreatyText <- dplyr::coalesce(GNEVAR_TXT$TreatyText, GNEVAR_TXT$Text)
 
+# Step six: Clean texts
+GNEVAR_TXT <- GNEVAR_TXT %>%
+  dplyr::mutate(TreatyText = manypkgs::standardise_treaty_text(TreatyText))
+
 GNEVAR_TXT <- dplyr::as_tibble(GNEVAR_TXT) %>%
   dplyr::rename(Source = `Source.x`) %>%
   dplyr::select(manyID, Title, Beg, Text,
                 Source, ieadbID, gnevarID, ecolexID)
 
-# Step six: export data into rda format
+# Step seven: export data into rda format
 manypkgs::export_data(GNEVAR_TXT, database = "texts", URL = "NA")
 # To reduce size of text data stored in package:
 # 1. after exporting GNEVAR_TXT to texts database, 
