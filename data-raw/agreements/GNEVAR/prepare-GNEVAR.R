@@ -109,6 +109,30 @@ GNEVAR <- GNEVAR %>%
                 treatyID, gnevarID) %>%
   dplyr::arrange(Beg)
 
+# Code accession conditions and procedures
+GNEVAR_TXT$accessionC <- manypkgs::code_accession_terms(GNEVAR_TXT$TreatyText,
+                                                        GNEVAR_TXT$Title,
+                                                        accession = "condition")
+GNEVAR_TXT$accessionP <- manypkgs::code_accession_terms(GNEVAR_TXT$TreatyText,
+                                                        accession = "process")
+accession <- GNEVAR_TXT %>%
+  dplyr::select(manyID, Title, Beg, accessionC, accessionP)
+
+GNEVAR <- dplyr::full_join(GNEVAR, accession,
+                           by = c("manyID", "Title", "Beg"))
+
+GNEVAR <- GNEVAR %>%
+  dplyr::select(-c(Memb.conditions, Memb.procedures))
+
+# Remove duplicates and convert NAs
+GNEVAR <- GNEVAR %>%
+  dplyr::relocate(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
+                  Signature, Force, Lineage, accessionC, accessionP) %>%
+  dplyr::mutate(accessionC = gsub("NA", NA, accessionC)) %>%
+  dplyr::mutate(accessionP = gsub("NA", NA, accessionP))
+
+GNEVAR <- subset(GNEVAR, subset = !duplicated(GNEVAR[, c(1,2,3,4,5,6,7,8,9,10,11,12,13,14)]))
+
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.

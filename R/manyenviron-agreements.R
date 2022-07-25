@@ -8,9 +8,9 @@
 #' \item{IEADB: }{A dataset with 3666 observations and the following
 #' 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature,
 #' Force, Lineage, treatyID, ieadbID.}
-#' \item{GNEVAR: }{A dataset with 3785 observations and the following
+#' \item{GNEVAR: }{A dataset with 7273 observations and the following
 #' 14 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-#' Signature, Force, Lineage, Memb.conditions, Memb.procedures, treatyID, gnevarID.}
+#' Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
 #' 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
 #' Lineage, treatyID, ecolexID.}
