@@ -1,13 +1,15 @@
 # manyenviron 0.1.3
 
-2022-07-25
+2022-07-28
 
 ## Package
-* Closed #57 by switching back to original logo size 
-* Changed class from 'messydt' to 'mdate' for date variables (`Beg`, `Signature`, `Force`, `End`, `Rat`, `SignatureCountry`, and `Term`) across all databases using `messydates::as_messydate()`
-* Re-exported treaty texts after standardising with `manypkgs::standardise_treaty_text()`
-* Added `accessionC` and `accessionP` variables for accession conditions and procedures respectively in `GNEVAR` dataset in `agreements` database.
+* Closed #57 by switching back to original logo size.
 * Updated workflow files to include package caching.
+
+## Data
+* Changed class from 'messydt' to 'mdate' for date variables (`Beg`, `Signature`, `Force`, `End`, `Rat`, `SignatureCountry`, and `Term`) across all databases using `messydates::as_messydate()`.
+* Re-exported treaty texts after standardising with `manypkgs::standardise_treaty_text()`.
+* Added `accessionC` and `accessionP` variables for accession conditions and procedures respectively in `GNEVAR` dataset in `agreements` database.
 
 # manyenviron 0.1.2
 
