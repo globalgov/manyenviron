@@ -16,8 +16,9 @@ IRD <- as_tibble(IRD) %>%
                         # Watershed and Watershed2 refer to periods of fundamental change in the regime
                         Wat = messydates::as_messydate(Watershed),
                         Wat2 = messydates::as_messydate(Watershed2)) %>%
-  dplyr::arrange(Beg) %>% 
-  # RegimeComponent is an institutional arrangement that is part of a given regime, such as a protocol
+  dplyr::arrange(Beg) %>%
+  # RegimeComponent is an institutional arrangement that is part of a given regime,
+  # such as a protocol
   # RegimeElement refers to a regulatory area of a given regime for a given time period
   dplyr::select(Regime, RegimeComponent, Beg, Wat, Wat2, End, RegimeElement)
 # manypkgs includes several functions that should help cleaning
@@ -25,8 +26,7 @@ IRD <- as_tibble(IRD) %>%
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make IRD available
-# within the package.
+# Next run the following line to make IRD available within the package.
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure adherence
 # to certain standards.You can hit Cmd-Shift-T (Mac) or Ctrl-Shift-T (Windows)

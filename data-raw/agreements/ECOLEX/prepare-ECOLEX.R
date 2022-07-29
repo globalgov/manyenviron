@@ -24,7 +24,8 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                      Title = manypkgs::standardise_titles(title,
                                                           api_key = api),
                      # Define Key API
-                     Signature = messydates::as_messydate(Date, resequence = "mdy"),
+                     Signature = messydates::as_messydate(Date,
+                                                          resequence = "mdy"),
                      Force = messydates::as_messydate(`Entry.into.force`,
                                                       resequence = "mdy")) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
@@ -43,7 +44,7 @@ manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 ECOLEX <- dplyr::left_join(ECOLEX, manyID, by = "treatyID")
 
 # Re-order the columns
-ECOLEX <- ECOLEX %>% 
+ECOLEX <- ECOLEX %>%
   dplyr::select(manyID, Title, Beg, DocType, GeogArea, Signature,
                 Force, Lineage, treatyID, ecolexID) %>%
   dplyr::arrange(Beg)

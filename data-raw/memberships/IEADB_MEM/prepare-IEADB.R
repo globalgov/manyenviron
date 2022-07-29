@@ -22,7 +22,8 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                      Force = messydates::as_messydate(ceif3),
                      Force2 = messydates::as_messydate(ceif4),
                      ieadbID = mitch_id) %>%
-  dplyr::mutate(DocType = dplyr::recode(inclusion, "BEA" = "B", "MEA" = "M")) %>%
+  dplyr::mutate(DocType = dplyr::recode(inclusion,
+                                        "BEA" = "B", "MEA" = "M")) %>%
   dplyr::select(CountryID, Title, Signature, End, Rat, Force,
                 Force2, SignatureCountry, DocType, ieadbID) %>%
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%

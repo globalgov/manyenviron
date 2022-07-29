@@ -14,11 +14,11 @@ ECOLEX_REF <- purrr::discard(eco_refer, function(x) length(x) == 1) %>%
   purrr::map(function(x) {
     treatyrefs <- grepl("^TRE", x)
     index <- x[1]
-    if(sum(!treatyrefs) == 1) paste(index, x[2], x[3:length(x)], sep = "_")
+    if (sum(!treatyrefs) == 1) {paste(index, x[2], x[3:length(x)], sep = "_")}
     else {
       reftypes <- which(!treatyrefs)
       k <- vector()
-      for(i in reftypes) {
+      for (i in reftypes) {
         j <- ifelse(i == max(reftypes),
                     length(treatyrefs),
                     reftypes[which(reftypes == i) + 1] - 1)

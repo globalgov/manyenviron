@@ -23,12 +23,14 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>%
   dplyr::filter(DocType == "M" | DocType == "B") %>%
   manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
-                     Title = manypkgs::standardise_titles(`Treaty Name`, api_key = api),
+                     Title = manypkgs::standardise_titles(`Treaty Name`,
+                                                          api_key = api),
                      # Define Key API
                      Signature = messydates::as_messydate(`Signature Date`),
                      Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
+  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType,
+                Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column

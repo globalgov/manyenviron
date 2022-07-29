@@ -71,7 +71,7 @@ ecolex_text$TreatyTextb <- lapply(ecolex_text$ecolexID2,
                                                          }))
 
 
-base2 = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/"
+base2 <- "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/"
 ecolex_text$TreatyText2 <- lapply(ecolex_text$ecolexID,
                                   function(s) tryCatch(pdftools::pdf_text(paste0(base2, s, ".pdf")),
                                                        error = function(e) {
@@ -136,7 +136,7 @@ GNEVAR_TXT <- dplyr::as_tibble(GNEVAR_TXT) %>%
 # Step seven: export data into rda format
 manypkgs::export_data(GNEVAR_TXT, database = "texts", URL = "NA")
 # To reduce size of text data stored in package:
-# 1. after exporting GNEVAR_TXT to texts database, 
+# 1. after exporting GNEVAR_TXT to texts database,
 # load 'texts.rda' in environment.
 # 2. Delete 'texts.rda' in 'data' folder.
 # 3. Run `usethis::use_data(texts, internal = F, overwrite = T, compress = "xz")`

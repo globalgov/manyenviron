@@ -16,8 +16,9 @@ GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
 # below (in stage three) passes all the tests.
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>%
-  dplyr::mutate(AgreementType=dplyr::recode(T, G="A", M="E", "T"="Q",
-                                            D="V", R="W", N="X", U="Y")) %>%
+  dplyr::mutate(AgreementType = dplyr::recode(T, G = "A", M = "E", "T" = "Q",
+                                              D = "V", R = "W", N = "X",
+                                              U = "Y")) %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
                      End = messydates::as_messydate(DocEnd),
                      Force = messydates::as_messydate(DocForce),
@@ -87,27 +88,9 @@ GNEVAR <- manydata::consolidate(GNEVAR, row = "any", cols = "any",
 # Add Lineage Column
 GNEVAR$Lineage <- manypkgs::code_lineage(GNEVAR$Title)
 
-# Add membership conditions and procedures columns
-AGR_TXT <- manyenviron::texts$AGR_TXT
-AGR_TXT$Memb.conditions <- manypkgs::code_memberships(AGR_TXT$Text, 
-                                                      AGR_TXT$Title, 
-                                                      memberships = "condition")
-AGR_TXT$Memb.procedures <- manypkgs::code_memberships(AGR_TXT$Text, 
-                                                      memberships = "process")
-AGR_TXT <- dplyr::select(AGR_TXT, manyID, Memb.conditions, Memb.procedures)
-GNEVAR <- dplyr::left_join(GNEVAR, AGR_TXT,
-                           by = "manyID")
-
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
-
-# Select and arrange columns
-GNEVAR <- GNEVAR %>%
-  dplyr::select(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-                Signature, Force, Lineage, Memb.conditions, Memb.procedures, 
-                treatyID, gnevarID) %>%
-  dplyr::arrange(Beg)
 
 # Code accession conditions and procedures
 GNEVAR_TXT$accessionC <- manypkgs::code_accession_terms(GNEVAR_TXT$TreatyText,
@@ -121,15 +104,13 @@ accession <- GNEVAR_TXT %>%
 GNEVAR <- dplyr::full_join(GNEVAR, accession,
                            by = c("manyID", "Title", "Beg"))
 
-GNEVAR <- GNEVAR %>%
-  dplyr::select(-c(Memb.conditions, Memb.procedures))
-
 # Remove duplicates and convert NAs
 GNEVAR <- GNEVAR %>%
   dplyr::relocate(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
                   Signature, Force, Lineage, accessionC, accessionP) %>%
   dplyr::mutate(accessionC = gsub("NA", NA, accessionC)) %>%
-  dplyr::mutate(accessionP = gsub("NA", NA, accessionP))
+  dplyr::mutate(accessionP = gsub("NA", NA, accessionP)) %>%
+  dplyr::arrange(Beg)
 
 GNEVAR <- subset(GNEVAR, subset = !duplicated(GNEVAR[, c(1,2,3,4,5,6,7,8,9,10,11,12,13,14)]))
 
@@ -149,5 +130,5 @@ manypkgs::export_data(GNEVAR, database = "agreements", URL = "NA")
 # you to return to stage two and further clean, standardise, or wrangle
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
-# Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# Please make sure that you cite any sources appropriately and
+# fill in as much detail about the variables etc as possible.
