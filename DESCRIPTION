@@ -1,7 +1,7 @@
 Package: manyenviron
 Title: Environmental Agreements for the many Universe
 Version: 0.1.3
-Date: 2022-07-29
+Date: 2022-08-02
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
@@ -29,9 +29,8 @@ Description: Ensemble of data on international environmental agreements,
 License: CC BY 4.0
 Depends: 
     R (>= 3.5.0)
-Imports:
-    manydata
 Suggests:
+    manydata,
     pointblank,
     testthat (>= 3.0.0),
     lubridate,
