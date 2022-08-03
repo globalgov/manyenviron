@@ -28,9 +28,9 @@ Description: Ensemble of data on international environmental agreements,
     and states membership in them for research use.
 License: CC BY 4.0
 Depends: 
-    R (>= 3.5.0)
+    R (>= 3.5.0),
+    manydata
 Suggests:
-    manydata,
     pointblank,
     testthat (>= 3.0.0),
     lubridate,
