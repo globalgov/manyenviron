@@ -1,5 +1,6 @@
 #' texts database documentation
 #'
+#' @import manydata
 #' @format The texts database is a list that contains the
 #' following 1 datasets: GNEVAR_TXT.
 #' For more information and references to each of the datasets used,
@@ -9,7 +10,7 @@
 #' 8 variables: manyID, Title, Beg, TreatyText, Source, ieadbID, gnevarID,
 #' ecolexID.}
 #' }
-#'
+#' 
 #' @details
 #' ``` {r, echo = FALSE, warning = FALSE}
 #' lapply(texts, messydates::mreport)
