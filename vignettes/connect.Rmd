@@ -71,14 +71,14 @@ library(ggplot2)
 library(migraph)
 
 # Get dataset
-references <- manyenviron::references$ECOLEX_REF %>% 
+references <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
   dplyr::filter(RefType == "Cites") %>%
   dplyr::arrange(year)
 
 # Plot with migraph
-migraph::gglineage(references[1:25,c(1,2,3)]) +
+migraph::gglineage(references[1:25, c(1, 2, 3)]) +
   labs(title = "Treaty Lineage of Selected Agreements",
        caption = "Source: manyenviron") +
   theme(plot.title = element_text(family = "sans",
@@ -92,7 +92,7 @@ Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 # Subset dataset
-ramsa <- manyenviron::references$ECOLEX_REF %>% 
+ramsa <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
   dplyr::filter(RefType == "Amends" & treatyID2 == "RAMSA_1971A") %>%
@@ -100,7 +100,7 @@ ramsa <- manyenviron::references$ECOLEX_REF %>%
 
 # Get agreement titles
 agreementtitles <- manyenviron::agreements$ECOLEX %>%
-  dplyr::select(Title, treatyID) %>% 
+  dplyr::select(Title, treatyID) %>%
   dplyr::rename(treatyID1 = treatyID)
 
 # Join information
@@ -191,8 +191,10 @@ vert_ids <- V(membership_1980)[components$membership == biggest_component_id]
 membership_1980 <- igraph::induced_subgraph(membership_1980, vert_ids)
 
 # Define the 3D layout
-membership_1980$layout <- graphlayouts::layout_as_multilevel(membership_1980, type = "all",
-                                                             alpha = 25, beta = 45,
+membership_1980$layout <- graphlayouts::layout_as_multilevel(membership_1980,
+                                                             type = "all",
+                                                             alpha = 25,
+                                                             beta = 45,
                                                              project2D = FALSE)
 V(membership_1980)$color <- c("#014D23", "#36648A")[V(membership_1980)$lvl]
 V(membership_1980)$vertex.label <- V(membership_1980)$name
@@ -228,7 +230,7 @@ membership_1980 <- igraph::get.data.frame(membership_1980, "edges")
 
 # Get the coordinates of the centroids of each territory
 wmap <- getMap(resolution="high")
-centroids <- gCentroid(wmap, byid=TRUE)
+centroids <- gCentroid(wmap, byid = TRUE)
 centroids$ID <- countrycode::countrycode(rownames(as.data.frame(centroids)),
                                          "country.name", "cowc")
 centroids <- dplyr::as_tibble(centroids) %>%
@@ -239,7 +241,8 @@ centroids <- dplyr::as_tibble(centroids) %>%
 merged <- merge(centroids, membership_1980, by.x = "ID", by.y = "from")
 merged <- dplyr::rename(merged, origin_long = long, origin_lat = lat)
 merged <- merge(centroids, merged, by.x = "ID", by.y = "to")
-merged <- dplyr::rename(merged, dest_lat = lat, dest_long = long,ID_from = ID, ID_to = ID.y) %>%
+merged <- dplyr::rename(merged, dest_lat = lat, dest_long = long,
+                        ID_from = ID, ID_to = ID.y) %>%
   dplyr::relocate(ID_from, ID_to, origin_lat, origin_long, dest_lat, dest_long)
 
 # Create arcs dataframe

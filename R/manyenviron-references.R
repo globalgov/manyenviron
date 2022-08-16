@@ -8,10 +8,9 @@
 #' \item{ECOLEX_REF: }{A dataset with 1164 observations and the following
 #' 3 variables: treatyID1, treatyID2, RefType.}
 #' }
-
 #'
 #' @details
 #' ``` {r, echo = FALSE, warning = FALSE}
-#' lapply(references, skimr::skim_without_charts)
+#' lapply(references, messydates::mreport)
 #' ```
 "references"

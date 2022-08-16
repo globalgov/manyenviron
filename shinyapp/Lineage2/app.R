@@ -1,19 +1,10 @@
 #
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 # library(shiny)
 # library(shinydashboard)
 # library(tidyverse)
 # library(migraph)
 
-# Set working directory in this folder first using setwd() function
-references <- readr::read_csv2("references.csv")
+references <- manyenviron::references
 references$action <- stringr::str_replace_na(references$action, "other")
 
 # Prepare dashboard interface

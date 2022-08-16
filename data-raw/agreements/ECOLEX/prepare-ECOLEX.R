@@ -24,8 +24,10 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                      Title = manypkgs::standardise_titles(title,
                                                           api_key = api),
                      # Define Key API
-                     Signature = manypkgs::standardise_dates(lubridate::mdy(Date)),
-                     Force = manypkgs::standardise_dates(lubridate::mdy(`Entry.into.force`))) %>%
+                     Signature = messydates::as_messydate(Date,
+                                                          resequence = "mdy"),
+                     Force = messydates::as_messydate(`Entry.into.force`,
+                                                      resequence = "mdy")) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(ecolexID, Title, Beg, DocType, GeogArea, Signature, Force) %>%
   dplyr::arrange(Beg)
@@ -42,7 +44,7 @@ manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 ECOLEX <- dplyr::left_join(ECOLEX, manyID, by = "treatyID")
 
 # Re-order the columns
-ECOLEX <- ECOLEX %>% 
+ECOLEX <- ECOLEX %>%
   dplyr::select(manyID, Title, Beg, DocType, GeogArea, Signature,
                 Force, Lineage, treatyID, ecolexID) %>%
   dplyr::arrange(Beg)
@@ -66,4 +68,4 @@ manypkgs::export_data(ECOLEX,
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# in as much detail about the variables etc as possible.

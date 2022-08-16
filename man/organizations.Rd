@@ -23,47 +23,26 @@ organizations
 organizations database documentation
 }
 \details{
-\preformatted{## $MIA
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             78    
-## Number of columns          4     
-## _______________________          
-## Column type frequency:           
-##   character                3     
-##   numeric                  1     
-## ________________________         
-## Group variables            None  
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $MIA
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |     Name      |  character  |              78|     0     |       0       |
+## |      Beg      |    mdate    |              78|     0     |       0       |
+## |      End      |    mdate    |              78|    78     |      100      |
+## |      COW      |   numeric   |              78|     0     |       0       |
+## ----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 Name                  0             1     2     8     0       78          0
-## 2 Beg                   0             1     4     4     0       44          0
-## 3 End                  78             0    NA    NA     0        0          0
-## 
-## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
-## 1 COW                   0             1 2671. 1348.   270 1538.  2636 3838.  5550
 ## 
 ## $YIO
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             75115 
-## Number of columns          4     
-## _______________________          
-## Column type frequency:           
-##   character                4     
-## ________________________         
-## Group variables            None  
-## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 Title                 0         1         2   329     0    74963          0
-## 2 Abbreviation      29296         0.610     2    53     0    33609          0
-## 3 Beg               23141         0.692     4     5     0      390          0
-## 4 Country           28101         0.626     2    21     0      216          0
-}
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |     Title     |  character  |           75115|     0     |       0       |
+## | Abbreviation  |  character  |           75115|   29296   |      39       |
+## |      Beg      |    mdate    |           75115|   23141   |     30.81     |
+## |    Country    |  character  |           75115|   28101   |     37.41     |
+## ----------------------------------------------------------------------------
+}\if{html}{\out{</div>}}
 }
 \keyword{datasets}

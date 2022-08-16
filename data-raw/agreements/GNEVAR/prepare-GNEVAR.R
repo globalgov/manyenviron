@@ -16,11 +16,12 @@ GNEVAR5 <- readr::read_csv2("data-raw/agreements/GNEVAR/duplicates v1.0.csv")
 # below (in stage three) passes all the tests.
 GNEVAR <- as_tibble(GNEVAR)  %>%
   tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>%
-  dplyr::mutate(AgreementType=dplyr::recode(T, G="A", M="E", "T"="Q",
-                                            D="V", R="W", N="X", U="Y")) %>%
-  manydata::transmutate(Signature = manypkgs::standardise_dates(DocSign),
-                     End = manypkgs::standardise_dates(DocEnd),
-                     Force = manypkgs::standardise_dates(DocForce),
+  dplyr::mutate(AgreementType = dplyr::recode(T, G = "A", M = "E", "T" = "Q",
+                                              D = "V", R = "W", N = "X",
+                                              U = "Y")) %>%
+  manydata::transmutate(Signature = messydates::as_messydate(DocSign),
+                     End = messydates::as_messydate(DocEnd),
+                     Force = messydates::as_messydate(DocForce),
                      gnevarID = GENG,
                      ecolexID = ECOLEX) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
@@ -43,11 +44,11 @@ GNEVAR2 <- as_tibble(GNEVAR2) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
   # Define Key API
-  dplyr::mutate(Beg = manypkgs::standardise_dates(Beg)) %>%
-  dplyr::mutate(End = manypkgs::standardise_dates(End)) %>%
-  dplyr::mutate(Force = manypkgs::standardise_dates(Force)) %>%
-  dplyr::mutate(Term = manypkgs::standardise_dates(Term)) %>%
-  manydata::transmutate(Signature = manypkgs::standardise_dates(Sign))
+  dplyr::mutate(Beg = messydates::as_messydate(Beg)) %>%
+  dplyr::mutate(End = messydates::as_messydate(End)) %>%
+  dplyr::mutate(Force = messydates::as_messydate(Force)) %>%
+  dplyr::mutate(Term = messydates::as_messydate(Term)) %>%
+  manydata::transmutate(Signature = messydates::as_messydate(Sign))
 
 # Add treatyID column
 GNEVAR2$treatyID <- manypkgs::code_agreements(GNEVAR2,
@@ -59,9 +60,9 @@ GNEVAR2$treatyID <- manypkgs::code_agreements(GNEVAR2,
 # Clean GNEVAR4
 GNEVAR4$Parties <- paste0(GNEVAR4$Country.x, "-", GNEVAR4$Country.y)
 GNEVAR4 <- as_tibble(GNEVAR4) %>%
-  manydata::transmutate(Signature = manypkgs::standardise_dates(DocDate),
-                     Force = manypkgs::standardise_dates(InForce)) %>%
-  dplyr::mutate(End = manypkgs::standardise_dates(End)) %>%
+  manydata::transmutate(Signature = messydates::as_messydate(DocDate),
+                     Force = messydates::as_messydate(InForce)) %>%
+  dplyr::mutate(End = messydates::as_messydate(End)) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
   # Define Key API
@@ -91,11 +92,27 @@ GNEVAR$Lineage <- manypkgs::code_lineage(GNEVAR$Title)
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 GNEVAR <- dplyr::left_join(GNEVAR, manyID, by = "treatyID")
 
-# Select and arrange columns
+# Code accession conditions and procedures
+GNEVAR_TXT$accessionC <- manypkgs::code_accession_terms(GNEVAR_TXT$TreatyText,
+                                                        GNEVAR_TXT$Title,
+                                                        accession = "condition")
+GNEVAR_TXT$accessionP <- manypkgs::code_accession_terms(GNEVAR_TXT$TreatyText,
+                                                        accession = "process")
+accession <- GNEVAR_TXT %>%
+  dplyr::select(manyID, Title, Beg, accessionC, accessionP)
+
+GNEVAR <- dplyr::full_join(GNEVAR, accession,
+                           by = c("manyID", "Title", "Beg"))
+
+# Remove duplicates and convert NAs
 GNEVAR <- GNEVAR %>%
-  dplyr::select(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-                Signature, Force, Lineage, treatyID, gnevarID) %>%
+  dplyr::relocate(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
+                  Signature, Force, Lineage, accessionC, accessionP) %>%
+  dplyr::mutate(accessionC = gsub("NA", NA, accessionC)) %>%
+  dplyr::mutate(accessionP = gsub("NA", NA, accessionP)) %>%
   dplyr::arrange(Beg)
+
+GNEVAR <- subset(GNEVAR, subset = !duplicated(GNEVAR[, c(1,2,3,4,5,6,7,8,9,10,11,12,13,14)]))
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
@@ -113,5 +130,5 @@ manypkgs::export_data(GNEVAR, database = "agreements", URL = "NA")
 # you to return to stage two and further clean, standardise, or wrangle
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
-# Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# Please make sure that you cite any sources appropriately and
+# fill in as much detail about the variables etc as possible.

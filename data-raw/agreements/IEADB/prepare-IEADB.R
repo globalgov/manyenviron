@@ -14,7 +14,7 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(AgreementType = dplyr::recode(`Agreement Type (level 2)`,
                                   "Agreement" = "A",
                                   "Amendment" = "E",
-                                  "Agreed Minute (non-binding)" ="Q",
+                                  "Agreed Minute (non-binding)" = "Q",
                                   "Declaration" = "V",
                                   "Resolution" = "W",
                                   "Exchange of Notes" = "X",
@@ -23,12 +23,14 @@ IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>%
   dplyr::filter(DocType == "M" | DocType == "B") %>%
   manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
-                     Title = manypkgs::standardise_titles(`Treaty Name`, api_key = api),
+                     Title = manypkgs::standardise_titles(`Treaty Name`,
+                                                          api_key = api),
                      # Define Key API
-                     Signature = manypkgs::standardise_dates(`Signature Date`),
-                     Force = manypkgs::standardise_dates(`Date IEA entered into force`)) %>%
+                     Signature = messydates::as_messydate(`Signature Date`),
+                     Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
+  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType,
+                Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
@@ -66,4 +68,4 @@ manypkgs::export_data(IEADB, database = "agreements",
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# in as much detail about the variables etc as possible.

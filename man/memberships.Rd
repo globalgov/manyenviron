@@ -11,13 +11,17 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force, Rat, ecolexID, treatyID.}
+10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force,
+Rat, ecolexID, treatyID.}
 \item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
+13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
+Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
 \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Signature, Rat, Force, DocType, ieadbID, treatyID.}
+12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
+Signature, Rat, Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships, treatyID.}
+8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships,
+treatyID.}
 }
 }
 \usage{
@@ -27,116 +31,75 @@ memberships
 memberships database documentation
 }
 \details{
-\preformatted{## $ECOLEX_MEM
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             25003 
-## Number of columns          10    
-## _______________________          
-## Column type frequency:           
-##   character                10    
-## ________________________         
-## Group variables            None  
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## $ECOLEX_MEM
+## -----------------------------------------------------------------------------
+## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## -----------------------------------------------------------------------------
+## |     manyID     |  character  |           25003|     0     |       0       |
+## |   CountryID    |  character  |           25003|    22     |     0.09      |
+## |     Title      |  character  |           25003|     0     |       0       |
+## |      Beg       |    mdate    |           25003|   3447    |     13.79     |
+## |      End       |    mdate    |           25003|   24539   |     98.14     |
+## |SignatureCountry|    mdate    |           25003|   15339   |     61.35     |
+## |     Force      |    mdate    |           25003|   5809    |     23.23     |
+## |      Rat       |    mdate    |           25003|   7021    |     28.08     |
+## |    ecolexID    |  character  |           25003|     0     |       0       |
+## |    treatyID    |  character  |           25003|     0     |       0       |
+## -----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
-##    skim_variable    n_missing complete_rate   min   max empty n_unique whitespace
-##  1 manyID                   0        1          9    41     0     5956          0
-##  2 CountryID               22        0.999      3     3     0      214          0
-##  3 Title                    0        1         15   492     0     2141          0
-##  4 Beg                   3447        0.862     10    10     0     7510          0
-##  5 End                  24539        0.0186    10    10     0      271          0
-##  6 SignatureCountry     15339        0.387     10    10     0     2630          0
-##  7 Force                 5809        0.768     10    10     0     7292          0
-##  8 Rat                   7021        0.719     10    10     0     8383          0
-##  9 ecolexID                 0        1         10    10     0     2169          0
-## 10 treatyID                 0        1          9    41     0     6145          0
 ## 
 ## $GNEVAR_MEM
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             35671 
-## Number of columns          13    
-## _______________________          
-## Column type frequency:           
-##   character                13    
-## ________________________         
-## Group variables            None  
+## -----------------------------------------------------------------------------
+## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## -----------------------------------------------------------------------------
+## |     manyID     |  character  |           35671|     0     |       0       |
+## |   CountryID    |  character  |           35671|     0     |       0       |
+## |     Title      |  character  |           35671|    221    |     0.62      |
+## |      Beg       |    mdate    |           35671|    15     |     0.04      |
+## |      End       |    mdate    |           35671|   31818   |     89.2      |
+## |SignatureCountry|    mdate    |           35671|    46     |     0.13      |
+## |   Signature    |    mdate    |           35671|    46     |     0.13      |
+## |      Rat       |    mdate    |           35671|   19419   |     54.44     |
+## |     Force      |    mdate    |           35671|   4359    |     12.22     |
+## |      Term      |   messydt   |           35671|   34514   |     96.76     |
+## |   Withdrawal   |   messydt   |           35671|   31968   |     89.62     |
+## |    gnevarID    |  character  |           35671|    17     |     0.05      |
+## |    treatyID    |  character  |           35671|     0     |       0       |
+## -----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
-##    skim_variable    n_missing complete_rate   min   max empty n_unique whitespace
-##  1 manyID                   0        1          9    41     0     2288          0
-##  2 CountryID                0        1          3    40     0      239          0
-##  3 Title                  221        0.994     15   550     0     2167          0
-##  4 Beg                     15        1.00      10    10     0     1974          0
-##  5 End                  31818        0.108     10    10     0      663          0
-##  6 SignatureCountry        46        0.999     10    10     0     1947          0
-##  7 Signature               46        0.999     10    10     0     1947          0
-##  8 Rat                  19419        0.456     10    10     0     7221          0
-##  9 Force                 4359        0.878     10    10     0     6751          0
-## 10 Term                 34514        0.0324    10    10     0      287          0
-## 11 Withdrawal           31968        0.104     10    10     0      660          0
-## 12 gnevarID                17        1.00       9     9     0     2322          0
-## 13 treatyID                 0        1          9    41     0     2307          0
 ## 
 ## $IEADB_MEM
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             15466 
-## Number of columns          12    
-## _______________________          
-## Column type frequency:           
-##   character                11    
-##   numeric                  1     
-## ________________________         
-## Group variables            None  
+## -----------------------------------------------------------------------------
+## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## -----------------------------------------------------------------------------
+## |     manyID     |  character  |           15466|     0     |       0       |
+## |   CountryID    |  character  |           15466|     0     |       0       |
+## |     Title      |  character  |           15466|     0     |       0       |
+## |      Beg       |    mdate    |           15466|     0     |       0       |
+## |      End       |    mdate    |           15466|   14595   |     94.37     |
+## |SignatureCountry|    mdate    |           15466|   5799    |     37.5      |
+## |   Signature    |    mdate    |           15466|     0     |       0       |
+## |      Rat       |    mdate    |           15466|   5486    |     35.47     |
+## |     Force      |    mdate    |           15466|     0     |       0       |
+## |    DocType     |  character  |           15466|     0     |       0       |
+## |    ieadbID     |   numeric   |           15466|     0     |       0       |
+## |    treatyID    |  character  |           15466|     0     |       0       |
+## -----------------------------------------------------------------------------
 ## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
-##    skim_variable    n_missing complete_rate   min   max empty n_unique whitespace
-##  1 manyID                   0        1          9    41     0     4390          0
-##  2 CountryID                0        1          3     7     0      196          0
-##  3 Title                    0        1         16   517     0     2153          0
-##  4 Beg                      0        1         10    10     0     6312          0
-##  5 End                  14595        0.0563    10    10     0       70          0
-##  6 SignatureCountry      5799        0.625     10    10     0     3154          0
-##  7 Signature                0        1         10    10     0     1933          0
-##  8 Rat                   5486        0.645     10    10     0     6426          0
-##  9 Force                    0        1         10    10     0     6607          0
-## 10 DocType                  0        1          1     1     0        2          0
-## 11 treatyID                 0        1          9    41     0     4427          0
-## 
-## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
-## 1 ieadbID               0             1 3232. 1627.    32  2702  3003  3346  8919
 ## 
 ## $TFDD_MEM
-## ── Data Summary ────────────────────────
-##                            Values
-## Name                       X[[i]]
-## Number of rows             2118  
-## Number of columns          8     
-## _______________________          
-## Column type frequency:           
-##   character                7     
-##   numeric                  1     
-## ________________________         
-## Group variables            None  
-## 
-## ── Variable type: character ──────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate   min   max empty n_unique whitespace
-## 1 manyID                0         1         6    41     0      627          0
-## 2 CountryID             2         0.999     3     3     0      158          0
-## 3 Title                 2         0.999    17   455     0      630          0
-## 4 Beg                 133         0.937    10    10     0      553          0
-## 5 Signature           133         0.937    10    10     0      553          0
-## 6 Memberships          28         0.987     3   622     0      239          0
-## 7 treatyID              0         1         6    41     0      634          0
-## 
-## ── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────
-##   skim_variable n_missing complete_rate  mean    sd    p0   p25   p50   p75  p100
-## 1 tfddID                2         0.999  331.  189.     1   174   329   497   646
-}
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            2118|     0     |       0       |
+## |   CountryID   |  character  |            2118|     2     |     0.09      |
+## |     Title     |  character  |            2118|     2     |     0.09      |
+## |      Beg      |    mdate    |            2118|    133    |     6.28      |
+## |   Signature   |    mdate    |            2118|    133    |     6.28      |
+## |    tfddID     |   numeric   |            2118|     2     |     0.09      |
+## |  Memberships  |  character  |            2118|    28     |     1.32      |
+## |   treatyID    |  character  |            2118|     0     |       0       |
+## ----------------------------------------------------------------------------
+}\if{html}{\out{</div>}}
 }
 \keyword{datasets}

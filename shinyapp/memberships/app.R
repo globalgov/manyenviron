@@ -3,18 +3,15 @@
 # library(dplyr)
 
 # Prepare memberships dataset
-# memberships <- manyenviron::memberships$IEADB_MEM[,c(1,2,3)]
-# memberships$type <- manypkgs::code_type(memberships$Title)
-# memberships$agr_type <- ifelse(stringr::str_detect(memberships$type, "A"), "Agreement",
-#                                (ifelse(stringr::str_detect(memberships$type, "P"), "Protocol",
-#                                        (ifelse(stringr::str_detect(memberships$type, "E"), "Amendment",
-#                                                (ifelse(stringr::str_detect(memberships$type, "N"), "Notes",
-#                                                        (ifelse(stringr::str_detect(memberships$type, "S"), "Strategy",
-#                                                                (ifelse(stringr::str_detect(memberships$type, "R"), "Resolution",NA)))))))))))
-# write.csv(memberships, "memberships.csv")
+memberships <- manyenviron::memberships$IEADB_MEM[,c(1,2,3)]
+memberships$type <- manypkgs::code_type(memberships$Title)
+memberships$agr_type <- ifelse(stringr::str_detect(memberships$type, "A"), "Agreement",
+                               (ifelse(stringr::str_detect(memberships$type, "P"), "Protocol",
+                                       (ifelse(stringr::str_detect(memberships$type, "E"), "Amendment",
+                                               (ifelse(stringr::str_detect(memberships$type, "N"), "Notes",
+                                                       (ifelse(stringr::str_detect(memberships$type, "S"), "Strategy",
+                                                               (ifelse(stringr::str_detect(memberships$type, "R"), "Resolution",NA)))))))))))
 
-# Read data
-memberships <- readr::read_csv("memberships.csv")
 # Define UI 
 ui <- shinydashboard::dashboardPage(
   shinydashboard::dashboardHeader(title = "Type of Environmental Treaties", titleWidth = "400"),
