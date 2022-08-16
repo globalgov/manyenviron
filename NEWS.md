@@ -1,6 +1,6 @@
 # manyenviron 0.1.3
 
-2022-08-02
+2022-08-16
 
 ## Package
 * Closed #57 by switching back to original logo size.
