@@ -6,24 +6,9 @@
 \title{agreements database documentation}
 \format{
 The agreements database is a list that contains the
-following 5 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI.
+following 6 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI, HUGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
-\describe{
-\item{IEADB: }{A dataset with 3666 observations and the following
-10 variables: manyID, Title, Beg, DocType, AgreementType, Signature,
-Force, Lineage, treatyID, ieadbID.}
-\item{GNEVAR: }{A dataset with 7273 observations and the following
-14 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID.}
-\item{ECOLEX: }{A dataset with 2174 observations and the following
-10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
-Lineage, treatyID, ecolexID.}
-\item{CIESIN: }{A dataset with 666 observations and the following
-7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
-\item{HEIDI: }{A dataset with 2280 observations and the following
-7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
-}
 }
 \usage{
 agreements
@@ -46,27 +31,6 @@ agreements database documentation
 ## |    Lineage    |  character  |            3666|     0     |       0       |
 ## |   treatyID    |  character  |            3666|     0     |       0       |
 ## |    ieadbID    |  character  |            3666|     0     |       0       |
-## ----------------------------------------------------------------------------
-## 
-## 
-## $GNEVAR
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |            7273|    165    |     2.27      |
-## |     Title     |  character  |            7273|     0     |       0       |
-## |      Beg      |    mdate    |            7273|    137    |     1.88      |
-## |      End      |    mdate    |            7273|   6599    |     90.73     |
-## |    DocType    |  character  |            7273|   4523    |     62.19     |
-## | AgreementType |  character  |            7273|   4561    |     62.71     |
-## |   GeogArea    |  character  |            7273|   5132    |     70.56     |
-## |   Signature   |    mdate    |            7273|   3903    |     53.66     |
-## |     Force     |    mdate    |            7273|   5453    |     74.98     |
-## |    Lineage    |  character  |            7273|   3846    |     52.88     |
-## |  accessionC   |  character  |            7273|   2132    |     29.31     |
-## |  accessionP   |  character  |            7273|   6737    |     92.63     |
-## |   treatyID    |  character  |            7273|   3846    |     52.88     |
-## |   gnevarID    |  character  |            7273|   4527    |     62.24     |
 ## ----------------------------------------------------------------------------
 ## 
 ## 
@@ -112,6 +76,29 @@ agreements database documentation
 ## |    Lineage    |  character  |            2280|     0     |       0       |
 ## |   treatyID    |  character  |            2280|     0     |       0       |
 ## |    heidiID    |   numeric   |            2280|     0     |       0       |
+## ----------------------------------------------------------------------------
+## 
+## 
+## $HUGGO
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            8213|    825    |     10.05     |
+## |     Title     |  character  |            8213|     0     |       0       |
+## |      Beg      |    mdate    |            8213|    457    |     5.56      |
+## |      End      |    mdate    |            8213|   7526    |     91.64     |
+## |    DocType    |  character  |            8213|   5353    |     65.18     |
+## | AgreementType |  character  |            8213|   5391    |     65.64     |
+## |   GeogArea    |  character  |            8213|   6022    |     73.32     |
+## |   Signature   |    mdate    |            8213|   4710    |     57.35     |
+## |     Force     |    mdate    |            8213|   6306    |     76.78     |
+## |    Lineage    |  character  |            8213|   4653    |     56.65     |
+## |  accessionC   |  character  |            8213|   2387    |     29.06     |
+## |  accessionP   |  character  |            8213|   7643    |     93.06     |
+## |   treatyID    |  character  |            8213|   4653    |     56.65     |
+## |   gnevarID    |  character  |            8213|   5357    |     65.23     |
+## |  TreatyText   |    list     |            8213|   4120    |     50.16     |
+## |    Source     |    list     |            8213|   5037    |     61.33     |
 ## ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
