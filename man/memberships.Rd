@@ -6,23 +6,9 @@
 \title{memberships database documentation}
 \format{
 The memberships database is a list that contains the
-following 4 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM.
+following 5 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
-\describe{
-\item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force,
-Rat, ecolexID, treatyID.}
-\item{GNEVAR_MEM: }{A dataset with 35671 observations and the following
-13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
-Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
-\item{IEADB_MEM: }{A dataset with 15466 observations and the following
-12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
-Signature, Rat, Force, DocType, ieadbID, treatyID.}
-\item{TFDD_MEM: }{A dataset with 2118 observations and the following
-8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships,
-treatyID.}
-}
 }
 \usage{
 memberships
@@ -45,26 +31,6 @@ memberships database documentation
 ## |      Rat       |    mdate    |           25003|   7021    |     28.08     |
 ## |    ecolexID    |  character  |           25003|     0     |       0       |
 ## |    treatyID    |  character  |           25003|     0     |       0       |
-## -----------------------------------------------------------------------------
-## 
-## 
-## $GNEVAR_MEM
-## -----------------------------------------------------------------------------
-## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## -----------------------------------------------------------------------------
-## |     manyID     |  character  |           35671|     0     |       0       |
-## |   CountryID    |  character  |           35671|     0     |       0       |
-## |     Title      |  character  |           35671|    221    |     0.62      |
-## |      Beg       |    mdate    |           35671|    15     |     0.04      |
-## |      End       |    mdate    |           35671|   31818   |     89.2      |
-## |SignatureCountry|    mdate    |           35671|    46     |     0.13      |
-## |   Signature    |    mdate    |           35671|    46     |     0.13      |
-## |      Rat       |    mdate    |           35671|   19419   |     54.44     |
-## |     Force      |    mdate    |           35671|   4359    |     12.22     |
-## |      Term      |   messydt   |           35671|   34514   |     96.76     |
-## |   Withdrawal   |   messydt   |           35671|   31968   |     89.62     |
-## |    gnevarID    |  character  |           35671|    17     |     0.05      |
-## |    treatyID    |  character  |           35671|     0     |       0       |
 ## -----------------------------------------------------------------------------
 ## 
 ## 
@@ -100,6 +66,26 @@ memberships database documentation
 ## |  Memberships  |  character  |            2118|    28     |     1.32      |
 ## |   treatyID    |  character  |            2118|     0     |       0       |
 ## ----------------------------------------------------------------------------
+## 
+## 
+## $HUGGO_MEM
+## -----------------------------------------------------------------------------
+## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## -----------------------------------------------------------------------------
+## |     manyID     |  character  |           35671|     0     |       0       |
+## |   CountryID    |  character  |           35671|     0     |       0       |
+## |     Title      |  character  |           35671|    221    |     0.62      |
+## |      Beg       |    mdate    |           35671|    15     |     0.04      |
+## |      End       |    mdate    |           35671|   31818   |     89.2      |
+## |SignatureCountry|    mdate    |           35671|    46     |     0.13      |
+## |   Signature    |    mdate    |           35671|    46     |     0.13      |
+## |      Rat       |    mdate    |           35671|   19419   |     54.44     |
+## |     Force      |    mdate    |           35671|   4359    |     12.22     |
+## |      Term      |   messydt   |           35671|   34514   |     96.76     |
+## |   Withdrawal   |   messydt   |           35671|   31968   |     89.62     |
+## |    gnevarID    |  character  |           35671|    17     |     0.05      |
+## |    treatyID    |  character  |           35671|     0     |       0       |
+## -----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

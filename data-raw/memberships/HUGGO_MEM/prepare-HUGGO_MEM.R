@@ -1,17 +1,17 @@
-# GNEVAR_MEM Preparation Script
+# HUGGO_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
 # ready for the many packages universe.
 
 # Stage one: Collecting data
-GNEVAR_MEM <- readr::read_csv("data-raw/memberships/GNEVAR_MEM/gnevar.csv")
+HUGGO_MEM <- readr::read_csv("data-raw/memberships/HUGGO_MEM/gnevar.csv")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
-# formats of the 'GNEVAR_MEM' object until the object created
+# formats of the 'HUGGO_MEM' object until the object created
 # below (in stage three) passes all the tests.
-GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
-  manydata::transmutate(gnevarID = GENG,
+HUGGO_MEM <- as_tibble(HUGGO_MEM) %>%
+  manydata::transmutate(HUGGOID = GENG,
                      Rat = messydates::as_messydate(Approval),
                      Withdrawal = messydates::as_messydate(Withdrawal1),
                      Signature = messydates::as_messydate(DocSign),
@@ -26,29 +26,29 @@ GNEVAR_MEM <- as_tibble(GNEVAR_MEM) %>%
   dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>%
   dplyr::select(CountryID, Title, Beg, End, SignatureCountry, Signature,
-                Rat, Force, Term, Withdrawal, gnevarID) %>%
+                Rat, Force, Term, Withdrawal, HUGGOID) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
-GNEVAR_MEM$treatyID <- manypkgs::code_agreements(GNEVAR_MEM,
-                                                 GNEVAR_MEM$Title,
-                                                 GNEVAR_MEM$Beg)
+HUGGO_MEM$treatyID <- manypkgs::code_agreements(HUGGO_MEM,
+                                                HUGGO_MEM$Title,
+                                                HUGGO_MEM$Beg)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::memberships)
-GNEVAR_MEM <- dplyr::left_join(GNEVAR_MEM, manyID, by = "treatyID")
+HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
-GNEVAR_MEM <- dplyr::relocate(GNEVAR_MEM, manyID)
+HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, manyID)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
 
 # Stage three: Connecting data
-# Next run the following line to make GNEVAR_MEM available
+# Next run the following line to make HUGGO_MEM available
 # within the package.
-manypkgs::export_data(GNEVAR_MEM, database = "memberships", URL = "NA")
+manypkgs::export_data(HUGGO_MEM, database = "memberships", URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
 # adherence to certain standards. You can hit Cmd-Shift-T (Mac)
