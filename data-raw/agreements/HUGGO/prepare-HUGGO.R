@@ -20,10 +20,10 @@ HUGGO <- as_tibble(HUGGO)  %>%
                                               D = "V", R = "W", N = "X",
                                               U = "Y")) %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
-                     End = messydates::as_messydate(DocEnd),
-                     Force = messydates::as_messydate(DocForce),
-                     HUGGOID = GENG,
-                     ecolexID = ECOLEX) %>%
+                        End = messydates::as_messydate(DocEnd),
+                        Force = messydates::as_messydate(DocForce),
+                        HUGGOID = GENG,
+                        ecolexID = ECOLEX) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
   # Define Key API
@@ -51,9 +51,7 @@ HUGGO2 <- as_tibble(HUGGO2) %>%
   manydata::transmutate(Signature = messydates::as_messydate(Sign))
 
 # Add treatyID column
-HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2,
-                                              HUGGO2$Title,
-                                              HUGGO2$Beg)
+HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2, HUGGO2$Title, HUGGO2$Beg)
 
 # Clean HUGGO3 is the same as HUGGO, no need to include it
 
@@ -83,43 +81,15 @@ HUGGO <- list(HUGGO, HUGGO2, HUGGO4)
 
 # Join the datasets together
 HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
-                                resolve = "coalesce", key = "treatyID")
-
-# Add Lineage Column
-HUGGO$Lineage <- manypkgs::code_lineage(HUGGO$Title)
+                               resolve = "coalesce", key = "treatyID")
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
 
-# Code accession conditions and procedures
-HUGGO_TXT$accessionC <- manypkgs::code_accession_terms(HUGGO_TXT$TreatyText,
-                                                        HUGGO_TXT$Title,
-                                                        accession = "condition")
-HUGGO_TXT$accessionP <- manypkgs::code_accession_terms(HUGGO_TXT$TreatyText,
-                                                        accession = "process")
-accession <- HUGGO_TXT %>%
-  dplyr::select(manyID, Title, Beg, accessionC, accessionP)
-
-HUGGO <- dplyr::full_join(HUGGO, accession,
-                           by = c("manyID", "Title", "Beg"))
-
-# Remove duplicates and convert NAs
-HUGGO <- HUGGO %>%
-  dplyr::relocate(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-                  Signature, Force, Lineage, accessionC, accessionP) %>%
-  dplyr::mutate(accessionC = gsub("NA", NA, accessionC)) %>%
-  dplyr::mutate(accessionP = gsub("NA", NA, accessionP)) %>%
-  dplyr::arrange(Beg)
-
-HUGGO <- subset(HUGGO, subset = !duplicated(HUGGO[, c(1,2,3,4,5,6,7,8,9,10,11,12,13,14)]))
-
 # Extract texts
-HUGGO_TXT <- manydata::consolidate(manyenviron::agreements,
-                                   "any",
-                                   "any",
-                                   resolve = "coalesce",
-                                   key = "manyID")
+HUGGO_TXT <- manydata::consolidate(manyenviron::agreements, "any", "any",
+                                   resolve = "coalesce", key = "manyID")
 
 # Step two: extract treaty texts from IEADB website
 # This requires the original IEADB dataset with the ieadbID column

@@ -6,7 +6,7 @@
 \title{agreements database documentation}
 \format{
 The agreements database is a list that contains the
-following 6 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI, HUGGO.
+following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 }
@@ -92,9 +92,29 @@ agreements database documentation
 ## |   GeogArea    |  character  |            8213|   6022    |     73.32     |
 ## |   Signature   |    mdate    |            8213|   4710    |     57.35     |
 ## |     Force     |    mdate    |            8213|   6306    |     76.78     |
-## |    Lineage    |  character  |            8213|   4653    |     56.65     |
-## |  accessionC   |  character  |            8213|   2387    |     29.06     |
-## |  accessionP   |  character  |            8213|   7643    |     93.06     |
+## |   treatyID    |  character  |            8213|   4653    |     56.65     |
+## |   gnevarID    |  character  |            8213|   5357    |     65.23     |
+## |  TreatyText   |    list     |            8213|   4120    |     50.16     |
+## |    Source     |    list     |            8213|   5037    |     61.33     |
+## ----------------------------------------------------------------------------
+## 
+## 
+## $AIGGO
+## ----------------------------------------------------------------------------
+## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+## ----------------------------------------------------------------------------
+## |    manyID     |  character  |            8213|    825    |     10.05     |
+## |     Title     |  character  |            8213|     0     |       0       |
+## |      Beg      |    mdate    |            8213|    457    |     5.56      |
+## |      End      |    mdate    |            8213|   7526    |     91.64     |
+## |    DocType    |  character  |            8213|   5353    |     65.18     |
+## | AgreementType |  character  |            8213|   5391    |     65.64     |
+## |   GeogArea    |  character  |            8213|   6022    |     73.32     |
+## |   Signature   |    mdate    |            8213|   4710    |     57.35     |
+## |     Force     |    mdate    |            8213|   6306    |     76.78     |
+## |    Lineage    |  character  |            8213|     0     |       0       |
+## |  accessionC   |  character  |            8213|   1441    |     17.55     |
+## |  accessionP   |  character  |            8213|   7585    |     92.35     |
 ## |   treatyID    |  character  |            8213|   4653    |     56.65     |
 ## |   gnevarID    |  character  |            8213|   5357    |     65.23     |
 ## |  TreatyText   |    list     |            8213|   4120    |     50.16     |
