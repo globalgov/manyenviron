@@ -6,9 +6,11 @@
 # Stage one: Collecting data
 HUGGO <- readr::read_csv("data-raw/agreements/HUGGO/EnvGov Nodes-Table 1 VERS2.csv")
 HUGGO2 <- readr::read_csv2("data-raw/agreements/HUGGO/endb4beg.csv")
-HUGGO3 <- readr::read_csv("data-raw/agreements/HUGGO/HUGGO.csv")
+# HUGGO3 <- readr::read_csv("data-raw/agreements/HUGGO/gnevar.csv")# Same as dataset 1
 HUGGO4 <- readr::read_csv("data-raw/agreements/HUGGO/GENG v1.2 (31.10.2015).csv")
 HUGGO5 <- readr::read_csv2("data-raw/agreements/HUGGO/duplicates v1.0.csv")
+HUGGO6 <- readxl::read_excel("data-raw/agreements/HUGGO/multiGENG.xlsx", 
+                     skip = 1)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
@@ -22,7 +24,7 @@ HUGGO <- as_tibble(HUGGO)  %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
                         End = messydates::as_messydate(DocEnd),
                         Force = messydates::as_messydate(DocForce),
-                        HUGGOID = GENG,
+                        gnevarID = GENG,
                         ecolexID = ECOLEX) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%
@@ -30,14 +32,14 @@ HUGGO <- as_tibble(HUGGO)  %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::rename(DocType = L) %>%
   dplyr::rename(GeogArea = J) %>%
-  dplyr::select(HUGGOID, Title, Beg, End, DocType, GeogArea, AgreementType,
+  dplyr::select(gnevarID, Title, Beg, End, DocType, GeogArea, AgreementType,
                 Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
 HUGGO$treatyID <- manypkgs::code_agreements(HUGGO,
-                                             HUGGO$Title,
-                                             HUGGO$Beg)
+                                            HUGGO$Title,
+                                            HUGGO$Beg)
 
 # # Clean HUGGO 2
 HUGGO2 <- as_tibble(HUGGO2) %>%
@@ -52,8 +54,6 @@ HUGGO2 <- as_tibble(HUGGO2) %>%
 
 # Add treatyID column
 HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2, HUGGO2$Title, HUGGO2$Beg)
-
-# Clean HUGGO3 is the same as HUGGO, no need to include it
 
 # Clean HUGGO4
 HUGGO4$Parties <- paste0(HUGGO4$Country.x, "-", HUGGO4$Country.y)
@@ -73,8 +73,7 @@ HUGGO4$treatyID <- manypkgs::code_agreements(HUGGO4,
                                               HUGGO4$Beg)
 
 # Clean HUGGO5: the current ID format (MGENG-002)
-# is not found in other HUGGO datasets
-# Can not integrate it into HUGGO
+# is not found in most other HUGGO datasets...
 
 # Create a HUGGO "database" to apply consolidate()
 HUGGO <- list(HUGGO, HUGGO2, HUGGO4)
@@ -128,7 +127,7 @@ HUGGO_TXT <- dplyr::left_join(HUGGO_TXT,
                               IEADB_original,
                               by = "ieadbID")
 HUGGO_TXT <- as_tibble(HUGGO_TXT) %>%
-  dplyr::select(treatyID, ieadbID, HUGGOID, ecolexID,
+  dplyr::select(treatyID, ieadbID, gnevarID, ecolexID,
                 manyID, Title, Beg, TreatyText, Source)
 
 # Step four: complement the dataset with ECOLEX treaty texts (TO BE IMPROVED)
@@ -218,6 +217,34 @@ HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT)
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.
+
+# MEA nodes and Edges data (MGENG)
+# For some nore information about the variables and codes,
+# please see the documentation in the data-raw folder.
+HUGGO6 <- as_tibble(HUGGO6) %>%
+  manydata::transmutate(Signature = messydates::as_messydate(DocSign),
+                        End = messydates::as_messydate(DocEnd),
+                        Force = messydates::as_messydate(DocForce),
+                        ecolexID = ECOLEX.ID) %>%
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::distinct() %>%
+  dplyr::arrange(Beg)
+
+HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6,
+                                             HUGGO6$Title,
+                                             HUGGO6$Beg)
+
+# HUGGO6 data appears too take lots of memory?
+a <- as.matrix(HUGGO6)
+# Some columns are simply full of NAs
+
+
+# Join the datasets together
+HUGGO <- manydata::consolidate(HUGGO, HUGGO6, by = "treatyID")
+# A full join here renders the data too big to work with in R...
+manyID <- manypkgs::condense_agreements(var = HUGGO$treatyID)
+HUGGO <- dplyr::left_join(HUGGO, manyID, by = c("treatyID", "manyID"))
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
