@@ -26,7 +26,7 @@ HUGGO_MEM <- as_tibble(HUGGO_MEM) %>%
   dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
   dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>%
   dplyr::select(CountryID, Title, Beg, End, SignatureCountry, Signature,
-                Rat, Force, Term, Withdrawal, HUGGOID) %>%
+                Rat, Force, Term, Withdrawal, gnevarID) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
@@ -40,6 +40,28 @@ HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
 HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, manyID)
+
+# Add MEA edges data (MGENG dataset)
+# For some more information about the variables and codes,
+# please see the documentation in the data-raw folder.
+
+MEA_edges <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Edges v1.0.csv", 
+                            delim = ";", escape_double = FALSE, trim_ws = TRUE)
+MEA_edges <- as_tibble(MEA_edges) %>%
+  dplyr::select(-'...1') %>%
+  dplyr::rename(gengID = GENG.ID,
+                memb_sign1 = MembSign.x,
+                memb_rat1 = MembRat.x,
+                memb_force_ecolex = MembForce.x,
+                memb_force_iea = MembForce.y,
+                memb_sign2 = MembSign.x2,
+                memb_rat2 = MembRat.x2,
+                memb_sign3 = MembSign.x3,
+                memb_rat3 = MembRat.x3)
+names(a) <- gsub("\\.", "", names(a))
+
+# Join data
+
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.

@@ -247,7 +247,7 @@ HUGGO <- manyenviron::agreements$HUGGO
 HUGGO$Source <- as.character(HUGGO$Source)
 
 # Join the datasets together
-a <- tibble::lst(HUGGO, HUGGO6)
+HUGGO <- tibble::lst(HUGGO, HUGGO6)
 HUGGO <- manydata::consolidate(a, row = "any", cols = "any",
                                resolve = "coalesce", key = "treatyID")
 
