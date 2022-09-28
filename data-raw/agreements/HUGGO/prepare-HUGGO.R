@@ -7,9 +7,7 @@
 HUGGO <- readr::read_csv("data-raw/agreements/HUGGO/EnvGov Nodes-Table 1 VERS2.csv")
 HUGGO2 <- readr::read_csv2("data-raw/agreements/HUGGO/gnevar.csv")
 HUGGO4 <- readr::read_csv("data-raw/agreements/HUGGO/GENG v1.2 (31.10.2015).csv")
-HUGGO6 <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Edges v1.0.csv", 
-                            delim = ";", escape_double = FALSE, trim_ws = TRUE)
-HUGGO8 <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Nodes v1.0.csv", 
+HUGGO6 <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Nodes v1.0.csv", 
                             delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
 # Stage two: Correcting data
@@ -215,45 +213,47 @@ HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT)
 # and standardizing your data.
 # Please see the vignettes or website for more details.
 
-# MEA nodes and Edges data (MGENG dataset) - HUGGO6 and HUGGO8
+# MEA nodes (MGENG dataset) - HUGGO6
 # For some more information about the variables and codes,
 # please see the documentation in the data-raw folder.
 HUGGO6 <- as_tibble(HUGGO6) %>%
+  dplyr::select(-'...1') %>%
+  dplyr::rename(verified = '...2',
+                ecolexID = ECOLEX.ID,
+                ieaID = IEA.ID,
+                gengID = GENG.ID,
+                MEA_type = Type,
+                subject_ecolex = Subject.x,
+                subject_iea = Subject.y,
+                DepositoryURL = DepositoryURL) %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
-                        End = messydates::as_messydate(DocEnd),
-                        Force = messydates::as_messydate(DocForce),
-                        ecolexID = ECOLEX.ID) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>%
+                        Force = messydates::as_messydate(DocForce)) %>%
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title),
+                verified = case_when(verified == "%" ~ "verified",
+                                     verified == "?" ~ "not verified"),
+                Coded = as.character(Coded),
+                Lit = as.character(Lit),
+                Data = as.character(Data)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::distinct() %>%
   dplyr::arrange(Beg)
 
-HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6,
-                                             HUGGO6$Title,
-                                             HUGGO6$Beg)
-
-HUGGO8 <- as_tibble(HUGGO8) %>%
-  manydata::transmutate(Signature = messydates::as_messydate(DocSign),
-                        End = messydates::as_messydate(DocEnd),
-                        Force = messydates::as_messydate(DocForce),
-                        ecolexID = ECOLEX.ID) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::distinct() %>%
-  dplyr::arrange(Beg)
-
-HUGGO8$treatyID <- manypkgs::code_agreements(HUGGO8,
-                                             HUGGO8$Title,
-                                             HUGGO8$Beg)
-
-# Join HUGGO6 and HUGGO8
-
+# Add treatyID column
+HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6, HUGGO6$Title, HUGGO6$Beg)
 
 # Join the datasets together
-HUGGO <- manydata::consolidate(HUGGO, HUGGO6, by = "treatyID")
+HUGGO <- manyenviron::agreements$HUGGO
+## fixed minor coding issue with HUGGO before joining data (28-09-2022)
+HUGGO$Source <- as.character(HUGGO$Source)
+
+# Join the datasets together
+a <- tibble::lst(HUGGO, HUGGO6)
+HUGGO <- manydata::consolidate(a, row = "any", cols = "any",
+                               resolve = "coalesce", key = "treatyID")
+
 # A full join here renders the data too big to work with in R...
 manyID <- manypkgs::condense_agreements(var = HUGGO$treatyID)
-HUGGO <- dplyr::left_join(HUGGO, manyID, by = c("treatyID", "manyID"))
+HUGGO <- dplyr::left_join(HUGGO, manyID, by = c("treatyID"))
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
