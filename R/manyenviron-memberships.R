@@ -4,7 +4,6 @@
 #' following 5 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
-#' @imports manydata
 #'\describe{
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
 #' 10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force, Rat, ecolexID, treatyID.}
