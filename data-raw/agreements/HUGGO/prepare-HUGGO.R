@@ -224,8 +224,7 @@ HUGGO6 <- as_tibble(HUGGO6) %>%
                 gengID = GENG.ID,
                 MEA_type = Type,
                 subject_ecolex = Subject.x,
-                subject_iea = Subject.y,
-                DepositoryURL = DepositoryURL) %>%
+                subject_iea = Subject.y) %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
                         Force = messydates::as_messydate(DocForce)) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title),
@@ -242,18 +241,46 @@ HUGGO6 <- as_tibble(HUGGO6) %>%
 HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6, HUGGO6$Title, HUGGO6$Beg)
 
 # Join the datasets together
-HUGGO <- manyenviron::agreements$HUGGO
 ## fixed minor coding issue with HUGGO before joining data (28-09-2022)
-HUGGO$Source <- as.character(HUGGO$Source)
+# HUGGO$Source <- as.character(HUGGO$Source)
 
 # Join the datasets together
+# Keep text variables for later
+HUGGO <- manyenviron::agreements$HUGGO %>% rename(SourceText = Source)
+HUGGO_TXT1 <- dplyr::select(HUGGO, c(treatyID, TreatyText, SourceText)) %>% 
+  dplyr::mutate(TreatyText = as.character(ifelse(is.na(TreatyText),
+                                                 NA_character_, TreatyText)),
+                SourceText = as.character(ifelse(is.na(SourceText),
+                                                 NA_character_, SourceText))) %>% 
+  dplyr::distinct() %>%
+  tidyr::drop_na()
+# Bug with some treaties having different sources...
+# When this is the case, treaty text is pasted together for now
+c <- HUGGO_TXT1[duplicated(HUGGO_TXT1$treatyID) |
+                  duplicated(HUGGO_TXT1$treatyID, fromLast = TRUE),]
+c <- aggregate(cbind(TreatyText, SourceText) ~ treatyID, data = c, function(x)
+  paste(x, collapse = " Possibly Duplicated "))
+HUGGO_TXT1 <- HUGGO_TXT1[!duplicated(HUGGO_TXT1$treatyID) |
+                           duplicated(HUGGO_TXT1$treatyID, fromLast = TRUE),]
+HUGGO_TXT1 <- rbind(HUGGO_TXT1, c)
+# Get other texts from HUGGO6
+HUGGO_TXT2 <- dplyr::select(HUGGO6, c(treatyID, Text, AbstractText)) %>% 
+  dplyr::mutate(Text = as.character(Text),
+                AbstractText = as.character(AbstractText)) %>% 
+  dplyr::distinct() %>%
+  tidyr::drop_na()
+
+# Join datasets
 HUGGO <- tibble::lst(HUGGO, HUGGO6)
-HUGGO <- manydata::consolidate(a, row = "any", cols = "any",
+HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
                                resolve = "coalesce", key = "treatyID")
+# Re-add text variables
+HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT1, by = "treatyID")
+HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT2, by = "treatyID")
 
 # A full join here renders the data too big to work with in R...
 manyID <- manypkgs::condense_agreements(var = HUGGO$treatyID)
-HUGGO <- dplyr::left_join(HUGGO, manyID, by = c("treatyID"))
+HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available

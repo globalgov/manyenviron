@@ -9,15 +9,21 @@
 #' 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature,
 #' Force, Lineage, treatyID, ieadbID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature,
-#' Force, Lineage, treatyID, ecolexID.}
+#' 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
+#' Lineage, treatyID, ecolexID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
 #' 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
-#' \item{HUGGO: }{A dataset with 8213 observations and the following
-#' 13 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-#' Signature, Force, treatyID, gnevarID, TreatyText, Source.}
+#' \item{HUGGO: }{A dataset with 7330 observations and the following
+#' 50 variables: treatyID, manyID.x, End, DocType, AgreementType, GeogArea,
+#' gnevarID, verified, gengID, ecolexID, ieaID, DocValidUntilDate, Title,
+#' Notes, Download, MEA_type, Ambit, Region, subject_ecolex, subject_iea,
+#' Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices, Depository,
+#' DepositoryURL, Published, Abstract, Website1, Website2, Secretariat,
+#' SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy,
+#' Lit, Data, Coded, Signature, Force, Beg, TreatyText, SourceText, Text,
+#' AbstractText, manyID.y.}
 #' \item{AIGGO: }{A dataset with 8213 observations and the following
 #' 16 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
 #' Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID,
