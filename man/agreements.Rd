@@ -21,14 +21,14 @@ Lineage, treatyID, ecolexID.}
 \item{HEIDI: }{A dataset with 2280 observations and the following
 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 \item{HUGGO: }{A dataset with 7330 observations and the following
-50 variables: treatyID, manyID.x, End, DocType, AgreementType, GeogArea,
-gnevarID, verified, gengID, ecolexID, ieaID, DocValidUntilDate, Title,
-Notes, Download, MEA_type, Ambit, Region, subject_ecolex, subject_iea,
-Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices, Depository,
-DepositoryURL, Published, Abstract, Website1, Website2, Secretariat,
-SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy,
-Lit, Data, Coded, Signature, Force, Beg, TreatyText, SourceText, Text,
-AbstractText, manyID.y.}
+49 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
+DocType, AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID,
+ieaID, DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region,
+subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn,
+Languages, Appendices, Depository, DepositoryURL, Published, Abstract,
+Website1, Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
+References, EnabledBy, AmendedBy, Lit, Data, Coded, TreatyText, SourceText,
+Text, AbstractText.}
 \item{AIGGO: }{A dataset with 8213 observations and the following
 16 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
 Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID,
@@ -108,9 +108,13 @@ agreements database documentation
 ## ------------------------------------------------------------------------------
 ## |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 ## ------------------------------------------------------------------------------
+## |     manyID      |  character  |            7330|   3480    |     47.48     |
 ## |    treatyID     |  character  |            7330|   3480    |     47.48     |
-## |    manyID.x     |  character  |            7330|    207    |     2.82      |
+## |      Title      |  character  |            7330|     0     |       0       |
+## |       Beg       |    mdate    |            7330|    60     |     0.82      |
 ## |       End       |    mdate    |            7330|   6654    |     90.78     |
+## |    Signature    |    mdate    |            7330|   3537    |     48.25     |
+## |      Force      |    mdate    |            7330|   5169    |     70.52     |
 ## |     DocType     |  character  |            7330|   4566    |     62.29     |
 ## |  AgreementType  |  character  |            7330|   4604    |     62.81     |
 ## |    GeogArea     |  character  |            7330|   5186    |     70.75     |
@@ -120,7 +124,6 @@ agreements database documentation
 ## |    ecolexID     |  character  |            7330|   6843    |     93.36     |
 ## |      ieaID      |  character  |            7330|   6620    |     90.31     |
 ## |DocValidUntilDate|  character  |            7330|   7296    |     99.54     |
-## |      Title      |  character  |            7330|     0     |       0       |
 ## |      Notes      |  character  |            7330|   7282    |     99.35     |
 ## |    Download     |  character  |            7330|   6411    |     87.46     |
 ## |    MEA_type     |  character  |            7330|   6620    |     90.31     |
@@ -150,14 +153,10 @@ agreements database documentation
 ## |       Lit       |  character  |            7330|   6776    |     92.44     |
 ## |      Data       |  character  |            7330|   6784    |     92.55     |
 ## |      Coded      |  character  |            7330|   7025    |     95.84     |
-## |    Signature    |    mdate    |            7330|   3537    |     48.25     |
-## |      Force      |    mdate    |            7330|   5169    |     70.52     |
-## |       Beg       |    mdate    |            7330|    60     |     0.82      |
 ## |   TreatyText    |  character  |            7330|   5777    |     78.81     |
 ## |   SourceText    |  character  |            7330|   5777    |     78.81     |
 ## |      Text       |  character  |            7330|   7049    |     96.17     |
 ## |  AbstractText   |  character  |            7330|   7049    |     96.17     |
-## |    manyID.y     |  character  |            7330|   3480    |     47.48     |
 ## ------------------------------------------------------------------------------
 ## 
 ## 

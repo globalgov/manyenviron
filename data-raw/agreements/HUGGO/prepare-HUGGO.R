@@ -278,10 +278,14 @@ HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
 HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT1, by = "treatyID")
 HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT2, by = "treatyID")
 
-# A full join here renders the data too big to work with in R...
+# Add manyID column
 manyID <- manypkgs::condense_agreements(var = HUGGO$treatyID)
+# Remove old ones
+HUGGO <- dplyr::select(HUGGO, -(dplyr::starts_with("manyID")))
 HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
-
+# Reorder variables
+HUGGO <- dplyr::relocate(HUGGO, c(manyID, treatyID, Title, Beg, End, Signature,
+                                  Force)) 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
