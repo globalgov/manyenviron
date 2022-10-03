@@ -22,7 +22,7 @@ HUGGO <- as_tibble(HUGGO)  %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
                         End = messydates::as_messydate(DocEnd),
                         Force = messydates::as_messydate(DocForce),
-                        gnevarID = GENG,
+                        gengID = GENG,
                         ecolexID = ECOLEX) %>%
   dplyr::mutate(Title = manypkgs::standardise_titles(Title,
                                                      api_key = api)) %>%

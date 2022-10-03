@@ -6,7 +6,7 @@
 \title{memberships database documentation}
 \format{
 The memberships database is a list that contains the
-following 5 datasets: ECOLEX_MEM, GNEVAR_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
+following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
@@ -19,9 +19,13 @@ Signature, Rat, Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
 8 variables: manyID, CountryID, Title, Beg, Signature, tfddID, Memberships,
 treatyID.}
-\item{HUGGO_MEM: }{A dataset with 35671 observations and the following
-13 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
-Signature, Rat, Force, Term, Withdrawal, gnevarID, treatyID.}
+\item{HUGGO_MEM: }{A dataset with 76954 observations and the following
+31 variables: manyID, treatyID, CountryID, Title, Beg, End, Signature,
+Force, CountrySignature, CountryRat, CountryForce, CountryForce2,
+CountryForce3, Term, CountryWithdrawal, CountryWithdrawal2, gengID,
+ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp,
+Reservation, verified, Notes, CountryForce_ecolex, CountryForce_iea,
+Consent, Acceptance, Accession.}
 }
 }
 \usage{
@@ -31,75 +35,93 @@ memberships
 memberships database documentation
 }
 \details{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{## $ECOLEX_MEM
-## -----------------------------------------------------------------------------
-## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## -----------------------------------------------------------------------------
-## |     manyID     |  character  |           25003|     0     |       0       |
-## |   CountryID    |  character  |           25003|    22     |     0.09      |
-## |     Title      |  character  |           25003|     0     |       0       |
-## |      Beg       |    mdate    |           25003|   3447    |     13.79     |
-## |      End       |    mdate    |           25003|   24539   |     98.14     |
-## |SignatureCountry|    mdate    |           25003|   15339   |     61.35     |
-## |     Force      |    mdate    |           25003|   5809    |     23.23     |
-## |      Rat       |    mdate    |           25003|   7021    |     28.08     |
-## |    ecolexID    |  character  |           25003|     0     |       0       |
-## |    treatyID    |  character  |           25003|     0     |       0       |
-## -----------------------------------------------------------------------------
-## 
-## 
-## $IEADB_MEM
-## -----------------------------------------------------------------------------
-## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## -----------------------------------------------------------------------------
-## |     manyID     |  character  |           15466|     0     |       0       |
-## |   CountryID    |  character  |           15466|     0     |       0       |
-## |     Title      |  character  |           15466|     0     |       0       |
-## |      Beg       |    mdate    |           15466|     0     |       0       |
-## |      End       |    mdate    |           15466|   14595   |     94.37     |
-## |SignatureCountry|    mdate    |           15466|   5799    |     37.5      |
-## |   Signature    |    mdate    |           15466|     0     |       0       |
-## |      Rat       |    mdate    |           15466|   5486    |     35.47     |
-## |     Force      |    mdate    |           15466|     0     |       0       |
-## |    DocType     |  character  |           15466|     0     |       0       |
-## |    ieadbID     |   numeric   |           15466|     0     |       0       |
-## |    treatyID    |  character  |           15466|     0     |       0       |
-## -----------------------------------------------------------------------------
-## 
-## 
-## $TFDD_MEM
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |            2118|     0     |       0       |
-## |   CountryID   |  character  |            2118|     2     |     0.09      |
-## |     Title     |  character  |            2118|     2     |     0.09      |
-## |      Beg      |    mdate    |            2118|    133    |     6.28      |
-## |   Signature   |    mdate    |            2118|    133    |     6.28      |
-## |    tfddID     |   numeric   |            2118|     2     |     0.09      |
-## |  Memberships  |  character  |            2118|    28     |     1.32      |
-## |   treatyID    |  character  |            2118|     0     |       0       |
-## ----------------------------------------------------------------------------
-## 
-## 
-## $HUGGO_MEM
-## -----------------------------------------------------------------------------
-## |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## -----------------------------------------------------------------------------
-## |     manyID     |  character  |           35671|     0     |       0       |
-## |   CountryID    |  character  |           35671|     0     |       0       |
-## |     Title      |  character  |           35671|    221    |     0.62      |
-## |      Beg       |    mdate    |           35671|    15     |     0.04      |
-## |      End       |    mdate    |           35671|   31818   |     89.2      |
-## |SignatureCountry|    mdate    |           35671|    46     |     0.13      |
-## |   Signature    |    mdate    |           35671|    46     |     0.13      |
-## |      Rat       |    mdate    |           35671|   19419   |     54.44     |
-## |     Force      |    mdate    |           35671|   4359    |     12.22     |
-## |      Term      |   messydt   |           35671|   34514   |     96.76     |
-## |   Withdrawal   |   messydt   |           35671|   31968   |     89.62     |
-## |    gnevarID    |  character  |           35671|    17     |     0.05      |
-## |    treatyID    |  character  |           35671|     0     |       0       |
-## -----------------------------------------------------------------------------
+\if{html}{\out{<div class="sourceCode">}}\preformatted{#> $ECOLEX_MEM
+#> -----------------------------------------------------------------------------
+#> |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> -----------------------------------------------------------------------------
+#> |     manyID     |  character  |           25003|     0     |       0       |
+#> |   CountryID    |  character  |           25003|    22     |     0.09      |
+#> |     Title      |  character  |           25003|     0     |       0       |
+#> |      Beg       |    mdate    |           25003|   3447    |     13.79     |
+#> |      End       |    mdate    |           25003|   24539   |     98.14     |
+#> |SignatureCountry|    mdate    |           25003|   15339   |     61.35     |
+#> |     Force      |    mdate    |           25003|   5809    |     23.23     |
+#> |      Rat       |    mdate    |           25003|   7021    |     28.08     |
+#> |    ecolexID    |  character  |           25003|     0     |       0       |
+#> |    treatyID    |  character  |           25003|     0     |       0       |
+#> -----------------------------------------------------------------------------
+#> 
+#> 
+#> $IEADB_MEM
+#> -----------------------------------------------------------------------------
+#> |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> -----------------------------------------------------------------------------
+#> |     manyID     |  character  |           15466|     0     |       0       |
+#> |   CountryID    |  character  |           15466|     0     |       0       |
+#> |     Title      |  character  |           15466|     0     |       0       |
+#> |      Beg       |    mdate    |           15466|     0     |       0       |
+#> |      End       |    mdate    |           15466|   14595   |     94.37     |
+#> |SignatureCountry|    mdate    |           15466|   5799    |     37.5      |
+#> |   Signature    |    mdate    |           15466|     0     |       0       |
+#> |      Rat       |    mdate    |           15466|   5486    |     35.47     |
+#> |     Force      |    mdate    |           15466|     0     |       0       |
+#> |    DocType     |  character  |           15466|     0     |       0       |
+#> |    ieadbID     |   numeric   |           15466|     0     |       0       |
+#> |    treatyID    |  character  |           15466|     0     |       0       |
+#> -----------------------------------------------------------------------------
+#> 
+#> 
+#> $TFDD_MEM
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    manyID     |  character  |            2118|     0     |       0       |
+#> |   CountryID   |  character  |            2118|     2     |     0.09      |
+#> |     Title     |  character  |            2118|     2     |     0.09      |
+#> |      Beg      |    mdate    |            2118|    133    |     6.28      |
+#> |   Signature   |    mdate    |            2118|    133    |     6.28      |
+#> |    tfddID     |   numeric   |            2118|     2     |     0.09      |
+#> |  Memberships  |  character  |            2118|    28     |     1.32      |
+#> |   treatyID    |  character  |            2118|     0     |       0       |
+#> ----------------------------------------------------------------------------
+#> 
+#> 
+#> $HUGGO_MEM
+#> --------------------------------------------------------------------------------
+#> |    Column Name    |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> --------------------------------------------------------------------------------
+#> |      manyID       |  character  |           76954|     0     |       0       |
+#> |     treatyID      |  character  |           76954|     0     |       0       |
+#> |     CountryID     |  character  |           76954|     2     |       0       |
+#> |       Title       |  character  |           76954|    221    |     0.29      |
+#> |        Beg        |    mdate    |           76954|    15     |     0.02      |
+#> |        End        |    mdate    |           76954|   72931   |     94.77     |
+#> |     Signature     |    mdate    |           76954|    46     |     0.06      |
+#> |       Force       |    mdate    |           76954|   5390    |       7       |
+#> | CountrySignature  |    mdate    |           76954|   32086   |     41.7      |
+#> |    CountryRat     |    mdate    |           76954|   49099   |     63.8      |
+#> |   CountryForce    |    mdate    |           76954|   45643   |     59.31     |
+#> |   CountryForce2   |    mdate    |           76954|   76193   |     99.01     |
+#> |   CountryForce3   |    mdate    |           76954|   76904   |     99.94     |
+#> |       Term        |    mdate    |           76954|   75764   |     98.45     |
+#> | CountryWithdrawal |    mdate    |           76954|   72414   |     94.1      |
+#> |CountryWithdrawal2 |    mdate    |           76954|   76903   |     99.93     |
+#> |      gengID       |  character  |           76954|    17     |     0.02      |
+#> |     ecolexID      |  character  |           76954|   41365   |     53.75     |
+#> |       ieaID       |  character  |           76954|   14159   |     18.4      |
+#> |     Comments      |  character  |           76954|   73700   |     95.77     |
+#> |      Deposit      |    mdate    |           76954|   75787   |     98.48     |
+#> |     obsolete      |   logical   |           76954|   66339   |     86.21     |
+#> |  ProvisionalApp   |    mdate    |           76954|   76536   |     99.46     |
+#> |    Reservation    |    Date     |           76954|   76918   |     99.95     |
+#> |     verified      |  character  |           76954|   73735   |     95.82     |
+#> |       Notes       |  character  |           76954|   76393   |     99.27     |
+#> |CountryForce_ecolex|    mdate    |           76954|   37918   |     49.27     |
+#> | CountryForce_iea  |    mdate    |           76954|   37918   |     49.27     |
+#> |      Consent      |    mdate    |           76954|   76889   |     99.92     |
+#> |    Acceptance     |    mdate    |           76954|   76928   |     99.97     |
+#> |     Accession     |    mdate    |           76954|   72082   |     93.67     |
+#> --------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

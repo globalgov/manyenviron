@@ -11,61 +11,96 @@ HUGGO_MEM <- readr::read_csv("data-raw/memberships/HUGGO_MEM/gnevar.csv")
 # formats of the 'HUGGO_MEM' object until the object created
 # below (in stage three) passes all the tests.
 HUGGO_MEM <- as_tibble(HUGGO_MEM) %>%
-  manydata::transmutate(HUGGOID = GENG,
-                     Rat = messydates::as_messydate(Approval),
-                     Withdrawal = messydates::as_messydate(Withdrawal1),
-                     Signature = messydates::as_messydate(DocSign),
-                     Force = messydates::as_messydate(DocForce),
-                     Term = messydates::as_messydate(DocEnd),
-                     Force = messydates::as_messydate(InForce1)) %>%
-  dplyr::mutate(SignatureCountry = Signature) %>%
-  dplyr::mutate(CountryID = Country) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title,
-                                                     api_key = api)) %>%
-  # Define Key API
-  dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
-  dplyr::mutate(End = dplyr::coalesce(Withdrawal, Term)) %>%
-  dplyr::select(CountryID, Title, Beg, End, SignatureCountry, Signature,
-                Rat, Force, Term, Withdrawal, gnevarID) %>%
-  dplyr::arrange(Beg)
+  janitor::remove_empty(which = "cols") %>%
+  dplyr::mutate(gengID = GENG,
+                ecolexID = ECOLEX,
+                ieaID = IEA,
+                CountryID = Country,
+                CountryRat = messydates::as_messydate(Approval),
+                CountrySignature = messydates::as_messydate(Signature),
+                CountryWithdrawal = messydates::as_messydate(Withdrawal1),
+                CountryWithdrawal2 = messydates::as_messydate(Withdrawal2),
+                Signature = messydates::as_messydate(DocSign),
+                Force = messydates::as_messydate(DocForce),
+                Term = messydates::as_messydate(DocEnd),
+                CountryForce = messydates::as_messydate(InForce1),
+                CountryForce2 = messydates::as_messydate(InForce2),
+                CountryForce3 = messydates::as_messydate(InForce3),
+                verified = case_when(X == "%" ~ "verified",
+                                     X == "?" ~ "not verified"),
+                Title = manypkgs::standardise_titles(Title),
+                ProvisionalApp = messydates::as_messydate(ProvisionalApp),
+                Deposit = messydates::as_messydate(Deposit),
+                Beg = dplyr::coalesce(Signature, CountryRat, CountryForce),
+                End = dplyr::coalesce(Term, CountryWithdrawal)) %>%
+  dplyr::select(CountryID, Title, Beg, End, Signature, CountrySignature,
+                CountryRat, Force, CountryForce, CountryForce2, CountryForce3,
+                Term, CountryWithdrawal, CountryWithdrawal2,
+                gengID, ecolexID, ieaID, Comments, Deposit, obsolete,
+                ProvisionalApp, Reservation, verified) %>%
+  dplyr::arrange(Beg) %>% 
+  dplyr::distinct()
 
 # Add treatyID column
 HUGGO_MEM$treatyID <- manypkgs::code_agreements(HUGGO_MEM,
                                                 HUGGO_MEM$Title,
                                                 HUGGO_MEM$Beg)
 
-# Add manyID column
-manyID <- manypkgs::condense_agreements(manyenviron::memberships)
-HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
-
-# Re-order the columns
-HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, manyID)
-
 # Add MEA edges data (MGENG dataset)
 # For some more information about the variables and codes,
 # please see the documentation in the data-raw folder.
-
 MEA_edges <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Edges v1.0.csv", 
-                            delim = ";", escape_double = FALSE, trim_ws = TRUE)
+                               delim = ";", escape_double = FALSE, trim_ws = TRUE)
+# Let's wrangle some variables to keep consistent.
+names(MEA_edges) <- gsub("\\.", "", names(MEA_edges))
+names(MEA_edges) <- gsub("^Membership", "", names(MEA_edges))
+names(MEA_edges) <- gsub("^dateOf", "", names(MEA_edges))
 MEA_edges <- as_tibble(MEA_edges) %>%
-  dplyr::select(-'...1') %>%
-  dplyr::rename(gengID = GENG.ID,
-                memb_sign1 = MembSign.x,
-                memb_rat1 = MembRat.x,
-                memb_force_ecolex = MembForce.x,
-                memb_force_iea = MembForce.y,
-                memb_sign2 = MembSign.x2,
-                memb_rat2 = MembRat.x2,
-                memb_sign3 = MembSign.x3,
-                memb_rat3 = MembRat.x3)
-names(a) <- gsub("\\.", "", names(a))
+  dplyr::select(-'1') %>%
+  janitor::remove_empty(which = "cols") %>%
+  manydata::transmutate(gengID = GENGID,
+                        CountryID = Country,
+                        CountrySignature = messydates::as_messydate(MembSignx),
+                        CountryRat = messydates::as_messydate(MembRatx),
+                        CountryForce_ecolex = messydates::as_messydate(MembForcex),
+                        CountryForce_iea = messydates::as_messydate(MembForcey),
+                        CountryForce2 = messydates::as_messydate(EntryintoForce2),
+                        CountryWithdrawal = messydates::as_messydate(Withdrawal),
+                        ProvisionalApp = messydates::as_messydate(ProvisionalApplication),
+                        Succession = messydates::as_messydate(Succession),
+                        Deposit = messydates::as_messydate(DepositofInstrument),
+                        CooperatingNonparty = messydates::as_messydate(CooperatingNonparty),
+                        DefiniteSignature = messydates::as_messydate(DefiniteSignature),
+                        Consent = messydates::as_messydate(ConsentToBeBound),
+                        Acceptance = messydates::as_messydate(AcceptanceApproval),
+                        Accession = messydates::as_messydate(AccessionApprobation),
+                        Consolidation = messydates::as_messydate(Consolidation),
+                        Acceptance = messydates::as_messydate(AccessionApprobation2),
+                        CountryWithdrawal = messydates::as_messydate(Withdrawal)) %>% 
+  dplyr::distinct()
 
-# Join data
+# Add titles and ID variables from HUGGO agreements data
+agreements <- manyenviron::agreements$HUGGO %>%
+  dplyr::select(c(gengID, Title, Beg, End, Signature, Force, ecolexID, ieaID))
+MEA_edges <- dplyr::inner_join(MEA_edges, agreements, by = "gengID") %>% 
+  dplyr::distinct()
 
+# Add treatyID column
+MEA_edges$treatyID <- manypkgs::code_agreements(MEA_edges,
+                                                MEA_edges$Title,
+                                                MEA_edges$Beg)
 
-# manypkgs includes several functions that should help cleaning
-# and standardising your data.
-# Please see the vignettes or website for more details.
+# Join Data 
+HUGGO_MEM <- dplyr::full_join(HUGGO_MEM, MEA_edges) %>% 
+  dplyr::distinct()
+
+# Add manyID column
+manyID <- manypkgs::condense_agreements(var = HUGGO_MEM$treatyID)
+HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
+
+# Reorder variables
+HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "CountryID", "Title",
+                                          "Beg", "End", "Signature", "Force"))
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
