@@ -1,7 +1,7 @@
 #' Generate a list of fictional agreement names
+#' 
 #' @param n Integer number of fictional agreement names to generate.
-#' @return String vector of fictional agreement names
-#' @importFrom stringr str_trim
+#' @return String vector of fictional agreement names.
 #' @examples
 #'   generate_agreements(12)
 #' @export
@@ -36,7 +36,7 @@ generate_agreements <- function(n = 10){
                  "The Development Of Geothermal Energy",
                  "Energy Research And Development",
                  "Shrimp")
-  stringr::str_trim(paste(sample(typelib, n, replace = TRUE), 
-                          sample(subjlib, n, replace = TRUE), 
-                          sample(targetlib, n, replace = TRUE)))
+  trimws(paste(sample(typelib, n, replace = TRUE),
+               sample(subjlib, n, replace = TRUE),
+               sample(targetlib, n, replace = TRUE)))
 }

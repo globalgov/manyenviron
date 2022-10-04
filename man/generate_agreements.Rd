@@ -10,7 +10,7 @@ generate_agreements(n = 10)
 \item{n}{Integer number of fictional agreement names to generate.}
 }
 \value{
-String vector of fictional agreement names
+String vector of fictional agreement names.
 }
 \description{
 Generate a list of fictional agreement names
