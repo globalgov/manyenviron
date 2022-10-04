@@ -54,8 +54,11 @@ reference:
     - memberships
     - organizations
     - references
-    - texts
     - regimes
+  - title: "Functions"
+    desc: "The following functions are contained in manyenviron"
+    contents:
+    - generate_agreements
 footer:
   structure:
     left: devs
