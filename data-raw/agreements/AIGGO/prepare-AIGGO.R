@@ -20,12 +20,14 @@ AIGGO$accessionP <- manypkgs::code_accession_terms(AIGGO$TreatyText,
 AIGGO <- AIGGO %>%
   dplyr::relocate(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
                   Signature, Force, Lineage, accessionC, accessionP) %>%
+  manydata::transmutate(SourceText = as.character(Source)) %>%
   dplyr::mutate(accessionC = gsub("NA", NA, accessionC)) %>%
   dplyr::mutate(accessionP = gsub("NA", NA, accessionP)) %>%
   dplyr::arrange(Beg)
 
 # Stage three: Connecting data
-manypkgs::export_data(AIGGO, database = "agreements", URL = "NA")
+manypkgs::export_data(AIGGO, database = "agreements",
+                      URL = "Programatically coded data by the GGO team")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
 # adherence to certain standards. You can hit Cmd-Shift-T (Mac)

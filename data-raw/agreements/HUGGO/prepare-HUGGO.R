@@ -285,11 +285,13 @@ HUGGO <- dplyr::select(HUGGO, -(dplyr::starts_with("manyID")))
 HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
 # Reorder variables
 HUGGO <- dplyr::relocate(HUGGO, c(manyID, treatyID, Title, Beg, End, Signature,
-                                  Force)) 
+                                  Force))
+
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
-manypkgs::export_data(HUGGO, database = "agreements", URL = "NA")
+manypkgs::export_data(HUGGO, database = "agreements",
+                      URL = "Hand-coded data by the GGO team")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
 # adherence to certain standards. You can hit Cmd-Shift-T (Mac)
