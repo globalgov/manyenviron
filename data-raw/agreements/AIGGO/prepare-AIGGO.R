@@ -14,20 +14,24 @@ AIGGO$accessionC <- manypkgs::code_accession_terms(AIGGO$TreatyText,
                                                    AIGGO$Title,
                                                    accession = "condition")
 AIGGO$accessionP <- manypkgs::code_accession_terms(AIGGO$TreatyText,
+                                                   AIGGO$Title,
                                                    accession = "process")
+# Code termination clause and date
+AIGGO$termination_type <- manypkgs::code_term(AIGGO$Title, AIGGO$TreatyText)
 
+AIGGO$termination_date <- manypkgs::code_term_date(AIGGO$Title,
+                                                   AIGGO$TreatyText)
 # Remove duplicates and convert NAs
 AIGGO <- AIGGO %>%
-  dplyr::relocate(manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-                  Signature, Force, Lineage, accessionC, accessionP) %>%
-  manydata::transmutate(SourceText = as.character(Source)) %>%
-  dplyr::mutate(accessionC = gsub("NA", NA, accessionC)) %>%
-  dplyr::mutate(accessionP = gsub("NA", NA, accessionP)) %>%
-  dplyr::arrange(Beg)
+  dplyr::select(manyID, Lineage, accessionC, accessionP,
+                  termination_type, termination_date) %>%
+  dplyr::mutate(accessionC = gsub("NA", NA, accessionC),
+                accessionP = gsub("NA", NA, accessionP))
 
 # Stage three: Connecting data
 manypkgs::export_data(AIGGO, database = "agreements",
                       URL = "Programatically coded data by the GGO team")
+
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
 # adherence to certain standards. You can hit Cmd-Shift-T (Mac)

@@ -21,18 +21,16 @@ Lineage, treatyID, ecolexID.}
 \item{HEIDI: }{A dataset with 2280 observations and the following
 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 \item{HUGGO: }{A dataset with 7330 observations and the following
-49 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
-DocType, AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID,
-ieaID, DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region,
-subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn,
-Languages, Appendices, Depository, DepositoryURL, Published, Abstract,
-Website1, Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
-References, EnabledBy, AmendedBy, Lit, Data, Coded, TreatyText, SourceText,
-Text, AbstractText.}
-\item{AIGGO: }{A dataset with 8213 observations and the following
-16 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID,
-TreatyText, SourceText.}
+49 variables: manyID, treatyID, Title, Beg, End, Signature, Force, DocType,
+AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID, ieaID,
+DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
+subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
+Depository, DepositoryURL, Published, Abstract, Website1, Website2,
+Secretariat, SecretariatURL, UNEP, Supersedes, References, EnabledBy,
+AmendedBy, Lit, Data, Coded, TreatyText, SourceText, Text, AbstractText.}
+\item{AIGGO: }{A dataset with 7330 observations and the following
+6 variables: manyID, Lineage, accessionC, accessionP, termination_type,
+termination_date.}
 }
 }
 \usage{
@@ -161,26 +159,16 @@ agreements database documentation
 #> 
 #> 
 #> $AIGGO
-#> ----------------------------------------------------------------------------
-#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-#> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            8213|    825    |     10.05     |
-#> |     Title     |  character  |            8213|     0     |       0       |
-#> |      Beg      |    mdate    |            8213|    457    |     5.56      |
-#> |      End      |    mdate    |            8213|   7526    |     91.64     |
-#> |    DocType    |  character  |            8213|   5353    |     65.18     |
-#> | AgreementType |  character  |            8213|   5391    |     65.64     |
-#> |   GeogArea    |  character  |            8213|   6022    |     73.32     |
-#> |   Signature   |    mdate    |            8213|   4710    |     57.35     |
-#> |     Force     |    mdate    |            8213|   6306    |     76.78     |
-#> |    Lineage    |  character  |            8213|     0     |       0       |
-#> |  accessionC   |  character  |            8213|   1441    |     17.55     |
-#> |  accessionP   |  character  |            8213|   7585    |     92.35     |
-#> |   treatyID    |  character  |            8213|   4653    |     56.65     |
-#> |   gnevarID    |  character  |            8213|   5357    |     65.23     |
-#> |  TreatyText   |    list     |            8213|   4120    |     50.16     |
-#> |  SourceText   |  character  |            8213|     0     |       0       |
-#> ----------------------------------------------------------------------------
+#> -----------------------------------------------------------------------------
+#> |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> -----------------------------------------------------------------------------
+#> |     manyID     |  character  |            7330|   3480    |     47.48     |
+#> |    Lineage     |  character  |            7330|     0     |       0       |
+#> |   accessionC   |  character  |            7330|   1274    |     17.38     |
+#> |   accessionP   |  character  |            7330|   7065    |     96.38     |
+#> |termination_type|  character  |            7330|   6798    |     92.74     |
+#> |termination_date|    Date     |            7330|   7110    |      97       |
+#> -----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

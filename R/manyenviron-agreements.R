@@ -16,18 +16,16 @@
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 #' \item{HUGGO: }{A dataset with 7330 observations and the following
-#' 49 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
-#' DocType, AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID,
-#' ieaID, DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region,
-#' subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn,
-#' Languages, Appendices, Depository, DepositoryURL, Published, Abstract,
-#' Website1, Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
-#' References, EnabledBy, AmendedBy, Lit, Data, Coded, TreatyText, SourceText,
-#' Text, AbstractText.}
-#' \item{AIGGO: }{A dataset with 8213 observations and the following
-#' 16 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-#' Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID,
-#' TreatyText, SourceText.}
+#' 49 variables: manyID, treatyID, Title, Beg, End, Signature, Force, DocType,
+#' AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID, ieaID,
+#' DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
+#' subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
+#' Depository, DepositoryURL, Published, Abstract, Website1, Website2,
+#' Secretariat, SecretariatURL, UNEP, Supersedes, References, EnabledBy,
+#' AmendedBy, Lit, Data, Coded, TreatyText, SourceText, Text, AbstractText.}
+#' \item{AIGGO: }{A dataset with 7330 observations and the following
+#' 6 variables: manyID, Lineage, accessionC, accessionP, termination_type,
+#' termination_date.}
 #' }
 
 #'
