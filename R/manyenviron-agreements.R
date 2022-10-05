@@ -4,7 +4,6 @@
 #' following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
-#' @imports manydata
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
 #' 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature,

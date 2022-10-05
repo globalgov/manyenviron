@@ -32,7 +32,7 @@ Text, AbstractText.}
 \item{AIGGO: }{A dataset with 8213 observations and the following
 16 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
 Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID,
-TreatyText, Source.}
+TreatyText, SourceText.}
 }
 }
 \usage{
@@ -179,7 +179,7 @@ agreements database documentation
 #> |   treatyID    |  character  |            8213|   4653    |     56.65     |
 #> |   gnevarID    |  character  |            8213|   5357    |     65.23     |
 #> |  TreatyText   |    list     |            8213|   4120    |     50.16     |
-#> |    Source     |    list     |            8213|   5037    |     61.33     |
+#> |  SourceText   |  character  |            8213|     0     |       0       |
 #> ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
