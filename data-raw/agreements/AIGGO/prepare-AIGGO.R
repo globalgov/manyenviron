@@ -26,7 +26,8 @@ AIGGO <- AIGGO %>%
   dplyr::select(manyID, Lineage, accessionC, accessionP,
                   termination_type, termination_date) %>%
   dplyr::mutate(accessionC = gsub("NA", NA, accessionC),
-                accessionP = gsub("NA", NA, accessionP))
+                accessionP = gsub("NA", NA, accessionP)) %>%
+  dplyr::distinct()
 
 # Stage three: Connecting data
 manypkgs::export_data(AIGGO, database = "agreements",
