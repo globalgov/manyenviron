@@ -1,4 +1,4 @@
-# manyenviron 0.1.4
+# manyenviron 0.2.0
 
 2022-10-04
 
