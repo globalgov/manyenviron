@@ -1,12 +1,27 @@
+# manyenviron 0.2.0
+
+2022-10-04
+
+## Package
+
+* Added ´generate_agreements()´ function for programmatically creating random, fictional, environmental agreement titles
+
+## Data
+
+* Closed #59 by dividing coded datasets into HUGGO and AIGGO
+* Added MEA edges and nodes data to HUGGO_MEM and HUGGO respectively
+
 # manyenviron 0.1.3
 
 2022-08-16
 
 ## Package
+
 * Closed #57 by switching back to original logo size.
 * Updated workflow files to include package caching.
 
 ## Data
+
 * Changed class from 'messydt' to 'mdate' for date variables (`Beg`, `Signature`, `Force`, `End`, `Rat`, `SignatureCountry`, and `Term`) across all databases using `messydates::as_messydate()`.
 * Re-exported treaty texts after standardising with `manypkgs::standardise_treaty_text()`.
 * Added `accessionC` and `accessionP` variables in `GNEVAR` dataset in `agreements` database using `manypkgs::code_accession_terms()`. These variables code the accession conditions (such as whether it is open to all states) and procedures (for example by majority voting) respectively that are stipulated in treaties for states acceding to a treaty.
@@ -16,9 +31,11 @@
 2022-03-16
 
 ## Package
+
 * Closed #53 by adding Shinyapp folders, dashboard vignette and connecting to a Shinyapp account.
 
 ## Data
+
 * Closed #15 by adding `International Regimes Database` to the `regimes` database.
 * Fixed #55 by renaming variables in database to avoid ambiguity
   * Renamed variables "L", "D", and "J" in the agreements database "DocType", "AgreementType", and "GeogArea" respectively

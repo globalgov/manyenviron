@@ -6,16 +6,13 @@
 \title{agreements database documentation}
 \format{
 The agreements database is a list that contains the
-following 5 datasets: IEADB, GNEVAR, ECOLEX, CIESIN, HEIDI.
+following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{IEADB: }{A dataset with 3666 observations and the following
 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature,
 Force, Lineage, treatyID, ieadbID.}
-\item{GNEVAR: }{A dataset with 7273 observations and the following
-14 variables: manyID, Title, Beg, End, DocType, AgreementType, GeogArea,
-Signature, Force, Lineage, accessionC, accessionP, treatyID, gnevarID.}
 \item{ECOLEX: }{A dataset with 2174 observations and the following
 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
 Lineage, treatyID, ecolexID.}
@@ -23,6 +20,17 @@ Lineage, treatyID, ecolexID.}
 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
 \item{HEIDI: }{A dataset with 2280 observations and the following
 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
+\item{HUGGO: }{A dataset with 7330 observations and the following
+49 variables: manyID, treatyID, Title, Beg, End, Signature, Force, DocType,
+AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID, ieaID,
+DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
+subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
+Depository, DepositoryURL, Published, Abstract, Website1, Website2,
+Secretariat, SecretariatURL, UNEP, Supersedes, References, EnabledBy,
+AmendedBy, Lit, Data, Coded, TreatyText, SourceText, Text, AbstractText.}
+\item{AIGGO: }{A dataset with 7330 observations and the following
+6 variables: manyID, Lineage, accessionC, accessionP, termination_type,
+termination_date.}
 }
 }
 \usage{
@@ -32,87 +40,135 @@ agreements
 agreements database documentation
 }
 \details{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{## $IEADB
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |            3666|     0     |       0       |
-## |     Title     |  character  |            3666|     0     |       0       |
-## |      Beg      |    mdate    |            3666|    65     |     1.77      |
-## |    DocType    |  character  |            3666|     0     |       0       |
-## | AgreementType |  character  |            3666|     0     |       0       |
-## |   Signature   |    mdate    |            3666|    65     |     1.77      |
-## |     Force     |    mdate    |            3666|    867    |     23.65     |
-## |    Lineage    |  character  |            3666|     0     |       0       |
-## |   treatyID    |  character  |            3666|     0     |       0       |
-## |    ieadbID    |  character  |            3666|     0     |       0       |
-## ----------------------------------------------------------------------------
-## 
-## 
-## $GNEVAR
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |            7273|    165    |     2.27      |
-## |     Title     |  character  |            7273|     0     |       0       |
-## |      Beg      |    mdate    |            7273|    137    |     1.88      |
-## |      End      |    mdate    |            7273|   6599    |     90.73     |
-## |    DocType    |  character  |            7273|   4523    |     62.19     |
-## | AgreementType |  character  |            7273|   4561    |     62.71     |
-## |   GeogArea    |  character  |            7273|   5132    |     70.56     |
-## |   Signature   |    mdate    |            7273|   3903    |     53.66     |
-## |     Force     |    mdate    |            7273|   5453    |     74.98     |
-## |    Lineage    |  character  |            7273|   3846    |     52.88     |
-## |  accessionC   |  character  |            7273|   2132    |     29.31     |
-## |  accessionP   |  character  |            7273|   6737    |     92.63     |
-## |   treatyID    |  character  |            7273|   3846    |     52.88     |
-## |   gnevarID    |  character  |            7273|   4527    |     62.24     |
-## ----------------------------------------------------------------------------
-## 
-## 
-## $ECOLEX
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |            2174|     0     |       0       |
-## |     Title     |  character  |            2174|     0     |       0       |
-## |      Beg      |    mdate    |            2174|     0     |       0       |
-## |    DocType    |  character  |            2174|     0     |       0       |
-## |   GeogArea    |  character  |            2174|    90     |     4.14      |
-## |   Signature   |    mdate    |            2174|     0     |       0       |
-## |     Force     |    mdate    |            2174|   1066    |     49.03     |
-## |    Lineage    |  character  |            2174|     0     |       0       |
-## |   treatyID    |  character  |            2174|     0     |       0       |
-## |   ecolexID    |  character  |            2174|     0     |       0       |
-## ----------------------------------------------------------------------------
-## 
-## 
-## $CIESIN
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |             666|     0     |       0       |
-## |     Title     |  character  |             666|     0     |       0       |
-## |      Beg      |    mdate    |             666|     0     |       0       |
-## |   Signature   |    mdate    |             666|     0     |       0       |
-## |     Force     |    mdate    |             666|     0     |       0       |
-## |    Lineage    |  character  |             666|     0     |       0       |
-## |   treatyID    |  character  |             666|     0     |       0       |
-## ----------------------------------------------------------------------------
-## 
-## 
-## $HEIDI
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    manyID     |  character  |            2280|     0     |       0       |
-## |     Title     |  character  |            2280|     0     |       0       |
-## |      Beg      |    mdate    |            2280|    27     |     1.18      |
-## |   Signature   |    mdate    |            2280|    27     |     1.18      |
-## |    Lineage    |  character  |            2280|     0     |       0       |
-## |   treatyID    |  character  |            2280|     0     |       0       |
-## |    heidiID    |   numeric   |            2280|     0     |       0       |
-## ----------------------------------------------------------------------------
+\if{html}{\out{<div class="sourceCode">}}\preformatted{#> $IEADB
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    manyID     |  character  |            3666|     0     |       0       |
+#> |     Title     |  character  |            3666|     0     |       0       |
+#> |      Beg      |    mdate    |            3666|    65     |     1.77      |
+#> |    DocType    |  character  |            3666|     0     |       0       |
+#> | AgreementType |  character  |            3666|     0     |       0       |
+#> |   Signature   |    mdate    |            3666|    65     |     1.77      |
+#> |     Force     |    mdate    |            3666|    867    |     23.65     |
+#> |    Lineage    |  character  |            3666|     0     |       0       |
+#> |   treatyID    |  character  |            3666|     0     |       0       |
+#> |    ieadbID    |  character  |            3666|     0     |       0       |
+#> ----------------------------------------------------------------------------
+#> 
+#> 
+#> $ECOLEX
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    manyID     |  character  |            2174|     0     |       0       |
+#> |     Title     |  character  |            2174|     0     |       0       |
+#> |      Beg      |    mdate    |            2174|     0     |       0       |
+#> |    DocType    |  character  |            2174|     0     |       0       |
+#> |   GeogArea    |  character  |            2174|    90     |     4.14      |
+#> |   Signature   |    mdate    |            2174|     0     |       0       |
+#> |     Force     |    mdate    |            2174|   1066    |     49.03     |
+#> |    Lineage    |  character  |            2174|     0     |       0       |
+#> |   treatyID    |  character  |            2174|     0     |       0       |
+#> |   ecolexID    |  character  |            2174|     0     |       0       |
+#> ----------------------------------------------------------------------------
+#> 
+#> 
+#> $CIESIN
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    manyID     |  character  |             666|     0     |       0       |
+#> |     Title     |  character  |             666|     0     |       0       |
+#> |      Beg      |    mdate    |             666|     0     |       0       |
+#> |   Signature   |    mdate    |             666|     0     |       0       |
+#> |     Force     |    mdate    |             666|     0     |       0       |
+#> |    Lineage    |  character  |             666|     0     |       0       |
+#> |   treatyID    |  character  |             666|     0     |       0       |
+#> ----------------------------------------------------------------------------
+#> 
+#> 
+#> $HEIDI
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    manyID     |  character  |            2280|     0     |       0       |
+#> |     Title     |  character  |            2280|     0     |       0       |
+#> |      Beg      |    mdate    |            2280|    27     |     1.18      |
+#> |   Signature   |    mdate    |            2280|    27     |     1.18      |
+#> |    Lineage    |  character  |            2280|     0     |       0       |
+#> |   treatyID    |  character  |            2280|     0     |       0       |
+#> |    heidiID    |   numeric   |            2280|     0     |       0       |
+#> ----------------------------------------------------------------------------
+#> 
+#> 
+#> $HUGGO
+#> ------------------------------------------------------------------------------
+#> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ------------------------------------------------------------------------------
+#> |     manyID      |  character  |            7330|   3480    |     47.48     |
+#> |    treatyID     |  character  |            7330|   3480    |     47.48     |
+#> |      Title      |  character  |            7330|     0     |       0       |
+#> |       Beg       |    mdate    |            7330|    60     |     0.82      |
+#> |       End       |    mdate    |            7330|   6654    |     90.78     |
+#> |    Signature    |    mdate    |            7330|   3537    |     48.25     |
+#> |      Force      |    mdate    |            7330|   5169    |     70.52     |
+#> |     DocType     |  character  |            7330|   4566    |     62.29     |
+#> |  AgreementType  |  character  |            7330|   4604    |     62.81     |
+#> |    GeogArea     |  character  |            7330|   5186    |     70.75     |
+#> |    gnevarID     |  character  |            7330|   4570    |     62.35     |
+#> |    verified     |  character  |            7330|   7281    |     99.33     |
+#> |     gengID      |  character  |            7330|   6411    |     87.46     |
+#> |    ecolexID     |  character  |            7330|   6843    |     93.36     |
+#> |      ieaID      |  character  |            7330|   6620    |     90.31     |
+#> |DocValidUntilDate|  character  |            7330|   7296    |     99.54     |
+#> |      Notes      |  character  |            7330|   7282    |     99.35     |
+#> |    Download     |  character  |            7330|   6411    |     87.46     |
+#> |    MEA_type     |  character  |            7330|   6620    |     90.31     |
+#> |      Ambit      |  character  |            7330|   6901    |     94.15     |
+#> |     Region      |  character  |            7330|   7080    |     96.59     |
+#> | subject_ecolex  |  character  |            7330|   6843    |     93.36     |
+#> |   subject_iea   |  character  |            7330|   6620    |     90.31     |
+#> |    Keywords     |  character  |            7330|   6915    |     94.34     |
+#> |     Lineage     |  character  |            7330|   6620    |     90.31     |
+#> |    Sequence     |   numeric   |            7330|   6621    |     90.33     |
+#> |    AdoptedIn    |  character  |            7330|   6896    |     94.08     |
+#> |    Languages    |  character  |            7330|   6843    |     93.36     |
+#> |   Appendices    |   numeric   |            7330|   7295    |     99.52     |
+#> |   Depository    |  character  |            7330|   6937    |     94.64     |
+#> |  DepositoryURL  |  character  |            7330|   7313    |     99.77     |
+#> |    Published    |  character  |            7330|   7062    |     96.34     |
+#> |    Abstract     |  character  |            7330|   7303    |     99.63     |
+#> |    Website1     |  character  |            7330|   6943    |     94.72     |
+#> |    Website2     |  character  |            7330|   7258    |     99.02     |
+#> |   Secretariat   |  character  |            7330|   6621    |     90.33     |
+#> | SecretariatURL  |  character  |            7330|   6621    |     90.33     |
+#> |      UNEP       |  character  |            7330|   7128    |     97.24     |
+#> |   Supersedes    |  character  |            7330|   7313    |     99.77     |
+#> |   References    |  character  |            7330|   7294    |     99.51     |
+#> |    EnabledBy    |  character  |            7330|   7221    |     98.51     |
+#> |    AmendedBy    |  character  |            7330|   7239    |     98.76     |
+#> |       Lit       |  character  |            7330|   6776    |     92.44     |
+#> |      Data       |  character  |            7330|   6784    |     92.55     |
+#> |      Coded      |  character  |            7330|   7025    |     95.84     |
+#> |   TreatyText    |  character  |            7330|   5777    |     78.81     |
+#> |   SourceText    |  character  |            7330|   5777    |     78.81     |
+#> |      Text       |  character  |            7330|   7049    |     96.17     |
+#> |  AbstractText   |  character  |            7330|   7049    |     96.17     |
+#> ------------------------------------------------------------------------------
+#> 
+#> 
+#> $AIGGO
+#> -----------------------------------------------------------------------------
+#> |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> -----------------------------------------------------------------------------
+#> |     manyID     |  character  |            7330|   3480    |     47.48     |
+#> |    Lineage     |  character  |            7330|     0     |       0       |
+#> |   accessionC   |  character  |            7330|   1274    |     17.38     |
+#> |   accessionP   |  character  |            7330|   7065    |     96.38     |
+#> |termination_type|  character  |            7330|   6798    |     92.74     |
+#> |termination_date|    Date     |            7330|   7110    |      97       |
+#> -----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

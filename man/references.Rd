@@ -21,14 +21,14 @@ references
 references database documentation
 }
 \details{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{## $ECOLEX_REF
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |   treatyID1   |  character  |            1164|     0     |       0       |
-## |   treatyID2   |  character  |            1164|     0     |       0       |
-## |    RefType    |  character  |            1164|     0     |       0       |
-## ----------------------------------------------------------------------------
+\if{html}{\out{<div class="sourceCode">}}\preformatted{#> $ECOLEX_REF
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |   treatyID1   |  character  |            1164|     0     |       0       |
+#> |   treatyID2   |  character  |            1164|     0     |       0       |
+#> |    RefType    |  character  |            1164|     0     |       0       |
+#> ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}

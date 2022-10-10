@@ -21,18 +21,18 @@ regimes
 regimes database documentation
 }
 \details{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{## $IRD
-## ----------------------------------------------------------------------------
-## |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
-## ----------------------------------------------------------------------------
-## |    Regime     |  character  |              92|     0     |       0       |
-## |RegimeComponent|  character  |              92|    33     |     35.87     |
-## |      Beg      |    mdate    |              92|    36     |     39.13     |
-## |      Wat      |   messydt   |              92|    34     |     36.96     |
-## |     Wat2      |   messydt   |              92|    78     |     84.78     |
-## |      End      |    mdate    |              92|    36     |     39.13     |
-## | RegimeElement |  character  |              92|     0     |       0       |
-## ----------------------------------------------------------------------------
+\if{html}{\out{<div class="sourceCode">}}\preformatted{#> $IRD
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    Regime     |  character  |              92|     0     |       0       |
+#> |RegimeComponent|  character  |              92|    33     |     35.87     |
+#> |      Beg      |    mdate    |              92|    36     |     39.13     |
+#> |      Wat      |   messydt   |              92|    34     |     36.96     |
+#> |     Wat2      |   messydt   |              92|    78     |     84.78     |
+#> |      End      |    mdate    |              92|    36     |     39.13     |
+#> | RegimeElement |  character  |              92|     0     |       0       |
+#> ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \keyword{datasets}
