@@ -4,7 +4,7 @@
 
 ## Package
 
-* Added ´generate_agreements()´function for programmatically creating random, fictional, environmental agreement titles
+* Added ´generate_agreements()´ function for programmatically creating random, fictional, environmental agreement titles
 
 ## Data
 
