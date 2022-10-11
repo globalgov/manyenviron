@@ -297,7 +297,8 @@ HUGGO <- dplyr::relocate(HUGGO, manyID, treatyID, Title, Beg, End, Signature,
 
 # make sure all vars are correctly coded as NA if necessary
 HUGGO <- HUGGO %>% 
-  mutate(across(everything(), ~stringr::str_replace_all(., "^NA$", NA_character_))) %>% 
+  dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
+                                                               NA_character_))) %>% 
   dplyr::distinct() %>% 
   mutate(Signature = messydates::as_messydate(Signature),
          Force = messydates::as_messydate(Force),
