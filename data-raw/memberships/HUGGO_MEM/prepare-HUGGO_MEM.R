@@ -104,7 +104,8 @@ HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "CountryID", "Ti
 
 
 HUGGO_MEM <- HUGGO_MEM %>% 
-  mutate(across(everything(), ~stringr::str_replace_all(., "^NA$", NA_character_))) %>% 
+  dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
+                                                               NA_character_))) %>% 
   dplyr::distinct() %>% 
   mutate(Signature = messydates::as_messydate(Signature),
          Force = messydates::as_messydate(Force),
