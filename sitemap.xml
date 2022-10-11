@@ -40,6 +40,9 @@
     <loc>https://globalgov.github.io/manyenviron/reference/agreements.html</loc>
   </url>
   <url>
+    <loc>https://globalgov.github.io/manyenviron/reference/generate_agreements.html</loc>
+  </url>
+  <url>
     <loc>https://globalgov.github.io/manyenviron/reference/index.html</loc>
   </url>
   <url>
@@ -56,8 +59,5 @@
   </url>
   <url>
     <loc>https://globalgov.github.io/manyenviron/reference/regimes.html</loc>
-  </url>
-  <url>
-    <loc>https://globalgov.github.io/manyenviron/reference/texts.html</loc>
   </url>
 </urlset>
