@@ -102,10 +102,20 @@ HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
 HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "CountryID", "Title",
                                           "Beg", "End", "Signature", "Force"))
 
+
+HUGGO_MEM <- HUGGO_MEM %>% 
+  mutate(across(everything(), ~stringr::str_replace_all(., "^NA$", NA_character_))) %>% 
+  dplyr::distinct() %>% 
+  mutate(Signature = messydates::as_messydate(Signature),
+         Force = messydates::as_messydate(Force),
+         Beg = messydates::as_messydate(Beg),
+         End = messydates::as_messydate(End))
+
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
 # within the package.
-manypkgs::export_data(HUGGO_MEM, database = "memberships", URL = "NA")
+manypkgs::export_data(HUGGO_MEM, database = "memberships",
+                      URL = "Hand-coded by the GGO team")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
 # adherence to certain standards. You can hit Cmd-Shift-T (Mac)
