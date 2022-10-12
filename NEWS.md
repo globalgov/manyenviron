@@ -1,6 +1,15 @@
+# manyenviron 0.2.1
+
+2022-10-11
+
+## Data
+
+* Corrected coding mistakes with HUGGO and AIGGO datasets in 'agreements' database
+* Corrected coding mistakes with HUGGO_MEM in 'memberships' database
+
 # manyenviron 0.2.0
 
-2022-10-04
+2022-10-10
 
 ## Package
 

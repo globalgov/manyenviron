@@ -11,8 +11,8 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
-Force, Rat, ecolexID, treatyID.}
+10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force,
+Rat, ecolexID, treatyID.}
 \item{IEADB_MEM: }{A dataset with 15466 observations and the following
 12 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
 Signature, Rat, Force, DocType, ieadbID, treatyID.}
@@ -23,9 +23,9 @@ treatyID.}
 31 variables: manyID, treatyID, CountryID, Title, Beg, End, Signature,
 Force, CountrySignature, CountryRat, CountryForce, CountryForce2,
 CountryForce3, Term, CountryWithdrawal, CountryWithdrawal2, gengID,
-ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp,
-Reservation, verified, Notes, CountryForce_ecolex, CountryForce_iea,
-Consent, Acceptance, Accession.}
+ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp, Reservation,
+verified, Notes, CountryForce_ecolex, CountryForce_iea, Consent, Acceptance,
+Accession.}
 }
 }
 \usage{
@@ -98,29 +98,29 @@ memberships database documentation
 #> |        End        |    mdate    |           76954|   72931   |     94.77     |
 #> |     Signature     |    mdate    |           76954|    46     |     0.06      |
 #> |       Force       |    mdate    |           76954|   5390    |       7       |
-#> | CountrySignature  |    mdate    |           76954|   32086   |     41.7      |
-#> |    CountryRat     |    mdate    |           76954|   49099   |     63.8      |
-#> |   CountryForce    |    mdate    |           76954|   45643   |     59.31     |
-#> |   CountryForce2   |    mdate    |           76954|   76193   |     99.01     |
-#> |   CountryForce3   |    mdate    |           76954|   76904   |     99.94     |
-#> |       Term        |    mdate    |           76954|   75764   |     98.45     |
-#> | CountryWithdrawal |    mdate    |           76954|   72414   |     94.1      |
-#> |CountryWithdrawal2 |    mdate    |           76954|   76903   |     99.93     |
+#> | CountrySignature  |  character  |           76954|   32086   |     41.7      |
+#> |    CountryRat     |  character  |           76954|   49099   |     63.8      |
+#> |   CountryForce    |  character  |           76954|   45643   |     59.31     |
+#> |   CountryForce2   |  character  |           76954|   76193   |     99.01     |
+#> |   CountryForce3   |  character  |           76954|   76904   |     99.94     |
+#> |       Term        |  character  |           76954|   75764   |     98.45     |
+#> | CountryWithdrawal |  character  |           76954|   72414   |     94.1      |
+#> |CountryWithdrawal2 |  character  |           76954|   76903   |     99.93     |
 #> |      gengID       |  character  |           76954|    17     |     0.02      |
 #> |     ecolexID      |  character  |           76954|   41365   |     53.75     |
 #> |       ieaID       |  character  |           76954|   14159   |     18.4      |
 #> |     Comments      |  character  |           76954|   73700   |     95.77     |
-#> |      Deposit      |    mdate    |           76954|   75787   |     98.48     |
-#> |     obsolete      |   logical   |           76954|   66339   |     86.21     |
-#> |  ProvisionalApp   |    mdate    |           76954|   76536   |     99.46     |
-#> |    Reservation    |    Date     |           76954|   76918   |     99.95     |
+#> |      Deposit      |  character  |           76954|   75787   |     98.48     |
+#> |     obsolete      |  character  |           76954|   66339   |     86.21     |
+#> |  ProvisionalApp   |  character  |           76954|   76536   |     99.46     |
+#> |    Reservation    |  character  |           76954|   76918   |     99.95     |
 #> |     verified      |  character  |           76954|   73735   |     95.82     |
 #> |       Notes       |  character  |           76954|   76393   |     99.27     |
-#> |CountryForce_ecolex|    mdate    |           76954|   37918   |     49.27     |
-#> | CountryForce_iea  |    mdate    |           76954|   37918   |     49.27     |
-#> |      Consent      |    mdate    |           76954|   76889   |     99.92     |
-#> |    Acceptance     |    mdate    |           76954|   76928   |     99.97     |
-#> |     Accession     |    mdate    |           76954|   72082   |     93.67     |
+#> |CountryForce_ecolex|  character  |           76954|   37918   |     49.27     |
+#> | CountryForce_iea  |  character  |           76954|   37918   |     49.27     |
+#> |      Consent      |  character  |           76954|   76889   |     99.92     |
+#> |    Acceptance     |  character  |           76954|   76928   |     99.97     |
+#> |     Accession     |  character  |           76954|   72082   |     93.67     |
 #> --------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }

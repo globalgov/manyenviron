@@ -278,14 +278,33 @@ HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
 HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT1, by = "treatyID")
 HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT2, by = "treatyID")
 
-# Add manyID column
+# Remove manyID columns to make sure all is correct
+HUGGO <- dplyr::select(HUGGO, -starts_with("manyID"))
+
+# Recode, once more treaty ID to avoid NAs
+HUGGO$treatyID <- manypkgs::code_agreements(HUGGO, HUGGO$Title, HUGGO$Beg)
+
+# recode manyID
 manyID <- manypkgs::condense_agreements(var = HUGGO$treatyID)
-# Remove old ones
-HUGGO <- dplyr::select(HUGGO, -(dplyr::starts_with("manyID")))
-HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
-# Reorder variables
-HUGGO <- dplyr::relocate(HUGGO, c(manyID, treatyID, Title, Beg, End, Signature,
-                                  Force))
+HUGGO <- dplyr::inner_join(HUGGO, manyID, by = "treatyID")
+
+# remove duplicates
+HUGGO <- dplyr::distinct(HUGGO)
+
+# reorder variables
+HUGGO <- dplyr::relocate(HUGGO, manyID, treatyID, Title, Beg, End, Signature,
+                                  Force)
+
+# make sure all vars are correctly coded as NA if necessary
+HUGGO <- HUGGO %>% 
+  dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
+                                                               NA_character_))) %>% 
+  dplyr::distinct() %>% 
+  mutate(Signature = messydates::as_messydate(Signature),
+         Force = messydates::as_messydate(Force),
+         Beg = messydates::as_messydate(Beg),
+         End = messydates::as_messydate(End)) %>% 
+  dplyr::distinct()
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available

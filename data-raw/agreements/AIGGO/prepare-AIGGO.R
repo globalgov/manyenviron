@@ -6,8 +6,11 @@
 # Start with HUGGO dataset
 AIGGO <- manyenviron::agreements$HUGGO
 
-# Add Lineage Column
-AIGGO$Lineage <- manypkgs::code_lineage(AIGGO$Title)
+# Add Action-Area Column
+AIGGO$action_area <- manypkgs::code_lineage(AIGGO$Title)
+
+# Add linkage column
+AIGGO$linkage <- manypkgs::code_linkage(AIGGO$Title, AIGGO$Beg)
 
 # Code accession conditions and procedures
 AIGGO$accessionC <- manypkgs::code_accession_terms(AIGGO$TreatyText,
@@ -21,12 +24,18 @@ AIGGO$termination_type <- manypkgs::code_term(AIGGO$Title, AIGGO$TreatyText)
 
 AIGGO$termination_date <- manypkgs::code_term_date(AIGGO$Title,
                                                    AIGGO$TreatyText)
+
 # Remove duplicates and convert NAs
 AIGGO <- AIGGO %>%
-  dplyr::select(manyID, Lineage, accessionC, accessionP,
-                  termination_type, termination_date) %>%
-  dplyr::mutate(accessionC = gsub("NA", NA, accessionC),
-                accessionP = gsub("NA", NA, accessionP)) %>%
+  dplyr::select(manyID, treatyID, Title, Beg, End, Signature,
+                Force, action_area, linkage, accessionC, accessionP, 
+                termination_type, termination_date) %>%
+  mutate(across(everything(), ~stringr::str_replace_all(., "^NA$", NA_character_))) %>% 
+  mutate(linkage = ifelse(linkage == "" , NA_character_, linkage)) %>% 
+  mutate(Signature = messydates::as_messydate(Signature),
+         Force = messydates::as_messydate(Force),
+         Beg = messydates::as_messydate(Beg),
+         End = messydates::as_messydate(End)) %>% 
   dplyr::distinct()
 
 # Stage three: Connecting data
