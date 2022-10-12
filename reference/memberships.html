@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">manyenviron</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.1</span>
       </span>
     </div>
 
@@ -104,8 +104,8 @@ following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
 please use the <code>data_source()</code> and <code>data_contrast()</code> functions.</p><dl><dt>ECOLEX_MEM: </dt>
 <dd><p>A dataset with 25003 observations and the following
-10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry,
-Force, Rat, ecolexID, treatyID.</p></dd>
+10 variables: manyID, CountryID, Title, Beg, End, SignatureCountry, Force,
+Rat, ecolexID, treatyID.</p></dd>
 
 <dt>IEADB_MEM: </dt>
 <dd><p>A dataset with 15466 observations and the following
@@ -122,9 +122,9 @@ treatyID.</p></dd>
 31 variables: manyID, treatyID, CountryID, Title, Beg, End, Signature,
 Force, CountrySignature, CountryRat, CountryForce, CountryForce2,
 CountryForce3, Term, CountryWithdrawal, CountryWithdrawal2, gengID,
-ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp,
-Reservation, verified, Notes, CountryForce_ecolex, CountryForce_iea,
-Consent, Acceptance, Accession.</p></dd>
+ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp, Reservation,
+verified, Notes, CountryForce_ecolex, CountryForce_iea, Consent, Acceptance,
+Accession.</p></dd>
 
 
 </dl></div>
@@ -193,29 +193,29 @@ Consent, Acceptance, Accession.</p></dd>
 <span id="cb1-61"><a href="#cb1-61"></a><span class="co">#&gt; |        End        |    mdate    |           76954|   72931   |     94.77     |</span></span>
 <span id="cb1-62"><a href="#cb1-62"></a><span class="co">#&gt; |     Signature     |    mdate    |           76954|    46     |     0.06      |</span></span>
 <span id="cb1-63"><a href="#cb1-63"></a><span class="co">#&gt; |       Force       |    mdate    |           76954|   5390    |       7       |</span></span>
-<span id="cb1-64"><a href="#cb1-64"></a><span class="co">#&gt; | CountrySignature  |    mdate    |           76954|   32086   |     41.7      |</span></span>
-<span id="cb1-65"><a href="#cb1-65"></a><span class="co">#&gt; |    CountryRat     |    mdate    |           76954|   49099   |     63.8      |</span></span>
-<span id="cb1-66"><a href="#cb1-66"></a><span class="co">#&gt; |   CountryForce    |    mdate    |           76954|   45643   |     59.31     |</span></span>
-<span id="cb1-67"><a href="#cb1-67"></a><span class="co">#&gt; |   CountryForce2   |    mdate    |           76954|   76193   |     99.01     |</span></span>
-<span id="cb1-68"><a href="#cb1-68"></a><span class="co">#&gt; |   CountryForce3   |    mdate    |           76954|   76904   |     99.94     |</span></span>
-<span id="cb1-69"><a href="#cb1-69"></a><span class="co">#&gt; |       Term        |    mdate    |           76954|   75764   |     98.45     |</span></span>
-<span id="cb1-70"><a href="#cb1-70"></a><span class="co">#&gt; | CountryWithdrawal |    mdate    |           76954|   72414   |     94.1      |</span></span>
-<span id="cb1-71"><a href="#cb1-71"></a><span class="co">#&gt; |CountryWithdrawal2 |    mdate    |           76954|   76903   |     99.93     |</span></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="co">#&gt; | CountrySignature  |  character  |           76954|   32086   |     41.7      |</span></span>
+<span id="cb1-65"><a href="#cb1-65"></a><span class="co">#&gt; |    CountryRat     |  character  |           76954|   49099   |     63.8      |</span></span>
+<span id="cb1-66"><a href="#cb1-66"></a><span class="co">#&gt; |   CountryForce    |  character  |           76954|   45643   |     59.31     |</span></span>
+<span id="cb1-67"><a href="#cb1-67"></a><span class="co">#&gt; |   CountryForce2   |  character  |           76954|   76193   |     99.01     |</span></span>
+<span id="cb1-68"><a href="#cb1-68"></a><span class="co">#&gt; |   CountryForce3   |  character  |           76954|   76904   |     99.94     |</span></span>
+<span id="cb1-69"><a href="#cb1-69"></a><span class="co">#&gt; |       Term        |  character  |           76954|   75764   |     98.45     |</span></span>
+<span id="cb1-70"><a href="#cb1-70"></a><span class="co">#&gt; | CountryWithdrawal |  character  |           76954|   72414   |     94.1      |</span></span>
+<span id="cb1-71"><a href="#cb1-71"></a><span class="co">#&gt; |CountryWithdrawal2 |  character  |           76954|   76903   |     99.93     |</span></span>
 <span id="cb1-72"><a href="#cb1-72"></a><span class="co">#&gt; |      gengID       |  character  |           76954|    17     |     0.02      |</span></span>
 <span id="cb1-73"><a href="#cb1-73"></a><span class="co">#&gt; |     ecolexID      |  character  |           76954|   41365   |     53.75     |</span></span>
 <span id="cb1-74"><a href="#cb1-74"></a><span class="co">#&gt; |       ieaID       |  character  |           76954|   14159   |     18.4      |</span></span>
 <span id="cb1-75"><a href="#cb1-75"></a><span class="co">#&gt; |     Comments      |  character  |           76954|   73700   |     95.77     |</span></span>
-<span id="cb1-76"><a href="#cb1-76"></a><span class="co">#&gt; |      Deposit      |    mdate    |           76954|   75787   |     98.48     |</span></span>
-<span id="cb1-77"><a href="#cb1-77"></a><span class="co">#&gt; |     obsolete      |   logical   |           76954|   66339   |     86.21     |</span></span>
-<span id="cb1-78"><a href="#cb1-78"></a><span class="co">#&gt; |  ProvisionalApp   |    mdate    |           76954|   76536   |     99.46     |</span></span>
-<span id="cb1-79"><a href="#cb1-79"></a><span class="co">#&gt; |    Reservation    |    Date     |           76954|   76918   |     99.95     |</span></span>
+<span id="cb1-76"><a href="#cb1-76"></a><span class="co">#&gt; |      Deposit      |  character  |           76954|   75787   |     98.48     |</span></span>
+<span id="cb1-77"><a href="#cb1-77"></a><span class="co">#&gt; |     obsolete      |  character  |           76954|   66339   |     86.21     |</span></span>
+<span id="cb1-78"><a href="#cb1-78"></a><span class="co">#&gt; |  ProvisionalApp   |  character  |           76954|   76536   |     99.46     |</span></span>
+<span id="cb1-79"><a href="#cb1-79"></a><span class="co">#&gt; |    Reservation    |  character  |           76954|   76918   |     99.95     |</span></span>
 <span id="cb1-80"><a href="#cb1-80"></a><span class="co">#&gt; |     verified      |  character  |           76954|   73735   |     95.82     |</span></span>
 <span id="cb1-81"><a href="#cb1-81"></a><span class="co">#&gt; |       Notes       |  character  |           76954|   76393   |     99.27     |</span></span>
-<span id="cb1-82"><a href="#cb1-82"></a><span class="co">#&gt; |CountryForce_ecolex|    mdate    |           76954|   37918   |     49.27     |</span></span>
-<span id="cb1-83"><a href="#cb1-83"></a><span class="co">#&gt; | CountryForce_iea  |    mdate    |           76954|   37918   |     49.27     |</span></span>
-<span id="cb1-84"><a href="#cb1-84"></a><span class="co">#&gt; |      Consent      |    mdate    |           76954|   76889   |     99.92     |</span></span>
-<span id="cb1-85"><a href="#cb1-85"></a><span class="co">#&gt; |    Acceptance     |    mdate    |           76954|   76928   |     99.97     |</span></span>
-<span id="cb1-86"><a href="#cb1-86"></a><span class="co">#&gt; |     Accession     |    mdate    |           76954|   72082   |     93.67     |</span></span>
+<span id="cb1-82"><a href="#cb1-82"></a><span class="co">#&gt; |CountryForce_ecolex|  character  |           76954|   37918   |     49.27     |</span></span>
+<span id="cb1-83"><a href="#cb1-83"></a><span class="co">#&gt; | CountryForce_iea  |  character  |           76954|   37918   |     49.27     |</span></span>
+<span id="cb1-84"><a href="#cb1-84"></a><span class="co">#&gt; |      Consent      |  character  |           76954|   76889   |     99.92     |</span></span>
+<span id="cb1-85"><a href="#cb1-85"></a><span class="co">#&gt; |    Acceptance     |  character  |           76954|   76928   |     99.97     |</span></span>
+<span id="cb1-86"><a href="#cb1-86"></a><span class="co">#&gt; |     Accession     |  character  |           76954|   72082   |     93.67     |</span></span>
 <span id="cb1-87"><a href="#cb1-87"></a><span class="co">#&gt; --------------------------------------------------------------------------------</span></span></code></pre><p></p></div>
     </div>
 
