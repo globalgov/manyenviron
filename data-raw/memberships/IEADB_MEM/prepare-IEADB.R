@@ -11,7 +11,7 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests.
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
-  manydata::transmutate(CountryID = manystates::code_states(country),
+  manydata::transmutate(CountryID = manypkgs::code_states(country),
                      Title = manypkgs::standardise_titles(treatyname,
                                                           api_key = api),
                      # Define Key API

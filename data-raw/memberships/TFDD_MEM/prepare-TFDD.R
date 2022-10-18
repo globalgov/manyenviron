@@ -18,7 +18,7 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
                      Title = manypkgs::standardise_titles(DocumentName,
                                                           api_key = api)) %>%
   # Define Key API
-  dplyr::mutate(Memberships = qStates::code_states(Signatories)) %>%
+  dplyr::mutate(Memberships = manypkgs::code_states(Signatories)) %>%
   dplyr::select(CountryID, Title, Beg, Signature,
                 tfddID, Memberships) %>%
   dplyr::arrange(Beg)
