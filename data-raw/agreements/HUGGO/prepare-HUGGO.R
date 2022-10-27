@@ -306,6 +306,15 @@ HUGGO <- HUGGO %>%
          End = messydates::as_messydate(End)) %>% 
   dplyr::distinct()
 
+# Remove entries with NAs in manyIDs
+HUGGO <- HUGGO %>%
+  dplyr::filter(!is.na(manyID))
+
+#check duplicates between HUGGO and na_entries
+na_entries <- na_entries %>%
+  dplyr::mutate(dup = ifelse(na_entries$Title %in% HUGGO$Title, 1, 0)) %>%
+  dplyr::filter(dup == 0)
+
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
