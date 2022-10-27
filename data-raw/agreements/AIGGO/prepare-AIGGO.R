@@ -38,6 +38,10 @@ AIGGO <- AIGGO %>%
          End = messydates::as_messydate(End)) %>% 
   dplyr::distinct()
 
+# Remove NAs for manyIDs
+AIGGO <- AIGGO %>%
+  dplyr::filter(!is.na(manyID))
+
 # Stage three: Connecting data
 manypkgs::export_data(AIGGO, database = "agreements",
                       URL = "Programatically coded data by the GGO team")
