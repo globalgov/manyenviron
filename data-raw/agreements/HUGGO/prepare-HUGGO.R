@@ -4,8 +4,8 @@
 # ready for the many packages universe.
 
 # Stage one: Collecting data
-HUGGO <- readr::read_csv("data-raw/agreements/HUGGO/EnvGov Nodes-Table 1 VERS2.csv")
-HUGGO2 <- readr::read_csv2("data-raw/agreements/HUGGO/gnevar.csv")
+HUGGO1 <- readr::read_csv("data-raw/agreements/HUGGO/EnvGov Nodes-Table 1 VERS2.csv")
+HUGGO2 <- readr::read_csv("data-raw/agreements/HUGGO/gnevar.csv")
 HUGGO4 <- readr::read_csv("data-raw/agreements/HUGGO/GENG v1.2 (31.10.2015).csv")
 HUGGO6 <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Nodes v1.0.csv", 
                             delim = ";", escape_double = FALSE, trim_ws = TRUE)
@@ -14,41 +14,43 @@ HUGGO6 <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Nodes v1.0.csv",
 # In this stage you will want to correct the variable names and
 # formats of the 'HUGGO' object until the object created
 # below (in stage three) passes all the tests.
-HUGGO <- as_tibble(HUGGO)  %>%
-  tidyr::separate(IEA, c("NEW", "IEADB_ID"), sep = "-") %>%
+HUGGO1 <- as_tibble(HUGGO1)  %>%
   dplyr::mutate(AgreementType = dplyr::recode(T, G = "A", M = "E", "T" = "Q",
                                               D = "V", R = "W", N = "X",
                                               U = "Y")) %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocSign),
                         End = messydates::as_messydate(DocEnd),
                         Force = messydates::as_messydate(DocForce),
-                        gengID = GENG,
-                        ecolexID = ECOLEX) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title,
-                                                     api_key = api)) %>%
-  # Define Key API
+                        gengID = GENG) %>%
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::rename(DocType = L) %>%
   dplyr::rename(GeogArea = J) %>%
-  dplyr::select(gnevarID, Title, Beg, End, DocType, GeogArea, AgreementType,
+  dplyr::select(gengID, Title, Beg, End, DocType, GeogArea, AgreementType,
                 Signature, Force) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
-HUGGO$treatyID <- manypkgs::code_agreements(HUGGO,
-                                            HUGGO$Title,
-                                            HUGGO$Beg)
+HUGGO1$treatyID <- manypkgs::code_agreements(HUGGO1,
+                                             HUGGO1$Title,
+                                             HUGGO1$Beg)
 
 # # Clean HUGGO 2
 HUGGO2 <- as_tibble(HUGGO2) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title,
-                                                     api_key = api)) %>%
-  # Define Key API
-  dplyr::mutate(Beg = messydates::as_messydate(Beg)) %>%
-  dplyr::mutate(End = messydates::as_messydate(End)) %>%
-  dplyr::mutate(Force = messydates::as_messydate(Force)) %>%
-  dplyr::mutate(Term = messydates::as_messydate(Term)) %>%
-  manydata::transmutate(Signature = messydates::as_messydate(Sign))
+  dplyr::mutate(AgreementType = dplyr::recode(T, G = "A", M = "E", "T" = "Q",
+                                              D = "V", R = "W", N = "X",
+                                              U = "Y")) %>%
+  manydata::transmutate(Signature = messydates::as_messydate(DocSign),
+                        End = messydates::as_messydate(DocEnd),
+                        Force = messydates::as_messydate(DocForce),
+                        gengID = GENG) %>%
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::rename(DocType = L) %>%
+  dplyr::rename(GeogArea = J) %>%
+  dplyr::select(gengID, Title, Beg, End, DocType, GeogArea, AgreementType,
+                Signature, Force) %>%
+  dplyr::arrange(Beg)
 
 # Add treatyID column
 HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2, HUGGO2$Title, HUGGO2$Beg)
@@ -57,33 +59,76 @@ HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2, HUGGO2$Title, HUGGO2$Beg)
 HUGGO4$Parties <- paste0(HUGGO4$Country.x, "-", HUGGO4$Country.y)
 HUGGO4 <- as_tibble(HUGGO4) %>%
   manydata::transmutate(Signature = messydates::as_messydate(DocDate),
-                     Force = messydates::as_messydate(InForce)) %>%
+                        Force = messydates::as_messydate(InForce),
+                        gengID = `GENG-B`) %>%
   dplyr::mutate(End = messydates::as_messydate(End)) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title,
-                                                     api_key = api)) %>%
-  # Define Key API
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(Title, Beg, Signature, Force, End, Parties)
+  dplyr::select(gengID, Title, Beg, Signature, Force, End, Parties)
 
 # Add treatyID column
 HUGGO4$treatyID <- manypkgs::code_agreements(HUGGO4,
-                                              HUGGO4$Title,
-                                              HUGGO4$Beg)
+                                             HUGGO4$Title,
+                                             HUGGO4$Beg)
+
+# MEA nodes (MGENG dataset) - HUGGO6
+# For some more information about the variables and codes,
+# please see the documentation in the data-raw folder.
+HUGGO6 <- as_tibble(HUGGO6) %>%
+  dplyr::select(-'...1') %>%
+  dplyr::rename(verified = '...2',
+                ecolexID = ECOLEX.ID,
+                ieaID = IEA.ID,
+                gengID = GENG.ID,
+                MEA_type = Type,
+                subject_ecolex = Subject.x,
+                subject_iea = Subject.y,
+                url = Text) %>%
+  manydata::transmutate(Signature = messydates::as_messydate(DocSign),
+                        Force = messydates::as_messydate(DocForce)) %>%
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title),
+                verified = case_when(verified == "%" ~ "verified",
+                                     verified == "?" ~ "not verified"),
+                Coded = as.character(Coded),
+                Lit = as.character(Lit),
+                Data = as.character(Data)) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::distinct() %>%
+  dplyr::arrange(Beg)
+
+# Add treatyID column
+HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6, HUGGO6$Title, HUGGO6$Beg)
+
+# Join the datasets together
+## fixed minor coding issue with HUGGO before joining data (28-09-2022)
+# HUGGO$Source <- as.character(HUGGO$Source)
 
 # Create a HUGGO "database" to apply consolidate()
-HUGGO <- list(HUGGO, HUGGO2, HUGGO4)
+HUGGO <- list(HUGGO1, HUGGO2, HUGGO4, HUGGO6)
 
 # Join the datasets together
 HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
                                resolve = "coalesce", key = "treatyID")
 
 # Add manyID column
-manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+CIESIN <- manyenviron::agreements$CIESIN
+ECOLEX <- manyenviron::agreements$ECOLEX
+HEIDI <- manyenviron::agreements$HEIDI
+IEADB <- manyenviron::agreements$IEADB
+manyID <- manypkgs::condense_agreements(manyenviron::agreements,
+                                        var = c(CIESIN$treatyID,
+                                                ECOLEX$treatyID,
+                                                HEIDI$treatyID,
+                                                IEADB$treatyID,
+                                                HUGGO$treatyID))
+
 HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
 
-# Extract texts
-HUGGO_TXT <- manydata::consolidate(manyenviron::agreements, "any", "any",
-                                   resolve = "coalesce", key = "manyID")
+# Extract treaty texts 
+# Create a texs "database" to apply consolidate()
+texts <- list(HUGGO, IEADB, ECOLEX, CIESIN, HEIDI)
+texts <- manydata::consolidate(texts, "any", "any",
+                               resolve = "coalesce", key = "manyID")
 
 # Step two: extract treaty texts from IEADB website
 # This requires the original IEADB dataset with the ieadbID column
@@ -116,18 +161,17 @@ IEADB_original$Source <- lapply(IEADB_original$ieadbID,
                                                      } %>%
                                                        paste(collapse = ",")))
 
-# Step three: join IEADB text column with the consolidated version of
-# manyenviron
-HUGGO_TXT <- dplyr::left_join(HUGGO_TXT,
-                              IEADB_original,
-                              by = "ieadbID")
-HUGGO_TXT <- as_tibble(HUGGO_TXT) %>%
-  dplyr::select(treatyID, ieadbID, gnevarID, ecolexID,
-                manyID, Title, Beg, TreatyText, Source)
+# Step three: join IEADB text column with the consolidated version of manyenviron
+texts <- dplyr::left_join(texts,
+                          IEADB_original,
+                          by = "ieadbID")
+texts <- as_tibble(texts) %>%
+  dplyr::select(treatyID, ieadbID, gengID, ecolexID,
+                manyID, Title, Beg, TreatyText, Source, url)
 
 # Step four: complement the dataset with ECOLEX treaty texts (TO BE IMPROVED)
 # Filter observations with text = NULL and with an ecolexID
-ecolex_text <- HUGGO_TXT %>%
+ecolex_text <- texts %>%
   dplyr::filter(!is.na(ecolexID) & TreatyText == "NULL")
 
 ecolex_text$ecolexID2 <- stringr::str_remove_all(ecolex_text$ecolexID, "-")
@@ -184,116 +228,37 @@ ecolex_text$Text <- dplyr::coalesce(ecolex_text$TreatyText,
                                     ecolex_text$TreatyText2,
                                     ecolex_text$TreatyText2b)
 
+ecolex_text$url <- ifelse(!is.na(ecolex_text$TreatyText), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/",
+                                    ifelse(!is.na(ecolex_text$TreatyTextb), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/",
+                                           ifelse(!is.na(ecolex_text$TreatyText2), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/",
+                                                  ifelse(!is.na(ecolex_text$TreatyText2b), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/",
+                                                         NA))))
+
 ecolex_text <- ecolex_text %>%
   dplyr::filter(!is.na(Text)) %>%
-  dplyr::select(ecolexID, Text)
-
-ecolex_text$Source <- "ECOLEX"
+  dplyr::select(ecolexID, Title, Beg, Text, url) %>%
+  dplyr::rename(TreatyText = Text)
 
 # Step five: join ECOLEX texts to the agreements dataset
-HUGGO_TXT <- dplyr::left_join(HUGGO_TXT,  ecolex_text, by = "ecolexID")
-HUGGO_TXT$Source.x <- dplyr::na_if(HUGGO_TXT$Source.x, "NULL")
-HUGGO_TXT$Source.y <- dplyr::na_if(HUGGO_TXT$Source.y, "NULL")
-
-HUGGO_TXT$TreatyText <- dplyr::na_if(HUGGO_TXT$TreatyText, "NULL")
-HUGGO_TXT$Text <- dplyr::na_if(HUGGO_TXT$Text, "NULL")
-HUGGO_TXT$TreatyText <- dplyr::coalesce(HUGGO_TXT$TreatyText, HUGGO_TXT$Text)
+texts <- dplyr::left_join(texts,  ecolex_text, by = c("ecolexID", "Title", "Beg","TreatyText", "url"))
 
 # Step six: Clean texts
-HUGGO_TXT <- HUGGO_TXT %>%
-  dplyr::mutate(TreatyText = manypkgs::standardise_treaty_text(TreatyText))
-
-HUGGO_TXT <- dplyr::as_tibble(HUGGO_TXT) %>%
-  dplyr::rename(Source = `Source.x`) %>%
-  dplyr::select(manyID, TreatyText, Source)
-
-# Bind data
-HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT)
 # manypkgs includes several functions that should help cleaning
 # and standardizing your data.
 # Please see the vignettes or website for more details.
+texts <- texts %>%
+  dplyr::mutate(TreatyText = manypkgs::standardise_treaty_text(TreatyText))
 
-# MEA nodes (MGENG dataset) - HUGGO6
-# For some more information about the variables and codes,
-# please see the documentation in the data-raw folder.
-HUGGO6 <- as_tibble(HUGGO6) %>%
-  dplyr::select(-'...1') %>%
-  dplyr::rename(verified = '...2',
-                ecolexID = ECOLEX.ID,
-                ieaID = IEA.ID,
-                gengID = GENG.ID,
-                MEA_type = Type,
-                subject_ecolex = Subject.x,
-                subject_iea = Subject.y) %>%
-  manydata::transmutate(Signature = messydates::as_messydate(DocSign),
-                        Force = messydates::as_messydate(DocForce)) %>%
-  dplyr::mutate(Title = manypkgs::standardise_titles(Title),
-                verified = case_when(verified == "%" ~ "verified",
-                                     verified == "?" ~ "not verified"),
-                Coded = as.character(Coded),
-                Lit = as.character(Lit),
-                Data = as.character(Data)) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::distinct() %>%
-  dplyr::arrange(Beg)
+texts <- dplyr::as_tibble(texts) %>%
+  dplyr::select(manyID, Title, Beg, TreatyText, url, Source)
 
-# Add treatyID column
-HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6, HUGGO6$Title, HUGGO6$Beg)
-
-# Join the datasets together
-## fixed minor coding issue with HUGGO before joining data (28-09-2022)
-# HUGGO$Source <- as.character(HUGGO$Source)
-
-# Join the datasets together
-# Keep text variables for later
-HUGGO <- manyenviron::agreements$HUGGO %>% rename(SourceText = Source)
-HUGGO_TXT1 <- dplyr::select(HUGGO, c(treatyID, TreatyText, SourceText)) %>% 
-  dplyr::mutate(TreatyText = as.character(ifelse(is.na(TreatyText),
-                                                 NA_character_, TreatyText)),
-                SourceText = as.character(ifelse(is.na(SourceText),
-                                                 NA_character_, SourceText))) %>% 
-  dplyr::distinct() %>%
-  tidyr::drop_na()
-# Bug with some treaties having different sources...
-# When this is the case, treaty text is pasted together for now
-c <- HUGGO_TXT1[duplicated(HUGGO_TXT1$treatyID) |
-                  duplicated(HUGGO_TXT1$treatyID, fromLast = TRUE),]
-c <- aggregate(cbind(TreatyText, SourceText) ~ treatyID, data = c, function(x)
-  paste(x, collapse = " Possibly Duplicated "))
-HUGGO_TXT1 <- HUGGO_TXT1[!duplicated(HUGGO_TXT1$treatyID) |
-                           duplicated(HUGGO_TXT1$treatyID, fromLast = TRUE),]
-HUGGO_TXT1 <- rbind(HUGGO_TXT1, c)
-# Get other texts from HUGGO6
-HUGGO_TXT2 <- dplyr::select(HUGGO6, c(treatyID, Text, AbstractText)) %>% 
-  dplyr::mutate(Text = as.character(Text),
-                AbstractText = as.character(AbstractText)) %>% 
-  dplyr::distinct() %>%
-  tidyr::drop_na()
-
-# Join datasets
-HUGGO <- tibble::lst(HUGGO, HUGGO6)
-HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
-                               resolve = "coalesce", key = "treatyID")
-# Re-add text variables
-HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT1, by = "treatyID")
-HUGGO <- dplyr::left_join(HUGGO, HUGGO_TXT2, by = "treatyID")
-
-# Remove manyID columns to make sure all is correct
-HUGGO <- dplyr::select(HUGGO, -starts_with("manyID"))
-
-# Recode, once more treaty ID to avoid NAs
-HUGGO$treatyID <- manypkgs::code_agreements(HUGGO, HUGGO$Title, HUGGO$Beg)
-
-# recode manyID
-manyID <- manypkgs::condense_agreements(var = HUGGO$treatyID)
-HUGGO <- dplyr::inner_join(HUGGO, manyID, by = "treatyID")
-
-# remove duplicates
-HUGGO <- dplyr::distinct(HUGGO)
+# Bind data
+HUGGO <- dplyr::left_join(HUGGO, texts, by = c("manyID", "Title", "Beg", "url"))
 
 # reorder variables
-HUGGO <- dplyr::relocate(HUGGO, manyID, treatyID, Title, Beg, End, Signature,
-                                  Force)
+HUGGO <- dplyr::relocate(HUGGO, manyID, Title, Beg, End, Signature,
+                         Force, AgreementType, DocType, GeogArea,
+                         gengID, ieaID, ecolexID, treatyID)
 
 # make sure all vars are correctly coded as NA if necessary
 HUGGO <- HUGGO %>% 
@@ -305,15 +270,6 @@ HUGGO <- HUGGO %>%
          Beg = messydates::as_messydate(Beg),
          End = messydates::as_messydate(End)) %>% 
   dplyr::distinct()
-
-# Remove entries with NAs in manyIDs
-HUGGO <- HUGGO %>%
-  dplyr::filter(!is.na(manyID))
-
-#check duplicates between HUGGO and na_entries
-na_entries <- na_entries %>%
-  dplyr::mutate(dup = ifelse(na_entries$Title %in% HUGGO$Title, 1, 0)) %>%
-  dplyr::filter(dup == 0)
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
