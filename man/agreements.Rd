@@ -9,30 +9,6 @@ The agreements database is a list that contains the
 following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
-\describe{
-\item{IEADB: }{A dataset with 3666 observations and the following
-10 variables: manyID, Title, Beg, DocType, AgreementType, Signature,
-Force, Lineage, treatyID, ieadbID.}
-\item{ECOLEX: }{A dataset with 2174 observations and the following
-10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
-Lineage, treatyID, ecolexID.}
-\item{CIESIN: }{A dataset with 666 observations and the following
-7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
-\item{HEIDI: }{A dataset with 2280 observations and the following
-7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
-\item{HUGGO: }{A dataset with 7329 observations and the following
-49 variables: manyID, treatyID, Title, Beg, End, Signature, Force, DocType,
-AgreementType, GeogArea, gnevarID, verified, gengID, ecolexID, ieaID,
-DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
-subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
-Depository, DepositoryURL, Published, Abstract, Website1, Website2,
-Secretariat, SecretariatURL, UNEP, Supersedes, References, EnabledBy,
-AmendedBy, Lit, Data, Coded, TreatyText, SourceText, Text, AbstractText.}
-\item{AIGGO: }{A dataset with 7294 observations and the following
-13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
-action_area, linkage, accessionC, accessionP, termination_type,
-termination_date.}
-}
 }
 \usage{
 agreements
@@ -107,55 +83,57 @@ agreements database documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |            7329|   3479    |     47.47     |
-#> |    treatyID     |  character  |            7329|   3479    |     47.47     |
-#> |      Title      |  character  |            7329|     0     |       0       |
-#> |       Beg       |    mdate    |            7329|    60     |     0.82      |
-#> |       End       |    mdate    |            7329|   6653    |     90.78     |
-#> |    Signature    |    mdate    |            7329|   3536    |     48.25     |
-#> |      Force      |    mdate    |            7329|   5168    |     70.51     |
-#> |     DocType     |  character  |            7329|   4565    |     62.29     |
-#> |  AgreementType  |  character  |            7329|   4603    |     62.81     |
-#> |    GeogArea     |  character  |            7329|   5185    |     70.75     |
-#> |    gnevarID     |  character  |            7329|   4569    |     62.34     |
-#> |    verified     |  character  |            7329|   7280    |     99.33     |
-#> |     gengID      |  character  |            7329|   6410    |     87.46     |
-#> |    ecolexID     |  character  |            7329|   6842    |     93.36     |
-#> |      ieaID      |  character  |            7329|   6619    |     90.31     |
-#> |DocValidUntilDate|  character  |            7329|   7295    |     99.54     |
-#> |      Notes      |  character  |            7329|   7281    |     99.35     |
-#> |    Download     |  character  |            7329|   6410    |     87.46     |
-#> |    MEA_type     |  character  |            7329|   6619    |     90.31     |
-#> |      Ambit      |  character  |            7329|   6900    |     94.15     |
-#> |     Region      |  character  |            7329|   7079    |     96.59     |
-#> | subject_ecolex  |  character  |            7329|   6842    |     93.36     |
-#> |   subject_iea   |  character  |            7329|   6619    |     90.31     |
-#> |    Keywords     |  character  |            7329|   6914    |     94.34     |
-#> |     Lineage     |  character  |            7329|   6619    |     90.31     |
-#> |    Sequence     |  character  |            7329|   6620    |     90.33     |
-#> |    AdoptedIn    |  character  |            7329|   6895    |     94.08     |
-#> |    Languages    |  character  |            7329|   6842    |     93.36     |
-#> |   Appendices    |  character  |            7329|   7294    |     99.52     |
-#> |   Depository    |  character  |            7329|   6936    |     94.64     |
-#> |  DepositoryURL  |  character  |            7329|   7312    |     99.77     |
-#> |    Published    |  character  |            7329|   7061    |     96.34     |
-#> |    Abstract     |  character  |            7329|   7302    |     99.63     |
-#> |    Website1     |  character  |            7329|   6942    |     94.72     |
-#> |    Website2     |  character  |            7329|   7257    |     99.02     |
-#> |   Secretariat   |  character  |            7329|   6620    |     90.33     |
-#> | SecretariatURL  |  character  |            7329|   6620    |     90.33     |
-#> |      UNEP       |  character  |            7329|   7127    |     97.24     |
-#> |   Supersedes    |  character  |            7329|   7312    |     99.77     |
-#> |   References    |  character  |            7329|   7293    |     99.51     |
-#> |    EnabledBy    |  character  |            7329|   7220    |     98.51     |
-#> |    AmendedBy    |  character  |            7329|   7238    |     98.76     |
-#> |       Lit       |  character  |            7329|   6775    |     92.44     |
-#> |      Data       |  character  |            7329|   6783    |     92.55     |
-#> |      Coded      |  character  |            7329|   7024    |     95.84     |
-#> |   TreatyText    |  character  |            7329|   5776    |     78.81     |
-#> |   SourceText    |  character  |            7329|   5776    |     78.81     |
-#> |      Text       |  character  |            7329|   7048    |     96.17     |
-#> |  AbstractText   |  character  |            7329|   7048    |     96.17     |
+#> |     manyID      |  character  |            3953|     0     |       0       |
+#> |      Title      |  character  |            3953|     0     |       0       |
+#> |       Beg       |    mdate    |            3953|    105    |     2.66      |
+#> |       End       |    mdate    |            3953|   3235    |     81.84     |
+#> |    Signature    |    mdate    |            3953|    105    |     2.66      |
+#> |      Force      |    mdate    |            3953|   1713    |     43.33     |
+#> |  AgreementType  |  character  |            3953|   1138    |     28.79     |
+#> |     DocType     |  character  |            3953|   1100    |     27.83     |
+#> |    GeogArea     |  character  |            3953|   1716    |     43.41     |
+#> |     gengID      |  character  |            3953|     0     |       0       |
+#> |      ieaID      |  character  |            3953|   3227    |     81.63     |
+#> |    ecolexID     |  character  |            3953|   3461    |     87.55     |
+#> |    treatyID     |  character  |            3953|     0     |       0       |
+#> |     Parties     |  character  |            3953|   1695    |     42.88     |
+#> |    verified     |  character  |            3953|   3902    |     98.71     |
+#> |DocValidUntilDate|  character  |            3953|   3918    |     99.11     |
+#> |       url       |  character  |            3953|   3152    |     79.74     |
+#> |      Notes      |  character  |            3953|   3903    |     98.74     |
+#> |    Download     |  character  |            3953|   3017    |     76.32     |
+#> |    MEA_type     |  character  |            3953|   3227    |     81.63     |
+#> |      Ambit      |  character  |            3953|   3521    |     89.07     |
+#> |     Region      |  character  |            3953|   3698    |     93.55     |
+#> | subject_ecolex  |  character  |            3953|   3461    |     87.55     |
+#> |   subject_iea   |  character  |            3953|   3227    |     81.63     |
+#> |    Keywords     |  character  |            3953|   3534    |     89.4      |
+#> |     Lineage     |  character  |            3953|   3227    |     81.63     |
+#> |    Sequence     |  character  |            3953|   3228    |     81.66     |
+#> |    AdoptedIn    |  character  |            3953|   3513    |     88.87     |
+#> |    Languages    |  character  |            3953|   3461    |     87.55     |
+#> |   Appendices    |  character  |            3953|   3917    |     99.09     |
+#> |   Depository    |  character  |            3953|   3557    |     89.98     |
+#> |  DepositoryURL  |  character  |            3953|   3936    |     99.57     |
+#> |    Published    |  character  |            3953|   3682    |     93.14     |
+#> |    Abstract     |  character  |            3953|   3926    |     99.32     |
+#> |    Website1     |  character  |            3953|   3562    |     90.11     |
+#> |    Website2     |  character  |            3953|   3883    |     98.23     |
+#> |   Secretariat   |  character  |            3953|   3228    |     81.66     |
+#> | SecretariatURL  |  character  |            3953|   3228    |     81.66     |
+#> |      UNEP       |  character  |            3953|   3745    |     94.74     |
+#> |   Supersedes    |  character  |            3953|   3936    |     99.57     |
+#> |   References    |  character  |            3953|   3917    |     99.09     |
+#> |    EnabledBy    |  character  |            3953|   3842    |     97.19     |
+#> |    AmendedBy    |  character  |            3953|   3859    |     97.62     |
+#> |       Lit       |  character  |            3953|   3380    |     85.5      |
+#> |      Data       |  character  |            3953|   3390    |     85.76     |
+#> |      Coded      |  character  |            3953|   3645    |     92.21     |
+#> |   TreatyText    |  character  |            3953|   2859    |     72.32     |
+#> |     Source      |  character  |            3953|     0     |       0       |
+#> |    MainText     |  character  |            3953|   2859    |     72.32     |
+#> |  AppendixText   |  character  |            3953|   3881    |     98.18     |
+#> |    AnnexText    |  character  |            3953|   3584    |     90.67     |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
@@ -163,19 +141,19 @@ agreements database documentation
 #> -----------------------------------------------------------------------------
 #> |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> -----------------------------------------------------------------------------
-#> |     manyID     |  character  |            7294|   3479    |     47.7      |
-#> |    treatyID    |  character  |            7294|   3479    |     47.7      |
-#> |     Title      |  character  |            7294|     0     |       0       |
-#> |      Beg       |    mdate    |            7294|    56     |     0.77      |
-#> |      End       |    mdate    |            7294|   6621    |     90.77     |
-#> |   Signature    |    mdate    |            7294|   3532    |     48.42     |
-#> |     Force      |    mdate    |            7294|   5150    |     70.61     |
-#> |  action_area   |  character  |            7294|    769    |     10.54     |
-#> |    linkage     |  character  |            7294|   4782    |     65.56     |
-#> |   accessionC   |  character  |            7294|   1268    |     17.38     |
-#> |   accessionP   |  character  |            7294|   7032    |     96.41     |
-#> |termination_type|  character  |            7294|   6765    |     92.75     |
-#> |termination_date|  character  |            7294|   7074    |     96.98     |
+#> |     manyID     |  character  |            3815|     0     |       0       |
+#> |    treatyID    |  character  |            3815|     0     |       0       |
+#> |     Title      |  character  |            3815|     0     |       0       |
+#> |      Beg       |    mdate    |            3815|    53     |     1.39      |
+#> |      End       |    mdate    |            3815|   3142    |     82.36     |
+#> |   Signature    |    mdate    |            3815|    53     |     1.39      |
+#> |     Force      |    mdate    |            3815|   1671    |     43.8      |
+#> |  action_area   |  character  |            3815|    426    |     11.17     |
+#> |    linkage     |  character  |            3815|   2412    |     63.22     |
+#> |   accessionC   |  character  |            3815|    622    |     16.3      |
+#> |   accessionP   |  character  |            3815|   3553    |     93.13     |
+#> |termination_type|  character  |            3815|   3412    |     89.44     |
+#> |termination_date|  character  |            3815|   3722    |     97.56     |
 #> -----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }

@@ -269,7 +269,25 @@ HUGGO <- HUGGO %>%
          Force = messydates::as_messydate(Force),
          Beg = messydates::as_messydate(Beg),
          End = messydates::as_messydate(End)) %>% 
-  dplyr::distinct()
+  dplyr::distinct() %>%
+  dplyr::arrange(Beg)
+
+# Standardising treaty texts
+HUGGO <- HUGGO %>%
+  dplyr::mutate(MainText = ifelse(!grepl("APPENDIX | ANNEX", unlist(TreatyText), perl = T),
+                                  TreatyText,
+                                  stringr::str_remove(HUGGO$TreatyText,
+                                                      "APPENDIX.* | ANNEX.*")))
+HUGGO <- HUGGO %>%
+  dplyr::mutate(AppendixText = ifelse(grepl("APPENDIX", unlist(TreatyText), perl = T),
+                                      stringr::str_extract(HUGGO$TreatyText,
+                                                           "APPENDIX.*"),
+                                      NA))
+HUGGO <- HUGGO %>%
+  dplyr::mutate(AnnexText = ifelse(grepl("ANNEX", unlist(TreatyText), perl = T),
+                                   stringr::str_extract(HUGGO$TreatyText,
+                                                        "ANNEX.*"),
+                                   NA))
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
@@ -286,3 +304,10 @@ manypkgs::export_data(HUGGO, database = "agreements",
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and
 # fill in as much detail about the variables etc as possible.
+
+# To reduce size of text data stored in package:
+# 1. after exporting HUGGO to agreements database, 
+# load 'agreements.rda' in environment.
+# 2. Delete 'agreements.rda' in 'data' folder.
+# 3. Run `usethis::use_data(agreements, internal = F, overwrite = T, compress = "xz")`
+# to save compressed text data.
