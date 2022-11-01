@@ -289,6 +289,13 @@ HUGGO <- HUGGO %>%
                                                         "ANNEX.*"),
                                    NA))
 
+# Checked_HUGGO and Confirmed_HUGGO variables to track progress on manually correcting entries
+# Checked_HUGGO: code 1 when the entire row's observations have been verified and updated
+# Confirmed_HUGGO: list variables for which the observation could be verified and confirmed.
+# Eg. List 'Signature' in `Confirmed_HUGGO` if the Signature date was found and verified in the treaty text or in a manual online search.
+HUGGO$Checked_HUGGO <- NA
+HUGGO$Confirmed_HUGGO <- NA
+
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
