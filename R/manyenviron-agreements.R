@@ -17,14 +17,14 @@
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
 #' \item{HUGGO: }{A dataset with 3953 observations and the following
-#' 53 variables: manyID, Title, Beg, End, Signature, Force, AgreementType,
+#' 54 variables: manyID, Title, Beg, End, Signature, Force, AgreementType,
 #' DocType, GeogArea, gengID, ieaID, ecolexID, treatyID, Parties, verified,
 #' DocValidUntilDate, url, Notes, Download, MEA_type, Ambit, Region,
 #' subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn,
 #' Languages, Appendices, Depository, DepositoryURL, Published, Abstract,
 #' Website1, Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
 #' References, EnabledBy, AmendedBy, Lit, Data, Coded, TreatyText, Source,
-#' MainText, AppendixText, AnnexText, Checked_HUGGO, Confirmed_HUGGO.}
+#' MainText, AppendixText, AnnexText, Checked_HUGGO, Confirmed_HUGGO, Changes.}
 #' \item{AIGGO: }{A dataset with 3815 observations and the following
 #' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
 #' action_area, linkage, accessionC, accessionP, termination_type,

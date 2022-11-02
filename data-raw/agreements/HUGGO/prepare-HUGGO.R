@@ -296,13 +296,8 @@ HUGGO <- HUGGO %>%
 HUGGO$Checked_HUGGO <- NA
 HUGGO$Confirmed_HUGGO <- NA
 
-## Adding missing texts
-# HUGGO [81,] manyID BAD-CHE_1884P
-HUGGO[81,17] <- "https://iea.uoregon.edu/treaty-text/4518"
-# HUGGO[81,47] and HUGGO[81,49] Added German text translated to English using Google Translate
-HUGGO[81,52] <- 1 # Row 81 checked
-HUGGO[81,53] <- "Beg, End, Signature, Force, TreatyText, MainText, AppendixText, AnnexText"
-
+# Add Changes var to log changes that are manually added for each agreement.
+HUGGO$Changes <- NA
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO available
