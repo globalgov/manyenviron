@@ -100,13 +100,19 @@ HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
 
 # Reorder variables
 HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "CountryID", "Title",
-                                          "Beg", "End", "Signature", "Force"))
-
-
-HUGGO_MEM <- HUGGO_MEM %>% 
+                                          "Beg", "End", "Signature", "Force")) %>% 
   dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
                                                                NA_character_))) %>% 
-  dplyr::distinct() %>% 
+  dplyr::distinct() %>%
+  plyr::ddply("manyID", zoo::na.locf, na.rm = FALSE) %>%
+  dplyr::distinct() %>%
+  dplyr::group_by(manyID) %>%
+  tidyr::fill(.direction = "downup") %>%
+  dplyr::ungroup() %>%
+  dplyr::distinct() %>%
+  tidyr::drop_na(Title) %>%
+  tibble::as_tibble() %>%
+  arrange(Beg) %>% 
   mutate(Signature = messydates::as_messydate(Signature),
          Force = messydates::as_messydate(Force),
          Beg = messydates::as_messydate(Beg),

@@ -90,37 +90,37 @@ memberships database documentation
 #> --------------------------------------------------------------------------------
 #> |    Column Name    |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> --------------------------------------------------------------------------------
-#> |      manyID       |  character  |           76954|     0     |       0       |
-#> |     treatyID      |  character  |           76954|     0     |       0       |
-#> |     CountryID     |  character  |           76954|     2     |       0       |
-#> |       Title       |  character  |           76954|    221    |     0.29      |
-#> |        Beg        |    mdate    |           76954|    15     |     0.02      |
-#> |        End        |    mdate    |           76954|   72931   |     94.77     |
-#> |     Signature     |    mdate    |           76954|    46     |     0.06      |
-#> |       Force       |    mdate    |           76954|   5390    |       7       |
-#> | CountrySignature  |  character  |           76954|   32086   |     41.7      |
-#> |    CountryRat     |  character  |           76954|   49099   |     63.8      |
-#> |   CountryForce    |  character  |           76954|   45643   |     59.31     |
-#> |   CountryForce2   |  character  |           76954|   76193   |     99.01     |
-#> |   CountryForce3   |  character  |           76954|   76904   |     99.94     |
-#> |       Term        |  character  |           76954|   75764   |     98.45     |
-#> | CountryWithdrawal |  character  |           76954|   72414   |     94.1      |
-#> |CountryWithdrawal2 |  character  |           76954|   76903   |     99.93     |
-#> |      gengID       |  character  |           76954|    17     |     0.02      |
-#> |     ecolexID      |  character  |           76954|   41365   |     53.75     |
-#> |       ieaID       |  character  |           76954|   14159   |     18.4      |
-#> |     Comments      |  character  |           76954|   73700   |     95.77     |
-#> |      Deposit      |  character  |           76954|   75787   |     98.48     |
-#> |     obsolete      |  character  |           76954|   66339   |     86.21     |
-#> |  ProvisionalApp   |  character  |           76954|   76536   |     99.46     |
-#> |    Reservation    |  character  |           76954|   76918   |     99.95     |
-#> |     verified      |  character  |           76954|   73735   |     95.82     |
-#> |       Notes       |  character  |           76954|   76393   |     99.27     |
-#> |CountryForce_ecolex|  character  |           76954|   37918   |     49.27     |
-#> | CountryForce_iea  |  character  |           76954|   37918   |     49.27     |
-#> |      Consent      |  character  |           76954|   76889   |     99.92     |
-#> |    Acceptance     |  character  |           76954|   76928   |     99.97     |
-#> |     Accession     |  character  |           76954|   72082   |     93.67     |
+#> |      manyID       |  character  |           73005|     0     |       0       |
+#> |     treatyID      |  character  |           73005|     0     |       0       |
+#> |     CountryID     |  character  |           73005|     1     |       0       |
+#> |       Title       |  character  |           73005|     0     |       0       |
+#> |        Beg        |    mdate    |           73005|    12     |     0.02      |
+#> |        End        |    mdate    |           73005|   56776   |     77.77     |
+#> |     Signature     |    mdate    |           73005|    14     |     0.02      |
+#> |       Force       |    mdate    |           73005|   4837    |     6.63      |
+#> | CountrySignature  |  character  |           73005|   15900   |     21.78     |
+#> |    CountryRat     |  character  |           73005|   37054   |     50.76     |
+#> |   CountryForce    |  character  |           73005|   26127   |     35.79     |
+#> |   CountryForce2   |  character  |           73005|   64581   |     88.46     |
+#> |   CountryForce3   |  character  |           73005|   69189   |     94.77     |
+#> |       Term        |  character  |           73005|   71651   |     98.15     |
+#> | CountryWithdrawal |  character  |           73005|   55306   |     75.76     |
+#> |CountryWithdrawal2 |  character  |           73005|   69163   |     94.74     |
+#> |      gengID       |  character  |           73005|     0     |       0       |
+#> |     ecolexID      |  character  |           73005|   40801   |     55.89     |
+#> |       ieaID       |  character  |           73005|   11815   |     16.18     |
+#> |     Comments      |  character  |           73005|   69669   |     95.43     |
+#> |      Deposit      |  character  |           73005|   69978   |     95.85     |
+#> |     obsolete      |  character  |           73005|   49825   |     68.25     |
+#> |  ProvisionalApp   |  character  |           73005|   72096   |     98.75     |
+#> |    Reservation    |  character  |           73005|   71152   |     97.46     |
+#> |     verified      |  character  |           73005|   69733   |     95.52     |
+#> |       Notes       |  character  |           73005|   71863   |     98.44     |
+#> |CountryForce_ecolex|  character  |           73005|   33267   |     45.57     |
+#> | CountryForce_iea  |  character  |           73005|   33267   |     45.57     |
+#> |      Consent      |  character  |           73005|   72696   |     99.58     |
+#> |    Acceptance     |  character  |           73005|   72783   |     99.7      |
+#> |     Accession     |  character  |           73005|   59073   |     80.92     |
 #> --------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }

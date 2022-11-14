@@ -9,6 +9,31 @@ The agreements database is a list that contains the
 following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
+\describe{
+\item{IEADB: }{A dataset with 3666 observations and the following
+10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force,
+Lineage, treatyID, ieadbID.}
+\item{ECOLEX: }{A dataset with 2174 observations and the following
+10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
+Lineage, treatyID, ecolexID.}
+\item{CIESIN: }{A dataset with 666 observations and the following
+7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
+\item{HEIDI: }{A dataset with 2280 observations and the following
+7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
+\item{HUGGO: }{A dataset with 3953 observations and the following
+54 variables: manyID, Title, Beg, End, Signature, Force, AgreementType,
+DocType, GeogArea, gengID, ieaID, ecolexID, treatyID, Parties, verified,
+DocValidUntilDate, url, Notes, Download, MEA_type, Ambit, Region,
+subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn,
+Languages, Appendices, Depository, DepositoryURL, Published, Abstract,
+Website1, Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
+References, EnabledBy, AmendedBy, Lit, Data, Coded, TreatyText, Source,
+MainText, AppendixText, AnnexText, Checked_HUGGO, Confirmed_HUGGO, Changes.}
+\item{AIGGO: }{A dataset with 3815 observations and the following
+13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
+action_area, linkage, accessionC, accessionP, termination_type,
+termination_date.}
+}
 }
 \usage{
 agreements
@@ -99,7 +124,7 @@ agreements database documentation
 #> |     Parties     |  character  |            3953|   1695    |     42.88     |
 #> |    verified     |  character  |            3953|   3902    |     98.71     |
 #> |DocValidUntilDate|  character  |            3953|   3918    |     99.11     |
-#> |       url       |  character  |            3953|   3152    |     79.74     |
+#> |       url       |  character  |            3953|   3132    |     79.23     |
 #> |      Notes      |  character  |            3953|   3903    |     98.74     |
 #> |    Download     |  character  |            3953|   3017    |     76.32     |
 #> |    MEA_type     |  character  |            3953|   3227    |     81.63     |
@@ -129,11 +154,14 @@ agreements database documentation
 #> |       Lit       |  character  |            3953|   3380    |     85.5      |
 #> |      Data       |  character  |            3953|   3390    |     85.76     |
 #> |      Coded      |  character  |            3953|   3645    |     92.21     |
-#> |   TreatyText    |  character  |            3953|   2859    |     72.32     |
+#> |   TreatyText    |  character  |            3953|   2858    |     72.3      |
 #> |     Source      |  character  |            3953|     0     |       0       |
-#> |    MainText     |  character  |            3953|   2859    |     72.32     |
-#> |  AppendixText   |  character  |            3953|   3881    |     98.18     |
-#> |    AnnexText    |  character  |            3953|   3584    |     90.67     |
+#> |    MainText     |  character  |            3953|   2839    |     71.82     |
+#> |  AppendixText   |  character  |            3953|   3880    |     98.15     |
+#> |    AnnexText    |  character  |            3953|   3565    |     90.18     |
+#> |  Checked_HUGGO  |   numeric   |            3953|   3932    |     99.47     |
+#> | Confirmed_HUGGO |  character  |            3953|   3932    |     99.47     |
+#> |     Changes     |  character  |            3953|   3932    |     99.47     |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
