@@ -113,7 +113,7 @@ agreements database documentation
 #> |       Beg       |    mdate    |            3953|    105    |     2.66      |
 #> |       End       |    mdate    |            3953|   3235    |     81.84     |
 #> |    Signature    |    mdate    |            3953|    105    |     2.66      |
-#> |      Force      |    mdate    |            3953|   1713    |     43.33     |
+#> |      Force      |    mdate    |            3953|   1709    |     43.23     |
 #> |  AgreementType  |  character  |            3953|   1138    |     28.79     |
 #> |     DocType     |  character  |            3953|   1100    |     27.83     |
 #> |    GeogArea     |  character  |            3953|   1716    |     43.41     |
@@ -124,7 +124,7 @@ agreements database documentation
 #> |     Parties     |  character  |            3953|   1695    |     42.88     |
 #> |    verified     |  character  |            3953|   3902    |     98.71     |
 #> |DocValidUntilDate|  character  |            3953|   3918    |     99.11     |
-#> |       url       |  character  |            3953|   3132    |     79.23     |
+#> |       url       |  character  |            3953|   3122    |     78.98     |
 #> |      Notes      |  character  |            3953|   3903    |     98.74     |
 #> |    Download     |  character  |            3953|   3017    |     76.32     |
 #> |    MEA_type     |  character  |            3953|   3227    |     81.63     |
@@ -156,12 +156,12 @@ agreements database documentation
 #> |      Coded      |  character  |            3953|   3645    |     92.21     |
 #> |   TreatyText    |  character  |            3953|   2858    |     72.3      |
 #> |     Source      |  character  |            3953|     0     |       0       |
-#> |    MainText     |  character  |            3953|   2839    |     71.82     |
+#> |    MainText     |  character  |            3953|   2829    |     71.57     |
 #> |  AppendixText   |  character  |            3953|   3880    |     98.15     |
-#> |    AnnexText    |  character  |            3953|   3565    |     90.18     |
-#> |  Checked_HUGGO  |   numeric   |            3953|   3932    |     99.47     |
-#> | Confirmed_HUGGO |  character  |            3953|   3932    |     99.47     |
-#> |     Changes     |  character  |            3953|   3932    |     99.47     |
+#> |    AnnexText    |  character  |            3953|   3561    |     90.08     |
+#> |  Checked_HUGGO  |   numeric   |            3953|   3922    |     99.22     |
+#> | Confirmed_HUGGO |  character  |            3953|   3922    |     99.22     |
+#> |     Changes     |  character  |            3953|   3922    |     99.22     |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
