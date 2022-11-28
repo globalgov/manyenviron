@@ -31,9 +31,7 @@ HUGGO1 <- as_tibble(HUGGO1)  %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
-HUGGO1$treatyID <- manypkgs::code_agreements(HUGGO1,
-                                             HUGGO1$Title,
-                                             HUGGO1$Beg)
+HUGGO1$treatyID <- manypkgs::code_agreements(HUGGO1)
 
 # # Clean HUGGO 2
 HUGGO2 <- as_tibble(HUGGO2) %>%
@@ -53,7 +51,7 @@ HUGGO2 <- as_tibble(HUGGO2) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
-HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2, HUGGO2$Title, HUGGO2$Beg)
+HUGGO2$treatyID <- manypkgs::code_agreements(HUGGO2)
 
 # Clean HUGGO4
 HUGGO4$Parties <- paste0(HUGGO4$Country.x, "-", HUGGO4$Country.y)
@@ -67,9 +65,7 @@ HUGGO4 <- as_tibble(HUGGO4) %>%
   dplyr::select(gengID, Title, Beg, Signature, Force, End, Parties)
 
 # Add treatyID column
-HUGGO4$treatyID <- manypkgs::code_agreements(HUGGO4,
-                                             HUGGO4$Title,
-                                             HUGGO4$Beg)
+HUGGO4$treatyID <- manypkgs::code_agreements(HUGGO4)
 
 # MEA nodes (MGENG dataset) - HUGGO6
 # For some more information about the variables and codes,
@@ -97,7 +93,7 @@ HUGGO6 <- as_tibble(HUGGO6) %>%
   dplyr::arrange(Beg)
 
 # Add treatyID column
-HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6, HUGGO6$Title, HUGGO6$Beg)
+HUGGO6$treatyID <- manypkgs::code_agreements(HUGGO6)
 
 # Join the datasets together
 ## fixed minor coding issue with HUGGO before joining data (28-09-2022)
@@ -108,7 +104,8 @@ HUGGO <- list(HUGGO1, HUGGO2, HUGGO4, HUGGO6)
 
 # Join the datasets together
 HUGGO <- manydata::consolidate(HUGGO, row = "any", cols = "any",
-                               resolve = "coalesce", key = "treatyID")
+                               resolve = "coalesce", key = "treatyID") %>% 
+  dplyr::distinct()
 
 # Add manyID column
 CIESIN <- manyenviron::agreements$CIESIN
