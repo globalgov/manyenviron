@@ -15,27 +15,27 @@ HUGGO_MEM <- as_tibble(HUGGO_MEM) %>%
   dplyr::mutate(gengID = GENG,
                 ecolexID = ECOLEX,
                 ieaID = IEA,
-                CountryID = Country,
-                CountryRat = messydates::as_messydate(Approval),
-                CountrySignature = messydates::as_messydate(Signature),
-                CountryWithdrawal = messydates::as_messydate(Withdrawal1),
-                CountryWithdrawal2 = messydates::as_messydate(Withdrawal2),
+                stateID = Country,
+                stateRat = messydates::as_messydate(Approval),
+                stateSignature = messydates::as_messydate(Signature),
+                stateWithdrawal = messydates::as_messydate(Withdrawal1),
+                stateWithdrawal2 = messydates::as_messydate(Withdrawal2),
                 Signature = messydates::as_messydate(DocSign),
                 Force = messydates::as_messydate(DocForce),
                 Term = messydates::as_messydate(DocEnd),
-                CountryForce = messydates::as_messydate(InForce1),
-                CountryForce2 = messydates::as_messydate(InForce2),
-                CountryForce3 = messydates::as_messydate(InForce3),
+                stateForce = messydates::as_messydate(InForce1),
+                stateForce2 = messydates::as_messydate(InForce2),
+                stateForce3 = messydates::as_messydate(InForce3),
                 verified = case_when(X == "%" ~ "verified",
                                      X == "?" ~ "not verified"),
                 Title = manypkgs::standardise_titles(Title),
                 ProvisionalApp = messydates::as_messydate(ProvisionalApp),
                 Deposit = messydates::as_messydate(Deposit),
-                Beg = dplyr::coalesce(Signature, CountryRat, CountryForce),
-                End = dplyr::coalesce(Term, CountryWithdrawal)) %>%
-  dplyr::select(CountryID, Title, Beg, End, Signature, CountrySignature,
-                CountryRat, Force, CountryForce, CountryForce2, CountryForce3,
-                Term, CountryWithdrawal, CountryWithdrawal2,
+                Beg = dplyr::coalesce(Signature, stateRat, stateForce),
+                End = dplyr::coalesce(Term, stateWithdrawal)) %>%
+  dplyr::select(stateID, Title, Beg, End, Signature, stateSignature,
+                stateRat, Force, stateForce, stateForce2, stateForce3,
+                Term, stateWithdrawal, stateWithdrawal2,
                 gengID, ecolexID, ieaID, Comments, Deposit, obsolete,
                 ProvisionalApp, Reservation, verified) %>%
   dplyr::arrange(Beg) %>% 
@@ -59,13 +59,13 @@ MEA_edges <- as_tibble(MEA_edges) %>%
   dplyr::select(-'1') %>%
   janitor::remove_empty(which = "cols") %>%
   manydata::transmutate(gengID = GENGID,
-                        CountryID = Country,
-                        CountrySignature = messydates::as_messydate(MembSignx),
-                        CountryRat = messydates::as_messydate(MembRatx),
-                        CountryForce_ecolex = messydates::as_messydate(MembForcex),
-                        CountryForce_iea = messydates::as_messydate(MembForcey),
-                        CountryForce2 = messydates::as_messydate(EntryintoForce2),
-                        CountryWithdrawal = messydates::as_messydate(Withdrawal),
+                        stateID = Country,
+                        stateSignature = messydates::as_messydate(MembSignx),
+                        stateRat = messydates::as_messydate(MembRatx),
+                        stateForce_ecolex = messydates::as_messydate(MembForcex),
+                        stateForce_iea = messydates::as_messydate(MembForcey),
+                        stateForce2 = messydates::as_messydate(EntryintoForce2),
+                        stateWithdrawal = messydates::as_messydate(Withdrawal),
                         ProvisionalApp = messydates::as_messydate(ProvisionalApplication),
                         Succession = messydates::as_messydate(Succession),
                         Deposit = messydates::as_messydate(DepositofInstrument),
@@ -75,8 +75,7 @@ MEA_edges <- as_tibble(MEA_edges) %>%
                         Acceptance = messydates::as_messydate(AcceptanceApproval),
                         Accession = messydates::as_messydate(AccessionApprobation),
                         Consolidation = messydates::as_messydate(Consolidation),
-                        Acceptance = messydates::as_messydate(AccessionApprobation2),
-                        CountryWithdrawal = messydates::as_messydate(Withdrawal)) %>% 
+                        Acceptance = messydates::as_messydate(AccessionApprobation2)) %>% 
   dplyr::distinct()
 
 # Add titles and ID variables from HUGGO agreements data
@@ -99,7 +98,7 @@ manyID <- manypkgs::condense_agreements(var = HUGGO_MEM$treatyID)
 HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
 
 # Reorder variables
-HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "CountryID", "Title",
+HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID", "Title",
                                           "Beg", "End", "Signature", "Force")) %>% 
   dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
                                                                NA_character_))) %>% 

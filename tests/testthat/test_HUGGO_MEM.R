@@ -13,7 +13,7 @@ test_that("missing observations are reported correctly", {
 # Uniformity tests (agreements have a countryID and Beg columns)
 test_that("datasets have the required variables", {
   pointblank::expect_col_exists(memberships[["HUGGO_MEM"]],
-                                pointblank::vars(CountryID))
+                                pointblank::vars(stateID))
   pointblank::expect_col_exists(memberships[["HUGGO_MEM"]],
                                 pointblank::vars(Beg))
 })

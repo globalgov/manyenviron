@@ -15,15 +15,15 @@ manypkgs::retain("ECOLEX_MEM")
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>%
-  manydata::transmutate(SignatureCountry = messydates::as_messydate(Sign),
-                     End = messydates::as_messydate(Term),
-                     Force = messydates::as_messydate(For),
-                     Rat = messydates::as_messydate(Rati),
-                     CountryID = StatID,
-                     ecolexID = EcolexID) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(SignatureCountry, Rat, Force)) %>%
+  manydata::transmutate(stateSignature = messydates::as_messydate(Sign),
+                        End = messydates::as_messydate(Term),
+                        Force = messydates::as_messydate(For),
+                        Rat = messydates::as_messydate(Rati),
+                        stateID = StatID,
+                        ecolexID = EcolexID) %>%
+  dplyr::mutate(Beg = dplyr::coalesce(stateSignature, Rat, Force)) %>%
   # Check Signature date is for the country and not document signature date
-  dplyr::select(CountryID, Beg, End, SignatureCountry, Force, Rat, ecolexID) %>%
+  dplyr::select(stateID, Beg, End, stateSignature, Force, Rat, ecolexID) %>%
   dplyr::arrange(Beg)
 
 # Add a Title column
@@ -42,7 +42,7 @@ ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, manyID, by = "treatyID")
 
 # Re-order the columns
 ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM,
-                              c("manyID", "CountryID", "Title"))
+                              c("manyID", "stateID", "Title"))
 
 # manypkgs includes several functions that should help
 # cleaning and standardising your data.
