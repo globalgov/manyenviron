@@ -56,4 +56,4 @@ manypkgs::export_data(CIESIN,
 # your data into the expected format.
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and fill
-#in as much detail about the variables etc as possible.
+# in as much detail about the variables etc as possible.
