@@ -128,7 +128,7 @@ The graph below illustrates the connection between parties and treaties for envi
 membership_1960 <- manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1960") %>%
-  dplyr::select(treatyID, CountryID, Title) %>%
+  dplyr::select(treatyID, stateID, Title) %>%
   migraph::as_tidygraph()
 
 # Plot with migraph
@@ -142,7 +142,7 @@ migraph::autographr(membership_1960) +
 membership_1980 <- manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
-  dplyr::select(treatyID, CountryID, Title) %>%
+  dplyr::select(treatyID, stateID, Title) %>%
   tidyr::drop_na() %>%
   migraph::as_tidygraph()
 
