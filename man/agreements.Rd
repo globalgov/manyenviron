@@ -124,7 +124,7 @@ agreements database documentation
 #> |     Parties     |  character  |            3905|   1647    |     42.18     |
 #> |    verified     |  character  |            3905|   3854    |     98.69     |
 #> |DocValidUntilDate|  character  |            3905|   3870    |     99.1      |
-#> |       url       |  character  |            3905|   3035    |     77.72     |
+#> |       url       |  character  |            3905|   3030    |     77.59     |
 #> |      Notes      |  character  |            3905|   3855    |     98.72     |
 #> |    Download     |  character  |            3905|   2969    |     76.03     |
 #> |    MEA_type     |  character  |            3905|   3179    |     81.41     |
@@ -156,12 +156,12 @@ agreements database documentation
 #> |      Coded      |  character  |            3905|   3597    |     92.11     |
 #> |   TreatyText    |  character  |            3905|   2810    |     71.96     |
 #> |     Source      |  character  |            3905|     0     |       0       |
-#> |    MainText     |  character  |            3905|   2741    |     70.19     |
-#> |  AppendixText   |  character  |            3905|   3828    |     98.03     |
-#> |    AnnexText    |  character  |            3905|   3499    |     89.6      |
-#> |  Checked_HUGGO  |   numeric   |            3905|   3828    |     98.03     |
-#> | Confirmed_HUGGO |  character  |            3905|   3828    |     98.03     |
-#> |     Changes     |  character  |            3905|   3828    |     98.03     |
+#> |    MainText     |  character  |            3905|   2736    |     70.06     |
+#> |  AppendixText   |  character  |            3905|   3827    |      98       |
+#> |    AnnexText    |  character  |            3905|   3498    |     89.58     |
+#> |  Checked_HUGGO  |   numeric   |            3905|   3823    |     97.9      |
+#> | Confirmed_HUGGO |  character  |            3905|   3823    |     97.9      |
+#> |     Changes     |  character  |            3905|   3823    |     97.9      |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
