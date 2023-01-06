@@ -1,9 +1,13 @@
-#' Generate a list of fictional agreement names
+#' Generate agreements
 #' 
+#' @description Generate a list of fictional agreements and memberships.
 #' @param n Integer number of fictional agreement names to generate.
-#' @return String vector of fictional agreement names.
+#' @return String vector of fictional agreement names and/or memberships.
+#' @name generate_
+
+#' @rdname generate_
 #' @examples
-#'   generate_agreements(12)
+#' generate_agreements(12)
 #' @export
 generate_agreements <- function(n = 10){
   typelib <- c("Agreement", "Convention")
@@ -39,4 +43,22 @@ generate_agreements <- function(n = 10){
   trimws(paste(sample(typelib, n, replace = TRUE),
                sample(subjlib, n, replace = TRUE),
                sample(targetlib, n, replace = TRUE)))
+}
+
+#' @rdname generate_
+#' @examples
+#' generate_memberships(12)
+#' @export
+generate_memberships <- function(n = 10) {
+  membs <- countryregex$StatID
+  agreements <- data.frame(title = generate_agreements(n = n),
+                           nm = sample(100, n), membs = 0)
+  for (k in seq_len(length(agreements$nm))) {
+    agreements$membs[k] <- trimws(paste(sample(membs, as.numeric(agreements$nm[k])),
+                                        collapse = ", "))
+  }
+  agreements <- plyr::ddply(agreements, .(title), function(DF) {
+    data.frame(membership = trimws(strsplit(DF$membs, ",")[[1]]))
+    })
+  agreements
 }

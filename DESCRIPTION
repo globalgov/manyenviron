@@ -38,11 +38,12 @@ Suggests:
     remotes,
     knitr,
     ggplot2,
-    migraph
+    migraph,
+    plyr
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Config/testthat/edition: 3
 VignetteBuilder: knitr

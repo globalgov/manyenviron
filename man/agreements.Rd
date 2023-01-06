@@ -111,9 +111,9 @@ agreements database documentation
 #> |     manyID      |  character  |            3905|     0     |       0       |
 #> |      Title      |  character  |            3905|     0     |       0       |
 #> |       Beg       |    mdate    |            3905|    57     |     1.46      |
-#> |       End       |    mdate    |            3905|   3187    |     81.61     |
+#> |       End       |    mdate    |            3905|   3186    |     81.59     |
 #> |    Signature    |    mdate    |            3905|    57     |     1.46      |
-#> |      Force      |    mdate    |            3905|   1649    |     42.23     |
+#> |      Force      |    mdate    |            3905|   1646    |     42.15     |
 #> |  AgreementType  |  character  |            3905|   1138    |     29.14     |
 #> |     DocType     |  character  |            3905|   1100    |     28.17     |
 #> |    GeogArea     |  character  |            3905|   1715    |     43.92     |
@@ -124,7 +124,7 @@ agreements database documentation
 #> |     Parties     |  character  |            3905|   1647    |     42.18     |
 #> |    verified     |  character  |            3905|   3854    |     98.69     |
 #> |DocValidUntilDate|  character  |            3905|   3870    |     99.1      |
-#> |       url       |  character  |            3905|   3030    |     77.59     |
+#> |       url       |  character  |            3905|   3012    |     77.13     |
 #> |      Notes      |  character  |            3905|   3855    |     98.72     |
 #> |    Download     |  character  |            3905|   2969    |     76.03     |
 #> |    MEA_type     |  character  |            3905|   3179    |     81.41     |
@@ -156,12 +156,12 @@ agreements database documentation
 #> |      Coded      |  character  |            3905|   3597    |     92.11     |
 #> |   TreatyText    |  character  |            3905|   2810    |     71.96     |
 #> |     Source      |  character  |            3905|     0     |       0       |
-#> |    MainText     |  character  |            3905|   2736    |     70.06     |
+#> |    MainText     |  character  |            3905|   2721    |     69.68     |
 #> |  AppendixText   |  character  |            3905|   3827    |      98       |
-#> |    AnnexText    |  character  |            3905|   3498    |     89.58     |
-#> |  Checked_HUGGO  |   numeric   |            3905|   3823    |     97.9      |
-#> | Confirmed_HUGGO |  character  |            3905|   3823    |     97.9      |
-#> |     Changes     |  character  |            3905|   3823    |     97.9      |
+#> |    AnnexText    |  character  |            3905|   3495    |     89.5      |
+#> |  Checked_HUGGO  |   numeric   |            3905|   3788    |      97       |
+#> | Confirmed_HUGGO |  character  |            3905|   3788    |      97       |
+#> |     Changes     |  character  |            3905|   3788    |      97       |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
