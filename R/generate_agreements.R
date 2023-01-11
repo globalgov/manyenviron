@@ -14,7 +14,7 @@
 #' generate_agreements(12, treaty_type = "bilaterals")
 #' generate_agreements(12, treaty_type = "multilaterals")
 #' @export
-generate_agreements <- function(n = 10, treaty_type = "any"){
+generate_agreements <- function(n = 10, treaty_type = "any") {
   partylib <- trimws(paste(rep(c("Between The Parties of "), n),
                            sample(countryregex$Label, n, replace = TRUE),
                            rep(c(" and "), n),
@@ -73,6 +73,8 @@ generate_agreements <- function(n = 10, treaty_type = "any"){
 #' @rdname generate_
 #' @param list Would you like members to be listed in one observation?
 #' By default, FALSE.
+#' @importFrom dplyr %>% select rename
+#' @importFrom plyr ddply
 #' @examples
 #' generate_memberships(12)
 #' generate_memberships(12, treaty_type = "bilaterals")

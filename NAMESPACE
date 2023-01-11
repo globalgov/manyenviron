@@ -2,3 +2,7 @@
 
 export(generate_agreements)
 export(generate_memberships)
+importFrom(dplyr,"%>%")
+importFrom(dplyr,rename)
+importFrom(dplyr,select)
+importFrom(plyr,ddply)

@@ -30,6 +30,9 @@ License: CC BY 4.0
 Depends: 
     R (>= 3.5.0),
     manydata
+Imports:
+    dplyr,
+    plyr
 Suggests:
     pointblank,
     testthat (>= 3.0.0),
@@ -38,8 +41,7 @@ Suggests:
     remotes,
     knitr,
     ggplot2,
-    migraph,
-    plyr
+    migraph
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
