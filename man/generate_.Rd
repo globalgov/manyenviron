@@ -6,12 +6,19 @@
 \alias{generate_memberships}
 \title{Generate agreements}
 \usage{
-generate_agreements(n = 10)
+generate_agreements(n = 10, treaty_type = "any")
 
-generate_memberships(n = 10)
+generate_memberships(n = 10, treaty_type = "any", list = FALSE)
 }
 \arguments{
 \item{n}{Integer number of fictional agreement names to generate.}
+
+\item{treaty_type}{What type of treaty would you likebe returned?
+By default, "any" treaty.
+Other options include "bilaterals" and "multilaterals"}
+
+\item{list}{Would you like members to be listed in one observation?
+By default, FALSE.}
 }
 \value{
 String vector of fictional agreement names and/or memberships.
@@ -21,5 +28,10 @@ Generate a list of fictional agreements and memberships.
 }
 \examples{
 generate_agreements(12)
+generate_agreements(12, treaty_type = "bilaterals")
+generate_agreements(12, treaty_type = "multilaterals")
 generate_memberships(12)
+generate_memberships(12, treaty_type = "bilaterals")
+generate_memberships(12, treaty_type = "multilaterals")
+generate_memberships(12, list = TRUE)
 }
