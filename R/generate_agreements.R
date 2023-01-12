@@ -74,7 +74,7 @@ generate_agreements <- function(n = 10, treaty_type = "any") {
 #' @param list Would you like members to be listed in one observation?
 #' By default, FALSE.
 #' @importFrom dplyr %>% select rename
-#' @importFrom plyr ddply
+#' @importFrom plyr ddply .
 #' @examples
 #' generate_memberships(12)
 #' generate_memberships(12, treaty_type = "bilaterals")
@@ -105,7 +105,7 @@ generate_memberships <- function(n = 10, treaty_type = "any", list = FALSE) {
   g_agreements <- dplyr::select(g_agreements, -nm) %>%
     dplyr::rename(membership = membs)
   if (list == FALSE) {
-    g_agreements <- plyr::ddply(g_agreements, .(title), function(DF) {
+    g_agreements <- plyr::ddply(g_agreements, plyr::.(title), function(DF) {
       data.frame(membership = trimws(strsplit(DF$membership, ",")[[1]]))
     })
   }
