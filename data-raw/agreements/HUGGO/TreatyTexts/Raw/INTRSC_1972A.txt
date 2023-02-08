@@ -1,0 +1,413 @@
+INTERNATIONAL CONVENTION FOR SAFE CONTAINERS (CSC)
+PREAMBLE
+The Contracting Parties,
+Recognizing the need to maintain a high level of safety of human life in the handling,
+stacking and transporting of containers,
+Mindful of the need to facilitate international container transport,
+Recognizing, in this context, the advantages of formalizing common international
+safety requirements,
+Considering that this end may best be achieved by the conclusion of a Convention,
+Have decided to formalize structural requirements to ensure safety in the handling,
+stacking and transporting of containers in the course of normal operations, and to this end
+Have agreed as follows:
+Article I. GENERAL OBLIGATION UNDER THE PRESENT CONVENTION
+The Contracting Parties undertake to give effect to the provisions of the present
+Convention and the Annexes hereto, which shall constitute an integral part of the present
+Convention.
+Article IL DEFINITIONS
+For the purpose of the present Convention, unless expressly provided otherwise:
+1. "Container" means an article of transport equipment:
+(a) of a permanent character and accordingly strong enough to be suitable for repeated
+use;
+(b) specially designed to facilitate the transport of goods, by one or more modes of
+transport, without intermediate reloading;
+(c) designed to be secured and/or readily handled, having corner fittings for these
+purposes;
+(d) of a size such that the area enclosed by the four outer bottom corners is either:
+(i) at least 14 sq.m. (150 sq.ft.); or
+(ii) at least 7 sq.m. (75 sq.ft.) if it is fitted with top corner fittings;
+the term "container" includes neither vehicles nor packaging; however, containers when
+carried on chassis are included.
+2. "Corner fittings" means an arrangement of apertures and faces at the top and/or
+bottom of a container for the purposes of handling, stacking and/or securing.
+3. "Administration" means the Government of a Contracting Party under whose
+authority containers are approved.
+4. "Approved" means approved by the Administration.
+5. "Approval" means the decision by an Administration that a design type or a
+container is safe within the terms of the present Convention.
+6. "International transport" means transport between points of departure and
+destination situated in the territory of two countries to at least one of which the present
+Convention applies. The present Convention shall also apply when part of a transport
+operation between two countries takes place in the territory of a country to which the
+present Convention applies.
+7. "Cargo" means any goods, wares, merchandise and articles of every kind
+whatsoever carried in the containers.
+8. "New container" means a container the construction of which was commenced
+on or after the date of entry into force of the present Convention.
+9. "Existing container" means a container which is not a new container.
+10. "Owner" means the owner as provided for under the national law of the
+Contracting Party or the lessee or bailee, if an agreement between the parties provides for
+the exercise of the owner's responsibility for maintenance and examination of the
+container by such lessee or bailee.
+11. "Type of container" means the design type approved by the Administration.
+12. "Type-series container" means any container manufactured in accordance with
+the approved design type.
+13. "Prototype" means a container representative of those manufactured or to be
+manufactured in a design type series.
+14. "Maximum Operating Gross Weight or Rating" or "R" means the maximum
+allowable combined weight of the container and its cargo.
+15. "Tare Weight" means the weight of the empty container including permanently
+affixed ancillary equipment.
+16. "Maximum Permissible Payload" or "P" means the difference between
+maximum operating gross weight or rating and tare weight.
+Article III. APPLICATION
+1. The pr sent Convention applies to new and existing containers used in
+international transport, excluding containers specially designed for air transport.
+2. Every new container shall be approved either in accordance with the provisions
+for type-testing or for individual testing as contained in Annex I.
+3. Every existing container shall be approved in accordance with the relevant
+provisions for approval of existing containers set out in Annex I within 5 years from the
+date of entry into force of the present Convention.
+Article IV. TESTING, INSPECTION, APPROVAL AND MAINTENANCE
+1. For the enforcement of the provisions in Annex I every Administration shall
+establish an effective procedure for the testing, inspection and approval of containers in
+accordance with the criteria established in the present Convention, provided however that
+an Administration may entrust such testing, inspection and approval to organizations duly
+authorized by it.
+2. An Administration which entrusts such testing, inspection and approval to an
+organization shall inform the Secretary-General of the Inter-Governmental Maritime
+Consultative Organization (hereinafter referred to as "the Organization") for communica
+tion to Contracting Parties.
+3. Application for approval may be made to the Administration of any Contracting
+Party.
+4. Every container shall be maintained in a safe condition in accordance with the
+provisions of Annex I.
+5. If an approved container does not in fact comply with the requirements of
+Annexes I and II the Administration concerned shall take such steps as it deems necessary
+to bring the container into compliance with such requirements or to withdraw the
+approval.
+Article V. ACCEPTANCE OF APPROVAL
+1. Approval under the authority of a Contracting Party, granted under the terms of
+the present Convention, shall be accepted by the other Contracting Parties for all purposes
+covered by the present Convention. It shall be regarded by the other Contracting Parties as
+having the same force as an approval issued by them.
+2. A Contracting Party shall not impose any other structural safety requirements or
+tests on containers covered by the present Convention, provided however that nothing in
+the present Convention shall preclude the application of provisions of national regulations
+,or legislation or of international agreements, prescribing additional structural safety
+requirements for tests for containers specially designed for the transport of dangerous
+goods, or for those features unique to containers carrying bulk liquids or for containers
+when carried by air. The term "dangerous goods" shall have that meaning assigned to it by
+international agreements.
+Article VI. CONTROL
+1. Every container which has been approved under article III shall be subject to
+control in the territory of the Contracting Parties by officers duly authorized by such
+Contracting Parties. This control shall be limited to verifying that the container carries a
+valid Safety Approval Plate as required by the present Convention, unless there is
+significant evidence for believing that the condition of the container is such as to create an
+obvious risk to safety. In that case the officer carrying out the control shall only exercise it
+in so far as it may be necessary to ensure that the container is restored to a safe condition
+before it continues in service.
+2. Where the container appears to have become unsafe as a result of a defect which
+may have existed when the container was approved, the Administration responsible for
+that approval shall be informed by the Contracting Party which detected the defect.
+Article VII. SIGNATURE, RATIFICATION, ACCEPTANCE, APPROVAL AND ACCESSION
+1. The present Convention shall be open for signature until 15 January 1973 at the
+Office of the United Nations at Geneva and subsequently from 1 February 1973 until 31
+December 1973 inclusive at the Headquarters of the Organization at London by all States
+Members of the United Nations or Members of any of the Specialized Agencies or of the
+International Atomic Energy Agency or Parties to the Statute of the International Court of
+Justice, and by any other State invited by the General Assembly of the United Nations to
+become a Party to the present Convention.
+2. The present Convention is subject to ratification, acceptance or approval by States
+which have signed it.
+3. The present Convention shall remain open for accession by any State referred to
+in paragraph 1.
+4. Instruments of ratification, acceptance, approval or accession shall be deposited
+with the Secretary-General of the Organization (hereinafter referred to as "the Secretary-
+    General").
+Article VIII. ENTRY INTO FORCE
+1. The present Convention shall enter into force twelve months from the date of the
+deposit of the tenth instrument of ratification, acceptance, approval or accession.
+2. For each State ratifying, accepting, approving or acceding to the present
+Convention after the deposit of the tenth instrument of ratification, acceptance, approval
+or accession, the present Convention shall enter into force twelve months after the date of
+the deposit by such State of its instrument of ratification, acceptance, approval or
+accession.
+3. Any State which becomes a Party to the present Convention after the entry into
+force of an amendment shall, failing an expression of a different intention by that State,
+(a) be considered as a Party to the Convention as amended; and
+(b) be considered as a Party to the unamended Convention in relation to any Party to the
+Convention not bound by the amendment.
+Article IX. PROCEDURE FOR AMENDING ANY PART OR PARTS OF THE PRESENT CONVENTION
+1. The present Convention may be amended upon the proposal of a Contracting
+Party by any of the procedures specified in this article.
+2. Amendment after consideration in the Organization:
+(a) Upon the request of a Contracting Party, any amendment proposed by it to the present
+Convention shall be considered in the Organization. If adopted by a majority of twothirds
+of those present and voting in the Maritime Safety Committee of the
+Organization, to which all Contracting Parties shall have been invited to participate
+and vote, such amendment shall be communicated to all Members of the Organization
+and all Contracting Parties at least six months prior to its consideration by the
+Assembly of the Organization. Any Contracting Party which is not a Member of the
+Organization shall be entitled to participate and vote when the amendment is
+considered by the Assembly.
+(b) If adopted by a two-thirds majority of those present and voting in the Assembly, and if
+such majority includes a two-thirds majority of the Contracting Parties present and
+voting, the amendment shall be communicated by the Secretary-General to all
+Contracting Parties for their acceptance.
+(c) Such amendment shall come into force twelve months after the date on which it is
+accepted by two-thirds of the Contracting Parties. The amendment shall come into
+force with respect to all Contracting Parties except those which, before it comes into
+force, make a declaration that they do not accept the amendment.
+3. Amendment by a Conference:
+Upon the request of a Contracting Party, concurred in by at least one-third of the
+Contracting Parties, a Conference to which the States referred to in article VII shall be
+invited will be convened by the Secretary-General.
+Article X. SPECIAL PROCEDURE FOR AMENDING THE ANNEXES
+1. Any amendment to the Annexes proposed by a Contracting Party shall be
+considered in the Organization at the request of that Party.
+2. If adopted by a two-thirds majority of those present and voting in the Maritime
+Safety Committee of the Organization to which all Contracting Parties shall have been
+invited to participate and to vote, and if such majority includes a two-thirds majority of the
+Contracting Parties present and voting, such amendment shall be communicated by the
+Secretary-General to all Contracting Parties for their acceptance.
+3. Such an amendment shall enter into force on a date to be determined by the
+Maritime Safety Committee at the time of its adoption, unless by a prior date determined
+by the Maritime Safety Committee at the same time one-fifth or five of the Contracting
+Parties, whichever number is less, notify the Secretary-General of their objection to the
+amendment. Determination by the Maritime Safety Committee of the dates referred to in
+this paragraph shall be by a two-thirds majority of those present and voting, which
+majority shall include a two-thirds majority of the Contracting Parties present and voting.
+4. On entry into force any amendment shall, for all Contracting Parties which have
+not objected to the amendment, replace and supersede any previous provision to which the
+amendment refers; an objection made by a Contracting Party shall not be binding on other
+Contracting Parties as to acceptance of containers to which the present Convention
+applies.
+5. The Secretary-General shall inform all Contracting Parties and Members of the
+Organization of any request and communication under this article and the date on which
+any amendment enters into force.
+6. Where a proposed amendment to the Annexes has been considered but not
+adopted by the Maritime Safety Committee, any Contracting Party may request the
+convening of a Conference to which the States referred to in article VII shall be invited.
+Upon receipt of notification of concurrence by at least one-third of the other Contracting
+Parties such a Conference shall be convened by the Secretary-General to consider
+amendments to the Annexes.
+Article XI. DENUNCIATION
+1. Any Contracting Party may denounce the present Convention by effecting the
+deposit of an instrument with the Secretary-General. The denunciation shall take effect
+one year from the date of such deposit with the Secretary-General.
+2. A Contracting Party which has communicated an objection to an amendment to
+the Annexes may denounce the present Convention and such denunciation shall take effect
+on the date of entry into force of such an amendment.
+Article XII. TERMINATION
+The present Convention shall cease to be in force if the number of Contracting Parties
+is less than five for any period of twelve consecutive months.
+Article XIII. SETTLEMENT OF DISPUTES
+1. Any dispute between two or more Contracting Parties concerning the interpreta
+tion or application of the present Convention which cannot be settled by negotiation or
+other means of settlement shall, at the request of one of them, be referred to an arbitration
+tribunal composed as follows: each party to the dispute shall appoint an arbitrator and
+these two arbitrators shall appoint a third arbitrator, who shall be the Chairman. If three
+months after receipt of a request one of the parties shall have failed to appoint an arbitrator
+or if the arbitrators shall have failed to elect the Chairman, any of the parties may request
+the Secretary-General to appoint an arbitrator or the Chairman of the arbitration tribunal.
+2. The decision of the arbitration tribunal designated under the provisions of para
+graph 1 shall be binding on the parties to the dispute.
+3. The arbitration tribunal shall decide its own rules of procedure.
+4. Decisions of the arbitration tribunal both as to its procedure and its place of
+meeting and as to any controversy laid before it, shall be taken by majority vote.
+5. Any controversy which may arise between the parties to the dispute as regards the
+interpretation and execution of the award may be submitted by either party for judgment to
+the arbitration tribunal which made the award.
+Article XIV. RESERVATIONS
+1. Reservations to the present Convention shall be permitted, excepting those
+relating to the provisions of articles I-VI, XIII and of the present article and of those
+contained in the Annexes, on condition that such reservations are communicated in
+writing and, if communicated before the deposit of the instrument of ratification,
+acceptance, approval or accession, are confirmed in that instrument. The Secretary-
+General shall communicate such reservations to all States referred to in article VII.
+2. Any reservations made in accordance with paragraph 1:
+(a) modifies for the Contracting Party which made the reservation the provisions of the
+present Convention to which the reservation relates to the extent of the reservation;
+and
+(b) modifies those provisions to the same extent for the other Contracting Parties in their
+relations with the Contracting Party which entered the reservation.
+3. Any Contracting Party which has formulated a reservation under paragraph 1 may
+withdraw it at any time by notification to the Secretary-General.
+Article XV. NOTIFICATION
+In addition to the notifications and communications provided for in articles IX, X
+and XIV, the Secretary-General shall notify all the States referred to in article VII of the
+following:
+(a) signatures, ratifications, acceptances, approvals and accessions, under article VII;
+(b) the dates of entry into force of the present Convention in accordance with article VIII;
+(c) the date of entry into force of amendments to the present Convention in accordance
+with articles IX and X;
+(d) denunciations under article XI;
+(e) the termination of the present Convention under article XII.
+Article XVI. AUTHENTIC TEXTS
+The original of the present Convention, of which the Chinese, English, French,
+Russian and Spanish texts are equally authentic, shall be deposited with the Secretary-
+General who shall communicate certified true copies to all States referred to in article VII.
+IN WITNESS WHEREOF the undersigned Plenipotentiaries, being duly authorized thereto
+by their respective Governments, have signed the present Convention.
+DONE at Geneva this second day of December, one thousand nine hundred and
+seventy-two.
+ANNEX 1
+REGULATIONS FOR THE TESTING, INSPECTION, APPROVAL
+AND MAINTENANCE OF CONTAINERS
+Chapter I. REGULATIONS COMMON TO ALL SYSTEMS OF APPROVAL
+Regulation 1. SAFETY APPROVAL PLATE
+1. A Safety Approval Plate conforming to the specifications set out in the Appendix to this
+Annex shall be permanently affixed to every approved container at a readily visible place adjacent to
+any other approval plate issued for official purposes where it would not be easily damaged.
+2. (a) The Plate shall contain the following information in at least the English or French
+language:
+- "CSC SAFETY APPROVAL"
+- Country of approval and approval reference
+- Date (month and year) of manufacture
+- Manufacturer's identification number of the container or, in the case of existing containers, for
+which that number is unknown, the number allotted by the Administration
+- Maximum operating gross weight (kilogrammes and Ibs)
+- Allowable stacking weight for 1.8 g (kilogrammes and Ibs)
+- Transverse racking test load value (kilogrammes and Ibs).
+(b) A blank space should be reserved on the Plate for insertion of end and/or side-wall strength
+values (factors) in accordance with Regulation 1, paragraph 3 and Annex II, tests 6 and 7. A blank
+space should also be reserved on the Plate for first and subsequent maintenance examination dates
+(month and year) when used.
+3. Where the Administration considers that a new container satisfies the requirements of the
+present Convention in respect of safety and if, for such container, the end and/or side-wall strength
+value (factor) is designed to be greater or less than that stipulated in Annex II such value shall be
+indicated on the Safety Approval Plate.
+4. The presence of the Safety Approval Plate does not remove the necessity of displaying such
+labels or other information as may be required by other regulations which may be in force.
+Regulation 2. MAINTENANCE
+1. The owner of the container shall be responsible for maintaining it in safe condition.
+2. The owner of an approved container shall examine the container or have it examined in
+accordance with the procedure either prescribed or approved by the Contracting Party concerned, at
+intervals appropriate to operating conditions. The date (month and year) before which a new
+container shall undergo its first examination shall be marked on the Safety Approval Plate.
+3. The date (month and year) before which the container shall be re-examined shall be clearly
+marked on the container on or as close as practicable to the Safety Approval Plate and in a manner
+acceptable to that Contracting Party which prescribed or approved the particular maintenance
+procedure involved.
+4. The interval from the date of manufacture to the date of the first examination shall not
+exceed five years. Subsequent examination of new containers and re-examination of existing
+containers shall be at intervals of not more than 24 months. All examinations shall determine
+whether the container has any defects which could place any person in danger.
+5. For the purpose of this Regulation "the Contracting Party concerned" is the Contracting
+Party of the territory in which the owner is domiciled or has his head office.
+Chapter II. REGULATIONS FOR APPROVAL OF NEW CONTAINERS BY DESIGN TYPE
+Regulation 3. APPROVAL OF NEW CONTAINERS
+To qualify for approval for safety purposes under the present Convention all new containers
+shall comply with the requirements set out in Annex II.
+Regulation 4. DESIGN TYPE APPROVAL
+In the case of containers for which an application for approval has been submitted, the
+Administration will examine designs and witness testing of a prototype container to ensure that the
+containers will conform with the requirements set out in Annex II. When satisfied, the
+Administration shall notify the applicant in writing that the container meets the requirements of the
+present Convention and this notification shall entitle the manufacturer to affix the Safety Approval
+Plate to every container of the design type series.
+Regulation 5. PROVISIONS FOR APPROVAL BY DESIGN TYPE
+1. Where the containers are to be manufactured by design type series, application made to an
+Administration for approval by design type shall be accompanied by drawings, a design
+specification of the type of container to be approved, and such other data as may be required by the
+Administration.
+2. The applicant shall state the identification symbols which will be assigned by the
+manufacturer to the type of container to which the application for approval relates.
+3. The application shall also be accompanied by an assurance from the manufacturer that he
+shall:
+(a) produce to the Administration such containers of the design type concerned as the
+Administration may wish to examine;
+(b) advise the Administration of any change in the design or specification and await its approval
+before affixing the Safety Approval Plate to the container;
+(c) affix the Safeiy Approval Plate to each container in the design type series and to no others;
+(d) keep a record of containers manufactured to the approved design type. This record shall at least
+contain the manufacturer's identification numbers, dates of delivery and names and addresses of
+customers to whom the containers are delivered.
+4. Approval may be granted by the Adminstration to containers manufactured as modifications
+of an approved design type if the Administration is satisfied that the modifications do not affect the
+validity of tests conducted in the course of design type approval.
+5. The Administration shall not confer on a manufacturer authority to affix Safety Approval
+Plates on the basis of design type approval unless satisfied that the manufacturer has instituted
+internal production-control features to ensure that the containers produced will conform to the
+approved prototype.
+Regulation 6. EXAMINATION DURING PRODUCTION
+In order to ensure that containers of the same design type series are manufactured to the
+approved design, the Administration shall examine or test as many units as it considers necessary, at
+any stage during production of the design type series concerned.
+Regulation 7. NOTIFICATION OF ADMINISTRATION
+The manufacturer shall notify the Administration prior to commencement of production of each
+new series of containers to be manufactured in accordance with an approved design type.
+Chapter III. REGULATIONS FOR APPROVAL OF NEW CONTAINERS BY INDIVIDUAL APPROVAL
+Regulation 8. APPROVAL OF INDIVIDUAL CONTAINERS
+Approval of individual containers may be granted where the Administration, after examination
+and witnessing of tests, is satisfied that the container meets the requirements of the present
+Convention; the Administration, when so satisfied, shall notify the applicant in writing of approval
+and this notification shall entitle him to affix the Safety Approval Plate to such container.
+Chapter IV. REGULATIONS FOR APPROVAL OF EXISTING CONTAINERS
+Regulation 9. APPROVAL OF EXISTING CONTAINERS
+1. If, within 5 years from the date of entry into force of the present Convention, the owner of
+an existing container presents the following information to an Administration:
+(a) date and place of manufacture;
+(b) manufacturer's identification number of the container if available;
+(c) maximum operating gross weight capability;
+(d) (i) evidence that a container of this type has been safely operated in maritime and/or inland
+transport for a period of at least two years; or
+(ii) evidence to the satisfaction of the Administration that the container was manufactured to a
+design type which had been tested and found to comply with the technical conditions set
+out in Annex II with the exception of those technical conditions relating to the end-wall and
+side-wall strength tests; or
+(iii) evidence that the container was constructed to standards which, in the opinion of the
+Administration, were equivalent to the technical conditions set out in Annex II with the
+exception of those technical conditions relating to the end-wall and and side-wall strength
+tests;
+(e) allowable stacking weight for 1.8 g (kilogrammes and Ibs); and
+(f) such other data as required for the Safety Approval Plate,
+granted; and if so, this notification shall entitle the owner to affix the Safety Approval Plate after an
+examination of the container concerned has been carried out in accordance with Regulation 2.
+2. Existing containers which do not qualify for approval under paragraph 1 of this Regulation
+may be presented for approval under the provisions of Chapter II or Chapter HI of this Annex. For
+such containers the requirements of Annex II relating to end and/or side-wall strength tests shall not
+apply. The Administration may, if it is satisfied that the containers in question have been in service,
+waive such of the requirements in respect of presentation of drawings and testing, other than the
+lifting and floor-strength tests, as it may deem appropriate.
+
+
+Appendix
+The Safety Approval Plate, conforming to the model reproduced below, shall take the form of a
+permanent, non-corrosive, fire-proof rectangular plate measuring not less than 200 mm by 100 mm.
+The words "esc SAFETY APPROVAL" of a minimum letter height of 8 mm and all other words and
+numbers of a minimum height of 5 mm shall be stamped into, embossed on or indicated on its
+surface in any other permanent and legible way.
+
+
+ANNEX II
+STRUCTURAL SAFETY REQUIREMENTS AND TESTS
+INTRODUCTION
+In setting the requirements of this Annex, it is implicit that in all phases of the operation of
+containers the forces as a result of motion, location, stacking and weight of the loaded container and
+external forces will not exceed the design strength of the container. In particular, the following
+assumptions have been made:
+(a) the container will so be restrained that it is not subjected to forces in excess of those for which it
+has been designed;
+(b) the container will have its cargo stowed in accordance with the recommended practices of the
+trade so that the cargo does not impose upon the container forces in excess of those for which it
+has been designed.
+CONSTRUCTION
+1. A container made from any suitable material which satisfactorily performs the following
+tests without sustaining any permanent deformation or abnormality which would render it incapable
+of being used for its designed purpose, shall be considered safe.
+2. The dimensions, positioning and associated tolerances of corner fittings shall be checked
+having regard to the lifting and securing systems in which they will function.
+3. When containers are provided with special fittings for use only when such containers are
+empty, this restriction shall be marked on the container.
+TEST LOADS AND TEST PROCEDURES
+Where appropriate to the design of the container, the following test loads and test procedures
+shall be applied to all kinds of containers under test:
+TEST LOADINGS AND APPLIED FORCES TEST PROCEDURES
+1. LIFTING
+The container, having the prescribed INTERNAL LOADING, shall be lifted in such a way that no
+significant acceleration forces are applied. After lifting, the container shall be suspended or
+supported for five minutes and then lowered to the ground.
+
