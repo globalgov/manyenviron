@@ -1,0 +1,682 @@
+PROTOCOL TO THE 1979 CONVENTION ON LONG-RANGE TRANSBOUNDARY
+AIR POLLUTION ON FURTHER REDUCTION OF SULPHUR EMISSIONS
+The Parties,
+Detennined to implement the Convention on Long-range Transboundary Air Pollution,
+Concerned that emissions of sulphur and other air pollutants continue to be transported
+across international boundaries and, in exposed parts of Europe and North America, are
+causing widespread damage to natural resources of vital enviromnental and economic importance,
+such as forests, soils and waters, and to materials, including historic monmnents,
+and, under certain circumstances, have hannful effects on human health,
+Resolved to take precautionary measures to anticipate, prevent or minimize emissions
+of air pollutants and mitigate their adverse effects,
+Convinced that where there are threats of serious or irreversible damage, lack of full
+scientific certainty should not be used as a reason for postponing such measures, taking into
+account that such precautionary measures to deal with emissions of air pollutants should be
+cost-effective,
+Mindful that measures to control emissions of sulphur and other air pollutants would
+also contribute to the protection of the sensitive Arctic enviromnent
+Considering that the predominant sources of air pollution contributing to the acidification
+of the enviromnent are the combustion of fossil fuels for energy production, and the
+main technological processes in various industrial sectors, as well as transport, which lead
+to emissions of sulphur, nitrogen oxides, and other pollutants,
+Conscious of the need for a cost-effective regional approach to combating air pollution
+that takes account of the variations in effects and abatement costs between countries,
+Desiring to take further and more effective action to control and reduce sulphur emissions,
+Cognizant that any sulphur control policy, however cost-effective it may be at the regional
+level, will result in a relatively heavy economic burden on countries with economies
+that are in transition to a market economy,
+Bearing in mind that measures taken to reduce sulphur emissions should not constitute
+a means of arbitrary or unjustifiable discrimination or a disguised restriction on international
+competition and trade,
+Taking into consideration existing scientific and teclmical data on emissions, atmospheric
+processes and effects on the enviromnent of sulphur oxides, as well as on abatement
+costs,
+Aware that in addition to emissions of sulphur, emissions of nitrogen oxides and of
+ammonia are also causing acidification of the enviromnent,
+Noting that under the United Nations Framework Convention on Climate Change,
+adopted in New York on 9 May 1992, there is agreement to establish national policies and
+take corresponding measures to combat climate change, which can be expected to lead to
+reductions of sulphur einissions,
+Affinning the need to ensure enviromnentally sound and sustainable development,
+Recognizing the need to continue scientific and teclmical cooperation to elaborate further
+the approach based on critical loads and critical levels, including efforts to assess several
+air pollutants and various effects on the enviromnent materials and human health,
+Underlining that scientific and teclmical knowledge is developing and that it will be
+necessary to take such developments into account when reviewing the adequacy of the obligations
+entered into under the present Protocol and deciding on further action,
+Acknowledging the Protocol on the Reduction of Sulphur Emissions or Their Transboundary
+Fluxes by at least 30 per cent, adopted in Helsinki on 8 July 1985, and the measures
+already taken by many countries which have had the effect of reducing sulphur
+einissions,
+Have agreed as follows:
+Article 1. Definitions
+For the purposes of the present ProtocoL
+1. "Convention" means the Convention on Long-range Transboundary Air Pollution,
+adopted in Geneva on 13 November 1979:
+2. "EMEP" means the Cooperative Programme for Monitoring and Evaluation of the
+Long-range Transmission of Air Pollutants in Europe:
+3. "Executive Body" means the Executive Body for the Convention constituted under
+article 10, paragraph L of the Convention:
+4. "Commission" means the United Nations Economic Commission for Europe:
+5. "Parties" means, unless the context otherwise requires, the Parties to the present Protocol:
+6. "Geographical scope of EMEP" means the area defined in article L paragraph 4, of
+the Protocol to the 1979 Convention on Long-range Transboundary Air Pollution on Longtenn
+Financing of the Cooperative Programme for Monitoring and Evaluation of the Longrange
+Trans1nission of Air Pollutants in Europe (EMEP), adopted in Geneva on 28 September
+1984;
+7. "SOMA" means a sulphur oxides management area designated in annex III under
+the conditions laid down in article 2, paragraph 3:
+8. "Critical load" means a quantitative estimate of an exposure to one or more pollutants
+below which significant hannful effects on specified sensitive elements of the environment
+do not occur, according to present knowledge;
+9. "Critical levels" means the concentration of pollutants in the atmosphere above
+which direct adverse effects on receptors, such as human beings, plants, ecosystems or materials,
+may occur, according to present knowledge;
+10. "Critical sulphur deposition" means a quantitative estimate of the exposure to oxidized
+sulphur compounds, taking into account the effects of base cation uptake and base
+cation deposition, below which significant hannful effects on specified sensitive elements
+of the enviromnent do not occur, according to present knowledge:
+11. "Emission" means the discharge of substances into the atmosphere:
+12. "Sulphur emissions" means all emissions of sulphur compounds expressed as kilotonnes
+of sulphur dioxide (kt SO 2) to the atmosphere originating from anthropogenic
+sources excluding from ships in international traffic outside territorial waters:
+13. "Fuel" means any solid, liquid or gaseous combustible material with the exception
+of domestic refuse and toxic or dangerous waste;
+14. "Stationary combustion source" means any technical apparatus or group of technical
+apparatus that is co-located on a common site and is or could be discharging waste gases
+through a common stack, in which fuels are oxidized in order to use the heat generated;
+15."Major new stationary combustion source" means any stationary combustion
+source the construction or substantial modification of which is authorized after 31 December
+1995 and the thermal input of which, when operating at rated capacity, is at least 50
+MW th. It is a matter for the competent national authorities to decide whether a modification
+is substantial or not taking into account such factors as the enviromnental benefits of the
+modification:
+16. "Major existing stationary combustion source" means any existing stationary combustion
+source the thermal input of which, when operating at rated capacity, is at least 50
+MW th,
+17. "Gas oil" means any petroleum product within HS 2710, or any petroleum product
+which, by reason of its distillation limits, falls within the category of middle distillates intended
+for use as fuel and of which at least 85% by volmne, including distillation losses,
+distils at 3500 C:
+18. "Emission limit value" means the pennissible concentration of sulphur compounds
+expressed as sulphur dioxide in the waste gases from a stationary combustion source expressed
+in tenns of mass per volume of the waste gases expressed in mg S02/Nm3 assuming
+an oxygen content by volume in the waste gas of 3% in the case of liquid and gaseous
+fuels and 6% in the case of solid fuels:
+19. "Emission limitation" means the pennissible total quantity of sulphur compounds
+expressed as sulphur dioxide discharged from a combustion source or group of combustion
+sources located either on a common site or within a defined geographical area, expressed
+in kilotonnes per year:
+20. "Desulphurization rate" means the ratio of the quantity of sulphur which is separated
+at the combustion source site over a given period to the quantity of sulphur contained
+in the fuel which is introduced into the combustion source facilities and which is used over
+the same period:
+21. "Sulphur budget" means a matrix of calculated contributions to the deposition of
+oxidized sulphur compounds in receiving areas, originating from the emissions from specified
+areas.
+Article 2. Basic obligations
+1. The Parties shall control and reduce their sulphur emissions in order to protect human
+health and the enviromnent from adverse effects, in particular acidifying effects, and
+to ensure, as far as possible, without entailing excessive costs, that depositions of oxidized
+sulphur compounds in the long tenn do not exceed critical loads for sulphur given, in annex
+L as critical sulphur depositions, in accordance with present scientific knowledge.
+2. As a first step, the Parties shall, as a minimum, reduce and maintain their annual sulphur
+emissions in accordance with the timing and levels specified in annex II.
+3. In addition, any Party:
+(a) Whose total land area is greater than 2 million square kilometres;
+(b) Which has committed itself under paragraph 2 above to a national sulphur emission
+ceiling no greater than the lesser of its 1990 emissions or its obligation in the 1985 Helsinki
+Protocol on the Reduction of Sulphur Emissions or Their Transboundary Fluxes by at least
+30 per cent as indicated in annex II;
+(c) Whose annual sulphur emissions that contribute to acidification in areas under the
+jurisdiction of one or more other Parties originate only from within areas under its jurisdiction
+that are listed as SOMAs in annex III and has presented docmnentation to this effect
+and
+(d) Which has specified upon signature of, or accession to, the present Protocol its intention
+to act in accordance with this paragraph,
+shall, as a 1ninimum, reduce and maintain its annual sulphur emissions in the area so
+listed in accordance with the timing and levels specified in annex II.
+4. Furthemore, the Parties shall make use of the most effective measures for the reduction
+of sulphur emissions, appropriate in their particular circumstances, for new and existing
+sources, which include, inter alia:
+Measures to increase energy efficiency:
+Measures to increase the use of renewable energy:
+Measures to reduce the sulphur content of particular fuels and to encourage the use of
+fuel with a low sulphur content including the combined use of high-sulphur with low-sulphur
+or sulphur-free fuel:
+Measures to apply best available control technologies not entailing excessive cost using
+the guidance in annex IV.
+5. Each Party, except those Parties subject to the United States/Canada Air Quality
+Agreement of 1991, shall as a minimum:
+(a) Apply emission limit values at least as stringent as those specified in annex V to all
+major new stationary combustion sources:
+(b) No later than 1 July 2004 apply, as far as possible without entailing excessive costs,
+emission limit values at least as stringent as those specified in annex V to those major existing
+stationary combustion sources the thennal input of which is above 500 MWth taking
+into account the remaining lifetime of a plant calculated from the date of entry into force
+of the present Protocol, or apply equivalent emission lilnitations or other appropriate provisions,
+provided that these achieve the sulphur einission ceilings specified in annex II and,
+subsequently, further approach the critical loads as given in annex I: and no later than 1 July
+2004 apply emission limit values or emission limitations to those major existing stationary
+combustion sources the thennal input of which is between 50 and 500 MWth using annex
+V as guidance:
+(c) No later than two years after the date of entry into force of the present Protocol apply
+national standards for the sulphur content of gas oil at least as stringent as those specified
+in annex V. In cases where the supply of gas oil cannot otherwise be ensured, a State
+may extend the time period given in this subparagraph to a period of up to ten years. In this
+case it shall specify, in a declaration to be deposited together with the instrument of ratification,
+acceptance, approval or accession, its intention to extend the time period.
+6. The Parties may, in addition, apply economic instruments to encourage the adoption
+of cost-effective approaches to the reduction of sulphur emissions.
+7. The Parties to this Protocol may, at a session of the Executive Body, in accordance
+with rules and conditions which the Executive Body shall elaborate and adopt, decide
+whether two or more Parties may jointly implement the obligations set out in annex II.
+These rules and conditions shall ensure the fulfilment of the obligations set out in paragraph
+2 above and also promote the achievement of the enviromnental objectives set out in paragraph
+1 above.
+8. The Parties shall, subject to the outcome of the first review provided for under article
+8 and no later than one year after the completion of that review, commence negotiations on
+further obligations to reduce einissions.
+Article 3 Exchange of technologv
+1. The Parties shall, consistent with their national laws, regulations and practices, facilitate
+the exchange of technologies and teclmiques, including those that increase energy
+efficiency, the use of renewable energy and the processing of low-sulphur fuels, to reduce
+sulphur emissions, particularly through the promotion of:
+(a) The commercial exchange of available technology:
+(b) Direct industrial contacts and cooperation, including joint ventures:
+(c) The exchange of infonnation and experience:
+(d) The provision ofteclmical assistance.
+2. In promoting the activities specified in paragraph 1 above, the Parties shall create
+favourable conditions by facilitating contacts and cooperation among appropriate organizations
+and individuals in the private and public sectors that are capable of providing technology,
+design and engineering services, equipment or finance.
+3. The Parties shall, no later than six months after the date of entry into force of the
+present Protocol, commence consideration of procedures to create more favourable conditions
+for the exchange of technology to reduce sulphur emissions.
+Article 4. National strategies, policies, programmes, measures and information
+1. Each Party shall, in order to implement its obligations under article 2:
+(a) Adopt national strategies, policies and progranunes, no later than six months after
+the present Protocol enters into force for it and
+(b) Take and apply national measures
+to control and reduce its sulphur emissions.
+2. Each Party shall collect and maintain infonnation on:
+(a) Actual levels of sulphur emissions, and of ambient concentrations and depositions
+of oxidized sulphur and other acidifying compounds, taking into account, for those Parties
+within the geographical scope of EMEP, the work plan of EMEP: and
+(b) The effects of depositions of oxidized sulphur and other acidifying compounds.
+Article 5. Reporting
+1. Each Party shall report, through the Executive Secretary of the Commission, to the
+Executive Body, on a periodic basis as detennined by the Executive Body, information on:
+(a) The implementation of national strategies, policies, progranunes and measures referred
+to in article 4, paragraph 1:
+(b) The levels of national annual sulphur emissions, in accordance with guidelines
+adopted by the Executive Body, containing einission data for all relevant source categories:
+and
+(c) The implementation of other obligations that it has entered into under the present
+Protocol,
+in conformity with a decision regarding format and content to be adopted by the Parties
+at a session of the Executive Body. The terms of this decision shall be reviewed as necessary
+to identify any additional elements regarding the fonnat and/or content of the information
+that are to be included in the reports.
+2. Each Party within the geographical scope of EMEP shall report, through the Executive
+Secretary of the Commission, to EMEP, on a periodic basis to be detennined by the
+Steering Body of EMEP and approved by the Parties at a session of the Executive Body,
+information on the levels of sulphur emissions with temporal and spatial resolution as specified
+by the Steering Body ofEMEP.
+3. In good time before each annual session of the Executive Body, EMEP shall provide
+infonnation on:
+(a) Ambient concentrations and deposition of oxidized sulphur compounds; and
+(b) Calculations of sulphur budgets.
+Parties in areas outside the geographical scope of EMEP shall make available similar
+infonnation if requested to do so by the Executive Body.
+4. The Executive Body shall, in accordance with article 10, paragraph 2 (b ), of the Convention,
+arrange for the preparation of information on the effects of depositions of oxidized
+sulphur and other acidifying compounds.
+5. The Parties shall, at sessions of the Executive Body, arrange for the preparation, at
+regular intervals, of revised information on calculated and internationally optimized allocations
+of emission reductions for the States within the geographical scope of EMEP, with
+integrated assessment models, with a view to reducing further, for the purposes of article
+2, paragraph 1, of the present Protocol, the difference between actual depositions of oxidized
+sulphur compounds and critical load values.
+Article 6. Research, development and monitoring
+The Parties shall encourage research, development, monitoring and cooperation related
+to:
+(a) The international hannonization of methods for the establishment of critical loads
+and critical levels and the elaboration of procedures for such hannonization:
+(b) The improvement of monitoring teclmiques and systems and of the modelling of
+transport, concentrations and deposition of sulphur compounds:
+(c) Strategies for the further reduction of sulphur emissions based on critical loads and
+critical levels as well as on teclmical developments, and the improvement of integrated assessment
+modelling to calculate internationally optimized allocations of emission reductions
+taking into account an equitable distribution of abatement costs:
+(d) The understanding of the wider effects of sulphur emissions on hmnan health, the
+enviromnent, in particular acidification, and materials, including historic and cultural monuments,
+taking into account the relationship between sulphur oxides, nitrogen oxides, ammonia,
+volatile organic compounds and tropospheric ozone;
+(e) Emission abatement technologies, and technologies and techniques to enhance energy
+efficiency, energy conservation and the use of renewable energy;
+(f) The economic evaluation of benefits for the enviromnent and hmnan health resulting
+from the reduction of sulphur emissions.
+Article 7. Compliance
+1. An Implementation Committee is hereby established to review the implementation
+of the present Protocol and compliance by the Parties with their obligations. It shall report
+to the Parties at sessions of the Executive Body and may make such recommendations to
+them as it considers appropriate.
+2. Upon consideration of a report, and any reconunendations, of the Implementation
+Conunittee, the Parties, taking into account the circumstances of a matter and in accordance
+with Convention practice, may decide upon and call for action to bring about full compliance 
+with the present Protocol including measures to assist a Party's compliance with the
+Protocol, and to further the objectives of the Protocol.
+3. The Parties shall, at the first session of the Executive Body after the entry into force
+of the present Protocol adopt a decision that sets out the structure and functions of the Implementation
+Committee as well as procedures for its review of compliance.
+4. The application of the compliance procedure shall be without prejudice to the provisions
+of article 9 of the present Protocol.
+Article 8. Reviews by the Parties at sessions of the Executive Body
+1. The Parties shall, at sessions of the Executive Body, pursuant to article 10, paragraph
+2 (a), of the Convention, review the infonnation supplied by the Parties and EMEP,
+the data on the effects of depositions of sulphur and other acidifying compounds and the
+reports of the Implementation Committee referred to in article 7, paragraph L of the present
+Protocol.
+2. (a) The Parties shall, at sessions of the Executive Body, keep under review the obligations
+set out in the present Protocol including:
+(i) Their obligations in relation to their calculated and internationally optimized allocations
+of einission reductions referred to in article 5, paragraph 5; and
+(ii) The adequacy of the obligations and the progress made towards the achievement
+of the objectives of the present Protocol:
+(b) Reviews shall take into account the best available scientific information on acidification,
+including assessments of critical loads, technological developments, changing
+economic conditions and the fulfilment of the obligations on eimission levels;
+(c) In the context of such reviews, any Party whose obligations on sulphur emission
+ceilings under annex II hereto do not conform to the calculated and internationally optimized 
+allocations of emission reductions for that Party, required to reduce the difference
+between depositions of sulphur in 1990 and critical sulphur depositions within the geographical
+scope of EMEP by at least 60%, shall make every effort to undertake revised obligations;
+(d) The procedures, methods and timing for such reviews shall be specified by the Parties
+at a session of the Executive Body. The first such review shall be completed in 1997.
+Article 9. Settlement of disputes
+1. In the event of a dispute between any two or more Parties concerning the interpretation
+or application of the present Protocol, the Parties concerned shall seek a settlement
+of the dispute through negotiation or any other peaceful means of their own choice. The
+parties to the dispute shall inform the Executive Body of their dispute.
+2. When ratifying, accepting, approving or acceding to the present Protocol or at any
+time thereafter, a Party which is not a regional economic integration organization may declare
+in a written instrument submitted to the Depositary that in respect of any dispute concerning
+the interpretation or application of the Protocol, it recognizes one or both of the
+following means of dispute settlement as compulsory ipso facto and without agreement in
+relation to any Party accepting the same obligation:
+(a) Submission of the dispute to the International Court of Justice;
+(b) Arbitration in accordance with procedures to be adopted by the Parties at a session
+of the Executive Body as soon as practicable, in an annex on arbitration.
+A Party which is a regional economic integration organization may make a declaration
+with like effect in relation to arbitration in accordance with the procedures referred to in
+subparagraph (b) above.
+3. A declaration made under paragraph 2 above shall remain in force until it expires in
+accordance with its terms or until three months after written notice of its revocation has
+been deposited with the Depositary.
+4. A new declaration, a notice of revocation or the expiry of a declaration shall not in
+any way affect proceedings pending before the International Court of Justice or the arbitral
+tribunaL unless the parties to the dispute agree otherwise.
+5. Except in a case where the parties to a dispute have accepted the same means of dispute
+settlement under paragraph 2, if after twelve months following notification by one Party
+to another that a dispute exists between them, the Parties concerned have not been able
+to settle their dispute through the means mentioned in paragraph 1 above, the dispute shall
+be submitted, at the request of any of the parties to the dispute, to conciliation.
+6. For the purpose of paragraph 5, a conciliation commission shall be created. The
+commission shall be composed of an equal number of members appointed by each party
+concerned or, where parties in conciliation share the same interest by the group sharing that
+interest and a chairman chosen jointly by the members so appointed. The commission shall
+render a recommendatory award, which the parties shall consider in good faith.
+Article 10. Annexes
+The annexes to the present Protocol shall form an integral part of the Protocol. Annexes
+I and IV are recommendatory in character.
+Article 11. Amendments and adjustments
+1. Any Party may propose amendments to the present Protocol. Any Party to the Convention
+may propose an adjustment to annex II to the present Protocol to add to it its name,
+together with emission levels, sulphur emission ceilings and percentage emission reductions.
+2. Such proposed amendments and adjustments shall be submitted in writing to the Executive
+Secretary of the Cmmnission, who shall communicate them to all Parties. The Parties
+shall discuss the proposed amendments and adjustments at the next session of the
+Executive Body, provided that those proposals have been circulated by the Executive Secretary
+to the Parties at least ninety days in advance.
+3. Amendments to the present Protocol and to its annexes II, III and V shall be adopted
+by consensus of the Parties present at a session of the Executive Body, and shall enter into
+force for the Parties which have accepted them on the ninetieth day after the date on which
+two thirds of the Parties have deposited with the Depositary their instruments of acceptance
+thereof. Amendments shall enter into force for any other Party on the ninetieth day after the
+date on which that Party has deposited its instrument of acceptance thereof.
+4. Amendments to the annexes to the present Protocol, other than to the annexes referred
+to in paragraph 3 above, shall be adopted by consensus of the Parties present at a session
+of the Executive Body. On the expiry of ninety days from the date of its
+communication by the Executive Secretary of the Commission, an amendment to any such
+annex shall become effective for those Parties which have not submitted to the Depositary
+a notification in accordance with the provisions of paragraph 5 below, provided that at least
+sixteen Parties have not submitted such a notification.
+5. Any Party that is unable to approve an amendment to an annex, other than to an annex
+referred to in paragraph 3 above, shall so notify the Depositary in writing within ninety
+days from the date of the conununication of its adoption. The Depositary shall without delay
+notify all Parties of any such notification received. A Party may at any time substitute
+an acceptance for its previous notification and, upon deposit of an instrument of acceptance
+with the Depositary, the amendment to such an annex shall become effective for that Party.
+6. Adjustments to annex II shall be adopted by consensus of the Parties present at a session
+of the Executive Body and shall become effective for all Parties to the present Protocol
+on the ninetieth day following the date on which the Executive Secretary of the Commission
+notifies those Parties in writing of the adoption of the adjustment.
+Article 12 Signature
+1. The present Protocol shall be open for signature at Oslo on 14 June 1994, then at
+United Nations Headquarters in New York until 12 December 1994 by States members of
+the Conunission as well as States having consultative status with the Conunission, pursuant
+to paragraph 8 of Econ01nic and Social Council resolution 36 (IV) of 28 March 194 7, and
+by regional economic integration organizations, constituted by sovereign States members
+of the Com1nission, which have competence in respect of the negotiation, conclusion and
+application of international agreements in matters covered by the Protocol, provided that
+the States and organizations concerned are Parties to the Convention and are listed in annex
+II.
+2. In matters within their competence, such regional economic integration organizations
+shall, on their own behalf, exercise the rights and fulfil the responsibilities which the
+present Protocol attributes to their member States. In such cases, the member States of these
+organizations shall not be entitled to exercise such rights individually.
+Article 13 Ratification, acceptance, approval and accession
+1. The present Protocol shall be subject to ratification, acceptance or approval by Signatories.
+2. The present Protocol shall be open for accession as from 12 December 1994 by the
+States and organizations that meet the requirements of article 12, paragraph 1.
+Article 14. Depositary
+The instruments of ratification, acceptance, approval or accession shall be deposited
+with the Secretary-General of the United Nations, who will perform the functions of Depositary.
+Article 15. Entry into force
+1. The present Protocol shall enter into force on the ninetieth day following the date on
+which the sixteenth instrument of ratification, acceptance, approval or accession has been
+deposited with the Depositary.
+2. For each State and organization referred to in article 12, paragraph L which ratifies,
+accepts or approves the present Protocol or accedes thereto after the deposit of the sixteenth
+instrument of ratification, acceptance, approval or accession, the Protocol shall enter into
+force on the ninetieth day following the date of deposit by such Party of its instrument of
+ratification, acceptance, approval or accession.
+Article 16. Withdrawal
+At any time after five years from the date on which the present Protocol has come into
+force with respect to a Party, that Party may withdraw from it by giving written notification
+to the Depositary. Any such withdrawal shall take effect on the ninetieth day following the
+date of its receipt by the Depositary, or on such later date as may be specified in the notification
+of the withdrawal.
+Article 17. Authentic texts
+The original of the present Protocol, of which the English, French and Russian texts
+are equally authentic, shall be deposited with the Secretary-General of the United Nations.
+In witness whereof the undersigned, being duly authorized thereto, have signed the
+present Protocol.
+Done at Oslo, this fourteenth day of June one thousand nine hundred and ninety-four.
+
+
+
+Annex I
+CRITICAL SULPHUR DEPOSITION
+(5-percentile in centigrams of sulphur per square metre per year)
+Annex II
+SULPHUR EMISSION CEILINGS AND PERCENTAGE EMISSION REDUCTIONS
+The sulphur emission ceilings listed in the table below give the
+obligations referred to in paragraphs 2 and 3 of article 2 of the present
+Protocol. The 1980 and 1990 emission levels and the percentage emission
+reductions listed are given for information purposes only.
+ANNEX III
+DESIGNATION OF SULPHUR OXIDES MANAGEMENT AREAS (SOMAs)
+The following SOMA is listed for the purposes of the present Protocol:
+South-east Canada SOMA
+This is an area of 1 million km2 which includes all the territory of the provinces of
+Prince Edward Island, Nova Scotia and New Brunswick, all the territory of the province of
+Quebec south of a straight line between Havre-St. Pierre on the north coast of the Gulf of
+Saint Lawrence and the point where the Quebec-Ontario boundary intersects the James Bay
+coastline, and all the territory of the province of Ontario south of a straight line between the
+point where the Ontario-Quebec boundary intersects the James Bay coastline and Nipigon
+River near the north shore of Lake Superior.
+ANNEX IV
+CONTROL TECHNOLOGIES FOR SULPHUR EMISSIONS FROM STATIONARY SOURCES
+I. Introduction
+1. The aim of this annex is to provide guidance for identifying sulphur control options
+and technologies for giving effect to the obligations of the present Protocol.
+2. The annex is based on infonnation on general options for the reduction of sulphur
+emissions and in particular on emission control technology performance and costs contained
+in official documentation of the Executive Body and its subsidiary bodies.
+3. Unless otherwise indicated, the reduction measures listed are considered, on the basis
+of operational experience of several years in most cases, to be the most well-established
+and economically feasible best available technologies. However, the continuously expanding
+experience of low-emission measures and technologies at new plants as well as of the
+retrofitting of existing plants will necessitate regular review of this annex.
+4. Although the annex lists a number of measures and technologies spanning a wide
+range of costs and efficiencies, it cannot be considered as an exhaustive statement of control
+options. Moreover, the choice of control measures and technologies for any particular
+case will depend on a number of factors, including current legislation and regulatory provisions
+and, in particular, control technology requirements, primary energy patterns, industrial
+infrastructure, economic circumstances and specific in-plant conditions.
+5. The annex mainly addresses the control of oxidized sulphur eiuissions considered as
+the sum of sulphur dioxide (S02) and sulphur trioxide (S03), expressed as S02. The share
+of sulphur emitted as either sulphur oxides or other sulphur compounds from non-combustion
+processes and other sources is small compared to sulphur eiuissions from combustion.
+6. When measures or technologies are planned for sulphur sources emitting other components,
+in particular nitrogen oxides (NOx), particulates, heavy metals and volatile organic
+compounds (VOCs), it is worthwhile to consider them in conjunction with pollutantspecific
+control options in order to maxi1uize the overall abatement effect and minimize the
+impact on the enviromnent and, especially to avoid the transfer of air pollution problems to
+other media (such as waste water and solid waste).
+II. Afajor stationary sources for sulphur emissions
+7. Fossil fuel combustion processes are the main source of anthropogenic sulphur
+eiuissions from stationary sources. In addition, some non-combustion processes may contribute
+considerably to the emissions. The major stationary source categories, based on
+EMEP/CORINAIR'90, include:
+(i) Public power, cogeneration and district heating plants:
+(a) Boilers;
+(b) Stationary combustion turbines and internal combustion engines:
+(ii) Commercial, institutional and residential combustion plants:
+(a) Commercial boilers;
+(b) Domestic heaters;
+Volume 2030, A-21623
+(iii) Industrial combustion plants and processes with combustion:
+(a) Boilers and process heaters:
+(b) Processes, e.g. metallurgical operations such as roasting and sintering, coke oven
+plants, processing oftitanimn dioxide (Ti02), etc.:
+(c) Pulp production;
+(iv) Non-combustion processes, e.g. sulphuric acid production, specific organic synthesis
+processes, treatment of metallic surfaces;
+(v) Extraction, processing and distribution of fossil fuels:
+(vi) Waste treatment and disposal, e.g. thennal treatment of municipal and industrial
+waste.
+8. Overall data (1990) for the ECE region indicate that about 88% of total sulphur
+einissions originate from all combustion processes (20% from industrial combustion), 5%
+from production processes and 7% from oil refineries. The power plant sector in many
+countries is the major single contributor to sulphur emissions. In some countries, the industrial
+sector (including refineries) is also an important S02 emitter. Although emissions
+from refineries in the ECE region are relatively small, their impact on sulphur emissions
+from other sources is large due to the sulphur in the oil products. Typically 60% of the sulphur
+intake present in the crudes remains in the products, 30% is recovered as elemental
+sulphur and 10% is emitted from refinery stacks.
+Ill. General options for reduction of sulphur emissions from combustion
+9. General options for reduction of sulphur emissions are:
+(i) Energy management measures:*
+*Options (i) (a) and (b) are integrated in the energy structure and policy of a Party. Implementation
+status, efficiency and costs per sector are not considered here.
+(a) Energy saving
+The rational use of energy (improved energy efficiency/process operation, cogeneration
+and/or demand-side management) usually results in a reduction in sulphur emissions.
+(b) Energy 1nix
+In general, sulphur einissions can be reduced by increasing the proportion of non-combustion
+energy sources (i.e. hydro, nuclear, wind, etc.) to the energy mix. However, further
+enviromnental impacts have to be considered.
+(ii) Technological options:
+(a) Fuel switching
+The S02 emissions during combustion are directly related to the sulphur content of the
+fuel used.
+Fuel switching (e.g. from high- to low-sulphur coals and/or liquid fuels, or from coal
+to gas) leads to lower sulphur emissions, but there may be certain restrictions, such as the
+availability of low-sulphur fuels and the adaptability of existing combustion systems to different
+fuels. In many ECE countries, some coal or oil combustion plants are being replaced
+by gas-fired combustion plants. Dual-fuel plants may facilitate fuel switching.
+(b) Fuel cleaning
+Cleaning of natural gas is state-of-the-art technology and widely applied, for operational
+reasons.
+Cleaning of process gas (acid refinery gas, coke oven gas, biogas, etc.) is also state-ofthe-
+art technology.
+Desulphurization of liquid fuels (light and middle fractions) is state-of-the-art technology.
+Desulphurization of heavy fractions is technically feasible: nevertheless, the crude
+properties should be kept in mind. Desulphurization of atmospheric residue (bottom products
+from atmospheric crude distillation units) for the production of low-sulphur fuel oil is
+not, however, conunonly practised; processing low-sulphur crude is usually preferable. Hydro-
+cracking and full conversion technology have matured and combine high sulphur retention
+with improved yield of light products. The number of full conversion refineries is
+as yet limited. Such refineries typically recover 80 to 90% of the sulphur intake and convert
+all residues into light products or other marketable products. For this type of refinery, energy
+consmnption and investment costs are increased. Typical sulphur content for refinery
+products is given in table 1 below.
+Table 1
+Sulphur content from refinery products
+(S content%)
+Typical present values
+Current technologies to clean hard coal can remove approximately 50% of the inorganic
+sulphur (depending on coal properties) but none of the organic sulphur. More effective
+technologies are being developed which, however, involve higher specific investment and
+costs. Thus the efficiency of sulphur removal by coal cleaning is limited compared to flue
+gas desulphurization.
+There may be a country-specific optimization potential for the best combination of fuel
+cleaning and flue gas cleaning.
+(c) Advanced combustion technologies
+These combustion technologies with improved thennal efficiency and reduced sulphur
+einissions include: fluidized-bed combustion (FBC): bubbling (BFBC), circulating (CFBC)
+and pressurized (PFBC); integrated gasification combined-cycle (IGCC); and combined-
+cycle gas turbines (CCGT).
+Stationary combustion turbines can be integrated into combustion systems in existing
+conventional power plants which can increase overall efficiency by 5 to 7%, leading, for
+example, to a significant reduction in S02 einissions. However, major alterations to the existing
+furnace system become necessary.
+Fluidized-bed combustion is a combustion technology for burning hard coal and
+brown coaL but it can also bum other solid fuels such as petrolemn coke and low-grade fuels
+such as waste, peat and wood. Elnissions can additionally be reduced by integrated combustion
+control in the system due to the addition of lime/limestone to the bed material. The
+total installed capacity of FBC has reached approximately 30,000 MWth (250 to 350
+plants), including 8,000 MWth in the capacity range of greater than 50 MWth. By-products
+from this process may cause problems with respect to use and/or disposal, and further development
+is required.
+The IGCC process includes coal gasification and combined-cycle power generation in
+a gas and steam turbine. The gasified coal is burnt in the combustion chamber of the gas
+turbine. Sulphur emission control is achieved by the use of state-of-the-art teclmology for
+raw gas cleaning facilities upstream of the gas turbine. The technology also exists for heavy
+oil residues and bitumen emulsions. The installed capacity is presently about LOOO MW el
+(5 plants) .
+Combined-cycle gas-turbine power stations using natural gas as fuel with an energy efficiency
+of approximately 48 to 52% are currently being planned.
+(d) Process and combustion modifications
+Combustion modifications comparable to the measures used for NOx einission control
+do not exist as during combustion the organically and/or inorganically bound sulphur is almost
+completely oxidized (a certain percentage depending on the fuel properties and combustion
+technology is retained in the ash).
+In this annex dry additive processes for conventional boilers are considered as process
+modifications due to the injection of an agent into the combustion unit. However, experience
+has shown that when applying these processes, thennal capacity is lowered, the Ca/S
+ratio is high and sulphur removal low. Problems with the further utilization of the by-product
+have to be considered, so that this solution should usually be applied as an intennediate
+measure and for smaller units (table 2).
+Table 2
+Emissions of sulphur oxides obtained from the application of technological
+options to fossil-fueled boilers
+(e) Flue gas desulphurization (FGD) processes
+These processes aim at removing already formed sulphur oxides, and are also referred
+to as secondary measures. The state-of-the-art technologies for flue gas treatment processes
+are all based on the removal of sulphur by wet dry or semi-dry and catalytic chemical processes.
+To achieve the most efficient programme for sulphur emission reductions beyond the
+energy management measures listed in (i) above a combination of technological options
+identified in (ii) above should be considered.
+In some cases options for reducing sulphur emissions may also result in the reduction
+of emissions of C02, NOx, and other pollutants.
+In public power, co generation and district heating plants, flue gas treatment processes
+used include: lime/limestone wet scrubbing (LWS): spray dry absorption (SDA): Wellman
+Lord process (WL): ammonia scrubbing (AS): and combined NOx/SOx removal processes
+(activated carbon process (AC) and combined catalytic NOx/SOx removal).
+In the power generation sector, L WS and SD A cover 85% and 10%, respectively, of
+the installed FGD capacity.
+Several new flue gas desulphurization processes, such as electron beam dry scrubbing
+(EBDS) and Mark 13A have not yet passed the pilot stage.
+Table 2 above shows the efficiency of the above-mentioned secondary measures based
+on the practical eAlJerience gathered from a large number of implemented plants. The implemented
+capacity as well as the capacity range are also mentioned. Despite comparable
+characteristics for several sulphur abatement technologies, local or plant-specific influences
+may lead to the exclusion of a given technology.
+Table 2 also includes the usual investment cost ranges for the sulphur abatement technologies
+listed in sections (ii) (c), (d) and (e). However, when applying these technologies
+to individual cases it should be noted that investment costs of emission reduction measures
+will depend amongst other things on the particular technologies used, the required control
+systems, the plant size, the extent of the required reduction and the time-scale of planned
+maintenance cycles. The table thus gives only a broad range of investment costs. Investment
+costs for retrofit generally exceed those for new plants.
+IV Control techniques for other sectors
+10. The control teclmiques listed in section 9 (ii) (a) to (e) are valid not only in the power
+plant sector but also in various other sectors of industry. Several years of operational experience
+have been acquired, in most cases in the power plant sector.
+11. The application of sulphur abatement technologies in the industrial sector merely
+depends on the process's specific limitations in the relevant sectors. Important contributors
+to sulphur emissions and corresponding reduction measures are presented in table 3 below.
+12. In the sectors listed in table 3, process-integrated measures, including raw material
+changes (if necessary combined with sector-specific flue gas treatment), can be used to
+achieve the most effective reduction of sulphur emissions.
+13. Reported examples are the following:
+(a) In new kraft pulp mills, sulphur emission of less than 1 kg of sulphur per tonne of
+pulp AD (air dried) can be achieved: 
+(b) In sulphite pulp mills, 1 to 1. 5 kg of sulphur per tonne of pulp AD can be achieved:
+(c) In the case of roasting of sulphides, removal efficiencies of 80 to 99% for 10,000
+to 200,000 m3/h units have been reported (depending on the process):
+(d) For one iron ore sintering plant an FGD unit of 320,000 m3/h capacity achieves a
+clean gas value below 100 mg SOx/Nm3 at 6% 02:
+(e) Coke ovens are achieving less than 400 mg SOx/Nm3 at 6% 02:
+(f) Sulphuric acid plants achieve a conversion rate larger than 99%;
+(g) Advanced Claus plant achieves sulphur recovery of more than 99%.
+V By-products and side-effects
+14. As efforts to reduce sulphur emissions from stationary sources are increased in the
+countries of the ECE region, the quantities of by-products will also increase.
+15. Options which would lead to usable by-products should be selected. Furthermore,
+options that lead to increased thennal efficiency and minimize the waste disposal issue
+whenever possible should be selected. Although most by-products are usable or recyclable
+products such as gypsum, anunonia salts, sulphuric acid or sulphur, factors such as market
+conditions and quality standards need to be taken into account. Further utilization of FBC
+and SDA by-products have to be improved and investigated, as disposal sites and disposal
+criteria limit disposal in several countries.
+16. The following side-effects will not prevent the implementation of any technology
+or method but should be considered when several sulphur abatement options are possible:
+(a) Energy requirements of the gas treatment processes;
+(b) Corrosion attack due to the formation of sulphuric acid by the reaction of sulphur
+oxides with water vapour; (c) Increased use of water and waste water treatment:
+(d) Reagent requirements;
+(e) Solid waste disposal.
+VI. Monitoring and reporting
+17. The measures taken to carry out national strategies and policies for the abatement
+of air pollution include: legislation and regulatory provisions. economic incentives and disincentives:
+as well as technological requirements (best available technology).
+18. In general, standards are set per emission source. according to plant size. operating
+mode. combustion technology. fuel type and whether it is a new or existing plant. An alternative
+approach also used is to set a target for the reduction of total sulphur emissions from
+a group of sources and to allow a choice of where to take action to reach this target (the
+bubble concept).
+19. Efforts to limit the sulphur emissions to the levels set out in the national framework
+legislation have to be controlled by a permanent monitoring and reporting system and reported
+to the supervising authorities.
+20. Several monitoring systems. using both continuous and discontinuous measurement
+methods, are available. However. quality requirements vary. Measurements are to be
+carried out by qualified institutes using measuring and monitoring systems. To this end, a
+certification system can provide the best assurance.
+21. In the framework of modem automated monitoring systems and process control
+equipment reporting does not create a problem. The collection of data for further use is a
+state-of-the-art technique: however, data to be reported to competent authorities differ from
+case to case. To obtain better comparability. data sets and prescribing regulations should be
+harmonized. Hannonization is also desirable for quality assurance of measuring and monitoring
+systems. This should be taken into account when comparing data.
+22. To avoid discrepancies and inconsistencies. key issues and parameters. including
+the following. must be well defined:
+(a) Definition of standards expressed as ppmv. mg/Nm3, g/GJ. kg/h or kg/tonne of
+product. Most of these units need to be calculated and need specification in tenns of gas
+temperature, humidity, pressure, oxygen content or heat input value:
+(b) Definition of the period over which standards are to be averaged, expressed as
+hours months or a year:
+(c) Definition of failure times and corresponding emergency regulations regarding bypass
+of monitoring systems or shut-down of the installation:
+(d) Definition of methods for back-filling of data missed or lost as a result of equipment
+failure:
+(e) Definition of the parameter set to be measured. Depending on the type of industrial
+process, the necessary infonnation may differ. This also involves the location of the measurement
+point within the system.
+23. Quality control of measurements has to be ensured.
+Annex V
+
