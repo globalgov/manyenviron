@@ -1,0 +1,1472 @@
+PROTOCOL
+TO THE 1979 CONVENTION
+ON LONG-RANGE TRANSBOUNDARY
+AIR POLLUTION ON
+PERSISTENT ORGANIC POLLUTANTS
+The Parties.
+Determined to implement the Convention on Long-range Transboundary
+Air Pollution,
+Recognizing that emissions of many persistent organic pollutants
+are transported across international boundaries and are deposited in
+Europe, North America and the Arctic, far from their site of origin, and
+that the atmosphere is the dominant medium of transport,
+Aware that persistent organic pollutants resist degradation under
+natural conditions and have been associated with adverse effects on
+human health and the environment,
+Concerned that persistent organic pollutants can biomagnify in
+upper trophic levels to concentrations which might affect the health of
+exposed wildlife and humans,
+Acknowledging that the Arctic ecosystems and especially its
+indigenous people, who subsist on Arctic fish and mammals, are
+particularly at risk because of the biomagnification of persistent
+organic pollutants,
+Mindful that measures to control emissions of persistent organic
+pollutants would also contribute to the protection of the environment
+and human health in areas outside the United Nations Economic Commission
+for Europe's region, including the Arctic and international waters,
+Resolved to take measures to anticipate, prevent or minimize
+emissions of persistent organic pollutants, taking into account the
+application of the precautionary approach, as set forth in principle 15
+of the Rio Declaration on Environment and Development,
+Reaffirming that States have, in accordance with the Charter of
+the United Nations and the principles of international law, the
+sovereign right to exploit their own resources pursuant to their own
+environmental and development policies, and the responsibility to ensure
+that activities within their jurisdiction or control do not cause damage
+to the environment of other States or of areas beyond the limits of
+national jurisdiction,
+Noting the need for global action on persistent organic pollutants
+and recalling the role envisaged in chapter 9 of Agenda 21 for regional
+agreements to reduce global transboundary air pollution and, in
+particular, for the United Nations Economic Commission for Europe to
+share its regional experience with other regions of the world,
+Recognizing that there are subregional, regional and global
+regimes in place, including international instruments governing the
+management of hazardous wastes, their transboundary movement and
+disposal, in particular the Basel Convention on the Control of
+Transboundary Movements of Hazardous Wastes and their Disposal,
+Considering that the predominant sources of air pollution
+contributing to the accumulation of persistent organic pollutants are
+the use of certain pesticides, the manufacture and use of certain
+chemicals, and the unintentional formation of certain substances in
+waste incineration, combustion, metal production and mobile sources,
+Aware that techniques and management practices are available to
+reduce emissions of persistent organic pollutants into the air,
+Conscious of the need for a cost-effective regional approach to
+combating air pollution,
+Noting the important contribution of the private and nongovernmental
+sectors to knowledge of the effects associated with
+persistent organic pollutants, available alternatives and abatement
+techniques, and their role in assisting in the reduction of emissions of
+persistent organic pollutants,
+Bearing in mind that measures taken to reduce persistent organic
+pollutant emissions should not constitute a means of arbitrary or
+unjustifiable discrimination or a disguised restriction on international
+competition and trade,
+Taking into consideration existing scientific and technical data
+on emissions, atmospheric processes and effects on human health and the
+environment of persistent organic pollutants, as well as on abatement
+costs, and acknowledging the need to continue scientific and technical
+cooperation to further the understanding of these issues,
+Recognizing the measures on persistent organic pollutants already
+taken by some of the Parties on a national level and/or under other
+internat ional convent ions,
+Have agreed as follows:
+Article 1
+DEFINITIONS
+For the purposes of the present Protocol,
+1. "Convention" means the Convention on Long-range Transboundary Air
+Pollution, adopted in Geneva on 13 November 1979;
+2. "EMEP" means the Cooperative Programme for Monitoring and
+Evaluation of the Long-range Transmission of Air Pollutants in Europe;
+3. "Executive Body" means the Executive Body for the Convention
+constituted under article 10, paragraph 1, of the Convention;
+4. "Commission" means the United Nations Economic Commission for
+Europe ;
+5. "Parties" means, unless the context otherwise requires, the
+Parties to the present Protocol ;
+6. "Geographical scope of EMEP" means the area defined in article 1,
+paragraph 4, of the Protocol to the 1979 Convention on Long-range
+Transboundary Air Pollution on Long-term Financing of the Cooperative
+Programme for Monitoring and Evaluation of the Long-range Transmission
+of Air Pollutants in Europe (EMEP), adopted in Geneva on
+28 September 1984;
+7. "Persistent organic pollutants" (POPs) are organic substances
+that: (i) possess toxic characteristics; (ii) are persistent;
+(iii) bioaccumulate; (iv) are prone to long-range transboundary
+atmospheric transport and deposition; and (v) are likely to cause
+significant adverse human health or environmental effects near to and
+distant from their sources;
+8. "Substance" means a single chemical species, or a number of
+chemical species which form a specific group by virtue of (a) having
+similar properties and being emitted together into the environment; or
+(b) forming a mixture normally marketed as a single article;
+9. "Emission" means the release of a substance from a point or
+diffuse source into the atmosphere;
+10. "Stationary source" means any fixed building, structure, facility,
+installation, or equipment that emits or may emit any persistent organic
+pollutant directly or indirectly into the atmosphere;
+11. "Major stationary source category" means any stationary source
+category listed in annex VIII;
+12. "New stationary source" means any stationary source of which the
+construction or substantial modification is commenced after the expiry
+of two years from the date of entry into force of: (i) this Protocol;
+or (ii) an amendment to annex III or VIII, where the stationary source
+becomes subject to the provisions of this Protocol only by virtue of
+that amendment. It shall be a matter for the competent national
+authorities to decide whether a modification is substantial or not,
+taking into account such factors as the environmental benefits of the
+modification.
+Article 2
+OBJECTIVE
+The objective of the present Protocol is to control, reduce or
+eliminate discharges, emissions and losses of persistent organic
+pollutants.
+Article 3
+BASIC OBLIGATIONS
+1. Except where specifically exempted in accordance with article 4,
+each Party shall take effective measures:
+(a) To eliminate the production and use of the substances listed
+in annex I in accordance with the implementation requirements specified
+therein;
+(b) (i) To ensure that, when the substances listed in annex I
+are destroyed or disposed of, such destruction or
+disposal is undertaken in an environmentally sound
+manner, taking into account relevant subregional,
+regional and global regimes governing the management
+of hazardous wastes and their disposal, in particular
+the Basel Convention on the Control of Transboundary
+Movements of Hazardous Wastes and their Disposal;
+(ii) To endeavour to ensure that the disposal of substances
+listed in annex I is carried out domestically, taking
+into account pertinent environmental considerations;
+(iii) To ensure that the transboundary movement of the
+substances listed in annex I is conducted in an
+environmentally sound manner, taking into
+consideration applicable subregional, regional, and
+global regimes governing the transboundary movement of
+hazardous wastes, in particular the Basel Convention
+on the Control of Transboundary Movements of Hazardous
+Wastes and their Disposal;
+(c) To restrict the substances listed in annex II to the uses
+described, in accordance with the implementation requirements specified
+therein.
+2. The requirements specified in paragraph 1 (b) above shall become
+effective for each substance upon the date that production or use of
+that substance is eliminated, whichever is later.
+3. For substances listed in annex I, II, or III, each Party should
+develop appropriate strategies for identifying articles still in use and
+wastes containing such substances, and shall take appropriate measures
+to ensure that such wastes and such articles, upon becoming wastes, are
+destroyed or disposed of in an environmentally sound manner.
+4. For the purposes of paragraphs 1 to 3 above, the terms waste,
+disposal, and environmentally sound shall be interpreted in a manner
+consistent with the use of those terms under the Basel Convention on the
+Control of Transboundary Movements of Hazardous Wastes and their
+Disposal.
+5. Each Party shall:
+(a) Reduce its total annual emissions of each of the substances
+listed in annex III from the level of the emission in a reference year
+set in accordance with that annex by taking effective measures,
+appropriate in its particular circumstances;
+(b) No later than the timescales specified in annex VI, apply:
+(i) The best available techniques, taking into
+consideration annex V, to each new stationary source
+within a major stationary source category for which
+annex V identifies best available techniques;
+(ii) Limit values at least as stringent as those specified
+in annex IV to each new stationary source within a
+category mentioned in that annex, taking into
+consideration annex V. A Party may, as an
+alternative, apply different emission reduction
+strategies that achieve equivalent overall emission
+levels;
+(iii) The best available techniques, taking into
+consideration annex V, to each existing stationary
+source within a major stationary source category for
+which annex V identifies best available techniques,
+insofar as this is technically and economically
+feasible. A Party may, as an alternative, apply
+different emission reduction strategies that achieve
+equivalent overall emission reductions;
+(iv) Limit values at least as stringent as those specified
+in annex IV to each existing stationary source within
+a category mentioned in that annex, insofar as this is
+technically and economically feasible, taking into
+consideration annex V. A Party may, as an
+alternative, apply different emission reduction
+strategies that achieve equivalent overall emission
+reductions;
+(v) Effective measures to control emissions from mobile
+sources, taking into consideration annex VII.
+6. In the case of residential combustion sources, the obligations set
+out in paragraph 5 (b) (i) and (iii) above shall refer to all stationary
+sources in that category taken together.
+7. Where a Party, after the application of paragraph 5 (b) above,
+cannot achieve the requirements of paragraph 5 (a) above for a substance
+specified in annex III, it shall be exempted from its obligations in
+paragraph 5 (a) above for that substance.
+8. Each Party shall develop and maintain emission inventories for the
+substances listed in annex III, and shall collect available information
+relating to the production and sales of the substances listed in
+annexes I and II, for those Parties within the geographical scope of
+EMEP, using, as a minimum, the methodologies and the spatial and
+temporal resolution specified by the Steering Body of EMEP, and, for
+those Parties outside the geographical scope of EMEP, using as guidance
+the methodologies developed through the work plan of the Executive Body.
+It shall report this information in accordance with the reporting
+requirements set out in article 9 below.
+Article 4
+EXEMPTIONS
+1. Article 3, paragraph 1, shall not apply to quantities of a
+substance to be used for laboratory-scale research or as a reference
+standard.
+2. A Party may grant an exemption from article 3, paragraphs 1 (a)
+and (c), in respect of a particular substance, provided that the
+exemption is not granted or used in a manner that would undermine the
+objectives of the present Protocol, and only for the following purposes
+and under the following conditions :
+(a) Por research other than that referred to in paragraph 1
+above, if:
+(i) No significant quantity of the substance is expected
+to reach the environment during the proposed use and
+subsequent disposal;
+(ii) The objectives and parameters of such research are
+subject to assessment and authorization by the Party;
+and
+(iii) In the event of a significant release of a substance
+into the environment, the exemption will terminate
+immediately, measures will be taken to mitigate the
+release as appropriate, and an assessment of the
+containment measures will be conducted before research
+may resume;
+(b) To manage as necessary a public health emergency, if:
+(i) No suitable alternative measures are available to the
+Party to address the situation;
+(ii) The measures taken are proportional to the magnitude
+and severity of the emergency;
+(iii) Appropriate precautions are taken to protect human
+health and the environment and to ensure that the
+substance is not used outside the geographical area
+subject to the emergency;
+(iv) The exemption is granted for a period of time that
+does not exceed the duration of the emergency; and
+(v) Upon termination of the emergency, any remaining
+stocks of the substance are subject to the provisions
+of article 3, paragraph 1 (b);
+(c) For a minor application judged to be essential by the Party,
+if:
+(i) The exemption is granted for a maximum of five years;
+(ii) The exemption has not previously been granted by it
+under this article;
+(iii) No suitable alternatives exist for the proposed use;
+(iv) The Party has estimated the emissions of the substance
+resulting from the exemption and their contribution to
+the total emissions of the substance from the Parties;
+(v) Adequate precautions are taken to ensure that the
+emissions to the environment are minimized; and
+(vi) Upon termination of the exemption, any remaining
+stocks of the substance are subject to the provisions
+of article 3, paragraph 1 (b).
+3. Each Party shall, no later than ninety days after granting an
+exemption under paragraph 2 above, provide the secretariat with, as a
+minimum, the following information:
+(a) The chemical name of the substance subject to the exemption;
+(b) The purpose for which the exemption has been granted;
+(c) The conditions under which the exemption has been granted;
+(d) The length of time for which the exemption has been granted;
+(e) Those to whom, or the organization to which, the exemption
+applies; and
+(f) For an exemption granted under paragraphs 2 (a) and (c)
+above, the estimated emissions of the substance as a result of the
+exemption and an assessment of their contribution to the total emissions
+of the substance from the Parties.
+4. The secretariat shall make available to all Parties the
+information received under paragraph 3 above.
+Article 5
+EXCHANGE OF INFORMATION AND TECHNOLOGY
+The Parties shall, in a manner consistent with their laws,
+regulations and practices, create favourable conditions to facilitate
+the exchange of information and technology designed to reduce the
+generation and emission of persistent organic pollutants and to develop
+cost-effective alternatives, by promoting, inter alia:
+(a) Contacts and cooperation among appropriate organizations and
+individuals in the private and public sectors that are capable of
+providing technology, design and engineering services, equipment or
+finance/
+(b) The exchange of and access to information on the development
+and use of alternatives to persistent organic pollutants as well as on
+the evaluation of the risks that such alternatives pose to human health
+and the environment, and information on the economic and social costs of
+such alternatives;
+(c) The compilation and regular updating of lists of their
+designated authorities engaged in similar activities in other
+international forums;
+(d) The exchange of information on activities conducted in other
+international forums.
+Article 6
+PUBLIC AWARENESS
+The Parties shall, consistent with their laws, regulations and
+practices, promote the provision of information to the general public,
+including individuals who are direct users of persistent organic
+pollutants. This information may include, inter alia;
+(a) Information, including labelling, on risk assessment and
+hazard;
+(b) Information on risk reduction;
+(c) Information to encourage the elimination of persistent
+organic pollutants or a reduction in their use, including, where
+appropriate, information on integrated pest management, integrated crop
+management and the economic and social impacts of this elimination or
+reduction; and
+(d) Information on alternatives to persistent organic
+pollutants, as well as an evaluation of the risks that such alternatives
+pose to human health and the environment, and information on the
+economic and social impacts of such alternatives.
+Article 7
+STRATEGIES, POLICIES, PROGRAMMES, MEASURES AND INFORMATION
+1. Each Party shall, no later than six months after the date on which
+this Protocol enters into force for it, develop strategies, policies and
+programmes in order to discharge its obligations under the present
+Protocol.
+2. Each Party shall:
+(a) Encourage the use of economically feasible, environmentally
+sound management techniques, including best environmental practices,
+with respect to all aspects of the use, production, release, processing,
+distribution, handling, transport and reprocessing of substances subject
+to the present Protocol and manufactured articles, mixtures or solutions
+containing such substances ;
+(b) Encourage the implementation of other management programmes
+to reduce emissions of persistent organic pollutants, including
+voluntary programmes and the use of economic instruments;
+(c) Consider the adoption of additional policies and measures as
+appropriate in its particular circumstances, which may include nonregulatory
+approaches;
+(d) Make determined efforts that are economically feasible to
+reduce levels of substances subject to the present Protocol that are
+contained as contaminants in other substances, chemical products or
+manufactured articles, as soon as the relevance of the source has been
+established;
+(e) Take into consideration in its programmes for evaluating
+substances, the characteristics specified in paragraph 1 of Executive
+Body decision 1998/2 on information to be submitted and procedures for
+adding substances to annex I, II or III, including any amendments
+thereto.
+3. The Parties may take more stringent measures than those required
+by the present Protocol.
+Article 8
+RESEARCH, DEVELOPMENT AND MONITORING
+The Parties shall encourage research, development, monitoring and
+cooperation related, but not limited, to:
+(a) Emissions, long-range transport and deposition levels and
+their modelling, existing levels in the biotic and abiotic environment,
+the elaboration of procedures for harmonizing relevant methodologies;
+(b) Pollutant pathways and inventories in representative
+ecosystems ;
+(c) Relevant effects on human health and the environment,
+including quantification of those effects,-
+(d) Best available techniques and practices, including
+agricultural practices, and emission control techniques and practices
+currently employed by the Parties or under development;
+(e) Methodologies permitting consideration of socio-economic
+factors in the evaluation of alternative control strategies;
+(f) An effects-based approach which integrates appropriate
+information, including information obtained under subparagraphs (a) to
+(e) above, on measured or modelled environmental levels, pathways, and
+effects on human health and the environment, for the purpose of
+formulating future control strategies which also take into account
+economic and technological factors;
+(g) Methods for estimating national emissions and projecting
+future emissions of individual persistent organic pollutants and for
+evaluating how such estimates and projections can be used to structure
+future obligations;
+(h) Levels of substances subject to the present Protocol that
+are contained as contaminants in other substances, chemical products or
+manufactured articles and the significance of these levels for
+long-range transport, as well as techniques to reduce levels of these
+contaminants, and, in addition, levels of persistent organic pollutants
+generated during the life cycle of timber treated with
+pentachlorophenol.
+Priority should be given to research on substances considered to be the
+most likely to be submitted under the procedures specified in article
+14, paragraph 6.
+Article 9
+REPORTING
+1. Subject to its laws governing the confidentiality of commercial
+information:
+(a) Each Party shall report, through the Executive Secretary of
+the Commission, to the Executive Body, on a periodic basis as determined
+by the Parties meeting within the Executive Body, information on the
+measures that it has taken to implement the present Protocol;
+(b) Each Party within the geographical scope of EMEP shall
+report, through the Executive Secretary of the Commission, to EMEP, on a
+periodic basis to be determined by the Steering Body of EMEP and
+approved by the Parties at a session of the Executive Body, information
+on the levels of emissions of persistent organic pollutants using, as a
+minimum, the methodologies and the temporal and spatial resolution
+specified by the Steering Body of EMEP. Parties in areas outside the
+geographical scope of EMEP shall make available similar information to
+the Executive Body if requested to do so. Each Party shall also provide
+information on the levels of emissions of the substances listed in
+annex III for the reference year specified in that annex.
+2. The information to be reported in accordance with paragraph 1 (a)
+above shall be in conformity with a decision regarding format and
+content to be adopted by the Parties at a session of the Executive Body.
+The terms of this decision shall be reviewed as necessary to identify
+any additional elements regarding the format or the content of the
+information that is to be included in the reports.
+3. In good time before each annual session of the Executive Body,
+EMEP shall provide information on the long-range transport and
+deposition of persistent organic pollutants.
+Article 10
+REVIEWS BY THE PARTIES AT SESSIONS OF THE EXECUTIVE BODY
+1. The Parties shall, at sessions of the Executive Body, pursuant to
+article 10, paragraph 2 (a), of the Convention, review the information
+supplied by the Parties, EMEP and other subsidiary bodies, and the
+reports of the Implementation Committee referred to in article 11 of the
+present Protocol.
+2. The Parties shall, at sessions of the Executive Body, keep under
+review the progress made towards achieving the obligations set out in
+the present Protocol.
+3. The Parties shall, at sessions of the Executive Body, review the
+sufficiency and effectiveness of the obligations set out in the present
+Protocol. Such reviews will take into account the best available
+scientific information on the effects of the deposition of persistent
+organic pollutants, assessments of technological developments, changing
+economic conditions and the fulfilment of the obligations on emission
+levels. The procedures, methods and timing for such reviews shall be
+specified by the Parties at a session of the Executive Body. The first
+such review shall be completed no later than three years after the
+present Protocol enters into force.
+Article 11
+COMPLIANCE
+Compliance by each Party with its obligations under the present
+Protocol shall be reviewed regularly. The Implementation Committee
+established by decision 1997/2 of the Executive Body at its fifteenth
+session shall carry out such reviews and report to the Parties meeting
+within the Executive Body in accordance with the terms of the annex to
+that decision, including any amendments thereto.
+Article 12
+SETTLEMENT OF DISPUTES
+1. In the event of a dispute between any two or more Parties
+concerning the interpretation or application of the present Protocol,
+the Parties concerned shall seek a settlement of the dispute through
+negotiation or any other peaceful means of their own choice. The
+parties to the dispute shall inform the Executive Body of their dispute
+2. When ratifying, accepting, approving or acceding to the present
+Protocol, or at anytime thereafter, a Party which is not a regional
+economic integration organization may declare in a written instrument
+submitted to the Depositary that, in respect of any dispute concerning
+the interpretation or application of the Protocol, it recognizes one or
+both of the following means of dispute settlement as compulsory ipso
+facto and without special agreement, in relation to any Party accepting
+the same obligation:
+(a) Submission of the dispute to the International Court of
+Justice;
+(b) Arbitration in accordance with procedures to be adopted by
+the Parties at a session of the Executive Body, as soon as practicable,
+in an annex on arbitration.
+A Party which is a regional economic integration organization may make a
+declaration with like effect in relation to arbitration in accordance
+with the procedures referred to in subparagraph (b) above.
+3. A declaration made under paragraph 2 above shall remain in force
+until it expires in accordance with its terms or until three months
+after written notice of its revocation has been deposited with the
+Depositary.
+4. A new declaration, a notice of revocation or the expiry of a
+declaration shall not in any way affect proceedings pending before the
+International Court of Justice or the arbitral tribunal, unless the
+parties to the dispute agree otherwise.
+5. Except in a case where the parties to a dispute have accepted the
+same means of dispute settlement under paragraph 2, if after twelve
+months following notification by one Party to another that a dispute
+exists between them, the Parties concerned have not been able to settle
+their dispute through the means mentioned in paragraph 1 above, the
+dispute shall be submitted, at the request of any of the parties to the
+dispute, to conciliation.
+6. For the purpose of paragraph 5, a conciliation commission shall be
+created. The commission shall be composed of equal numbers of members
+appointed by each Party concerned or, where the Parties in conciliation
+share the same interest, by the group sharing that interest, and a
+chairperson chosen jointly by the members so appointed. The commission
+shall render a recommendatory award, which the Parties shall consider in
+good faith.
+Article 13
+ANNEXES
+The annexes to the present Protocol shall form an integral part of
+the Protocol. Annexes V and VII are recommendatory in character.
+Article 14
+AMENDMENTS
+1. Any Party may propose amendments to the present Protocol.
+2. Proposed amendments shall be submitted in writing to the Executive
+Secretary of the Commission, who shall communicate them to all Parties.
+The Parties meeting within the Executive Body shall discuss the proposed
+amendments at its next session, provided that the proposals have been
+circulated by the Executive Secretary to the Parties at least ninety
+days in advance.
+3. Amendments to the present Protocol and to annexes I to IV, VI and
+VIII shall be adopted by consensus of the Parties present at a session
+of the Executive Body, and shall enter into force for the Parties which
+have accepted them on the ninetieth day after the date on which two
+thirds of the Parties have deposited with the Depositary their
+instruments of acceptance thereof. Amendments shall enter into force
+for any other Party on the ninetieth day after the date on which that
+Party has deposited its instrument of acceptance thereof.
+4. Amendments to annexes V and VII shall be adopted by consensus of
+the Parties present at a session of the Executive Body. On the expiry
+of ninety days from the date of its communication to all Parties by the
+Executive Secretary of the Commission, an amendment to any such annex
+shall become effective for those Parties which have not submitted to the
+Depositary a notification in accordance with the provisions of paragraph
+5 below, provided that at least sixteen Parties have not submitted such
+a notification.
+5. Any Party that is unable to approve an amendment to annex V or VII
+shall so notify the Depositary in writing within ninety days from the
+date of the communication of its adoption. The Depositary shall without
+delay notify all Parties of any such notification received. A Party may
+at any time substitute an acceptance for its previous notification and,
+upon deposit of an instrument of acceptance with the Depositary, the
+amendment to such an annex shall become effective for that Party.
+6. In the case of a proposal to amend annex I, II, or III by adding a
+substance to the present Protocol :
+(a) The proposer shall provide the Executive Body with the
+information specified in Executive Body decision 1998/2, including any
+amendments thereto; and
+(b) The Parties shall evaluate the proposal in accordance with
+the procedures set forth in Executive Body decision 1998/2, including
+any amendments thereto.
+7. Any decision to amend Executive Body decision 1998/2 shall be
+taken by consensus of the Parties meeting within the Executive Body and
+shall take effect sixty days after the date of adoption.
+Article 15
+SIGNATURE
+1. The présent Protocol shall be open for signature at Aarhus
+(Denmark) from 24 to 25 June 1998, then at United Nations Headquarters
+in New York until 21 December 1998, by States members of the Commission
+as well as States having consultative status with the Commission
+pursuant to paragraph 8 of Economic and Social Council resolution
+36 (IV) of 28 March 1947, and by regional economic integration
+organizations, constituted by sovereign States members of the
+Commission, which have competence in respect of the negotiation,
+conclusion and application of international agreements in matters
+covered by the Protocol, provided that the States and organizations
+concerned are Parties to the Convention.
+2. In matters within their competence, such regional economic
+integration organizations shall, on their own behalf, exercise the
+rights and fulfil the responsibilities which the present Protocol
+attributes to their member States. In such cases, the member States of
+these organizations shall not be entitled to exercise such rights
+individually.
+Article 16
+RATIFICATION, ACCEPTANCE, APPROVAL AND ACCESSION
+1. The present Protocol shall be subject to ratification, acceptance
+or approval by Signatories.
+2. The present Protocol shall be open for accession as from
+21 December 1998 by the States and organizations that meet the
+requirements of article 15, paragraph 1.
+Article 17
+DEPOSITARY
+The instruments of ratification, acceptance, approval or accession
+shall be deposited with the Secretary-General of the United Nations, who
+will perform the functions of Depositary.
+Article 18
+ENTRY INTO FORCE
+1. The present Protocol shall enter into force on the ninetieth day
+following the date on which the sixteenth instrument of ratification,
+acceptance, approval or accession has been deposited with the
+Depositary.
+2. For each State and organization referred to in article 15,
+paragraph l, which ratifies, accepts or approves the present Protocol or
+accedes thereto after the deposit of the sixteenth instrument of
+ratification, acceptance, approval or accession, the Protocol shall
+enter into force on the ninetieth day following the date of deposit by
+such Party of its instrument of ratification, acceptance, approval or
+accession.
+Article 19
+WITHDRAWAL
+At any time after five years from the date on which the present
+Protocol has come into force with respect to a Party, that Party may
+withdraw from it by giving written notification to the Depositary. Any
+such withdrawal shall take effect on the ninetieth day following the
+date of its receipt by the Depositary, or on such later date as may be
+specified in the notification of the withdrawal.
+Article 20
+AUTHENTIC TEXTS
+The original of the present Protocol, of which the English, French
+and Russian texts are equally authentic, shall be deposited with the
+Secretary-General of the United Nations.
+IN WITNESS WHEREOF the undersigned, being duly authorized thereto,
+have signed the present Protocol.
+Done at Aarhus (Denmark), this twenty-fourth day of June, one
+thousand nine hundred and ninety-eight.
+
+
+
+Annex I
+SUBSTANCES SCHEDULED FOR ELIMINATION
+Unless otherwise specified in the present Protocol, this annex
+shall not apply to the substances listed below when they occur: (i) as
+contaminants in products; or (ii) in articles manufactured or in use by
+the implementation date; or (iii) as site-limited chemical intermediates
+in the manufacture of one or more different substances and are thus
+chemically transformed. Unless otherwise specified, each obligation
+below is effective upon the date of entry into force of the Protocol.
+Annex II
+SUBSTANCES SCHEDULED FOR RESTRICTIONS ON USE
+Unless otherwise specified in the present Protocol, this annex
+shall not apply to the substances listed below when they occur: (i) as
+contaminants in products; or (ii) in articles manufactured or in use by
+the implementation date; or (iii) as site-limited chemical intermediates
+in the manufacture of one or more different substances and are thus
+chemically transformed. Unless otherwise specified, each obligation
+below is effective upon the date of entry into force of the Protocol.
+Annex III
+SUBSTANCES REFERRED TO IN ARTICLE 3, PARAGRAPH 5 (a),
+AND THE REFERENCE YEAR FOR THE OBLIGATION
+a/ Polvcvclic aromatic hydrocarbons (PAHs): For the purposes
+of emission inventories, the following four indicator compounds shall be
+used: benzo(a)pyrene, benzo(b)fluoranthene, benzo(k)fluoranthene, and
+indeno(1,2,3 -cd)pyrene.
+b/ Dioxins and furans (PCDD/F): Polychlorinated dibenzop-
+dioxins (PCDD) and polychlorinated dibenzofurans (PCDF) are tricyclic,
+aromatic compounds formed by two benzene rings which are connected by
+two oxygen atoms in PCDD and by one oxygen atom in PCDF and the hydrogen
+atoms of which may be replaced by up to eight chlorine atoms.
+Annex IV
+LIMIT VALUES FOR PCDD/F FROM MAJOR STATIONARY SOURCES
+I. INTRODUCTION
+1. A definition of dioxins and furans (PCDD/F) is provided in
+annex III to the present Protocol.
+2 . Limit values are expressed as ng/m3 or mg/m3 under standard
+conditions (273.15 K, 101.3 kPa, and dry gas).
+3. Limit values relate to the normal operating situation, including
+start-up and shutdown procedures, unless specific limit values have been
+defined for those situations.
+4. Sampling and analysis of all pollutants shall be carried out
+according to the standards laid down by the Comité européen de
+normalisation (CEN), the International Organization for Standardization
+(ISO), or the corresponding United States or Canadian reference methods.
+While awaiting the development of CEN or ISO standards, national
+standards shall apply.
+5. For verification purposes, the interpretation of measurement
+results in relation to the limit value must also take into account the
+inaccuracy of the measurement method. A limit value is considered to be
+met if the result of the measurement, from which the inaccuracy of the
+measurement method is subtracted, does not exceed it.
+6. Emissions of different congeners of PCDD/F are given in tdxicity
+equivalents (ТЕ) in comparison to 2,3,7,8-TCDD using the system proposed
+by the NATO Committee on the Challenges of Modern Society (NATO-CCMS) in
+1988.
+II. LIMIT VALUES FOR MAJOR STATIONARY SOURCES
+7. The following limit values, which refer to 11% 02 concentration in
+flue gas, apply to the following incinerator types:
+Municipal solid waste (burning more than 3 tonnes per hour)
+0.1 ng TE/m3
+Medical solid waste (burning more than 1 tonne per hour)
+0.5 ng TE/m3
+Hazardous waste (burning more than 1 tonne per hour)
+0.2 ng TE/m
+Annex V
+BEST AVAILABLE TECHNIQUES TO CONTROL EMISSIONS OF PERSISTENT
+ORGANIC POLLUTANTS FROM MAJOR STATIONARY SOURCES
+I. INTRODUCTION
+1. The purpose of this annex is to provide the Parties to the
+Convention with guidance in identifying best available techniques to
+allow them to meet the obligations in article 3, paragraph 5, of the
+Protocol.
+2. "Best available techniques" (BAT) means the most effective and
+advanced stage in the development of activities and their methods of
+operation which indicate the practical suitability of particular techniques
+for providing in principle the basis for emission limit values
+designed to prevent and, where that is not practicable, generally to
+reduce emissions and their impact on the environment as a whole :
+-	'Techniques' includes both the technology used and the way
+in which the installation is designed, built, maintained,
+operated and decommissioned;
+-	'Available' techniques means those developed on a scale
+which allows implementation in the relevant industrial
+sector, under economically and technically viable
+conditions, taking into consideration the costs and
+advantages, whether or not the techniques are used or
+produced inside the territory of the Party in question, as
+long as they are reasonably accessible to the operator;
+-	'Best' means most effective in achieving a high general
+level of protection of the environment as a whole.
+In determining the best available techniques, special consideration
+should be given, generally or in specific cases, to the factors below,
+bearing in mind the likely costs and benefits of a measure and the
+principles of precaution and prevention:
+-	The use of low-waste technology;
+-	The use of less hazardous substances;
+-	The furthering of recovery and recycling of substances
+generated and used in the process and of waste;
+-	Comparable processes, facilities or methods of operation
+which have been tried with success on an industrial scale;
+-	Technological advances and changes in scientific knowledge
+and understanding;
+-	The nature, effects and volume of the emissions concerned;
+-	The commissioning dates for new or existing installations;
+-	The time needed to introduce the best available technique;
+-	The consumption and nature of raw materials (including
+water) used in the process and its energy efficiency;
+The need to prevent or reduce to a minimum the overall
+impact of the emissions on the environment and the risks to
+it;
+-	The need to prevent accidents and to minimize their
+consequences for the environment.
+The concept of best available techniques is not aimed at the
+prescription of any specific technique or technology, but at taking into
+account the technical characteristics of the installation concerned, its
+geographical location and the local environmental conditions.
+3. Information regarding the effectiveness and costs of control
+measures is based on documents received and reviewed by the Task Force
+and the Preparatory Working Group on POPs. Unless otherwise indicated,
+the techniques listed are considered to be well established on the basis
+of operational experience.
+4. Experience with new plants incorporating low-emission techniques,
+as well as with retrofitting of existing plants, is continuously
+growing. The regular elaboration and amendment of the annex will
+therefore be necessary. Best available techniques (BAT) identified for
+new plants can usually be applied to existing plants provided there is
+an adequate transition period and they are adapted.
+5. The annex lists a number of control measures which span a range of
+costs and efficiencies. The choice of measures for any particular case
+will depend on a number of factors, including economic circumstances,
+technological infrastructure and capacity, and any existing air
+pollution control measures.
+6. The most important POPs emitted from stationary sources are:
+(a) Polychlorinated dibenzo-p-dioxins/furans (PCDD/F);
+(b) Hexachlorobenzene (HCB)/
+(c) Polycyclic aromatic hydrocarbons (PAHs).
+Relevant definitions are provided in annex III to the present Protocol.
+II. MAJOR STATIONARY SOURCES OF POP EMISSIONS
+7. PCDD/F are emitted from thermal processes involving organic matter
+and. chlorine as a result of incomplete combustion or chemical reactions.
+Major stationary sources of PCDD/F may be as follows:
+(a) Waste incineration, including со-incineration;
+(b) Thermal metallurgical processes, e.g. production of
+aluminium and other non-ferrous metals, iron and steel;
+(c) Combustion plants providing energy;
+(d) Residential combustion; and
+(e) Specific chemical production processes releasing
+intermediates and by-products.
+8. Major stationary sources of PAH emissions may be as follows:
+(a) Domestic wood and coal heating;
+(b) Open fires such as refuse burning, forest fires and
+after-crop burning;
+(c) Coke and anode production;
+(d) Aluminium production (via Soederberg process); and
+(e) Wood preservation installations, except for a Party for
+which this category does not make a significant contribution to its
+total emissions of PAH (as defined in annex III).
+9. Emissions of HCB result from the same type of thermal and chemical
+processes as those emitting PCDD/F, and HCB is formed by a similar
+mechanism. Major sources of HCB emissions may be as follows:
+(a) Waste incineration plants, including co-incineration;
+(b) Thermal sources of metallurgical industries; and
+(c) Use of chlorinated fuels in furnace installations.
+III. GENERAL APPROACHES TO CONTROLLING EMISSIONS OF POPs
+10. There are several approaches to the control or prevention of POP
+emissions from stationary sources. These include the replacement of
+relevant feed materials, process modifications (including maintenance
+and operational control) and retrofitting existing plants. The
+following list provides a general indication of available measures,
+which may be implemented either separately or in combination:
+(a) Replacement of feed materials which are POPs or where there
+is a direct link between the materials and POP emissions from the
+source ;
+(b) Best environmental practices such as good housekeeping,
+preventive maintenance programmes, or process changes such as closed
+systems (for instance in cokeries or use of inert electrodes for
+electrolysis);
+(c) Modification of process design to ensure complete
+combustion, thus preventing the formation of persistent organic
+pollutants, through the control of parameters such as incineration
+temperature or residence time;
+(d) Methods for flue-gas cleaning such as thermal or catalytic
+incineration or oxidation, dust precipitation, adsorption;
+(e) Treatment of residuals, wastes and sewage sludge by, for
+example, thermal treatment or rendering them inert.
+11. The emission levels given for different measures in tables 1, 2,
+4, 5, 6, 8, and 9 are generally case-specific. The figures or ranges
+give the emission levels as a percentage of the emission limit values
+using conventional techniques.
+12. Cost-efficient considerations may be based on total costs per year
+per unit of abatement (including capital and operational costs). POP
+emission reduction costs should also be considered within the framework
+of the overall process economics, e.g. the impact of control measures
+and costs of production. Given the many influencing factors, investment
+and operating cost figures are highly case-specific.
+IV. CONTROL TECHNIQUES FOR THE REDUCTION OF PCDD/F EMISSIONS
+A. Waste incineration
+13. Waste incineration includes municipal waste, hazardous waste,
+medical waste and sewage sludge incineration.
+14. The main control measures for PCDD/F emissions from waste
+incineration facilities are:
+(a) Primary measures regarding incinerated wastes;
+(b) Primary measures regarding process techniques/
+(c) Measures to control physical parameters of the combustion
+process and waste gases (e.g. temperature stages, cooling rate, O2
+content, etc.);
+(d) Cleaning of the flue gas; and
+(e) Treatment of residuals from the cleaning process.
+15. The primary measures regarding the incinerated wastes, involving
+the management of feed material by reducing halogenated substances and
+replacing them by non-halogenated alternatives, are not appropriate for
+municipal or hazardous waste incineration. It is more effective to
+modify the incineration process and install secondary measures for
+flue-gas cleaning. The management of feed material is a useful primary
+measure for waste reduction and has the possible added benefit of
+recycling. This may result in indirect PCDD/F reduction by decreasing
+the waste amounts to be incinerated.
+16. The modification of process techniques to optimize combustion
+conditions is an important and effective measure for the reduction of
+PCDD/F emissions (usually 850*С or higher, assessment of oxygen supply
+depending on the heating value and consistency of the wastes, sufficient
+residence time -- 850*С for ca. 2 sec -- and turbulence of the gas,
+avoidance of cold gas regions in the incinerator, etc.). Fluidized bed
+incinerators keep a lower temperature than 850*С with adequate emission
+results. For existing incinerators this would normally involve
+redesigning and/or replacing a plant --an option which may not be
+economically viable in all countries. The carbon content in ashes
+should be minimized.
+17. Flue gas measures. The following measures are possibilities for
+lowering reasonably effectively the PCDD/F content in the flue gas. The
+de novo synthesis takes place at about 250 to 450*C. These measures are
+a prerequisite for further reductions to achieve the desired levels at
+the end of the pipe:
+(a) Quenching the flue gases (very effective and relatively
+inexpensive);
+(b) Adding inhibitors such as triethanolamine or triethylamine
+(can reduce oxides of nitrogen as well), but side-reactions have to be
+considered for safety reasons;
+(c) Using dust collection systems for temperatures between 800
+and 1000*C, e.g. ceramic filters and cyclones;
+(d) Using low-temperature electric discharge systems; and
+(e) Avoiding fly ash deposition in the flue gas exhaust system.
+18. Methods for cleaning the flue gas are :
+(a) Conventional dust precipitators for the reduction of
+par tide-bound PCDD/F;
+(b) Selective catalytic reduction (SCR) or selective
+non-catalytic reduction (SNCR);
+(c) Adsorption with activated charcoal or coke in fixed or
+fluidized systems;
+(d) Different types of adsorption methods and optimized
+scrubbing systems with mixtures of activated charcoal, open hearth coal,
+lime and limestone solutions in fixed bed, moving bed and fluidized bed
+reactors. The collection efficiency for gaseous PCDD/F can be improved
+with the use of a suitable pre-coat layer of activated coke on the
+surface of a bag filter;
+(e) H2O2-oxidation; and
+(f) Catalytic combustion methods using different types of
+catalysts (i.e. Pt/Al2O3 or copper-chromite catalysts with different
+promoters to stabilize the surface area and to reduce ageing of the
+catalysts).
+19. The methods mentioned above are capable of reaching emission
+levels of 0.1 ng TE/m3 PCDD/F in the flue gas. However, in systems
+using activated charcoal or coke adsorbers/filters care must be taken to
+ensure that fugitive carbon dust does not increase PCDD/F emissions
+downstream. Also, it should be noted that adsorbers and dedusting
+installations prior to catalysts (SCR technique) yield PCDD/F-laden
+residues, which need to be reprocessed or require proper disposal.
+20. A comparison between the different measures to reduce PCDD/F in
+flue gas is very complex. The resulting matrix includes a wide range of
+industrial plants with different capacities and configuration. Cost
+parameters include the reduction measures for minimizing other
+pollutants as well, such as heavy metals (particle-bound or not
+particle-bound). A direct relation for the reduction in PCDD/F
+emissions alone cannot, therefore, be isolated in most cases. A summary
+of the available data for the various control measures is given in
+table l.
+Table 1: Comparison of different flue-gas cleaning measures and
+process modifications in waste incineration plants to reduce
+PCDD/F emissions
+a/ Remaining emission compared to unreduced mode.
+21. Medical waste incinerators may be a major source of PCDD/F in many
+countries. Specific medical wastes such as human anatomical parts,
+infected waste, needles, blood, plasma and cytostatica are treated as a
+special form of hazardous waste, while other medical wastes are
+frequently incinerated on-site in a batch operation. Incinerators
+operating with batch systems can meet the same requirements for PCDD/F
+reduction as other waste incinerators.
+22. Parties may wish to consider adopting policies to encourage the
+incineration of municipal and medical waste in large regional facilities
+rather than in smaller ones. This approach may make the application of
+BAT more cost-effective.
+23. The treatment of residuals from the flue-gas cleaning process.
+Unlike incinerator ashes, these residuals contain relatively high
+concentrations of heavy metals, organic pollutants (including PCDD/F),
+chlorides and sulphides. Their method of disposal, therefore, has to be
+well controlled. Wet scrubber systems in particular produce large
+quantities of acidic, contaminated liquid waste. Some special treatment
+methods exist. They include:
+(a) The catalytic treatment of fabric filter dusts under
+conditions of low temperatures and lack of oxygen;
+(b) The scrubbing of fabric filter dusts by the 3-R process
+(extraction of heavy metals by acids and combustion for destruction of
+organic matter);
+(c) The vitrification of fabric filter dusts;
+(d) Further methods of immobilization; and
+(e) The application of plasma technology.
+B. Thermal processes in the metallurgical industry
+24. Specific processes in the metallurgical industry may be important
+remaining sources of PCDD/F emissions. These are:
+(a) Primary iron and steel industry (e.g. blast furnaces, sinter
+plants, iron pelletizing);
+(b) Secondary iron and steel industry; and
+(c) Primary and secondary non-ferrous metal industry (production
+of copper).
+PCDD/F emission control measures for the metallurgical industries are
+summarized in table 2.
+25. Metal production and treatment plants with PCDD/F emissions can
+meet a maximum emission concentration of 0.1 ng TE/m3 (if waste gas
+volume flow > 5000 m3/h) using control measures.
+Table 2: Emission reduction of PCDD/F in the metallurgical industry
+a/ Remaining emission compared to unreduced mode.
+Sinter plants
+26. Measurements at sinter plants in the iron and steel industry have
+generally shown PCDD/F emissions in the range of 0.4 to 4 ng TE/m3. A
+single measurement at one plant without any control measures showed an
+emission concentration of 43 ng TE/m3.
+27. Halogenated compounds may result in the formation of PCDD/F if
+they enter sinter plants in the feed materials (coke breeze, salt
+content in the ore) and in added recycled material (e.g. millscale,
+blast furnace top gas dust, filter dusts and sludges from waste water
+treatment). However, similarly to waste incineration, there is no clear
+link between the chlorine content of the feed materials and emissions of
+PCDD/F. An appropriate measure may be the avoidance of contaminated
+residual material and de-oiling or degreasing of millscale prior to its
+introduction into the sinter plant.
+28. The most effective PCDD/F emission reduction can be achieved using
+a combination of different secondary measures, as follows:
+(a) Recirculating waste gas significantly reduces PCDD/F
+emissions. Furthermore, the waste gas flow is reduced significantly,
+thereby reducing the cost of installing any additional end-of-pipe
+control systems;
+(b) Installing fabric filters (in combination with electrostatic
+precipitators in some cases) or electrostatic precipitators with the
+injection of activated carbon/open-hearth coal/limestone mixtures into
+the waste gas;
+(c) Scrubbing methods have been developed which include prequenching
+of the waste gas, leaching by high-performance scrubbing and
+separation by drip deposition. Emissions of 0.2 to 0.4 ng TE/m3 can be
+achieved. By adding suitable adsorption agents like lignite coal
+cokes/coal slack, an emission concentration of 0.1 ng TE/m3 can be
+reached.
+Primary and secondary production of copper
+29. Existing plants for the primary and secondary production of copper
+can achieve a PCDD/F emission level of a few picograms to 2 ng TE/m3
+after flue-gas cleaning. A single copper shaft furnace emitted up to
+29 ng TE/m3 PCDD/F before optimization of the aggregates. Generally,
+there is a wide range of PCDD/F emission values from these plants
+because of the large differences in raw materials used in differing
+aggregates and processes.
+30. Generally, the following measures are suitable for reducing PCDD/F
+emissions :
+(a) Pre-sorting scrap; ,
+(b) Pretreating scrap, for example stripping of plastic or PVC
+coatings, pretreating cable scrap using only cold/mechanical methods ;
+(c) Quenching hot wasce gases (providing utilization of heat),
+to reduce residence time in the critical region of temperature in the
+waste gas system;
+(d) Using oxygen or oxygen-enriched air in firing, or oxygen
+injection in the shaft kiln (providing complete combustion and
+minimization of waste gas volume);
+(e) Adsorption in a fixed bed reactor or fluidized jet stream
+reactor with activated charcoal or open-hearth coal dust; and
+(f) Catalytic oxidation.
+Production of steel
+31. PCDD/F emissions from converter steelworks for steel production
+and from hot blast cupola furnaces, electric furnaces and electric arc
+furnaces for the melting of cast iron are significantly lower than
+0.1 ng TE/m3. Cold-air furnaces and rotary tube furnaces (melting of
+cast iron) have higher PCDD/F emissions.
+32. Electric arc furnaces used in secondary steel production can
+achieve an emission concentration value of 0.1 ng TE/m3 if the following
+measures are used :
+(a) Separate collection of emissions from loading and
+discharging; and
+(b) Use of a fabric filter or an electrostatic precipitator in
+combination with coke injection.
+33. The feedstock to electric arc furnaces often contains oils,
+emulsions or greases. General primary measures for PCDD/F reduction can
+be sorting, de-oiling and de-coating of scraps, which may contain
+plastics, rubber, paints, pigments and vulcanizing additives.
+Smelting plants in the secondary aluminium industry
+34. PCDD/F emissions from smelting plants in the secondary aluminium
+industry are in the range of approximately 0.1 to 14 ng TE/m3. These
+levels depend on the type of smelting aggregates, materials used and
+waste gas purification techniques employed.
+35. In summary, single- and multi-stage fabric filters with the
+addition of limestone/activated carbon/open-hearth coal in front of the
+filter meet the emission concentration of 0.1 ng TE/m3, with reduction
+efficiencies of 99%.
+36. The following measures can also be considered:
+(a) Minimizing and separately removing and purifying differently
+contaminated waste gas flows;
+(b) Avoiding waste gas particle deposition;
+(c) Rapidly passing the critical temperature range;
+(d) Improving the pre-sorting of scrap aluminium from shredders
+by using swim-sink separation techniques and grading through whirling
+stream deposition; and
+(e) Improving the pre-cleaning of scrap aluminium by swarf
+decoating and swarf drying.
+37. Options (d) and (e) are important because it is unlikely that
+modern fluxless smelting techniques (which avoid halide salt fluxes)
+will be able to handle the low-grade scrap that can be used in rotary
+kilns.
+38. Discussions are continuing under the Convention for the Protection
+of the Marine Environment of the North-east Atlantic regarding the
+revision of an earlier recommendation to phase out the use of
+hexachloroethane in the aluminium industry.
+39. The melt can be treated using state-of-the-art technology, for
+example with nitrogen/chlorine mixtures in the ratio of between 9:1 and
+8:2, gas injection equipment for fine dispersion and nitrogen pre- and
+post-flushing and vacuum degreasing. For nitrogen/chlorine mixtures, a
+PCDD/F emission concentration of about 0.03 ng TE/m3 was measured (as
+compared to values of > 1 ng TE/m3 for treatment with chlorine only).
+Chlorine is required for the removal of magnesium and other undesired
+components.
+C. Combustion of fossil fuels in utility and industrial boilers
+40. In the combustion of fossil fuels in utility and industrial
+boilers (>50 MW thermal capacity), improved energy efficiency and energy
+conservation will result in a decline in the emissions of all pollutants
+because of reduced fuel requirements. This will also result in a
+reduction in PCDD/F emissions. It would not be cost-effective to remove
+chlorine from coal or oil, but in any case the trend towards gas-fired
+stations will help to reduce PCDD/F emissions from this sector.
+41. It should be noted that PCDD/F emissions could increase
+significantly if waste material (sewage sludge, waste oil, rubber
+wastes, etc.) is added to the fuel. The combustion of wastes for energy
+supply should be undertaken only in installations using waste gas
+purification systems with highly efficient PCDD/F reduction (described
+in section A above).
+42. The application of techniques to reduce emissions of nitrogen
+oxides, sulphur dioxide and particulates from the flue gas can also
+remove PCDD/F emissions. When using these techniques, PCDD/F removal
+efficiencies will vary from plant to plant. Research is ongoing to
+develop PCDD/F removal techniques, but until such techniques are
+available on an industrial scale, no best available technique is
+identified for the specific purpose of PCDD/F removal.
+D. Residential combustion
+43. The contribution of residential combustion appliances to total
+emissions of PCDD/F is less significant when approved fuels are properly
+used. In addition, large regional differences in emissions can occur
+due to the type and quality of fuel, geographical appliance density and
+usage.
+44. Domestic fireplaces have a worse burn-out rate for hydrocarbons in
+fuels and waste gases than large combustion installations. This is
+especially true if they use solid fuels such as wood and coal, with
+PCDD/F emission concentrations in the range of 0.1 to 0.7 ng TE/m3.
+45. Burning packing material added to solid fuels increases PCDD/F
+emissions. Even though it is prohibited in some countries, the burning
+of rubbish and packing material may occur in private households. Due to
+increasing disposal charges, it must be recognized that household waste
+materials are being burned in domestic firing installations. The use of
+wood with the addition of waste packing material can lead to an increase
+in PCDD/F emissions from 0.06 ng TE/m3 (exclusively wood) to 8 ng TE/m3
+(relative to 11% O2 by volume). These results have been confirmed by
+investigations in several countries in which up to 114 ng TE/m3 (with
+respect to 13% oxygen by volume) was measured in waste gases from
+residential combustion appliances burning waste materials.
+46. The emissions from residential combustion appliances can be
+reduced by restricting the input materials to good-quality fuel and
+avoiding the burning of waste, halogenated plastics and other materials.
+Public information programmes for the purchasers/operators of
+residential combustion appliances can be effective in achieving this
+goal.
+E. Firing installations for wood (<50 MW capacity)
+47. Measurement results for wood-firing installations indicate that
+PCDD/F emissions above 0.1 ng TE/m3 occur in waste gases especially
+during unfavourable burn-out conditions and/or when the substances
+burned have a higher content of chlorinated compounds than normal
+untreated wood. An indication of poor firing is the total carbon
+concentration in the waste gas. Correlations have been found between CO
+emissions, burn-out quality and PCDD/F emissions. Table 3 summarizes
+some emission concentrations and factors for wood-firing installations.
+Table 3: Quantity-related emission concentrations and factors for
+wood-firing installations
+48. The combustion of urban waste wood (demolition wood) in moving
+grates leads to relatively high PCDD/F emissions, compared to non-waste
+wood sources. A primary measure for emission reduction is to avoid the
+use of treated waste wood in wood-firing installations. Combustion of
+treated wood should be undertaken only in installations with the
+appropriate flue-gas cleaning to minimize PCDD/F emissions.
+V. CONTROL TECHNIQUES FOR THE REDUCTION OF PAH EMISSIONS
+A. Coke production
+49. During coke production, PAHs are released into the ambient air
+mainly:
+(a) When the oven is charged through the charging holes;
+(b) By leakages from the oven door, the ascension pipes and the
+charging hole lids; and
+(c) During coke pushing and coke cooling.
+50. Benzo(a)pyrene (BaP) concentration varies substantially between
+the individual sources in a coke battery. The highest BaP
+concentrations are found on the top of the battery and in the immediate
+vicinity of the doors.
+51. PAH from coke production can be reduced by technically improving
+existing integrated iron and steel plants. This might entail the
+closure and replacement of old coke batteries and the general reduction
+in coke production, for instance by injecting high-value coal in steel
+production.
+52. A PAH reduction strategy for coke batteries should include the
+following technical measures:
+(a) Charging the coke ovens:
+ - Particulate matter emission reduction when charging
+the coal from the bunker into the charging cars;
+-	Closed systems for coal transfer when coal pre-heating
+is used;
+-	Extraction of filling gases and subsequent treatment,
+either by passing the gases into the adjacent oven or
+by passing via a collecting main to an incinerator and
+a subsequent dedusting device. In some cases the
+extracted filling gases may be burned on the charging
+cars, but the environmental performance and safety of
+these charging-car-based systems is less satisfactory.
+Sufficient suction should be generated by steam or
+water injection in the ascension pipes;
+(b) Emissions at charging hole lids during coking operation
+should be avoided by:
+-	Using charging hole lids with highly efficient
+sealing;
+-	Luting the charging hole lids with clay (or equally
+effective material) after each charging operation;
+-	Cleaning the charging hole lids and frames before
+closing the charging hole;
+- Keeping oven ceilings free from coal residuals,-
+(c) Ascension pipe lids should, be equipped, with water seals to
+avoid gas and tar emissions, and the proper operation of the seals
+should be maintained by regular cleaning;
+(d) Coke oven machinery for operating the coke oven doors should
+be equipped with systems for cleaning the seals' surfaces on the oven
+door frames and oven doors;
+(e) Coke oven doors:
+- Highly effective seals should be used (e.g.
+spring-loaded membrane doors);
+-	Seals on the oven doors and door frames should be
+cleaned thoroughly at every handling operation;
+-	Doors should be designed in a manner that allows the
+installation of particulate matter extraction systems
+with connection to a dedusting device (via a
+collecting main) during pushing operations;
+(f) The coke transfer machine should be equipped with an
+integrated hood, stationary duct and stationary gas cleaning system
+(preferably a fabric filter);
+(g) Low-emission procedures should be applied for coke cooling,
+e.g. dry coke cooling. The replacement of a wet quenching process by
+dry coke cooling should be preferred, so long as the generation of waste
+water is avoided by using a closed circulation system. The dusts
+generated when dry quenched coke is handled should be reduced.
+53. A coke-making process referred to as "non-recovery coke-making"
+emits significantly less PAH than the more conventional by-product
+recovery process. This is because the ovens operate under negative
+pressure, thereby eliminating leaks to the atmosphere from the coke oven
+doors. During coking, the raw coke oven gas is removed from the ovens
+by a natural draught, which maintains a negative pressure in the ovens.
+These ovens are not designed to recover the chemical by-products from
+raw coke oven gas. Instead, the offgases from the coking process
+(including PAH) are burned efficiently at high temperatures and with
+long residence times. The waste heat from this incineration is used to
+provide the energy for coking, and excess heat may be used to generate
+steam. The economics of this type of coking operation may require a
+cogeneration unit to produce electricity from the excess steam.
+Currently there is only one non-recovery coke plant operating in the
+United States, and one is in operation in Australia. The process is
+basically a horizontal sole-flue non-recovery coke oven with an
+incineration chamber adjoining two ovens. The process provides for
+alternate charging and coking schedules between the two ovens. Thus,
+one oven is always providing the incineration chamber with coke gases.
+The coke gas combustion in the incineration chamber provides the
+necessary heat source. The incineration chamber design provides the
+necessary dwell time (approximately 1 second) and high temperatures
+(minimum of 900*C).
+54. An effective monitoring programme for leakages from coke oven door
+seals, ascension pipes and charging hole lids should be operated. This
+implies the monitoring and recording of leakages and immediate repair or
+maintenance. A significant reduction of diffuse emissions can thus be
+achieved.
+55. Retrofitting existing coke batteries to facilitate condensation of
+flue gases from all sources (with heat recovery) results in a PAH
+reduction of 86% to more than 90% in air (without regard to waste water
+treatment). Investment costs can be amortized in five years, taking
+into account recovered energy, heated water, gas for synthesis and saved
+cooling water.
+56. Increasing coke oven volumes results in a decrease in the total
+number of ovens, oven door openings (amount of pushed ovens per day),
+number of seals in a coke battery and consequently PAH emissions.
+Productivity increases in the same way by decreasing operating and
+personnel costs.
+57. Dry coke cooling systems require a higher investment cost than wet
+methods. Higher operating costs can be compensated for by heat recovery
+in a process of pre-heating the coke. The energy efficiency of a
+combined dry coke cooling/coal pre-heating system rises from 38 to 65%.
+Coal pre-heating boosts productivity by 30%. This can be raised to 40%
+because the coking process is more homogeneous.
+58. All tanks and installations for the storage and treatment of coal
+tar and coal tar products must be equipped with an efficient vapour
+recovery return and/or vapour destruction system. The operating costs
+of vapour destruction systems can be reduced in an autothermal afterburning
+mode if the concentration of the carbon compounds in the waste
+is high enough.
+59. Table 4 summarizes PAH emission reduction measures in coke
+production plants.
+Table 4 : PAH emission control for coke production
+a/ Remaining emission compared to unreduced mode.
+В. Anode production
+60. PAH emissions from anode production have to be dealt with in a
+similar fashion as those from coke production.
+61. The following secondary measures for emission reduction of
+PAH-contaminated dust are used:
+(a) Electrostatic tar precipitation;
+(b) Combination of a conventional electrostatic tar filter with
+a wet electrostatic filter as a more efficient technical measure;
+(c) Thermal after-burning of the waste gases; and
+(d) Dry scrubbing with limestone/petroleum coke or aluminum
+oxide (A12O3) .
+62. The operating costs in thermal after-burning can be reduced in an
+autothermal after-burning mode if the concentration of carbon compounds
+in the waste gas is high enough. Table 5 summarizes PAH emission
+control measures for anode production.
+Table 5: PAH emission control for anode production
+a/ Remaining emission compared to unreduced mode.
+С. Aluminium industry
+63. Aluminium is produced from aluminium oxide (A12O3) by electrolysis
+in pots (cells) electrically connected in series. Pots are classified
+as prebake or Soederberg pots, according to the type of the anode.
+64. Prebake pots have anodes consisting of calcined (baked) carbon
+blocks, which are replaced after partial consumption. Soederberg anodes
+are baked in the cell, with a mixture of petroleum coke and coal tar
+pitch acting as a binder.
+65. Very high PAH emissions are released from the Soederberg process.
+Primary abatement measures include modernization of existing plants and
+optimization of the processes, which could reduce PAH emissions by
+70-90%. An emission level of 0.015 kg B(a)P/tonne of Al could be
+reached. Replacing the existing Soederberg cells by prebaked ones would
+require major reconstruction of the existing process, but would nearly
+eliminate the PAH emissions. The capital costs of such replacements are
+very high.
+66. Table 6 summarizes PAH emission control measures for aluminium
+production.
+Table 6: PAH emission control for aluminium production using the
+Soederberg process
+a/ Remaining emission compared to unreduced mode.
+D. Residential combustion
+67. PAH emissions from residential combustion can be detected from
+stoves or open fireplaces especially when wood or coal is used.
+Households could be a significant source of PAH emissions. This is the
+result of the use of fireplaces and small firing installations burning
+solid fuels in households. In some countries the usual fuel for stoves
+is coal. Coal-burning stoves emit less PAH than wood-burning ones,
+because of their higher combustion temperatures and more consistent fuel
+quality.
+68. Furthermore, combustion systems with optimized operation
+characteristics (e.g. burning rate) effectively control PAH emissions
+from residential combustion. Optimized combustion conditions include
+optimized combustion chamber design and optimized supply of air. There
+are several techniques which optimize combustion conditions and reduce
+emissions. There is a significant difference in emissions between
+different techniques. A modern wood-fired boiler with a water
+accumulation tank, representing BAT, reduces the emission by more than
+90% compared to an outdated boiler without a water accumulation tank. A
+modern boiler has three different zones : a fireplace for the
+gasification of wood, a gas combustion zone with ceramics or other
+material which allow temperatures of some 1000*C, and a convection zone.
+The convection part where the water absorbs the heat should be
+sufficiently long and effective so that the gas temperature can be
+reduced from 1000"С to 250'С or less. There are also several techniques
+to supplement old and outdated boilers, for example with water
+accumulation tanks, ceramic inserts and pellet burners.
+69. Optimized burning rates are accompanied by low emissions of carbon
+monoxide (CO), total hydrocarbons (THC) and PAHs. Setting limits (type
+approval regulations) on the emission of CO and THCs also affects the
+emission of PAHs. Low emission of CO and THCs results in low emission
+of PAHs. Since measuring PAH is far more expensive than measuring CO,
+it is more cost-effective to set a limit value for CO and THCs. Work is
+continuing on a proposal for a CEN standard for coal- and wood-fired
+boilers up to 300 kW (see table 7).
+Table 7: Draft CEN standards in 1997
+Note; Emission levels in mg/m3 at 10% O2.
+70. Emissions from residential wood combustion stoves can be reduced:
+(a) For existing stoves, by public information and awareness
+programmes regarding proper stove operation, the use of untreated wood
+only, fuel preparation procedures and the correct seasoning of wood for
+moisture content ; and
+(b) For new stoves, by the application of product standards as
+described in the draft CEN standard (and equivalent product standards in
+the United States and Canada).
+71. More general measures for PAH emission reduction are those related
+to the development of centralized systems for households and energy
+conservation such as improved thermal insulation to reduce energy
+consumption.
+72. Information is summarized in table 8.
+Table 8: PAH emission control for residential combustion
+a/ Remaining emission compared to unreduced mode.
+E. Wood preservation installations
+73. Wood preservation with PAH-containing coal-tar products may be a
+major source of PAH emissions to the air. Emissions may occur during
+the impregnation process itself as well as during storage, handling and
+use of the impregnated wood in the open air.
+74. The most widely used PAH-containing coal-tar products are
+carbolineum and creosote. Both are coal tar distillates containing PAHs
+for the protection of timber (wood) against biological attack.
+75. PAH emissions from wood preservation, installations and storage
+facilities may be reduced using several approaches, implemented either
+separately or in combination, such as:
+(a) Requirements on storage conditions to prevent pollution of
+soil and surface water by leached PAH and contaminated rainwater (e.g.
+storage sites impermeable to rainwater, roof cover, reuse of
+contaminated water for the impregnation process, quality demands for the
+material produced);
+(b) Measures to reduce atmospheric emissions at impregnation
+plants (e.g. the hot wood should be cooled down from 90*С to 30'С at
+least before transport to storage sites. However, an alternative method
+using pressure steam under vacuum conditions to impregnate the wood with
+creosote should be highlighted as BAT);
+(c) The optimum loading of wood preservative, which gives
+adequate protection to the treated wood product in situ, can be regarded
+as a BAT as this will reduce the demand for replacements, thereby
+reducing emissions from the wood preservation installations;
+(d) Using wood preservation products with a lower content of
+those PAHs that are POPs :
+Possibly using modified creosote which is taken to be a
+distillation fraction boiling between 270"C and 355*C, which
+reduces both the emissions of the more volatile PAHs and the
+heavier, more toxic PAHs;
+Discouraging the use of carbolineum would also reduce PAH
+emissions;
+(e) Evaluating and then using, as appropriate, alternatives,
+such as those in table 9, that minimize reliance on РАН-based products.
+76. Burning of impregnated wood gives rise to PAH emissions and other
+harmful substances. If burning does take place, it should be done in
+installations with adequate abatement techniques.
+Table 9: Possible alternatives to wood preservation involving РАН-based
+Products
+Annex VI
+TXMESCALES FOR THE APPLICATION OF LIMIT VALUES AND BEST AVAILABLE
+TECHNIQUES TO NEW AND EXISTING STATIONARY SOURCES
+The tiraescales for the application of limit values and best
+available techniques are:
+(a) For new stationary sources: two years after the date of
+entry into force of the present Protocol;
+(b) For existing stationary sources: eight years after the date
+of entry into force of the present Protocol. If necessary, this period
+may be extended for specific existing stationary sources in accordance
+with the amortization period provided for by national legislation.
+Annex VII
+RECOMMENDED CONTROL MEASURES FOR REDUCING EMISSIONS OF
+PERSISTENT ORGANIC POLLUTANTS FROM MOBILE SOURCES
+1. Relevant definitions are provided in annex III to the present
+Protocol.
+1. ACHIEVABLE EMISSION LEVELS FOR NEW VEHICLES AND FUEL PARAMETERS
+A. Achievable emission levels for new vehicles
+2. Diesel-fuelled passenger cars
+3. Heavy-duty vehicles
+4. Off-road engines
+Step 1 (reference: ECE regulation No. 96) */
+* Uniform provisions concerning the approval of compression
+ignition (C.I.) engines to be installed in agricultural and
+forestry tractors with regard to the emissions of pollutants
+by the engine." The regulation came into force on 15
+December 1995 and its amendment came into force on 5 March
+1997.
+Step 2
+В. Fuel parameters
+5. Diesel fuel
+N.S.: Not specified.
+Í/ 1 January of year specified.
+**/ Indicative value.
+II. RESTRICTION OF HALOGENATED SCAVENGERS, ADDITIVES IN FUELS AND
+LUBRICANTS
+6. In some countries, l,2-dibromomethane in combination with
+1,2-dichloromethane is used as a scavenger in leaded petrol. Moreover,
+PCDD/F are formed during the combustion process in the engine. The
+application of three-way catalytic converters for cars will require the
+use of unleaded fuel. The addition of scavengers and other halogenated
+compounds to petrol and other fuels and to lubricants should be avoided
+as far as possible.
+7. Table 1 summarizes measures for PCDD/F emission control from the
+exhaust from road transport motor vehicles.
+Table 1: PCDD/F emission control for the exhaust from road transport
+motor vehicles
+III. CONTROL MEASURES FOR EMISSIONS OF POPs FROM MOBILE SOURCES
+A. POP emissions from motor vehicles
+8. POP emissions from motor vehicles occur as particle-bound PAHs
+emitted from diesel-fuelled vehicles. To a minor extent PAHs are also
+emitted by petrol-fuelled vehicles.
+9. Lubrication oil and fuels may contain halogenated compounds as a
+result of additives or the production process. These compounds may be
+transformed during combustion into PCDD/F and subsequently emitted with
+the exhaust gases.
+B. Inspection and maintenance
+10. Por diesel-fuelled mobile sources, the effectiveness of the
+control of emissions of PAHs may be ensured through programmes to test
+the mobile sources periodically for particulate emissions, opacity
+during free acceleration, or equivalent methods.
+11. For petrol-fuelled mobile sources, the effectiveness of the
+control of emissions of PAHs (in addition to other exhaust components)
+may be ensured through programmes to test periodically the fuel metering
+and the efficiency of the catalytic converter.
+C. Techniques to control PAH emissions from diesel- and
+petrol-fuelled motor vehicles
+1. General aspects of control technologies
+12. It is important to ensure that vehicles are designed to meet
+emission standards while in service. This can be done by ensuring
+conformity of production, lifetime durability, warranty of emissioncontrol
+components, and recall of defective vehicles. For vehicles in
+use, continued emission control performance can be ensured by an
+effective inspection and maintenance programme.
+2. Technical measures for emission control
+13. The following measures to control PAH emissions are important:
+(a) Fuel-quality specifications and engine modifications to
+control emissions before they are formed (primary measures); and
+(b) Addition of exhaust treatment systems, e.g. oxidizing
+catalysts or particle traps (secondary measures).
+(a) Diesel engines
+14. Diesel-fuel modification can yield two benefits: a lower sulphur
+content reduces emissions of particles and increases the conversion
+efficiency of oxidizing catalysts, and the reduction in di- and triaromatic
+compounds reduces the formation and emission of PAHs.
+15. A primary measure to reduce emissions is to modify the engine to
+achieve more complete combustion. Many different modifications are in
+use. In general, vehicle exhaust composition is influenced by changes
+in combustion chamber design and by higher fuel injection pressures. At
+present, most diesel engines rely on mechanical engine control systems.
+Newer engines increasingly use computerized electronic control systems
+with greater potential flexibility in controlling emissions. Another
+technology to control emissions is the combined technology of
+turbocharging and intercooling. This system is successful in reducing
+NOX as well as increasing fuel economy and power output. For heavy- and
+light-duty engines the use of intake manifold tuning is also a
+possibility.
+16. Controlling the lubricating oil is important to reduce particulate
+matter (PM), as 10 to 50% of particulate matter is formed from engine
+oil. Oil consumption can be reduced by improved engine manufacturing
+specifications and improved engine seals.
+17. Secondary measures to control emissions are additions of exhaust
+treatment systems. In general, for diesel engines the use of an
+oxidizing catalyst in combination with a particulate filter has been
+shown to be effective in reducing PAH emissions. A particle trap
+oxidizer is being evaluated. It is located in the exhaust system to
+trap PM and can provide some regeneration of the filter by burning the
+collected PM, through electrical heating of the system or some other
+means of regeneration. For proper regeneration of passive system traps
+during normal operation, a burner-assisted regeneration system or the
+use of additives is required.
+(b) Petrol engines
+18. РАН-reduction measures for petrol-fuelled engines are primarily
+based on the use of a closed-loop three-way catalytic converter, which
+reduces PAHs as part of the HC emission reductions.
+19. Improved cold start behaviour reduces organic emissions in general
+and PAHs in particular (for instance start-up catalysts, improved fuel
+évaporâtion/atomization, heated catalysts).
+20. Table 2 summarizes measures for PAH emission control from the
+exhaust from road transport motor vehicles.
+Table 2: PAH emission control for the exhaust from road transport motor
+Vehicles
+Annex VIII
+MAJOR STATIONARY SOURCE CATEGORIES
+I. INTRODUCTION
+Installations or parts of installations for research, development
+and the testing of new products are not covered by this list. A more
+complete description of the categories may be found in annex V.
+II. LIST OF CATEGORIES
+

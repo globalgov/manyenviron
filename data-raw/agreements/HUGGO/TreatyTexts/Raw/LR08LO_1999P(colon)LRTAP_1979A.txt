@@ -1,0 +1,1783 @@
+PROTOCOL TO THE 1979 CONVENTION ON LONG-RANGE TRANSBOUNDARY
+AIR POLLUTION TO ABATE ACIDIFICATION, EUTROPHICATION AND
+GROUND-LEVEL OZONE
+The Parties.
+Determined to implement the Convention on Long-range Transboundary Air
+Pollution,
+Aware that nitrogen oxides, sulphur, volatile organic compounds and
+reduced nitrogen compounds have been associated with adverse effects on human
+health and the environment,
+Concerned that critical loads of acidification, critical loads of
+nutrient nitrogen and critical levels of ozone for human health and vegetation
+are still exceeded in many areas of the United Nations Economic Commission for
+Europe's region,
+Concerned also that emitted nitrogen oxides, sulphur and volatile organic
+compounds, as well as secondary pollutants such as ozone and the reaction
+products of ammonia, are transported in the atmosphere over long distances and
+may have adverse transboundary effects,
+Recognizing that emissions from Parties within the United Nations
+Economic Commission for Europe's region contribute to air pollution on the
+hemispheric and global scales, and recognizing the potential for transport
+between continents and the need for further study with regard to that
+potential,
+Recognizing also that Canada and the United States of America are
+bilaterally negotiating reductions of emissions of nitrogen oxides and
+volatile organic compounds to address the transboundary ozone effect,
+Recognizing furthermore that Canada will undertake further reductions of
+emissions of sulphur by 2010 through the implementation of the Canada-wide
+Acid Rain Strategy for Post-2000, and that the United States is committed to
+the implementation of a nitrogen oxides reduction programme in the eastern
+United States and to the reduction in emissions necessary to meet its national
+ambient air quality standards for particulate matter,
+Resolved to apply a multi-effect, multi-pollutant approach to preventing
+or minimizing the exceedances of critical loads and levels,
+Taking into account the emissions from certain existing activities and
+installations responsible for present air pollution levels and the development
+of future activities and installations,
+Aware that techniques and management practices are available to reduce
+emissions of these substances,
+Resolved to take measures to anticipate, prevent or minimize emissions of
+these substances, taking into account the application of the precautionary
+approach as set forth in principle 15 of the Rio Declaration on Environment
+and Development,
+Reaffirming that States have, in accordance with the Charter of the
+United Nations and the principles of international law, the sovereign right to
+exploit their own resources pursuant to their own environmental and
+developmental policies, and the responsibility to ensure that activities
+within their jurisdiction or control do not cause damage to the environment of
+other States or of areas beyond the limits of national jurisdiction,
+Conscious of the need for a cost-effective regional approach to combating
+air pollution that takes account of the variations in effects and abatement
+costs between countries,
+Noting the important contribution of the private and non-governmental
+sectors to knowledge of the effects associated with these substances and
+available abatement techniques, and their role in assisting in the reduction
+of emissions to the atmosphere,
+Bearing in mind that measures taken to reduce emissions of sulphur,
+nitrogen oxides, ammonia and volatile organic compounds should not constitute
+a means of arbitrary or unjustifiable discrimination or a disguised
+restriction on international competition and trade,
+Taking into consideration best available scientific and technical
+knowledge and data on emissions, atmospheric processes and effects on human
+health and the environment of these substances, as well as on abatement costs,
+and acknowledging the need to improve this knowledge and to continue
+scientific and technical cooperation to further understanding of these issues,
+Noting that under the Protocol concerning the Control of Emissions of
+Nitrogen Oxides or their Transboundary Fluxes, adopted at Sofia on
+31 October 1988, and the Protocol concerning the Control of Emissions of
+Volatile Organic Compounds or their Transboundary Fluxes, adopted at Geneva on
+18 November 1991, there is already provision to control emissions of nitrogen
+oxides and volatile organic compounds, and that the technical annexes to both
+those Protocols already contain technical guidance for reducing these
+emissions,
+Noting also that under the Protocol on Further Reduction of Sulphur
+Emissions, adopted at Oslo on 14 June 1994, there is already provision to
+reduce sulphur emissions in order to contribute to the abatement of acid
+deposition by diminishing the exceedances of critical sulphur depositions,
+which have been derived from critical loads of acidity according to the
+contribution of oxidized sulphur compounds to the total acid deposition in
+1990,
+Noting furthermore that this Protocol is the first agreement under the
+Convention to deal specifically with reduced nitrogen compounds,
+Bearing in mind that reducing the emissions of these substances may
+provide additional benefits for the control of other pollutants, including in
+particular transboundary secondary particulate aerosols, which contribute to
+human health effects associated with exposure to airborne particulates,
+Bearing in mind also the need to avoid, in so far as possible, taking
+measures for the achievement of the objectives of this Protocol that aggravate
+other health and environment-related problems,
+Noting that measures taken to reduce the emissions of nitrogen oxides and
+ammonia should involve consideration of the full biogeochemical nitrogen cycle
+and, so far as possible, not increase emissions of reactive nitrogen including
+nitrous oxide which could aggravate other nitrogen-related problems,
+Aware that methane and carbon monoxide emitted by human activities
+contribute, in the presence of nitrogen oxides and volatile organic compounds,
+to the formation of tropospheric ozone, and
+Aware also of the commitments that Parties have assumed under the United
+Nations Framework Convention on Climate Change,
+Have agreed as follows:
+Article 1
+DEFINITIONS
+For the purposes of the present Protocol,
+1. "Convention" means the Convention on Long-range Transboundary Air
+Pollution, adopted at Geneva on 13 November 1979;
+2. "EMEP" means the Cooperative Programme for Monitoring and Evaluation of
+Long-range Transmission of Air Pollutants in Europe;
+3. ''Executive Body" means the Executive Body for the Convention constituted
+under article 10, paragraph l, of the Convention;
+4. "Commission" means the United Nations Economic Commission for Europe;
+5. "Parties" means, unless the context otherwise requires, the Parties to
+the present Protocol;
+6. "Geographical scope of EMEP" means the area defined in article 1,
+paragraph 4, of the Protocol to the 1979 Convention on Long-range
+Transboundary Air Pollution on Long-term Financing of the Cooperative
+Programme for Mcnitoring and Evaluation of the Long-range Transmission of Air
+Pollutants in Europe (EMEP), adopted at Geneva on 28 September 1984;
+7. "Emission" means the release of a substance from a point or diffuse
+source into the atmosphere;
+8. "Nitrogen oxides" means nitric oxide and nitrogen dioxide, expressed as
+nitrogen dioxide (NO2) ;
+9. "Reduced nitrogen compounds" means ammonia and its reaction products;
+10. "Sulphur" means all sulphur compounds, expressed as sulphur dioxide
+(S02) ;
+11. "Volatile organic compounds", or "VOCs", means, unless otherwise
+specified, all organic compounds of an anthropogenic nature, other than
+methane, that are capable of producing photochemical oxidants by reaction with
+nitrogen oxides in the presence of sunlight;
+12. "Critical load" means a quantitative estimate of an exposure to one or
+more pollutants below which significant harmful effects on specified sensitive
+elements of the environment do not occur, according to present knowledge;
+13. "Critical levels" means concentrations of pollutants in the atmosphere
+above which direct adverse effects on receptors, such as human beings, plants,
+ecosystems or materials, may occur, according to present knowledge;
+14. "Pollutant emissions management area", or "РЕМА", means an area
+designated in annex III under the conditions laid down in article 3,
+paragraph 9;
+15. "Stationary source" means any fixed building, structure, facility,
+installation or equipment that emits or may emit sulphur, nitrogen oxides,
+volatile organic compounds or ammonia directly or indirectly into the
+atmosphere ;
+16 . "New stationary source" means any stationary source of which the
+construction or substantial modification is commenced after the expiry of one
+year from the date of entry into force of the present Protocol. It shall be a
+matter for the competent national authorities to decide whether a modification
+is substantial or not, taking into account such factors as the environmental
+benefits of the modification.
+Article 2
+OBJECTIVE
+The objective of the present Protocol is to control and reduce emissions
+of sulphur, nitrogen oxides, ammonia and volatile organic compounds that are
+caused by anthropogenic activities and are likely to cause adverse effects on
+human health, natural ecosystems, materials and crops, due to acidification,
+eutrophication or ground-level ozone as a result of long-range transboundary
+atmospheric transport, and to ensure, as far as possible, that in the long
+term and in a stepwise approach, taking into account advances in scientific
+knowledge, atmospheric depositions or concentrations do not exceed:
+(a) For Parties within the geographical scope of EMEP and Canada, the
+critical loads of acidity, as described in annex I ;
+(b) For Parties within the geographical scope of EMEP, the critical
+loads of nutrient nitrogen, as described in annex I; and
+(c) For ozone:
+(i) For Parties within the geographical scope of EMEP, the
+critical levels of ozone, as given in annex I,-
+(ii) For Canada, the Canada-wide Standard for ozone; and
+(iii) For the United States of America, the National Ambient Air
+Quality Standard for ozone.
+Article 3
+BASIC OBLIGATIONS
+1. Each Party having an emission ceiling in any table in annex II shall
+reduce and maintain the reduction in its annual emissions in accordance with
+that ceiling and the timescales specified in that annex. Each Party shall, as
+a minimum, control its annual emissions of polluting compounds in accordance
+with the obligations in annex II.
+2. Each Party shall apply the limit values specified in annexes IV, V and VI
+to each new stationary source within a stationary source category as
+identified in those annexes, no later than the timescales specified in annex
+VII. As an alternative, a Party may apply different emission reduction
+strategies that achieve equivalent overall emission levels for all source
+categories together.
+3. Each Party shall, in so far as it is technically and economically
+feasible and taking into consideration the costs and advantages, apply the
+limit values specified in annexes IV, V and VI to each existing stationary
+source within a stationary source category as identified in those annexes, no
+later than the timescales specified in annex VII. As an alternative, a Party
+may apply different emission reduction strategies that achieve equivalent
+overall emission levels for all source categories together or, for Parties
+outside the geographical scope of EMEP, that are necessary to achieve national
+or regional goals for acidification abatement and to meet national air quality
+standards.
+4. Limit values for new and existing boilers and pi-ocess heaters with a
+rated thermal input exceeding 50 MWth and new heavy-duty vehicles shall be
+evaluated by the Parties at a session of the Executive Body with a view to
+amending annexes IV, V and VIII no later than two years after the date of
+entry into force of the present Protocol.
+5. Each Party shall apply the limit values for the fuels and new mobile
+sources identified in annex VIII, no later than the timescales specified in
+annex vil.
+6. Each Party should apply best available techniques to mobile sources and
+to each new or existing stationary source, taking into account guidance
+documents I to V adopted by the Executive Body at its seventeenth session
+(decision 1999/1) and any amendments thereto.
+7. Each Party shall take appropriate measures based, inter alia, on
+scientific and economic criteria to reduce emissions of volatile organic
+compounds associated with the use of products not included in annex VI or
+VIII. The Parties shall, no later than at the second session of the Executive
+Body after the entry into force of the present Protocol, consider with a view
+to adopting an annex on products, including criteria for the selection of such
+products, limit values for the volatile organic compound content of products
+not included in annex VI or VIII, as well as timescales for the application of
+the limit values.
+8. Each Party shall, subject to paragraph 10:
+(a) Apply, as a minimum, the ammonia control measures specified in
+annex IX; and
+(b) Apply, where it considers it appropriate, best available techniques
+for preventing and reducing ammonia emissions, as listed in guidance document
+V adopted by the Executive Body at its seventeenth session (decision 1999/1)
+and any amendments thereto.
+9. Paragraph 10 shall apply to any Party:
+(a) Whose total land area is greater than 2 million square kilometres;
+(b) Whose annual emissions of sulphur, nitrogen oxides, ammonia and/or
+volatile organic compounds contributing to acidification, eutrophication or
+ozone formation in areas under the jurisdiction of one or more other Parties
+originate predominantly from within an area under its jurisdiction that is
+listed as а РЕМА in annex III, and which has presented documentation in
+accordance with subparagraph (c) to this effect;
+(c) Which has submitted upon signature, ratification, acceptance or
+approval of, or accession to, the present Protocol a description of the
+geographical scope of one or more PEMAs for one or more pollutants, with
+supporting documentation, for inclusion in annex III; and
+(d) Which has specified upon signature, ratification, acceptance or
+approval of, or accession to, the present Protocol its intention to act in
+accordance with this paragraph.
+10. A Party to which this paragraph applies shall:
+(a) If within the geographical scope of EMEP, be required to comply with
+the provisions of this article and annex II only within the relevant РЕМА for
+each pollutant for which а РЕМА within its jurisdiction is included in annex
+III; or
+(b) If not within the geographical scope of EMEP, be required to comply
+with the provisions of paragraphs 1, 2, 3, 5, 6 and 7 and annex II, only
+within the relevant РЕМА for each pollutant (nitrogen oxides, sulphur and/or
+volatile organic compounds) for which а РЕМА within its jurisdiction is
+included in annex III, and shall not be required to comply with paragraph 8
+anywhere within its jurisdiction.
+11. Canada and the United States of America shall, upon their ratification,
+acceptance or approval of, or accession to, the present Protocol, submit to
+the Executive Body their respective emission reduction commitments with
+respect to sulphur, nitrogen oxides and volatile organic compounds for
+automatic incorporation into annex II.
+12. The Parties shall, subject to the outcome of the first review provided
+for under article 10, paragraph 2, and no later than one year after completion
+of that review, commence negotiations on further obligations to reduce
+emissions.
+Article 4
+EXCHANGE OF INFORMATION AND TECHNOLOGY
+1. Each Party- shall, in a manner consistent with its laws, regulations and
+practices and in accordance with its obligations in the present Protocol,
+create favourable conditions to facilitate the exchange of information,
+technologies and techniques, with the aim of reducing emissions of sulphur,
+nitrogen oxides, ammonia and volatile organic compounds by promoting inter
+alia;
+(a) The development and updating of databases on best available
+techniques, including those that increase energy efficiency, low-emission
+burners and good environmental practice in agriculture;
+(b) The exchange of information and experience in the development of
+less polluting transport systems;
+(c) Direct industrial contacts and cooperation, including joint
+ventures ; and
+(d) The provision of technical assistance.
+2. In promoting the activities specified in paragraph 1, each Party shall
+create favourable conditions for the facilitation of contacts and cooperation
+among appropriate organizations and individuals in the private and public
+sectors that are capable of providing technology, design and engineering
+services, equipment or finance.
+Article 5
+PUBLIC AWARENESS
+1. Each Party shall, in a manner consistent with its laws, regulations and
+practices, promote the provision of information to the general public,
+including information on:
+(a) National annual emissions of sulphur, nitrogen oxides, ammonia and
+volatile organic compounds and progress towards compliance with the national
+emission ceilings or other obligations referred to in article 3 ;
+(b) Depositions and concentrations of the relevant pollutants and, where
+applicable, these depositions and concentrations in relation to critical loads
+and levels referred to in article 2;
+(c) Levels of tropospheric ozone; and
+(d) Strategies and measures applied or to be applied to reduce air
+pollution problems dealt with in the present Protocol and set out in
+article 6.
+2. Furthermore, each Party may make information widely available to the
+public with a view to minimizing emissions, including information on:
+(a) Less polluting fuels, renewable energy and energy efficiency,
+including their use in transport;
+(b) Volatile organic compounds in products, including labelling;
+(c) Management options for wastes containing volatile organic compounds
+that are generated by the public;
+(d) Good agricultural practices to reduce emissions of ammonia;
+(e) Health and environmental effects associated with the pollutants
+covered by the present Protocol; and
+(f) Steps which individuals and industries may take to help reduce
+emissions of the pollutants covered by the present Protocol.
+Article б
+STRATEGIES, POLICIES, PROGRAMMES, MEASURES AND INFORMATION
+1. Each Party shall, as necessary and on the basis of sound scientific and
+economic criteria, in order to facilitate the implementation of its
+obligations under article 3:
+(a) Adopt supporting strategies, policies and programmes without undue
+delay after the present Protocol enters into force for it;
+(b) Apply measures to control and reduce its emissions of sulphur,
+nitrogen oxides, ammonia and volatile organic compounds;
+(c) Apply measures to encourage the increase of energy efficiency and
+the use of renewable energy;
+(d) Apply measures to decrease the use of polluting fuels;
+(e) Develop and introduce less polluting transport systems and promote
+traffic management systems to reduce overall emissions from road traffic;
+(f) Apply measures to encourage the development and introduction of
+low-polluting processes and products, taking into account guidance documents I
+to V adopted by the Executive Body at its seventeenth session (decision
+1999/1) and any amendments thereto;
+(g) Encourage the implementation of management programmes to reduce
+emissions, including voluntary programmes, and the use of economic
+instruments, taking into account guidance document VI adopted by the Executive
+Body at its seventeenth session (decision 1999/1) and any amendments thereto;
+(h) Implement and further elaborate policies and measures in accordance
+with its national circumstances, such as the progressive reduction or phasingout
+of market imperfections, fiscal incentives, tax and duty exemptions and
+subsidies in all sectors that emit sulphur, nitrogen oxides, ammonia and
+volatile organic compounds which run counter to the objective of the Protocol,
+and apply market instruments; and
+(i) Apply measures, where cost-effective, to reduce emissions from waste
+products containing volatile organic compounds.
+2, Each Party shall collect and maintain information on:
+(a) Actual levels of emissions of sulphur, nitrogen compounds and
+volatile organic compounds, and of ambient concentrations and depositions of
+these compounds and ozone, taking into account, for those Parties within the
+geographical scope of EMEP, the work plan of EMEP; and
+(b) The effects of ambient concentrations and of the deposition of
+sulphur, nitrogen compounds, volatile organic compounds and ozone on human
+health, terrestrial and aquatic ecosystems and materials.
+3. Any Party may take more stringent measures than those required by the
+present Protocol.
+Article 7
+REPORTING
+1. Subject to its laws and regulations and in accordance with its
+obligations under the present Protocol :
+(a) Each Party shall report, through the Executive Secretary of the
+Commission, to the Executive Body, on a periodic basis as determined by the
+Parties at a session of the Executive Body, information on the measures that
+it has taken to implement the present Protocol. Moreover:
+(i) Where a Party applies different emission reduction strategies
+under article 3, paragraphs 2 and 3, it shall document the
+strategies applied and its compliance with the requirements
+of those paragraphs;
+(ii) Where a Party judges certain limit values, as specified in
+accordance with article 3, paragraph 3, not to be technically
+and economically feasible, taking into consideration the
+costs and advantages, it shall report and justify this;
+(b) Each Party within the geographical scope of EMEP shall report,
+through the Executive Secretary of the Commission, to EMEP, on a periodic
+basis to be determined by the Steering Body of EMEP and approved by the
+Parties at a session of the Executive Body, the following information:
+(i) Levels of emissions of sulphur, nitrogen oxides, ammonia and
+volatile organic compounds using, as a minimum, the
+methodologies and the temporal and spatial resolution
+specified by the Steering Body of EMEP;
+(ii) Levels of emissions of each substance in the reference year
+(1990) using the same methodologies and temporal and spatial
+resolution;
+(iii) Data on projected emissions and current reduction plans; and
+(iv) Where it deems it appropriate, any exceptional circumstances
+justifying emissions that are temporarily higher than the
+ceilings established for it for one or more pollutants; and
+(c) Parties in areas outside the geographical scope of EMEP shall make
+available information similar to that specified in subparagraph (b), if
+requested to do so by the Executive Body.
+2. The information to be reported in accordance with paragraph 1 (a) shall
+be in conformity with a decision regarding format and content to be adopted by
+the Parties at a session of the Executive Body. The terms of this decision
+shall be reviewed as necessary to identify any additional elements regarding
+the format or the content of the information that is to be included in the
+reports.
+3. In good time before each annual session of the Executive Body, EMEP shall
+provide information on:
+>
+(a) Ambient concentrations and depositions of sulphur and nitrogen
+compounds as well as, where available, ambient concentrations of volatile
+organic compounds and ozone; and
+(b) Calculations of sulphur and oxidized and reduced nitrogen budgets
+and relevant information on the long-range transport of ozone and its
+precursors.
+Parties in areas outside the geographical scope of EMEP shall make available
+similar information if requested to do so by the Executive Body.
+4. The Executive Body shall, in accordance with article 10, paragraph 2 (b),
+of the Convention, arrange for the preparation of information on the effects
+of depositions of sulphur and nitrogen compounds and concentrations of ozone.
+5. The Parties shall, at sessions of the Executive Body, arrange for the
+preparation, at regular intervals, of revised information on calculated and
+internationally optimized allocations of emission reductions for the States
+within the geographical scope of EMEP, using integrated assessment models,
+including atmospheric transport models, with a view to reducing further, for
+the purposes of article 3, paragraph 1, the difference between actual
+depositions of sulphur and nitrogen compounds and critical load values as well
+as the difference between actual ozone concentrations and the critical levels
+of ozone specified in annex I, or such alternative assessment methods as
+approved by the Parties at a session of the Executive Body.
+Article 8
+RESEARCH, DEVELOPMENT AND MONITORING
+The Parties shall encourage research, development, monitoring and
+cooperation related to:
+(a) The international harmonization of methods for the calculation and
+assessment of the adverse effects associated with the substances addressed by
+the present Protocol for use in establishing critical loads and critical
+levels and, as appropriate, the elaboration of procedures for such
+harmonization;
+(b) The improvement of emission databases, in particular those on
+ammonia and volatile organic compounds;
+(c) The improvement of monitoring techniques and systems and of the
+modelling of transport, concentrations and depositions of sulphur, nitrogen
+compounds and volatile organic compounds, as well as of the formation of ozone
+and secondary particulate matter;
+(d) The improvement of the scientific understanding of the long-term
+fate of emissions and their impact on the hemispheric background
+concentrations of sulphur, nitrogen, volatile organic compounds, ozone and
+particulate matter, focusing, in particular, on the chemistry of the free
+troposphere and the potential for intercontinental flow of pollutants;
+(e) The further elaboration of an overall strategy to reduce the adverse
+effects of acidification, eutrophication and photochemical pollution,
+including synergisms and combined effects;
+(f) Strategies for the further reduction of emissions of sulphur,
+nitrogen oxides, ammonia and volatile organic compounds based on critical
+loads and critical levels as well as on technical developments, and the
+improvement of integrated assessment modelling to calculate internationally
+optimized allocations of emission reductions taking into account the need to
+avoid excessive costs for any Party. Special emphasis should be given to
+emissions from agriculture and transport;
+(g) The identification of trends over time and the scientific
+understanding of the wider effects of sulphur, nitrogen and volatile organic
+compounds and photochemical pollution on human health, including their
+contribution to concentrations of particulate matter, the environment, in
+particular acidification and eutrophication, and materials, especially
+historic and cultural monuments, taking into account the relationship between
+sulphur oxides, nitrogen oxides, ammonia, volatile organic compounds and
+tropospheric ozone;
+(h) Emission abatement technologies, and technologies and techniques to
+improve energy efficiency, energy conservation and the use of renewable
+energy;
+(i) The efficacy of ammonia control techniques for farms and their
+impact on local and regional deposition;
+(j) The management of transport demand and the development and promotion
+of less polluting modes of transport;
+(k) The quantification and, where possible, economic evaluation of
+benefits for the environment and human health resulting from the reduction of
+emissions of sulphur, nitrogen oxides, ammonia and volatile organic compounds;
+and
+(1) The development of tools for making the methods and results of this
+work widely applicable and available.
+Article 9
+COMPLIANCE
+Compliance by each Party with its obligations under the present Protocol
+shall be reviewed regularly. The Implementation Committee established by
+decision 1997/2 of the Executive Body at its fifteenth session shall carry out
+such reviews and report to the Parties at a session of the Executive Body in
+accordance with the terms of the annex to that decision, including any
+amendments thereto.
+Article 10
+REVIEWS BY THE PARTIES AT SESSIONS OF THE EXECUTIVE BODY
+1. The Parties shall, at sessions of the Executive Body, pursuant to
+article 10, paragraph 2 (a), of the Convention, review the information
+supplied by the Parties, EMEP and subsidiary bodies of the Executive Body, the
+data on the effects of concentrations and depositions of sulphur and nitrogen
+compounds and of photochemical pollution as well as the reports of the
+Implementation Committee referred to in article 9 above.
+2. (a) The Parties shall, at sessions of the Executive Body, keep under
+review the obligations set out in the present Protocol, including:
+(i) Their obligations in relation to their calculated and
+internationally optimized allocations of emission reductions
+referred to in article 7, paragraph 5, above; and
+(ii) The adequacy of the obligations and the progress made towards
+the achievement of the objective of the present Protocol;
+(b) Reviews shall take into account the best available scientific
+information on the effects of acidification, eutrophication and photochemical
+pollution, including assessments of all relevant health effects, critical
+levels and loads, the development and refinement of integrated assessment
+models, technological developments, changing economic conditions, progress
+made on the databases on emissions and abatement techniques, especially
+related to ammonia and volatile organic compounds, and the fulfilment of the
+obligations on emission levels;
+(c) The procedures, methods and timing for such reviews shall be
+specified by the Parties at a session of the Executive Body. The first such
+review shall commence no later than one year after the present Protocol enters
+into force.
+Article 11
+SETTLEMENT OF DISPUTES
+1. In the event of a dispute between any two or more Parties concerning the
+interpretation or application of the present Protocol, the parties concerned
+shall seek a settlement of the dispute through negotiation or any other
+peaceful means of their own choice. The parties to the dispute shall inform
+the Executive Body of their dispute.
+2. When ratifying, accepting, approving or acceding to the present Protocol,
+or at any time thereafter, a Party which is not a regional economic
+integration organization may declare in a written instrument submitted to the
+Depositary that, in respect of any dispute concerning the interpretation or
+application of the Protocol, it recognizes one or both of the following means
+of dispute settlement as compulsory ipso facto and without special agreement,
+in relation to any Party accepting the same obligation:
+(a) Submission of the dispute to the International Court of Justice;
+(b) Arbitration in accordance with procedures to be adopted by the
+Parties at a session of the Executive Body, as soon as practicable, in an
+annex on arbitration.
+A Party which is a regional economic integration organization may make a
+declaration with like effect in relation to arbitration in accordance with the
+procedures referred to in subparagraph (b).
+3. A declaration made under paragraph 2 shall remain in force until it
+expires in accordance with its terms or until three months after written
+notice of its revocation has been deposited with the Depositary.
+4. A new declaration, a notice of revocation or the expiry of a declaration
+shall not in any way affect proceedings pending before the International Court
+of Justice or the arbitral tribunal, unless the parties to the dispute agree
+otherwise.
+5. Except in a case where the parties to a dispute have accepted the same
+means of dispute settlement under paragraph 2, if after twelve months
+following notification by one party to another that a dispute exists between
+them, the parties concerned have not been able to settle their dispute through
+the means mentioned in paragraph 1, the dispute shall be submitted, at the
+request of any of the parties to the dispute, to conciliation.
+6. For the purpose of paragraph 5, a conciliation commission shall be
+created. The commission shall be composed of an equal number of members
+appointed by each party concerned or, where parties in conciliation share the
+same interest, by the group sharing that interest, and a chairperson chosen
+jointly by the members so appointed. The commission shall render a
+recommendatory award, which the parties to the dispute shall consider in good
+faith.
+Article 12
+ANNEXES
+The annexes to the present Protocol shall form an integral part of the
+Protocol.
+Article 13
+AMENDMENTS AND ADJUSTMENTS
+1. Any Party may propose amendments to the present Protocol. Any Party to
+the Convention may propose an adjustment to annex II to the present Protocol
+to add to it its name-, together with emission levels, emission ceilings and
+percentage emission reductions.
+2. Proposed amendments and adjustments shall be submitted in writing to the
+Executive Secretary of the Commission, who shall communicate them to all
+Parties. The Parties shall discuss the proposed amendments and adjustments at
+the next session of the Executive Body, provided that those proposals have
+been circulated by the Executive Secretary to the Parties at least ninety days
+in advance.
+3. Amendments to the present Protocol, including amendments to annexes II to
+IX, shall be adopted by consensus of the Parties present at a session of the
+Executive Body, and shall enter into force for the Parties which have accepted
+them on the ninetieth day after the date on which two thirds of the Parties
+have deposited with the Depositary their instruments of acceptance thereof.
+Amendments shall enter into force for any other Party on the ninetieth day
+after the date on which that Party has deposited its instrument of acceptance
+thereof.
+4. Amendments to the annexes to the present Protocol, other than to the
+annexes referred to in paragraph 3, shall be adopted by consensus of the
+Parties present at a session of the Executive Body. On the expiry of ninety
+days from the date of its communication to all Parties by the Executive
+Secretary of the Commission, an amendment to any such annex shall become
+effective for those Parties which have not submitted to the Depositary a
+notification in accordance with the provisions of paragraph 5, provided that
+at least sixteen Parties have not submitted such a notification.
+5. Any Party that is unable to approve an amendment to an annex, other than
+to an annex referred to in paragraph 3, shall so notify the Depositary in
+writing within ninety days from the date of the communication of its adoption.
+The Depositary shall without delay notify all Parties of any such notification
+received. A Party may at any time substitute an acceptance for its previous
+notification and, upon deposit of an instrument of acceptance with the
+Depositary, the amendment to such an annex shall become effective for that
+Party.
+6. Adjustments to annex II shall be adopted by consensus of the Parties
+present at a session of the Executive Body and shall become effective for all
+Parties to the present Protocol on the ninetieth day following the date on
+which the Executive Secretary of the Commission notifies those Parties in
+writing of the adoption of the adjustment.
+Article 14
+SIGNATURE
+1. The present Protocol shall be open for signature at Gothenburg (Sweden)
+on 30 November and 1 December 1999, then at United Nations Headquarters in New
+York until 30 May 2000, by States members of the Commission as well as States
+having consultative status with the Commission, pursuant to paragraph 8 of
+Economic and Social Council resolution 36 (IV) of 28 March 1947, and by
+regional economic integration organizations, constituted by sovereign States
+members of the Commission, which have competence in respect of the
+negotiation, conclusion and application of international agreements in matters
+covered by the Protocol, provided that the States and organizations concerned
+are Parties to the Convention and are listed in annex II.
+2. In matters within their competence, such regional economic integration
+organizations shall, on their own behalf, exercise the rights and fulfil the
+responsibilities which the present Protocol attributes to their member States.
+In such cases, the member States of these organizations shall not be entitled
+to exercise such rights individually.
+Article 15
+RATIFICATION, ACCEPTANCE, APPROVAL AND ACCESSION
+1. The present Protocol shall be subject to ratification, acceptance or
+approval by Signatories.
+2. The present Protocol shall be open for accession as from 31 May 2000 by
+the States and organizations that meet the requirements of article 14,
+paragraph 1.
+3. The instruments of ratification, acceptance, approval or accession shall
+be deposited with the Depositary.
+Article 16
+DEPOSITARY
+The Secretary-General of the United Nations shall be the Depositary.
+Article 17
+ENTRY INTO FORCE
+1. The present Protocol shall enter into force on the ninetieth day
+following the date on which the sixteenth instrument of ratification,
+acceptance, approval or accession has been deposited with the Depositary.
+2. For each State and organization that meets the requirements of
+article 14, paragraph 1, which ratifies, accepts or approves the present
+Protocol or accedes thereto after the deposit of the sixteenth instrument of
+ratification, acceptance, approval or accession, the Protocol shall enter into
+force on the ninetieth day following the date of deposit by such Party of its
+instrument of ratification, acceptance, approval or accession.
+Article 18
+WITHDRAWAL
+At any time after five years from the date on which the present Protocol
+has come into force with respect to a Party, that Party may withdraw from it
+by giving written notification to the Depositary. Any such withdrawal shall
+take effect on the ninetieth day following the date of its receipt by the
+Depositary, or on such later date as may be specified in the notification of
+the withdrawal.
+Article 19
+AUTHENTIC TEXTS
+The original of the present Protocol, of which the English, French and
+Russian texts are equally authentic, shall be deposited with the
+Secretary-General of the United Nations.
+IN WITNESS WHEREOF the undersigned, being duly authorized thereto, have
+signed the present Protocol.
+DONE at Gothenburg (Sweden), this thirtieth day of November one thousand
+nine hundred and ninety-nine.
+
+
+
+
+
+Annex I
+CRITICAL LOADS AND LEVELS
+I. CRITICAL LOADS OP ACIDITY
+A. For Parties within the geographical scope of EMEP
+1. Critical loads (as defined in article 1} of acidity for ecosystems are
+determined in accordance with the Convention's Manual on methodologies and
+criteria for mapping critical levels/loads and geographical areas where they
+are exceeded. They are the maximum amount of acidifying deposition an
+ecosystem can tolerate in the long term without being damaged. Critical loads
+of acidity in terms of nitrogen take account of within-ecosystem nitrogen
+removal processes (e.g. uptake by plants). Critical loads of acidity in terms
+of sulphur do not. A combined sulphur and nitrogen critical load of acidity
+considers nitrogen only when the nitrogen deposition is greater than the
+ecosystem nitrogen removal processes. All critical loads reported by Parties
+are summarized for use in the integrated assessment modelling employed to
+provide guidance for setting the emission ceilings in annex II.
+B. For Parties in North America
+2. For eastern Canada, critical sulphur plus nitrogen loads for forested
+ecosystems have been determined with scientific methodologies and criteria
+(1997 Canadian Acid Rain Assessment) similar to those in the Convention's
+Manual on methodologies and criteria for mapping critical levels/loads and
+geographical areas where they are exceeded. Eastern Canada critical load
+values (as defined in article 1) of acidity are for sulphate in precipitation
+expressed in kg/ha/year. Alberta in western Canada, where deposition levels
+are currently below the environmental limits, has adopted the generic critical
+load classification systems used for soils in Europe for potential acidity.
+Potential acidity is defined by subtracting the total (both wet and dry)
+deposition of base cations from that of sulphur and nitrogen. In addition to
+critical loads for potential acidity, Alberta has established target and
+monitoring loads for managing acidifying emissions.
+3. For the United States of America, the effects of acidification are
+evaluated through an assessment of the sensitivity of ecosystems, the total
+loading within ecosystems of acidifying compounds, and the uncertainty
+associated with nitrogen removal processes within ecosystems.
+4. These loads and effects are used in integrated assessment modelling and
+provide guidance for setting the emission ceilings and/or reductions for
+Canada and the United States of America in annex II.
+II. CRITICAL LOADS OF NUTRIENT NITROGEN
+For Parties within the geographical scope of EMEP
+5. Critical loads (as defined in article 1) of nutrient nitrogen
+(eutrophication) for ecosystems are determined in accordance with the
+Convention's Manual on methodologies and criteria for mapping critical
+levels/loads and geographical areas where they are exceeded. They are the
+maximum amount of eutrophying nitrogen deposition an ecosystem can tolerate in
+the long term without being damaged. All critical loads reported by Parties
+are summarized for use in the integrated assessment modelling employed to
+provide guidance for setting the emission ceilings in annex II.
+III. CRITICAL LEVELS OF OZONE
+A. For Parties within the geographical scope of EMEP
+6. Critical levels (as defined in article 1) of ozone are determined to
+protect plants in accordance with the Convention's Manual on methodologies and
+criteria for mapping critical levels/loads and geographical areas where they
+are exceeded. They are expressed as a cumulative exposure over a threshold
+ozone concentration of 40 ppb (parts per billion by volume) . This exposure
+index is referred to as AOT40 (accumulated exposure over a threshold of
+40 ppb) . The AOT40 is calculated as the sum of the differences between the
+hourly concentration (in ppb) and 40 ppb for each hour when the concentration
+exceeds 40 ppb.
+7. The long-term critical level of ozone for crops of an AOT40 of 3000
+ppb.hours for May-July (used as a typical growing season) and for daylight
+hours was used to define areas at risk where the critical level is exceeded.
+A specific reduction of exceedances was targeted in the integrated assessment
+modelling undertaken for the present Protocol to provide guidance for setting
+the emission ceilings in annex II. The long-term critical level of ozone for
+crops is considered also to protect other plants such as trees and natural
+vegetation. Further scientific work is under way to develop a more
+differentiated interpretation of exceedances of critical levels of ozone for
+vegetation. .
+8. A critical level of ozone for human health is represented by the WHO Air
+Quality Guideline level for ozone of 120 ¿ig/m3 as an 8-hour average. In
+collaboration with the World Health Organization's Regional Office for Europe
+(WHO/EURO), a critical level expressed as an AOT60 (accumulated exposure over
+a threshold of 60 ppb), i.e. 120 /xg/m3, calculated over one year, was adopted
+as a surrogate for the WHO Air Quality Guideline for the purpose of integrated
+assessment modelling. This was used to define areas at risk where the
+critical level is exceeded. A specific reduction of these exceedances was
+targeted in the integrated assessment modelling undertaken for the present
+Protocol to provide guidance for setting the emission ceilings in annex II.
+B. For Parties in North America
+9. For Canada, critical levels of ozone are determined to protect human
+health and the environment and are used to establish a Canada-wide Standard
+for ozone. The emission ceilings in annex II are defined according to the
+ambition level required to achieve the Canada-wide Standard for ozone.
+10. For the United States of America, critical levels of ozone are determined
+to protect public health with an adequate margin of safety, to protect public
+welfare from any known or expected adverse effects, and are used to establish
+a national ambient air quality standard. Integrated assessment modelling and
+the air quality standard are used in providing guidance for setting the
+emission ceilings and/or reductions for the United States of America in
+annex II.
+Annex II
+EMISSION CEILINGS
+The emission ceilings listed in the tables below relate to the provisions
+of article 3, paragraphs 1 and 10, of the present Protocol. The 1980 and 1990
+emission levels and the percentage emission reductions listed are given for
+information purposes only.
+Table 1. Emission ceilings for sulphur (thousands of tonnes of SO2 per year)
+a/ Upon ratification, acceptance or approval of, or accession to, the
+present Protocol, Canada shall submit an emission ceiling for sulphur, either
+at a national level or for its РЕМА, and will endeavour to provide a ceiling
+for 2010. The РЕМА for sulphur will be the sulphur oxides management area
+(SOMA) that was designated pursuant to annex III to the Protocol on Further
+Reduction of Sulphur Emissions adopted at Oslo on 14 June 1994 as the Southeast
+Canada SOMA. This is an area of 1 million km2 which includes all the
+territory of the provinces of Prince Edward Island, Nova Scotia and New
+Brunswick, all the territory of the province of Quebec south of a straight
+line between Havre-St. Pierre on the north coast of the Gulf of Saint Lawrence
+and the point where the Quebec-Ontario boundary intersects the James Bay
+coastline, and all the territory of the province of Ontario south of a
+straight line between the point where the Ontario-Quebec boundary intersects
+the James Bay coastline and Nipigon River near the north shore of Lake
+Superior.
+b/ Figures apply to the European part within the EMEP area.
+c/ Upon ratification, acceptance or approval of, or accession to, the
+present Protocol, the United States of America shall provide for inclusion in
+this annex: (a) specific emission reduction measures applicable to mobile and
+stationary sources of sulphur to be applied either nationally or within а РЕМА
+if it has submitted а РЕМА for sulphur for inclusion in annex III; (b) a value
+for total estimated sulphur emission levels for 1990, either national or for
+the РЕМА; (с) an indicative value for total sulphur emission levels for 2010,
+either national or for the РЕМА; and (d) associated estimates of the
+percentage reduction in sulphur emissions. Item (b) will be included in the
+table and items (a), (c) and (d) will be included in a footnote to the table.
+Table 2. Emission ceilings for nitrogen oxides (thousands of tonnes of NO2
+per year)
+a/ Upon ratification, acceptance or approval of, or accession to, the
+present Protocol, Canada shall submit 1990 emission levels and 2010 emission
+ceilings for nitrogen oxides, either at a national level or for its РЕМА for
+nitrogen oxides, if it has submitted one.
+b/ Figures apply to the European part within the EMEP area.
+c/ Upon ratification, acceptance or approval of, or accession to, the
+present Protocol, the United States of America shall provide for inclusion in
+this annex: (a) specific emission reduction measures applicable to mobile and
+stationary sources of nitrogen oxides to be applied either nationally or
+within а РЕМА if it has submitted а РЕМА for nitrogen oxides for inclusion in
+annex III; (b) a value for total estimated nitrogen oxide emission levels for
+1990, either national or for the РЕМА; (с) an indicative value for total
+nitrogen oxide emission levels for 2010, either national or for the РЕМА; and
+(d) associated estimates of the percentage reduction in nitrogen oxide
+emissions. Item (b) will be included in the table and items (a), (c) and (d)
+will be included in a footnote to the table.
+Table 3. Emission ceilings for ammonia (thousands of tonnes of NH3 per year)
+a/ Figures apply to the European part within the EMEP area.
+Table 4. Emission ceilings for volatile organic compounds (thousands of
+tonnes of VOC per year)
+a/ Upon ratification, acceptance or approval of, or accession to, the
+present Protocol, Canada shall submit 1990 emission levels and 2010 emission
+ceilings for volatile organic compounds, either at a national level or for its
+РЕМА for volatile organic compounds, if it has submitted one.
+b/ Figures apply to the European part within the EMEP area.
+c_/ Upon ratification, acceptance or approval of, or accession to, the
+present Protocol, the United States of America shall provide for inclusion in
+this annex: (a) specific emission reduction measures applicable to mobile and
+stationary sources of volatile organic compounds to be applied either
+nationally or within а РЕМА if it has submitted а РЕМА for volatile organic
+compounds for inclusion in annex III; (b) a value for total estimated volatile
+organic compound emission levels for 1990, either national or for the РЕМА;
+(с) an indicative value for total volatile organic compound emission levels
+for 2010, either national or for the РЕМА; and (d) associated estimates of the
+percentage reduction in volatile organic compound emissions. Item (b) will be
+included in the table and items (a), (c) and (d) will be included in a
+footnote to the table.
+Annex III
+DESIGNATED POLLUTANT EMISSIONS MANAGEMENT AREA (РЕМА)
+The following РЕМА is listed for the purpose of the present Protocol:
+Russian Federation РЕМА
+This is the area of Murmansk obi as t. the Republic of Karelia, Leningrad
+oblast {including St. Petersburg), Pskov oblast. Novgorod oblast and
+Kaliningrad oblast. The boundary of the РЕМА coincides with the State and
+administrative boundaries of these constituent entities of the Russian
+Federation.
+Annex IV
+LIMIT VALUES FOR EMISSIONS OF SULPHUR FROM STATIONARY SOURCES
+1. Section A applies to Parties other than Canada and the United States of
+America, section В applies to Canada and section С applies to the United
+States of America.
+A. Parties other than Canada and the United States of America
+2. For the purpose of section A, except table 2 and paragraphs 11 and 12,
+limit value means the quantity of a gaseous substance contained in the waste
+gases from an installation that is not to be exceeded. Unless otherwise
+specified, it shall be calculated in terms of mass of pollutant per volume of
+the waste gases (expressed as mg/m3) , assuming standard conditions for
+temperature and pressure for dry gas (volume at 273.15 K, 101.3 kPa). With
+regard to the oxygen content of the exhaust gas, the values given in the
+tables below for each source category shall apply. Dilution for the purpose
+of lowering concentrations of pollutants in waste gases is not permitted.
+Start-up, shutdown and maintenance of equipment are excluded.
+3. Emissions shall be monitored I/in all cases. Compliance with limit
+values shall be verified. The methods of verification can include continuous
+or discontinuous measurements, type approval, or any other technically sound
+method.
+4. Sampling and analysis of pollutants, as well as reference measurement
+methods to calibrate any measurement system, shall be carried out in
+accordance with the standards laid down by the European Committee for
+Standardization (CEN) or by the International Organization for Standardization
+(ISO). While awaiting the development of CEN or ISO standards, national
+standards shall apply.
+5. Measurements of emissions should be carried out continuously when
+emissions of SO2 exceed 75 kg/h.
+6. In the case of continuous measurement for new plant, compliance with the
+emission standards is achieved if the calculated daily mean values do not
+exceed the limit value and if no hourly value exceeds the limit value by 100%.
+"7 . in the case of continuous measurements for existing plant, compliance
+with the emission standards is achieved if (a) none of the monthly mean values
+exceeds the limit values; and (b) 97% of all the 48-hour mean values do not
+exceed 110% of the limit values.
+8. In the case of discontinuous measurements, as a minimum requirement,
+compliance with the emission standards is achieved if the mean value based on
+an appropriate number of measurements under representative conditions does not
+exceed the value of the emission standard.
+9. Boilers and process heaters with a rated thermal input exceeding 50 MWth:
+Table 1. Limit values for SOx emissions released from boilers
+a/ In particular, the limit values shall not apply to:
+-	Plant in which the products of combustion are used for direct
+heating, drying, or any other treatment of objects or materials, e.g.
+reheating furnaces, furnaces for heat treatment;
+-	Post-combustion plant, i.e. any technical apparatus designed to
+purify the waste gases by combustion that is not operated as an independent
+combustion plant;
+-	Facilities for the regeneration of catalytic cracking catalysts;
+-	Facilities for the conversion of hydrogen sulphide into sulphur,-
+-	Reactors used in the chemical industry;
+-	Coke battery furnaces;
+-	Cowpers;
+-	Waste incinerators; and
+-	Plant powered by diesel, petrol or gas engines or by combustion
+turbines, irrespective of the fuel used.
+b/ The O2 reference content is 6% for solid fuels and 3% for others,
+c/ 400 with heavy fuel oil S <0.25%.
+d/ If an installation reaches 300 mg/Nm3 SO2, it may be exempted from
+applying the removal efficiency.
+10. Gas oil:
+-	Table 2. Limit values for the sulphur content of gas oil
+
+
+a/ "Gas oil" means any petroleum product within HS 2710, or any
+petroleum product which, by reason of its distillation limits, falls within
+the category of middle distillates intended for use as fuel and of which at
+least 85 per cent by volume, ^including distillation losses, distils at 350°C.
+Fuels used in on-road and non-road vehicles and agricultural tractors are
+excluded from, this definition. Gas oil intended for marine use is included in
+the definition if it meets the description above or it has a viscosity or
+density falling within the ranges of viscosity or density defined for marine
+distillates in table I of ISO 8217 (1996).
+11. Claus plant: for plant that produces more than 50 Mg of sulphur a day:
+(a) Sulphur recovery 99.5% for new plant;
+(b) Sulphur recovery 97% for existing plant.
+12. Titanium dioxide production: in new and existing installations,
+discharges arising from digestion and calcination steps in the manufacture of
+titanium dioxide shall be reduced to a value of not more than 10 kg of S02
+equivalent per Mg of titanium dioxide produced.
+13. Limit values for controlling emissions of sulphur dioxide from new
+stationary sources in the following stationary source category will be
+determined on the basis of available information on control technology and
+levels including limit values applied in other countries and the following
+document: Canada Gazette, Part I. Department of the Environment, Thermal
+Power Generation Emissions - National Guidelines for New Stationary Sources.
+May 15, 1993. pp. 1633-1638.
+C. United States of America
+14. Limit values for controlling emissions of sulphur dioxide from new
+stationary sources in the following stationary source categories are specified
+in the following documents :
+(a) Electric Utility Steam Generating Units - 40 Code of Federal
+Regulations (C.F.R.) Part 60, Subpart D, and Subpart Da,-
+(b) Industrial-Commercial-Institutional Steam Generating Units - 40
+C.F.R. Part 60, Subpart Db, and Subpart De;
+(c) Sulphuric Acid Plants - 40 C.F.R. Part 60, Subpart H;
+(d) Petroleum Refineries - 40 C.F.R. Part 60, Subpart J;
+(e) Primary Copper Smelters - 40 C.F.R. Part 60, Subpart P;
+(f) Primary Zinc Smelters - 40 C.F.R. Part 60, Subpart Q;
+(g) Primary Lead Smelters - 40 C.F.R. Part 60, Subpart R;
+(h) Stationary Gas Turbines - 40 C.F.R. Part 60, Subpart GG;
+(i) Onshore Natural Gas Processing - 40 C.F.R. Part 60, Subpart LLL;
+(j) Municipal Waste Combustors - 40 C.F.R. Part 60, Subpart Ea, and
+Subpart Eb; and
+(k) Hospital/Medical/Infectious Waste Incinerators - 40 C.F.R. Part 60,
+Subpart Ее.
+Note
+I/ Monitoring is to be understood as an overall activity, comprising
+measuring of emissions, mass balancing, etc. It can be carried out
+continuously or discontinuously.
+Annex V
+LIMIT VALUES FOR EMISSIONS OF NITROGEN OXIDES
+FROM STATIONARY SOURCES
+1. Section A applies to Parties other than Canada and the United States of
+America, section В applies to Canada and section С applies to the United
+States of America.
+A. Parties other than Canada and the United States of America
+2 . For the purpose of section A, limit value means the quantity of a gaseous
+substance contained in the waste gases from an installation that is not to be
+exceeded. Unless otherwise specified, it shall be calculated in terms of mass
+of pollutant per volume of the waste gases (expressed as mg/m3) , assuming
+standard conditions for temperature and pressure for dry gas (volume at
+273.15 K, 101.3 kPa). With regard to the oxygen content of exhaust gas, the
+values given in the tables below for each source category shall apply.
+Dilution for the purpose of lowering concentrations of pollutants in waste
+gases is not permitted. Limit values generally address NO together with N02,
+commonly named NOX/ expressed as NO2. Start-up, shutdown and maintenance of
+equipment are excluded.
+3. Emissions shall be monitored 1/ in all cases. Compliance with limit
+values shall be verified. The methods of verification can include continuous
+or discontinuous measurements, type approval, or any other technically sound
+method.
+4. Sampling and analysis of pollutants, as well as reference measurement
+methods to calibrate any measurement system, shall be carried out in
+accordance with the standards laid down by the European Committee for
+Standardization (CEN) or by the International Organization for Standardization
+(ISO) . While awaiting the development of CEN or ISO standards, national
+standards shall apply.
+5. Measurements of emissions should be carried out continuously when
+emissions of NOx exceed 75 kg/h.
+6. In the case of continuous measurements, except for existing combustion
+plant covered in table 1, compliance with the emission standards is achieved
+if the calculated daily mean values do not exceed the limit value and if no
+hourly value exceeds the limit value by 100%.
+7. In the case of continuous measurements for existing combustion plant
+covered in table 1, compliance with the emission standards is achieved if
+(a) none of the monthly mean values exceeds the emission limit values; and
+(b) 95% of all the 48-hour mean values do not exceed 110% of the emission
+limit values.
+8. In the case of discontinuous measurements, as a minimum requirement,
+compliance with the emission standards is achieved if the mean value based on
+an appropriate number of measurements under representative conditions does not
+exceed the value of the emission standard.
+9. Boilers and process heaters with a rated thermal input exceeding 50 MWth:
+ 
+Table 1. Limit values for NOV emissions released from boilers -I
+a/ In particular, the limit values shall not apply to:
+-	Plant in which the products of combustion are used for direct
+heating, drying, or any other treatment of objects or materials, e.g.
+reheating furnaces, furnaces for heat treatment;
+-	Post-combustion plant, i.e. any technical apparatus designed to
+purify the waste gases by combustion that is not operated as an independent
+combustion plant;
+-	Facilities for the regeneration of catalytic cracking catalysts;
+-	Facilities for the conversion of hydrogen sulphide into sulphur;
+-	Reactors used in the chemical industry;
+-	Coke battery furnaces;
+-	Cowpers;
+-	Waste incinerators; and
+-	Plant powered by diesel, petrol or gas engines or by combustion
+turbines, irrespective of the fuel used.
+b/ These values do not apply to boilers running less than 500 hours a
+year. The O2 reference content is 6% for solid fuels and 3% for others.
+10. Onshore combustion turbines with a rated thermal input exceeding 50MWch:
+the NOx limit values expressed in mg/Nm3 (with an O2 content of 15%) are to be
+applied to a single turbine. The limit values in table 2 apply only above 70%
+load.
+Table 2. Limit values for NOx emissions released from onshore combustion
+Turbines
+a/ Natural gas is naturally occurring methane with not more than 20%
+(by volume) of inerts and other constituents.
+b/ 75 mg/Nm3 if:
+- Combustion turbine used in a combined heat and power system; or
+- Combustion turbine driving compressor for public gas grid supply.
+For combustion turbines not failing into either of the above categories, but
+having an efficiency greater than 35%, determined at ISO base load conditions,
+the limit value shall be 50*n/35 where n is the combustion turbine efficiency
+expressed as a percentage (and determined at ISO base load conditions).
+c/ This limit value applies only to combustion turbines firing light
+and medium distillates.
+d/ The limit values do not apply to combustion turbines running less
+than 150 hours a year.
+11. Cement production:
+Table 3. Limit values for NOX emissions released from cement production -1
+a/ Installations for the production of cement clinker in rotary kilns
+with a capacity >500 Mg/day or in other furnaces with a capacity >50 Mg/day.
+12. Stationary engines :
+Table 4. Limit values for NOX emissions released from new stationary engines
+a/ These values do not apply to engines running less than 500 hours a
+year. The 02 reference content is 5%.
+13. Production and processing of metals:
+Table 5. Limit values for NOX emissions released from primary iron and
+steel production
+a/ Production and processing of metals: metal ore roasting or sintering
+installations, installations for the production of pig iron or steel (primary
+or secondary fusion) including continuous casting with a capacity exceeding
+2.5 Mg/hour, installations for the processing of ferrous metals (hot rolling
+mills > 20 Mg/hour of crude steel).
+14. Nitric acid production:
+Table б. Limit values for NOX emissions released from nitric acid production
+excluding acid concentration units
+emissions of nitrogen oxides (NOX) from new
+stationary sources in the following stationary source categories will be
+determined on the basis of available information on control technology and
+levels including limit values applied in other countries and the following
+documents :
+(a) Canadian Council of Ministers of the Environment (CCME). National
+Emission Guidelines for Stationary Combustion Turbines. December 1992.
+PN1072;
+(b) Canada Gazette, Part I. Department of the Environment. Thermal
+Power Generation Emissions - National Guidelines for New Stationary Sources.
+May 15, 1993. pp. 1633-1638; and
+(c) СМЕ. National Emission Guidelines for Cement Kilns. March 1998.
+PN1284.
+C. United States of America
+16. Limit values for controlling emissions of NOX from new stationary sources
+in the following stationary source categories are specified in the following
+documents :
+(a) Coal-fired Utility Units - 40 Code of Federal Regulations (C.F.R.)
+Part 76;
+(b) Electric Utility Steam Generating Units - 40 C.F.R. Part 60,
+Subpart D, and Subpart Da;
+(c) Industrial-Commercial-Institutional Steam Generating Units - 40
+C.F.R. Part 60, Subpart Db;
+(d) Nitric Acid Plants - 40 C.F.R. Part 60, Subpart G;
+(e) Stationary Gas Turbines - 40 C.F.R. Part 60, Subpart GG;
+(f) Municipal Waste Combustors - 40 C.F.R. Part 60, Subpart Ea, and
+Subpart Eb; and
+(g) Hospital/Medical/Infectious Waste Incinerators - 40 C.F.R. Part 60,
+Subpart Ее.
+Note
+1/ Monitoring is to be understood as an overall activity, comprising
+measuring of emissions, mass balancing, etc. It can be carried out
+continuously or discontinuously.
+Annex VI
+LIMIT VALUES FOR EMISSIONS OF VOLATILE ORGANIC COMPOUNDS
+FROM STATIONARY SOURCES
+1. Section A applies to Parties other than Canada and the United States of
+America, section В applies to Canada and section С applies to the United
+States of America.
+A. Parties other than Canada and the United States of America
+2. This section of the present annex covers the stationary sources of nonmethane
+volatile organic compound (NMVOC) emissions listed in paragraphs 8 to
+21 below. Installations or parts of installations for research, development
+and testing of new products and processes are not covered. Threshold values
+are given in the sector-specific tables below. They generally refer to
+solvent consumption or emission mass flow. Where one operator carries out
+several activities falling under the same subheading at the same installation
+on the same site, the solvent consumption or emission mass flow of such
+activities are added together. If no threshold value is indicated, the given
+limit value applies to all the installations concerned.
+3. For the .purpose of section A of the present annex:
+(a) "Storage and distribution of petrol" means the loading of trucks,
+railway wagons, barges and seagoing ships at depots and mineral oil refinery
+dispatch stations, excluding vehicle refuelling at service stations covered by
+relevant documents on mobile sources;
+(b) "Adhesive coating" means any process in which an adhesive is applied
+to a surface, with the exception of adhesive coating and laminating associated
+with printing processes and wood and plastic lamination;
+(c) "Wood and plastic lamination" means any process to adhere together
+wood and/or plastic to produce laminated products;
+(d) "Coating processes" means the application of metal and plastic
+surfaces to: passenger cars, truck cabins, trucks, buses or wooden surfaces
+and covers any process in which a single or multiple application of a
+continuous film of coating is laid onto:
+(i) New vehicles defined (see below) as vehicles of category M1 and of
+category N1 insofar as they are coated at the same installation as
+Ml vehicles;
+(ii) Truck cabins, defined as the housing for the driver, and all
+integrated housing for the technical equipment of category N2 and
+N3 vehicles;
+(iii) Vans and trucks defined as category N1, N2 and N3 vehicles, but
+excluding truck cabins,-
+(iv) Buses defined as category M2 and M3 vehicles; and
+(v) Other metallic and plastic surfaces including those of aeroplanes,
+ships, trains, etc., wooden surfaces, textile, fabric, film and
+paper surfaces.
+This source category does not include the coating of substrates with metals by
+electrophoretic or chemical spraying techniques. If the coating process
+includes a step in which the same article is printed, that printing step is
+considered part of the coating process. However, printing processes operated
+as a separate activity are not included. In this definition:
+-	M1 vehicles are those used for the carriage of passengers and
+comprising not more than eight seats in addition to the driver's
+seat ;
+-	M2 vehicles are those used for the carriage of passengers and
+comprising more than eight seats in addition to the driver's seat,
+and having a maximum mass not exceeding 5 Mg;
+-	M3 vehicles are those used for the carriage of passengers and
+comprising more than eight seats in addition to the driver's seat,
+and having a maximum mass exceeding 5 Mg;
+-	N1 vehicles are those used for the carriage of goods and having a
+maximum mass not exceeding 3.5 Mg;
+-	N2 vehicles are those used for the carriage of goods and having a
+maximum mass exceeding 3.5 Mg but not exceeding 12 Mg;
+-	N3 vehicles are those used for the carriage of goods and having a
+maximum mass exceeding 12 Mg.
+(e) "Coil coating" means any processes where coiled steel, stainless
+steel, coated steel, copper alloys or aluminium strip is coated with either a
+film-forming or laminate coating in a continuous process;
+(f) "Dry cleaning" means any industrial or commercial process using
+VOCs in an installation to clean garments, furnishings and similar consumer
+goods with the exception of the manual removal of stains and spots in the
+textile and clothing industry;
+(g) "Manufacturing of coatings, varnishes, inks and adhesives" means
+the manufacture of coating preparations, varnishes, inks and adhesives, and of
+intermediates as far as they are produced in the same installation by mixing
+pigments, resins and adhesive materials with organic solvents or other
+carriers. This category also includes dispersion, predispersion, realization
+of a certain viscosity or colour and packing the final products in containers;
+(h) "Printing" means any process of reproduction of text and/or images
+in which, with the use .of an image carrier, ink is transferred onto a surface
+and applies to the following subprocesses:
+(i) Flexography: a printing process using an image carrier of rubber
+or elastic photopolymers on which the printing inks are above the
+non-printing areas, using liquid inks that dry through
+evaporation;
+(ii) Heat set web offset: a web-fed printing process using an image
+carrier in which the printing and non-printing areas are in the
+same plane, where web-fed means that the material to be printed is
+fed to the machine from a reel as distinct from separate sheets.
+The non-printing area is treated to attract water and thus reject
+ink. The printing area is treated to receive and transmit ink to
+the surface to be printed. Evaporation takes place in an oven
+where hot air is used to heat the printed material;
+(iii) Publication rotogravure: rotogravure used for printing paper for
+magazines, brochures, catalogues or similar products, using
+toluene-based inks;
+(iv) Rotogravure: a printing process using a cylindrical image carrier
+in which the printing area is below the non-printing area, using
+liquid inks that dry through evaporation. The recesses are filled
+with ink and the surplus is cleaned off the non-printing area
+before the surface to be printed contacts the cylinder and lifts
+the ink from the recesses;
+(v) Rotary screen printing: a web-fed printing process in which the
+ink is passed onto the surface to be printed by forcing it through
+a porous image carrier, in which the printing area is open and the
+non-printing area is sealed off, using liquid inks that dry only
+through evaporation. Web-fed means that the material to be
+printed is fed to the machine from a reel as distinct from
+separate sheets;
+(vi) Laminating associated to a printing process: the adhering of two
+or more flexible materials to produce laminates; and
+(vii) Varnishing: a process by which a varnish or an adhesive coating is
+applied to a flexible material for the purpose of later sealing
+the packaging material ;
+(i) "Manufacturing of pharmaceutical products" means chemical
+synthesis,, fermentation, extraction, formulation and finishing of
+pharmaceutical products and, where carried out at the same site, the
+manufacture of intermediate products;
+(j) "Conversion of natural or synthetic rubber" means any process of
+mixing, crushing, blending, calendering, extruding and vulcanization of
+natural or synthetic rubber and additionally processes for the processing of
+natural or synthetic rubber to derive an end product;
+(k) "Surface cleaning" means any process except dry cleaning using
+organic solvents to remove contamination from the surface of material,
+including degreasing; a cleaning process consisting of more than one step
+before or after any other processing step is considered as one
+surface-cleaning process. The process refers to the cleaning of the surface
+of products and not to the cleaning of process equipment;
+(1) "Extraction of vegetable oil and animal fat and refining of
+vegetable oil" means the extraction of vegetable oil from seeds and other
+vegetable matter, the processing of dry residues to produce animal feed, and
+the purification of fats and vegetable oils derived from seeds, vegetable
+matter and/or animal matter;
+(m) "Vehicle refinishing" means any industrial or commercial coating
+activity and associated degreasing activities performing:
+(i) The coating of road vehicles, or part of them, carried out as part
+of vehicle repair, conservation or decoration outside
+manufacturing installations, or
+(ii) The original coating of road vehicles, or part of them, with
+refinishing-type materials, where this is carried out away from
+the original manufacturing line, or
+(iii) The coating of trailers (including semi-trailers);
+(n) "Impregnation of wooden surfaces" means any process impregnating
+timber with preservative;
+(o) "Standard conditions" means a temperature of 273.15 К and a
+pressure of 101.3 kPa;
+(p) "NMVOCs" comprise all organic compounds except methane which at
+273.15 К show a vapour pressure of at least 0.01 kPa or which show a
+comparable volatility under the given application conditions;
+(q) "Waste gas" means the final gaseous discharge containing NMVOCs or
+other pollutants from a stack or from emission abatement equipment into air.
+The volumetric flow rates shall Joe expressed in m3/h at standard conditions;
+(r) "Fugitive emission of NMVOCs" means any emission, not in waste
+gases, of NMVOC into air, soil and water as well as, unless otherwise stated,
+solvents contained in any product and includes uncaptured emissions of NMVOCs
+released to the outside environment via windows, doors, vents and similar
+openings. Fugitive limit values are calculated on the basis of a solvent
+management plan (see appendix I to the present annex);
+(s) "Total emission of NMVOCs" means the sum of fugitive emission of
+NMVOCs and emission of NMVOCs in waste gases;
+(t) "Input" means the quantity of organic solvents and their quantity in
+preparations used when carrying out a process, including the solvents recycled
+inside and outside the installation, and which are counted every time they are
+used to carry out the activity;
+(u) ."Limit value" means the maximum quantity of a gaseous substance
+contained in the waste gases from an installation which is not to be exceeded
+during normal operation. Unless otherwise specified, it shall be calculated
+in terms of mass of pollutant per volume of the waste gases (expressed as mg
+C/Nm3 unless specified otherwise), assuming standard conditions for
+temperature and pressure for dry gas. For solvent-using installations, limit
+values are given as mass unit per characteristic unit of the respective
+activity. Gas volumes that are added to the waste gas for cooling or dilution
+purposes shall not be considered when determining the mass concentration of
+the pollutant in the waste gas. Limit values generally address all volatile
+organic compounds except methane (no further distinction is made, e.g. in
+terms of reactivity or toxicity);
+(v) "Normal operation" means all periods of operation except start-up
+and shutdown operations and maintenance of equipment;
+(w) "Substances harmful to human health" are subdivided into two
+categories :
+(i) Halogenated VOCs that have possible risk of irreversible effects; or
+(ii) Hazardous substances that are carcinogens, mutagens or toxic to
+reproduction or that may cause cancer, may cause heritable genetic
+damage, may cause cancer by inhalation, may impair fertility or may
+cause harm to the unborn child.
+4. The following requirements shall be satisfied:
+(a) Emissions of NMVOCs shall be monitored I/ an<3 compliance with limit
+values shall be verified. The methods of verification may include continuous
+or discontinuous measurements, type approval, or any other technically sound
+method; furthermore, they shall be economically viable;
+(b) The concentrations of air pollutants in gas-carrying ducts shall be
+measured in a representative way. Sampling and analysis of all pollutants, as
+well as reference measurement methods to calibrate any measurement system,
+shall be carried out according to the standards laid down by the European
+Committee for Standardization (CEN) or by the International Organization for
+Standardization (ISO). While awaiting the development of CEN or ISO
+standards, national standards shall apply;
+(c) If measurements of emissions of NMVOCs are required, they should be
+carried out continuously if emissions of NMVOCs exceed 10 kg of total organic
+carbon (TOC)/h in the exhaust duct downstream from an emission reduction
+installation and the hours of operation exceed 200 hours a year. For all
+other installations, discontinuous measurement is required as a minimum. For
+the approval of compliance, own approaches may be used provided that they
+result in equal stringency;
+(d) In the case of continuous measurements, as a minimum requirement,
+compliance with the emission standards is achieved if the daily mean does not
+exceed the limit value during normal operation and no hourly average exceeds
+the limit values by 150%. For the approval of compliance, own approaches may
+be used provided that they result in equal stringency;
+(e) In the case of discontinuous measurements, as a minimum requirement,
+compliance with the emission standards is achieved if the mean value of all
+readings does not exceed the limit value and no hourly mean exceeds the limit
+value by 150%. For the approval of compliance, own approaches may be used
+provided that they result in equal stringency;
+(f) All appropriate precautions shall be taken to minimize emissions of
+NMVOCs during start-up and shutdown, and in case of deviations from normal
+operation; and
+(g) Measurements are not required if end-of-pipe abatement equipment is
+not needed to comply with the limit values below and it can be shown that
+limit values are not exceeded.
+5. The following limit values should be applied for waste gases, unless
+stated otherwise below:
+(a) 20 mg substance/m3 for discharges of halogenated volatile organic
+compounds (which are assigned the risk phrase: possible risk of irreversible
+effects) , where the mass flow of the sum of the considered compounds is
+greater than or equal to 100 g/h; and
+(b) 2 mg/m3 (expressed as the mass sum of individual compounds) for
+discharges of volatile organic compounds (which are assigned the following
+risk phrases: may cause cancer, heritable genetic damage, cancer by inhalation
+or harm to the unborn child; may impair fertility) , where the mass flow of the
+sum of the considered compounds is greater than or equal to 10 g/h.
+6. For the source categories listed in paragraphs 9 to 21 below, the
+following revisions are relevant:
+(a) Instead of applying the limit values for installations set out
+below, the operators of the respective installations may be allowed to use a
+reduction scheme (see appendix II to the present annex). The purpose of a
+reduction scheme is to give the operator the possibility to achieve by other
+means emission reductions equivalent to those achieved if given limit values
+were to be applied; and
+(b) For fugitive emissions of NMVOCs, the fugitive emission values set
+out below shall be applied as a limit value. However, where it is
+demonstrated to the satisfaction of the competent authority that for an
+individual installation this value is not technically and economically
+feasible, the competent authority may exempt that installation provided that
+significant risks to human health or the environment are not expected. For
+each derogation, the operator must demonstrate to the satisfaction of the
+competent authority that the best available technique is used.
+7. The limit values for VOC emissions for the source categories defined in
+paragraph 3 shall be as specified in paragraphs 8 to 21 below.
+8. Storage and distribution of petrol :
+Table 1. Limit values for VOC emissions released from the storage and
+distribution of petrol, excluding the loading of seagoing ships
+Note; The vapour displaced by the filling of petrol storage tanks shall be
+displaced either into other storage tanks or into abatement equipment meeting
+the limit values in the table above.
+9. Adhesive coating:
+Table 2. Limit values for NMVOC emissions released from adhesive coating
+a/ If techniques are used which allow reuse of recovered solvent, the
+limit value shall be 150 mg C/Nm3.
+10. Wood and plastic lamination:
+Table 3. Limit values for NMVOC emissions released from wood and plastic
+Lamination
+11. Coating processes (metal and plastic surfaces in passenger cars, truck
+cabins, trucks, buses, wooden surfaces):
+Table 4. Limit values for NMVOC emissions released from coating processes in
+the car industry
+a/ For a solvent consumption s 15 Mg a year (coating of cars), table 14
+on car refinishing applies.
+b/ The total limit values are expressed in terms of mass of solvent (g)
+emitted in relation to the surface area of product (m2) . The surface area of
+the product is defined as the surface area calculated from the total
+electrophoretic coating area and the surface area of any parts that might be
+added in successive phases of the coating process which are coated with the
+same coatings. The surface of the electrophoretic coating area is calculated
+using the formula: (2 x total weight of product shell): (average thickness of
+metal sheet x density of metal sheet).
+Table 5. Limit values for NMVOC emissions released from coating processes in
+various industrial sectors
+a/ Limit value applies to coating applications and drying processes
+operated under contained conditions.
+b/ If contained coating conditions are not possible (boat construction,
+aircraft coating, etc.), installations may be granted exemption from these
+values. The reduction scheme of paragraph 6 (a) is then to be used, unless it
+is demonstrated to the satisfaction of the competent authority that this
+option is not technically and economically feasible. In this case, the
+operator must demonstrate to the satisfaction of the competent authority that
+the best available technique is used.
+c/ The first value applies to drying processes, the second to coating
+application processes.
+d/ If, for textile coating, techniques are used which allow reuse of
+recovered solvents, the limit value shall be 150 mg C/Nm3 for drying and
+coating together.
+12. Coil coating:
+Table 6. Limit values for NMVOC emissions released from coil coating
+
+a/ If techniques are used which allow reuse of recovered solvent, the
+limit value shall be 150 mg C/Nm3.
+13. Dry cleaning:
+Table 7. Limit values for NMVOC emissions released from dry cleaning
+a/ Limit value for total emissions of NMVOCs calculated as mass of
+emitted solvent per mass of cleaned and dried product.
+14. Manufacturing of coatings, varnishes, inks and adhesives:
+Table 8. Limit values for NMVOC emissions released from manufacturing of
+coatings, varnishes, inks and adhesives
+a/ A total limit value of 5% of solvent input may be applied instead of
+using the waste gas concentration limit and the limit value for fugitive
+emissions of NMVOCs.
+b/ A total limit value of 3% of solvent input may be applied instead of
+using the waste gas concentration limit and the limit value for fugitive
+emissions of NMVOCs.
+c/ The fugitive limit value does not include solvents sold as part of a
+preparation in a sealed container.
+15. Printing (flexography, heat set web offset, publication rotogravure
+etc.):
+Table 9. Limit values for NMVOC emissions released from printing processes
+a/ Solvent residue in finished products is not to be considered as part
+of the fugitive emissions of NMVOCs.
+16. Manufacturing of pharmaceutical products:
+Table 10. Limit values for NMVOC emissions released from manufacturing of
+pharmaceutical products
+a/ If techniques are used which allow reuse of recovered solvents, the
+limit value shall be 150 mg C/Nm3.
+b/ A total limit value of 5% of solvent input may be applied instead of
+using the waste gas concentration limit and the limit value for fugitive
+emissions of NMVOCs.
+c/ A total limit value of 15% of solvent input may be applied instead
+of using the waste gas concentration limit and the limit value for fugitive
+emissions of NMVOCs.
+d/ The fugitive limit value does not include solvents sold as part of a
+coatings preparation in a sealed container.
+17. Conversion of natural or synthetic rubber:
+Table 11. Limit values for NMVOC emission released from conversion of natural
+or synthetic rubber
+a/ A total limit value of 25% of solvent input may be applied instead
+of using the waste gas concentration limit and the limit value for fugitive
+emissions of NMVOCs.
+b/ If techniques are used which allow reuse of recovered solvent, the
+limit value shall be 150 mg C/Nm3.
+c_/ The fugitive limit does not include solvents sold as part of a
+preparation in a sealed container.
+18. Surface cleaning:
+Table 12. Limit values for NMVOC emissions released from surface cleaning
+a/ Installations which demonstrate to the competent authority that the
+average organic solvent content of all cleaning material used does not exceed
+30% w/w are exempt from applying these values.
+19. Vegetable oil and animal fat extraction and vegetable oil refining
+processes :
+Table 13. Limit values for NMVOC emissions released from extraction of
+vegetable and animal fat and refining of vegetable oil
+a/ Limit values for total emissions of NMVOCs from installations
+treating single batches of seeds or other vegetable material shall be set case
+by case by the, competent authorities on the basis of the best available
+technologies.
+b/ The removal of gum from the oil.
+20. Vehicle refinishing:
+Table 14. Limit values for NMVOC emissions released from vehicle refinishing
+a/ Compliance with limit values to be proven by 15-minute average
+measurements.
+21. Impregnation of wooden surfaces:
+Table 15. Limit values for NMVOC emissions released from impregnation of
+wooden surfaces
+a/ Does not apply to impregnation with creosote.
+b/ A total limit value of 11 kg solvent/m3 of wood treated may be
+applied instead of using the waste gas concentration limit and the limit value
+for fugitive emissions of NMVOCs.
+B. Canada
+22. Limit values for controlling emissions of volatile organic compounds
+(VOCs) from new stationary sources in the following stationary source
+categories will be determined on the basis of available information on control
+technology and levels, including limit values applied in other countries, and
+the following documents:
+(a) Canadian Council of Ministers of the Environment (CCME).
+Environmental Code of Practice for the Reduction of Solvent Emissions from Dry
+Cleaning Facilities. December 1992. PN1053;
+(b) CCME. Environmental Guideline for the Control of Volatile Organic
+Compounds Process Emissions from New Organic Chemical Operations. September
+1993. PN1108;
+(c) CCME. Environmental Code of Practice for the Measurement and
+Control of Fugitive VOC Emissions from Equipment Leaks. October 1993.
+PN1106;
+(d) CCME. A Program to Reduce Volatile Organic Compound Emissions by
+40 Percent from Adhesives and Sealants. March 1994. PN1116;
+(e) CCME. A Plan to Reduce Volatile Organic Compound Emissions by
+20 Percent from Consumer Surface Coatings. March 1994. PN1114;
+(f) CCME. Environmental Guidelines for Controlling Emissions of
+Volatile Organic Compounds from Aboveground Storage Tanks. June 1995.
+PN1180;
+(g) CCME. Environmental Code of Practice for Vapour Recovery during
+Vehicle Refueling at Service Stations and Other Gasoline Dispersing
+Facilities. (Stage II) April 1995. PN1184;
+(h) CCME. Environmental Code of Practice for the Reduction of Solvent
+Emissions from Commercial and Industrial Degreasing Facilities. June 1995.
+PN1182;
+(i) CCME. New Source Performance Standards and Guidelines for the
+Reduction of Volatile Organic Compound Emissions from Canadian Automotive
+Original Equipment Manufacturer (OEM) Coating Facilities. August 1995.
+PN1234;
+(j) CCME. Environmental Guideline for the Reduction of Volatile Organic
+Compound Emissions from the Plastics Processing Industry. July 1997. PN1276;
+and
+(k) CCME. National Standards for the Volatile Organic Compound Content
+of Canadian Commercial/Industrial Surface Coating Products - Automotive
+Refinishing. August 1997. PN1288.
+C. United States of America
+23 . Limit values for controlling emissions of VOCs from new stationary
+sources in the following stationary source categories are specified in the
+following documents :
+(a) Storage Vessels for Petroleum Liquids - 40 Code of Federal
+Regulations (C.F.R.) Part 60, Subpart K, and Subpart Ka;
+(b) Storage Vessels for Volatile Organic Liquids - 40 C.F.R. Part 60,
+Subpart Kb;
+(c) Petroleum Refineries - 40 C.F.R. Part 60, Subpart J;
+(d) Surface Coating of Metal Furniture - 40 C.F.R. Part 60, Subpart ЕЕ;
+(e) Surface Coating for Automobile and Light Duty Trucks - 40 C.F.R.
+Part 60, Subpart MM;
+(f) Publication Rotogravure Printing - 40 C.F.R. Part 60, Subpart QQ;
+(g) Pressure Sensitive Tape and Label Surface Coating Operations -
+40 C.F.R. Part 60, Subpart RR;
+(h) Large Appliance, Metal Coil and Beverage Can Surface Coating -
+40 C.F.R. Part 60, Subpart SS, Subpart TT and Subpart WW;
+(i) Bulk Gasoline Terminals - 40 C.F.R. Part 60, Subpart XX;
+(j) Rubber Tire Manufacturing - 40 C.F.R. Part 60, Subpart BBB;
+(k) Polymer Manufacturing - 40 C.F.R. Part 60, Subpart DDD;
+(1) Flexible Vinyl and Urethane Coating and Printing - 40 C.F.R.
+Part 60, Subpart FFF;
+(m) Petroleum Refinery Equipment Leaks and Wastewater Systems -
+40 C.F.R. Part 60, Subpart GGG and Subpart QQQ;
+(n) Synthetic Fiber Production - 40 C.F.R. Part 60, Subpart HHH;
+(o) Petroleum Dry Cleaners - 40 C.F.R. Part 60, Subpart J«JJ;
+(p) Onshore Natural Gas Processing Plants - 40 C.F.R. Part
+60, Subpart KKK;
+(q) SOCMI Equipment Leaks, Air Oxidation Units, Distillation Operations
+and Reactor Processes - 40 C.F.R. Part 60, Subpart W, Subpart III, Subpart
+NNN and Subpart RRR;
+(r) Magnetic Tape Coating - 40 C.F.R. Part 60, Subpart SSS;
+(s) Industrial Surface Coatings - 40 C.F.R. Part 60, Subpart TTT; and
+(t) Polymeric Coatings of Supporting Substrates Facilities - 40 C.F.R.
+Part 60, Subpart WV.
+Note
+3-/ Monitoring is to be understood as an overall activity, comprising
+measuring of emissions, mass balancing, etc. It can be carried out
+continuously or discontinuously.
+Appendix I
+SOLVENT MANAGEMENT PLAN
+Introduction
+1. This appendix to the annex on limit values for emissions of non-methane
+volatile organic compounds (NMVOCs) from stationary sources provides guidance
+on carrying out a solvent management plan. It identifies the principles to be
+applied (para. 2), provides a framework for the mass balance (para. 3) and
+provides an indication of the requirements for verification of compliance
+(para. 4).
+Principles
+2. The solvent management plan serves the following purposes :
+(a) Verification of compliance, as specified in the annex; and
+(b) Identification of future reduction options.
+Definitions
+3 . The following definitions provide a framework for the mass balance
+exercise:
+(a) Inputs of organic solvents:
+I1. The quantity of organic solvents or their quantity in preparations
+purchased that are used as input into the process in the time frame over
+which the mass balance is being calculated.
+I2. The quantity of organic solvents or their quantity in preparations
+recovered and reused as solvent input into the process. (The recycled
+solvent is counted every time it is used to carry out the activity.)
+(b) Outputs of organic solvents:
+O1. Emission of NMVOCs in waste gases.
+O2. Organic solvents lost in water, if appropriate taking into account
+waste-water treatment when calculating O5.
+O3. The quantity of organic solvents that remains as contamination or
+residue in output of products from the process.
+O4. Uncaptured emissions of organic solvents to air. This includes the
+general ventilation of rooms, where air is released to the outside
+environment via windows, doors, vents and similar openings.
+O5. Organic solvents and/or organic compounds lost due to chemical or
+physical reactions (including, for example, those that are destroyed,
+e.g. by incineration or other waste-gas or waste-water treatments, or
+captured, e.g. by adsorption, as long as they are not counted under O6,
+O7 or O8).
+O6. Organic solvents contained in collected waste.
+O7. Organic solvents, or organic solvents contained in preparations,
+that are sold or are intended to be sold as a commercially valuable
+product.
+
+08. Organic solvents contained in preparations recovered for reuse but
+not as input into the process, as long as they are not counted under O7.
+09. Organic solvents released in other ways.
+Guidance on use of the solvent management plan for verification of compliance
+4. The use of the solvent management plan will be determined by the
+particular requirement which is to be verified, as follows:
+(a) Verification of compliance with the reduction option mentioned in
+paragraph 6 (a) of the annex, with a total limit value expressed in solvent
+emissions per unit product, or as otherwise stated in the annex.
+(i) For all activities using the reduction option mentioned in
+paragraph 6 (a) of the annex, the solvent management plan
+should be put into effect annually to determine consumption.
+Consumption can be calculated by means of the following
+equation:
+С ≫ II - 08
+A parallel exercise should also be undertaken to determine
+solids used in coating in order to derive the annual
+reference emission and the target emission each year;
+(ii) For assessing compliance with a total limit value expressed
+in solvent emissions per unit product or as otherwise stated
+in the annex, the solvent management plan should be put into
+effect annually to determine emission of NMVOCs. Emission of
+NMVOCs can be calculated by means of the following equation:
+E = F + O1
+Where F is the fugitive emission of NMVOC as defined in
+subparagraph (b) (i) below. The emission figure should be
+divided by the relevant product parameter;
+(b) Determination of fugitive emission of NMVOCs for comparison with
+fugitive emission values in the annex:
+(i) Methodology: The fugitive emission of NMVOC can be calculated
+by means of the following equation:
+F = I1 – O1 – O5 – O6 – O7 – O8
+or
+F = O2 + O3 + O4 + 09
+This quantity can be determined by direct measurement of the
+quantities. Alternatively, an equivalent calculation can be
+made by other means, for instance by using the capture
+efficiency of the process.
+The fugitive emission value is expressed as a proportion of
+the input, which can be calculated by means of the following
+equation:
+I = I1 + I2
+(ii) Frequency: Fugitive emission of NMVOCs can be determined by a
+short but comprehensive set of measurements. This need not
+to be done again until the equipment is modified.
+Appendix II
+REDUCTION SCHEME
+Principles
+1. The purpose of the reduction scheme is to allow the operator the
+possibility to achieve by other means emission reductions equivalent to those
+achieved if the limit values were to be applied. To that end the operator may
+use any reduction scheme specially designed for his installation, provided
+that in the end an equivalent emission reduction is achieved. Parties shall
+report on progress in achieving the same emission reduction, including
+experience with the application of the reduction scheme.
+Practice
+2. If applying coatings, varnishes, adhesives or inks, the following scheme
+can be used. Where it is inappropriate, the competent authority may allow an
+operator to apply any alternative exemption scheme which it is satisfied
+fulfils the principles outlined here. The design of the scheme takes into
+account the following facts :
+(a) Where substitutes containing little or no solvent are still under
+development,, a time extension must be given to the operator to implement his
+emission reduction plans;
+(b) The reference point for emission reductions should correspond as
+closely as possible to the emissions that would have resulted had no reduction
+action been taken.
+3. The following scheme shall operate for installations for which a constant
+solid content of product can be assumed and used to define the reference point
+for emission reductions:
+(a) The operator shall forward an emission reduction plan which includes
+in particular decreases in the average solvent content of the total input
+and/or increased efficiency in the use of solids to achieve a reduction of the
+total emissions from the installation to a given percentage of annual
+reference emissions, termed the target emission. This must be done in the
+following time frame:
+(b) The annual reference emission is calculated as follows:
+(i) The total mass of solids in the quantity of coating and/or
+ink, varnish or adhesive consumed in a year is determined.
+Solids are all materials in coatings, inks, varnishes and
+adhesives that become solid once the water or the volatile
+organic compounds are evaporated;
+(ii) The annual reference emissions are calculated by multiplying
+the mass determined as in subparagraph (i) by the appropriate
+factor listed in the table below. The competent authorities
+may adjust these factors for individual installations to
+reflect documented increased efficiency in the use of solids.
+(iii) The target emission is equal to the annual reference
+emission multiplied by a percentage equal to:
+(The fugitive emission value + 15), for installations in
+the following sectors:
+- Vehicle coating (solvent consumption < 15 Mg/year)
+and vehicle refinishing;
+- Metal, plastic, textile, fabric, film and paper
+coating (solvent consumption between 5 and
+15 Mg/year);
+- Coating of wooden surfaces (solvent consumption
+between 15 and 25 Mg/year).
+(The fugitive emission value + 5) for all other
+installations ;
+(iv) Compliance is achieved if the actual solvent emission
+determined from the solvent management plan is less than or
+equal to the target emission.
+Annex VII
+TIMESCALES UNDER ARTICLE 3
+1. The timescales for the application of the limit values referred to in
+article 3, paragraphs 2 and 3/ shall be:
+(a) For new stationary sources, one year after the date of entry into
+force of the present Protocol for the Party in question/ and
+(b) For existing stationary sources:
+(i) In the case of a Party that is not a country with an
+economy in transition, one year after the date of entry
+into force of the present Protocol or 31 December 2007,
+whichever is the later; and
+(ii) In the case of a Party that is a country with an economy in
+transition, eight years after the entry into force of the
+present Protocol.
+2. The timescales for the application of the limit values for fuels and new
+mobile sources referred to in article 3, paragraph 5, and the limit values for
+gas oil referred to in annex IV, table 2, shall be:
+(i) In the case of a Party that is not a country with an
+economy in transition, the date of entry into force of the
+present Protocol or the dates associated with the measures
+specified in annex VIII and with the limit values specified
+in annex IV, table 2, whichever is the later; and
+(ii) In the case of a Party that is a country with an economy in
+transition, five years after the date of entry into force
+of the present Protocol or five years after the dates
+associated with the measures specified in annex VIII and
+with the limit values in annex IV, table 2, whichever is
+the later.
+This timescale shall not apply to a Party to the present Protocol to the
+extent that that Party is subject to a shorter timescale with regard to gas
+oil under the Protocol on Further Reduction of Sulphur Emissions.
+3. For the purpose of the present annex, "a country with an economy in
+transition" means a Party that has made with its instrument of ratification,
+acceptance, approval or accession a declaration that it wishes to be treated
+as a country with an economy in transition for the purposes of paragraphs 1
+and/or 2 of this annex.
+Annex VIII
+LIMIT VALUES FOR FUELS AND NEW MOBILE SOURCES
+Introduction
+1. Section A applies to Parties other than Canada and the United States of
+America, section В applies to Canada and section С applies to the United
+States of America.
+2. The annex contains limit values for NOx, expressed as nitrogen dioxide
+(N02) equivalents, and for hydrocarbons, most of which are volatile organic
+compounds, as well as environmental specifications for marketed fuels for
+vehicles.
+3. The timescales for applying the limit values in this annex are laid down
+in annex VII.
+A. Parties other than Canada and the United States of America
+Passenger cars and light-duty vehicles
+4. Limit values for power-driven vehicles with at least four wheels and
+used for the carriage of passengers (category M) and goods (category N) are
+given in table 1.
+Heavy-duty vehicles
+5. Limit values for engines for heavy-duty vehicles are given in tables 2
+and 3 depending on the applicable test procedures.
+Motorcycles and mopeds
+6 . Limit values for motorcycles and mopeds are given in table б and
+table 7.
+Non-road vehicles and machines
+7. Limit values for agricultural and forestry tractors and other non-road
+vehicle/machine engines are listed in tables 4 and 5. Stage I (table 4) is
+based on ECE regulation 96, "Uniform provisions concerning the approval of
+compression-ignition (C.I.) engines to be installed in agricultural and
+forestry tractors with regard to the emissions of pollutants by the engine".
+Fuel quality
+8. Environmental quality specifications for petrol and diesel are given in
+tables 8 to 11.
+Annex IX
+MEASURES FOR THE CONTROL OF EMISSIONS OF AMMONIA FROM AGRICULTURAL SOURCES
+1. The Parties that are subject to obligations in article 3, paragraph 8
+(a), shall take the measures set out in this annex.
+2. Each Party shall take due account of the need to reduce losses from the
+whole nitrogen cycle.
+A. Advisory code of good agricultural practice
+3. within one year from the date of entry into force of the present
+Protocol for it, a Party shall establish, publish and disseminate an advisory
+code of good agricultural practice to control ammonia emissions. The code
+shall take into account the specific conditions within the territory of the
+Party and shall include provisions on:
+-	Nitrogen management, taking account of the whole nitrogen cycle;
+-	Livestock feeding strategies;
+-	Low-emission manure spreading techniques;
+-	Low-emission manure storage systems;
+-	Low-emission animal housing systems; and
+-	Possibilities for limiting ammonia emissions from the use of
+mineral fertilizers.
+Parties should give a title to the code with a view to avoiding confusion with
+other codes of guidance.
+B. Urea and ammonium carbonate fertilizers
+4. Within one year from the date of entry into force of the present
+Protocol for it, a Party shall take such steps as are feasible to limit
+ammonia emissions from the use of solid fertilizers based on urea.
+5. Within one year from the date of entry into force of the present
+Protocol for it, a Party shall prohibit the use of ammonium carbonate
+fertilizers.
+C. Manure application
+6. Each Party shall ensure that low-emission slurry application techniques
+(as listed in guidance document V adopted by the Executive Body at its
+seventeenth session (decision 1999/1) and any amendments thereto) that have
+been shown to reduce emissions by at least 30% compared to the reference
+specified in that guidance document are used as far as the Party in question
+considers them applicable, taking account of local soil and geomorphological
+conditions, slurry type and farm structure. The timescales for the
+application of these measures shall be: 31 December 2009 for Parties with
+economies in transition and 31 December 2007 for other Parties. 1/
+7. Within one year from the date of entry into force of the present
+Protocol for it, a Party shall ensure that solid manure applied to land to be
+ploughed shall be incorporated within at least 24 hours of spreading as far as
+it considers this measure applicable, taking account of local soil and
+geomorphological conditions and farm structure.
+D. Manure storage
+8. Within one year from the date of entry into force of the present
+Protocol for it, a Party shall use for new slurry stores on large pig and
+poultry farms of 2,000 fattening pigs or 750 sows or 40,000 poultry,
+low-emission storage systems or techniques that have been shown to reduce
+emissions by 40% or more compared to the reference (as listed in the guidance
+document referred to in paragraph 6), or other systems or techniques with a
+demonstrably equivalent efficiency. 2/
+9. For existing slurry stores on large pig and poultry farms of 2,000
+fattening pigs or 750 sows or 40,000 poultry, a Party shall achieve emission
+reductions of 40% insofar as the Party considers the necessary techniques to
+be technically and economically feasible. 2./ The timescales for the
+application of these measures shall be: 31 December 2009 for Parties with
+economies in transition and 31 December 2007 for all other Parties. 1/
+E. Animal housing
+10. Within one year from the date of entry into force of the present
+Protocol for it, a Party shall use, for new animal housing on large pig and
+poultry farms of 2,000 fattening pigs or 75O sows or 40,000 poultry, housing
+systems which have been shown to reduce emissions by 20% or more compared to
+the reference (as listed in the guidance document referred to in paragraph 6),
+or other systems or techniques with a demonstrably equivalent efficiency. 2/
+Applicability may be limited for animal welfare reasons, for instance in
+straw-based systems for pigs and aviary and free-range systems for poultry.
+Notes
+1/ For the purpose of the present annex, "a country with an economy
+in transition" means a Party that has made with its instrument of
+ratification, acceptance, approval or accession a declaration that it wishes
+to be treated as a country with an economy in transition for the purposes of
+paragraphs 6 and/or 9 of this annex.
+2/ Where a Party judges that other systems or techniques with a
+demonstrably equivalent efficiency can be used for manure storage and animal
+housing in order to comply with paragraphs 8 and 10, or where a Party judges
+the reduction of emissions from manure storage required under paragraph 9 not
+to be technically or economically feasible, documentation to this effect shall
+be reported in accordance with article 7, paragraph 1 (a).

@@ -1,0 +1,765 @@
+Protocol On The Control Of Marine Transboundary Movements And Disposal Of Hazardous Wastes And Other Wastes
+PREAMBLE
+THE CONTRACTING STATES
+BEING PARTIES to the Kuwait Regional Convention for
+Cooperation on the Protection of the Marine Environment
+from Pollution, adopted in 1978;
+RECOGNIZING the danger posed to human health and the
+environment of the Protocol Area by the transboundary movements
+and disposal of hazardous wastes and other wastes, and that such
+movements and disposal transfer the detrimental effects of such
+wastes from the place of origin to transit States and States in which
+the wastes shall be disposed of or stored;
+CONVINCED that the most effective way to reduce the risk to
+human health and the marine environment from the dangers arising
+from hazardous wastes and other wastes, including their
+transboundary movements, is to reduce and eliminate their
+generation, and, where this is not possible, to dispose of them at or
+near the place of origin in an environmentally sound manner;
+FULLY RECOGNIZING that any Contracting State has the
+sovereign right to ban the entry or disposal of foreign hazardous
+wastes and other wastes in its territory;
+EMPHASIZING the importance of cooperation and coordination
+of action on a regional basis with the aim of controlling the
+transboundary movements of hazardous wastes and other wastes
+among themselves, and of restricting the importation of wastes from
+non-Contracting States for disposal;
+TAKING INTO ACCOUNT Article 11 of the Basel Convention on
+the Control of Transboundary Movements of Hazardous Wastes
+and their Disposal, 1989, and adhering to the spirit of that
+Convention;
+MINDFUL of the provisions of the United Nations Convention on
+the Law of the Sea, 1982, the International Convention for the
+Prevention of Pollution from Ships and its Protocol, MARPOL
+73/78, and the International Convention on the Prevention of Marine
+Pollution by Dumping of Wastes and other Matter, 1972 and its
+1996 Protocol;
+ALSO TAKING INTO ACCOUNT relevant international
+agreements and actions, especially the 1992 Rio Declaration on
+Environment and Development and Agenda 21;
+DESIROUS to strengthen the implementation of Articles IV and V,
+and in compliance with Article XIX of the Kuwait Regional
+Convention;
+HAVE AGREED as follows:
+Article 1
+SCOPE OF THE PROTOCOL
+1. This Protocol shall apply to the following wastes that are
+subject to transboundary movements to, from or through the
+Protocol Area and their disposal:
+a) Wastes that belong to any category contained in
+Annex I shall be hazardous wastes, unless they do not
+possess any of the characteristics contained in Annex ill;
+and
+b) Wastes that belong to any category contained in
+Annex II shall be other wastes.
+2. Wastes which, as a result of being radioactive, are
+subject to other international control systems, are excluded
+from the scope of this Protocol.
+3. Wastes which derive from offshore installations, as
+covered by the Protocol concerning Marine Pollution resulting
+from Exploration and Exploitation of the Continental Shelf,
+1989, are excluded from the scope of this Protocol.
+4. Nothing in this Protocol shall be construed as
+prohibiting or regulating the overland or airborne
+transboundary movements and disposal of hazardous wastes
+and other wastes, which movements and disposals do not
+intrude upon the marine environment of the Protocol Area.
+Article 2
+DEFINITIONS
+For the purposes of this Protocol:
+1. \"Wastes\" are substances or objects which are disposed of or are
+intended to be disposed of or are required to be disposed of
+by the provisions of national law;
+2. \"Management\" means the collection, transport and disposal of
+hazardous wastes or other wastes, including after-care of
+disposal sites;
+3. \"Transboundary movement\" means any movement of
+hazardous wastes or other wastes from an area under the
+national jurisdiction of one State to or through an area under
+the national jurisdiction of another State or to or through an
+area not under the national jurisdiction of any State, provided
+that at least two States are involved in the movement;
+4. \"Environmentally solid management of hazardous wastes or
+other wastes\" means taking all practicable steps to ensure that
+hazardous wastes or other wastes are managed in a manner
+which will protect human health and the environment against
+the adverse effects which may result from such wastes;
+5. \"State of import\" means any State to which a transboundary
+movement of hazardous wastes or other wastes is planned or
+undertaken for the purpose of disposal therein, or for the
+purpose of loading prior to disposal in an area not under the
+national jurisdiction of any State;
+6. \"State of export\" means any State from which a transboundary
+movement of hazardous wastes or other wastes is planned to be
+initiated or is initiated;
+7. \"State of transit\" means any State, other than the State of
+export or import, through which a movement of hazardous
+wastes or other wastes is planned or takes place;
+8. \" States concerned \" means States which are States of export,
+import or transit, whether or not Contracting States.
+9. \"Importer\" means any person under the jurisdiction of the State
+of import who arranges :for hazardous wastes or other wastes to
+be imported;
+10. \"Exporter\" means any person under the jurisdiction of the State
+of export who arranges for hazardous wastes or other wastes to
+be exported;
+11. \"Generator\" means any person whose activity produces
+hazardous wastes or other wastes or, if that person is not
+known, the person who is in possession and/01· control of those
+wastes;
+12. \"Disposer\" means any person to whom hazardous wastes or
+other wastes are shipped and who carries out the disposal of
+such wastes;
+13. \"Disposal\" means any operation specified in Annex IV to this
+Protocol;
+14. \"Carrier\" means any person who carries out the transport of
+hazardous wastes or other wastes;
+15. \"Person\" means any natural or legal person;
+16. \"Ship\" means a vessel of any type whatsoever operating in the
+marine environment and includes hydrofoil boats, air-cushion
+vehicles , submersibles, floating craft and fixed or floating
+platforms;
+17. \"Protocol Area\" means the area as defined in Article 3 of this
+Protocol;
+18. \"Contracting State\" means any State which has become a party
+to this Protocol;
+19. \"Convention\" means the Kuwait Regional Convention for
+Cooperation on the Protection of the Marine Environment from
+Pollution, 1978;
+20. \"Organization\" means the Regional Organization for the
+Protection of the Marine Environment established under Article
+XVI of the Convention;
+21. \"Council\" means the organ of the Organization comprised of
+the Contracting States and established in accordance with
+Article XVI of the Convention;
+22. \"Competent Authority\" means either the National Authority
+defined in Article I of the Convention, or the authority or
+authorities within the Government of a Contracting State,
+designated by the National Authority to be responsible for the
+fulfilment of the obligations and duties specified in the Protocol;
+23. \"Regional Technical Guidelines\" means the guidelines for the
+environmentally sound management of hazardous wastes and
+other wastes, established pursuant to paragraph c of Article
+14 of this Protocol;
+24. \"Regional reception facility\" means any facility established on
+the Regional initiative to receive wastes and provide services to
+more than one Contracting State;
+25. \"Illegal traffic\" means any transboundary movement of
+hazardous wastes or other wastes as specified in Article 10 of
+this Protocol.
+Article 3
+AREA OF APPLlCATION
+The area to which this Protocol applies (hereinafter referred to as the
+\"Protocol Area\") shall be the Sea Area as defined in Article II,
+paragraph (a) of the Convention, together with the waters on the
+landward side of the baselines from which the breadth of the
+territorial sea of the Contracting States is measured and extending, in
+the case of watercourses, up to the freshwater limit and including
+intertidal zones, salt marshes, khores and sabkhas.
+Article 4
+GENERAL OBLlGATIONS
+1 . Contracting States shall ensure that the generation of hazardous
+wastes or other wastes is reduced to a minimum, taking into
+account social, technological and economic aspects.
+2. Each Contracting State shall prohibit all persons under its
+national jurisdiction from transporting or disposing of
+hazardous wastes or other wastes unless such persons are
+authorized or allowed to perform such types of operations.
+3. Each Contracting State shall take appropriate measures to
+ensure that persons involved in the management of hazardous
+wastes and other wastes under its national jurisdiction take such
+steps as are necessary to prevent pollution due to hazardous
+wastes or other wastes arising from such management and, if
+such pollution occurs, to minimize the consequences thereof
+for human health and the environment.
+4. Each Contracting State shall require that hazardous wastes and
+other wastes that are to be the subject of a transboundary
+movement be packaged, labelled, and transported in
+conformity with generally accepted and recognized international
+rules and standards.
+5 . Each Contracting State shall require that hazardous wastes and
+other wastes be accompanied by a movement document from
+the point at which a transboundary movement commences to
+the point of disposal.
+6. Contracting States shall ensure the effective control of transport
+and disposal facilities for hazardous wastes or other wastes
+including routine inspection and monitoring of environmental
+effects of thes6 operations.
+7. Each Contracting State shall require that hazardous wastes or
+other wastes, to be exported, are managed in an
+environmentally sound manner in the State of import or
+elsewhere.
+8 . Contracting States shall cooperate in monitoring the effects of
+the management of hazardous wastes and other wastes on
+human health and the environment.
+9. Contracting States shall cooperate in the development of
+programmes of technical and other assistance related to the
+environmentally sound management of hazardous wastes and
+other wastes.
+10. Contracting States shall consider that illegal traffic in hazardous
+wastes or other wastes is criminal.
+1 1 . Each Contracting State shall take appropriate legal,
+administrative and other measures to implement and enforce the
+provisions of this Protocol, including measures to prevent and
+punish conduct in contravention of the Protocol.
+12. Each Contracting State shall designate its Competent Authority
+responsible for the fulfilment of the obligations and duties
+specified in the Protocol.
+13. Contracting States exercising their right to prohibit the import of
+hazardous wastes or other wastes for disposal shall inform in
+writing other Contracting States directly or through the
+Organisation. The Contracting States shall prohibit or shall not
+permit the export of hazardous wastes and other wastes to those
+Contracting States which have prohibited the import of such
+wastes.
+14. Nothing in this Protocol shall affect in any way the sovereignty
+of Contracting States over their territorial sea established in
+accordance with international law, and the sovereign rights and
+the jurisdiction which Contracting States have in their exclusive
+economic zones and their continental shelves in accordance
+with international law, and the exercise by ships and aircraft of
+all States of navigational rights and freedoms as provided for in
+international law and as reflected in relevant international
+instruments.
+Article 5
+Prohibition ON IMPORTATION
+1 . The importation of hazardous wastes or other wastes from
+Non-Contracting States into or through the Protocol Area for
+the purposes of final disposal by any Contracting State is
+prohibited.
+2. Contracting States may import hazardous wastes or other
+wastes for the purposes of resource recovery, recycling,
+reclamation, direct re-use or alternative uses from non-Contracting
+States through the Protocol Area, provided:
+a) The State of import has the facilities and technical capacity
+to manage the hazardous wastes and other wastes in an
+environmentally sound manner consistent with the Regional
+Technical Guidelines and such facilities are registered with
+the Organization in consultation with the Competent
+Authority of the State of import;
+b) The State of export lacks the technical capacity, the
+necessary facilities, or suitable disposal sites to dispose of
+the hazardous wastes and other wastes in an environmentally
+sound manner; and
+c) The transboundary movement of wastes is consistent with
+all relevant international agreements and national laws.
+Article 6
+PROHIBITION ON DISPOSAL
+1 . Disposal of hazardous wastes in the Protocol Area is
+prohibited unless they are destined for operations specified
+in Annex IV Section B.
+In conformity with relevant international legal regimes all
+ships must provide adequate waste receiving facilities
+on-board for subsequent discharge of wastes to
+national/Regional reception facilities. Adequate national
+and/ or Regional facilities shall be provided for the reception
+of such wastes and the wastes generated from ports.
+Contracting States may levy charges for services rendered at
+the reception facilities towards management of wastes,
+taking into consideration the national regulations and
+Regional Technical Guidelines.
+3. Disposal of other wastes shall require a prior permit as
+granted by the Competent Authority of each Contracting
+State in accordance with the Regional Technical Guidelines.
+Article 7
+EXPORTATION OF HAZARDOUS WASTES AND OTHER
+WASTES
+TO NON-CONTRACTING STATES
+The export of hazardous wastes and other wastes by a
+Contracting State to a non-Contracting State is allowed
+provided that:
+a) The State of export notifies other States concerned, through
+the Organization, of its intent to export hazardous wastes or
+other wastes;
+b) The State of import has the facilities and technical capacity to
+manage the hazardous wastes and other wastes in an
+environmentally sound manner; and
+c) The transboundary movement is consistent with the provisions
+of the Basel Convention on the Control of Transboundary
+Movements of Hazardous Wastes and their Disposal, other
+relevant international agreements, and national laws.
+Article 8
+TRANSBOUNDARY MOVEMENT OF HAZARDOUS WASTES
+AND
+OTHER WASTES BETWEEN CONTRACTING STATES.
+1. Except as provided in paragraph 2 below, no Contracting State
+shall export hazardous wastes and other wastes to any other
+Contracting State unless :
+a) Regional Technical Guidelines have been adopted by the
+Council;
+b) The State of import has the facilities and technical capacity
+to manage the hazardous wastes and other wastes in an
+environmentally sound manner consistent with the Regional
+Technical Guidelines and such facilities are registered with
+the Organization in consultation with the Competent
+Authority of the State of import; and
+c) The State of export lacks the technical capacity, the
+necessary facilities or suitable disposal sites to dispose of the
+hazardous wastes and other wastes in accordance with the
+Regional Technical Guidelines.
+2. Hazardous wastes or other wastes may be exported by a
+Contracting State to another Contracting State for operations
+specified in Annex IV section B.
+3 . The State of export shall notify m writing the Contracting
+States concerned, directly or through the Organization, of any
+proposed transboundary movement of hazardous wastes and
+other wastes. Such notification shall contain the declaration
+and information specified in Annex V A. Only one notification
+needs to be sent to each Contracting State concerned, with a
+copy to the Organization.
+4. The State of import shall respond to the notifier in writing,
+consenting to the movement with or without conditions,
+denying permission for the movement, or requesting additional
+information. A copy of the final response of the State of
+import shall be sent to the Competent Authorities of the States
+concerned, with a copy to the Organization.
+5. Each State of transit which is a Contracting State shall
+promptly acknowledge to the notifier receipt of the notification.
+It may subsequently respond to the notifier in writing
+Within thirty days, consenting to the movement with or without conditions, denying permission for the movement, or requesting
+additional information. The State of export shall not allow the
+transboundary movement to commence until it has received the
+written consent of the State of transit. However, if at any time
+a Contracting State decides not to require prior written
+consent, either generally or under specific conditions, for transit
+trans boundary movements of hazardous wastes or other wastes,
+or modifies its requirements in this respect, it shall forthwith
+inform the other Contracting States of its decision. In this
+latter case, if no response is received by the State of export
+within thirty days of the receipt of a given notification by the
+State of transit, the State of export may allow the export to
+proceed through the State of transit.
+6. A copy of the movement documents described in Annex V B
+should be sent to the Organization along with the notification.
+7. Any transboundary movement of hazardous wastes and/ or
+other wastes shall be covered by insurance, bond or other
+guarantee as may be required by the State of import or any
+State of transit.
+8. Contracting States shall cooperate with a view to achieving the
+objectives of this Article, and shall endeavour to promote sound
+environmental management of hazardous wastes and other
+wastes in accordance with the Regional Technical Guidelines.
+Article 9
+Third PARTY USE OF PORT FACILITIES
+Whenever port facilities within the Protocol Area are used for the
+export of hazardous wastes or other wastes, any Contracting State
+having national jurisdiction over the facilities, and which knowingly
+allowed or sanctioned such use of the facilities, shall be considered
+the State of export for purposes of this Protocol.
+Article 10
+II.LEGAL TRAFFIC
+1 . For the purposes of this Protocol, any transboundary movement
+of hazardous wastes and other wastes in contravention of this
+Protocol and of general provisions of international law shall be
+deemed to be illegal traffic.
+2. In case of a transboundary movement of hazardous wastes or
+other · wastes deemed to be illegal traffic as the result of conduct
+on the part of the exporter or generator, the State of export
+shall ensure that the wastes in question are:
+a) taken back by the exporter or the generator or, if necessary,
+by itself into the State of export, or, if impracticable,
+b) otherwise disposed of in accordance with the provisions of
+this Protocol,
+within 30 days from the time the State of export has been
+informed about the illegal traffic or such other period of time as
+States concerned may agree. To this end the States concerned
+shall not oppose, hinder or prevent the return of those wastes to
+the State of export.
+3. In the case of a transboundary movement of hazardous wastes
+or other wastes deemed to be illegal traffic as the result of
+conduct on the part of the importer or disposer, the State of
+import shall ensure that the wastes in question are disposed of
+in an environmentally sound manner by the importer or
+disposer or, if necessary, by itself within 30 days from the time
+the illegal tr􀩼c has come to the attention of the State of import
+or such other period of time the States concerned may agree.
+To this end, the States concerned shall co-operate, as necessary,
+in the disposal of the wastes in an environmentally sound
+manner.
+4. In cases where the responsibility for the illegal traffic cannot be
+assigned either to the exporter or generator or to the importer or
+disposer, the States concerned shall ensure, through cooperation,
+that the wastes in question are disposed of as soon as possible in
+an environmentally solid manner, either in the State of export
+or the State of import or elsewhere as appropriate.
+5. Each Contracting State shall enact appropriate
+national/domestic legislation to prevent and punish illegal traffic.
+The Contracting States shall co-operate with a view to
+achieving the objectives of this Article.
+Article 11
+DUTY TO RE-IMPORT
+When a transboundary movement of hazardous wastes or other
+wastes to which the consent of the States concerned has been
+given, subject to the provisions of this Protocol, cannot be
+completed in accordance with the terms of the contract, the State
+of export shall ensure that the wastes in question are taken back
+into the State of export, by the exporter, if alternative arrangements
+cannot be made for their disposal in an environmentally sound
+manner, within thirty days from the time that the importing State
+informed the State of export and the Organization. To this end,
+the State of export and the State of transit shall not hinder the
+return of those wastes to the State of export.
+Article 12
+ADOPTION OF OTHER RESTRICTIONS
+Nothing in this Protocol shall prevent any Contracting State from
+imposing additional requirements that are consistent with the
+provisions of this Protocol, and are in accordance with the Basel
+Convention on the Control of Transboundary Movements of
+Hazardous Wastes and their Disposal, and the rules of international
+law, in order to better protect human health and the environment.
+Article 13
+INSTITUTIONAL ARRANGEMENTS.
+The Organization shall inter alia:
+1 . Communicate with Competent Authorities in the Contracting
+States on the application of the Protocol;
+2. Provide for training of national experts particularly for
+monitoring and enforcement of the provisions of the Protocol;
+3 . Arrange, upon request, for the provision of legal and technical
+assistance and advice to the Contracting States for the effective
+implementation of the Protocol;
+4. Enhance the Regional capabilities and networks for the
+exchange of data and information of relevance to the Protocol;
+5 . Maintain a special Register, in consultation with the Competent
+Authorities, of disposal facilities in the Contracting States
+which have adequate technical capacities to manage hazardous
+wastes and other wastes in an environmentally sound manner as
+specified in the Regional Technical Guidelines;
+6. Establish a unified monitoring system for the transboundary
+movement of hazardous wastes and other wastes in the Protocol
+Area;
+7. Facilitate the establishment of Regional reception facilities in
+close cooperation with Contracting States and relevant
+regional/international organizations;
+8. Prepare reports based upon information received from
+Contracting States on the application of the Protocol and
+present them to the Council;
+9. Establish and maintain liaison with relevant regional and
+international organizations, and appropriate private
+organizations outside the Contracting States, including
+generators and carriers of hazardous wastes and other wastes;
+10. Establish and maintain liaison with the Secretariat of the Basel
+Convention on the Control of Transboundary Movements of
+Hazardous Wastes and their Disposal; and
+11 . Perform such other functions as may be assigned to it by the
+Council for the implementation of the Protocol.
+Article 14
+FUNCTIONS OF THE COUNCIL
+The Council shall perform the following functions :
+a) Review the implementation of the Protocol, and consider the efficacy
+of the measures adopted and the need for any other
+measures, including the addition of Annexes;
+b) Adopt, review and amend as required any Annex to this
+Protocol;
+c) Adopt, revise and amend the Regional Technical Guidelines;
+and
+d) Discharge any other functions as may be appropriate for
+implementation of this Protocol.
+Article 15
+GENERAL PROVISIONS
+1 . The provisions of the Convention relating to any Protocol shall
+apply to this Protocol.
+2. Procedures for amendments to Protocols and their Annexes
+adopted in accordance with Articles XX and XXI of the
+Convention shall apply to this Protocol.
+3. The Rules of Procedure and Financial Rules adopted pursuant
+to Article XXIl of the Convention, and amendments thereto,
+shall apply to this Protocol.
+4. The Annexes shall form an integral part of this Protocol unless
+expressly provided otherwise therein.
+Article 16
+FINAL PROVISIONS
+1 . This Protocol shall be open for signature in Tehran, the Islamic
+Republic of Iran from 17 March to 14 June 1998
+corresponding to 18 Thulqida 1418 to 19 Safar 1419 of Hejira
+by any Contracting State to the Convention.
+2. This Protocol shall be subject to ratification, acceptance,
+approval or accession by the Contracting States to the
+Convention. Instruments of ratification, acceptance, approval
+or accession shall be deposited with the Government of Kuwait
+which shall assume the functions of the Depository in
+accordance with Article XXX of the Convention.
+3. This Protocol shall enter into force on the ninetieth day
+following the date of deposit of at least five instruments of
+ratification, acceptance or approval of, or accession to the
+Protocol by the States as referred to in paragraph 1 of this
+Article.
+4. After the date of deposit of five instruments of ratification,
+acceptance or approval of, or accession to this Protocol, this
+Protocol shall enter into force with respect to any State as
+referred to in paragraph 1 of this Article on the nineteenth day
+following the date of deposit by that State of the instrument of
+ratification, acceptance, approval or accession.
+IN WITNES S WHEREOF the undersigned Plenipotentiaries,
+being duly authorized by their respective Governments, have
+signed this Protocol.
+DONE AT TEHRAN this seventeenth day of March, in the
+year one thousand nine hundred and ninety-eight corresponding
+to eighteenth day of Thulqida in the year one thousand four
+hundred and eighteen of Hejira in the Arabic, English and Farsi
+languages, the texts being equally authentic.
+Annex I
+CATEGORIES OF WASTES TO BE CONTROLLED
+Waste Streams
+Y1 Clinical wastes from medical care in hospitals, medical centers and clinics
+Y2 . Wastes from the production and preparation of pharmaceutical products
+Y3 Waste pharmaceuticals, drugs and medicines
+Y4 Wastes from the pro duction, formulation and use of biocides and
+phytopharmaceuticals
+Y5 Wastes from the manufacture, formulation and use of wood preserving
+chemicals
+Y6 Wastes from the production, formulation and use of organic solvents
+Y7 Wastes from heat treatment and tempering operations containing cyanides
+Y8 Waste mineral oils unfit for their originally intended use
+Y9 Waste oils/water, hydrocarbons/water mixtures, emulsions
+Y10 Waste substances and articles containing or contaminated with polychlorinated
+biphenyls (PCB s) and/or polychlorinated terphenyls (PCTs) and/or
+polybrominated biphenyls (PBBs)
+Y11 Waste tarry residues arising from refining, distillation and any pyrolytic
+treatment
+Y11 Wastes from pro duction, formulation and use of inks, dyes, pigments, paints,
+lacquers, varnish
+Y13 Wastes from pro duction, formulation and use of resins, latex, plasticizers,
+glues/adhesives
+Y14 Waste chemical substances arising from research and development or teaching
+activities which are not identified and/or are new and whose effects on man
+and/or the environment arc not known
+Y15 Wastes of an explosive nature not subject to other legislation
+Y16 Wastes from pro duction, formulation and use of photographic chemicals and
+processing materials
+Y17 Wastes resulting from surface treatment o f metals and plastics
+Y18 Residues arising from industrial waste disposal operations
+Waste having as constituents;
+Yl9 Metal carbonyls
+Y20 Beryllium; beryllium compounds
+Y21 Hexavalent chromium compounds
+Y22 Copper compounds
+Y23 Zinc compounds
+Y24 Arsenic; arsenic compounds
+Y25 Selenium; selenium compounds
+Y26 Cadmium; cadmium compounds
+Y27 Antimony; antimony compounds
+Y28 Tellurium; tellurium compounds
+Y29 Mercury; mercury compounds
+Y30 Thallium; thallium compounds
+Y31 Lead; lead compounds
+Y32 Inorganic fluorine Compounds excluding calcium fluoride
+Y33 Inorganic cyanides
+Y34 Acidic solutions or acids in solid form
+Y35 Basic solutions or bases in solid form
+Y36 Asbestos (dust and fibres)
+Y37 Organic phosphorus compounds
+Y3 8 Organic cyanides
+Y39 Phenols; phenol compounds including chlorophenols
+Y40 Ethers
+Y41 Halogenated organic solvents
+Y42 Organic solvents excluding halogenated solvents
+Y43 Any congener of polychlorinated dibenzo-furan
+Y44 Any congener of polychlorinated dibenzo-p-dioxin
+Y45 Organohalogen compounds other than s1.1bstances referred to in this
+Annex (e.g. Y3 9, Y41 ; Y42, Y43, Y44)
+To facilitate the application of this Protocol, Annex VI provides further guidance as
+to wastes characterized as hazardous pursuant to Article 1, paragraph l (a), of this
+Protocol, and Annex VII provides further guidance as to wastes that are not
+hazardous pursuant to Article 1, Paragraph l (a), of this Protocol. Annexes VI and
+VIl do not affect the application of Article 1, paragraph l (a), of this Protocol for the
+purposes of characterization of wastes.
+Annex II
+OTHER WASTES
+CATEGORIES OF WASTES REQUIRING SPECIAL CONSIDERATION
+Y46 Wastes collected from households
+Y47 Residues arising from the incineration of household wastes
+ANNEX III
+LIST OF HAZARDOUS CHARACTERISTICS
+UN Class Code Characteristics
+1 H1 Explosive
+An explosive substance or waste is a solid or liquid substance or waste
+(or mixture of substances or wastes) which is in Itself capable by
+chemical reaction of producing gas at such a temperature and pressure
+and at such speed as to cause damage to the surroundings.
+3 H3 Flammable liquids
+The word \"flammable\" has the same meaning as \"inflammable\".
+Flammable liquids are liquids, or mixtures of liquids, or liquids
+containing solids in solution or suspension (for example, paints,
+varnishes, lacquers, etc., but not including substances or wastes
+otherwise classified on account of their dangerous characteristics)
+which give off a flammable vapour at temperatures of not more than
+60.5ºC, closed-cup test, or not more than 65.6ºC, open-cup test.
+(Since the results of open-cup tests and of closed-cup tests are not
+strictly comparable and even individual results by the same test are
+often. variable, regulations varying from the above figures to make
+allowance for such differences would be within the spirit of this
+definition.)
+4.1 H4.1 Flammable solids
+Solids, or waste solids, other than those classed as explosives, which
+under conditions encountered in transport are readily combustible, or
+may cause or contribute to fire through friction.
+4.2 H4.2 Substances or wastes liable to spontaneous combustion
+Substances or wastes which are liable to spontaneous heating under
+normal conditions encountered in transport, or to heating up on contact
+with air, and being then liable to catch fire.
+4.3 H4.3 Substances or wastes which, in contact with water emit flammable
+gases
+Substances or wastes which, by interaction with water are liable to
+become spontaneously flammable or to give off flammable gases in
+dangerous quantities.
+5.1 H5.1 Oxidizing
+Substances or wastes which, while in themselves not necessarily
+combustible, may, generally by yielding oxygen cause, or contribute to,
+the combustion of other materials.
+5.2 H5.2 Organic Peroxides
+Organic substances or wastes which contain the bivalent-O-O structure
+are thermally unstable substances which may undergo exothermic self accelerating
+decomposition.
+6.1 H6.1 Poisonous (Acute)
+Substances or wastes liable either to cause death or serious injury or to
+harm human health if swallowed or inhaled or by skin contact.
+6.2 H6.2 Infectious substances
+Substances or wastes containing viable micro organisms or their toxins
+which are known or suspected to cause disease in animals or humans.
+8 H8 Corrosives
+Substances or wastes which, by chemical action, will cause severe
+damage when in contact with living tissue, or, in the case of leakage.
+will materially damage, or even destroy, other goods or the means of
+transport; they may also cause other hazards.
+9 H10 Liberation of toxic gases in contact with air or water
+Substances or wastes which, by interaction with air or water, are liable
+to give off toxic gases in dangerous quantities .
+9 H11 Toxic (Delayed or chronic)
+Substances or wastes which, if they are inhaled or ingested or if they
+penetrate the skin, i:nay involve delayed or chronic effects, including
+carcinogenicity.
+9 H12 Ecotoxic
+Substances or wastes which if released present or may present
+immediate or delayed adverse impacts to the environment by means of
+bioaccumulation and/or toxic effects upon biotic systems.
+9 H13 Capable, by any means after disposal, of yielding another material,
+e.g., leachate, which possesses any of the characteristics listed above .
+Tests
+The potential hazards posed by certain types of wastes are not yet fully
+documented;· tests to define quantitatively these hazards do not exist. Further research
+is necessary in order to develop means to characterize potential hazards posed to man
+and/or the environment by these wastes. Standardized tests have been derived with
+respect to pure substances and materials. Many countries have developed national
+tests ·which can be applied to materials listed in Annex 1, in order to decide if these
+materials exhibit any of the characteristics listed in this Annex.
+ANNEX IV
+Disposal operations
+A. OPERATIONS WHICH D O NOT LEAD TO THE P O S SIBILITY OF
+RESOURCE RECOVERY, RECYCLING, reclamaTION,
+DIRECT RE-USE OR ALTERNATIVE USES
+Section A encompasses- all such disposal operations which occur in practice.
+DI Deposit into or onto land, (e.g., landfill, etc.)
+D2 Land treatment, (e.g., biodegradation of liquid or sludgy discards in soils, etc.)
+D3 Deep injection, (e.g., injection of pumpable discards into wells, salt domes of
+naturally occurring repositories, etc.)
+D4 Surface impoundment, (e. g., placement of liquid or sludge discards into pits,
+ponds or lagoons, etc.)
+D5 Specially engineered landfill, (e.g., placement into lined discrete cells which
+are capped and isolated from one another and the environment, etc.)
+D6 Release into a water body .except seas/oceans
+D7 Release into seas/oceans including sea-bed insertion
+D8 Biological treatment not specified elsewhere in this Annex which results in
+final compounds or mixtures which are discarded . by means of any of the
+operations ·in Section A
+D9 Physico chemical treatment not specified elsewhere in this Annex which
+results in final compounds or mixtures which are discarded by means of any of
+the operations in Section A, (e.g., evaporation, drying, calcination,
+neutralization, precipitation, etc.)
+D 10 Incineration on land
+D11 Incineration at sea
+D12 Permanent storage (e.g., emplacement o f containers in a mine, etc.)
+D13 Blending or mixing prior to submission to any o f the operations in Section A
+D14 Repackaging prior to submission to any of the operations in Section A
+D15 Storage pending any o f the operations in Section A
+B. OPERATIONS WHICH MAY LEAD TO RESOURCE RECOVERY,
+RECYCLING, RECLAMATION, DIRECT RE-USE OR ALTERNATIVE
+USES
+Section B encompasses all such operations. with respect to materials legally
+defined as .or considered to be hazardous wastes and which otherwise would
+have been destined for operations included in Section A
+R1 Use as a fuel (other than in direct incineration) or other means to generate
+energy
+R2 Solvent reclamation/regeneration
+R3 Recycling/reclamation of organic substances which are not used as solvents.
+R4 Recycling/reclamation of metals and metal compounds.
+R5 Recycling/reclamation of other inorganic materials
+R6 Regeneration of acids or bases
+R7 Recovery of components used for pollution abatement
+R8 Recovery of components from catalysts
+R9 Used oil re􀈡refining or other reuses of previously used oil
+R1O Land treatment resulting in benefit to agriculture or ecological improvement
+R11 Uses of residual materials obtained from any of the operations numbered R1-R10
+R12 Exchange of wastes for submission to any of the operations numbered R1-R11
+R13 Accumulation of material intended for any operation in Section B
+Annex V A
+INFORMATION TO BE PROVIDED ON NOTIFICATION
+1 . Reason for waste export
+2. Exporter of the waste 1/
+3. Generator(s) of the waste and site of generation 1/
+4. Disposer of the waste and actual site of disposal 1/
+5. Intended carrier(s) of the waste or their agents, if known 1/
+6. Country of export of the waste
+Competent authority 2/
+7. Expected countries of transit.
+Competent authority 2/
+8. Country of import of the waste
+Competent authority 2/
+9. General or single notification
+10. Projected date(s) of shipment(s) and period of time over which waste is to be
+exported and proposed itinerary (including point of entry and exit) 3/
+11. Means of transport envisaged (road, rail, sea, air, inland waters)
+12. Information relating to insurance 4/
+13. Designation and physical description of the waste including Y number and UN
+number and its composition 5/ and information on any special handling
+requirements including emergency provisions in case of accidents
+14. Type of packaging envisaged (e.g. bulk, drowned, tanker)
+15 . Estimated quantity in weight/volume 6/
+16. Process by which the waste is generated. 7/
+17. For wastes · listed in Annex I, classifications from Annex Ill: hazardous
+characteristic, H number, and UN class
+18. Method of disposal as per Annex IV
+19. Declaration by the generator and exporter that the information is correct
+20. Information transmitted (including technical description of the plant) to the exporter or generator
+From the disposer of the waste upon which the latter has based his assessment that there was no reason
+To believe that the wastes will not be managed in an environmentally sound manner in accordance with the
+Laws and regulations of the country of import.
+21 . Information concerning the contract between the exporter and disposer.
+Notes
+1/ Full name and address, telephone, telex or telefax number and the name,
+address, telephone, telex or telefax number of the person to be contacted.
+2/ Full name and address, telephone, telex or telefax number.
+3/ Jn the case of a general notification covering several shipments, either the
+expected dates of each shipment or, if this is not known, the expected
+frequency of the shipments will be required.
+4/ Information to be provided on relevant insurance requirements and how they
+are met by exporter, carrier and disposer.
+5/ The nature and the concentration of the most hazardous components; in terms
+of toxicity and other dangers presented by the waste both in handling and in
+relation to the proposed disposal method.
+6/ In the case of a general notification covering several shipments, both the
+estimated total quantity and the estimated quantities for each individual
+shipment will be required.
+7/ Insofar as this is necessary to assess the hazard and determine the
+appropriateness of the proposed disposal operation.
+ANNEX V B
+1. Exporter of the waste 1/
+2. Generator(s) of the waste and site of generation 1/
+3. Disposer of the waste and actual site of disposal 1/
+4. Carrier(s) of the waste 1/ or his agent(s)
+5. Subject of general or single notification
+6. The date the transboundary movement started and date(s) and signature on
+Receipt by each person who takes charge of the waste
+7. Means of transport (road, rail, inland waterway, sea, air) including countries of export, transit
+And import, also point and exit where these have been designated
+8. General description of the waste (physical state, proper UN shipping name and class, UN number, Y number
+And H number as applicable)
+9. Information on special handling requirements including emergency provision in case of accidents.
+10. Type and number of packages
+11. Quantity in weight/volume
+12. Declaration by the generator or exporter that the information is correct
+13. Declaration by the generator or exporter indicating no objection from the
+Competent authorities of all states concerned which are parties
+14. Certification by disposer of receipt at designated disposal facility and indication of method of disposal and of the approximate date of disposal
+Notes
+The information required on the movement document shall where possible be integrated in one document with that required under transport rules. Where this is not possible the information should complement rather than duplicate that required under the transport rules. The movement document shall carry instructions as to who is to provide information and fill out any form.
+1/ Full name and address, telephone, telex or telefax number and the name, address, telephone, telex or telefax number of the person to be contacted in case of emergency
