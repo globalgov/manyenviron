@@ -321,17 +321,13 @@ HUGGO9 <- rbind(HUGGO7, HUGGO8)
 # Drop text columns and the ones included for verification purposes
 HUGGO9 <- HUGGO9[, -c(47:51)]
 
-# Add column for treaty text collection
-HUGGO9[, 47] <- 1
-HUGGO_or[, 47] <- NA
-
-# Rename column for treaty text collection
-HUGGO_or <- HUGGO_or %>%
-  dplyr::rename("TreatyText" = "...47")
+# Add column to indicate if the treaty text has been collected
 HUGGO9 <- HUGGO9 %>%
-  dplyr::rename("TreatyText" = "V47")
+  dplyr::mutate(TreatyText = 1)
+HUGGO_or <- HUGGO_or %>%
+  dplyr::mutate(TreatyText = NA)
 
-# Indicate which treaty texts were not collected
+# Indicate which treaty texts were not/could not be collected
 misstxt <- c("ADDTNR_1979P2", "AGO-EC[PFW]_1999P", "ARG-URY[HHS]_1987A", 
              "ARG-VEN[ENA]_2000A", "BAD-CHE[LCT]_1884P", "BJ06TP_1995A",
              "BLR-EGY[QPT]_1998A", "BLR-SYR[SAI]_2003A", "BRA-CRI[CET]_2008P",
@@ -433,6 +429,8 @@ HUGGO_new <- HUGGO_new %>%
   arrange(Beg)
 
 # Step two: Clean duplicate rows
+HUGGO_back <- HUGGO_new
+HUGGO_new <- HUGGO_back
 
 # First row NA remove
 HUGGO_new <- HUGGO_new[-(which(is.na(HUGGO_new$manyID))), ]
@@ -617,10 +615,14 @@ remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & !is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 
 # Standardise date columns
-HUGGO_new <- dplyr::mutate(merged_df, Beg = as_messydate(Beg),
-                           Signature = as_messydate(Signature),
-                           Force = as_messydate(Force),
-                           End = as_messydate(End))
+HUGGO_new <- HUGGO_new %>%
+              dplyr::mutate(Beg = messydates::as_messydate(Beg),
+              Signature = messydates::as_messydate(Signature),
+              Force = messydates::as_messydate(Force),
+              End = messydates::as_messydate(End))
+
+# Arrange by Beg date
+HUGGO_new <- arrange(HUGGO_new)
 
 # Step three: Push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new
