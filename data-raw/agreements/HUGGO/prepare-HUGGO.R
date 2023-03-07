@@ -316,7 +316,8 @@ HUGGO8 <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv", sep = ";",
 HUGGO9 <- rbind(HUGGO7, HUGGO8)
 
 # Drop text columns and the ones included for verification purposes
-HUGGO9 <- HUGGO9[, -c(47:51)]
+HUGGO9 <- HUGGO9 %>%
+  dplyr::select(-c(Source, Checked_HUGGO, Confirmed_HUGGO, Changes, Modified))
 
 # Add column to indicate if the treaty text has been collected
 HUGGO9 <- HUGGO9 %>%
@@ -338,7 +339,7 @@ misstxt <- c("ADDTNR_1979P2", "AGO-EC[PFW]_1999P", "ARG-URY[HHS]_1987A",
              "RUS-USA[HSA]_1968E:RUS-USA[HSA]_1967A", "SEN-EC[CFP]_2002A",
              "SI05SC_2007P", "SYC-EC[CPF]_2011P", "TC10FC_2005A", "TUR-ALG[MAF]_1999A")
 i <- 0
-for(i in 1:length(misstxt)){
+for(i in seq_along(misstxt)){
   HUGGO9[which(HUGGO9$manyID == misstxt[i]), 47] <- 0
 }
 
@@ -617,13 +618,6 @@ HUGGO <- HUGGO_new %>%
               End = messydates::as_messydate(End)) %>%
               dplyr::arrange(Beg)
               
-
-# Arrange by Beg date
-HUGGO_new <- arrange(HUGGO_new)
-
-# Step three: Push HUGGO_new to HUGGO
-HUGGO <- HUGGO_new
-
 # Stage four: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
