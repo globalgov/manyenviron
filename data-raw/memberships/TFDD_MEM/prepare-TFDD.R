@@ -20,7 +20,7 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   # Define Key API
   dplyr::mutate(Memberships = manypkgs::code_states(Signatories)) %>%
   dplyr::select(stateID, Title, Beg, Signature,
-                tfddID, Memberships) %>%
+  tfddID, Memberships) %>%
   dplyr::arrange(Beg)
 
 # Add a treatyID column

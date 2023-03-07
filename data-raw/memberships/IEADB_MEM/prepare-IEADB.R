@@ -12,16 +12,16 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # below (in stage three) passes all the tests.
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   manydata::transmutate(stateID = manystates::code_states(country),
-                     Title = manypkgs::standardise_titles(treatyname,
+                        Title = manypkgs::standardise_titles(treatyname,
                                                           api_key = api),
-                     # Define Key API
-                     Signature = messydates::as_messydate(tsig),
-                     stateSignature = messydates::as_messydate(csig),
-                     Rat = messydates::as_messydate(crat),
-                     End = messydates::as_messydate(tterm),
-                     Force = messydates::as_messydate(ceif3),
-                     Force2 = messydates::as_messydate(ceif4),
-                     ieadbID = mitch_id) %>%
+                       # Define Key API
+                       Signature = messydates::as_messydate(tsig),
+                       stateSignature = messydates::as_messydate(csig),
+                       Rat = messydates::as_messydate(crat),
+                       End = messydates::as_messydate(tterm),
+                       Force = messydates::as_messydate(ceif3),
+                       Force2 = messydates::as_messydate(ceif4),
+                       ieadbID = mitch_id) %>%
   dplyr::mutate(DocType = dplyr::recode(inclusion,
                                         "BEA" = "B", "MEA" = "M")) %>%
   dplyr::select(stateID, Title, Signature, End, Rat, Force,
