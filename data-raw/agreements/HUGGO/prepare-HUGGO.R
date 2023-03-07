@@ -610,6 +610,10 @@ HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & !is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 
+## Remove non-ASCII strings in manyID
+HUGGO_new <- HUGGO_new[-(which(str_detect(HUGGO_new$manyID, "[^[:ascii:]]"))), ]
+
+
 # Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
               dplyr::mutate(Beg = messydates::as_messydate(Beg),
