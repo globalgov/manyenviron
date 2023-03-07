@@ -1,0 +1,307 @@
+AGREEMENT CONCERNING THE ADOPTION OF UNIFORM CONDI
+TIONS OF APPROVAL AND RECIPROCAL RECOGNITION OF APPROVAL FOR
+MOTOR VEHICLE EQUIPMENT AND PARTS. DONE AT GENEVA ON
+20 MARCH 1958
+ENTRY INTO FORCE of Regulation No. 59 (Uniformprovisions concerning the approval of
+replacement silencing systems) as an annex to the above-mentioned Agreement of
+20 March 1958'
+The said Regulation came into force on 1 October 1983 in respect of Belgium and France,
+in accordance with article 1 (5) of the Agreement:
+Regulation No. 59
+UNIFORM PROVISIONS CONCERNING THE APPROVAL OF REPLACEMENT
+SILENCING SYSTEMS
+1. SCOPE
+This Regulation contains provisions relating to the approval of silencing systems or
+components thereof to be fitted to one or more given types of motor vehicles in
+categories MI and NI* as replacement parts.
+2. DEFINITIONS
+For the purpose of this Regulation,
+2.1. "Silencing system" means a complete set of components necessary for limiting the
+noise produced by the engine of a motor vehicle and its exhaust;
+2.2. "Silencing system component" means one of the separate components which to
+gether form the exhaust system (e.g. silencer proper, expansion chamber,
+resonator);
+2.3. "Silencing system of different types" means silencing systems which differ significantly
+in such respects as:
+2.3.1. That their components bear different trade names or marks,
+2.3.2. That the characteristics of the materials constituting a component are different or
+that the components differ in shape or size, a modification regarding the coating
+(zinc coating, aluminium coating, etc.) is not considered changing the type,
+* Category M: Power-driven vehicle having at least four wheels or having three wheels when the maximum weight
+exceeds 1 metric ton, and used for the carriage of passengers. (Articulated vehicles comprising two non-separable but ar
+ticulated units shall be considered as single vehicles.)
+Category Mj: Vehicles used for the carriage of passengers and comprising not more than eight seats in addition to
+the driver's seat.
+Category N: Power-driven vehicles having at least four wheels or having three wheels when the maximum weight
+exceeds 1 metric ton, and used for the carriage of goods.
+Category Nj: Vehicles used for the carriage of goods and having a maximum weight not exceeding 3.5 metric tons.
+In conformity with "Classification of vehicles" in Regulation No. 13 (E/ECE/324-E/ECE/TRANS/505/Rev.l/
+Add.l2/Rev.2, paragraph 5.2).
+2.3.3. That the operating principles of at least one component are different,
+2.3.4. That their components are combined differently;
+2.4. "Replacement silencing system or components of said system" means any part of the
+exhaust system defined in paragraph 2.1 above intended for use on a vehicle, other
+than a part of the type fitted to this vehicle when submitted for type approval pursu
+ant to this Regulation;
+2.5. "Approval of a replacement silencing system or components of said system" means
+the approval of the whole or part of a silencing system adaptable to one or several
+specified types of motor vehicles, as regards the limitation of their noise level;
+2.6. "Vehicle type" means a category of motor vehicles which do not differ significantly in
+such respects as:
+2.6.1. The lines and constituent materials of the body (more particularly the engine com
+partment and its soundproofing),
+2.6.2. The length and width of the vehicle,
+2.6.3. The type of engine (positive ignition, compression ignition, two stroke or four
+stroke, reciprocating or rotary), number and capacity of cylinders, number of carbu
+rettors, arrangement of valves, maximum horse-power and corresponding engine
+speed (r.p.m.), etc.
+2.6.4. Number and ratios of gears, total ratio of the transmission,
+2.6.5. The number, type and arrangement of the exhaust systems, and
+2.6.6. The number, type and arrangement of the intake systems.
+3. APPLICATION FOR APPROVAL
+3.1. The application for approval of a replacement silencing system or components of
+said system shall be submitted by its manufacturer or by his duly accredited represen
+tative.
+3.2. It shall be accompanied by the undermentioned documents in triplicate and the fol
+lowing particulars:
+3.2.1. A description of the vehicle type(s) on which the system or components is intended to
+be mounted, with regard to the items mentioned in paragraph 2.6 above. The num
+bers and/or symbols identifying the engine type and the vehicle type shall be
+specified and the vehicle type approval number, if necessary;
+3.2.2. A description of the assembled silencing system showing the relative position of each
+of its components, as well as mounting instructions;
+3.2.3. Detailed drawings of each component to enable it to be easily located and identified,
+and a specification of the material used.
+3.3. On request of the technical service conducting the tests for approval, the manufac
+turer of the silencing system shall submit:
+3.3.1. Two samples of the system or components submitted for approval;
+3.3.2. A sample of the original silencing system with which the vehicle was equipped when
+submitted for type approval;
+3.3.3. A vehicle representative of the type to which the system is to be fitted: this vehicle,
+when measured for noise emission according to the methods described in paragraphsS.
+l and3.2of annex 3 to Regulation No. 51 must satisfy the following condi
+tions:
+3.3.3.1. The noise level when the vehicle is in motion must not exceed the limit applicable to
+the category of vehicle concerned at the time when the type to which the vehicle
+belongs was approved; furthermore, it must not exceed by more than 3 dB(A) the
+noise level indicated in the approval of the type to which the vehicle belongs;
+3.3.3.2. The noise level when the vehicle is stationary does not exceed the reference value in
+dicated in the approval of the type to which the vehicle belongs;
+3.3.4. A separate engine, of at least the same cylinder capacity and power as that of the
+above-mentioned vehicle.
+4. MARKINGS
+4.1. Each component of the replacement silencing system, excluding tubes and mounting
+accessories, shall bear:
+4.1.1. The trade name or mark of the manufacturer of the system or its components,
+4.1.2. The commercial description given by the manufacturer.
+4.2. Such markings shall be clearly legible and indelible.
+5. APPROVAL
+5.1. If the type of replacement silencing system submitted for approval pursuant to this
+Regulation meets the requirements of paragraph 6 below, approval for that type
+shall be granted.
+5.2. An approval number shall be assigned to each type approved. Its first two digits (at
+present 00 for the Regulation in its original form) shall indicate the series of amend
+ments incorporating the most recent major technical amendments made to the
+Regulation at the time of issue of the approval. The same Contracting Party may not
+assign the same number to another type of replacement silencing system or compo
+nent designed for the same type(s) of vehicle.
+5.3. Notice of approval or of refusal of approval of a replacement silencing system or
+components of said system pursuant to this Regulation shall be communicated to the
+Parties to the Agreement which apply this Regulation, by means of a form conform
+ing to the model in annex 1 to the Regulation, and of drawings of the silencing sys
+tem or components supplied by the applicant for approval, in a format not exceeding
+A4 (210 x 297 mm) or folded to that format and on an appropriate scale.
+5.4. There shall be affixed to every component of silencing system conforming to a type
+approved under this Regulation an international approval mark consisting of:
+5.4.1. A circle surrounding the letter "E" followed by the distinguishing number of the
+country which has granted approval;*
+5.4.2. The number of this Regulation, followed by the letter "R", a dash and the approval
+number to the right of the circle prescribed in paragraph 5.4.1;
+5.4.3. The approval number shall be mentioned in the approval form, as well as the method
+used for approval tests.
+5.5. The approval mark shall be easily legible and indelible, when the silencing system is
+mounted on the vehicle.
+5.6. A component may be marked with more than one approval number if it has been ap
+proved as a part of more than one replacement silencing system; in this case the circle
+need not be repeated. Annex 2 to this Regulation gives an example of the arrange
+ment of the approval mark.
+* 1 for the Federal Republic of Germany, 2 for France, 3 for Italy, 4 for the Netherlands, 5 for Sweden, 6 for
+Belgium, 7 for Hungary, 8 for Czechoslovakia, 9 for Spain, 10 for Yugoslavia, 11 for the United Kingdom, 12 for Austria,
+13 for Luxembourg, 14 for Switzerland, 15 for the German Democratic Republic, 16 for Norway, 17 for Finland, 18 for
+Denmark, 19 for Romania, 20 for Poland and 21 for Portugal. Subsequent numbers shall be assigned to other countries in
+the chronological order in which they ratify or accede to the Agreement concerning the Adoption of Uniform Conditions
+of Approval and Reciprocal Recognition of Approval for Motor Vehicle Equipment and Parts, and the numbers thus
+assigned shall be communicated by the Secretary-General of the United Nations to the Contracting Parties to the Agree
+ment.
+6. SPECIFICATIONS
+6.1. General spécifications
+6.1.1. The replacement exhaust system or components thereof must be designed, con
+structed and capable of being mounted so as to ensure that the vehicle complies with
+the provisions of this Regulation under normal conditions of use, notwithstanding
+any vibrations to which it may be subject.
+6.1.2. The silencing system or components thereof must be designed, constructed and
+capable of being mounted so that reasonable resistance to the corrosion
+phenomenon to which it is exposed is obtained having regard to the conditions of use
+of the vehicle.
+6.2. Specifications regarding noise levels
+6.2.1. The acoustic efficiency of the replacement silencing system or components of said
+system shall be verified by means of the methods described in paragraphs 3.1 and 3.2
+of annex 3 to Regulation No. 51.
+When the replacement silencing system or components thereof is mounted on the
+vehicle described in paragraph 3.3.3 above, the noise levels obtained using the two
+methods (stationary and running vehicle) shall satisfy one of the following condi
+tions:
+6.2.1.1. They shall not exceed the values obtained with the type of vehicle concerned when
+submitted for type approval,
+6.2.1.2. They shall not exceed the noise values measured on the vehicle referred to in
+paragraph 6.2.1 above, when this is fitted with an exhaust silencing system cor
+responding to the type fitted to the vehicle when submitted for type approval.
+6.3. Measurement of the vehicle performances
+6.3.1. The replacement exhaust system or components thereof must be such as to ensure
+that vehicle performance is comparable with that achieved with the original equip
+ment exhaust system or component thereof.
+6.3.2. The replacement silencing system or, depending on the manufacturer's choice, the
+components of said system shall be compared with an original silencing system or
+components, which are also in new condition, successively mounted on the vehicle
+mentioned in paragraph 3.3.3 above.
+6.3.3. The verification shall be carried out by measuring the back pressure pursuant to
+paragraph 6.3.4 below.
+The value measured with the replacement silencing system shall not exceed the value
+measured with the original standard silencing system by more than 25 per cent under
+the conditions mentioned below.
+6.3.4. Test method
+6.3.4.1. Test method with engine
+The measurements shall be conducted on the engine referred to in paragraph 3.3.4
+above coupled to a dynamometer. With the throttle completely open, the bench shall
+be adjusted so as to obtain the engine speed(s) corresponding to the rated maximum
+power of the engine.
+For the measurement of back pressure, the distance at which the pressure tap shall be
+placed from the exhaust manifold is indicated in annex 4 to this Regulation.
+6.3.4.2. Test method with vehicle
+The measurements shall be carried out on the vehicle referred to in paragraph 3.3.3
+above.
+The test shall be conducted: either on the road, or on a roller dynamometer.
+With the throttle completely open, the engine must be loaded so as to obtain the
+engine speed corresponding to the rated maximum power of the engine (engine
+speed S).
+For the measurement of back pressure, the distance at which the pressure tap shall be
+placed from the exhaust manifold is indicated in annex 4 to this Regulation.
+6.4. Additional specifications regarding silencing systems or components filled with
+fibrous materials
+Absorbing fibrous materials may be used in silencing systems or components only
+when it is established by appropriate means of design and manufacturing, that the
+efficiency of the system in traffic conditions is sufficient to comply with the existing
+regulations. Such a silencing system is deemed to be effective in traffic conditions if
+the exhaust gas is not in contact with the fibrous materials or if, the silencing system
+being emptied of its absorbing materials and tested on vehicle in conformity with the
+procedures described in Regulation No. 51, annex 3, paragraphs 3.1 and 3.2, the
+acoustic pressure levels comply with the provisions laid down in paragraph 6.2
+above.
+If that condition is not fulfilled, the complete silencing system shall be submitted to a
+conventional conditioning using the installation and procedure described below or
+one of the two tests described in Regulation No. 51, annex 3, paragraphs 3.1.1 and
+3.1.2. When the procedure described in paragraph 6.2.1.2 above is employed, the
+applicant for approval may ask for the emptying or the conditioning of the original
+silencing system.
+6.4.1. Test method and apparatus
+The exhaust system or components of said system is/are fitted to the vehicle referred
+to in paragraph 3.3.3 above or the engine referred to in paragraph 3.3.4. In the
+former case, the vehicle must be mounted on a roller dynamometer, and, in the
+second case, the engine must be mounted on a dynamometer.
+The test apparatus described below is fitted at the outlet of the silencing system.
+6.4.1.1. Test apparatus
+The test apparatus, a detailed diagram of which is shown in annex 3 to this Regula
+tion must be fitted at the outlet of the exhaust system. Any other apparatus providing
+equivalent results is acceptable.
+6.4.2. Test procedure
+6.4.2.1. The test apparatus shall be adjusted in such a way that the exhaust gas flow is alter
+nately interrupted and re-established by the quick action valve for 2,500 cycles.
+6.4.2.2. The valve is opened when the exhaust gas pressure, measured at 100 mm at least
+downstream from the intake flange, reaches a value between 0.35 and 0.40 bar. It is
+closed when this pressure does not differ by more than 10 per cent from its stabilized
+value, measured with the valve open.
+6.4.2.3. The time delay switch shall be set for the duration of gas exhaust resulting from the
+provisions laid down in paragraph 6.4.2.2 above.
+6.4.2.4. Engine speed shall be 75 per cent of the speed S at which, according to the manufac
+turer, the engine develops maximum power.
+6.4.2.5. The power indicated by the dynamometer shall be 50 per cent of the full-throttle
+power measured at 75 per cent of engine speed (S).
+6.4.2.6. Any drain holes shall be closed off during the test.
+6.4.2.7. The entire test must be completed within 48 hours. If necessary, one cooling period
+will be observed after each hour.
+6.4.2.8. After conditioning, the noise level is checked pursuant to paragraph 6.2 above.
+7. EXTENSION OF APPROVAL
+The silencing system manufacturer or his duly accredited representative may ask the
+administrative department which has granted the approval of the silencing system
+for one or several types of vehicles, for an extension of the approval to other types of
+vehicles.
+The procedure is that described in paragraph 3 above.
+Notice of the extension of approval (or refusal of extension) shall be communicated
+to the Parties to the Agreement which apply this Regulation in accordance with the
+procedure specified in paragraph 5.3 above.
+8. MODIFICATION OF THE TYPE OF SILENCING SYSTEM
+8.1. Every modification of the type of replacement silencing system shall be notified to
+the administrative department which approved the type of silencing system. The said
+department may then either:
+8.1.1. Consider that the modifications made are unlikely to have an appreciable adverse
+effect, or
+8.1.2. Require a further test report from the technical service responsible for conducting
+the tests.
+8.2. Confirmation or refusal of approval, specifying the alterations, shall be com
+municated by the procedure specified in paragraph 5.3 above to the Parties to the
+Agreement applying this Regulation.
+9. CONFORMITY OF PRODUCTION
+9.1. Every replacement silencing system bearing an approval mark as prescribed under
+this Regulation shall conform to the type of silencing system approved and satisfy
+the requirements of paragraph 6 above.
+9.2. In order to verify conformity as prescribed in paragraph 9.1 above, a silencing
+system bearing the approval mark required by this Regulation shall be taken from
+the series. Production shall be deemed to conform to the requirements of this
+Regulation if the levels measured do not exceed by more than 1 dB(A) the limits
+prescribed in paragraph 6.2.1 above.
+10. PENALTIES FOR NON-CONFORMITY OF PRODUCTION
+10.1. The approval granted in respect of a type of silencing system pursuant to this Regula
+tion may be withdrawn if the requirements laid down in paragraph 9 above are not
+complied with, or if the silencing system or components fail to pass the tests provided
+for in paragraph 9.2 above.
+10.2. If a Party to the Agreement which applies this Regulation withdraws an approval it
+has previously granted, it shall forthwith so notify the other Contracting Parties ap
+plying this Regulation, by means of a copy of the approval form bearing at the end,
+in large letters, the signed and dated annotation "APPROVAL WITHDRAWN".
+11. PRODUCTION DEFINITELY DISCONTINUED
+If the holder of the approval completely ceases to manufacture a type of replacement
+silencing system or components of the said system in accordance with this Regula
+tion, he shall so inform the authority which granted the approval. Upon receiving the
+relevant communication, that authority shall inform thereof the other Parties to the
+Agreement applying this Regulation, by means of a copy of the approval form bear
+ing at the end, in large letters, the signed and dated annotation: "PRODUCTION
+  DISCONTINUED".
+12. NAMES AND ADDRESSES OF TECHNICAL SERVICES RESPONSIBLE FOR CONDUCTING AP
+PROVAL TESTS, AND OF ADMINISTRATIVE DEPARTMENTS
+The Parties to the Agreement which apply this Regulation shall communicate to the
+United Nations Secretariat the names and addresses of the technical services respon
+sible for conducting approval tests and of the administrative departments which
+grant approval and to which forms certifying approval or refusal or withdrawal of
+approval, issued in other countries, are to be sent.
+
+
+
+ANNEX 1
+Communication concerning the approval (or extension or refusal or withdrawal of approval or
+production definitely discontinued) of a type of replacement silencing system or com
+ponents of the said system pursuant to Regulation No. 59
+ANNEX 2
+ARRANGEMENT OF THE APPROVAL MARK
+(See paragraph 5.4 of this Regulation)
+The above approval mark affixed to a component of silencing system shows that the re
+placement silencing system type concerned has been approved in the Netherlands (E 4) pursu
+ant to Regulation No. 59 under approval number 002439. The first two digits of the approval
+number indicate that the approval was granted in accordance with the requirements of Regula
+tion No. 59 in its original form.
+ANNEX 3
+TEST APPARATUS
+ANNEX 4
+MEASURING POINTS BACK PRESSURE
+Examples of possible measuring points for loss-of-pressure tests. The exact measuring
+point shall be specified in the test report. It shall be in an area where gas flow is regular.
+

@@ -13,7 +13,7 @@ HUGGO6 <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Nodes v1.0.csv",
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'HUGGO' object until the object created
-# below (in stage three) passes all the tests.
+# below (in stage four) passes all the tests.
 HUGGO1 <- as_tibble(HUGGO1)  %>%
   dplyr::mutate(AgreementType = dplyr::recode(T, G = "A", M = "E", "T" = "Q",
                                               D = "V", R = "W", N = "X",
@@ -296,7 +296,335 @@ HUGGO$Confirmed_HUGGO <- NA
 # Add Changes var to log changes that are manually added for each agreement.
 HUGGO$Changes <- NA
 
-# Stage three: Connecting data
+# Stage three: Merging verified data and additional treaties into HUGGO dataset
+
+# Step one: Merge data frames with verified metadata of treaties within and
+# without HUGGO
+
+# Load original HUGGO
+HUGGO_or <- manyenviron::agreements$HUGGO
+
+# Load data frame with verified metadata (of treaties present in HUGGO)
+HUGGO7 <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv", sep = ";", 
+                   na.strings = "#N/D")
+
+# Load data frame with verified metadata (of treaties not present in HUGGO)
+HUGGO8 <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv", sep = ";", 
+                   na.strings = "#N/D")
+
+# Create one data frame
+HUGGO9 <- rbind(HUGGO7, HUGGO8)
+
+# Drop text columns and the ones included for verification purposes
+HUGGO9 <- HUGGO9[, -c(47:51)]
+
+# Add column to indicate if the treaty text has been collected
+HUGGO9 <- HUGGO9 %>%
+  dplyr::mutate(TreatyText = 1)
+HUGGO_or <- HUGGO_or %>%
+  dplyr::mutate(TreatyText = NA)
+
+# Indicate which treaty texts were not/could not be collected
+misstxt <- c("ADDTNR_1979P2", "AGO-EC[PFW]_1999P", "ARG-URY[HHS]_1987A", 
+             "ARG-VEN[ENA]_2000A", "BAD-CHE[LCT]_1884P", "BJ06TP_1995A",
+             "BLR-EGY[QPT]_1998A", "BLR-SYR[SAI]_2003A", "BRA-CRI[CET]_2008P",
+             "CC07AR_1993A", "CE04FU_1987A", "CL07SM_1977A", 
+             "CNSRBE_1995E:CNSRBE_1991A", "CSCBNS_1992A", "CYP-EUE[ION]_2000P5",
+             "DEU-GTM[AML]_2012A", "EGY-ALG[ANH]_1998A", "EGY-JOR[FSH]_1998A",
+             "EGY-MAR[VAH]_1999A", "ELCCDF_1972A", "EP05SP_1998P:EP05SP_1986A",
+             "EUE-SLB[FSH]_2010A", "GNB-EC[FSP]_2008A", "HUN-RUS[RAF]_1950A",
+             "ICAAAN_1944A16", "ID04MN_2004E8", "MNG-RUS[AIF]_2002A",
+             "MU09EM_1998S", "PU05MD_1997A", "RF04RR_1933A", "RUS-USA[UNF]_1975A",
+             "RUS-USA[HSA]_1968E:RUS-USA[HSA]_1967A", "SEN-EC[CFP]_2002A",
+             "SI05SC_2007P", "SYC-EC[CPF]_2011P", "TC10FC_2005A", "TUR-ALG[MAF]_1999A")
+i <- 0
+for(i in 1:length(misstxt)){
+  HUGGO9[which(HUGGO9$manyID == misstxt[i]), 47] <- 0
+}
+
+# Merge data frames
+HUGGO_new <- dplyr::full_join(HUGGO_or, HUGGO9, by = c("manyID", "treatyID")) %>%
+  dplyr::distinct() %>%
+  dplyr::relocate(manyID, Title.x, Title.y, Beg.x, Beg.y, Signature.x, 
+                  Signature.y, Force.x, Force.y, End.x, End.y, Parties.x, 
+                  Parties.y)
+
+# Clean merged data
+HUGGO_new <- HUGGO_new %>%
+  dplyr::mutate(Title = ifelse(!is.na(Title.y), Title.y, Title.x), 
+                Beg = ifelse(!is.na(Beg.y), Beg.y, Beg.x),  
+                Signature = ifelse(!is.na(Signature.y), Signature.y, Signature.x),  
+                End = ifelse(!is.na(End.y), End.y, End.x), 
+                Force = ifelse(!is.na(Force.y), Force.y, Force.x),  
+                url = ifelse(!is.na(url.y), url.y, url.x),
+                Parties = ifelse(!is.na(Parties.y), Parties.y, Parties.x), 
+                TreatyText = ifelse(!is.na(TreatyText.y), TreatyText.y, TreatyText.x),
+                AgreementType = ifelse(!is.na(AgreementType.y), AgreementType.y, AgreementType.x),
+                DocType = ifelse(!is.na(DocType.y), DocType.y, DocType.x),
+                GeogArea = ifelse(!is.na(GeogArea.y), GeogArea.y, GeogArea.x),
+                ieaID = ifelse(!is.na(ieaID.y), ieaID.y, ieaID.x),
+                gengID = ifelse(!is.na(gengID.y), gengID.y, gengID.x),
+                ecolexID = ifelse(!is.na(ecolexID.y), ecolexID.y, ecolexID.x),
+                verified = ifelse(!is.na(verified.y), verified.y, verified.x),
+                DocValidUntilDate = ifelse(!is.na(DocValidUntilDate.y), DocValidUntilDate.y, DocValidUntilDate.x),
+                Notes = ifelse(!is.na(Notes.y), Notes.y, Notes.x),
+                Download = ifelse(!is.na(Download.y), Download.y, Download.x),
+                MEA_type = ifelse(!is.na(MEA_type.y), MEA_type.y, MEA_type.x),
+                Ambit = ifelse(!is.na(Ambit.y), Ambit.y, Ambit.x),
+                Region = ifelse(!is.na(Region.y), Region.y, Region.x),
+                subject_ecolex = ifelse(!is.na(subject_ecolex.y), subject_ecolex.y, subject_ecolex.x),
+                subject_iea = ifelse(!is.na(subject_iea.y), subject_iea.y, subject_iea.x),
+                Keywords = ifelse(!is.na(Keywords.y), Keywords.y, Keywords.x),
+                Lineage = ifelse(!is.na(Lineage.y), Lineage.y, Lineage.x),
+                Sequence = ifelse(!is.na(Sequence.y), Sequence.y, Sequence.x),
+                AdoptedIn = ifelse(!is.na(AdoptedIn.y), AdoptedIn.y, AdoptedIn.x),
+                Languages = ifelse(!is.na(Languages.y), Languages.y, Languages.x),
+                Appendices = ifelse(!is.na(Appendices.y), Appendices.y, Appendices.x),
+                Depository = ifelse(!is.na(Depository.y), Depository.y, Depository.x),
+                DepositoryURL = ifelse(!is.na(DepositoryURL.y), DepositoryURL.y, DepositoryURL.x),
+                Published = ifelse(!is.na(Published.y), Published.y, Published.x),
+                Website1 = ifelse(!is.na(Website1.y), Website1.y, Website1.x),
+                Website2 = ifelse(!is.na(Website2.y), Website2.y, Website2.y),
+                Secretariat = ifelse(!is.na(Secretariat.y), Secretariat.y, Secretariat.x),
+                SecretariatURL = ifelse(!is.na(SecretariatURL.y), SecretariatURL.y, SecretariatURL.x),
+                UNEP = ifelse(!is.na(UNEP.y), UNEP.y, UNEP.x),
+                Supersedes = ifelse(!is.na(Supersedes.y), Supersedes.y, Supersedes.x),
+                References = ifelse(!is.na(References.y), References.y, References.x),
+                EnabledBy = ifelse(!is.na(EnabledBy.y), EnabledBy.y, EnabledBy.x),
+                AmendedBy = ifelse(!is.na(AmendedBy.y), AmendedBy.y, AmendedBy.x),
+                Lit = ifelse(!is.na(Lit.y), Lit.y, Lit.x),
+                Data = ifelse(!is.na(Data.y), Data.y, Data.x),
+                Coded = ifelse(!is.na(Coded.y), Coded.y, Coded.x))%>%
+  dplyr::distinct() %>%
+  dplyr::select(-c(Title.x, Title.y, Beg.x, Beg.y, End.x, End.y, Signature.x, 
+                   Signature.y, Force.x, Force.y, Abstract.x, Abstract.y, 
+                   Parties.x, Parties.y, AgreementType.x, AgreementType.y, DocType.y, DocType.x,
+                   GeogArea.x, GeogArea.y, gengID.x, gengID.y, ieaID.x, ieaID.y,
+                   ecolexID.x, ecolexID.y, verified.x, verified.y,
+                   DocValidUntilDate.x, DocValidUntilDate.y, url.x, url.y, 
+                   Notes.x, Notes.y, Download.x, Download.y, MEA_type.x, MEA_type.y,
+                   Ambit.x, Ambit.y, Region.x, Region.y, subject_ecolex.x, subject_ecolex.y,
+                   subject_iea.x, subject_iea.y, Keywords.x, Keywords.y, Lineage.x,
+                   Lineage.y, Sequence.x, Sequence.y, AdoptedIn.x, AdoptedIn.y,
+                   Languages.x, Languages.y, Appendices.x, Appendices.y, Depository.x,
+                   Depository.y, DepositoryURL.x, DepositoryURL.y, Published.x,
+                   Published.y, Website1.x, Website1.y,
+                   Website2.x, Website2.y, Secretariat.x, Secretariat.y, SecretariatURL.x,
+                   SecretariatURL.y, UNEP.x, UNEP.y,Supersedes.x, Supersedes.y,
+                   References.x, References.y, EnabledBy.x, EnabledBy.y, AmendedBy.x,
+                   AmendedBy.y, Lit.x, Lit.y, Data.x, Data.y, Coded.x, Coded.y,
+                   TreatyText.y, TreatyText.x)) %>%   
+  dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% ## Standardise Title
+  dplyr::relocate(manyID, Title, Beg, End, Signature, Force, url, TreatyText,
+                  AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID,
+                  treatyID, Parties, verified, DocValidUntilDate, Notes, Download,
+                  MEA_type, Ambit, Region, subject_ecolex, subject_iea,
+                  Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
+                  Depository, DepositoryURL, Published, Website1,
+                  Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
+                  References, EnabledBy, AmendedBy, Lit, Data, Coded) %>%
+  dplyr::arrange(Beg)
+
+# Step two: Clean duplicate rows
+
+# First row NA remove
+HUGGO_new <- HUGGO_new[-(which(is.na(HUGGO_new$manyID))), ]
+
+# BAD-CHE[LCT]_1884P
+# Additional Convention Between Switzerland Baden And Alsace-Lorraine Concerning Fishing In Lake Constance And Its Tributaries
+which(HUGGO_new$manyID == "BAD-CHE[LCT]_1884P")
+remove <- which(HUGGO_new$manyID == "BAD-CHE[LCT]_1884P" & HUGGO_new$Title == "Additional Convention Between Switzerland Baden And Alsace-Lorraine Concerning Fishing In Lake Constance And Its Tributaries")
+# Keep one row
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+# Protocol To The Additional Convention Between Switzerland Baden And Alsace-Lorraine Concerning Fishing In Lake Constance And Its Tributaries
+which(HUGGO_new$manyID == "BAD-CHE[LCT]_1884P")
+remove <- which(HUGGO_new$manyID == "BAD-CHE[LCT]_1884P" & HUGGO_new$Title == "Protocol To The Additional Convention Between Switzerland Baden And Alsace-Lorraine Concerning Fishing In Lake Constance And Its Tributaries")
+# Keep one row
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# CAN-USA[LLW]_1925P:CAN-USA[LLW]_1925A
+which(HUGGO_new$manyID == "CAN-USA[LLW]_1925P:CAN-USA[LLW]_1925A")
+# Keep row with verified information (Force)
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "CAN-USA[LLW]_1925P:CAN-USA[LLW]_1925A" & HUGGO_new$Force == "1925-07-17")), ]
+
+# OP06SP_1952A
+which(HUGGO_new$manyID == "OP06SP_1952A")
+# Keep row with more information
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "OP06SP_1952A" & !is.na(HUGGO_new$Region))), ]
+
+# CDSMMZ_1954P20
+which(HUGGO_new$manyID == "CDSMMZ_1954P20")
+# Fully duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "CDSMMZ_1954P20")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# ESP-PRT[FSF]_1969A
+which(HUGGO_new$manyID == "ESP-PRT[FSF]_1969A")
+# Fully duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "ESP-PRT[FSF]_1969A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# ELCCDF_1972A
+which(HUGGO_new$manyID == "ELCCDF_1972A")
+# Duplicate rows, keep the one considered when verifying metadata
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "ELCCDF_1972A" & is.na(HUGGO_new$TreatyText))), ]
+
+# RUS-USA[HSA]_1975A
+which(HUGGO_new$manyID == "RUS-USA[HSA]_1975A")
+# Two fully duplicated treaties, remove duplicated rows
+remove <- which(HUGGO_new$manyID == "RUS-USA[HSA]_1975A" & HUGGO_new$gengID == "GENG-1181")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "RUS-USA[HSA]_1975A" & HUGGO_new$gengID == "GENG-1248")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# CAN-NOR[CSS]_1975N
+which(HUGGO_new$manyID == "CAN-NOR[CSS]_1975N")
+# Two fully duplicated treaties, remove duplicated rows
+remove <- which(HUGGO_new$manyID == "CAN-NOR[CSS]_1975N" & HUGGO_new$Force == "1975-04-23")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "CAN-NOR[CSS]_1975N" & HUGGO_new$Force == "1975-12-12")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# GU14US_1975A
+which(HUGGO_new$manyID == "GU14US_1975A")
+# Two fully duplicated treaties, remove duplicated rows
+remove <- which(HUGGO_new$manyID == "GU14US_1975A" & HUGGO_new$Signature == "1975-05-30")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "GU14US_1975A" & HUGGO_new$Signature == "1975-12-16")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# GUY-RUS[UNF]_1977A 
+which(HUGGO_new$manyID == "GUY-RUS[UNF]_1977A")
+# Fully duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "GUY-RUS[UNF]_1977A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# DEU-LUX[FFA]_1980N
+which(HUGGO_new$manyID == "DEU-LUX[FFA]_1980N")
+# Duplicate rows, keep one with more data
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "DEU-LUX[FFA]_1980N" & is.na(HUGGO_new$Ambit))), ]
+
+# ESPOTF_1983A
+which(HUGGO_new$manyID == "ESPOTF_1983A")
+# Full duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "ESPOTF_1983A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# CAN-USA[FCS]_1989A
+which(HUGGO_new$manyID == "CAN-USA[FCS]_1989A")
+# Full duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "CAN-USA[FCS]_1989A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# AUS-JPN[LLF]_1990P
+which(HUGGO_new$manyID == "AUS-JPN[LLF]_1990P")
+# Full duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "AUS-JPN[LLF]_1990P")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# TPNWLA_1991E:TPNWLA_1967A
+which(HUGGO_new$manyID == "TPNWLA_1991E:TPNWLA_1967A")
+# Duplicate rows, keep one with more information
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "TPNWLA_1991E:TPNWLA_1967A" & is.na(HUGGO_new$url))), ]
+
+# SWZ-ZAF[DUK]_1992A
+which(HUGGO_new$manyID == "SWZ-ZAF[DUK]_1992A")
+# Fully duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "SWZ-ZAF[DUK]_1992A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# RUS-UKR[FSA]_1993A
+which(HUGGO_new$manyID == "RUS-UKR[FSA]_1993A")
+# Duplicate rows, keep the one with verified metadata
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "RUS-UKR[FSA]_1993A" & is.na(HUGGO_new$url))), ]
+
+# EB06DB_1993A
+which(HUGGO_new$manyID == "EB06DB_1993A")
+# Fully duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "EB06DB_1993A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# BJ06TP_1995A
+# Two fully duplicated treaties
+# Jordan and Sudan
+remove <- which(HUGGO_new$manyID == "BJ06TP_1995A" & HUGGO_new$Beg == "1995-02-19")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+# Jordan and Tunis
+remove <- which(HUGGO_new$manyID == "BJ06TP_1995A" & HUGGO_new$Beg == "1995-04-27")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# CTMHWD_1995E:CTMHWD_1989A
+which(HUGGO_new$manyID == "CTMHWD_1995E:CTMHWD_1989A")
+# Duplicate rows, keep one with verified metadata
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "CTMHWD_1995E:CTMHWD_1989A" & is.na(HUGGO_new$url))), ]
+
+# GIN-EC[ECF]_1995P
+which(HUGGO_new$manyID == "GIN-EC[ECF]_1995P")
+# Fully duplicate rows, keep one
+remove <- which(HUGGO_new$manyID == "GIN-EC[ECF]_1995P")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# CE06NS_1999A
+which(HUGGO_new$manyID == "CE06NS_1999A")
+# Two fully duplicated treaties
+# Remove duplicate rows
+remove <- which(HUGGO_new$manyID == "CE06NS_1999A" & HUGGO_new$Beg == "1999-07-19")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "CE06NS_1999A" & HUGGO_new$Beg == "1999-07-23")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# AGO-EC[CPF]_2000P
+which(HUGGO_new$manyID == "AGO-EC[CPF]_2000P")
+# Two fully duplicated treaties, remove duplicate rows
+remove <- which(HUGGO_new$manyID == "AGO-EC[CPF]_2000P" & HUGGO_new$Beg == "2000-03-30")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "AGO-EC[CPF]_2000P" & HUGGO_new$Beg == "2000-07-06")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# SEN-EC[CFP]_2002A
+which(HUGGO_new$manyID == "SEN-EC[CFP]_2002A")
+# Two fully duplicated treaties, remove duplicate rows
+remove <- which(HUGGO_new$manyID == "SEN-EC[CFP]_2002A" & HUGGO_new$End == "2001-12-31")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "SEN-EC[CFP]_2002A" & HUGGO_new$End == "2001-07-31")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# CRI-USA[TTE]_2003A
+which(HUGGO_new$manyID == "CRI-USA[TTE]_2003A")
+# Fully duplicated treaty, remove duplicate row
+remove <- which(HUGGO_new$manyID == "CRI-USA[TTE]_2003A")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# DNK-EC[RGH]_2007A1:DNK-EC[RGH]_2007A1
+which(HUGGO_new$manyID == "DNK-EC[RGH]_2007A1:DNK-EC[RGH]_2007A1")
+# Fully duplicated treaty, remove duplicate rows
+remove <- which(HUGGO_new$manyID == "DNK-EC[RGH]_2007A1:DNK-EC[RGH]_2007A1")
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# ID04MN_2004E8
+which(HUGGO_new$manyID == "ID04MN_2004E8")
+# Two fully duplicated treaties, remove duplicate rows
+remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & is.na(HUGGO_new$url))
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & !is.na(HUGGO_new$url))
+HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
+HUGGO <- HUGGO_new %>%
+              dplyr::mutate(Beg = messydates::as_messydate(Beg),
+              Signature = messydates::as_messydate(Signature),
+              Force = messydates::as_messydate(Force),
+              End = messydates::as_messydate(End)) %>%
+              dplyr::arrange(Beg)
+              
+
+# Arrange by Beg date
+HUGGO_new <- arrange(HUGGO_new)
+
+# Step three: Push HUGGO_new to HUGGO
+HUGGO <- HUGGO_new
+
+# Stage four: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
 manypkgs::export_data(HUGGO, database = "agreements",

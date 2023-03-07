@@ -1,0 +1,843 @@
+Protocol for the Protection of the Marine and Coastal Environment of the
+Western Indian Ocean from Land-Based Sources and Activities
+Adopted in Nairobi, Kenya on 31 March 2010
+Preamble
+The Contracting Parties to this Protocol,
+Being Parties to the Convention for the Protection, Management and Development of the
+Marine and Coastal Environment of the Eastern African Region signed in Nairobi on 21 June
+1985, as amended and renamed “the Amended Nairobi Convention for the Protection,
+Management and Development of the Marine and Coastal Environment of the Western Indian
+Ocean” on the Thirty first day of March 2010;
+Determined to implement the Convention, in particular article 7 thereof;
+Conscious of the grave danger posed by various land-based sources and activities to the
+marine and coastal environment, affecting, among others, its rich heritage of biological
+diversity, coastal tourism, ports and harbours, human health and other natural and
+human-made endowments and resources;
+Noting with particular concern the threats to the marine and coastal environment of the
+Western Indian Ocean from land-based sources and activities, including but not limited to
+untreated domestic wastes and discharges, industrial discharges, agricultural run-off and
+activities causing physical alterations and destruction of habitats;
+Conscious of the close and traditional dependency of communities for livelihoods and other
+uses on the various marine and coastal resources, many of which are currently under serious
+threat of degradation from various land-based sources and activities;
+Taking into account the special circumstances and vulnerabilities of the Small Island States
+of the Western Indian Ocean region, that is, Comoros, Mauritius and Seychelles;
+Mindful that marine and coastal natural and human-made resources and endowments
+constitute a rich heritage of scientific, cultural, social, educational, recreational, aesthetic and
+economic values that need to be effectively and sustainably protected;
+Stressing the urgent need to tackle the various land-based sources and activities causing
+pollution and degradation of the marine and coastal environment of the Western Indian
+Ocean region;
+Aware of the need for proper and sustainable control, precaution, prevention, reduction,
+mitigation and, to the maximum extent possible, complete elimination of land-based sources
+and activities;
+Aware also of the impacts of climate change on the marine and coastal environment resulting
+in, among others, sea-level rise, increased seawater temperature, ocean acidification,
+weather and climate variability that affect or are likely to affect coastal communities;
+Determined to pursue the protection and conservation of the marine and coastal
+environment and the sustainable development and use of the natural resources of the
+Western Indian Ocean region, by, among others, undertaking proactive and inclusive
+planning processes, so as to meet the needs of present and future generations in an
+equitable manner;
+Considering that the Contracting Parties have committed themselves to cooperate in regional
+efforts to conserve, protect and restore the health and integrity of the marine and coastal
+environment of the Western Indian Ocean region and that, to this end, they have common
+but differentiated responsibilities;
+Desirous of establishing closer collaboration and cooperation between the Contracting Parties
+to achieve better protection of the marine and coastal environment of the Western Indian
+Ocean region from pollution from land-based sources and activities;
+Recognizing that, notwithstanding some achievements in reducing marine and coastal
+pollution and degradation from land-based sources and activities, efforts and measures at
+the local, national and regional levels need to be enhanced and strengthened;
+Further recognizing the need for enhanced collaboration and cooperation with other States
+and relevant regional and international organizations, together with civil society
+organizations and local communities, for better protection of the marine and coastal
+environment of the Western Indian Ocean region;
+Mindful of the provisions of the 1982 United Nations Convention on the Law of the Sea and in
+particular articles 207 and 213 thereof;
+Mindful also of the various relevant and in many cases recent international and regional
+commitments and instruments, in addition to developments in other regional seas
+programmes;
+Taking into account global, regional and national efforts concerning environmental
+sustainability, poverty reduction and access to drinking water and sanitation;
+Have agreed as follows:
+Article 1 :Definitions
+For the purposes of this Protocol:
+i. “Best available technique” means the latest stage, in time, of development of a process,
+facility or method of operation that indicates the practical suitability of a particular
+measure for limiting discharges, emissions and waste. In this regard, “technique”
+includes both the technology used and the manner in which the process, facility or
+method is designed, built, maintained, operated or dismantled;
+i. “Best environmental practice” means the application at the latest stage in time of the
+most appropriate combination of environmental control measures and strategies;
+i. “Convention” means the Amended Nairobi Convention for the Protection, Management
+and Development of the Marine and Coastal Environment of the Western Indian Ocean;
+i. “Contracting Party” means any State or regional economic, political or other
+organization, of which at least one member is a coastal State of the Western Indian
+Ocean region and that exercises competence in the fields covered by this Protocol, and
+has acceded to this Protocol, or a non coastal State that is upstream and riparian to
+watercourses draining into or connected with the Western Indian Ocean;
+i. “Diffuse source” means a source of pollution other than a point source from which
+substances enter the marine and coastal environment as a result of land or surface run
+off, precipitation, atmospheric deposition, drainage, seepage or by hydrological
+modification or destruction of habitats;
+i. “Emission control” means a control requiring a specific emission limitation, or otherwise
+specifying limits or conditions on the effect, nature or other characteristics of an
+emission or operating conditions that affect emissions;
+i. “Environmental audit” means a systematic documented verification process for
+objectively obtaining and evaluating evidence to determine whether specified
+environmental activities, events, conditions, management systems or information about
+the foregoing matters conforms with audit criteria and communicating the results of
+this process to the client;
+i. “Environmental quality objective” means a clearly identified objective or goal for
+purposes of environmental quality whether in specific or general application to relevant
+environmental resources, activities or programmes;
+i. “Environmental quality standard” means the concentration of a particular substance or
+group of substances in water, sediment or biota that should not be exceeded to protect
+human health or the environment;
+i. “Freshwater limit” means a place in a watercourse where at low tide or in a period of
+low freshwater flow there is an appreciable or discernible increase in salinity owing to
+the presence of sea water;
+i. “Hot spot” means a geographically defined marine or coastal area or other areas of the
+sea, of national, regional or international significance, whose conditions are such as to
+adversely affect human health, threaten the functioning of ecosystems and biological
+diversity or degrade resources and amenities of economic and social importance in a
+manner that warrants priority management attention;
+i. “Internal waters” means any water body or resource, such as a river, lake, dam,
+wetland or other waters within the exclusive jurisdiction of a State, but does not include
+any shared or transboundary water body or resource;
+i. “Land based sources and activities” means sources and activities directly or indirectly
+causing or contributing to the pollution or degradation of the marine and coastal
+environment from the landward side as opposed to sources and activities from the
+seaward side;
+i. “Organization” means the body designated as responsible for carrying out secretariat
+functions pursuant to article 17 of the Convention;
+i. “Point source” means a source of pollution where the discharge or release is introduced
+into the environment from a clearly discernable confined and discrete conveyance
+including but not limited to a pipe, outfall, channel, ditch, tunnel, conduit or well from
+which pollutants are or may be discharged;
+i. “Pollution” means the introduction by human intervention, directly or indirectly, or
+through river flows, of substances, organisms or energy into the marine and coastal
+environment, including estuaries, resulting in deleterious effects such as harm to living
+resources, hazards to human health, hindrance to marine activities, including fishing,
+impairment of quality for use of seawater and reduction of amenities;
+i. “Riparian” means a zone or area within a river basin or watercourse that is naturally
+under the direct influence of the river or watercourse;
+i. “Sensitive area” means a geographically defined area of national, regional or
+international significance that although not degraded at present is threatened with
+future pollution or degradation either because of the sensitivity of the receptor or the
+magnitude of the anthropogenic activity posing the threat;
+i. “Treatment” means the application of physical, chemical or biological processes that
+change the characteristics or composition of the waste to meet environmental or other
+standards, prior to its release into the environment or reuse; and
+i. “Wetland” means an area of marsh, fen, peatland or water, whether natural or artificial,
+permanent or temporary, with water that is static or flowing, fresh, brackish or saline,
+including areas of marine water the depth of which at low tide does not exceed six
+metres.
+ 
+Article 2 :Geographical scope
+1. The geographical scope of this Protocol is the Eastern and Southern African region of
+the Western Indian Ocean as defined in articles 1 and 2 of the Convention (hereinafter
+referred to as “the Protocol area”).
+1. The Protocol area shall include the riparian and internal waters constituting part of the
+natural river basins draining into the Western Indian Ocean, the marine and coastal
+environment including the watershed of that part of the Western Indian Ocean situated
+within the Eastern and Southern African region and falling within the jurisdiction of the
+Contracting Parties to this Protocol.
+1. Without prejudice to the generality of paragraph 2 above, the Protocol area includes the
+following:
+a. The seabed and its subsoil;
+a. The waters, seabed and its subsoil on the landward side of the baseline from
+which the breadth of the territorial sea is measured and extending, in the case
+of watercourses, up to the natural catchments or riparian limits upstream; and
+a. The terrestrial coastal areas designated by each of the Parties, including
+wetlands.
+1. The Protocol area shall not include internal waters of the Contracting Parties that are
+not covered under paragraphs 2 and 3 of this article.
+ 
+Article 3 : Protocol application
+This Protocol shall apply to:
+a. Activities within the territories of the Contracting Parties that may directly or indirectly
+affect the marine or coastal environment of the Protocol area, including developments
+that cause physical alteration of the natural state of the coastline or otherwise result in
+physical alteration or destruction of habitats;
+a. Discharges, releases or outflows originating from land based point and diffuse sources
+and activities within the territories of the Contracting Parties that may directly or
+indirectly affect the marine or coastal environment of the Protocol area;
+a. Inputs of polluting substances transported through the atmosphere into the marine and
+coastal environment of the Protocol area from land based sources and activities within
+or originating from the territory of any Contracting Party.
+ 
+Article 4 : General obligations
+1. The Contracting Parties shall individually or jointly take appropriate measures in
+conformity with international law and in accordance with the Convention and this
+Protocol, to prevent, reduce, mitigate, combat and, to the extent possible, eliminate the
+pollution or degradation of the Protocol area from land based sources and activities,
+using for this purpose the best practicable means at their disposal and in accordance
+with their respective capabilities.
+1. The Contracting Parties shall in particular:
+a. Apply the precautionary principle, by virtue of which, where there are threats
+of serious or irreversible damage to the marine and coastal environment or to
+public health, lack of full scientific certainty shall not be used as a reason for
+postponing prudent, precautionary and cost effective measures;
+a. Apply the polluter pays principle, by virtue of which, the costs of pollution,
+prevention, control, mitigation and reduction measures shall be borne by the
+polluter, with due regard to prevailing public interest;
+a. Ensure that new or existing activities, developments, programmes, plans,
+policies and processes that are likely to cause significant adverse impacts to
+the marine and/or coastal environment are subjected to environmental impact
+assessment, environmental audit or strategic environmental assessment, as
+appropriate, and prior authorization by a competent national authority or
+authorities as a matter of law; and
+a. Designate hot spots and sensitive areas of special regional, transboundary or
+national importance and cooperate in efforts to create other protection
+regimes and take measures to restore them as appropriate.
+1. The Contracting Parties shall take all appropriate measures in conformity with
+international law for the proper and effective discharge of their obligations under the
+Convention and this Protocol and shall, to this end, endeavour to harmonize their
+programmes, policies, laws and other regulatory frameworks.
+1. The Contracting Parties shall cooperate with the competent and relevant international,
+regional and subregional organizations to ensure the effective implementation of the
+Convention and this Protocol.
+1. The Contracting Parties shall ensure that the measures under paragraphs 1 and 2 of
+this article do not directly or indirectly pollute or degrade the marine and/ or coastal
+environment outside the Protocol area.
+ 
+Part II: Provisions on pollution and other degrading activities and sources
+Article 5 : Pollution from point sources
+1. The Contracting Parties shall ensure that emission controls of point source discharges and
+releases of substances into water or air in the Protocol area that reach and affect or may
+affect the marine and coastal environment are based on best available techniques and best
+environmental practice as established under annex I to this Protocol.
+2. The Contracting Parties shall ensure that emission controls of point source discharges and
+releases of substances into water or air in the Protocol area are based on emission and
+discharge limit values taking into account the Parties’ social, economic and technological
+capacities as may be established under this Protocol.
+3. The Contracting Parties shall establish permissible limits, environmental quality standards
+and environmental quality objectives, management practices and measures within a period
+of three years from the date of entry into force of this Protocol.
+4. The Contracting Parties shall ensure that regulatory and administrative mechanisms are in
+place to authorize and regulate point source discharges and releases. In this regard, an
+indicative list of priority substances and activities may be established under this Protocol, and
+the list may be reviewed from time to time by the Contracting Parties.
+5. The Contracting Parties shall designate hot spots and establish the methodology to be
+used for such designation. The methodology for the designation of hot spots shall also be
+used to elaborate national strategies and time frames for achieving substantial reductions of
+pollutants from point sources.
+ 
+Article 6 : Pollution from diffuse sources
+1. The Contracting Parties shall take all necessary measures to prevent, reduce, mitigate,
+combat or eliminate, as appropriate, the pollution load from diffuse sources, in
+particular, agricultural activities affecting the marine and coastal environment of the
+Protocol area with a view to complying with environmental quality standards and
+environmental quality objectives as may be established under this Protocol.
+1. The Contracting Parties shall ensure that the controls of diffuse sources of land based
+pollution affecting or having the potential to affect the marine or coastal environment of
+the Protocol area are based on best environmental practice and best available
+techniques.
+ 
+Article 7 : Other harmful activities
+1. The Contracting Parties shall endeavour to ensure that activities within their respective
+territories that cause the physical alteration and destruction of habitats in the marine
+and coastal environment of the Protocol area and that are not covered under articles 5
+and 6 of this Protocol are conducted based on best available techniques and best
+environmental practices.
+1. The Contracting Parties shall, individually or collectively, take mitigation or adaptation
+measures to enhance the resilience of coastal communities and their preparedness to
+respond to the impacts of climate change.
+1. The Contracting Parties shall take measures to prevent, reduce, mitigate, combat and,
+to the extent possible, eliminate the effects of activities and other sources of pollution
+or degradation contemplated under paragraphs 1 and 2 of this article and shall
+undertake restorative measures.
+1. The Contracting Parties shall base the measures contemplated in articles 5, 6 and 7 on
+the priority substances and activities listed in annex II to this Protocol.
+1. Activities or other sources targeted under paragraphs 1 to 4 of this article shall include
+those that, though socially and economically beneficial, degrade or are likely to degrade
+the marine and coastal environment of the Protocol area.
+ 
+Article 8 : Transboundary pollution
+1. Where pollution from land based sources and activities originating from any Contracting
+Party has affected or is likely to affect the marine and coastal environment of another
+Contracting Party, the Contracting Party from where the pollution originates shall
+inform and consult the affected Party and all other interested parties and cooperate in
+taking measures to reduce or prevent the effects or likely effects of that pollution.
+1. Where discharges or releases to a watercourse or body that flows through or traverses
+the territories of two or more Contracting Parties or forms a boundary between them,
+cause or are likely to cause pollution of the marine and coastal environment of the
+Protocol area, the Contracting Parties shall cooperate to ensure the full application of
+the Protocol.
+1. Each Contracting Party shall endeavour to cooperate with non Contracting Parties to
+prevent transboundary pollution into the Protocol area to make possible the full
+application of this Protocol.
+ 
+Part III: Provisions for effective implementation
+Article 9 : Measures of implementation
+In implementing this Protocol, the Contracting Parties shall develop, prioritize and adopt
+national and regional programmes or plans of actions based on source control and containing
+measures, designated hot spots and sensitive areas, where appropriate, with time frames for
+their implementation and completion.
+Article 10 : Compliance and enforcement
+1. The Contracting Parties shall, within three years of entry into force of this Protocol,
+develop and adopt procedures and mechanisms necessary to assess and promote
+compliance with and enforcement of this Protocol, including mechanisms for the open
+exchange of information between the Contracting Parties.
+1. Each Contracting Party shall take all measures at its disposal, in accordance with its
+capacities, and consistent with its obligations under international law, to enforce and
+comply with this Protocol at the national level, including, in particular, by enacting
+relevant domestic legislation, establishing institutions and related measures.
+1. Each Contracting Party shall take all appropriate measures to prevent and if necessary
+take corrective actions against acts or omissions contrary to the provisions of this
+Protocol.
+1. In pursuance of the obligations set out in article 4 of this Protocol, each Contracting
+Party shall provide for a system of regular monitoring and inspection by its competent
+national authorities to assess compliance with authorizations and regulations of
+substances into water or air, or activities through, among other things, environmental
+impact assessments and audits as provided for under article 13 of this Protocol.
+1. Each Contracting Party shall take appropriate measures to encourage compliance with
+authorizations and regulations contemplated under paragraph 4 of this article and also
+ensure effective application and enforcement.
+1. The Contracting Parties shall offer advice, assistance or cooperation among themselves
+or with non contracting parties and relevant international, regional and subregional
+organizations in the spirit of mutual interest so as to enhance compliance with and
+enforcement of this Protocol.
+ 
+Article 11 : Common guidelines, standards and criteria
+1. The Contracting Parties shall, as soon as possible, from the date of entry into force of
+this Protocol, and in cooperation with competent regional and international
+organizations, adopt common guidelines, standards or criteria concerning the
+identification, prevention, reduction, mitigation or, where feasible, elimination of
+pollution or degradation of the marine and coastal environment of the Protocol area. In
+particular, and without prejudice to the generality of the foregoing, such common
+guidelines, standards and criteria may include the following:
+a. specific requirements concerning the quantities of the priority substances and
+activities listed in annex II, their effluent concentration and their methods of
+discharge;
+a. special requirements for effluent necessitating separate treatment;
+a. quality of seawater used for specific purposes that is necessary for the
+protection of human health, living resources and ecosystems;
+a. design considerations of pipelines for coastal outfalls, taking into account, in
+particular, the methods used for treatment of effluent; and
+a. control and progressive replacement of products, installations, industrial and
+other processes causing significant pollution or degradation of the marine and
+coastal environment.
+1. The Contracting Parties shall within a period of three years from the entry into force of
+this Protocol establish common emission limits and other values, environmental quality
+standards or environmental quality objectives, and time frames for implementation.
+1. Each Contracting Party shall designate a competent authority or authorities to be
+responsible for the establishment, review or implementation of national emission limits,
+values, measures, standards and objectives and shall submit periodic reports in this
+regard to the Organization.
+ 
+Article 12 : Data collection, monitoring and evaluation
+1. The Contracting Parties shall carry out monitoring and evaluation programmes and
+activities, if necessary in cooperation or consultation with competent regional and
+international organizations, in accordance with annex III to this Protocol.
+2. The Contracting Parties shall cooperate and collaborate, if necessary with competent
+regional, subregional and international organizations, to establish comparable national
+monitoring and analytical quality control programmes to promote storage, retrieval and
+exchange of data and information.
+3. Each Contracting Party shall establish or designate a national focal institution to
+coordinate data collection, monitoring and evaluation programmes and activities under this
+article and, consistent with article 15 of the Convention, to form the nucleus of a regional
+network of national research centres and institutes. The nucleus of the regional network of
+national research centres and institutes shall assist in setting standards for data collection,
+monitoring, evaluation and information exchange.
+ 
+Article 13 : Environmental impact assessment and environmental audit
+1. Each Contracting Party shall establish by law or other binding procedure, requirements for
+environmental impact assessment or evaluation on the possible direct, indirect, immediate,
+long term, cumulative or transboundary effect of the programmes, projects and activities
+being planned or undertaken, as appropriate, that are likely to pollute or degrade the marine
+or coastal environment of the Protocol area.
+2. Each Contracting Party shall provide for, by law, regular and systematic environmental
+audits for continuing or existing development programmes, projects and activities with actual
+or potential polluting or degrading impact on the marine and coastal environment of the
+Protocol area.
+3. The Contracting Parties shall develop technical and other guidelines concerning the
+environmental assessment or environmental audit of the potential or actual environmental
+impacts of development programmes, projects and activities referred to in paragraphs 1 and
+2 of this article, including the possible transboundary effects, and where feasible, appropriate
+restorative measures. The environmental assessment or environmental audit guidelines
+contemplated in this paragraph may as appropriate contain, among other things, matters
+contained in annex IV to this Protocol.
+4. Where the development programme, project or activity contemplated under this article
+has transboundary effects, the Contracting Parties may seek the assistance of the
+Organization.
+ 
+Article 14 : Scientific and technological cooperation, technical assistance and
+capacity building
+1. Each Contracting Party shall, in conformity with article 15 of the Convention, cooperate in
+scientific and technological fields related to pollution from land based sources and activities,
+particularly research on inputs, pathways and effects of pollutants and on the development of
+new methods for their treatment, reduction or elimination. To this end, the Contracting
+Parties shall, in particular, endeavour to:
+a. exchange scientific and technical information;
+a. coordinate their research programmes of a common nature; and
+a. develop relevant scientific and technical capacities.
+2. Each Contracting Party shall, directly or with the assistance of the Organization or other
+competent regional and international organizations, cooperate with a view to formulating and
+implementing programmes of assistance, particularly in the fields of training of scientific and
+technical personnel, acquisition, use, maintenance and production of appropriate equipment
+and facilities for the purpose of prevention, reduction, mitigation or to the maximum extent
+possible elimination, of pollution or degradation from land based sources and activities.
+ 
+Article 15 : Public participation, educational and awareness programmes
+1. Each Contracting Party shall enhance, facilitate and promote, to the widest possible
+extent, public access to relevant information and documentation concerning pollution and
+degradation of the Protocol area from land based sources and activities, in addition to the
+opportunity for public participation in decision making processes concerning the
+implementation of this Protocol.
+2. Each Contracting Party shall provi de access to judicial and administrative proceedings,
+including redress and remedy, for members of the public who are aggrieved by failure to
+allow them access to information or participation in the decision making processes provided
+for under paragraph 1 of this article.
+3. Each Contracting Party shall develop and implement, if necessary in cooperation with
+other Contracting Parties, competent regional and international organizations, programmes
+and activities on environmental education and awareness for the public concerning or related
+to the need to prevent, reduce, control, mitigate or eliminate pollution or degradation of the
+Protocol area from land based sources and activities, and shall, to this end, promote the
+training of individuals and the development of awareness materials in the most appropriate
+manner.
+4. Each Contracting Party shall encourage the participation of local communities and civil
+society in the process of making decisions that affect the marine and coastal environment or
+human livelihoods.
+5. Each Contracting Party shall make available to civil society and local communities
+information on the status of the marine and coastal environment of the Protocol area and on
+the measures adopted or about to be adopted to prevent, control, reduce, mitigate and
+remedy the adverse effects from land based sources and activities, including the
+effectiveness of such measures.
+ 
+Article 16 : Reporting, exchange of and access to information
+1. Each Contracting Party shall, every two years, and in accordance with article 24 of the
+Convention, submit regular reports to the Organization containing information or
+measures adopted, results obtained and any difficulties experienced in the
+implementation of this Protocol.
+1. The Contracting Parties at their regular meetings shall determine the nature of the
+information to be included and the collection, presentation and timing of the reports
+that shall be made available to the public with the exception of information deemed or
+classified as confidential under paragraph 5 of this article. The Organization shall
+circulate the reports received under this paragraph to all Contracting Parties.
+1. The reports contemplated under paragraph 1 of this article shall include the data and
+information described under article 12 of the Convention and annex III to this Protocol,
+and particularly:
+1. to the extent possible, data on the quantities of priority substances discharged from the
+territory of the respective Contracting Party;
+1. data resulting from monitoring programmes and activities under this Protocol;
+1. information on legal and regulatory measures, programmes, action plans and other
+steps taken for the implementation of this Protocol and other recommendations or
+actions adopted thereunder;
+1. information on results achieved in the prevention, control, reduction or elimination, as
+appropriate, of any hot spots and sensitive areas in the territory of the respective
+Contracting Party;
+1. information on priority substances and activities altering or destroying the coastline or
+habitats within marine and coastal areas and related watersheds; and
+1. information on general results achieved and, as the case may be, difficulties
+encountered in the implementation of this Protocol.
+1. The Organization shall, based on the information and reports provided by the
+Contracting Parties as described in paragraphs 1, 2 and 3 of this article, prepare and
+disseminate periodic reports on the general implementation of this Protocol, including
+on the state of the marine and coastal environment and baseline data from the most
+current and updated assessments.
+1. Where a Contracting Party designates a report, data or information or part thereof as
+confidential, the same shall be used in such a manner as to ensure its confidentiality.
+Nothing in this Protocol shall require a Contracting Party to provide information the
+disclosure of which is contrary to the interests of its security.
+1. Each Contracting Party shall, directly or through the Organization, regularly exchange
+information with other Contracting Parties and, in this regard, develop systems and
+networks for the exchange of information to facilitate implementation of this Protocol.
+1. Each Contracting Party shall facilitate public access to information concerning conditions
+of the marine and coastal environment of the Protocol area, measures undertaken or
+planned to be undertaken to prevent, control, reduce, mitigate or eliminate, to the
+maximum extent possible, pollution or degradation, taking into account existing
+regional and international agreements concerning public access to environmental
+information.
+ 
+Part IV: Institutional and financial arrangements
+Article 17 : Secretariat and coordination mechanisms
+The Contracting Parties shall, consistent with article 17 of the Convention, designate the
+Organization to carry out the following secretariat functions, among others:
+(a) to convene and service meetings of the Contracting Parties;
+(b) to assist in raising funds for the implementation of this Protocol;
+(c) to provide such guidance and assistance to national focal points, national focal
+institutions or research institutions, any committee, group or task force established under
+this Protocol or by the Contracting Parties;
+(d) to formulate draft procedures and mechanisms necessary to assess and promote
+compliance with and enforcement of the Protocol under article 10 of this Protocol for
+consideration by the Contracting Parties;
+(e) to formulate draft recommendations or common guidelines, standards and criteria under
+article 11 of this Protocol for consideration by the Contracting Parties;
+(f) to provide appropriate assistance as may be identified by the Contracting Parties to
+facilitate the:
+(g) development and implementation of plans, programmes and measures necessary to
+achieve the objectives of this Protocol, including the development of procedures and
+mechanisms for compliance and enforcement;
+(h) development of incentive programmes to encourage the Contracting Parties to implement
+this Protocol;
+(i) development of information systems and networks for exchange of information for
+purposes of facilitating the implementation of this Protocol; and
+(j) development and implementation of environmental education, training and public
+awareness and participation programmes and activities, including cooperative educational
+and training materials designed for various groups.
+(k) to prepare common formats as directed by the Contracting Parties to be used as a basis
+for reports and other communication to the Organization;
+(l) to establish, maintain and update databases on national, subregional and regional
+measures adopted for the implementation of this Protocol, including any other pertinent
+information;
+(m) to compile and make available to the Contracting Parties and other relevant parties,
+including upon request by the Contracting Parties, reports and studies that may be required
+for the implementation of this Protocol;
+(n) to prepare, for meetings of Contracting Parties, regular reports that shall include a draft
+budget for the forthcoming annual, biannual or other period together with an audited
+revenue and expenditure statement for the preceding annual, biannual or other period as
+may be agreed by the Contracting Parties;
+(o) to enter into any administrative and financial arrangements as may be required for the
+effective discharge of Secretariat functions;
+(p) to assist Contracting Parties, in cooperation with competent regional and international
+intergovernmental and non governmental organizations, to establish and manage
+programmes and activities on the prevention, control, reduction, mitigation or elimination to
+the maximum extent possible, of pollution or degradation from land based sources and
+activities in the Protocol area;
+(q) to undertake programmes of technical, scientific and management research, and prepare
+management plans;
+(r) to convene, coordinate and organize meetings of national focal points and provide the
+said focal points with secretariat services;
+(s) to cooperate with regional, international, intergovernmental and non governmental
+organizations concerned with the prevention, control, reduction, mitigation or elimination of
+pollution or degradation of the marine and coastal environment of the Protocol area from
+land based sources and activities, provided that the specificity of each organization and the
+need to avoid the duplication of activities and roles are respected; And
+(t) to perform all other functions as specified under article 17, paragraph 1, and article 18 of
+the Convention; anto carry out any other functions assigned to the secretariat by the
+Contracting Parties.
+ 
+Article 18 : Meetings of the Contracting Parties
+1. Ordinary meetings of the Contracting Parties to this Protocol shall be held in conjunction
+with ordinary meetings of the Contracting Parties to the Convention held pursuant to article
+18 of the Convention.
+2. The Contracting Parties to this Protocol may hold extraordinary meetings provided for in
+paragraph 3 of article 18 of the Convention.
+3. The meetings of the Contracting Parties to this Protocol shall:
+(a) consider the efficacy of the measures adopted and examine the need for other measures
+in conformity with the provisions of this Protocol;
+(b) adopt, review and amend as required any annex in accordance with article 21 of this
+Protocol;
+(c) consider the recommendations of meetings of national focal points as established under
+article 19 of this Protocol;
+(d) consider, as appropriate, information transmitted by Contracting Parties to the
+Organization under article 16 of this Protocol and article 24 of the Convention; and
+(e) perform all other functions and exercise such powers as specified under article 18 of the
+Convention as appropriate.
+ 
+Article 19 : National focal points
+1. Each Contracting Party shall designate a national focal point or points, consistent with
+those appointed under the Convention, to liaise with the Organization on technical, scientific
+and legal aspects under this Protocol.
+2. The national focal points shall communicate regularly and meet periodically to carry out
+the functions deriving from this Protocol.
+ 
+Article 20 : Financial arrangements
+1. Each Contracting Party shall, taking into account its capabilities and in accordance with its
+obligations under article 22 of the Convention, ensure that adequate or substantial financial
+resources are available for the formulation, coordination and implementation of programmes,
+projects, measures and activities necessary to achieve the objectives of this Protocol,
+including the operating budget of the Secretariat.
+2. The financial resources may include voluntary contributions for the achievement of specific
+objectives of this Protocol made by the Contracting Parties, other Governments or
+government agencies, international organizations, non governmental organizations, the
+private sector and individuals.
+3. In particular, each Contracting Party shall:
+(a) promote and facilitate the mobilization of substantial financial resources, including
+national budgetary allocations, grants and concessional loans from bilateral and multilateral
+funding sources and mechanisms;
+(b) commit and raise sufficient domestic and external financial resources based on both
+assessed and voluntary contributions, grants, donations and loans; and
+(c) explore innovative methods and incentives for mobilizing and channelling resources,
+including those of foundations, non governmental organizations and other private sector
+entities.
+4. In addition to the financial contributions by the Contracting Parties provided for under this
+article, the Organization may, in response to a request from any or all the Contracting Parties
+or on its own motion, seek additional funds or other forms of assistance for activities related
+to this Protocol, including voluntary contributions for the achievement of specific objectives
+of this Protocol made by the Contracting Parties, other governments and government
+agencies, international organizations, non governmental organizations, private sector entities
+and individuals.
+5. For funding purposes, each Contracting Party shall endeavour to prioritize national
+policies, strategies, plans, programmes, measures and activities related to this Protocol.
+ 
+Part V: Final provisions
+Article 21 : Annexes
+1. The provisions as to adoption, amendment, status and relationship of annexes as set out
+in article 21 of the Convention shall apply mutatis mutandis to the annexes to this Protocol.
+2. The Contracting Parties may, in an evolutionary and progressive manner, develop such
+additional annexes as they deem appropriate and the provisions of article 21 of the
+Convention shall apply mutatis mutandis.
+ 
+Article 22 : Settlement of disputes
+The provisions of article 25 of the Convention regarding the settlement of disputes shall
+apply mutatis mutandis to this Protocol.
+ 
+Article 23 : Relationship between this Protocol and the Convention
+1. The provisions of article 26 of the Convention relating to its relationship with protocols
+shall apply with regard to this Protocol.
+2. The rules of procedure and the financial rules adopted pursuant to article 22 of the
+Convention shall apply to this Protocol, unless the Contracting Parties to this Protocol agree
+otherwise.
+ 
+Article 24 : Relationship between this Protocol, domestic legislation and third
+parties
+1. The provisions of this Protocol shall not affect the rights of Contracting Parties to enact
+relevant domestic legislation or take measures for the better implementation of this Protocol.
+2. The Contracting Parties may invite non Contracting Parties to this Protocol, regional and
+international, intergovernmental and non governmental organizations to cooperate in the
+implementation of this Protocol.
+3. The Contracting Parties shall adopt appropriate measures, consistent with international
+law, to ensure that no person or entity engages in any activity that is inconsistent with,
+contrary or prejudicial to the objectives, principles or purposes of this Protocol.
+
+ 
+Article 25 : Sovereignty claims and rights
+1. Nothing in this Protocol or any act adopted on the basis of this Protocol shall prejudice the
+rights, the present and future claims or legal views of any State relating to the law of the
+sea, in particular, the 1982 United Nations Convention on the Law of the Sea, concerning the
+nature and the extent of marine areas, the delimitation of marine areas between States with
+opposite or adjacent coasts, freedom of navigation on the high seas, the right and the
+modalities of passage through straits used for international navigation and the right of
+innocent passage in territorial seas, together with the nature and extent of jurisdiction of the
+coastal State, island or archipelagic States, flag States and port States.
+2. No act undertaken on the basis of this Protocol shall constitute grounds for claiming,
+contending or disputing any claim to national sovereignty or jurisdiction.
+ 
+Article 26 : Signature, ratification, accession, amendments, depositary and entry
+into force
+1. This Protocol shall be open for signature from the first day of April 2010 to the first day of
+April 2011 by any Contracting Party to the Convention.
+2. This Protocol shall be open for accession by any non Contracting Party to the Convention
+or organization contemplated by article 29 of the Convention, and in accordance with the
+provisions of article 31 of the Convention, provided that such acceding State or organization
+has been duly invited by the Organization upon prior approval by the Contracting Parties.
+3. The provisions of the Convention concerning ratification, acceptance, approval,
+amendments, review, depositary, withdrawal and entry into force shall apply mutatis
+mutandis to this Protocol.
+ 
+IN WITNESS WHEREOF the undersigned, being duly authorized by their respective
+Governments, have signed this Protocol.
+DONE AT Nairobi, Kenya on this first day of April two thousand and ten in a single copy of
+the English and French languages, the two texts being equally authentic.
+ANNEX I: Best Available Techniques and Best Environmental Practice
+In accordance with article 5 (1) of this Protocol, the Contracting Parties shall use or promote
+the application of the following Best Available Techniques (BAT) and Best Environmental
+Practice (BEP).
+A. Best Available Techniques
+1. The use of the best available techniques shall emphasize the use of non waste technology,
+if available.
+2. In determining whether a set of processes, facilities and methods of operation constitute
+the best available techniques in general or specific cases, special consideration shall be given
+to:
+(a) comparable processes, facilities or methods of operation that have recently been
+successfully applied;
+(b) technological advances and changes in scientific knowledge and understanding;
+(c) economic feasibility of such techniques;
+(d) time limits for installation in both new and existing plants;
+(e) nature and volume of the discharges and emissions concerned; and
+(f) precautionary principle.
+3. If the reduction of waste discharges and emissions resulting from the use of best available
+techniques does not lead to environmentally acceptable results, additional measures should
+be applied.
+B. Best Environmental Practice
+1. In making a selection for individual cases, at least the following graduated range of
+measures should be considered:
+(a) provision of information and education to the public and to users about the
+environmental consequences of a choice of particular activities or products, their use and
+ultimate disposal;
+(b) development and application of codes of good environmental practice that cover all
+aspects of the activity in the product’s life;
+(c) mandatory application of labels informing users of environmental risks related to a
+product, its use and ultimate disposal;
+(d) conservation of resources, including energy;
+(e) making collection and disposal systems available to the public;
+(f) avoiding the use of hazardous substances or products and the generation of hazardous
+waste;
+(g) recycling, recovery and reuse;
+(h) application of economic instruments to activities, products or groups of products; and
+(i) establishing a system of licensing, involving a range of restrictions or a ban.
+2. In determining what combination of measures constitute best environmental practice, in
+general or individual cases, particular consideration should be given to:
+(a) environmental hazard of the product and its production, use and ultimate disposal;
+(b) substitution by less polluting activities or substances;
+(c) scale of use;
+(d) potential environmental benefit or cost of substitute materials or activities;
+(e) advances and changes in scientific knowledge and understanding;
+(f) time limits for implementation;
+(g) social and economic implications; and
+(h) precautionary principle.
+3. Best environmental practice for a particular source may change with time in the light of
+technological advances, economic and social factors, together with changes in scientific
+knowledge and understanding.
+4. If the reduction of inputs resulting from the use of best environmental practice does not
+lead to environmentally acceptable results, additional measures may be applied and best
+environmental practice redefined.
+ANNEX II
+Priority substances and activities
+1. The Contracting Parties shall base measures contemplated in articles 5–7 of this Protocol
+on the priority substances and activities listed under items 3–5 of this annex.
+2. Priority substances and activities shall be determined by assessing the relative importance
+of impacts upon public health, marine and coastal resources, ecosystem health, social and
+economic benefits including cultural values.
+A. Categories of priority substances
+3. In the preparation of action programmes, plans and measures, the Contracting Parties
+shall use as guidance the following categories of substances identified on the basis of their
+hazardousness or other harmful characteristics:
+(a) organohalogen compounds and substances that may form such compounds in the marine
+and coastal environment. Priority will be accorded to aldrin, chlordane, DDT, dieldrin, dioxins
+and furans, endrin, heptachlor, hexachlorobenzene, mirex, polychlorinated biphenyls and
+toxaphene;
+(b) organophosphorus compounds and substances that may form such compounds in the
+marine and coastal environment;
+(c) organometallic compounds and substances that may form such compounds in the marine
+and coastal environment;
+(d) polycyclic aromatic hydrocarbons;
+(e) heavy metals and their compounds;
+(f) used lubricating oils;
+(g) radioactive substances;
+(h) biocides and their derivatives;
+(i) pathogenic micro organisms;
+(j) endocrine disrupting substances;
+(k) crude oils and hydrocarbons of petroleum origin;
+(l) cyanides and fluorides;
+(m) non biodegradable detergents and other non biodegradable surface active substances;
+(n) nitrogen and phosphorus compounds and other substances that may cause
+eutrophication;
+(o) litter (including any persistent manufactured or processed solid material that is
+discarded, disposed of, or abandoned in the marine and coastal environment);
+(p) thermal emissions;
+(q) acid or alkaline compounds that may impair water quality;
+(r) non toxic substances that have an adverse effect on the oxygen content of the marine
+and coastal environment;
+(s) non toxic substances that may interfere with any legitimate use of the sea;
+(t) non toxic substances that may have adverse effects on the physical or chemical
+characteristics of seawater;
+(u) other substances that may be assessed, including lindane, endosulfan, atrazine, organic
+tin compounds, organic mercury compounds, chlorinated paraffins and polybrominated
+diphenyl ethers;
+(v) substances that are only moderately persistent but that have been continuously released
+in large quantities; and
+(w) any other substances regulated under the Basel Convention on the Control of
+Transboundary Movements of Hazardous Wastes and their Disposal, Bamako Convention on
+the Ban on the Import into Africa and the Control of Transboundary Movement and
+Management of Hazardous Wastes within Africa, the Stockholm Convention on Persistent
+Organic Pollutants and the Rotterdam Convention on the Prior Informed Consent Procedure
+for Certain Hazardous Chemicals and Pesticides in International Trade.
+B. Characteristics of substances
+4. In the preparation of programmes, action plans and measures, the Contracting Parties
+shall take into account, where relevant, the following characteristics and factors:
+(a) persistence;
+(b) toxicity or other noxious properties (e.g., carcinogenicity, mutagenicity or
+teratogenicity);
+(c) bioaccumulation;
+(d) radioactivity;
+(e) ratio between observed concentrations and no observed effect concentrations;
+(f) potential for causing eutrophication;
+(g) health effects and risks;
+(h) transboundary significance;
+(i) risk of undesirable changes in the marine ecosystem and irreversibility or durability of
+effects;
+(j) negative impacts on marine life and the sustainable use of living resources or another
+legitimate uses of the sea;
+(k) effects on the taste or smell of marine products intended for human consumption;
+(l) effects on the smell, colour, transparency or other characteristics of seawater; and
+(m) dstribution pattern (i.e., quantities involved, use patterns and probability of reaching the
+marine environment).
+C. Priority activities
+5. The following activities and their associated facilities or components shall be considered
+when setting priorities for the preparation of action programmes, plans and measures:
+(a) agriculture;
+(b) animal husbandry;
+(c) aquaculture and mariculture;
+(d) automobile industry and automobile workshops activities;
+(e) beverages industry;
+(f) cement production;
+(g) disposal of sewage;
+(h) waste management activities;
+(i) incineration of waste and management of its residues;
+(j) management of municipal solid waste;
+(k) dredging;
+(l) electrical and electronics industry;
+(m) energy production;
+(n) fertilizer production;
+(o) food processing;
+(p) extraction of forest products;
+(q) paper and paper pulp industry;
+(r) wood and timber products industry;
+(s) leather tanning industry;
+(t) metal industry;
+(u) mining including sand and gravel extraction;
+(v) petroleum refining;
+(w) oil exploration and exploitation;
+(x) petroleum and gas pipelines;
+(y) pharmaceutical industry;
+(z) production and formulation of biocides;
+(aa) other sectors and activities of the inorganic and organic chemical industry;
+(bb) ports and harbour development and operations;
+(cc) recycling industry;
+(dd) rubber and plastic industry;
+(ee) shipbuilding and repairing industry;
+(ff) iron and steel industry;
+(gg) textile industry;
+(hh) tourism;
+(ii) transport; and
+(jj) other works or activities that cause physical alteration of the natural state of the
+coastline or destruction of habitats.
+ANNEX III
+Data collection, monitoring and evaluation
+In accordance with article 12 of this Protocol, the Contracting Parties shall carry out
+monitoring programmes and evaluation activities as follows:
+(a) collect data on the conditions and features of the marine and coastal environment of the
+Protocol area as regards its physical, biological and chemical characteristics;
+(b) collect data, prepare and regularly maintain an inventory of inputs of priority substances
+and activities including information on distribution of sources and activities and the quantities
+and qualities of such substances and activities introduced into the marine and coastal
+environment;
+(c) systematically assess the levels of pollution or other degradation in the internal and
+territorial waters of the Contracting Parties, in particular with regard to substances that may
+have a potentially significant impact on the marine and coastal environment and, in this
+respect, periodically report to the Organization;
+(d) systematically assess the state of the marine and coastal environment;
+(e) evaluate the effectiveness of action plans, authorizations, measures and activities
+adopted and implemented to prevent, reduce, control, mitigate or eliminate to the maximum
+extent possible, pollution or degradation of the marine and coastal environment from land
+based sources and activities;
+(f) develop measurable indicators to assess the effectiveness of the measures under
+paragraphs (c)–(e) of this annex; and
+(g) evaluate the effectiveness of any other measures taken to meet the various
+environmental objectives set out in this Protocol.
+ANNEX IV Environment Impact Assessments, Evaluation and Audit Guidelines
+1. In accordance with article 13 of this Protocol, the Contracting Parties shall develop
+technical and other guidelines concerning environmental impact assessments, evaluations
+and audits that should include the following:
+(a) description of the geographical location of development activities, programmes and
+projects ;
+(b) description of the initial ecological state of the marine environment and the coastal areas
+that may be affected by development programmes, projects and activities;
+(c) indication of the nature, aim and scope of development programmes, projects and
+activities;
+(d) description of the methods, installations and other means to be used or being used;
+(e) description of the foreseeable direct and indirect long term and short term effects of the
+activities on the marine and/or coastal environment, including biological diversity;
+(f) statement setting out the measures proposed to reduce or mitigate to the minimum the
+risk of pollution or degradation as a result of development programmes, projects and
+activities, and in addition, possible process, pollution and degradation abatement
+alternatives, including restorative measures, where feasible;
+(g) indication of measures to be taken, or being taken for the protection or restoration of the
+marine and/or coastal environment from pollution or degradation during and throughout the
+life cycle of development programmes, projects and activities;
+(h) description of commitments to continuing environmental management and monitoring
+activities;
+(i) cost benefit analysis as appropriate; and
+(j) brief summary of the environmental assessment, evaluation or audit, as appropriate.
+2. Each Contracting Party shall exchange data and information with all Contracting Parties on
+reports and results of environmental assessments, evaluations or audits with a view to
+enabling the Contracting Party or Parties that may be affected by the environmental impacts
+of the development activity, programme, project or activity and consult with the Contracting
+Party concerned.
+
+
