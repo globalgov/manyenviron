@@ -341,7 +341,7 @@ misstxt <- c("ADDTNR_1979P2", "AGO-EC[PFW]_1999P", "ARG-URY[HHS]_1987A",
              "RUS-USA[HSA]_1968E:RUS-USA[HSA]_1967A", "SEN-EC[CFP]_2002A",
              "SI05SC_2007P", "SYC-EC[CPF]_2011P", "TC10FC_2005A", "TUR-ALG[MAF]_1999A")
 i <- 0
-for(i in 1:37){
+for(i in 1:length(misstxt)){
   HUGGO9[which(HUGGO9$manyID == misstxt[i]), 47] <- 0
 }
 
@@ -426,11 +426,9 @@ HUGGO_new <- HUGGO_new %>%
                   Depository, DepositoryURL, Published, Website1,
                   Website2, Secretariat, SecretariatURL, UNEP, Supersedes,
                   References, EnabledBy, AmendedBy, Lit, Data, Coded) %>%
-  arrange(Beg)
+  dplyr::arrange(Beg)
 
 # Step two: Clean duplicate rows
-HUGGO_back <- HUGGO_new
-HUGGO_new <- HUGGO_back
 
 # First row NA remove
 HUGGO_new <- HUGGO_new[-(which(is.na(HUGGO_new$manyID))), ]
@@ -614,12 +612,14 @@ HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & !is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 
-# Standardise date columns
-HUGGO_new <- HUGGO_new %>%
+# Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
+HUGGO <- HUGGO_new %>%
               dplyr::mutate(Beg = messydates::as_messydate(Beg),
               Signature = messydates::as_messydate(Signature),
               Force = messydates::as_messydate(Force),
-              End = messydates::as_messydate(End))
+              End = messydates::as_messydate(End)) %>%
+              dplyr::arrange(Beg)
+              
 
 # Arrange by Beg date
 HUGGO_new <- arrange(HUGGO_new)
