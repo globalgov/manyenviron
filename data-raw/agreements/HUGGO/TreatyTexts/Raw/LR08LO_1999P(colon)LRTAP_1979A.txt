@@ -220,7 +220,7 @@ and any amendments thereto.
 volatile organic compounds contributing to acidification, eutrophication or
 ozone formation in areas under the jurisdiction of one or more other Parties
 originate predominantly from within an area under its jurisdiction that is
-listed as  a PEMA  in annex III, and which has presented documentation in
+listed asa PEMAin annex III, and which has presented documentation in
 accordance with subparagraph (c) to this effect;
 (c) Which has submitted upon signature, ratification, acceptance or
 approval of, or accession to, the present Protocol a description of the
@@ -232,12 +232,12 @@ accordance with this paragraph.
 10. A Party to which this paragraph applies shall:
 (a) If within the geographical scope of EMEP, be required to comply with
 the provisions of this article and annex II only within the relevant PEMA for
-each pollutant for which a PEMA within its jurisdiction is included in annex
+each pollutant for whicha PEMAwithin its jurisdiction is included in annex
 III; or
 (b) If not within the geographical scope of EMEP, be required to comply
 with the provisions of paragraphs 1, 2, 3, 5, 6 and 7 and annex II, only
 within the relevant PEMA for each pollutant (nitrogen oxides, sulphur and/or
-volatile organic compounds) for which a PEMA within its jurisdiction is
+volatile organic compounds) for whicha PEMAwithin its jurisdiction is
 included in annex III, and shall not be required to comply with paragraph 8
 anywhere within its jurisdiction.
 11. Canada and the United States of America shall, upon their ratification,
@@ -751,8 +751,8 @@ b/ Figures apply to the European part within the EMEP area.
 c/ Upon ratification, acceptance or approval of, or accession to, the
 present Protocol, the United States of America shall provide for inclusion in
 this annex: (a) specific emission reduction measures applicable to mobile and
-stationary sources of sulphur to be applied either nationally or within  a PEMA 
-if it has submitted a PEMA for sulphur for inclusion in annex III; (b) a value
+stationary sources of sulphur to be applied either nationally or within a PEMA
+if it has submitteda PEMAfor sulphur for inclusion in annex III; (b) a value
 for total estimated sulphur emission levels for 1990, either national or for
 the PEMA; (c) an indicative value for total sulphur emission levels for 2010,
 either national or for the PEMA; and (d) associated estimates of the
@@ -769,7 +769,7 @@ c/ Upon ratification, acceptance or approval of, or accession to, the
 present Protocol, the United States of America shall provide for inclusion in
 this annex: (a) specific emission reduction measures applicable to mobile and
 stationary sources of nitrogen oxides to be applied either nationally or
-within a PEMA if it has submitted a PEMA for nitrogen oxides for inclusion in
+withina PEMAif it has submitteda PEMAfor nitrogen oxides for inclusion in
 annex III; (b) a value for total estimated nitrogen oxide emission levels for
 1990, either national or for the PEMA; (c) an indicative value for total
 nitrogen oxide emission levels for 2010, either national or for the PEMA; and
@@ -789,7 +789,7 @@ c_/ Upon ratification, acceptance or approval of, or accession to, the
 present Protocol, the United States of America shall provide for inclusion in
 this annex: (a) specific emission reduction measures applicable to mobile and
 stationary sources of volatile organic compounds to be applied either
-nationally or within a PEMA if it has submitted a PEMA for volatile organic
+nationally or withina PEMAif it has submitteda PEMAfor volatile organic
 compounds for inclusion in annex III; (b) a value for total estimated volatile
 organic compound emission levels for 1990, either national or for the PEMA;
 (c) an indicative value for total volatile organic compound emission levels
