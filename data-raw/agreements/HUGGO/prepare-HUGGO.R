@@ -305,12 +305,10 @@ HUGGO$Changes <- NA
 HUGGO_or <- manyenviron::agreements$HUGGO
 
 # Load data frame with verified metadata (of treaties present in HUGGO)
-HUGGO7 <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv", sep = ";", 
-                   na.strings = "#N/D")
+HUGGO7 <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
 
 # Load data frame with verified metadata (of treaties not present in HUGGO)
-HUGGO8 <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv", sep = ";", 
-                   na.strings = "#N/D")
+HUGGO8 <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv")
 
 # Create one data frame
 HUGGO9 <- rbind(HUGGO7, HUGGO8)
