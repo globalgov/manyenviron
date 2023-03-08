@@ -27,11 +27,11 @@ The two Contracting Parties shall elaborate, in mutual agreement, a programme of
 common actions in veterinary field, focused on imports and exports of Jive animals and
 products of animal origin from the territory of the state of one Contracting Party to the
 other. This programme shall include-
-(a) Setting of targets goals and time schedule·
-(b) approval and implementation of common activities·
-(c) Contracting Parties responsibilities for individual phases of common activities·
-(d) verification measures and evaluation of the activities·
-(e) release of information on the outcome of common activities.
+(a) Setting of targets goals and time schedule
+(b) approval and implementation of common activities
+(c) Contracting Parties responsibilities for individual phases of common activities
+(d) verification measures and evaluation of the activities
+(e) release of information on the outcome of common activities
 ARTICLE III
 The two Contracting Parties agree with the support of the following common activities:
 (a) Issue of veterinary certificates for live animals, products of animal origin and feed
@@ -41,7 +41,7 @@ Parties,
 (b) prevention, treatment and combating the diseases that are the subject matter of
 common priorities and interest,
 (c) regular, long term and useful exchange of information through statistical bulletins
-on ill animals, hit by diseases listed on «A» and «B» lists of the International
+on ill animals, hit by diseases listed on <<A>> and <<B>> lists of the International
 Epizootics Office, (O.1.E.),
 181
 (d) exchange of specific information on sanitary standpoints with stress being laid on
@@ -61,9 +61,9 @@ regulations.
 ARTICLE IV
 The two Contracting Parties shall inform each other without delay about cases of diseases
 on territories of their states, whose official notification considers the International Epizootic
-Office as mandatory and which are listed on the «A» list of this Office and of the diseases and
+Office as mandatory and which are listed on the <<A>> list of this Office and of the diseases and
 mass infections mutually agreed upon by the two Contracting Parties.
-In the case of occurrence of a disease listed on the «A» list of the International Epizootic
+In the case of occurrence of a disease listed on the <<A>> list of the International Epizootic
 Office, (O.1.E.), geographical details will be announced together with epidemic points of view
 on the disease spread, the type of virus in the case of foot and mouth disease, as well as
 measures adopted to eradicate the disease, especially measures concerning export.
@@ -92,7 +92,7 @@ ARTICLE IX
 the agreement shall be:
 182
 From the side of Cyprus the Department of Veterinary Service of the Ministry of
-Agriculture, Natural Resources and Environment of the Republic of Cyprus·
+Agriculture, Natural Resources and Environment of the Republic of Cyprus
 from the Czech side the State Veterinary Administration of the Czech Republic.
 2. In case of need, the representatives of the Contracting Parties shall hold meetings
 alternatively on the territory of the Czech Republic and of the Republic of Cyprus in

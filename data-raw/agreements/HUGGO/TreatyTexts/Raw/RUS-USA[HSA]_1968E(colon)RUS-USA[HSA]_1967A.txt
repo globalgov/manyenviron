@@ -70,26 +70,26 @@ of the United States of America in the following areas bounded by straight lines
 connecting the coordinates in the order listed:
 a. during the period from November 15 to May 15
 North Latitude West Longitude
-40°40'55" 72°40'00"
-40°34'31" 72°40'00"
-  40°33'28" 72°43'44"
-40°39'48" 72°43'44"
+40 &#186;40'55" 72 &#186;40'00"
+40 &#186;34'31" 72 &#186;40'00"
+  40 &#186;33'28" 72 &#186;43'44"
+40 &#186;39'48" 72 &#186;43'44"
 b. during the period from September 15 to May 15
 North Latitude West Longitude
-39°38'05" 74°02'06"
-  39°35'06" 73°55'24"
-39°32'30" 73°57'18"
-39°35'30" 74°04'00"
+39 &#186;38'05" 74 &#186;02'06"
+  39 &#186;35'06" 73 &#186;55'24"
+39 &#186;32'30" 73 &#186;57'18"
+39 &#186;35'30" 74 &#186;04'00"
   5. Fishing vessels of the Union of Soviet Socialist Republics may fish during
   the period from January 1 to April 1, within the nine-mile fishery zone contiguous
   to the territorial sea of the United States of America, in the waters bounded by
   straight lines connecting the following coordinates in the order listed:
     North Latitude West Longitude
-  40°40'55" 72°40'00"
-40°34'31" 72°40'00"
-40°32'41" 72°46'26"
-  40°32'32" 72°53'26"
-40°36'54" 72°53'26"
+  40 &#186;40'55" 72 &#186;40'00"
+40 &#186;34'31" 72 &#186;40'00"
+40 &#186;32'41" 72 &#186;46'26"
+  40 &#186;32'32" 72 &#186;53'26"
+40 &#186;36'54" 72 &#186;53'26"
 6. Each Government will, within the scope of its domestic laws and regulations,
 facilitate entry into appropriate ports for fishing and fishery research vessels of the
 other Government. This shall apply with respect to the procedure for presenting

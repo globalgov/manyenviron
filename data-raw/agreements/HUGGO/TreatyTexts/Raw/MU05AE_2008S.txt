@@ -44,20 +44,20 @@ restore, manage and monitor birds of prey.
 HAVE DECIDED as follows:
 Scope and Definitions
 1. For the purpose of this Memorandum of Understanding:
-a) “Birds of Prey” means migratory populations of Falconiformes and Strigiformes
+a) "Birds of Prey" means migratory populations of Falconiformes and Strigiformes
 species occurring in Africa and Eurasia, listed in Annex 1 of this Memorandum of
 Understanding;
-b) “Africa and Eurasia” means Range States and territories listed in Annex 2 of this
+b) "Africa and Eurasia" means Range States and territories listed in Annex 2 of this
 Memorandum of Understanding;
-c) “Conservation” means the protection and management, including sustainable use of
+c) "Conservation" means the protection and management, including sustainable use of
 birds of prey and their habitats, in accordance with the objectives and principles of this
 Memorandum of Understanding;
-d) “Convention” means the Convention on the Conservation of Migratory Species of
+d) "Convention" means the Convention on the Conservation of Migratory Species of
 Wild Animals, signed at Bonn on 23 June 1979;
-e) “Signatory” means a Signatory to this Memorandum of Understanding in accordance
+e) "Signatory" means a Signatory to this Memorandum of Understanding in accordance
 with Paragraph 23 below;
-f) “Secretariat” means the Secretariat of the Convention; and
-g) “Action Plan” means the Action Plan for the Conservation of African-Eurasian
+f) "Secretariat" means the Secretariat of the Convention; and
+g) "Action Plan" means the Action Plan for the Conservation of African-Eurasian
 Migratory birds of prey contained in Annex 3.
 In addition, the terms defined in Article I, sub-paragraphs 1 (a) to (i), of the Convention shall
 have the same meaning, mutatis mutandis, in this Memorandum of Understanding.
@@ -128,7 +128,7 @@ address of that contact point to the Coordinating unit once established. Before 
 establishment of the Coordinating Unit such duties will be undertaken by an Interim
 Coordinating Unit designated by the Secretariat.
 11. An Interim Coordinating Unit will be established, in collaboration with the authorities
-of the Environment Agency – Abu Dhabi, immediately after the conclusion of this
+of the Environment Agency - Abu Dhabi, immediately after the conclusion of this
 Memorandum of Understanding. The Interim Coordinating Unit will operate until the
 establishment of a permanent Coordinating Unit under paragraph 16, and carry out similar
 functions.
@@ -370,7 +370,7 @@ on them and the measures that are needed to alleviate them; and, sharing
 information between Signatories and other Range States;
 h. Conducting research on species ecology and migratory behaviour, including
 analysing available data in order to describe flyway boundaries and migratory
-patterns, and routes, at the level of species’ populations; and
+patterns, and routes, at the level of species' populations; and
 i. Building capacity for conservation actions (in relevant institutions and local
 communities) by developing knowledge and monitoring of birds of prey.
 5. Implementation Framework

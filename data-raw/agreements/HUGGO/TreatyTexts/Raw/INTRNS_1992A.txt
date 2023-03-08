@@ -6,9 +6,9 @@ referred to as this Agreement), in the light of the terms of
 resolution 93 (IV) adopted by the United Nations Conference on Trade and
 Development, ares
 (a) To ensure enhanced international cooperation in connection with
-world sugar matters and related issues»
+world sugar matters and related issues>>
 (b) To provide a forum for intergovernmental consultations on sugar and
-on ways to improve the world sugar economy»
+on ways to improve the world sugar economy>>
 (c) To facilitate trade by collecting and providing information on the
 world sugar market and other sweeteners>
 (d) To encourage increased demand for sugar, particularly for
@@ -18,34 +18,34 @@ Article 2
 Definitions
 For -the purpose of this Agreements
 1*  "Organization " means the International Sugar Organization referred to in
-article 3»
+article 3>>
 2.  "Council " means the International Sugar Council referred*to in article 3,
-paragraph 3»
-3.  "Member " means a Party to this Agreement»
+paragraph 3>>
+3.  "Member " means a Party to this Agreement>>
 4.  "special vote " means a vote requiring at least two thirds of the votes
 cast by Members present and voting, on condition that these votes are
-cast by at least two thirds of the number of Members present and voting»
+cast by at least two thirds of the number of Members present and voting>>
 5.  "simple majority vote " means a vote requiring more than half of the total
 votes of Members present and voting, on condition that these votes are
-cast by at least half of the number of Members present and voting»
-6.  "year " means the calendar year»
+cast by at least half of the number of Members present and voting>>
+6.  "year " means the calendar year>>
 7.  "sugar " means sugar in any of its recognized commercial forms derived
 from sugar cane or sugar beet, including edible and fancy molasses,
 syrups and any other form of liquid sugar, but does not include final
 molasses or low-grade types of non-centrifugal sugar produced by
-primitive methods»
+primitive methods>>
 8.  "entry into force " means the date on which this Agreement enters into
-force provisionally or definitively, as provided for in article 40»
+force provisionally or definitively, as provided for in article 40>>
 9.  "free market " means the total of net imports of the world market, except
 those resulting from the operation of special arrangements as defined in
-chapter IX of the International Sugar Agreement, 1977»
+chapter IX of the International Sugar Agreement, 1977>>
 10.  "world market " means the international sugar market and includes both
 sugar traded on the free market and sugar traded under special
 arrangements as defined in chapter IX of the International Sugar
 Agreement, 1977.
 CHAPTER III. INTERNATIONAL SUGAR ORGANIZATION
 Article 3
-Continuation» headquarters and structure of the
+Continuation>> headquarters and structure of the
 International Sugar Organization
 1. The International Sugar Organization established under the International
 Sugar Agreement, 1968, and maintained in existence under the International
@@ -69,7 +69,7 @@ particular commodity agreements. Accordingly, any reference in this Agreement
 to signature, ratification, acceptance or approval, or to notification of
 provisional application or to accession shall, in the case of such
 intergovernmental organizations, be construed as including a reference to
-signature, ratification, acceptance» or approval, or to notification of
+signature, ratification, acceptance>> or approval, or to notification of
 provisional application, or to accession, by such intergovernmental
 organizations.
 Article 6
@@ -111,7 +111,7 @@ CHAPTER IV. INTERNATIONAL SUGAR COUNCIL
 Article 7
 Composition of the International Sugar Council
 1. The highest authority of the Organization shall be the International
-Sugar Council» which shall consist of all the Members of the Organization.
+Sugar Council>> which shall consist of all the Members of the Organization.
 2. Each Member shall have one representative in the Council, and if it so
 desires, one or more alternates. Furthermore, a Member may appoint one or
 more advisers to its representatives or alternates.
@@ -326,7 +326,7 @@ Committee the exercise of any or all of its powers, other than the followingi
 (a) Location of the headquarters of the Organization under article 3,
 paragraph 2j
 (b) Appointment of the Executive Director and any senior official under
-article 23»
+article 23>>
 (c) Adoption of the administrative budget and assessment of
 contributions under article 25y
 (d) Any request to the Secretary-General of the United Nations
@@ -347,7 +347,7 @@ reported to the Council.
 conditions as the Council may prescribe in its rules of procedure, against any
 decision of the Administrative Committee.
 Article 22
-Quorum for thé Administrative Committee
+Quorum for the Administrative Committee
 The quorum for any meeting of the Administrative Committee shall be the
 presence of more than half of all members of the Committee, the members thus
 present representing at least two thirds of the total votes of all members of
@@ -384,9 +384,9 @@ Expenses
 1. The expenses of delegations to the Council, the Administrative Committee
 or any of the committees of the Council or of the Administrative Committee
 shall be met by the Members concerned.
-2. The expenses necessary for thé administration of this Agreement shall be
+2. The expenses necessary for the administration of this Agreement shall be
 met by annual contributions from Members, assessed in accordance with
-article 25. If, however» a Member requests special services, the Council may
+article 25. If, however>> a Member requests special services, the Council may
 require that Member to pay for them.
 3. Appropriate accounts shall be kept for the administration of this
 Agreement.
@@ -456,7 +456,7 @@ exceed 1.33 multiplied by that Member's votes in 1992 under the
 International Sugar Agreement, 1987, and in 1994 shall not exceed 1.66
 multiplied by that Member's votes in 1992 under the International Sugar
 Agreement, 1987.
-(с) For the purpose of establishing the contribution per vote, votes not
+(c) For the purpose of establishing the contribution per vote, votes not
 taken up due to the application of paragraph 6 (b) above shall not be
 redistributed to other Members. Hence, the contribution per vote will be
 determined on the basis of the reduced number of overall votes.
@@ -472,11 +472,11 @@ of this article.
 calculated by multiplying the per vote contribution by the number of votes
 held by it under this article, as follows:
 (a) For those which are Members at the time of the final adoption of the
-administrative budget, the number of votes which they then hold» and
+administrative budget, the number of votes which they then hold>> and
 (b) For those which become Members after the adoption of the
 administrative budget, the number of votes which they receive at the time
 of taking up membership, adjusted in proportion to the remainder of the
-period covered by the budget or budgets » assessments made upon other
+period covered by the budget or budgets >> assessments made upon other
 Members shall not be altered.
 10. If this Agreement enters into force more than eight months before the
 beginning of its first full year, the Council shall at its first session adopt
@@ -566,7 +566,7 @@ normally twice a year. In its review, the Committee shall take account of all
 relevant information gathered by the Organization pursuant to article 32.
 3. The Committee shall undertake work in the following areass
 (a) Preparation of sugar statistics and statistical analysis of sugar
-production, consumption, stocks, international trade and prices»
+production, consumption, stocks, international trade and prices>>
 (b) Analysis of market behaviour and factors which affect it, with
 special reference to participation of developing countries in world trader
 (c) Analysis of demand for sugar, including the effects of the use of
@@ -581,7 +581,7 @@ Article 34
 Research and development
 In order to achieve the objectives set out in article 1, the Council may
 assist both in scientific research and development in the sugar economy and in
-the dissemination of the results obtained in this field. To this end» the
+the dissemination of the results obtained in this field. To this end>> the
 Council may cooperate with international organizations and research
 institutions on condition that no additional financial obligations are
 incurred by the Council.
@@ -605,7 +605,7 @@ This Agreement shall be open for signature at the United Nations
 Headquarters from 1 May until 31 December 1992 by any Government invited to
 the United Nations Sugar Conference, 1992.
 Article 38
-Ratification» acceptance and approval
+Ratification>> acceptance and approval
 1. This Agreement shall be subject to ratification, acceptance or approval
 by the signatory Governments in accordance with their respective
 constitutional procedures.
@@ -707,7 +707,7 @@ decides to extend for such Member the period fixed for acceptance. Such
 Member shall not be bound by the amendment before it has notified its
 acceptance thereof.
 Article 45
-Duration» extension and termination
+Duration>> extension and termination
 1. This Agreement shall remain in force until 31 December 1995, .unless
 extended under paragraph 2 of this article or terminated earlier under
 paragraph 3 of this article.
@@ -734,7 +734,7 @@ year, those consequences shall have the same effect under this Agreement as if
 the provisions of the 1987 Agreement had continued in effect for those
 purposes.
 2. The administrative budget of the Organization for 1993 shall be
-provisionally approved by the Council under the International Sugar Agreement»
+provisionally approved by the Council under the International Sugar Agreement>>
 1987, at its last regular session in 1992, subject to final approval by the
 Council under this Agreement at its first session in 1993.
 IN WITNESS WHEREOF the undersigned, being duly authorized thereto, have

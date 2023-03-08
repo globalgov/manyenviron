@@ -105,7 +105,7 @@ of export who arranges for hazardous wastes or other wastes to
 be exported;
 11. \"Generator\" means any person whose activity produces
 hazardous wastes or other wastes or, if that person is not
-known, the person who is in possession and/01· control of those
+known, the person who is in possession and control of those
 wastes;
 12. \"Disposer\" means any person to whom hazardous wastes or
 other wastes are shipped and who carries out the disposal of
@@ -353,7 +353,7 @@ of hazardous wastes and other wastes in contravention of this
 Protocol and of general provisions of international law shall be
 deemed to be illegal traffic.
 2. In case of a transboundary movement of hazardous wastes or
-other · wastes deemed to be illegal traffic as the result of conduct
+other wastes deemed to be illegal traffic as the result of conduct
 on the part of the exporter or generator, the State of export
 shall ensure that the wastes in question are:
 a) taken back by the exporter or the generator or, if necessary,
@@ -371,7 +371,7 @@ conduct on the part of the importer or disposer, the State of
 import shall ensure that the wastes in question are disposed of
 in an environmentally sound manner by the importer or
 disposer or, if necessary, by itself within 30 days from the time
-the illegal tr􀩼c has come to the attention of the State of import
+the illegal traffic has come to the attention of the State of import
 or such other period of time the States concerned may agree.
 To this end, the States concerned shall co-operate, as necessary,
 in the disposal of the wastes in an environmentally sound
@@ -583,7 +583,7 @@ containing solids in solution or suspension (for example, paints,
 varnishes, lacquers, etc., but not including substances or wastes
 otherwise classified on account of their dangerous characteristics)
 which give off a flammable vapour at temperatures of not more than
-60.5ºC, closed-cup test, or not more than 65.6ºC, open-cup test.
+60.5C, closed-cup test, or not more than 65.6C, open-cup test.
 (Since the results of open-cup tests and of closed-cup tests are not
 strictly comparable and even individual results by the same test are
 often. variable, regulations varying from the above figures to make
@@ -636,11 +636,11 @@ bioaccumulation and/or toxic effects upon biotic systems.
 e.g., leachate, which possesses any of the characteristics listed above .
 Tests
 The potential hazards posed by certain types of wastes are not yet fully
-documented;· tests to define quantitatively these hazards do not exist. Further research
+documented; tests to define quantitatively these hazards do not exist. Further research
 is necessary in order to develop means to characterize potential hazards posed to man
 and/or the environment by these wastes. Standardized tests have been derived with
 respect to pure substances and materials. Many countries have developed national
-tests ·which can be applied to materials listed in Annex 1, in order to decide if these
+tests which can be applied to materials listed in Annex 1, in order to decide if these
 materials exhibit any of the characteristics listed in this Annex.
 ANNEX IV
 Disposal operations
@@ -660,7 +660,7 @@ D6 Release into a water body .except seas/oceans
 D7 Release into seas/oceans including sea-bed insertion
 D8 Biological treatment not specified elsewhere in this Annex which results in
 final compounds or mixtures which are discarded . by means of any of the
-operations ·in Section A
+operations in Section A
 D9 Physico chemical treatment not specified elsewhere in this Annex which
 results in final compounds or mixtures which are discarded by means of any of
 the operations in Section A, (e.g., evaporation, drying, calcination,
@@ -686,7 +686,7 @@ R5 Recycling/reclamation of other inorganic materials
 R6 Regeneration of acids or bases
 R7 Recovery of components used for pollution abatement
 R8 Recovery of components from catalysts
-R9 Used oil re􀈡refining or other reuses of previously used oil
+R9 Used oil rerefining or other reuses of previously used oil
 R1O Land treatment resulting in benefit to agriculture or ecological improvement
 R11 Uses of residual materials obtained from any of the operations numbered R1-R10
 R12 Exchange of wastes for submission to any of the operations numbered R1-R11
@@ -715,7 +715,7 @@ requirements including emergency provisions in case of accidents
 14. Type of packaging envisaged (e.g. bulk, drowned, tanker)
 15 . Estimated quantity in weight/volume 6/
 16. Process by which the waste is generated. 7/
-17. For wastes · listed in Annex I, classifications from Annex Ill: hazardous
+17. For wastes listed in Annex I, classifications from Annex Ill: hazardous
 characteristic, H number, and UN class
 18. Method of disposal as per Annex IV
 19. Declaration by the generator and exporter that the information is correct

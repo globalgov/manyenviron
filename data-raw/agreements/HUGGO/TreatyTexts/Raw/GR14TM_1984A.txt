@@ -3,7 +3,7 @@ REPUBLIC OF PORTUGAL, THE PEOPLE'S REPUBLIC OF MOZAMBIQUE
 AND THE REPUBLIC OF SOUTH AFRICA
 RELATIVE TO THE CAHORA BASSA PROJECT
 DONE AT CAPE TOWN, 2 MAY 1984
-The Government of the Republic of Portugal, the Government of the of People's Republic of Mozambique and the Government of the Republic of South Africa (hereinafter called “the Parties”):
+The Government of the Republic of Portugal, the Government of the of People's Republic of Mozambique and the Government of the Republic of South Africa (hereinafter called "the Parties"):
 Recalling that an agreement was entered into on 19 September 1969 between the Government of Portugal and the Government of the Republic of South Africa concerning the establishment and operation of a hydro-electric scheme, known as the Cahora Bassa project, for the generation and supply of electricity for use within the territories of Mozambique and South Africa and possibly other countries;
 Recognizing that conditions have changed considerably since the conclusion of the said agreement which consequently no longer reflects the realities of the situation in the region of Southern Africa;
 Considering that the continued generation and supply of electricity from the Cahora Bassa project can significantly contribute to the peace and prosperity of the region as a whole, as well as to the economic development and welfare of their respective peoples and countries;
@@ -11,17 +11,17 @@ Desiring therefor to enter into a tripartite agreement which will take account o
 have agreed as follows:
 Article 1 - Use of terms
 In this Agreement, unless inconsistent with the context:
-“Apollo” means Escom's distribution station established on the farm Witkoppies No. 105 district of Pretoria.
-“Cahora Bassa project” means:
+"Apollo" means Escom's distribution station established on the farm Witkoppies No. 105 district of Pretoria.
+"Cahora Bassa project" means:
 (i) The conservation dam and works erected on the river Zambesi at the site known as
-Cahora Bassa at 15°35' South and 32°42' East approximately, within the territory of Mozambique;
+Cahora Bassa at 15&#186;35' South and 32&#186;42' East approximately, within the territory of Mozambique;
 (ii) The hydro-electric power station that has been erected on the south bank of the river
 and the required ancillary works erected for the purposes of the generation and supply of electricity in terms of the supply contract;
 (iii) The transmission system erected for the purposes of transmitting electricity from
 Cahora Bassa and delivering the same to Escom at Apollo distribution station, including the converter equipment, transformers and ancillary equipment installed for this purpose at Cahora Bassa and Apollo.
-“Date of operation” means the date upon which the contractual maximum demand is delivered by HCB for the first time in accordance with the provisions of the supply contract.
-“Escom” means the Electricity Supply Commission contemplated in the Electricity Act, 1958, of the Republic of South Africa.
-“Force majeure” means:
+"Date of operation" means the date upon which the contractual maximum demand is delivered by HCB for the first time in accordance with the provisions of the supply contract.
+"Escom" means the Electricity Supply Commission contemplated in the Electricity Act, 1958, of the Republic of South Africa.
+"Force majeure" means:
 (i) Any overwhelming occurrence of nature which could not reasonably have been
 foreseen or guarded against;
 (ii) Any of the following occurrences initiated by human agency: war, invasion,
@@ -30,9 +30,9 @@ blockade, foreign hostile act, civil war, rebellion, revolution, insurrection or
 the unreasonable conduct of a Party, HCB or Escom;
 (iv) Any other cause beyond the control of a Party, HCB or Escom if the Parties agree
 that such cause should be regarded as force majeure.
-“HCB” means the “Hidroeléctrica de Cahora Bassa”, S.A.R.L., a limited liability joint-stock company duly constituted in accordance with the laws of Mozambique on 23 June 1975.
-“Previous agreement” means the agreement entered into on 19 September 1969 between the Governments of the Republic of Portugal and the Republic of South Africa relative to the Cahora Bassa project.
-“Supply contract” means the contract entered into between HCB and Escom regulating the supply of power from the Cahora Bassa project to Escom and matters related thereto.
+"HCB" means the "Hidroelectrica de Cahora Bassa", S.A.R.L., a limited liability joint-stock company duly constituted in accordance with the laws of Mozambique on 23 June 1975.
+"Previous agreement" means the agreement entered into on 19 September 1969 between the Governments of the Republic of Portugal and the Republic of South Africa relative to the Cahora Bassa project.
+"Supply contract" means the contract entered into between HCB and Escom regulating the supply of power from the Cahora Bassa project to Escom and matters related thereto.
 Article 2 - Termination of certain existing arrangements
 1. As between the Government of the Republic of Portugal and the Government of the Republic of South Africa, the provisions of this Agreement shall from the date of its operation terminate and replace the provisions of the previous agreement, subject however to the provisions of article 4 of this Agreement.
 2. As between the Government of the Republic of Portugal and Escom, the provisions of the supply contract shall from the date of its operation terminate and replace the provisions of the supply contract entered into between them on 19 September 1969.
@@ -85,8 +85,8 @@ Article 17 - Duration and termination of agreement
 In witness whereof the undersigned being duly aurhorized thereto, have in the names of their respective Governments signed and sealed three copies of this Agreement in each of the Portuguese and English languages, each version being equally authentic.
 Thus done and signed at Cape Town on this the 2nd day of May 1984.
 For the Government of the Republic of Portugal:
-Jaime José Matos da Gama, Minister of Foreign Affairs.
+Jaime Jose Matos da Gama, Minister of Foreign Affairs.
 For the Government of the People's Republic of Mozambique:
-Mário da Graça Machungo, Minister of Planing.
+Mario da Graca Machungo, Minister of Planing.
 For the Government of the Republic of South Africa:
 Roelof Frederik Botha, Minister of Foreign Affairs.

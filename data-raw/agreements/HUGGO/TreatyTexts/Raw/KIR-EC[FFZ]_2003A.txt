@@ -6,7 +6,7 @@ THE EUROPEAN COMMUNITY, hereinafter referred to as "the Community", and
 
 THE REPUBLIC OF KIRIBATI, hereinafter referred to as "Kiribati",
 
-CONSIDERING, on the one hand, the spirit of cooperation resulting from the Lomé and Cotonou Conventions and, on the other, the good cooperation relations between the Community and Kiribati,
+CONSIDERING, on the one hand, the spirit of cooperation resulting from the Lome and Cotonou Conventions and, on the other, the good cooperation relations between the Community and Kiribati,
 
 CONSIDERING the wish of Kiribati to promote the rational exploitation of its fishery resources by means of intensified cooperation,
 
@@ -16,7 +16,7 @@ TAKING INTO ACCOUNT the United Nations Convention on the Law of the Sea,
 
 AFFIRMING THAT the exercise of sovereign rights by coastal States in waters under their jurisdiction for the purpose of exploiting, conserving and managing living resources must be conducted in accordance with principles of international law,
 
-DETERMINED TO conduct their relations in a spirit of mutual trust and respect for each other's interests in the sphere of sea fishing as enshrined in the Lomé and Cotonou Conventions,
+DETERMINED TO conduct their relations in a spirit of mutual trust and respect for each other's interests in the sphere of sea fishing as enshrined in the Lome and Cotonou Conventions,
 
 DESIROUS OF establishing the terms and the conditions governing fishing activities of common interest to both Parties,
 
@@ -60,7 +60,7 @@ The vessels authorised under the terms of this Agreement to fish within the Kiri
 
 Article 7
 
-In return for the fishing opportunities granted under Article 2, the Community shall make a financial contribution to the Republic of Kiribati in accordance with the conditions and procedures set out in the Protocol attached to this Agreement, without prejudice to financing accorded to Kiribati under the Lomé and Cotonou Conventions.
+In return for the fishing opportunities granted under Article 2, the Community shall make a financial contribution to the Republic of Kiribati in accordance with the conditions and procedures set out in the Protocol attached to this Agreement, without prejudice to financing accorded to Kiribati under the Lome and Cotonou Conventions.
 
 Article 8
 
@@ -214,7 +214,7 @@ The shipowner shall nominate, appoint and maintain an agent who shall be residen
 
 1. Captains of purse seine vessels and long-liners shall complete a catch report (log-sheet) corresponding respectively to the specimens provided in Appendix III B and III B for each period spent fishing within the Kiribati fishing zone.
 
-2. The report, which must be legible and signed by the captain of the vessel, shall be sent not later than 45 days after the completion of the fishing trip to the Chief Fisheries Officer and, for processing, to the Institut de recherche pour le développement (IRD) or to the Instituto Español de Océanografia (IEO) or to the Instituto Português de Investigação Marítima (IPIMAR) and to the Secretariat of the Pacific Community (SPC).
+2. The report, which must be legible and signed by the captain of the vessel, shall be sent not later than 45 days after the completion of the fishing trip to the Chief Fisheries Officer and, for processing, to the Institut de recherche pour le developpement (IRD) or to the Instituto Espanol de Oceanografia (IEO) or to the Instituto Portugues de Investigacao Maritima (IPIMAR) and to the Secretariat of the Pacific Community (SPC).
 
 3. A fishing trip ends when there is total or partial unloading of catches.
 

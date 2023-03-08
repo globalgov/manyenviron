@@ -6,21 +6,21 @@ Article 1
 
 Period of application and fishing opportunities
 
-1.   Kiribati shall grant annual fishing licences to Community tuna fishing vessels pursuant to Article 6 of the Agreement within the limits established by the Palau Arrangement for the Management of the Western Pacific Purse Seine Fishery, hereinafter referred to as ‘the Palau Arrangement’.
+1.   Kiribati shall grant annual fishing licences to Community tuna fishing vessels pursuant to Article 6 of the Agreement within the limits established by the Palau Arrangement for the Management of the Western Pacific Purse Seine Fishery, hereinafter referred to as 'the Palau Arrangement'.
 
 2.   For a period of six years starting on 16 September 2006, the fishing opportunities granted under Article 5 of the Agreement shall be as follows:
 
 Highly migratory species (species listed in Annex 1 to the 1982 United Nations Convention)
 
-—
+-
 
 purse seine vessels: 4 vessels,
 
-—
+-
 
 longliners: 12 vessels.
 
-3.   Starting from the second year of application of the Protocol and without prejudice to Articles 9(d) of the Agreement and 4 of the Protocol, at the request of the Community, the number of fishing licences for purse seine vessels granted in Article 1(2) of the Protocol may be increased, if resources permit and in accordance with the Palau Arrangement yearly limitations and with an appropriate tuna stock assessment based on objective and scientific criteria, including the ‘Western and Central Pacific Tuna Fishery Overview and Status of Stocks’ published yearly by the Secretariat of the Pacific Community.
+3.   Starting from the second year of application of the Protocol and without prejudice to Articles 9(d) of the Agreement and 4 of the Protocol, at the request of the Community, the number of fishing licences for purse seine vessels granted in Article 1(2) of the Protocol may be increased, if resources permit and in accordance with the Palau Arrangement yearly limitations and with an appropriate tuna stock assessment based on objective and scientific criteria, including the 'Western and Central Pacific Tuna Fishery Overview and Status of Stocks' published yearly by the Secretariat of the Pacific Community.
 
 4.   Paragraph 1, 2 and 3 shall apply subject to Articles 4 and 5 of this Protocol.
 
@@ -28,7 +28,7 @@ longliners: 12 vessels.
 
 Article 2
 
-Financial contribution — Methods of payment
+Financial contribution - Methods of payment
 
 1.   The financial contribution referred to in Article 7 of the Agreement shall comprise, for the period referred to in Article 1, an annual amount of EUR 416 000 equivalent to a reference tonnage of 6 400 tonnes per year and a specific amount of EUR 62 400 per year for the support and implementation of initiatives taken in the context of the Kiribati sectoral fisheries policy. This specific amount shall be an integral part of the single financial contribution defined in Article 7 of the Agreement.
 
@@ -48,19 +48,19 @@ Financial contribution — Methods of payment
 
 Article 3
 
-Cooperation on responsible fishing — Annual scientific meeting
+Cooperation on responsible fishing - Annual scientific meeting
 
 1.   The parties hereby undertake to promote responsible fishing in Kiribati waters on the basis of the principles laid down in the FAO's Code of Conduct for responsible fisheries and the principle of non-discrimination between the different fleets fishing in those waters.
 
 2.   During the period covered by this Protocol, the Community and the Kiribati authorities shall monitor the state of resources in the Kiribati fishing zone.
 
-3.   In accordance with Article 4 of the Agreement, the parties, based on the conclusions of the annual meeting of the members to the ‘Palau Arrangement’ and on the yearly assessment of stocks done by the Secretariat of the Pacific Community, shall consult each other within the Joint Committee provided for in Article 9 where appropriate after a scientific meeting. Kiribati may, in agreement with the Community, take measures to ensure the sustainable management of fisheries resources concerning the activities of Community vessels.
+3.   In accordance with Article 4 of the Agreement, the parties, based on the conclusions of the annual meeting of the members to the 'Palau Arrangement' and on the yearly assessment of stocks done by the Secretariat of the Pacific Community, shall consult each other within the Joint Committee provided for in Article 9 where appropriate after a scientific meeting. Kiribati may, in agreement with the Community, take measures to ensure the sustainable management of fisheries resources concerning the activities of Community vessels.
 
 Article 4
 
 Review of fishing opportunities by mutual agreement
 
-1.   The fishing opportunities referred to in Article 1 may be increased by mutual agreement provided that the conclusions of the annual meeting of the ‘Palau Arrangement’ members and the annual review of the status of stocks made by the Secretariat of the Pacific Community confirm that such an increase will not endanger the sustainable management of Kiribati resources. In this case the financial contribution referred to in Article 2(1) shall be increased proportionately and pro rata temporis.
+1.   The fishing opportunities referred to in Article 1 may be increased by mutual agreement provided that the conclusions of the annual meeting of the 'Palau Arrangement' members and the annual review of the status of stocks made by the Secretariat of the Pacific Community confirm that such an increase will not endanger the sustainable management of Kiribati resources. In this case the financial contribution referred to in Article 2(1) shall be increased proportionately and pro rata temporis.
 
 However, the total amount of the financial contribution paid by the European Community shall not be more than twice the amount indicated in Article 2(1). Where the quantities caught by Community vessels exceed twice the quantities corresponding to the adjusted total annual amount, the amount due for the quantity exceeding that limit shall be paid the following year.
 
@@ -120,7 +120,7 @@ criteria and procedures for evaluating the results obtained each year.
 
 Article 8
 
-Disputes — suspension of application of the Protocol
+Disputes - suspension of application of the Protocol
 
 1.   Any dispute between the parties over the interpretation of this Protocol or its application shall be the subject of consultations between the parties within the Joint Committee provided for in Article 9 of the Agreement, in a special meeting if necessary.
 
@@ -198,7 +198,7 @@ Licences
 
 1.   Only eligible vessels may obtain a licence to fish in the Kiribati fishing zone under the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Kiribati for the period from the date that the agreement enters into force to 15 September 2012.
 
-2.   For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Kiribati. They must be in order vis-à-vis the Kiribati authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in Kiribati under fisheries agreements concluded with the Community.
+2.   For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Kiribati. They must be in order vis-a-vis the Kiribati authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in Kiribati under fisheries agreements concluded with the Community.
 
 3.   All Community vessels applying for a fishing licence may be represented by an agent resident in Kiribati. The name and address of that agent shall be stated in the licence application. However, any vessel applying for a fishing licence which provides for unloading or transhipment in a Kiribati port must be represented by an agent resident in Kiribati.
 
@@ -208,11 +208,11 @@ Licences
 
 6.   All licence applications shall be accompanied by the following documents:
 
-—
+-
 
 proof of payment of the fee for the period of validity of the licence,
 
-—
+-
 
 any other documents or certificates required under the specific rules applicable to the type of vessel concerned pursuant to this Protocol.
 
@@ -244,15 +244,15 @@ Validity and fees
 
 3.   Licences shall be issued once the following standard amounts have been paid to the competent national authorities:
 
-—
+-
 
 EUR 21 000 per tuna seiner equivalent to the fees due for 600 tonnes of highly migratory species and associated species caught per year,
 
-—
+-
 
 EUR 4 200 per surface longliner equivalent to the fees due for 120 tonnes of highly migratory species and associated species caught per year.
 
-4.   The final statement of the fees due for year n shall be drawn up by the Commission of the European Communities by 30 June of the year n + 1 at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Développement (IRD), the Instituto Español de Oceanografía (IE), the Instituto de Investigação das Pescas e do Mar (IPIMAR) and by the Secretariat of the Pacific community (SPC).
+4.   The final statement of the fees due for year n shall be drawn up by the Commission of the European Communities by 30 June of the year n + 1 at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Developpement (IRD), the Instituto Espanol de Oceanografia (IE), the Instituto de Investigacao das Pescas e do Mar (IPIMAR) and by the Secretariat of the Pacific community (SPC).
 
 5.   The statement shall simultaneously be notified to the Ministry responsible for fisheries in Kiribati and the shipowners for checking and approval. The Kiribati authorities may, on the basis of duly justified arguments within no more than 30 working days of the date of transmission, contest the statement. In the event of disagreement, the Joint Committee shall be consulted. If no objection is made in the given deadline the statement shall be accepted.
 
@@ -268,11 +268,11 @@ FISHING ZONES
 
 2.   In any case, fishing shall not be permitted in the following areas:
 
-—
+-
 
 within the 12 nautical miles from the base lines,
 
-—
+-
 
 within three nautical miles of any anchored fish-aggregating device for which notification of its location shall be given by geographical coordinates.
 
@@ -284,23 +284,23 @@ CATCH REPORTING ARRANGEMENTS AND LANDINGS DECLARATIONS
 
 1.   Captains shall provide the Director of Fisheries with information relating to the time, position of, and catch on board of the licensed fishing vessel in the manner as described in Appendix IV by fax or e-mail on the following occasions:
 
-—
+-
 
 at least 24 hours prior to entering the Kiribati fishing zone and immediately upon departure from the fishing zone,
 
-—
+-
 
 every Tuesday while within the Kiribati fishing zone after the entry report or the last weekly report,
 
-—
+-
 
 at least 48 hours prior to the estimated time of entry into any port of Kiribati and immediately upon port departure,
 
-—
+-
 
 immediately after transhipping the catch to a licensed reefer carrier, and
 
-—
+-
 
 at least 24 hours prior to refuelling from a licensed bunkering vessel.
 
@@ -310,29 +310,29 @@ This information should be communicated by facsimile (686) 211 20/222 87 or e-ma
 
 During an annual period of validity of the licence declarations shall include the catches made by the vessel during each trip in the WCPFC area. A new trip starts as from each transhipment or landing of catches in the WCPFC area.
 
-3.1.   Vessels shall declare their catches on the corresponding sheet in the logsheet, in accordance with the specimen in Appendix III A and III B. The words ‘Outside Kiribati EEZ’ or the name of the corresponding EEZ of another relevant coastal State in the WCPFC area shall be entered in the abovementioned logbook in respect of periods during which the vessel is not in Kiribati waters.
+3.1.   Vessels shall declare their catches on the corresponding sheet in the logsheet, in accordance with the specimen in Appendix III A and III B. The words 'Outside Kiribati EEZ' or the name of the corresponding EEZ of another relevant coastal State in the WCPFC area shall be entered in the abovementioned logbook in respect of periods during which the vessel is not in Kiribati waters.
 
 4.   For the purposes of this Annex, the duration of a trip by a Community vessel in Kiribati waters shall be defined as follows:
 
-—
+-
 
 either the period elapsing between entering and leaving the Kiribati fishing zone,
 
-—
+-
 
 or the period elapsing between entering the Kiribati fishing zone and a transhipment,
 
-—
+-
 
 or the period elapsing between entering the Kiribati fishing zone and a landing in Kiribati.
 
 5.   All vessels authorised to fish in Kiribati waters under the Agreement shall be obliged to communicate their catches to the Ministry responsible for fisheries in Kiribati so that it can check the quantities caught, which shall be validated by the competent scientific institutes in accordance with the procedure referred to in paragraph 4 of Section 3 of Chapter I of this Annex. Catches shall be communicated as follows:
 
-—
+-
 
 the original logsheet shall be submitted to the local competent Kiribati authorities or be transmitted by registered mail or courier to the Ministry responsible for fisheries in Kiribati within 45 days following the end of the last trip made during the period. Copies shall be sent at the same time by electronic means or by fax to the flag Member State and the Ministry responsible for fisheries in Kiribati,
 
-—
+-
 
 the forms shall be filled in legibly in block capitals, and signed by the master of the vessel or their legal representative.
 
@@ -348,11 +348,11 @@ EMBARKING SEAMEN
 
 1.   Owners of tuna vessels and surface longliners shall employ ACP nationals, including Kiribati nationals, subject to the following conditions and limits:
 
-—
+-
 
 for the fleet of tuna seiners, at least six ACP seamen shall be signed on during the tuna fishing season in the Kiribati fishing zone,
 
-—
+-
 
 for the fleet of surface longliners, at least four ACP seamen shall be signed on during the fishing season in the Kiribati fishing zone.
 
@@ -384,19 +384,19 @@ CHAPTER VI
 
 OBSERVERS
 
-1.   At the moment of the vessel registration, all Community vessels shall contribute EUR 400 to a ‘Fisheries Observers Project Fund’ to be paid into the Kiribati Government account No 4 in accordance with Article 2(7) of the Protocol, cleared of any deductions.
+1.   At the moment of the vessel registration, all Community vessels shall contribute EUR 400 to a 'Fisheries Observers Project Fund' to be paid into the Kiribati Government account No 4 in accordance with Article 2(7) of the Protocol, cleared of any deductions.
 
 2.   Vessels authorised to fish in Kiribati waters under the Agreement shall take on board observers appointed by the WCPFC on the terms set out below:
 
-—
+-
 
 at the request of the WCPFC Community vessels shall take on board an observer designated by the organisation in order to check catches made in Kiribati waters,
 
-—
+-
 
 the WCPFC shall draw up a list of vessels designated to take an observer on board and a list of the appointed observers. These lists shall be kept up to date. They shall be forwarded to the European Commission as soon as they have been drawn up and every three months thereafter where they have been updated,
 
-—
+-
 
 the WCPFC shall inform the shipowners concerned, or their agents, of the name of the observer appointed to be taken on board their vessel at the time the licence is issued, or no later than 15 days before the observer's planned embarkation date.
 
@@ -414,31 +414,31 @@ the WCPFC shall inform the shipowners concerned, or their agents, of the name of
 
 9.   Observers shall be treated as officers. They shall carry out the following tasks:
 
-—
+-
 
 observe the fishing activities of the vessels,
 
-—
+-
 
 verify the position of vessels engaged in fishing operations,
 
-—
+-
 
 perform biological sampling in the context of scientific programmes,
 
-—
+-
 
 note the fishing gear used,
 
-—
+-
 
 verify the catch data for Kiribati waters recorded in the logbook,
 
-—
+-
 
 verify the percentages of by-catches and estimate the quantity of discards of species of marketable fin-fish,
 
-—
+-
 
 report fishing data by any appropriate means once a week while the vessel is fishing in Kiribati waters, including the quantity of catches and by-catches on board.
 
@@ -448,11 +448,11 @@ report fishing data by any appropriate means once a week while the vessel is fis
 
 12.   While on board, observers shall:
 
-—
+-
 
 take all appropriate steps to ensure that the conditions of their boarding and presence on the vessel neither interrupt nor hamper fishing operations,
 
-—
+-
 
 respect the material and equipment on board and the confidentiality of all documents belonging to the vessel.
 
@@ -472,33 +472,33 @@ MONITORING
 
 2.   Entering and leaving the zone
 
-—
+-
 
 Community vessels shall notify, at least three hours in advance, the Kiribati authorities responsible for fisheries inspection of their intention to enter or leave the Kiribati fishing zone, as described in Appendix IV. They shall also declare the total quantities and the species on board.
 
-—
+-
 
 When notifying leaving, vessels shall also communicate their position. This information should preferably be communicated by fax or, for vessels not equipped with a fax, by radio and by e-mail.
 
-—
+-
 
 Vessels found to be fishing without having informed the competent Kiribati authority shall be regarded as vessels in breach of the legislation.
 
-—
+-
 
 Vessels shall also be informed of the fax and telephone numbers and e-mail address when the fishing licence is issued.
 
 3.   Control procedures
 
-—
+-
 
 Masters of Community fishing vessels engaged in fishing activities in Kiribati waters shall allow and facilitate boarding and the discharge of their duties by any Kiribati official responsible for the inspection and control of fishing activities.
 
-—
+-
 
 These officials shall not remain on board for longer than is necessary for the discharge of their duties.
 
-—
+-
 
 Once the inspection has been completed, a certificate shall be issued to the master of the vessel.
 
@@ -512,73 +512,73 @@ All Community vessels fishing under this Agreement shall be subject to satellite
 
 6.   Boarding
 
-—
+-
 
 The competent Kiribati authorities shall inform the flag State and the European Commission, within no more than 24 hours, of all infringements and penalties imposed on Community vessels in Kiribati waters.
 
-—
+-
 
 The flag State and the European Commission shall at the same time receive a brief report of the circumstances and reasons leading to the boarding during which an infringement was cited.
 
 7.   Statement of boarding
 
-—
+-
 
 After the competent Kiribati authorities have drawn up a statement, the master of the vessel shall sign it.
 
-—
+-
 
 This signature shall not prejudice the rights of the master or any defence which he may make to the alleged infringement.
 
-—
+-
 
 The master shall take the vessel to the port indicated by the Kiribati authorities. In the case of minor infringements, the competent Kiribati authorities may authorise the boarded vessel to continue its fishing activities.
 
 8.   Settlement of boarding
 
-—
+-
 
 Before any judicial procedure, an attempt shall be made to resolve the presumed infringement through a compromise procedure. This procedure shall end no later than five working days after the entry into port pursuant the boarding.
 
-—
+-
 
 In the event of an amicable settlement, the amount of the fine shall be determined in accordance with Kiribati legislation.
 
-—
+-
 
 If the case cannot be settled by amicable procedure and has to be brought before a competent judicial body, a bank security set to take account of the boarding costs and the fines and compensation payable by the parties responsible for the infringement shall be paid by the shipowner into a bank account specified by the competent Kiribati authorities.
 
-—
+-
 
 The bank security shall be irrevocable until the legal proceedings have been concluded. It shall be released once legal proceedings end without a conviction. Similarly, in the event of a conviction leading to a fine of less than the security lodged, the balance shall be released by the competent Kiribati authorities.
 
-—
+-
 
 The vessel shall be released and its crew authorised to leave the port:
 
-—
+-
 
 once the obligations arising under the amicable settlement have been fulfilled, or
 
-—
+-
 
 when the bank security referred in point (c) has been lodged and accepted by the competent Kiribati authorities, pending completion of the legal proceedings.
 
 9.   Transhipment
 
-—
+-
 
 All Community vessels wishing to tranship catches in Kiribati waters shall do so within Kiribati ports.
 
-—
+-
 
 The owners of such vessels must notify the information in accordance with the Appendix IV to the competent Kiribati authorities at least 48 hours in advance:
 
-—
+-
 
 Transhipment shall be considered as an exit from the Kiribati fishing zone. Vessels must therefore submit their logsheets to the competent Kiribati authorities and state whether they intend to continue fishing or leave the Kiribati fishing zone, in accordance with Appendix III A and III B.
 
-—
+-
 
 Any transhipment of catches in the Kiribati fishing zone or not covered above is prohibited in the Kiribati fishing zone. Any person infringing this provision shall be liable to the penalties provided for by Kiribati law.
 
@@ -611,7 +611,7 @@ Protocol (VMS)
 
 Provisions applicable to satellite monitoring of Community fishing vessels operating in the Kiribati EEZ
 
-1.   The provisions of this Protocol supplement the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Kiribati for the period from 16 September 2006 to 15 September 2012 and apply in accordance with point 5 of ‘Chapter VII — Monitoring’ in the Annex thereto.
+1.   The provisions of this Protocol supplement the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Kiribati for the period from 16 September 2006 to 15 September 2012 and apply in accordance with point 5 of 'Chapter VII - Monitoring' in the Annex thereto.
 
 2.   All fishing vessels with an overall length exceeding 15 metres operating under the Fisheries Agreement between the European Community and Kiribati shall be tracked by satellite when fishing in the Kiribati EEZ.
 
@@ -643,19 +643,19 @@ The system shall be fully automatic and operational at all times regardless of e
 
 Masters shall ensure that:
 
-—
+-
 
 data are not altered in any way,
 
-—
+-
 
 the antenna or antennas connected to the satellite-tracking equipment are not obstructed in any way,
 
-—
+-
 
 the power supply of the satellite-tracking equipment is not interrupted in any way, and
 
-—
+-
 
 the satellite-tracking equipment is not removed from the vessel.
 

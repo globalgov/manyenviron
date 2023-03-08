@@ -23,11 +23,11 @@ Being of the view that it is essential to continue and develop the work undertak
 framework of the previous agreements concluded since the 1956 Agreement until the 1986
 Agreement, as amended in 1993, and that it is necessary to negotiate a new updated agreement in the
 light of the changes in the industry,
-Taking into account the provisions of the São Paulo Consensus of the eleventh session of
+Taking into account the provisions of the Sao Paulo Consensus of the eleventh session of
 the United Nations Conference on Trade and Development,
 Have agreed as follows:
 9
-CHAPTER I – GENERAL OBJECTIVES
+CHAPTER I - GENERAL OBJECTIVES
 Article 1
 General objectives
 The general objectives of this Agreement are indicated hereafter:
@@ -85,30 +85,30 @@ therapeutic and other properties of olive oil and table olives;
 point for all the operators in the sector and as a world documentation and information centre
 on the olive tree and its products.
 1 1
-CHAPTER II – DEFINITIONS
+CHAPTER II - DEFINITIONS
 Article 2
 Definitions
 For the purposes of this Agreement:
-1. “International Olive Council” means the international Organization referred to in article 3,
+1. "International Olive Council" means the international Organization referred to in article 3,
 paragraph 1, established for the purpose of applying the provisions of this Agreement;
-2. “Council of Members” means the decision-making organ of the International Olive Council;
-3. “Member” means a Contracting Party to this Agreement;
-4. “Olive oils” means the oils obtained solely from the fruit of the olive tree, to the
+2. "Council of Members" means the decision-making organ of the International Olive Council;
+3. "Member" means a Contracting Party to this Agreement;
+4. "Olive oils" means the oils obtained solely from the fruit of the olive tree, to the
 exclusion of oils obtained by solvent or re-esterification processes and of any mixture with oils
 of other kinds;
-5. “Table olives” means the product prepared from the sound fruits of varieties of the
+5. "Table olives" means the product prepared from the sound fruits of varieties of the
 cultivated olive tree which are chosen for their production of olives particularly suited to curing,
 and which are suitably treated or processed and offered for trade and for final consumption;
-6. “Olive products” means all edible olive products, in particular olive oils, olive-pomace
+6. "Olive products" means all edible olive products, in particular olive oils, olive-pomace
 oils and table olives;
-7. “Olive by-products” means, in particular, the products derived from olive pruning and the
+7. "Olive by-products" means, in particular, the products derived from olive pruning and the
 olive products industry and the products resulting from alternative uses of the products of the
 sector;
-8. “Olive crop year” means the period from 1 October of each year to 30 September of the
+8. "Olive crop year" means the period from 1 October of each year to 30 September of the
 following year.
 1 2
 PART ONE. INSTITUTIONAL PROVISIONS
-CHAPTER III – INTERNATIONAL OLIVE COUNCIL
+CHAPTER III - INTERNATIONAL OLIVE COUNCIL
 SECTION I - ESTABLISHMENT, ORGANS, FUNCTIONS, PRIVILEGES
 AND IMMUNITIES
 Article 3
@@ -251,7 +251,7 @@ converted into their olive oil equivalent by the application of a conversion
 coefficient of 16 per cent
 2. However, no Member shall hold less than five participation shares. For that purpose, if
 the calculation based on paragraph 1 should give a result of less than 5 participation shares for an
-individual Member, that Member’s share shall be increased to five and the participation shares of
+individual Member, that Member's share shall be increased to five and the participation shares of
 the other Members shall be decreased proportionately.
 3. The Council of Members shall, at its annual session, adopt the participation shares
 calculated under this article. Such distribution shall be in force for the following year.
@@ -278,7 +278,7 @@ Council of Members in its Rules of Procedure.
 Any decision so taken shall be communicated to all the Members by the Executive
 Secretariat as quickly as possible and shall be entered in the final report of the following session of
 the Council of Members.
-SECTION III – CHAIRPERSON AND VICE-CHAIRPERSON
+SECTION III - CHAIRPERSON AND VICE-CHAIRPERSON
 Article 10
 Chairperson and Vice-Chairperson
 1. The Council of Members shall elect a Chairperson from among the delegations of the
@@ -300,7 +300,7 @@ The Vice-Chairperson shall replace the Chairperson in the event of his or her ab
 4. In the event of the temporary absence of both the Chairperson and the Vice-Chairperson or
 of the permanent absence of one or both, the Council of Members shall elect new officers, temporary
 or permanent as appropriate, from among the delegations of the Members.
-SECTION IV – COMMITTEES AND SUBCOMMITTEES
+SECTION IV - COMMITTEES AND SUBCOMMITTEES
 1 8
 Article 11
 Financial Committee
@@ -328,7 +328,7 @@ the Council of Members in its Rules of Procedure. Such rules shall:
 (a) ensure the fair allocation of the committee chairs among the different Members;
 (b) establish the provisions governing the admission of observers to the meetings of
 its committees and subcommittees.
-SECTION V – EXECUTIVE SECRETARIAT
+SECTION V - EXECUTIVE SECRETARIAT
 1 9
 Article 13
 Executive Secretariat
@@ -356,7 +356,7 @@ as international officials responsible only to the Council of Members. Members s
 exclusively international character of the responsibilities of the Executive Director, senior officials
 and staff and shall avoid influencing them in the discharge of their responsibilities.
 2 0
-SECTION VI – COOPERATION AND RELATIONSHIP WITH OTHER
+SECTION VI - COOPERATION AND RELATIONSHIP WITH OTHER
 ORGANIZATIONS
 Article 14
 Cooperation with other organizations
@@ -386,7 +386,7 @@ activities and programmes of work, bearing in mind the particular role of UNCTAD
 international commodity trade.
 2 1
 PART TWO. FINANCIAL PROVISIONS
-CHAPTER IV – BUDGETS OF THE INTERNATIONAL OLIVE COUNCIL
+CHAPTER IV - BUDGETS OF THE INTERNATIONAL OLIVE COUNCIL
 Article 15
 Budgets of the International Olive Council
 1. The Council of Members shall adopt the following annual budgets to achieve the general
@@ -495,7 +495,7 @@ to Members in proportion to the total of their participation shares in force at 
 contributions referred to in article 15 (4) (b) and 15 (5) (b) and the donations referred to in article 15
 (5) (c) shall be repaid to the Member or donor concerned.
 PART THREE. ECONOMIC AND STANDARDIZATION PROVISIONS
-CHAPTER V – DESIGNATIONS AND DEFINITIONS OF OLIVE OILS, OLIVEPOMACE
+CHAPTER V - DESIGNATIONS AND DEFINITIONS OF OLIVE OILS, OLIVEPOMACE
 OILS AND TABLE OLIVES. GEOGRAPHICAL INDICATIONS
 Article 20
 Use of the designation  "olive oil "
@@ -620,7 +620,7 @@ characteristics of olive oils, olive-pomace oils and table olives;
 suppression of unfair competition at the international level, including such competition by States
 which are not Parties to this Agreement or by persons who are nationals of such States.
 PART FOUR. TECHNICAL PROVISIONS
-CHAPTER VII – TECHNICAL COOPERATION IN THE OLIVE SECTOR
+CHAPTER VII - TECHNICAL COOPERATION IN THE OLIVE SECTOR
 Article 26
 Programmes and activities
 1. In order to achieve the general objectives set forth in article 1 concerning technical
@@ -658,7 +658,7 @@ table olive processing techniques.
 3. The International Olive Council shall facilitate any technical cooperation enabling
 consultants and experts to be placed at the disposal of the Members requiring such services.
 4. The International Olive Council shall facilitate the participation of the delegations and
-experts of the Members in its general or scientific–technical meetings.
+experts of the Members in its general or scientific-technical meetings.
 5. In particular, the Council of Members shall:
 (a) carry out specific studies and operations;
 (b) convene or foster the holding of international seminars and meetings;
@@ -669,7 +669,7 @@ action within the framework of interregional or regional planning;
 (e) promote such bilateral or multilateral cooperation as may assist the International
 Olive Council in achieving the objectives of this Agreement.
 3 0
-CHAPTER VIII – OTHER MEASURES
+CHAPTER VIII - OTHER MEASURES
 Article 29
 Other measures
 The International Olive Council shall:
@@ -682,7 +682,7 @@ standards connected with the olive sector;
 (c) take whatever measures are appropriate to draw up a compendium of established fair
 trade practices for international trade in olive oil, olive-pomace oil and table olives.
 PART FIVE. PROMOTIONAL PROVISIONS
-CHAPTER IX – WORLD PROMOTION OF THE CONSUMPTION OF OLIVE OIL
+CHAPTER IX - WORLD PROMOTION OF THE CONSUMPTION OF OLIVE OIL
 AND TABLE OLIVES
 Article 30
 Programmes to promote the consumption of olive oil and table olives
@@ -720,7 +720,7 @@ The Council of Members may make provision for the application of the internation
 quality guarantee label ensuring compliance with the international standards of the International
 Olive Council.
 PART SIX. OTHER PROVISIONS
-CHAPTER X – MISCELLANEOUS OBLIGATIONS
+CHAPTER X - MISCELLANEOUS OBLIGATIONS
 Article 32
 General obligations
 The Members undertake not to adopt any measures that conflict with their obligations under
@@ -752,7 +752,7 @@ and in particular any information it requires in order to establish the balances
 oils and table olives and to acquire a knowledge of Members' national policies for olive
 products.
 3 3
-CHAPTER XI – DISPUTES AND COMPLAINTS
+CHAPTER XI - DISPUTES AND COMPLAINTS
 Article 37
 Disputes and complaints
 1. Any dispute which concerns the interpretation or application of this Agreement other than
@@ -774,7 +774,7 @@ the Member's right to participate in decisions of the Council of Members until i
 obligations, or, in accordance with the procedure laid down in article 45, exclude the Member from
 participation in the Agreement. The Member in question shall have the right of recourse in the final
 instance to the International Court of Justice.
-CHAPTER XII – FINAL PROVISIONS
+CHAPTER XII - FINAL PROVISIONS
 Article 38
 Depositary
 The Government of Spain is hereby designated as the depositary of this Agreement.
@@ -910,22 +910,22 @@ French, Italian and Spanish languages being equally authentic.
 ANNEX A
 Participation shares in the budgets of the Organization
 established in accordance with article 8*
-Algeria ……………………………………………………………… 13
-European Community ……………………………………………... 783
-Croatia……………………………………………………………… 5
-Egypt ..……………………………………………………………… 9
-Iran (Islamic Republic of) …………………………………………. 5
-Israel………………………………………………………………… 5
-Libyan Arab Jamahiriya ….………………………………………... 5
-Jordan ………………………………………………………………. 8
-Lebanon …………………………………………………………….. 5
-Morocco…………………………………………………………….. 27
-Montenegro ………………………………………………………… 5
-Syrian Arab Republic ……………………………….……………… 52
-Serbia ………………………………….…………………………… 5
-Tunisia ………………………………………………………………. 73
+Algeria ........................................................................ 13
+European Community ...................................................... 783
+Croatia........................................................................ 5
+Egypt .......................................................................... 9
+Iran (Islamic Republic of) ................................................. 5
+Israel........................................................................... 5
+Libyan Arab Jamahiriya .................................................... 5
+Jordan ......................................................................... 8
+Lebanon ....................................................................... 5
+Morocco....................................................................... 27
+Montenegro .................................................................. 5
+Syrian Arab Republic ....................................................... 52
+Serbia ......................................................................... 5
+Tunisia ......................................................................... 73
 _________
-Total …………………………..…1,000
+Total ...................................1,000
 * Calculations are based on the average production for the period 1999/2000 - 2004/2005 and
 on the average exports for the period 2000-2005.
 3 9

@@ -7,8 +7,8 @@ THE KINGDOM OF SWAZILAND
 FOR CO-OPERATION ON THE PROTECTION AND SUSTAINABLE UTILISATION OF THE WATER RESOURCES OF THE INCOMATI AND
 MAPUTO WATERCOURSES
 PREAMBLE
-The Republic of Mozambique, the Republic of South Africa and the Kingdom of Swaziland (hereinafter jointly referred to as the “Parties”);
-BEARING IN MIND the principles advocated in the Declaration by the Heads of State or Government of Southern African States “Towards the Southern African Development Community” and the Treaty of the Southern African Development Community signed on 17 August 1992 and the Revised Protocol on Shared Watercourses in the Southern African Development Community signed on 7 August 2000;
+The Republic of Mozambique, the Republic of South Africa and the Kingdom of Swaziland (hereinafter jointly referred to as the "Parties");
+BEARING IN MIND the principles advocated in the Declaration by the Heads of State or Government of Southern African States "Towards the Southern African Development Community" and the Treaty of the Southern African Development Community signed on 17 August 1992 and the Revised Protocol on Shared Watercourses in the Southern African Development Community signed on 7 August 2000;
 HAVING RESOLVED to pursue the guidelines established by the Agreement between the Government of the Republic of South Africa and the Government of the Republic of Portugal in regard to Rivers of Mutual Interest and the Cunene River Scheme signed on 13 October 1964, to which the Republic of Mozambique succeeded in 1975 and the Kingdom of Swaziland acceded to in 1967;
 MINDFUL of the spirit of co-operation and good understanding reached by the
 implementation of the Piggs Peak Agreement of 15 February 1991;
@@ -23,23 +23,23 @@ HEREBY AGREE as follows:
 Article 1
 Definitions
 For the purposes of this Agreement the following terms shall have the meanings ascribed to them hereunder:
-“catchment” means an area through which any rainfall will drain into the watercourse through surface flow to a common point;
-“emergency situation” means a situation that causes or poses an imminent threat of causing serious harm to the Parties and which results suddenly from natural causes, such as torrential rains, floods, landslides or earthquakes, or from human conduct;
-“environmental impact assessment” means a national procedure for evaluating the likely impact of a planned measure on the environment;
-“impact” means any effect on the environment caused by an activity; such effects on the environment include effects on human health and safety, flora, fauna, soil, air, water, climate, landscape, socio-economic environment or the interaction among these factors and cultural heritage or socio-economic conditions resulting from alterations to these factors;
-“Incomati watercourse” means the system of the Incomati River, which includes the tributaries Mazimechopes, Uanetze, Massintonto, Sabie, Crocodile, Komati Rivers and the estuary;
-“Maputo watercourse” means the system of the Maputo River, which includes the tributaries Pongola and Usuthu Rivers and the estuary;
-“ministers” means Ministers responsible for the water affairs of the Parties;
-“ongoing activity” means any activity that would have been subjected to a decision of a
+"catchment" means an area through which any rainfall will drain into the watercourse through surface flow to a common point;
+"emergency situation" means a situation that causes or poses an imminent threat of causing serious harm to the Parties and which results suddenly from natural causes, such as torrential rains, floods, landslides or earthquakes, or from human conduct;
+"environmental impact assessment" means a national procedure for evaluating the likely impact of a planned measure on the environment;
+"impact" means any effect on the environment caused by an activity; such effects on the environment include effects on human health and safety, flora, fauna, soil, air, water, climate, landscape, socio-economic environment or the interaction among these factors and cultural heritage or socio-economic conditions resulting from alterations to these factors;
+"Incomati watercourse" means the system of the Incomati River, which includes the tributaries Mazimechopes, Uanetze, Massintonto, Sabie, Crocodile, Komati Rivers and the estuary;
+"Maputo watercourse" means the system of the Maputo River, which includes the tributaries Pongola and Usuthu Rivers and the estuary;
+"ministers" means Ministers responsible for the water affairs of the Parties;
+"ongoing activity" means any activity that would have been subjected to a decision of a
 competent authority in accordance with an applicable national procedure if it had been a planned measure;
  "Piggs Peak Agreement " means the agreement reached at the Tripartite Ministerial Meeting of Ministers Responsible for Water Affairs, signed in Piggs Peak on 15 February 1991;
-“planned measure” means any activity or a major change to an ongoing activity subject to a decision of a competent authority in accordance with applicable national procedures;
-“pollution” means any detrimental alteration in the composition or quality of the waters of a shared watercourse, which results directly or indirectly from human conduct;
+"planned measure" means any activity or a major change to an ongoing activity subject to a decision of a competent authority in accordance with applicable national procedures;
+"pollution" means any detrimental alteration in the composition or quality of the waters of a shared watercourse, which results directly or indirectly from human conduct;
  "Protocol " means the Revised Protocol on Shared Watercourses in the Southern African Development Community signed on 7 August 2000 in Windhoek;
-“sustainable development” is development which meets the needs of present generations without compromising future generations to meet their own needs;
-“TPTC” means the Tripartite Permanent Technical Committee established by the Agreement between the Government of the Republic of South Africa, the Government of the Kingdom of Swaziland and the Government of the People’s Republic of Mozambique relative to the establishment of the Tripartite Permanent Technical Committee, signed in Pretoria on 17 February 1983;
-“transboundary impact” means any adverse effect, caused by human conduct, within an area under the jurisdiction of a Party caused by a proposed activity, the physical origin of which is situated wholly or in part within the area under the jurisdiction of another Party;
-“watercourse” means a system of surface and ground waters constituting by virtue of their physical relationship a unitary whole normally flowing into a common terminus such as the sea, lake or aquifer.
+"sustainable development" is development which meets the needs of present generations without compromising future generations to meet their own needs;
+"TPTC" means the Tripartite Permanent Technical Committee established by the Agreement between the Government of the Republic of South Africa, the Government of the Kingdom of Swaziland and the Government of the People's Republic of Mozambique relative to the establishment of the Tripartite Permanent Technical Committee, signed in Pretoria on 17 February 1983;
+"transboundary impact" means any adverse effect, caused by human conduct, within an area under the jurisdiction of a Party caused by a proposed activity, the physical origin of which is situated wholly or in part within the area under the jurisdiction of another Party;
+"watercourse" means a system of surface and ground waters constituting by virtue of their physical relationship a unitary whole normally flowing into a common terminus such as the sea, lake or aquifer.
 Article 2
 General Objective
 This Agreement aims to promote co-operation among the Parties to ensure the protection and sustainable utilisation of the water resources of the Incomati and Maputo watercourses.
@@ -434,7 +434,7 @@ Article 1
 Determining Criteria
 (1) The Parties accord a high priority to supply water for domestic, livestock and industrial use, as well as ecological water requirements as recognised by the TPTC.
 (2) In particular, the Parties recognise the strategic importance to Mozambique of augmenting the water supplies to the city of Maputo.
-(3) The Parties recognise the projects in this Annex as projects that –
+(3) The Parties recognise the projects in this Annex as projects that -
 (a) are contemplated by the Parties to commence before 2010, but of which the implementation had not commenced at the time of coming into force of this Agreement; and
 (b) have previously been identified and studied by one or more of the Parties for future implementation.
 (4) The projects are classified into-
@@ -513,7 +513,7 @@ ANNEX IV
 BILATERAL AND TRILATERAL AGREEMENTS
 The Parties took into consideration the existing bilateral and trilateral agreements listed hereunder, not excluding other agreements, which apply, but are not listed. If any of the Parties becomes aware of the existence of any agreement not listed, the Party shall immediately notify the other Parties.
 1. Agreement between the Government of the Republic of South Africa and the Government of the Republic of Portugal in regard to rivers of mutual interest and the Cunene River Scheme, signed at Lisbon on 13 October 1964.
-2. Agreement between the Government of the Republic of South Africa, the Government of the Kingdom of Swaziland and the Government of the People’s Republic of Mozambique relative to the Establishment of a Tripartite Permanent Technical Committee, signed at Pretoria on 17 February 1983.
+2. Agreement between the Government of the Republic of South Africa, the Government of the Kingdom of Swaziland and the Government of the People's Republic of Mozambique relative to the Establishment of a Tripartite Permanent Technical Committee, signed at Pretoria on 17 February 1983.
 3. Agreement reached at the Tripartite Ministerial Meeting of Ministers Responsible for Water Affairs, signed at Piggs Peak on 15 February 1991.
 4. Treaty on the Development and Utilisation of the Water Resources of the Komati River Basin between the Government of the Republic of South Africa and the government of the Kingdom of Swaziland, signed at Mbabane on 13 March 1992.
 5. Treaty on the Establishment and Functioning of the Joint Water Commission between the Government of the Republic of South Africa and the Government of the Kingdom of Swaziland, signed at Mbabane on 13 March 1992.

@@ -30,7 +30,7 @@ Pelagic redfish in ICES Subareas XIV &V and in NAFO Subarea 1F [4] | 3000 | 3000
 
 Demersal redfish in ICES Subareas XIV & V and in NAFO subarea 1F [5] | 2000 | 2000 | 2000 |
 
-Greenland Halibut in NAFO Subarea 1 – South of 68° North | 2500 | 2500 | 2500 |
+Greenland Halibut in NAFO Subarea 1 - South of 68&#186; North | 2500 | 2500 | 2500 |
 
 Greenland Halibut in ICES Subareas XIV & V [6] | 4315 | 4315 | 4315 |
 
@@ -54,7 +54,7 @@ Grenadier spp. in NAFO Subarea 1 [9] | 100 | 100 | 100 |
 
 The by-catch is defined as any unwanted catches of any living marine organisms.
 
-For the purposes of this Protocol, by-catches, which will be taken into account in by-catch limits, are any catches of species of commercial interest not covered by the vessel’s target species indicated on the fishing authorisation.
+For the purposes of this Protocol, by-catches, which will be taken into account in by-catch limits, are any catches of species of commercial interest not covered by the vessel's target species indicated on the fishing authorisation.
 
 EU fishing vessels operating in the Greenlandic EEZ shall abide by the applicable by-catch rules for species and fish stocks distributed in Greenlandic waters and in particular for those listed under Article 1(5). Moreover, it is prohibited in the Greenlandic EEZ to discard catches made on fish stocks managed through catch or effort limits in Greenlandic waters.
 
@@ -80,7 +80,7 @@ Northern Prawn | 75000 | 1500 |
 
 Article 2
 
-Financial contribution – Methods of payment
+Financial contribution - Methods of payment
 
 1. For the period referred to in Article 1(1) of this Protocol, the financial contribution of the EU referred to in Article 7 of the Agreement shall be EUR 17847244 per year.
 
@@ -256,9 +256,9 @@ A. Fishing authorisation application and issuing formalities
 
 2. For a vessel to be eligible, neither the owner, the master nor the vessel itself shall be prohibited from fishing in the Greenlandic EEZ. They shall be in order with the Greenlandic authorities insofar as they shall have fulfilled all prior obligations arising from their fishing activities in Greenland or within the Greenlandic EEZ under the fisheries agreements concluded with the EU.
 
-3. Applications shall be made on the forms provided for that purpose by Greenland, specimens of which are attached at Appendix 1. Each fishing authorisation application shall be accompanied by proof of payment of the fee for the fishing authorisation’s term of validity. The fees shall include all national and local charges related to access to fishing activities as well as fees imposed by banks for transfers of money. In case a vessel has not paid the bank transfer fee this amount will be required to be paid with the next fishing authorisation application of this vessel and is a precondition for the issuing of a new fishing authorisation.
+3. Applications shall be made on the forms provided for that purpose by Greenland, specimens of which are attached at Appendix 1. Each fishing authorisation application shall be accompanied by proof of payment of the fee for the fishing authorisation's term of validity. The fees shall include all national and local charges related to access to fishing activities as well as fees imposed by banks for transfers of money. In case a vessel has not paid the bank transfer fee this amount will be required to be paid with the next fishing authorisation application of this vessel and is a precondition for the issuing of a new fishing authorisation.
 
-EU vessels of the same ship owner or agent may submit a collective application for a fishing authorisation provided that these vessels fly the flag of one and the same Member State. Each fishing authorisation issued under a collective application shall indicate the total quantity of specimen for which the fishing authorisation fee has been paid and shall carry the footnote "authorised quantity to be shared by the vessels…(names of each vessel listed on the collective application)".
+EU vessels of the same ship owner or agent may submit a collective application for a fishing authorisation provided that these vessels fly the flag of one and the same Member State. Each fishing authorisation issued under a collective application shall indicate the total quantity of specimen for which the fishing authorisation fee has been paid and shall carry the footnote "authorised quantity to be shared by the vessels...(names of each vessel listed on the collective application)".
 
 The EU authorities shall present to the Greenlandic authorities the (collective) application for any fishing authorisation(s) of each vessel wishing to fish under the Agreement.
 
@@ -268,7 +268,7 @@ The Greenlandic authorities are entitled to suspend an existing fishing authoris
 
 5. Fishing authorisations shall be issued for specific vessels and shall not be transferable, subject to the provisions of paragraph 6. Fishing authorisations shall indicate the authorised quantity to be caught and retained on board. An amendment of any of the authorised quantities indicated in the fishing authorisation(s) shall be subject to a new application. In the case where a vessel exceeds any authorised quantity indicated in its fishing authorisation, it shall pay a fee equivalent to three times the amount provided for in Part B 3, for the quantity in excess of the authorised quantity. No new fishing authorisation shall be issued to that vessel as long as the fees corresponding to the exceeded quantities are not paid.
 
-6. However, in a limited number of cases and at the request of the European Commission, a vessel’s fishing authorisation may be replaced by a new fishing authorisation for another vessel with characteristics similar to those of the first vessel. The new fishing authorisation shall indicate:
+6. However, in a limited number of cases and at the request of the European Commission, a vessel's fishing authorisation may be replaced by a new fishing authorisation for another vessel with characteristics similar to those of the first vessel. The new fishing authorisation shall indicate:
 
 (a) the date of issue,
 
@@ -344,7 +344,7 @@ FISHING ZONES
 
 1. The fishery shall take place within the fishing zone as defined as the Greenlandic Exclusive Economic Zone as provided for in the Regulation No. 1020 of 15 October 2004 in accordance with Royal Decree No. 1005 of 15 October 2004 on the Entry Into Force of Act on Exclusive Economic Zones for Greenland entering into force Act No. 411 of 22 May 1996 on Exclusive Economic Zones.
 
-2. The fishery shall take place at least 12 nautical miles off the baseline according to § 7 Section 2 of Act No. 18 of 31 October 1996 on Fisheries issued by the Landsting of Greenland as most recently amended by the Inatsisartut Act No. 8 of 22 November 2011 unless specifically provided otherwise.
+2. The fishery shall take place at least 12 nautical miles off the baseline according to paragraph 7 Section 2 of Act No. 18 of 31 October 1996 on Fisheries issued by the Landsting of Greenland as most recently amended by the Inatsisartut Act No. 8 of 22 November 2011 unless specifically provided otherwise.
 
 3. The baseline is defined in accordance with Royal Decree No. 1004 of 15 October 2004 on Amendment of Royal Degree on Delimitation of the territorial Waters of Greenland.
 
@@ -468,11 +468,11 @@ A. Observer scheme
 
 Any fishing operations in the Greenlandic EEZ are subject to the observer scheme provided for under the Greenlandic law. Masters of EU fishing vessels holding a fishing authorisation to fish within the Greenlandic EEZ shall cooperate with the Greenlandic authorities for the purpose of embarking of observers on board.
 
-B. Observer’s salary
+B. Observer's salary
 
 The salary and social contributions of the observer shall be borne by the competent Greenlandic authorities.
 
-C. Observer’s obligations
+C. Observer's obligations
 
 Whilst they are on board observers shall:
 
@@ -482,11 +482,11 @@ Whilst they are on board observers shall:
 
 3. respect the confidential nature of any document belonging to the vessel.
 
-D. Observer’s report
+D. Observer's report
 
-1. Before leaving the vessel, the observer shall submit a report of his observations to the master of the vessel. The master of the vessel shall have the right to make comments in the observer’s report. The report shall be signed by the observer and the master. The master shall receive a copy of the observer’s report.
+1. Before leaving the vessel, the observer shall submit a report of his observations to the master of the vessel. The master of the vessel shall have the right to make comments in the observer's report. The report shall be signed by the observer and the master. The master shall receive a copy of the observer's report.
 
-2. The competent Greenlandic authorities shall notify the EU authorities about this disembarkation of the observer within 8 working days. After receipt of the notification and upon receiving a request from the EU authorities a copy of the observer’s report shall be transmitted by Greenland to the EU authorities within 8 working days.
+2. The competent Greenlandic authorities shall notify the EU authorities about this disembarkation of the observer within 8 working days. After receipt of the notification and upon receiving a request from the EU authorities a copy of the observer's report shall be transmitted by Greenland to the EU authorities within 8 working days.
 
 CHAPTER VII
 
@@ -528,7 +528,7 @@ Conditions On Issues related to Satellite Tracking of Fishing Vessels
 
 (e) the satellite tracking devices are not removed from the vessel.
 
-7. It shall be prohibited for a fishing vessel to enter the other party’s EEZ without a fully operational satellite tracking device, otherwise the Greenlandic authorities, are entitled to suspend with immediate effect the fishing authorisation of that fishing vessel. The Greenlandic authorities shall provide notice without delay to the vessel concerned. The EU authorities and the Flag State shall be notified of the suspension of fishing authorisations by the Greenlandic authorities without any delay.
+7. It shall be prohibited for a fishing vessel to enter the other party's EEZ without a fully operational satellite tracking device, otherwise the Greenlandic authorities, are entitled to suspend with immediate effect the fishing authorisation of that fishing vessel. The Greenlandic authorities shall provide notice without delay to the vessel concerned. The EU authorities and the Flag State shall be notified of the suspension of fishing authorisations by the Greenlandic authorities without any delay.
 
 8. Transmission by the vessel in the event of breakdown of the VMS system.
 
@@ -540,11 +540,11 @@ Conditions On Issues related to Satellite Tracking of Fishing Vessels
 
 9. When the satellite tracking device has transmitted hourly messages with the same geographical position for more than 4 hours, a position message containing the activity code "ANC", as described in the attached format, shall be sent. Such position messages may be transmitted with a frequency of once every 12 hours. Within less than 1 hour after the position has changed, the hourly reporting frequency will resume.
 
-10. Secure communication of the position messages between FMC’s
+10. Secure communication of the position messages between FMC's
 
 (a) The FMC of the Flag State shall automatically send the position messages of the vessels concerned to the FMC of the party in whose waters the vessel is.
 
-(b) The FMC’s of both parties shall exchange their coordinates e.g. e-mail addresses, fax, telex and telephones, and inform each other without any delay of any change to these coordinates.
+(b) The FMC's of both parties shall exchange their coordinates e.g. e-mail addresses, fax, telex and telephones, and inform each other without any delay of any change to these coordinates.
 
 (c) The transmission of position messages between the FMCs concerned and the Flag States shall be carried out electronically by HTTPS protocol. The exchange of certificates shall take place between Greenlandic authorities and relevant Flag State FMC.
 
@@ -554,13 +554,13 @@ Conditions On Issues related to Satellite Tracking of Fishing Vessels
 
 11. Malfunction of the communication system
 
-(a) Greenland shall ensure the compatibility of its electronic equipment with that of the FMC’s of the Flag States and inform the EU immediately of any malfunction as regards the communication and receiving of position messages with a view to finding a technical solution as soon as possible.
+(a) Greenland shall ensure the compatibility of its electronic equipment with that of the FMC's of the Flag States and inform the EU immediately of any malfunction as regards the communication and receiving of position messages with a view to finding a technical solution as soon as possible.
 
-(b) Communication failures between FMC’s shall not affect the operation of the vessels.
+(b) Communication failures between FMC's shall not affect the operation of the vessels.
 
-(c) All non-transmitted messages during the downtime, shall be forwarded as soon as the communication is re-established between the FMC’s concerned.
+(c) All non-transmitted messages during the downtime, shall be forwarded as soon as the communication is re-established between the FMC's concerned.
 
-12. The master of the fishing vessels holding a fishing authorisation shall be considered to be responsible for any proven manipulation of the vessel’s VMS system aimed at disturbing its operation or falsifying its position messages. Any infringement shall be subject to the penalties provided for by the party in whose waters the infringement took place and according to the legislation in force of that party.
+12. The master of the fishing vessels holding a fishing authorisation shall be considered to be responsible for any proven manipulation of the vessel's VMS system aimed at disturbing its operation or falsifying its position messages. Any infringement shall be subject to the penalties provided for by the party in whose waters the infringement took place and according to the legislation in force of that party.
 
 13. Under no circumstances shall tracking data communicated to the other Party in accordance with this Agreement be disclosed to authorities, other than control and monitoring authorities, in such a way that individual vessels can be identified.
 
@@ -574,7 +574,7 @@ A. Treatment of infringements
 
 1. Any infringement committed in the Greenlandic EEZ by an EU fishing vessel holding a fishing authorisation in accordance with the provisions of this Annex shall be mentioned in an inspection report.
 
-2. The signature of the inspection report by the master shall be without prejudice to the master’s and/or ship owner’s right of defence in respect of an infringement.
+2. The signature of the inspection report by the master shall be without prejudice to the master's and/or ship owner's right of defence in respect of an infringement.
 
 B. Information on Detention of a vessel
 
@@ -584,7 +584,7 @@ C. Penalties for infringements
 
 The penalty for the infringement shall be set by Greenland according to the provisions of the national legislation in force.
 
-D. Legal proceeding – Bank security
+D. Legal proceeding - Bank security
 
 1. When an infringement is brought before the competent court, the ship owner of the EU fishing vessel which committed the infringement shall deposit a bank security at a bank designated by Greenland, the amount of which, as set by Greenland, covers the costs linked to the detention of the EU fishing vessel, the estimated fine and any compensation. The bank security may not be recovered until the legal proceedings have been concluded.
 
@@ -674,11 +674,11 @@ Details of implementation for experimental fisheries
 
 7. During the campaign at sea, the owners of the vessels concerned shall:
 
-(a) provide the Greenland Institute of Natural Resources, the Greenlandic authorities and the European Commission with a weekly report on catches per day and by haul, including the description of the campaign’s technical parameters (position, depth, date and time, catches and other observations or comments);
+(a) provide the Greenland Institute of Natural Resources, the Greenlandic authorities and the European Commission with a weekly report on catches per day and by haul, including the description of the campaign's technical parameters (position, depth, date and time, catches and other observations or comments);
 
-(b) communicate the vessel’s position, speed and heading by VMS;
+(b) communicate the vessel's position, speed and heading by VMS;
 
-(c) ensure the presence on board of one Greenlandic scientific observer or an observer chosen by the Greenlandic authorities. The role of the observer will be to gather scientific information from the catches, as well as to sample the catches. The observer shall be treated as a ship’s officer and the vessel-owner shall cover the living costs of the observer during his stay on the vessel. The decision on the observer’s time on board, the length of his stay, the boarding and landing harbour will be fixed in agreement with the Greenlandic authorities;
+(c) ensure the presence on board of one Greenlandic scientific observer or an observer chosen by the Greenlandic authorities. The role of the observer will be to gather scientific information from the catches, as well as to sample the catches. The observer shall be treated as a ship's officer and the vessel-owner shall cover the living costs of the observer during his stay on the vessel. The decision on the observer's time on board, the length of his stay, the boarding and landing harbour will be fixed in agreement with the Greenlandic authorities;
 
 (d) submit the vessels to inspection on leaving the Greenlandic EEZ if the Greenlandic authorities so request;
 
@@ -706,7 +706,7 @@ FLEXIBILITY SCHEME IN THE PELAGIC REDFISH FISHERY BETWEEN GREENLANDIC AND NEAFC 
 
 5. A vessel may fish its Greenlandic quota within the redfish conservation area (RCA) under the conditions as set out in the NEAFC recommendation on the management of redfish in the Irminger sea and adjacent waters, but excluding any part which lies within the EEZ of Iceland.
 
-6. A vessel carrying out fishing activities in the NEAFC Regulatory Area shall transmit a VMS position report to NEAFC via its Flag State FMC in accordance with regulatory requirements. Whilst fishing on the Greenlandic quota within the NEAFC RCA the Flag State FMC shall specifically arrange for the results of hourly polling of the vessel’s VMS position report to be transmitted to the Greenland FMC in near real time.
+6. A vessel carrying out fishing activities in the NEAFC Regulatory Area shall transmit a VMS position report to NEAFC via its Flag State FMC in accordance with regulatory requirements. Whilst fishing on the Greenlandic quota within the NEAFC RCA the Flag State FMC shall specifically arrange for the results of hourly polling of the vessel's VMS position report to be transmitted to the Greenland FMC in near real time.
 
 7. Master of the vessel shall ensure that when reporting to NEAFC and the Greenlandic authorities, redfish catches which have been caught in the NEAFC regulatory area under the Greenlandic flexibility fishing authorisation are clearly identified as counting against the Greenlandic quota by using the fishing authorisation allocated in the flexibility fishing authorisation.
 

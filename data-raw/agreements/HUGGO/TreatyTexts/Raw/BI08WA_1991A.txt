@@ -94,7 +94,7 @@ relevant authority of the State where the site or facility is located;
 a Party to be responsible, within such geographical areas as the Party may think fit,
 for receiving the notification of a transboundary movement of hazardous wastes and
 any information related to it, and for responding to such a notification, as provided in
-Article 6,·
+Article 6
 9. "Focal point" means the entity of a Party referred to in Article 5
 responsible for receiving and submitting information as provided for in Articles 13 and
 16;
@@ -208,7 +208,7 @@ hazardous waste audit;
 hazardous waste generators;
 (c) Ensure that the generation of hazardous wastes within the area
 under its jurisdiction is reduced to a minimum taking into account
-social, technological and economic aspects,·
+social, technological and economic aspects,
 (d) Ensure the availability of adequate treatment and/or disposal
 facilities, for the environmentally sound management of hazardous
 wastes which shall be located, to the extent possible, within its
@@ -236,7 +236,7 @@ applicable to entire product life cycles including:
 - materials transport during all phases;
 - industrial and household usage;
 - reintroduction of the product into industrial systems or
-nature when it no longer serves a useful function,·
+nature when it no longer serves a useful function,
 Clean production shall not include "end-of-pipe" pollution controls
 such as filters and scrubbers, or chemical, physical or biological
 treatment. Measures which reduce the volume of waste by
@@ -479,7 +479,7 @@ management of hazardous wastes.
 basis, with a view to promoting clean production methods and the
 environmentally sound management of hazardous wastes,
 including harmonization of technical standards and practices for
-the adequate management of hazardous wastes,·
+the adequate management of hazardous wastes, 
 (b) cooperate in monitoring the effects of the management of
 hazardous wastes on human health and the environment;
 (c) co-operate, subject to their national laws, regulations and policies,
@@ -587,7 +587,7 @@ of this Convention.
 movements and disposal of hazardous wastes and on the
 measures undertaken to deal with them;
 (g) Information on disposal options operated within the area under
-their national jurisdiction,·
+their national jurisdiction, 
 (h) Information on measures undertaken for the development of clean
 production methods, including clean production technologies, for
 the reduction and/or elimination of the production of hazardous
@@ -644,7 +644,7 @@ agreements and arrangements envisaged in Article 11 of the
 present Convention;
 (d) consider and adopt protocols as required;
 (e) establish such subsidiary bodies as are deemed necessary for the
-implementation of this Convention,· and
+implementation of this Convention,  and
 (f) make decisions for the peaceful settlement of disputes arising
 from the transboundary movement of hazardous wastes, if need
 be, according to international law.
@@ -915,12 +915,12 @@ Y46 Wastes collected from households, including sewage and sewage sludges.
 Y46 Residues arising from the incineration of household wastes.
 WASTES HAVING AS CONSTITUENTS:
 Y19 Metal Carbonyls.
-Y20 Beryllium,· beryllium compounds.
+Y20 Beryllium,  beryllium compounds.
 Y21 Hexavalent chromium compounds.
 Y22 Copper compounds.
 Y23 Zinc Compounds
 Y24 Arsenic; arsenic compounds.
-Y25 Selenium,· selenium compounds.
+Y25 Selenium,  selenium compounds.
 Y26 Cadmium; cadmium compounds
 Y27 Antimony; antimony compounds.
 Y28 Tellurium; tellurium compounds.

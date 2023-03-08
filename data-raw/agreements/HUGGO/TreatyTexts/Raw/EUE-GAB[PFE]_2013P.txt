@@ -26,7 +26,7 @@ This paragraph shall apply subject to Articles 5 and 6 of this Protocol.
 
 Article 2
 
-Financial contribution – Methods of payment
+Financial contribution - Methods of payment
 
 1.   For the period referred to in Article 1, the financial contribution referred to in Article 7 of the Fisheries Partnership Agreement shall be EUR 1 350 000 per year.
 
@@ -60,7 +60,7 @@ Promoting responsible fishing and sustainable fisheries in the Gabonese fishing 
 
 1.   The two Parties undertake to promote responsible fishing in the Gabonese fishing zone based on the principles of sustainable exploitation of fishery resources and marine ecosystems.
 
-2.   The European Union and Gabon shall agree, within the Joint Committee provided for in Article 9 of the Agreement, from the date of provisional application of this Protocol, and at the latest three months after that date, on a multiannual sectoral programme, in line with the Gabonese national strategy on fisheries and the European Commission’s political framework, and on the detailed implementing rules, including in particular:
+2.   The European Union and Gabon shall agree, within the Joint Committee provided for in Article 9 of the Agreement, from the date of provisional application of this Protocol, and at the latest three months after that date, on a multiannual sectoral programme, in line with the Gabonese national strategy on fisheries and the European Commission's political framework, and on the detailed implementing rules, including in particular:
 
 (a)
 
@@ -254,11 +254,11 @@ GENERAL PROVISIONS
 
 For the purposes of this Annex and unless otherwise specified, any reference to the European Union (EU) or to Gabon as a competent authority shall mean:
 
-—
+-
 
 for the EU: the European Commission, where applicable via the EU delegation to Gabon;
 
-—
+-
 
 for Gabon: the Ministry responsible for fisheries.
 
@@ -294,9 +294,9 @@ CHAPTER II
 
 FISHING AUTHORISATIONS
 
-For the purposes of applying the provisions of this Annex, the term ‘licence’ shall be equivalent to ‘fishing authorisation’, as defined in European Union legislation.
+For the purposes of applying the provisions of this Annex, the term 'licence' shall be equivalent to 'fishing authorisation', as defined in European Union legislation.
 
-1.   Condition for obtaining a fishing authorisation — Eligible vessels
+1.   Condition for obtaining a fishing authorisation - Eligible vessels
 
 The fishing authorisations referred to in Article 6 of the Agreement shall be issued on the condition that the vessel is included in the EU register of fishing vessels and that all previous obligations of the vessel owner, the master, or the vessel itself arising from their fishing activities in Gabon under the Agreement have been met. Each vessel wishing to fish under this Protocol must also be included in the ICCAT record of vessels.
 
@@ -332,11 +332,11 @@ The flat-rate fee shall include all national and local charges except for port t
 
 Annual flat-rate fees payable by vessel owners shall be as follows for tuna seiners and pole-and-line tuna vessels:
 
-—
+-
 
 For the first year of application of the Protocol: EUR 55 per tonne caught within Gabonese waters
 
-—
+-
 
 For the second and third years: EUR 65 per tonne fished
 
@@ -344,7 +344,7 @@ For the second and third years: EUR 65 per tonne fished
 
 Licences shall be issued once a national fee for the following flat-rate amount has been paid to the competent national authorities:
 
-—
+-
 
 EUR 13 750 per year for tuna seiners and pole-and-line tuna vessels, for the duration of the Protocol.
 
@@ -370,7 +370,7 @@ Once the licence is issued, Gabon shall draw up immediately for each category of
 
 Fishing authorisations shall be valid for one year and be renewable.
 
-In order to establish the start of the period of validity, ‘annual period’ shall mean:
+In order to establish the start of the period of validity, 'annual period' shall mean:
 
 (i)
 
@@ -432,7 +432,7 @@ The master shall be responsible for the accuracy of the data recorded in the fis
 
 2.   Catch reporting
 
-The master shall notify the vessel’s catch by submitting to Gabon its fishing logbooks for the period of its presence in the Gabonese fishing zone.
+The master shall notify the vessel's catch by submitting to Gabon its fishing logbooks for the period of its presence in the Gabonese fishing zone.
 
 The fishing logbooks shall be transmitted in one of the following ways:
 
@@ -460,19 +460,19 @@ The two Parties shall make every effort to establish a system for reporting catc
 
 As soon as it is possible for catch declarations to be sent by e-mail, the master shall send the fishing logbooks to Gabon at the e-mail address given by Gabon. Gabon shall confirm receipt thereof immediately by return e-mail.
 
-The master shall send a copy of all the fishing logbooks to the EU Delegation to Gabon. For tuna seiners and pole-and-line tuna vessels, the master shall also send a copy of all the fishing logbooks to the Gabonese Institut de Recherche Agricole et Forestière (Institute of Agricultural and Forestry Research – IRAF) and one of the following scientific institutes:
+The master shall send a copy of all the fishing logbooks to the EU Delegation to Gabon. For tuna seiners and pole-and-line tuna vessels, the master shall also send a copy of all the fishing logbooks to the Gabonese Institut de Recherche Agricole et Forestiere (Institute of Agricultural and Forestry Research - IRAF) and one of the following scientific institutes:
 
 (i)
 
-IRD (Institut de recherche pour le développement)
+IRD (Institut de recherche pour le developpement)
 
 (ii)
 
-IEO (Instituto Español de Oceanografia),
+IEO (Instituto Espanol de Oceanografia),
 
 (iii)
 
-IPMA (Instituto Português do Mar e da Atmosfèra),
+IPMA (Instituto Portugues do Mar e da Atmosfera),
 
 The return of the vessel into the Gabonese zone within the period of validity of its licence shall give rise to further catch reporting.
 
@@ -578,7 +578,7 @@ The master of the EU vessel shall allow the Gabonese inspectors to come on board
 
 At the end of each inspection, the Gabonese inspectors shall draw up an inspection report. The master of the EU vessel shall have the right to include his comments in the inspection report. The inspection report shall be signed by the inspector drawing up the report and the master of the EU vessel.
 
-The signature of the inspection report by the master shall be without prejudice to the vessel owner’s right of defence in respect of an infringement. If the master refuses to sign this document, he or she shall specify the reasons for doing so in writing and the inspector shall write ‘refusal to sign’ on it. The Gabonese inspectors shall give a copy of the inspection report to the master of the EU vessel before leaving the vessel. Gabon shall send a copy of the inspection report to the EU within 8 days of the inspection.
+The signature of the inspection report by the master shall be without prejudice to the vessel owner's right of defence in respect of an infringement. If the master refuses to sign this document, he or she shall specify the reasons for doing so in writing and the inspector shall write 'refusal to sign' on it. The Gabonese inspectors shall give a copy of the inspection report to the master of the EU vessel before leaving the vessel. Gabon shall send a copy of the inspection report to the EU within 8 days of the inspection.
 
 3.   Inspection in port
 
@@ -592,7 +592,7 @@ The master of the EU vessel shall allow the Gabonese inspectors to carry out the
 
 At the end of each inspection, the Gabonese inspector shall draw up an inspection report. The master of the EU vessel shall have the right to include his comments in the inspection report. The inspection report shall be signed by the inspector drawing up the report and the master of the EU vessel.
 
-The signature of the inspection report by the master shall be without prejudice to the vessel owner’s right of defence in respect of an infringement. If the master refuses to sign this document, he or she shall specify the reasons for doing so in writing and the inspector shall write ‘refusal to sign’ on it.
+The signature of the inspection report by the master shall be without prejudice to the vessel owner's right of defence in respect of an infringement. If the master refuses to sign this document, he or she shall specify the reasons for doing so in writing and the inspector shall write 'refusal to sign' on it.
 
 The Gabonese inspectors shall give a copy of the inspection report to the master of the EU vessel at the end of the inspection. Gabon shall send a copy of the inspection report to the EU within 8 days of the inspection.
 
@@ -608,9 +608,9 @@ CHAPTER VII
 
 SATELLITE-BASED VESSEL MONITORING SYSTEM (VMS)
 
-1.   Vessel position messages — VMS system
+1.   Vessel position messages - VMS system
 
-Whilst they are in the Gabonese zone, EU vessels holding a licence must be equipped with a satellite monitoring system (Vessel Monitoring System – VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre – FMC) of their flag State.
+Whilst they are in the Gabonese zone, EU vessels holding a licence must be equipped with a satellite monitoring system (Vessel Monitoring System - VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre - FMC) of their flag State.
 
 Each position message must contain:
 
@@ -632,7 +632,7 @@ the speed and the course of the vessel.
 
 Each position message must be configured in accordance with the format included in Appendix 4 to this Annex.
 
-The first position recorded after entry into the Gabonese zone shall be identified by the code ‘ENT’. All subsequent positions shall be identified by the code ‘POS’, with the exception of the first position recorded after exit from the Gabonese zone, which shall be identified by the code ‘EXI’.
+The first position recorded after entry into the Gabonese zone shall be identified by the code 'ENT'. All subsequent positions shall be identified by the code 'POS', with the exception of the first position recorded after exit from the Gabonese zone, which shall be identified by the code 'EXI'.
 
 The CSP of the flag State shall ensure the automatic processing and, if necessary, the electronic transmission of the position messages. The position messages shall be recorded in a secure manner and kept for a period of three years.
 
@@ -656,7 +656,7 @@ The FMC of Gabon shall inform the FMC of the flag State and the EU of any interr
 
 Gabon shall ensure the compatibility of its electronic equipment with that of the FMC of the flag State and inform the EU immediately of any malfunction as regards the communication and reception of position messages with a view to finding a technical solution as soon as possible. The Joint Committee shall deal with any possible dispute arising.
 
-The master shall be considered responsible for any proven tampering with a vessel’s VMS aimed at disturbing its operation or falsifying its position messages. Any infringements shall be subject to the penalties provided for by the Gabonese legislation in force.
+The master shall be considered responsible for any proven tampering with a vessel's VMS aimed at disturbing its operation or falsifying its position messages. Any infringements shall be subject to the penalties provided for by the Gabonese legislation in force.
 
 5.   Revision of the frequency of position messages
 
@@ -672,9 +672,9 @@ INFRINGEMENTS
 
 Any infringement committed by an EU vessel holding a licence in accordance with the provisions of this Annex must be referred to in an inspection report. That report shall be sent to the EU and the flag State as soon as possible.
 
-The signature of the inspection report by the master shall be without prejudice to the vessel owner’s right of defence in respect of an infringement. The master of the vessel shall cooperate while the inspection procedure is being carried out.
+The signature of the inspection report by the master shall be without prejudice to the vessel owner's right of defence in respect of an infringement. The master of the vessel shall cooperate while the inspection procedure is being carried out.
 
-2.   Detention of a vessel — Information meeting
+2.   Detention of a vessel - Information meeting
 
 Where permitted under the Gabonese legislation in force regarding the infringement, any EU vessel having committed an infringement may be forced to cease its fishing activity and, where the vessel is at sea, to return to a Gabonese port.
 
@@ -682,13 +682,13 @@ Gabon shall notify the EU within 24 hours of any detention of an EU vessel holdi
 
 Before taking any measure against the vessel, the master, the crew or the cargo, with the exception of measures aimed at protecting evidence, Gabon shall organise, at the request of the EU, within one working day of notification of the detention of the vessel, an information meeting to clarify the facts which have led to the vessel being detained and to explain what further action may be taken. A representative of the flag State of the vessel may attend that information meeting.
 
-3.   Penalties for infringements — Compromise procedure
+3.   Penalties for infringements - Compromise procedure
 
 The penalty for the infringement shall be set by Gabon according to the provisions of the national legislation in force.
 
 Where settling the infringement involves legal proceedings, before these are launched, and provided that the infringement does not involve a criminal act, a compromise procedure shall be undertaken between Gabon and the EU in order to determine the terms and level of the penalty. A representative of the flag State of the vessel and of the EU may participate in that compromise procedure. The compromise procedure shall finish at the latest 3 days after the notification of the detention of the vessel.
 
-4.   Legal proceedings — Bank security
+4.   Legal proceedings - Bank security
 
 If the compromise procedure fails and the infringement is brought before the competent court, the owner of the vessel which committed the infringement shall deposit a bank security at a bank designated by Gabon, the amount of which, as set by Gabon, shall cover the costs linked to the detention of the vessel, the estimated fine and any compensation. The bank security may not be recovered until the legal proceedings have been concluded.
 
@@ -716,11 +716,11 @@ SIGNING-ON OF SEAMEN
 
 Owners of tuna seiners and pole-and-line tuna vessels shall employ ACP nationals, subject to the following conditions and limits:
 
-—
+-
 
 for the fleet of tuna seiners, at least 20 % of the seamen signed on during the tuna-fishing season in the fishing zone of third countries shall be of ACP origin;
 
-—
+-
 
 for the fleet of pole-and-line tuna vessels, at least 20 % of the seamen signed on during the tuna-fishing season in the fishing zone of third countries shall be of ACP origin.
 
@@ -734,7 +734,7 @@ The International Labour Organisation (ILO) Declaration on Fundamental Principle
 
 4.
 
-The employment contracts of seamen from the ACP countries shall be drawn up between the vessel owners’ representative(s) and the seamen and/or their trade unions or representatives. A copy shall be given to the signatories. These contracts shall guarantee the seamen the social security cover applicable to them, including life assurance and sickness and accident insurance.
+The employment contracts of seamen from the ACP countries shall be drawn up between the vessel owners' representative(s) and the seamen and/or their trade unions or representatives. A copy shall be given to the signatories. These contracts shall guarantee the seamen the social security cover applicable to them, including life assurance and sickness and accident insurance.
 
 5.
 
@@ -768,7 +768,7 @@ The observers shall not spend more time on board the vessel than is necessary to
 
 At the time the annual flat-rate fee is paid, the vessel owner shall also pay Gabon a flat-rate sum of EUR 200 per year for each vessel.
 
-4.   Observer’s salary
+4.   Observer's salary
 
 The salary and social contributions of the observer shall be borne by Gabon.
 
@@ -784,7 +784,7 @@ The master shall take all the measures for which he is responsible to guarantee 
 
 Observers shall be offered every facility needed to carry out their duties. They shall have access to means of communication and to documents relating to the fishing activities of the vessel, in particular the fishing logbook and navigation log, and the parts of the vessel directly linked to their duties.
 
-6.   Observer’s obligations
+6.   Observer's obligations
 
 Whilst they are on board observers shall:
 
@@ -810,7 +810,7 @@ If the observer does not arrive to embark within 12 hours of the date and time s
 
 Where the observer is not disembarked in a Gabonese port, the vessel owner shall bear the costs of repatriation of the observer to Gabon as soon as possible.
 
-8.   Observer’s obligations
+8.   Observer's obligations
 
 The observer shall carry out the following duties:
 
@@ -842,37 +842,37 @@ verify the percentages of by-catch and estimate the discarded catch;
 
 communicate observations by radio, fax or e-mail at least once a week while the vessel is fishing in the Gabonese zone, including the quantity of catch and by-catch on board.
 
-9.   Observer’s report
+9.   Observer's report
 
-Before leaving the vessel, the observer shall submit a report of his observations to the captain of the vessel. The master of the vessel shall have the right to make comments in the observer’s report. The report shall be signed by the observer and the master. The master shall receive a copy of the observer’s report.
+Before leaving the vessel, the observer shall submit a report of his observations to the captain of the vessel. The master of the vessel shall have the right to make comments in the observer's report. The report shall be signed by the observer and the master. The master shall receive a copy of the observer's report.
 
-The observer shall send his report to Gabon, which shall send a copy of it to the EU within 8 days of the observer’s disembarkation.
+The observer shall send his report to Gabon, which shall send a copy of it to the EU within 8 days of the observer's disembarkation.
 
 Appendices to this Annex
 
 1.
 
-Appendix 1 – Licence application form
+Appendix 1 - Licence application form
 
 2.
 
-Appendix 2 – Technical sheet
+Appendix 2 - Technical sheet
 
 3.
 
-Appendix 3 – Fishing logbook
+Appendix 3 - Fishing logbook
 
 4.
 
-Appendix 4 – Format of VMS position message
+Appendix 4 - Format of VMS position message
 
 5.
 
-Appendix 5 – Limits of the Gabonese fishing zone
+Appendix 5 - Limits of the Gabonese fishing zone
 
 6.
 
-Appendix 6 – Electronic reporting of fishing operations
+Appendix 6 - Electronic reporting of fishing operations
 
 Appendix 5
 
@@ -892,7 +892,7 @@ General provisions
 
 (1)
 
-All EU fishing vessels must be equipped with an electronic system, hereinafter referred to as an ‘ERS’, capable of recording and transmitting data concerning the vessel’s fishing activities, hereinafter referred to as ‘ERS data’, when the vessel is operating in Gabonese waters.
+All EU fishing vessels must be equipped with an electronic system, hereinafter referred to as an 'ERS', capable of recording and transmitting data concerning the vessel's fishing activities, hereinafter referred to as 'ERS data', when the vessel is operating in Gabonese waters.
 
 (2)
 
@@ -900,7 +900,7 @@ An EU vessel that is not equipped with an ERS, or whose ERS is not working, is n
 
 (3)
 
-ERS data shall be transmitted in accordance with the procedures of the vessel’s flag State, i.e. they shall firstly be sent to the Fisheries Monitoring Centre (hereinafter: FMC) of the flag State which will make them automatically available to the Gabonese FMC.
+ERS data shall be transmitted in accordance with the procedures of the vessel's flag State, i.e. they shall firstly be sent to the Fisheries Monitoring Centre (hereinafter: FMC) of the flag State which will make them automatically available to the Gabonese FMC.
 
 (4)
 
@@ -1016,9 +1016,9 @@ ERS data which could not be made available to Gabon via the ERS owing to the fai
 
 (18)
 
-If the Gabonese FMC does not receive ERS data from a vessel for 3 consecutive days, Gabon may instruct a vessel to immediately call at a port of Gabon’s choosing in order to investigate.
+If the Gabonese FMC does not receive ERS data from a vessel for 3 consecutive days, Gabon may instruct a vessel to immediately call at a port of Gabon's choosing in order to investigate.
 
-FMC failure – ERS data not received by Gabonese FMC
+FMC failure - ERS data not received by Gabonese FMC
 
 (19)
 

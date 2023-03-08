@@ -5,9 +5,9 @@ Preamble
 The Contracting Parties to this Protocol,
 Being Parties to the Convention for the Protection, Management and Development of the
 Marine and Coastal Environment of the Eastern African Region signed in Nairobi on 21 June
-1985, as amended and renamed “the Amended Nairobi Convention for the Protection,
+1985, as amended and renamed "the Amended Nairobi Convention for the Protection,
 Management and Development of the Marine and Coastal Environment of the Western Indian
-Ocean” on the Thirty first day of March 2010;
+Ocean" on the Thirty first day of March 2010;
 Determined to implement the Convention, in particular article 7 thereof;
 Conscious of the grave danger posed by various land-based sources and activities to the
 marine and coastal environment, affecting, among others, its rich heritage of biological
@@ -63,74 +63,74 @@ sustainability, poverty reduction and access to drinking water and sanitation;
 Have agreed as follows:
 Article 1 :Definitions
 For the purposes of this Protocol:
-i. “Best available technique” means the latest stage, in time, of development of a process,
+i. "Best available technique" means the latest stage, in time, of development of a process,
 facility or method of operation that indicates the practical suitability of a particular
-measure for limiting discharges, emissions and waste. In this regard, “technique”
+measure for limiting discharges, emissions and waste. In this regard, "technique"
 includes both the technology used and the manner in which the process, facility or
 method is designed, built, maintained, operated or dismantled;
-i. “Best environmental practice” means the application at the latest stage in time of the
+i. "Best environmental practice" means the application at the latest stage in time of the
 most appropriate combination of environmental control measures and strategies;
-i. “Convention” means the Amended Nairobi Convention for the Protection, Management
+i. "Convention" means the Amended Nairobi Convention for the Protection, Management
 and Development of the Marine and Coastal Environment of the Western Indian Ocean;
-i. “Contracting Party” means any State or regional economic, political or other
+i. "Contracting Party" means any State or regional economic, political or other
 organization, of which at least one member is a coastal State of the Western Indian
 Ocean region and that exercises competence in the fields covered by this Protocol, and
 has acceded to this Protocol, or a non coastal State that is upstream and riparian to
 watercourses draining into or connected with the Western Indian Ocean;
-i. “Diffuse source” means a source of pollution other than a point source from which
+i. "Diffuse source" means a source of pollution other than a point source from which
 substances enter the marine and coastal environment as a result of land or surface run
 off, precipitation, atmospheric deposition, drainage, seepage or by hydrological
 modification or destruction of habitats;
-i. “Emission control” means a control requiring a specific emission limitation, or otherwise
+i. "Emission control" means a control requiring a specific emission limitation, or otherwise
 specifying limits or conditions on the effect, nature or other characteristics of an
 emission or operating conditions that affect emissions;
-i. “Environmental audit” means a systematic documented verification process for
+i. "Environmental audit" means a systematic documented verification process for
 objectively obtaining and evaluating evidence to determine whether specified
 environmental activities, events, conditions, management systems or information about
 the foregoing matters conforms with audit criteria and communicating the results of
 this process to the client;
-i. “Environmental quality objective” means a clearly identified objective or goal for
+i. "Environmental quality objective" means a clearly identified objective or goal for
 purposes of environmental quality whether in specific or general application to relevant
 environmental resources, activities or programmes;
-i. “Environmental quality standard” means the concentration of a particular substance or
+i. "Environmental quality standard" means the concentration of a particular substance or
 group of substances in water, sediment or biota that should not be exceeded to protect
 human health or the environment;
-i. “Freshwater limit” means a place in a watercourse where at low tide or in a period of
+i. "Freshwater limit" means a place in a watercourse where at low tide or in a period of
 low freshwater flow there is an appreciable or discernible increase in salinity owing to
 the presence of sea water;
-i. “Hot spot” means a geographically defined marine or coastal area or other areas of the
+i. "Hot spot" means a geographically defined marine or coastal area or other areas of the
 sea, of national, regional or international significance, whose conditions are such as to
 adversely affect human health, threaten the functioning of ecosystems and biological
 diversity or degrade resources and amenities of economic and social importance in a
 manner that warrants priority management attention;
-i. “Internal waters” means any water body or resource, such as a river, lake, dam,
+i. "Internal waters" means any water body or resource, such as a river, lake, dam,
 wetland or other waters within the exclusive jurisdiction of a State, but does not include
 any shared or transboundary water body or resource;
-i. “Land based sources and activities” means sources and activities directly or indirectly
+i. "Land based sources and activities" means sources and activities directly or indirectly
 causing or contributing to the pollution or degradation of the marine and coastal
 environment from the landward side as opposed to sources and activities from the
 seaward side;
-i. “Organization” means the body designated as responsible for carrying out secretariat
+i. "Organization" means the body designated as responsible for carrying out secretariat
 functions pursuant to article 17 of the Convention;
-i. “Point source” means a source of pollution where the discharge or release is introduced
+i. "Point source" means a source of pollution where the discharge or release is introduced
 into the environment from a clearly discernable confined and discrete conveyance
 including but not limited to a pipe, outfall, channel, ditch, tunnel, conduit or well from
 which pollutants are or may be discharged;
-i. “Pollution” means the introduction by human intervention, directly or indirectly, or
+i. "Pollution" means the introduction by human intervention, directly or indirectly, or
 through river flows, of substances, organisms or energy into the marine and coastal
 environment, including estuaries, resulting in deleterious effects such as harm to living
 resources, hazards to human health, hindrance to marine activities, including fishing,
 impairment of quality for use of seawater and reduction of amenities;
-i. “Riparian” means a zone or area within a river basin or watercourse that is naturally
+i. "Riparian" means a zone or area within a river basin or watercourse that is naturally
 under the direct influence of the river or watercourse;
-i. “Sensitive area” means a geographically defined area of national, regional or
+i. "Sensitive area" means a geographically defined area of national, regional or
 international significance that although not degraded at present is threatened with
 future pollution or degradation either because of the sensitivity of the receptor or the
 magnitude of the anthropogenic activity posing the threat;
-i. “Treatment” means the application of physical, chemical or biological processes that
+i. "Treatment" means the application of physical, chemical or biological processes that
 change the characteristics or composition of the waste to meet environmental or other
 standards, prior to its release into the environment or reuse; and
-i. “Wetland” means an area of marsh, fen, peatland or water, whether natural or artificial,
+i. "Wetland" means an area of marsh, fen, peatland or water, whether natural or artificial,
 permanent or temporary, with water that is static or flowing, fresh, brackish or saline,
 including areas of marine water the depth of which at low tide does not exceed six
 metres.
@@ -138,7 +138,7 @@ metres.
 Article 2 :Geographical scope
 1. The geographical scope of this Protocol is the Eastern and Southern African region of
 the Western Indian Ocean as defined in articles 1 and 2 of the Convention (hereinafter
-referred to as “the Protocol area”).
+referred to as "the Protocol area").
 1. The Protocol area shall include the riparian and internal waters constituting part of the
 natural river basins draining into the Western Indian Ocean, the marine and coastal
 environment including the watershed of that part of the Western Indian Ocean situated
@@ -211,7 +211,7 @@ affect the marine and coastal environment are based on best available techniques
 environmental practice as established under annex I to this Protocol.
 2. The Contracting Parties shall ensure that emission controls of point source discharges and
 releases of substances into water or air in the Protocol area are based on emission and
-discharge limit values taking into account the Parties’ social, economic and technological
+discharge limit values taking into account the Parties' social, economic and technological
 capacities as may be established under this Protocol.
 3. The Contracting Parties shall establish permissible limits, environmental quality standards
 and environmental quality objectives, management practices and measures within a period
@@ -593,7 +593,7 @@ implementation of this Protocol.
 3. The Contracting Parties shall adopt appropriate measures, consistent with international
 law, to ensure that no person or entity engages in any activity that is inconsistent with,
 contrary or prejudicial to the objectives, principles or purposes of this Protocol.
-
+
  
 Article 25 : Sovereignty claims and rights
 1. Nothing in this Protocol or any act adopted on the basis of this Protocol shall prejudice the
@@ -650,7 +650,7 @@ measures should be considered:
 environmental consequences of a choice of particular activities or products, their use and
 ultimate disposal;
 (b) development and application of codes of good environmental practice that cover all
-aspects of the activity in the product’s life;
+aspects of the activity in the product's life;
 (c) mandatory application of labels informing users of environmental risks related to a
 product, its use and ultimate disposal;
 (d) conservation of resources, including energy;
@@ -678,8 +678,8 @@ lead to environmentally acceptable results, additional measures may be applied a
 environmental practice redefined.
 ANNEX II
 Priority substances and activities
-1. The Contracting Parties shall base measures contemplated in articles 5–7 of this Protocol
-on the priority substances and activities listed under items 3–5 of this annex.
+1. The Contracting Parties shall base measures contemplated in articles 5-7 of this Protocol
+on the priority substances and activities listed under items 3-5 of this annex.
 2. Priority substances and activities shall be determined by assessing the relative importance
 of impacts upon public health, marine and coastal resources, ecosystem health, social and
 economic benefits including cultural values.
@@ -807,7 +807,7 @@ adopted and implemented to prevent, reduce, control, mitigate or eliminate to th
 extent possible, pollution or degradation of the marine and coastal environment from land
 based sources and activities;
 (f) develop measurable indicators to assess the effectiveness of the measures under
-paragraphs (c)–(e) of this annex; and
+paragraphs (c)-(e) of this annex; and
 (g) evaluate the effectiveness of any other measures taken to meet the various
 environmental objectives set out in this Protocol.
 ANNEX IV Environment Impact Assessments, Evaluation and Audit Guidelines

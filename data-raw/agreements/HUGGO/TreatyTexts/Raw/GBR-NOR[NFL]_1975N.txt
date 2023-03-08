@@ -51,19 +51,19 @@ my highest consideration.
 JENS EVENSEN
 ANNEX
 Zone I (Jennegga-Malangsgrunnen)
-Definition: N 68° 50' E 13° 50',
-N 69° 33' E 15° 32',
-N 70° 00' E 17° 28'
-N 69° 09' E 13° 37',
-N 70° 00' E 16° 28',
+Definition: N 68&#186; 50' E 13&#186; 50',
+N 69&#186; 33' E 15&#186; 32',
+N 70&#186; 00' E 17&#186; 28'
+N 69&#186; 09' E 13&#186; 37',
+N 70&#186; 00' E 16&#186; 28',
 Period of Closure: 20 October-20 March
 Zone 2 (Hjelms0ybanken)
-Definition: N 71° 17' E 23° 47', N 71° 50' E 23° 47',
-N 71 ° 50' E 25° 40.5', N 71 ° 23' E 25° 40.5'
+Definition: N 71&#186; 17' E 23&#186; 47', N 71&#186; 50' E 23&#186; 47',
+N 71 &#186; 50' E 25&#186; 40.5', N 71 &#186; 23' E 25&#186; 40.5'
 Period of Closure: 1 Novernber-31 March
 Zone 3 (Nordbanken/0verbanken)
-Definition: N 70° 55' E 30° 10.5', N 71 ° 12' E 30° 43',
-N 70° 45' E 31 ° 50', N 70° 34' E 31 ° 29'
+Definition: N 70&#186; 55' E 30&#186; 10.5', N 71 &#186; 12' E 30&#186; 43',
+N 70&#186; 45' E 31 &#186; 50', N 70&#186; 34' E 31 &#186; 29'
 Period of Closure: 1 October-I March
 The zones are bounded on the landward side by the Norwegian fishery limit and on the
 seaward side by straight lines joining the points specified.

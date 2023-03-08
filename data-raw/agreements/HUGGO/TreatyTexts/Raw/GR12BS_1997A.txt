@@ -11,7 +11,7 @@ The straight geodetic line referred to in article 3 in the Agreement between the
 Estonia on the maritime delimitation in the Gulf of Riga, the Strait of Irbe and the Baltic Sea, signed at Tallinn on 12 July 1996,
 shall connect to the border of the exclusive economic zone and the continental shelf of the Kingdom of Sweden at the point with
 the following geographical coordinates:
-58° 01,440'N 20° 23,755'E
+58&#186; 01,440'N 20&#186; 23,755'E
 The point is defined in the World Geodetic System 1984 (WGS 84).
 Article 2
 This Agreement shall enter into force thirty days after the date when all the Contracting Parties have notified all the

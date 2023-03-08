@@ -94,7 +94,7 @@ At the request of any member State of the Union, the Council may, in order to ta
 Article 5
 Rights protected; scope of protection
 1.	
-The effect of the right granted to the breeder is that his prior authorisation shall be required for – the production for purposes of commercial marketing – the offering for sale – the marketing of the reproductive or vegetative propagating material, as such, of the variety. Vegetative propagating material shall be deemed to include whole plants. The right of the breeder shall extend to ornamental plants or parts thereof normally marketed for purposes other than propagation when they are used commercially as propagating material in the production of ornamental plants or cut flowers.
+The effect of the right granted to the breeder is that his prior authorisation shall be required for - the production for purposes of commercial marketing - the offering for sale - the marketing of the reproductive or vegetative propagating material, as such, of the variety. Vegetative propagating material shall be deemed to include whole plants. The right of the breeder shall extend to ornamental plants or parts thereof normally marketed for purposes other than propagation when they are used commercially as propagating material in the production of ornamental plants or cut flowers.
 
 2.	
 The authorisation given by the breeder may be made subject to such conditions as he may specify.
@@ -345,7 +345,7 @@ The auditing of the accounts of the Union shall be effected by a member State of
 Article 26
 Finances
 1.	
-The expenses of the Union shall be met from: – the annual contributions of the member States of the Union; – payments received for services rendered; – miscellaneous receipts.
+The expenses of the Union shall be met from: - the annual contributions of the member States of the Union; - payments received for services rendered; - miscellaneous receipts.
 
 2.	
 (a)	

@@ -7,7 +7,7 @@ The Ministry of Rural Development, Benin
 The Ministry of Environment and Forests, Cameroon
 The Ministry of Tourism, Transport and the Sea, Cape Verde
 The Ministry of Mines and Environment, Congo
-The Ministry of Environment and Forests, Côte d’Ivoire
+The Ministry of Environment and Forests, Cote d'Ivoire
 The Ministry of Environment, Nature Conservation, Fisheries and Forests,
 Democratic Republic of Congo
 The Ministry of Forests and Environment, Equatorial Guinea
@@ -101,4 +101,4 @@ consensus of the signatory States.
 3. The working language for all matters related to this Memorandum of Understanding shall be
 English and French, each version being equally authentic.
 On behalf of the respective authorities named above:
-Au nom des autorités respectives nommées ci-dessus:
+Au nom des autorites respectives nommees ci-dessus:

@@ -511,8 +511,8 @@ physical properties of the heavy metal, especially in the case of mercury, has
 been taken into account.
 7. Emission values expressed as mg/m3 refer to standard conditions (volume
 at 273.15 K, 101.3 kPa, dry gas) not corrected for oxygen content unless
-otherwise specified, and are calculated in accordance with draft CEN (Comité
-européen de normalisation) and, in some cases, national sampling and
+otherwise specified, and are calculated in accordance with draft CEN (Comite
+europeen de normalisation) and, in some cases, national sampling and
 monitoring techniques.
 II. GENERAL OPTIONS FOR REDUCING EMISSIONS OF HEAVY METALS AND THEIR
 COMPOUNDS
@@ -529,7 +529,7 @@ scrubbers, absorbers, etc.;
 materials (e.g. use of raw materials with low heavy metal content);
 (d) Best management practices such as good housekeeping, preventive
 maintenance programmes, or primary measures such as the enclosure of
-dust-créâting units;
+dust-creating units;
 (e) Appropriate environmental management techniques for the use and
 disposal of certain products containing Cd, Pb, and/or Hg.
 9. It is necessary to monitor abatement procedures to ensure that
@@ -717,7 +717,7 @@ cupola furnaces, electric arc furnaces and induction furnaces are operated.
 Direct particulate and gaseous heavy metal emissions are especially associated
 with melting and sometimes, to a small extent, with pouring. Fugitive
 emissions arise from raw material handling, melting, pouring and fettling.
-The most relevant emission reduction measures are outlined in table б with
+The most relevant emission reduction measures are outlined in table 6 with
 their achievable reduction efficiencies and costs, where available. These
 measures can reduce dust concentrations to 20 mg/m3, or less.
 35. The iron foundry industry comprises a very wide range of process sites.
@@ -748,7 +748,7 @@ including minimizing the size of stockpiles;
 -	Indirect heating of the furnace;
 -	Keeping the ore as dry as possible;
 -	Bringing the gas temperature entering the condenser to only 10 to
--	20ºС above the dew point;
+-	20 degrees C above the dew point;
 -	Keeping the outlet temperature as low as possible; and
 -	Passing reaction gases through a post-condensation scrubber and/or
 a selenium filter.
@@ -760,7 +760,7 @@ unit with cyclones and/or electrostatic precipitators.
 can be applied. Gold is also produced using techniques other than
 amalgamation, and these are considered to be the preferred option for new
 plants.
-40. Non-ferrous metals are mainly produced from sulphitic ores. For•
+40. Non-ferrous metals are mainly produced from sulphitic ores. For
 technical and product quality reasons, the off-gas must go through a thorough
 dedusting (< 3 mg/m3) and could also require additional mercury removal before
 being fed to an SO3 contact plant, thereby also minimizing heavy metal
@@ -785,8 +785,7 @@ and may be considered as a BAT for new plants depending on the concentrate
 characteristics. Emissions from pyrometallurgical zinc production in Imperial
 Smelting (IS) furnaces can be minimized by using a double bell furnace top and
 cleaning with high-efficiency scrubbers, efficient evacuation and cleaning of
-gases from slag and lead casting, and thorough cleaning (< 10 mg/m3) of the
-СО-rich furnace off-gases.
+gases from slag and lead casting, and thorough cleaning (< 10 mg/m3) of the CO-rich furnace off-gases.
 45. To recover zinc from oxidized residues these are processed in an IS
 furnace. Very low-grade residues and flue dust (e.g. from the steel industry)
 are first treated in rotary furnaces (Waelz-furnaces) in which a high-content
@@ -1007,7 +1006,7 @@ is monitored discontinuously, the concentrations should be measured at regular
 intervals, taking at least three independent readings per check. Sampling and
 analysis of all pollutants as well as reference measurement methods to
 calibrate automated measurement systems shall be carried out according to the
-standards laid down by the Comité européen de normalisation (CEN) or the
+standards laid down by the Comite europeen de normalisation (CEN) or the
 International Organization for Standardization (ISO). While awaiting the
 development of the CEN or ISO standards, national standards shall apply.
 National standards can also be used if they provide equivalent results to CEN
@@ -1071,7 +1070,7 @@ and 11):
 (b) 0.08 mg/m3 for municipal waste incineration;
 (c) Limit values for mercury-containing emissions from medical waste
 incineration shall be evaluated by the Parties meeting within the Executive
-Body ПО later than two years after the date of entry into force of the present
+Body no later than two years after the date of entry into force of the present
 Protocol.
 Annex VI
 PRODUCT CONTROL MEASURES
@@ -1103,8 +1102,8 @@ period in a declaration to be deposited with their instrument of ratification,
 acceptance, approval or accession, after the date of entry into force of this
 Protocol, achieve concentration levels which do not exceed:
 (a) 0.05 per cent of mercury by weight in alkaline manganese batteries
-for prolonged use in extreme conditions (e.g. temperature below 0°C or above
-50°C, exposed to shocks); and
+for prolonged use in extreme conditions (e.g. temperature below 0 degrees C or above
+50 degrees C, exposed to shocks); and
 (b) 0.025 per cent of mercury by weight in all other alkaline
 manganese batteries.
 The above limits may be exceeded for a new application of a battery

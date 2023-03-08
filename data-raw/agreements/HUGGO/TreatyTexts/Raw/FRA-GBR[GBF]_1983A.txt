@@ -18,12 +18,12 @@ Article 2
 1. The boundary line determined in accordance with Article 1 is formed by loxodromic arcs linking, in the order in which
 they are given, the points identified below by their coordinates.
 Point / Longitude West / Latitude South
-POINT V 1 / 133° 25' 29" / 26° 34' 05"
-POINT V 2 / 132° 59' 32" / 25° 40' 40"
-POINT V 3 / 132° 41' 11" / 24° 04' 08"
-POINT V 4 / 132° 23' 23" / 22° 22' 55"
-POINT V 5 / 132° 08' 37" / 21° 03' 05"
-POINT V 6 / 131° 58' 43" / 20° 45' 54"
+POINT V 1 / 133&#186; 25' 29" / 26&#186; 34' 05"
+POINT V 2 / 132&#186; 59' 32" / 25&#186; 40' 40"
+POINT V 3 / 132&#186; 41' 11" / 24&#186; 04' 08"
+POINT V 4 / 132&#186; 23' 23" / 22&#186; 22' 55"
+POINT V 5 / 132&#186; 08' 37" / 21&#186; 03' 05"
+POINT V 6 / 131&#186; 58' 43" / 20&#186; 45' 54"
 2. The geographical coordinates given in this Article are expressed in the geodesic reference system WGS 72 (World
 Geodesic System).
 3. This line has been drawn by way of illustration on the map in the Annex to this Convention.

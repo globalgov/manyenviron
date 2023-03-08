@@ -270,7 +270,7 @@ and exploitable resources).
 5 . Dispersal characteristics (e.g. effects of currents, tides and wind on horizontal transport
 and vertical mixing).
 6. Water characteristics (e.g. temperature, pH, salinity, stratification, oxygen indices of pollution
-— dissolved oxygen (DO), chemical oxygen demand (COD), biochemical oxygen demand
+- dissolved oxygen (DO), chemical oxygen demand (COD), biochemical oxygen demand
 (BOD), nitrogen present in organic and mineral form, including ammonia, suspended
 matter, other nutrients and productivity).
 7. Bottom characteristics (e.g. topography, geochemical and geological characteristics and biological

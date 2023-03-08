@@ -7,7 +7,7 @@ Article 1
 
 General Principles
 
-This Protocol, together with its Annex and Appendices, form an integral part of the Fisheries Partnership Agreement between the European Union and the Kingdom of Morocco, dated 28 February 2007, hereinafter referred to as the ‘Fisheries Agreement’ - which forms part of the euro-Mediterranean Agreement establishing an association between the European Union and the Kingdom of Morocco dated 26 February 1996 — hereinafter referred to as the ‘Association Agreement’. It helps to meet the general objectives of the Association Agreement and aims to ensure the viability of fisheries resources from ecological, economic and social points of view.
+This Protocol, together with its Annex and Appendices, form an integral part of the Fisheries Partnership Agreement between the European Union and the Kingdom of Morocco, dated 28 February 2007, hereinafter referred to as the 'Fisheries Agreement' - which forms part of the euro-Mediterranean Agreement establishing an association between the European Union and the Kingdom of Morocco dated 26 February 1996 - hereinafter referred to as the 'Association Agreement'. It helps to meet the general objectives of the Association Agreement and aims to ensure the viability of fisheries resources from ecological, economic and social points of view.
 
 The Protocol is implemented in accordance with Article 1 of the Association Agreement on developing dialogue and cooperation and Article 2 of the same Agreement concerning the respect for democratic principles and fundamental human rights.
 
@@ -59,7 +59,7 @@ Coordination in the scientific area and in exploratory fishing
 
 2.   The two parties hereby undertake to promote responsible fishing in the Moroccan fishing zone based on the principle of non-discrimination between the different fleets fishing in those waters.
 
-3.   Pursuant to Article 4(2) of the Fisheries Agreement, the two parties, on the basis of the conclusions of the Scientific Committee’s meetings, shall consult each other within the Joint Committee referred to in Article 10 of the Fisheries Agreement in order to adopt, where necessary and by mutual agreement, measures to ensure the sustainable management of fisheries resources.
+3.   Pursuant to Article 4(2) of the Fisheries Agreement, the two parties, on the basis of the conclusions of the Scientific Committee's meetings, shall consult each other within the Joint Committee referred to in Article 10 of the Fisheries Agreement in order to adopt, where necessary and by mutual agreement, measures to ensure the sustainable management of fisheries resources.
 
 4.   For research purposes and to advance scientific knowledge, exploratory fishing may be carried out in the Moroccan fisheries zone at the request of the Joint Committee. The methods for doing so shall be decided in accordance with the provisions in Chapter IV of the Annex to this Protocol.
 
@@ -77,9 +77,9 @@ Article 6
 
 Support for sectoral fisheries policy in Morocco
 
-1.   The financial contribution referred to in Article 3(1)(a)(ii) of this Protocol will help to develop and implement Morocco’s sectoral fisheries policy as part of the ‘Halieutis’ strategy for developing the fisheries sector.
+1.   The financial contribution referred to in Article 3(1)(a)(ii) of this Protocol will help to develop and implement Morocco's sectoral fisheries policy as part of the 'Halieutis' strategy for developing the fisheries sector.
 
-2.   The contribution shall be allocated and managed by Morocco on the basis of the setting up by the two parties, by mutual agreement within the Joint Committee, of the objectives to be met and of the relevant annual and multi-annual programme, in accordance with the ‘Halieutis’ strategy and based on an estimation of the anticipated impact of the projects to be carried out.
+2.   The contribution shall be allocated and managed by Morocco on the basis of the setting up by the two parties, by mutual agreement within the Joint Committee, of the objectives to be met and of the relevant annual and multi-annual programme, in accordance with the 'Halieutis' strategy and based on an estimation of the anticipated impact of the projects to be carried out.
 
 3.   For the first year of application of the Protocol, the allocation by Morocco of the contribution referred to in paragraph 1 shall be notified to the EU as soon as the guidelines, objectives, criteria and evaluation indicators have been approved by the Joint Committee. For each of the following years, Morocco shall present this allocation to the EU no later than 30 September of the previous year.
 
@@ -103,23 +103,23 @@ Economic integration of EU operators in the Moroccan fisheries sector
 
 In accordance with the legislation and regulations currently in force, the two parties shall promote contacts and help ensure cooperation between economic operators in the following areas:
 
-—
+-
 
 development of subsidiary industry related to fisheries, particularly naval construction and repair and the manufacturing of fishing gear and materials;
 
-—
+-
 
 promoting exchange of professional expertise and training of managers for the maritime fishing sector;
 
-—
+-
 
 sale of fishery products;
 
-—
+-
 
 marketing;
 
-—
+-
 
 aquaculture.
 
@@ -179,17 +179,17 @@ In order for a vessel to be eligible, neither the owner, the master nor the vess
 
 3.
 
-They must be in order vis-à-vis the Moroccan administration in so far as they must have fulfilled all prior obligations arising from their fishing activities in Morocco under fisheries agreements concluded with the European Union.
+They must be in order vis-a-vis the Moroccan administration in so far as they must have fulfilled all prior obligations arising from their fishing activities in Morocco under fisheries agreements concluded with the European Union.
 
 4.
 
-The competent EU authorities (hereinafter referred to as the ‘Commission’) shall submit to the Ministry of Agriculture and Sea Fisheries – Sea Fisheries Department (hereinafter referred to as ‘Department’) the lists of vessels applying to engage in fishing activities within the limits laid down in the datasheets annexed to the Protocol at least 20 days before the licences requested are due to become valid. These lists shall be sent electronically in a format compatible with the software used by the Department.
+The competent EU authorities (hereinafter referred to as the 'Commission') shall submit to the Ministry of Agriculture and Sea Fisheries - Sea Fisheries Department (hereinafter referred to as 'Department') the lists of vessels applying to engage in fishing activities within the limits laid down in the datasheets annexed to the Protocol at least 20 days before the licences requested are due to become valid. These lists shall be sent electronically in a format compatible with the software used by the Department.
 
 These lists shall state the number of vessels for each fishing category and zone and, for each vessel, its main characteristics, payments broken down by heading and the gear to be used during the period in question.
 
-For the category ‘industrial pelagic fishing’, the list shall also mention for each vessel the quota requested in tonnes of catches in the form of provisional monthly figures. If catches during a given month reach the vessel’s provisional monthly quota before the end of the month, the shipowner may send to the Department, via the Commission, an adjusted provisional monthly catch figure and a request for this provisional monthly quota to be extended.
+For the category 'industrial pelagic fishing', the list shall also mention for each vessel the quota requested in tonnes of catches in the form of provisional monthly figures. If catches during a given month reach the vessel's provisional monthly quota before the end of the month, the shipowner may send to the Department, via the Commission, an adjusted provisional monthly catch figure and a request for this provisional monthly quota to be extended.
 
-If during a given month catches remain below the vessel’s monthly provisional quota, a corresponding part of the quota or fee shall be credited to the following month.
+If during a given month catches remain below the vessel's monthly provisional quota, a corresponding part of the quota or fee shall be credited to the following month.
 
 5.
 
@@ -199,25 +199,25 @@ Individual licence applications, grouped into fishing category, will be submitte
 
 All licence applications shall be accompanied by the following documents:
 
-—
+-
 
 a copy of the tonnage certificate, duly certified by the flag Member State;
 
-—
+-
 
 a recent, certified colour photograph showing a side view of the vessel in its current condition. The photograph shall be at least 15 cm by 10 cm;
 
-—
+-
 
-proof of payment of fishing licence fees, other fees and observers’ expenses; In the case of ‘industrial pelagic fishing’, proof of payment of fees must be provided before the first day of the month in which activity is planned in the authorised fishing zone, as indicated on the corresponding datasheet;
+proof of payment of fishing licence fees, other fees and observers' expenses; In the case of 'industrial pelagic fishing', proof of payment of fees must be provided before the first day of the month in which activity is planned in the authorised fishing zone, as indicated on the corresponding datasheet;
 
-—
+-
 
 any other documents or certificates required under the specific provisions applicable to the type of vessel concerned pursuant to this Protocol.
 
 7.
 
-Where a licence is renewed year after year under this Protocol in respect of a vessel whose technical characteristics have not changed, the renewal application shall only be accompanied by proof of payment of fishing licence fees, other fees and observers’ expenses.
+Where a licence is renewed year after year under this Protocol in respect of a vessel whose technical characteristics have not changed, the renewal application shall only be accompanied by proof of payment of fishing licence fees, other fees and observers' expenses.
 
 8.
 
@@ -227,11 +227,11 @@ B.   Issuing of licences
 
 1.
 
-The Department shall issue fishing licences to the Commission, via the Delegation of the EU to Morocco (the ‘Delegation’) for all vessels within 15 days of receipt of all the documents referred to in point 6 above. If applicable, the Department shall notify the Commission of the reasons why a licence application has been refused.
+The Department shall issue fishing licences to the Commission, via the Delegation of the EU to Morocco (the 'Delegation') for all vessels within 15 days of receipt of all the documents referred to in point 6 above. If applicable, the Department shall notify the Commission of the reasons why a licence application has been refused.
 
 2.
 
-Fishing licences shall be drawn up in accordance with the information in the datasheets annexed to the Protocol, and shall mention in particular the fishing zone, distance from the coast, information relating to the continuous positioning and tracking system using satellite communication (serial number of the VMS transponder), the authorised gears, the main species, authorised mesh sizes, allowable by-catches and, for the category ‘industrial pelagic fishing’, the monthly provisional catch quota. The vessel’s provisional monthly quota may be extended subject to the catch limits laid down in the corresponding datasheet.
+Fishing licences shall be drawn up in accordance with the information in the datasheets annexed to the Protocol, and shall mention in particular the fishing zone, distance from the coast, information relating to the continuous positioning and tracking system using satellite communication (serial number of the VMS transponder), the authorised gears, the main species, authorised mesh sizes, allowable by-catches and, for the category 'industrial pelagic fishing', the monthly provisional catch quota. The vessel's provisional monthly quota may be extended subject to the catch limits laid down in the corresponding datasheet.
 
 3.
 
@@ -291,19 +291,19 @@ Any amendment to the legislation governing fishing licences shall be notified to
 
 E.   Terms of payment
 
-Fishing licence fees, other fees and observers’ expenses shall be payable, in the name of the Ministerial Treasurer of the Ministry of Agriculture and Maritime Fisheries, into bank account number 0018100078000 20110750201 at the Bank Al Maghrib (Morocco) before the fishing licences are issued.
+Fishing licence fees, other fees and observers' expenses shall be payable, in the name of the Ministerial Treasurer of the Ministry of Agriculture and Maritime Fisheries, into bank account number 0018100078000 20110750201 at the Bank Al Maghrib (Morocco) before the fishing licences are issued.
 
-The fees relating to quotas assigned to trawlers belonging to the category ‘industrial pelagic fishing’ are to be paid as follows:
+The fees relating to quotas assigned to trawlers belonging to the category 'industrial pelagic fishing' are to be paid as follows:
 
-—
+-
 
-the fee for the vessel’s provisional monthly quota requested by the owner will be paid before the beginning of the fishing activity or the 1st day of each month;
+the fee for the vessel's provisional monthly quota requested by the owner will be paid before the beginning of the fishing activity or the 1st day of each month;
 
-—
+-
 
 in the event of the monthly provisional quota referred to in paragraph 4 of Section A of Chapter I being extended, the fee covering this extension must be received by the Moroccan authorities before fishing may continue;
 
-—
+-
 
 if the monthly provisional quota and any extension is exceeded, the amount of the fee corresponding to this excess will be increased by a factor of 3. The monthly balance, calculated on the basis of actual catches effected, shall be paid within two months of the month in which the catches were made.
 
@@ -333,7 +333,7 @@ They shall also forward a copy of that logbook to their competent authorities no
 
 6.
 
-By 30 April the Commission shall submit to the Department a statement of fees due for the previous fishing year on the basis of the catch declarations drawn up by each shipowner and confirmed by the scientific institutes responsible in the Member States and Morocco, such as the IRD (Institut de Recherche pour le Développement), the IEO (Instituto Español de Oceanografía), the IPMA (Instituto Português do Mar e da Atmosfera) and the INRH (Institut National de Recherche Halieutique).
+By 30 April the Commission shall submit to the Department a statement of fees due for the previous fishing year on the basis of the catch declarations drawn up by each shipowner and confirmed by the scientific institutes responsible in the Member States and Morocco, such as the IRD (Institut de Recherche pour le Developpement), the IEO (Instituto Espanol de Oceanografia), the IPMA (Instituto Portugues do Mar e da Atmosfera) and the INRH (Institut National de Recherche Halieutique).
 
 7.
 
@@ -359,9 +359,9 @@ CHAPTER III
 
 FISHING ZONES
 
-Morocco shall inform the EU, prior to the date of application of the Protocol, of the geographical coordinates of the baselines, its fishing zone and all zones within it which are closed to fishing, other than the Mediterranean zone of Morocco situated east of 35°47′18″N – 5°55′33″W (Cape Spartel), which is excluded from this Protocol.
+Morocco shall inform the EU, prior to the date of application of the Protocol, of the geographical coordinates of the baselines, its fishing zone and all zones within it which are closed to fishing, other than the Mediterranean zone of Morocco situated east of 35&#186;47'18"N - 5&#186;55'33"W (Cape Spartel), which is excluded from this Protocol.
 
-The fishing zones for each category in Morocco’s Atlantic zone are defined in the datasheets (Appendix 2).
+The fishing zones for each category in Morocco's Atlantic zone are defined in the datasheets (Appendix 2).
 
 CHAPTER IV
 
@@ -375,19 +375,19 @@ The duration of the campaigns will be a minimum of three months and maximum of s
 
 The Commission shall communicate requests for licences for exploratory fishing to the Moroccan authorities. It shall provide a technical dossier specifying:
 
-—
+-
 
 the technical characteristics of the vessel;
 
-—
+-
 
-the level of expertise of the vessel’s officers as regards such fishing;
+the level of expertise of the vessel's officers as regards such fishing;
 
-—
+-
 
 the proposal for the technical parameters of the campaign (length, gear, exploration regions, etc.);
 
-—
+-
 
 the form of funding.
 
@@ -397,39 +397,39 @@ Before the start of the exploratory fishing campaign, the EU vessel shall report
 
 Before the start of the campaign, vessel owners shall submit the following to the Department and to the Commission:
 
-—
+-
 
 a declaration of the catches already on board;
 
-—
+-
 
 the technical characteristics of the fishing gear to be used during the campaign;
 
-—
+-
 
 an assurance that they will comply with Moroccan fisheries legislation.
 
 During the campaign, the owners of the vessels concerned shall:
 
-—
+-
 
-send to the Department and to the Commission a weekly report on catches made per day and by haul, including a description of the campaign’s technical parameters (position, depth, date and time, catches and other observations or comments);
+send to the Department and to the Commission a weekly report on catches made per day and by haul, including a description of the campaign's technical parameters (position, depth, date and time, catches and other observations or comments);
 
-—
+-
 
-communicate the vessel’s position, speed and heading by VMS;
+communicate the vessel's position, speed and heading by VMS;
 
-—
+-
 
-ensure the presence on board of a Moroccan scientific observer or an observer chosen by the Moroccan authorities. The role of the observer will be to gather scientific information from the catches, as well as to sample the catches. Observers shall be treated in the same way as a ship’s officer, and the shipowner shall cover their living costs during their stay on the vessel. The decision on the observer’s time on board, the length of their stay and the boarding and landing harbour will be fixed in agreement with the Moroccan authorities. Unless there is agreement between the parties to the contrary, the vessel will never be obliged to put into harbour more than once per two months,
+ensure the presence on board of a Moroccan scientific observer or an observer chosen by the Moroccan authorities. The role of the observer will be to gather scientific information from the catches, as well as to sample the catches. Observers shall be treated in the same way as a ship's officer, and the shipowner shall cover their living costs during their stay on the vessel. The decision on the observer's time on board, the length of their stay and the boarding and landing harbour will be fixed in agreement with the Moroccan authorities. Unless there is agreement between the parties to the contrary, the vessel will never be obliged to put into harbour more than once per two months,
 
-—
+-
 
 submit their vessel to inspection before it leaves the Moroccan fishing zone if the Moroccan authorities so request,
 
-—
+-
 
-comply with Morocco’s fisheries legislation.
+comply with Morocco's fisheries legislation.
 
 The catches, including by-catches, made during the scientific campaign shall remain the property of the shipowner, provided they comply with the provisions made to this end by the Joint Committee and the provisions of the scientific protocol.
 
@@ -505,19 +505,19 @@ The VMS positions shall be identified as follows:
 
 (i)
 
-the first position recorded after entry into the Moroccan fishing zone is identified by the code ‘ENT’.
+the first position recorded after entry into the Moroccan fishing zone is identified by the code 'ENT'.
 
 (ii)
 
-all following positions are identified by the code ‘POS’;
+all following positions are identified by the code 'POS';
 
 (iii)
 
-the first position recorded after entry into the Moroccan fishing zone is identified by the code ‘EXI’.
+the first position recorded after entry into the Moroccan fishing zone is identified by the code 'EXI'.
 
 (iv)
 
-positions transmitted manually, in accordance with point 13, are identified by the code ‘MAN’.
+positions transmitted manually, in accordance with point 13, are identified by the code 'MAN'.
 
 7.
 
@@ -589,7 +589,7 @@ The CSCP of the non-compliant flag State and/or the Moroccan CSCP shall immediat
 
 17.
 
-All messages not transmitted during this ‘downtime’ must be re-broadcast as soon as communication between the CSCP of the flag State concerned and the Moroccan CSCP is re-established.
+All messages not transmitted during this 'downtime' must be re-broadcast as soon as communication between the CSCP of the flag State concerned and the Moroccan CSCP is re-established.
 
 18.
 
@@ -597,7 +597,7 @@ The CSCP of the flag State and the Moroccan CSCP shall mutually agree, prior to 
 
 19.
 
-Communication failures between the Moroccan CSCP and EU flag States should not affect the normal operation of vessels’ fishing activities. However, the type of transmission decided in accordance with the point 18 must be used immediately.
+Communication failures between the Moroccan CSCP and EU flag States should not affect the normal operation of vessels' fishing activities. However, the type of transmission decided in accordance with the point 18 must be used immediately.
 
 20.
 
@@ -629,7 +629,7 @@ CATCH DECLARATIONS
 
 1.
 
-Masters of vessels shall use the logbook specially designed for fishing in Morocco’s fishing zone, a template for which is provided in Appendix 7 of the Annex. They shall keep this logbook up-to-date in accordance with the provisions of the explanatory note for that logbook.
+Masters of vessels shall use the logbook specially designed for fishing in Morocco's fishing zone, a template for which is provided in Appendix 7 of the Annex. They shall keep this logbook up-to-date in accordance with the provisions of the explanatory note for that logbook.
 
 2.
 
@@ -659,7 +659,7 @@ The information in the documents referred to in points 1 and 2 above must reflec
 
 4.   Transition to an electronic system
 
-Both parties have established a protocol for the electronic exchange of all information relating to catches and declarations (‘Electronic Reporting System’), referred to as ‘ERS data’, set out in Appendix 11. Both parties will make provision for the implementation of this protocol and the replacement of the paper version of the catch declaration by ERS data, from the implementation by Morocco of the equipment and software required.
+Both parties have established a protocol for the electronic exchange of all information relating to catches and declarations ('Electronic Reporting System'), referred to as 'ERS data', set out in Appendix 11. Both parties will make provision for the implementation of this protocol and the replacement of the paper version of the catch declaration by ERS data, from the implementation by Morocco of the equipment and software required.
 
 5.   Landings outside Morocco
 
@@ -679,7 +679,7 @@ The shipowners will choose the seamen who they take on board their vessels from 
 
 3.
 
-The employment contracts for the Moroccan seamen, a copy of which shall be given to the signatories, shall be drawn up between the shipowners’ agent(s) and the seamen and/or their trade unions or representatives in consultation with the competent Moroccan authority. The contracts shall guarantee the seamen the social security cover applicable to them, including life assurance and sickness and accident insurance.
+The employment contracts for the Moroccan seamen, a copy of which shall be given to the signatories, shall be drawn up between the shipowners' agent(s) and the seamen and/or their trade unions or representatives in consultation with the competent Moroccan authority. The contracts shall guarantee the seamen the social security cover applicable to them, including life assurance and sickness and accident insurance.
 
 4.
 
@@ -699,11 +699,11 @@ The International Labour Organisation (ILO) Declaration on Fundamental Principle
 
 8.
 
-Moroccan seamen’s wages shall be paid by the shipowners. They shall be fixed, before licences are issued, by mutual agreement between the shipowners or their agents and the Moroccan seamen concerned or their representatives. However, the wage conditions granted to Moroccan seamen shall not be lower than those applied to Moroccan crews and shall comply with ILO standards and under no circumstances be below those standards.
+Moroccan seamen's wages shall be paid by the shipowners. They shall be fixed, before licences are issued, by mutual agreement between the shipowners or their agents and the Moroccan seamen concerned or their representatives. However, the wage conditions granted to Moroccan seamen shall not be lower than those applied to Moroccan crews and shall comply with ILO standards and under no circumstances be below those standards.
 
 9.
 
-If one or more seamen employed on board fail to report at the time agreed for the vessel’s departure, the vessel shall be permitted to start the planned trip after informing the competent authorities in the port of embarkation of the shortfall in the number of seamen required and having updated its crew list. These authorities shall inform the Department thereof.
+If one or more seamen employed on board fail to report at the time agreed for the vessel's departure, the vessel shall be permitted to start the planned trip after informing the competent authorities in the port of embarkation of the shortfall in the number of seamen required and having updated its crew list. These authorities shall inform the Department thereof.
 
 10.
 
@@ -719,7 +719,7 @@ This sum shall be used for training Moroccan fishermen and shall be paid into ba
 
 13.
 
-Except as provided for in point 9, repeated failure by shipowners to embark the requisite number of Moroccan seamen shall result in automatic suspension of the vessels’ fishing licence until such obligations have been met. The Delegation shall be informed without delay of any such decision.
+Except as provided for in point 9, repeated failure by shipowners to embark the requisite number of Moroccan seamen shall result in automatic suspension of the vessels' fishing licence until such obligations have been met. The Delegation shall be informed without delay of any such decision.
 
 CHAPTER VIII
 
@@ -749,7 +749,7 @@ The Department shall draw up a list of vessels designated to take an observer on
 
 1.5.
 
-The Department shall inform the shipowners concerned, through the Delegation, of the name of the observer appointed to be taken on board their vessel at the time the licence is issued, or no later than 15 days before the observer’s planned embarkation date.
+The Department shall inform the shipowners concerned, through the Delegation, of the name of the observer appointed to be taken on board their vessel at the time the licence is issued, or no later than 15 days before the observer's planned embarkation date.
 
 2.
 
@@ -769,11 +769,11 @@ The shipowner shall provide notification of the dates and ports in Morocco where
 
 6.
 
-Where the observer is taken on board in a foreign country, their travel costs shall be borne by the vessel owner. Should a vessel with a Moroccan observer on board leave the Moroccan fishing zone, all measures must be taken to ensure the observer’s return to Morocco as soon as possible at the shipowner’s expense.
+Where the observer is taken on board in a foreign country, their travel costs shall be borne by the vessel owner. Should a vessel with a Moroccan observer on board leave the Moroccan fishing zone, all measures must be taken to ensure the observer's return to Morocco as soon as possible at the shipowner's expense.
 
 7.
 
-In the event of a wasted journey by the observer, caused by a failure by the shipowner to comply with its commitments, the shipowner shall pay the observer’s travel expenses and daily allowances, equal to those received by Moroccan national officials of an equivalent grade, for each day of inactivity. Similarly, in the event of a delay in embarkation which is due to the shipowner, the shipowner shall pay the observer the daily allowances described above.
+In the event of a wasted journey by the observer, caused by a failure by the shipowner to comply with its commitments, the shipowner shall pay the observer's travel expenses and daily allowances, equal to those received by Moroccan national officials of an equivalent grade, for each day of inactivity. Similarly, in the event of a delay in embarkation which is due to the shipowner, the shipowner shall pay the observer the daily allowances described above.
 
 Any amendment to the rules and regulations concerning daily allowances shall be notified to the Delegation no later than two months before its entry into force.
 
@@ -819,7 +819,7 @@ The master shall do everything in their power to ensure the physical safety and 
 
 11.
 
-The observer shall be offered every facility needed to carry out their duties. The master shall facilitate their access to the means of communication needed for the discharge of their duties, to documents directly concerned with the vessel’s fishing activities, in particular the logbook and the navigation log, and to those parts of the vessel necessary to facilitate the exercise of their tasks as observer.
+The observer shall be offered every facility needed to carry out their duties. The master shall facilitate their access to the means of communication needed for the discharge of their duties, to documents directly concerned with the vessel's fishing activities, in particular the logbook and the navigation log, and to those parts of the vessel necessary to facilitate the exercise of their tasks as observer.
 
 12.
 
@@ -835,7 +835,7 @@ take care of the material and equipment on board and respect the confidentiality
 
 13.
 
-At the end of the observation period and before leaving the vessel, the observer shall draw up an activity report to be transmitted to the competent authorities in Morocco, with a copy to the Delegation. He/she shall sign it in the presence of the master, who may add or cause to be added to it any observations considered relevant, followed by the master’s signature. A copy of the report shall be handed to the master when the observer is put ashore.
+At the end of the observation period and before leaving the vessel, the observer shall draw up an activity report to be transmitted to the competent authorities in Morocco, with a copy to the Delegation. He/she shall sign it in the presence of the master, who may add or cause to be added to it any observations considered relevant, followed by the master's signature. A copy of the report shall be handed to the master when the observer is put ashore.
 
 14.
 
@@ -847,7 +847,7 @@ The salary and social contributions of the observer shall be borne by the compet
 
 16.
 
-In order to reimburse Morocco for the costs arising from the presence of observers on board vessels, in addition to the fee payable by shipowners, provision is also made for the ‘observers’ expenses’ to be paid, calculated on the basis of EUR 5,5 per GT per quarter and per vessel fishing in the Moroccan fishing zone.
+In order to reimburse Morocco for the costs arising from the presence of observers on board vessels, in addition to the fee payable by shipowners, provision is also made for the 'observers' expenses' to be paid, calculated on the basis of EUR 5,5 per GT per quarter and per vessel fishing in the Moroccan fishing zone.
 
 These costs shall be paid in accordance with the payment terms set out in Chapter I, Section E of this Annex.
 
@@ -875,7 +875,7 @@ The representative of the Moroccan authority shall attend, as an observer, inspe
 
 5.
 
-The representative shall accompany national inspection officials in their visits to ports, on board vessels, in dock, to auctions, fish wholesalers’ shops, coldstores and other premises for landing fish before it is placed on the market, and shall have access to the documents which are the subject of these inspections.
+The representative shall accompany national inspection officials in their visits to ports, on board vessels, in dock, to auctions, fish wholesalers' shops, coldstores and other premises for landing fish before it is placed on the market, and shall have access to the documents which are the subject of these inspections.
 
 6.
 
@@ -883,11 +883,11 @@ The representative of the Moroccan authority shall draw up and submit a report d
 
 7.
 
-The Department shall invite the Delegation to attend inspection visits scheduled in the ports of landing, giving one month’s notice.
+The Department shall invite the Delegation to attend inspection visits scheduled in the ports of landing, giving one month's notice.
 
 8.
 
-At the Commission’s request, EU fishing inspectors may attend as observers inspections carried out by the Moroccan authorities on landing operations by EU vessels in Moroccan ports.
+At the Commission's request, EU fishing inspectors may attend as observers inspections carried out by the Moroccan authorities on landing operations by EU vessels in Moroccan ports.
 
 9.
 
@@ -901,7 +901,7 @@ MONITORING
 
 1.1.
 
-Once a year and after any change to their technical characteristics or following a request for a change in fishing category necessitating the use of a different type of fishing gear, EU vessels holding a licence under this Protocol shall report to a Moroccan port to undergo the inspections required by the legislation in force. Such inspections shall take place within 48 hours of the vessel’s arrival in port.
+Once a year and after any change to their technical characteristics or following a request for a change in fishing category necessitating the use of a different type of fishing gear, EU vessels holding a licence under this Protocol shall report to a Moroccan port to undergo the inspections required by the legislation in force. Such inspections shall take place within 48 hours of the vessel's arrival in port.
 
 1.2.
 
@@ -909,7 +909,7 @@ Once the inspection has been completed satisfactorily, the master of the vessel 
 
 1.3.
 
-The purpose of the technical inspection is to establish the compliance of the vessel’s technical characteristics and gear, to check the operation of the satellite tracking and positioning device installed on board and ensure that the provisions relating to its Moroccan crew have been complied with.
+The purpose of the technical inspection is to establish the compliance of the vessel's technical characteristics and gear, to check the operation of the satellite tracking and positioning device installed on board and ensure that the provisions relating to its Moroccan crew have been complied with.
 
 1.4.
 
@@ -931,7 +931,7 @@ date and time of transmission;
 
 2.1.2.
 
-the vessel’s position, in accordance with point 5 of Chapter V;
+the vessel's position, in accordance with point 5 of Chapter V;
 
 2.1.3.
 
@@ -939,7 +939,7 @@ the weight in kilograms and catches per species on board, as identified using th
 
 2.1.4.
 
-messages such as ‘catches on entry’ (COE) and ‘catches on exit’ (COX).
+messages such as 'catches on entry' (COE) and 'catches on exit' (COX).
 
 2.2.
 
@@ -947,7 +947,7 @@ This information should preferably be communicated by fax or, for vessels not eq
 
 2.3.
 
-In the case of vessels falling under the category ‘industrial pelagic fishing’, the final exit from the Moroccan fishing zone shall be subject to the Department’s prior authorisation. This authorisation shall be issued within 24 hours of the request being made by the ship’s master or agent, with the exception of a request arriving on the day before a weekend where the authorisation has to be issued on the following Monday. If authorisation is withheld, the Department shall notify the owner of the vessel and the Commission without delay of the reasons for such refusal.
+In the case of vessels falling under the category 'industrial pelagic fishing', the final exit from the Moroccan fishing zone shall be subject to the Department's prior authorisation. This authorisation shall be issued within 24 hours of the request being made by the ship's master or agent, with the exception of a request arriving on the day before a weekend where the authorisation has to be issued on the following Monday. If authorisation is withheld, the Department shall notify the owner of the vessel and the Commission without delay of the reasons for such refusal.
 
 2.4.
 
@@ -955,7 +955,7 @@ A vessel found to be fishing without having informed the Department shall be reg
 
 2.5.
 
-The fax and telephone numbers of the vessel and the master’s e-mail address are to be indicated by the owner on the fishing licence application form.
+The fax and telephone numbers of the vessel and the master's e-mail address are to be indicated by the owner on the fishing licence application form.
 
 3.   Monitoring procedures
 
@@ -989,7 +989,7 @@ After the Moroccan authorities responsible for inspection have drawn up a statem
 
 5.2.
 
-This signature shall not prejudice the master’s rights or any defence which he or she may make to the alleged infringement.
+This signature shall not prejudice the master's rights or any defence which he or she may make to the alleged infringement.
 
 5.3.
 
@@ -1017,11 +1017,11 @@ The bank security shall be irrevocable until the legal proceedings have been con
 
 The vessel shall be authorised to leave the port:
 
-—
+-
 
 once the obligations arising under the amicable settlement have been fulfilled; or
 
-—
+-
 
 when the bank security referred to in point 6.3 above has been lodged and accepted by the competent Moroccan authority, pending completion of the legal proceedings.
 
@@ -1035,23 +1035,23 @@ Any transhipment at sea of catches shall be prohibited in the Moroccan fishing z
 
 Before any transhipment, the owners of these vessels must notify the following information to the Department at least 24 hours in advance:
 
-—
+-
 
 the names of the transhipping fishing vessels;
 
-—
+-
 
 the name of the cargo vessel, its flag, registration number and call sign;
 
-—
+-
 
 the tonnage by species to be transhipped;
 
-—
+-
 
 the destination of catches;
 
-—
+-
 
 the date and day of transhipment.
 
@@ -1089,7 +1089,7 @@ Implementation rules
 
 During landing operations, fish markets will draw up a weighing slip acting as the basis for product traceability.
 
-A ‘statement of sales and deductions’ shall be drawn up for sales in fish markets.
+A 'statement of sales and deductions' shall be drawn up for sales in fish markets.
 
 Copies of the above weighing slips and statements shall be sent to the Delegation in the port of landing. Once they have been approved by the Department, the shipowners concerned shall be informed of the amounts that will be refunded to them. These amounts shall be deducted from the fees due for future licence applications.
 
@@ -1160,7 +1160,7 @@ General provisions
 
 1.
 
-All EU fishing vessels must be equipped with an electronic system, hereinafter referred to as an ‘ERS’, capable of recording and transmitting data on the vessel’s fishing activities, hereinafter referred to as ‘ERS data’, when the vessel is operating in the Moroccan fishing zone.
+All EU fishing vessels must be equipped with an electronic system, hereinafter referred to as an 'ERS', capable of recording and transmitting data on the vessel's fishing activities, hereinafter referred to as 'ERS data', when the vessel is operating in the Moroccan fishing zone.
 
 2.
 
@@ -1168,7 +1168,7 @@ An EU vessel that is not equipped with an ERS, or whose ERS is not working, shal
 
 3.
 
-ERS data shall be transmitted, in accordance with the procedures of the vessel’s flag State to the Fisheries Monitoring and Control Centre (CSCP) of the flag State.
+ERS data shall be transmitted, in accordance with the procedures of the vessel's flag State to the Fisheries Monitoring and Control Centre (CSCP) of the flag State.
 
 4.
 
@@ -1288,9 +1288,9 @@ ERS data as referred to in paragraph 11 which have not been made available to Mo
 
 22.
 
-If the Moroccan CSCP does not receive the ERS data from a vessel for three consecutive days, Morocco may instruct a vessel to immediately call at a port of Morocco’s choosing in order to investigate.
+If the Moroccan CSCP does not receive the ERS data from a vessel for three consecutive days, Morocco may instruct a vessel to immediately call at a port of Morocco's choosing in order to investigate.
 
-CSCP failure – ERS data not received by Moroccan CSCP
+CSCP failure - ERS data not received by Moroccan CSCP
 
 23.
 

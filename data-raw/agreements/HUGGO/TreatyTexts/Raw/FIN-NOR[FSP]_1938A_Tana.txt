@@ -34,7 +34,7 @@ fact.
 
 Similarly, the competent district bailiffs shall communicate with each other if they are informed
 by their own authorities that the fishery regulations have been waived in accordance with the
-provisions in § 18 of the Norwegian Regulations or § 17 of the Finnish Regulations at a place at
+provisions in  18 of the Norwegian Regulations or  17 of the Finnish Regulations at a place at
 which the rivers form the frontier.
 
 Article 4.
@@ -67,7 +67,7 @@ FISHERY REGULATIONS FOR THE FISHING AREA OF THE TANA RIVER.
 CHAPTER I.
 THE EXTENT OF THE FISHING AREA.
 
-§ I.
+ I.
 Text of Norwegian Regulations.
 The fishing area of the Tana river comprises
 the Norwegian parts of the Skiettsjamjokka,
@@ -76,7 +76,7 @@ mouth, together with the tributaries flowing
 into these rivers as far up as salmon are
 known to go.
 
-§ I.
+ I.
 Text of Finnish Regulations.
 The fishing area of the Tana river comprises
 the Norwegian parts of the Skiettsjamjokka,
@@ -86,19 +86,19 @@ far up as salmon are known to go.
 
 CHAPTER II.
 THE CATCHING OF SALMON AND SEA TROUT.
-§2.
+2.
 Subject to the restrictions resulting from the following regulations, it is permissible to use the
 following tackle for catching salmon and sea trout: barriers with hook nets, and/or fish traps, seine
 nets, drift nets, bar nets, or rods and hand lines.
 
 
-§3.
+3.
 Knotted tackle, including fish traps of any construction and connecting nets, may not have
 a smaller mesh than 58 mam. between the knots, counting from the middle of each knot when the
 tackle is wet.
 Breakwaters in the barriers shall consist for the most part of wood.
 
-§4.
+4.
 Text of Norwegian Regulations.
 No person entitled to fish may use more than
 two barriers.
@@ -115,7 +115,7 @@ all posts below the level of the water, and the
 end posts of barriers, shall be marked by
 bundles of branches in the same manner.
 
-§ 4.
+ 4.
 Text of Finnish Regulations.
 No person entitled to fish may use more than
 two barriers.
@@ -133,7 +133,7 @@ water, and the end posts of barriers, shall be
 marked by bundles of branches in the same
 manner.
 
-§5.
+5.
 Seine nets may be used only at the places hitherto used for the purpose, and the distance
 between the place at which the seine net is cast out and the place at which it is taken in may not
 exceed 250 metres, measured on the bank of the river. If a casting place is destroyed through a
@@ -142,7 +142,7 @@ be sent immediately to the competent district official.
 Seine nets may not exceed 100 metres in length, and not more than four boats may be used for
 casting out a seine net.
 
-§ 6.
+ 6.
 Drift nets may not exceed 45 metres in length, and when in use the distance between two drift
 nets shall at no point be less than 200 metres.
 When in use, no part of the drift net may come nearer any part of the barrier than ioo metres.
@@ -150,13 +150,13 @@ Drifting may not take place for a greater distance than 500 metres at one time, 
 may be used.
 From June 15th inclusive to April 3oth inclusive drift nets may not be used.
 
-§ 7.
+ 7.
 Seine nets or drift nets may not be drawn against artificial barriers (goldem).
-§ 8.
+ 8.
 Bar nets may not exceed 30 metres in length, and when fishing is being carried on with this
 tackle, artificial breakwaters may not be used.
 
-§ 9.
+ 9.
 Text of Norwegian Regulations.
 In the part of the fishing area lying north of
 the present southern boundary of zone 7 in the
@@ -189,7 +189,7 @@ The provision regarding the weekly closed
 period shall not apply to fishing with rod or
 hand line.
 
-§ 9.
+ 9.
 Text of Finnish Regulations.
 It is forbidden from September Ist inclusive
 to April 3oth inclusive to fish or kill salmon or
@@ -211,7 +211,7 @@ hand line.
 
 CHAPTER III.
 THE CATCHING OF OTHER FISH.
-§ 10.
+ 10.
 For the purpose of catching fresh-water trout, red char, grayling, gwyniad, vendace, pike,
 perch and burbot, bar nets alone may be used in the river, while during the period from the breaking
 up of the ice until August 31st inclusive, rods and hand lines may alone be used.
@@ -220,25 +220,25 @@ other tackle with hooks.
 In fishing for grayling and gwyniad with bar nets it shall be permissible from August 1st inclusive
 until the ice forms to use a breakwater, made of posts and bundles of branches, not exceeding
 4 metres in length. The breakwater shall be taken up and put on land as soon as the fishing is
-terminated. As regards the posts and rams the provision of § 4 shall apply.
+terminated. As regards the posts and rams the provision of  4 shall apply.
 
-§ 12.
-The mesh of tackle used for catching the kinds of fish mentioned in § 10 shall not be less than
+ 12.
+The mesh of tackle used for catching the kinds of fish mentioned in  10 shall not be less than
 30 mm. or more than 45 mm. between the knots, counting from the middle of each knot when the
 tackle is wet. It shall, however, be permitted to catch vendace in lakes with bar nets of a mesh
 down to 20 nun.
 Fish traps, including connecting nets, may not exceed 1.5 metres in height at any place.
 CHAPTER IV.
 MISCELLANEOUS PROVISIONS.
-§ 12.
+ 12.
 The use of other tackle than that mentioned in Chapters II and III, including fish-gigs and
 the use of lime, explosives, poisonous substances or electric current, as a means of catching fish, is
 forbidden. It is, however, permissible to use gaffs, fish-axes or spoon nets as auxiliary tackle
 for lawful fishing.
-§ 13.
+ 13.
 Objects calculated to frighten fish may not be placed in or over the water or on the bed of the
 river.
-§ 14.
+ 14.
 It is at all times forbidden to catch or kill salmon or sea trout less than 25 cm. in length or
 fresh-water trout, red char, gwyniad or grayling less than 20 cm. in length, measured from the tip
 of the snout to the end of the central part of the tail fin.
@@ -246,14 +246,14 @@ Should such fish have been caught, they must be immediately returned to the wate
 applies to salmon caught in the annual close season and in the weekly close period if it has not
 been caught with rod or hand line.
 
-§ 15.
+ 15.
 No part of barriers or bar nets may be fixed over the middle of the river-bed either in the main
 stream or in subsidiary streams which generally contain water all the summer. If such tackle is
 laid out from opposite banks either immediately opposite each other or within a distance of 12o
 metres, along the river, no part of the tackle may be fixed nearer the middle of the bed than onetenth
 of the width of the river or current at the midsummer water-level.
 
-§ 16.
+ 16.
 Text of Norwegian Regulations.
 Within an area at the outlet of the Tana
 river from Smalfjordnes to Stangenes, bag nets
@@ -263,12 +263,12 @@ retained to the same extent and in the same
 numbers at the same places as hitherto.
 
 Text of Norwegian Regulations.
-§ 17.
+ 17.
 Fishery inspectors shall be considered on the
 same footing as police officials in respect of
 any insulting language or action used against
 them.
-§ 18.
+ 18.
 The provisions laid down in the present
 fishery regulations shall not prevent the inspector
 of fresh-water fishery, when applying
@@ -276,7 +276,7 @@ such provisions as he considers necessary in
 order to avoid abuses, from permitting fishing
 for scientific purposes or in order to catch fish
 for breeding in incubators.
-§ 19.
+ 19.
 Breaches of the above provisions shall be
 punishable by a fine. Fishing tackle which is
 put to an unlawful use and fish which is caught
@@ -284,7 +284,7 @@ unlawfully, or the value of such tackle or such
 fish, may be confiscated.
 
 Text of Finnish Regulations.
-§ 16.
+ 16.
 The person duly instructed to supervise the
 observance of the present regulations shall
 enjoy the same rights and the same legal
@@ -294,19 +294,19 @@ value as evidence as that conferred on certificates
 issued by inspectors in general, in virtue
 of Chapter 17, Article 11, of the Code of Legal
 Procedure.
-§ 17.
+ 17.
 The provisions laid down in the present
 fishery regulations shall not apply to fishing
 for scientific purposes or in order to catch fish
 for breeding, which shall be authorised by the
 Department of Agriculture under conditions
 which shall prevent abuse.
-§ 18.
+ 18.
 Breaches of the provisions of the present
 fishery regulations shall be punishable in
 accordance with the general law.
 
-§ 20. - § 19.
+ 20. -  19.
 Knotted tackle which is proved to have been procured before the issue of the present fishery
 regulations but the mesh of which does not comply with the provisions may, so far as the size of
 the mesh is concerned, be used for five years from the date when the provisions come into force.

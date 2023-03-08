@@ -59,7 +59,7 @@ ing fishing operations in areas where concentrations of Pacific halibut are en
 countered;
 d. Refrain from conducting specialized fisheries off the Pacific coast of the
 United States for rockfish (Sebastes spp.), blackcod (Anoplopoma fimbrid),
-flounder and sole (Pleuronectidae and Bothidaè), anchovy (Engraulis mordax),
+flounder and sole (Pleuronectidae and Bothidae), anchovy (Engraulis mordax),
 Pacific mackerel (Scomber japonicus) and shrimp (Pandalidae). Polish fishing
 vessels will avoid conducting fishing operations in areas where concentrations of
 these species are encountered;
@@ -68,69 +68,69 @@ e. Refrain from fishing in the Gulf of Alaska in the following areas:
 twelve nautical miles from the baseline from which the United States territorial
 sea is measured in the six areas bounded respectively by straight lines connecting
 in each of the following groups the coordinates in the order listed:
-(i) North Latitude West Longitude 57°15' 154°51'
-56°57' 154°34'
-56°21' 155°40'
-56°26' 155°55'
-57°15' 154°51'
+(i) North Latitude West Longitude 57&#186;15' 154&#186;51'
+56&#186;57' 154&#186;34'
+56&#186;21' 155&#186;40'
+56&#186;26' 155&#186;55'
+57&#186;15' 154&#186;51'
 (ii) North Latitude West Longitude
-5556°°426T' 115545°°0267''
-55°40' 155° 17'
-55°48' 155°00'
-55°54' 154°55'
-56°03' 154°36'
-56°03' 153°45'
-56°30' 153°45'
-56°30' 154°49'
-56°27' 154°06'
+5556&#186;&#186;426T' 115545&#186;&#186;0267''
+55&#186;40' 155&#186; 17'
+55&#186;48' 155&#186;00'
+55&#186;54' 154&#186;55'
+56&#186;03' 154&#186;36'
+56&#186;03' 153&#186;45'
+56&#186;30' 153&#186;45'
+56&#186;30' 154&#186;49'
+56&#186;27' 154&#186;06'
 (Hi) North Latitude
-56°30'
-56°30'
-56°44'
-5566°°4557'
-56°30'
+56&#186;30'
+56&#186;30'
+56&#186;44'
+5566&#186;&#186;4557'
+56&#186;30'
 (iv) North Latitude
-57°05'
-56°54'
-56°46'
-56°46'
-57°19'
-57°05'
+57&#186;05'
+56&#186;54'
+56&#186;46'
+56&#186;46'
+57&#186;19'
+57&#186;05'
 (v) North Latitude
-57°35'
-57°11'
-57° 19'
-57°48'
-57°35'
-(vi) North Latitude 58°00'
-58°00'
-58°12'
-58°19'
-58°00'
-West Longitude 153°49'
-153°00'
-153°00'
-153°15'
-153°45'
-153°49'
-West Longitude 152°52'
-152°52'
-152°37'
-152°20'
-152°20'
-152°52'
-We1s5t L2o°n0g3it'u de
-151° 14'
-150°57'
-115522°°00(3y'
-West Longitude 152°00'
-150°00'
-150°00'
-151 °29'
-152°00'
+57&#186;35'
+57&#186;11'
+57&#186; 19'
+57&#186;48'
+57&#186;35'
+(vi) North Latitude 58&#186;00'
+58&#186;00'
+58&#186;12'
+58&#186;19'
+58&#186;00'
+West Longitude 153&#186;49'
+153&#186;00'
+153&#186;00'
+153&#186;15'
+153&#186;45'
+153&#186;49'
+West Longitude 152&#186;52'
+152&#186;52'
+152&#186;37'
+152&#186;20'
+152&#186;20'
+152&#186;52'
+We1s5t L2o&#186;n0g3it'u de
+151&#186; 14'
+150&#186;57'
+115522&#186;&#186;00(3y'
+West Longitude 152&#186;00'
+150&#186;00'
+150&#186;00'
+151 &#186;29'
+152&#186;00'
 (2) from August 10 to December 31 inclusive off Unimak Island seaward of a limit
 of twelve nautical miles from the baseline from which the United States ter
-ritorial sea is measured in the area between 163°04' and 166°00' West Longitude;
+ritorial sea is measured in the area between 163&#186;04' and 166&#186;00' West Longitude;
 (3) during the period from three and three-fourths days before the opening hour of
 the halibut fishing season to three and one-half days after such opening hour in
 the areas described below. Information as to the opening dates of the halibut
@@ -139,69 +139,69 @@ to the Government of the Polish People's Republic by the Government of the
 United States of America:
 (i) The area bounded by straight lines connecting the following coordinates in the
 order listed:
-North Latitude 59°28'
-59°28'
-58°30'
-58°42'
-59°28'
-We1st5 L0o°n0g0itu' de
-147°41'
-148°30'
-150°20'
-150°00'
+North Latitude 59&#186;28'
+59&#186;28'
+58&#186;30'
+58&#186;42'
+59&#186;28'
+We1st5 L0o&#186;n0g0itu' de
+147&#186;41'
+148&#186;30'
+150&#186;20'
+150&#186;00'
 (ii) the area bounded by straight lines connecting the following coordinates in the
 order listed:
 North Latitude West Longitude
-58°05' 150°27
-5578°°0405'' 115408°°0457'
-58°05' 150°27
+58&#186;05' 150&#186;27
+5578&#186;&#186;0405'' 115408&#186;&#186;0457'
+58&#186;05' 150&#186;27
 (iii) the area seaward of a limit of twelve nautical miles from the baseline from
 which the United States territorial sea is measured bounded by straight lines
 connecting the following coordinates in the order listed:
 North Latitude West Longitude
-5566°° 2148'' 115565°°34W8'
-55°31' 156°04'
-55°31' 156°31'
-56°24' 156°30'
-(4) from December 1 to December 31 inclusive in the area between 140°00' West
-Longitude and I41°0ff West Longitude;
+5566&#186;&#186; 2148'' 115565&#186;&#186;34W8'
+55&#186;31' 156&#186;04'
+55&#186;31' 156&#186;31'
+56&#186;24' 156&#186;30'
+(4) from December 1 to December 31 inclusive in the area between 140&#186;00' West
+Longitude and I41&#186;0ff West Longitude;
 /. refrain from fishing throughout the year in the waters off the coast of the
 Pacific Northwest in the following areas:
-(1) between 47°3(y North Latitude and 48°30/ North Latitude;
-(2) between 46° 14' North Latitude and 46°56' North Latitude landward of the
+(1) between 47&#186;3(y North Latitude and 48&#186;30/ North Latitude;
+(2) between 46&#186; 14' North Latitude and 46&#186;56' North Latitude landward of the
 isobath of 110 meters;
 (3) off the Columbia River in an area bounded by straight baselines connecting the
 following coordinates in the order listed:
-No4rt6h °L0a0ti't ude We1st2 L4o°n4g0it'ude
-4467°°20(0y' 112244°°2400''
-4467°°0200'' 112254°°25(0y'
-46°00' 124°55'
-46<W 124°40'
+No4rt6h &#186;L0a0ti't ude We1st2 L4o&#186;n4g0it'ude
+4467&#186;&#186;20(0y' 112244&#186;&#186;2400''
+4467&#186;&#186;0200'' 112254&#186;&#186;25(0y'
+46&#186;00' 124&#186;55'
+46<W 124&#186;40'
 (4) off the Klamath River in an area bounded by straight baselines connecting the
 following coordinates in the order listed:
 North Latitude West Longitude
-41°37 124°34'
-4411°°2307' 112244°°32(8y'
-41°20' 124°32'
-41°37 124°34'
+41&#186;37 124&#186;34'
+4411&#186;&#186;2307' 112244&#186;&#186;32(8y'
+41&#186;20' 124&#186;32'
+41&#186;37 124&#186;34'
 g. As of October 1, 1975, refrain from fishing with gear other than pelagic
 gear (true midwater trawls, using trawl doors incapable of being fished on the bot
-tom) off the Pacific coast of the United States south of 47°30' North Latitude;
+tom) off the Pacific coast of the United States south of 47&#186;30' North Latitude;
 h. Limit the total number of Polish fishing vessels licensed to operate in the
 North Pacific to not more than 15, of which not more than 11 will engage in fishing
 at any one time. Of the total number of Polish vessels which may be engaged in
 fishing, not more than four will operate at any one time off the Pacific coast of the
-United States in the Gulf of Alaska north of 54°30' North Latitude between 132°00'
-West Longtitude and 157°00' West Longitude and north of 53°00' North Latitude
-between 157°01' West Longitude and 166°00' West Longitude. Of the number of
+United States in the Gulf of Alaska north of 54&#186;30' North Latitude between 132&#186;00'
+West Longtitude and 157&#186;00' West Longitude and north of 53&#186;00' North Latitude
+between 157&#186;01' West Longitude and 166&#186;00' West Longitude. Of the number of
 Polish vessels which may be engaged in fishing, between June 15 and September 30
 not more than 7 vessels may operate at any one time off the Pacific coast of the
-United States between 47°30' North Latitude and 42°00' North Latitude and not
+United States between 47&#186;30' North Latitude and 42&#186;00' North Latitude and not
 more than 7 vessels may operate at any one time off the United States coast south of
-42°00' North Latitude. After October 1, 1975, not more than 7 Polish fishing vessels
-may operate south of 47°30' North Latitude. Of these 7 vessels, not more than 4 may
-fish at any one time between 47°30' North Latitude and 42°00' North Latitude, and
-not more than 4 may fish in the waters off the United States coast south of 42°00'
+42&#186;00' North Latitude. After October 1, 1975, not more than 7 Polish fishing vessels
+may operate south of 47&#186;30' North Latitude. Of these 7 vessels, not more than 4 may
+fish at any one time between 47&#186;30' North Latitude and 42&#186;00' North Latitude, and
+not more than 4 may fish in the waters off the United States coast south of 42&#186;00'
 North Latitude.
 /. Limit the catch of Pacific hake in 1975 throughout the Northeastern Pacific
 Ocean to a level not to exceed that taken by Poland in this area in 1974.
@@ -312,11 +312,11 @@ ficials available in the Agreement area.
 Article 7. The areas where Polish fishing vessels may conduct loading opera
 tions in the waters of the nine-mile fishery zone contiguous to the territorial sea of the
 United States of America shall be as follows:
-a. near Forre.ster Island, Alaska, in the waters bounded on the north by 54°54'
-North Latitude, on the east by 133° 16' West Longitude, and on the south by
-54°44' North Latitude;
-b. near Destruction Island, Washington, in the waters between 47°36' North
-Latitude and 47°45' North Latitude.
+a. near Forre.ster Island, Alaska, in the waters bounded on the north by 54&#186;54'
+North Latitude, on the east by 133&#186; 16' West Longitude, and on the south by
+54&#186;44' North Latitude;
+b. near Destruction Island, Washington, in the waters between 47&#186;36' North
+Latitude and 47&#186;45' North Latitude.
 Article 8. The provisions of Annex I shall be applicable, on a voluntary basis,
 for the purpose of ensuring the application of the Agreement, except where enforce
 ment is otherwise provided for in the Agreement.
@@ -462,7 +462,7 @@ documents (nationality paper/fishing log book).
 7. Please give me your name.
 8. Please write down the name and address of the owners of your vessel.
 9. Are you fishing for industrial purposes?
-10. I am recording your position as ....... ° lat.,....... ° long, at....... G.M.T. Do you
+10. I am recording your position as ....... &#186; lat.,....... &#186; long, at....... G.M.T. Do you
 agree?
 11. I agree. (Yes)
 12. I do not agree. (No)
@@ -487,7 +487,7 @@ own language in Section 12 of the Report Form.
 so, please do so in your own language in Section 13 of the Report Form.
 28. Please sign the report in Section 14.
 29. I am leaving. Please check that the time is ....... G.M.T.
-30. Thank you —Bon voyage.
+30. Thank you -Bon voyage.
 ANNEX II
 MEASURES TO PREVENT FISHING CONFLICT IN THE WATERS
 OFF THE COAST OF THE UNITED STATES

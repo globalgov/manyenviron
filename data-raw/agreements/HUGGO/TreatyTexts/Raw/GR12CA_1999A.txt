@@ -55,7 +55,7 @@ and economic electricity supply, and the creation of the electricity and capacit
 market is ensured through mutually coordinated technical and economic policies. 
 Article 5 
 The parallel operation of the CA energy systems shall be achieved through currently 
-operating and newly constructed 500 –220 kV intersystem electricity transmission 
+operating and newly constructed 500 -220 kV intersystem electricity transmission 
 lines. 
 The indispensable requirement for the energy systems parallel operation shall be 
 based on the principle of electric power and capacity self balance for each EPP CA 

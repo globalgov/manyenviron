@@ -26,8 +26,8 @@ From Point No. 1, the boundary line is traced as the geodesic to the point of in
 which lie 200 nautical miles (1 nautical mile equals 1,852 metres) from the nearest points of the baselines from which the width
 of the Contracting Parties' territorial sea is measured.
 The positions of the aforementioned points are:
-Point No. 1: 63° 53' 14.93" N., 0° 29' 19.55" W.
-Point No. 2: 64° 25' 59.52" N., 0° 29' 12.22" W.
+Point No. 1: 63&#186; 53' 14.93" N., 0&#186; 29' 19.55" W.
+Point No. 2: 64&#186; 25' 59.52" N., 0&#186; 29' 12.22" W.
 2. The positions referred to above are defined in geographical latitude and longitude with respect to the European
 Datum (first revision, 1950).
 3. As an illustration, the boundary line is drawn on the map annexed to this Agreement.

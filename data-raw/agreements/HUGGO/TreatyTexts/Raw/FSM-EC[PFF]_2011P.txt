@@ -14,7 +14,7 @@ Period of application and fishing opportunities
 
 Article 2
 
-Financial contribution — methods of payment
+Financial contribution - methods of payment
 
 1. The financial contribution referred to in Article 7 of the Fisheries Partnership Agreement shall be EUR 559000 per year for the period referred to in Article 1, paragraph 2:
 
@@ -94,7 +94,7 @@ New fishing opportunities
 
 Article 7
 
-Conditions governing fishing activities — exclusivity clause
+Conditions governing fishing activities - exclusivity clause
 
 1. European Union vessels may fish in FSM EEZ only if they are in possession of a valid fishing authorisation issued by FSM NORMA under this Protocol.
 
@@ -252,7 +252,7 @@ Issue of fishing authorisations (licences)
 
 11. Fishing authorisations shall be issued for a specific vessel and shall not be transferable.
 
-12. At the request of the European Union and where force majeure is proven, a vessel’s fishing authorisation shall be replaced by a new fishing authorisation for another vessel whose features are similar to those of the first vessel for the remaining period of the duration of the fishing authorisation, with no further fee due. The total catch by both vessels concerned will be taken into account when the level of catches by European Union vessels is taken into consideration to determine if any additional payments are to be made by the European Union according to Article 2 paragraph 4 of the Protocol.
+12. At the request of the European Union and where force majeure is proven, a vessel's fishing authorisation shall be replaced by a new fishing authorisation for another vessel whose features are similar to those of the first vessel for the remaining period of the duration of the fishing authorisation, with no further fee due. The total catch by both vessels concerned will be taken into account when the level of catches by European Union vessels is taken into consideration to determine if any additional payments are to be made by the European Union according to Article 2 paragraph 4 of the Protocol.
 
 13. The owner of the first vessel shall return the fishing authorisation to be cancelled to the Executive Director via the Delegation.
 
@@ -264,7 +264,7 @@ Issue of fishing authorisations (licences)
 
 SECTION 2
 
-Fishing authorisation conditions – fees and advance payments
+Fishing authorisation conditions - fees and advance payments
 
 1. Fishing authorisations shall be valid for 1 year. They may be renewable. Renewal of fishing authorisations shall be subject to the number of available fishing opportunities established by the Protocol.
 
@@ -276,7 +276,7 @@ Fishing authorisation conditions – fees and advance payments
 
 (b) EUR 4200 per surface long-liner, equivalent to the fees due for 120 tonnes of tuna and tuna-like species caught per year.
 
-4. The final statement of the fees due for the fishing year shall be drawn up by the European Commission by 30 June each year for the amounts caught during the year before and on the basis of the catch declarations made by each ship-owner. The data should be confirmed by the scientific institutes responsible for verifying catch data of the European Union (Institut de Recherche pour le Development (IRD), the Instituto Español de Oceanografía (IEO) or the Instituto Portugues de Investigaçao Maritima (IPIMAR).
+4. The final statement of the fees due for the fishing year shall be drawn up by the European Commission by 30 June each year for the amounts caught during the year before and on the basis of the catch declarations made by each ship-owner. The data should be confirmed by the scientific institutes responsible for verifying catch data of the European Union (Institut de Recherche pour le Development (IRD), the Instituto Espanol de Oceanografia (IEO) or the Instituto Portugues de Investigacao Maritima (IPIMAR).
 
 5. The fee statement drawn up by the European Commission shall be transmitted to the Executive Director for verification and approval.
 
@@ -422,13 +422,13 @@ B. For longline vessels:
 
 (b) the Executive Director shall draw up a list of vessels designated to take an observer on board and a list of appointed observers. These lists shall be kept up to date. They shall be forwarded to the European Commission as soon as they have been drawn up and every 3 months thereafter where they have been updated;
 
-(c) the Executive Director shall inform the ship-owners concerned, or their agents, of his intentions to take on board an appointed observer on their vessels at the time the fishing authorisation is issued, or no later than fifteen (15) days before the observer’s planned embarkation date and whose name shall be notified as soon as possible;
+(c) the Executive Director shall inform the ship-owners concerned, or their agents, of his intentions to take on board an appointed observer on their vessels at the time the fishing authorisation is issued, or no later than fifteen (15) days before the observer's planned embarkation date and whose name shall be notified as soon as possible;
 
 (d) the time spent on board by observers shall be fixed by the Executive Director but, as a general rule, it should not exceed the time required to carry out their duties. The Executive Director shall inform the ship-owners or their agents thereof when notifying them of the name of the observer appointed to be taken on board the vessel concerned.
 
 3. Subject to the provisions of this Chapter, paragraph 2A, the ship-owners concerned shall make known at which FSM ports and on what dates they intend to take observers on board 10 days prior to the date intended to take on the observer at the commencement of a trip.
 
-4. Where observers are taken on board in a foreign port, their travel costs shall be borne by the ship-owner. Should a vessel with an observer from FSM on board leave the FSM EEZ, all measures must be taken to ensure the observer’s return to the FSM as soon as possible at the expense of the ship-owner.
+4. Where observers are taken on board in a foreign port, their travel costs shall be borne by the ship-owner. Should a vessel with an observer from FSM on board leave the FSM EEZ, all measures must be taken to ensure the observer's return to the FSM as soon as possible at the expense of the ship-owner.
 
 5. If the observer is not present at the time and place agreed and during the six (6) hours following the time agreed, ship-owners shall be automatically absolved of their obligation to take the observer on board.
 
@@ -452,11 +452,11 @@ B. For longline vessels:
 
 (a) the captain or master shall allow and assist such authorised observer to board the vessel for scientific, monitoring, and other functions;
 
-(b) the captain or master shall assist the observer to have full access and to use facilities and equipment on board the vessel, which the authorised observer may determine necessary to carry out the observer’s duties;
+(b) the captain or master shall assist the observer to have full access and to use facilities and equipment on board the vessel, which the authorised observer may determine necessary to carry out the observer's duties;
 
 (c) observers shall have access to the bridge, fish on board and areas, which may be used to hold, process, weigh and store fish;
 
-(d) observers may remove a reasonable number of samples and shall have full access to the vessel’s records, including its logs, catch reports, and documentation for the purpose of inspection and copying; and
+(d) observers may remove a reasonable number of samples and shall have full access to the vessel's records, including its logs, catch reports, and documentation for the purpose of inspection and copying; and
 
 (e) observers shall be allowed to gather any other information relating to fisheries in the FSM EEZ.
 
@@ -466,7 +466,7 @@ B. For longline vessels:
 
 (b) respect the material and equipment on board and the confidentiality of all documents belonging to the said vessel.
 
-9. At the end of the observation period and after debriefing an activity report is drawn up to be signed in the presence of the master who may provide additional comments considered relevant, followed by the master’s signature. Copies of the report shall be provided to the master when the observer is put ashore and to the Delegation.
+9. At the end of the observation period and after debriefing an activity report is drawn up to be signed in the presence of the master who may provide additional comments considered relevant, followed by the master's signature. Copies of the report shall be provided to the master when the observer is put ashore and to the Delegation.
 
 10. Ship-owners shall bear the cost of accommodating observers in the same conditions as the officers on the vessel.
 
@@ -502,7 +502,7 @@ Communication with patrol vessels of Federated States of Micronesia
 
 1. Communication between the permitted vessels and the patrol vessels of the Government shall be made by international signal codes as follows:
 
-International Signal Code – Meaning:
+International Signal Code - Meaning:
 
 L | Stop immediately |
 
@@ -546,11 +546,11 @@ Control procedures
 
 2. In order to facilitate safer inspection procedures, boarding should be conducted with prior notice sent to the vessel, including the identity of the inspection platform and the name of the inspector.
 
-3. Enforcement officials shall have full access to the vessel’s records, including its logsheets, Catch Reports, documentation and any electronic device used for recording or storing data, and the captain or master of the vessel shall permit such authorised officials to make notation on any permit issued by FSM NORMA or other documentation required under the Agreement.
+3. Enforcement officials shall have full access to the vessel's records, including its logsheets, Catch Reports, documentation and any electronic device used for recording or storing data, and the captain or master of the vessel shall permit such authorised officials to make notation on any permit issued by FSM NORMA or other documentation required under the Agreement.
 
 4. The captain or master shall immediately comply with all reasonable instructions given by the authorised officials, and shall facilitate safe boarding, and facilitate the inspection of the vessel, gear, equipment, records, fish and fish products.
 
-5. The vessel’s captain, master or crew shall not assault, obstruct, resist, delay, refuse boarding, intimidate, or interfere with an authorised official in the performance of duties.
+5. The vessel's captain, master or crew shall not assault, obstruct, resist, delay, refuse boarding, intimidate, or interfere with an authorised official in the performance of duties.
 
 6. These officials shall not remain on board for longer than is necessary for the discharge of their duties.
 
@@ -620,9 +620,9 @@ EMBARKING SEAMEN
 
 4. The International Labour Organisation (ILO) Declaration on Fundamental Principles and Rights at Work shall apply as of right to seamen signed on by European Union vessels. This concerns in particular the freedom of association and the effective recognition of the right to collective bargaining, and the elimination of discrimination in respect of employment and occupation.
 
-5. FSM seamen’s employment contracts, a copy of which shall be given to the signatories, shall be drawn up between the ship-owners’ agent(s) and the seamen and/or their trade unions or representatives in consultation with the Executive Director. These contracts shall guarantee the seamen the social security cover applicable to them, including life insurance and sickness and accident insurance.
+5. FSM seamen's employment contracts, a copy of which shall be given to the signatories, shall be drawn up between the ship-owners' agent(s) and the seamen and/or their trade unions or representatives in consultation with the Executive Director. These contracts shall guarantee the seamen the social security cover applicable to them, including life insurance and sickness and accident insurance.
 
-6. FSM seamen’s wages shall be paid by the ship-owners. They shall be fixed, before fishing authorisations are issued, by mutual agreement between the ship-owners or their agents and the Executive Director. However, the wage conditions granted to FSM seamen shall not be lower than those applied to FSM crews and shall under no circumstances be below ILO standards.
+6. FSM seamen's wages shall be paid by the ship-owners. They shall be fixed, before fishing authorisations are issued, by mutual agreement between the ship-owners or their agents and the Executive Director. However, the wage conditions granted to FSM seamen shall not be lower than those applied to FSM crews and shall under no circumstances be below ILO standards.
 
 7. All seamen employed aboard European Union vessels shall report to the master of the vessel designated on the day before their proposed embarkation date. Where a seaman fails to report at the date and time agreed for embarkation, ship-owners shall be automatically absolved of their obligation to take the seaman on board.
 

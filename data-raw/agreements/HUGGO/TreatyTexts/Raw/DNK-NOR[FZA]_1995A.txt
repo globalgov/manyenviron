@@ -17,10 +17,10 @@ Have agreed as follows:
 Article 1
 The delimitation line between the Parties' parts of the continental shelf in the area between Greenland and Jan Mayen is
 established as straight lines between the following points, in the order indicated below:
-Point No. 1: 74° 21' 46.9"N 05° 00' 27.7" W
-Point No. 2: 72° 49' 22.2"N 11° 28' 28.7" W
-Point No. 3: 71° 52' 50.8"N 12° 46' 01.3" W
-Point No. 4: 69° 54' 34.4"N 13° 37' 46.4" W
+Point No. 1: 74&#186; 21' 46.9"N 05&#186; 00' 27.7" W
+Point No. 2: 72&#186; 49' 22.2"N 11&#186; 28' 28.7" W
+Point No. 3: 71&#186; 52' 50.8"N 12&#186; 46' 01.3" W
+Point No. 4: 69&#186; 54' 34.4"N 13&#186; 37' 46.4" W
 All straight lines are geodetic lines.
 The points listed above are defined by geographic latitude and longitude in accordance with the World Geodetic
 System 1984 (WGS84).

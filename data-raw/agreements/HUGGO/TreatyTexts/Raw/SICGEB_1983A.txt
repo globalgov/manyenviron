@@ -92,7 +92,7 @@ Organs
 1. The organs of the Centre shall be:
 (a) The Board of Governors,
 (b) The Council of Scientific Advisers,
-(c) The Secrétariat.
+(c) The Secretariat.
 2. Other subsidiary organs may be established by the Board of Governors in
 accordance with Article 6.
 Article 6
@@ -209,7 +209,7 @@ organization and functioning of the staff. The Director shall establish
 a consultation mechanism with senior scientists of the Centre concerning
 the evaluation of scientific results and current planning of scientific
 work.
-5» In the performance of their duties the Director and che staff shall not
+5>> In the performance of their duties the Director and che staff shall not
 seek or receive instructions from any government or from any authority
 external to the Centre. They shall refrain from any action that might
 reflect on their position as international officials responsible only to
@@ -314,7 +314,7 @@ following:
 from every form of legal process except in so far as in any particular
 case it has expressly waived its immunity. It is, however, understood
 that no waiver of immunity shall extend to any measure of execution.
-3» All premises of the Centre shall be inviolable. The property and assets
+3>> All premises of the Centre shall be inviolable. The property and assets
 of the Centre wherever located shall be immune from search, requisition,
 confiscation, expropriation and any other form of interference, whether
 by executive, administrative, judicial or legislative actions.
@@ -388,7 +388,7 @@ one year's written notice to the Depositary.
 Article 18
 Liquidation
 In case of termination of the Centre the State in which the Centre's
-headquarters aré located, shall be responsible for the liquidation, unless
+headquarters are located, shall be responsible for the liquidation, unless
 otherwise agreed upon by the Members at the time of termination. Except as
 otherwise decided by the Members, any surplus shall be distributed among those
 States which are Members of the Centre at the time of the termination in

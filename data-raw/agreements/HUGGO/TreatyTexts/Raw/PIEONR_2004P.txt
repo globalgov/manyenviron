@@ -20,15 +20,15 @@ Government of the French Republic and the Organization dated
 Considering also the Convention between the Federal Council of
 the Swiss Confederation and the Government of the French
 Republic dated 13 September 1965 concerning the extension of the
-Organization’s site to include French territory;
-Considering that the Organization’s activities are increasingly
+Organization's site to include French territory;
+Considering that the Organization's activities are increasingly
 extending into the territory of all the States Parties to the
 Convention, with a consequent substantial increase in the mobility
 of persons and goods assigned to and used for its research
 programmes;
-Desiring to ensure the efficient performance of the Organization’s
+Desiring to ensure the efficient performance of the Organization's
 functions assigned to it by the Convention, in particular Article II
-defining the Organization’s purposes, and to guarantee it equal
+defining the Organization's purposes, and to guarantee it equal
 treatment on the territory of all the States Parties to the Convention;
 Having resolved to this end, in accordance with Article IX of the
 Convention, to grant to the Organization the privileges and
@@ -37,24 +37,24 @@ Have agreed as follows:
 Article 1
 Definitions
 For the purpose of this Protocol:
-a) the “Convention” refers to the Convention for the
+a) the "Convention" refers to the Convention for the
 Establishment of a European Organization for Nuclear
 Research and the Financial Protocol annexed thereto, signed
 on 1st July 1953, entered into force on 29 September 1954 and
 amended on 17 January 1971;
-b) the “Organization” refers to the European Organization for
+b) the "Organization" refers to the European Organization for
 Nuclear Research;
-c) “official activities” refers to the activities of the Organization
+c) "official activities" refers to the activities of the Organization
 set out in the Convention, in particular its Article II, including
 its activities of an administrative nature;
-d) “officials” refers to the “members of personnel” as defined in
+d) "officials" refers to the "members of personnel" as defined in
 the Staff Rules and Regulations of the Organization;
-e) “Co-operation Agreement” refers to a bilateral agreement,
+e) "Co-operation Agreement" refers to a bilateral agreement,
 concluded between the Organization and a non-Member State
 or a scientific institute established in that State, defining the
 conditions governing its participation in the activities of the
 Organization;
-f) “Association Agreement” refers to a bilateral agreement,
+f) "Association Agreement" refers to a bilateral agreement,
 concluded between the Organization and a State ineligible to
 become a Member State, establishing a close institutional
 partnership between that State and the Organization in order
@@ -107,7 +107,7 @@ made under Article 16 or 18 of this Protocol;
 d) in respect of a counter-claim relating directly to and
 introduced in the procedural framework of a claim
 brought by the Organization.
-2. The Organization’s property and assets, wherever located,
+2. The Organization's property and assets, wherever located,
 shall enjoy immunity from every form of requisition,
 confiscation, expropriation, sequestration and any other form
 of seizure or interference whether by executive,
@@ -186,7 +186,7 @@ held;
 d) the right to use codes and to receive documents and
 correspondence by courier or sealed luggage;
 e) for them and their spouses, exemption from all measures
-restricting entry and aliens’ registration formalities;
+restricting entry and aliens' registration formalities;
 f) the same facilities concerning currency and exchange
 regulations as those granted to the representatives of
 foreign Governments on temporary official missions;
@@ -233,7 +233,7 @@ officials and Directors-General in respect of their
 service with the Organization;
 c) for themselves and the family members forming part of
 their household, the same exemption from immigration
-restrictions and aliens’ registration formalities as are
+restrictions and aliens' registration formalities as are
 normally granted to officials of international
 organizations;
 d) inviolability of all official documents, in whatever form
@@ -379,7 +379,7 @@ Party applying for arbitration.
 Article 19
 International Arbitration Tribunal
 1. The international Arbitration Tribunal referred to in
-Articles 17 and 18 of this Protocol (“the Tribunal”) shall be
+Articles 17 and 18 of this Protocol ("the Tribunal") shall be
 governed by the provisions of this Article.
 2. Each Party to the dispute shall appoint one member of the
 Tribunal. The members thus appointed shall jointly choose a

@@ -32,10 +32,10 @@ coincide with the delimitation line for the Parties' economic zones.
 Article 2
 The provisions in Articles 3 to 9 apply in an area defined by
 the following coordinates:
-70º35' N
-68º00' N
-10º30' W
-6º30' W
+70&#186;35' N
+68&#186;00' N
+10&#186;30' W
+6&#186;30' W
 Article 3
 In the first exploration phase, aimed at a systematic
 geological mapping of the area defined in Article 2, the Parties

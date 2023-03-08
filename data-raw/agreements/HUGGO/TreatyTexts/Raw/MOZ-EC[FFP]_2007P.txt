@@ -16,13 +16,13 @@ Highly migratory species (species listed in Annex 1 to the 1982 United Nations C
 
 2. Paragraph 1 shall apply subject to Articles 4 and 5 of this Protocol.
 
-3. Vessels flying the flag of a Member State of the European Community may fish in Mozambique’s fishing zone only if they are in possession of a fishing licence issued under this Protocol in accordance with the Annex hereto.
+3. Vessels flying the flag of a Member State of the European Community may fish in Mozambique's fishing zone only if they are in possession of a fishing licence issued under this Protocol in accordance with the Annex hereto.
 
 Article 2
 
-Financial contribution — Methods of payment
+Financial contribution - Methods of payment
 
-1. The financial contribution referred to in Article 7 of the Agreement shall comprise, for the period referred to in Article 1, an annual amount of EUR 650000 equivalent to a reference tonnage of 10000 tonnes per year and a specific amount of EUR 250000 per year for the support and implementation of Mozambique’s sectoral fisheries policy. This specific amount shall be an integral part of the single financial contribution defined in Article 7 of the Agreement.
+1. The financial contribution referred to in Article 7 of the Agreement shall comprise, for the period referred to in Article 1, an annual amount of EUR 650000 equivalent to a reference tonnage of 10000 tonnes per year and a specific amount of EUR 250000 per year for the support and implementation of Mozambique's sectoral fisheries policy. This specific amount shall be an integral part of the single financial contribution defined in Article 7 of the Agreement.
 
 2. Paragraph 1 shall apply subject to Articles 4, 5, 6 and 7 of this Protocol.
 
@@ -38,11 +38,11 @@ Financial contribution — Methods of payment
 
 Article 3
 
-Cooperation on responsible fishing — Scientific cooperation
+Cooperation on responsible fishing - Scientific cooperation
 
 1. The Parties hereby undertake to promote responsible fishing in Mozambican waters.
 
-2. During the period covered by this Protocol, the Community and the Mozambican authorities shall monitor the evolution of resources in Mozambique’s fishing zone.
+2. During the period covered by this Protocol, the Community and the Mozambican authorities shall monitor the evolution of resources in Mozambique's fishing zone.
 
 3. As of the date of entry into force of this Protocol, the Parties shall establish by mutual agreement the arrangements for the scientific consultation provided for in Article 4(2) of the Agreement with a view to prepare the work of the Joint Committee referred to in Article 9 of the Agreement.
 
@@ -50,7 +50,7 @@ Article 4
 
 Review of fishing opportunities by mutual agreement
 
-1. The fishing opportunities referred to in Article 1 may be increased by mutual agreement provided that the conclusions of the scientific meeting referred to in Article 3(4) confirm that such an increase will not endanger the sustainable management of Mozambique’s resources. In this case, the financial contribution referred to in Article 2(1) shall be increased proportionately and pro rata temporis. However, the total amount of the financial contribution paid by the European Community may not exceed twice the amount referred to in Article 2(1). Where the quantities caught by Community vessels exceed twice 10000 tonnes, i.e. 20000 tonnes, the amount due for the quantity exceeding that limit shall be paid the following year.
+1. The fishing opportunities referred to in Article 1 may be increased by mutual agreement provided that the conclusions of the scientific meeting referred to in Article 3(4) confirm that such an increase will not endanger the sustainable management of Mozambique's resources. In this case, the financial contribution referred to in Article 2(1) shall be increased proportionately and pro rata temporis. However, the total amount of the financial contribution paid by the European Community may not exceed twice the amount referred to in Article 2(1). Where the quantities caught by Community vessels exceed twice 10000 tonnes, i.e. 20000 tonnes, the amount due for the quantity exceeding that limit shall be paid the following year.
 
 2. Conversely, if the Parties agree to adopt a reduction in the fishing opportunities referred to in Article 1, the financial contribution shall be reduced proportionately and pro rata temporis.
 
@@ -102,7 +102,7 @@ Mozambique shall be responsible for managing the corresponding amount, on the ba
 
 Article 8
 
-Disputes — suspension of application of the Protocol
+Disputes - suspension of application of the Protocol
 
 1. Any dispute between the Parties over the interpretation of this Protocol on its application shall be the subject of consultations between the Parties within the Joint Committee provided for in Article 9 of the Agreement, in a special meeting if necessary, in order to reach an amicable settlement.
 
@@ -146,7 +146,7 @@ Entry into force
 
 ANNEX
 
-CONDITIONS GOVERNING ACTIVITIES BY COMMUNITY VESSELS IN MOZAMBIQUE’S FISHING ZONE
+CONDITIONS GOVERNING ACTIVITIES BY COMMUNITY VESSELS IN MOZAMBIQUE'S FISHING ZONE
 
 CHAPTER I
 
@@ -156,11 +156,11 @@ SECTION 1
 
 Issuance of licences
 
-1. Only eligible vessels may obtain a licence to fish in Mozambique’s fishing zone under the Protocol establishing, for the period from 1 January 2007 and 31 December 2011, the fishing opportunities and the financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Mozambique.
+1. Only eligible vessels may obtain a licence to fish in Mozambique's fishing zone under the Protocol establishing, for the period from 1 January 2007 and 31 December 2011, the fishing opportunities and the financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Mozambique.
 
-2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Mozambique. They must be in order vis-à-vis the Mozambican fishing administration insofar as they must have fulfilled all prior obligations arising from their fishing activities in Mozambique under fisheries agreements concluded with the Community.
+2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Mozambique. They must be in order vis-a-vis the Mozambican fishing administration insofar as they must have fulfilled all prior obligations arising from their fishing activities in Mozambique under fisheries agreements concluded with the Community.
 
-3. Community vessels applying for fishing licences may be represented by an agent residing in Mozambique. The agent’s name and address shall be attached in the fishing licence application.
+3. Community vessels applying for fishing licences may be represented by an agent residing in Mozambique. The agent's name and address shall be attached in the fishing licence application.
 
 4. The relevant Community authorities shall submit to the Ministry responsible for fisheries in Mozambique an application for each vessel wishing to fish under the Agreement at least 15 days before the date of commencement of the period of validity requested.
 
@@ -172,11 +172,11 @@ Issuance of licences
 
 - with the first application under the Protocol, a recent colour photograph showing a side of the vessel in its current state; the photograph shall be at least 15 cm by 10 cm,
 
-- the vessel’s seaworthiness certificate,
+- the vessel's seaworthiness certificate,
 
-- the vessel’s registration certificate,
+- the vessel's registration certificate,
 
-- the vessel’s health conformity certificate issued by the competent Community authority.
+- the vessel's health conformity certificate issued by the competent Community authority.
 
 7. The fee shall be paid into the account specified by the Mozambican authorities in accordance with Article 2(7) of the Protocol.
 
@@ -184,9 +184,9 @@ Issuance of licences
 
 9. Fishing licences for all vessels shall be issued to shipowners or their representatives via the European Commission Delegation to Mozambique within 15 days of receipt of all the documents referred to in point 6 by the Ministry responsible for fisheries in Mozambique. Once the fishing licence is issued, the Mozambican authorities shall immediately send a copy thereof to the owner of the vessel or his/her representative by the adequate means of communication (fax, electronic mail, etc.). A copy of the fishing licence is kept on board the vessel as proof of the fishing authorisation under the Agreement. The authorities responsible for control shall be immediately informed of the issuing of the fishing licence.
 
-10. Where, at the time of signing, the Delegation of the European Commission were closed, the fishing licence may be given to the vessel’s agent with a copy for the Delegation.
+10. Where, at the time of signing, the Delegation of the European Commission were closed, the fishing licence may be given to the vessel's agent with a copy for the Delegation.
 
-11. Licences shall be issued for a specific vessel and shall not be transferable. However, at the request of the European Community and where force majeure is proven, a vessel’s fishing licence shall be replaced by a new fishing licence for another vessel of the same category as the first vessel with no further fee due. In this case, the calculation of the catch levels to determine whether an additional payment should be made shall take account of the sum of the total catches of the two vessels.
+11. Licences shall be issued for a specific vessel and shall not be transferable. However, at the request of the European Community and where force majeure is proven, a vessel's fishing licence shall be replaced by a new fishing licence for another vessel of the same category as the first vessel with no further fee due. In this case, the calculation of the catch levels to determine whether an additional payment should be made shall take account of the sum of the total catches of the two vessels.
 
 12. The owner of the first vessel, or his/her representative, shall return the cancelled fishing licence to the Ministry responsible for fisheries in Mozambique via the European Commission Delegation.
 
@@ -196,11 +196,11 @@ Issuance of licences
 
 SECTION 2
 
-Licence conditions — fees and advance payments
+Licence conditions - fees and advance payments
 
 1. Fishing licences shall be valid for a period of no more than one year, from 1 January to 31 December of each year at the latest. They shall be renewable.
 
-2. The fee shall be EUR 35 per tonne caught within Mozambique’s fishing zone.
+2. The fee shall be EUR 35 per tonne caught within Mozambique's fishing zone.
 
 3. Fishing licences shall be issued once the following fixed amounts have been paid to the competent national authorities:
 
@@ -210,7 +210,7 @@ Licence conditions — fees and advance payments
 
 - EUR 1680 for each surface longliner of less than 250 gross tonnes (GT), equivalent to the fees due for 48 tonnes of highly migratory and related species caught each year.
 
-4. The final statement of the fees due for year n shall be drawn up by the European Commission by 31 July of year n + 1 at the latest, on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Développement (IRD), the Instituto Español de Oceanografía (IEO) and the Instituto de Investigação das Pescas e do Mar (IPIMAR) via the European Commission Delegation.
+4. The final statement of the fees due for year n shall be drawn up by the European Commission by 31 July of year n + 1 at the latest, on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Developpement (IRD), the Instituto Espanol de Oceanografia (IEO) and the Instituto de Investigacao das Pescas e do Mar (IPIMAR) via the European Commission Delegation.
 
 5. This statement shall be sent simultaneously to the Ministry responsible for fisheries in Mozambique and to the shipowners.
 
@@ -230,9 +230,9 @@ Catch reporting arrangements
 
 1. For the purposes of this Annex, the duration of a fishing trip by a Community vessel shall be defined as follows:
 
-- the period elapsing between entering and leaving Mozambique’s fishing zone, or
+- the period elapsing between entering and leaving Mozambique's fishing zone, or
 
-- the period elapsing between entering Mozambique’s fishing zone and a transhipment in port and/or a landing in Mozambique.
+- the period elapsing between entering Mozambique's fishing zone and a transhipment in port and/or a landing in Mozambique.
 
 2. All vessels authorised to fish in Mozambican waters under the Agreement shall be obliged to notify the Ministry responsible for fisheries in Mozambique of their catches so that the Mozambican authorities can check the quantities caught, which shall be validated by the competent scientific institutes in accordance with the procedure referred to in point 4 of Section 2 of Chapter I of this Annex. Catches shall be notified as follows:
 
@@ -254,13 +254,13 @@ CHAPTER V
 
 Embarking seamen
 
-1. Shipowners undertake to employ, for the tuna-fishing season in Mozambique’s fishing zone, at least 20 % of seamen of ACP origin, of which, if possible, at least 40 % are Mozambican.
+1. Shipowners undertake to employ, for the tuna-fishing season in Mozambique's fishing zone, at least 20 % of seamen of ACP origin, of which, if possible, at least 40 % are Mozambican.
 
 2. Shipowners shall endeavour to sign on additional seamen of ACP origin.
 
 3. The International Labour Organisation (ILO) Declaration on Fundamental Principles and Rights at Work shall apply as of right to seamen signed on by Community vessels. This concerns in particular the freedom of association and the effective recognition of the right to collective bargaining, and the elimination of discrimination in respect of employment and occupation.
 
-4. The employment contracts of Mozambican seamen shall be drawn up in accordance with point 1 of this Chapter between the shipowners’ representative(s) and the seamen and/or their trade unions or representatives. A copy of these contracts shall be given to the signatories. These contracts shall guarantee the seamen the social security cover applicable to them, including life insurance, and sickness and accident insurance.
+4. The employment contracts of Mozambican seamen shall be drawn up in accordance with point 1 of this Chapter between the shipowners' representative(s) and the seamen and/or their trade unions or representatives. A copy of these contracts shall be given to the signatories. These contracts shall guarantee the seamen the social security cover applicable to them, including life insurance, and sickness and accident insurance.
 
 5. The wages of the seamen shall be paid by the shipowners. They shall be fixed by mutual agreement among the shipowners or their representatives and the authorities of the relevant ACP country prior to issuing fishing licences. However, the wage conditions granted to Mozambican seamen shall not be lower than those applicable to crews from Mozambique and shall under no circumstances be below ILO standards.
 
@@ -278,7 +278,7 @@ Observers
 
 2. The conditions under which observers are taken on board shall be agreed between shipowners or their representatives and the competent authority.
 
-3. At the end of the observation period and before leaving the vessel, observers shall draw up an activity report to be transmitted to the competent authorities, with copies thereof to the Mozambican Fisheries Administration and the vessel’s captain.
+3. At the end of the observation period and before leaving the vessel, observers shall draw up an activity report to be transmitted to the competent authorities, with copies thereof to the Mozambican Fisheries Administration and the vessel's captain.
 
 CHAPTER VIII
 
@@ -286,7 +286,7 @@ Monitoring
 
 1. Entering and leaving the zone
 
-1.1. Community vessels shall notify, at least three hours in advance, the competent Mozambican authorities responsible for monitoring fishing of their intention to enter or leave Mozambique’s fishing zone and declare overall quantities and species on board.
+1.1. Community vessels shall notify, at least three hours in advance, the competent Mozambican authorities responsible for monitoring fishing of their intention to enter or leave Mozambique's fishing zone and declare overall quantities and species on board.
 
 1.2. When notifying leaving, vessels shall also communicate their position. This information should preferably be communicated by fax or, for vessels not equipped with a fax, by radio or electronic mail.
 
@@ -300,7 +300,7 @@ Monitoring
 
 2.2. The master of the vessel shall make the existing communication media available to the monitoring agent, authorise access to all the vessel compartments and permit the collection of samples.
 
-2.3. The master of the vessel shall provide food, accommodation and medical assistance on the same conditions as for the vessel’s officers.
+2.3. The master of the vessel shall provide food, accommodation and medical assistance on the same conditions as for the vessel's officers.
 
 2.4. These officials shall not remain on board for longer than is necessary for the discharge of their duties.
 
@@ -308,11 +308,11 @@ Monitoring
 
 3. Satellite monitoring
 
-3.1. All Community vessels fishing under this Agreement shall be subject to satellite monitoring in line with Appendix 3 — VMS protocol.
+3.1. All Community vessels fishing under this Agreement shall be subject to satellite monitoring in line with Appendix 3 - VMS protocol.
 
 4. Boarding
 
-4.1. The competent Mozambican authorities shall inform the flag State and the European Commission, within no more than 24 hours, of all boardings and penalties imposed on Community vessels in Mozambique’s fishing area.
+4.1. The competent Mozambican authorities shall inform the flag State and the European Commission, within no more than 24 hours, of all boardings and penalties imposed on Community vessels in Mozambique's fishing area.
 
 4.2. In the event of boarding of the vessel, the latter may be, on request, immediately released if, within 72 hours, the master or the owner of the vessel pays a guarantee to be established on the basis of the relevant Mozambican legislation.
 
@@ -328,7 +328,7 @@ Monitoring
 
 6. Statements
 
-6.1. After the notice and the statement of boarding have been drawn up, the competent bodies shall designate an investigating officer who shall notify the alleged offender, the European Commission and the flag State’s representative to allow them to make statements or provide evidence in their favour at a date and time indicated by them.
+6.1. After the notice and the statement of boarding have been drawn up, the competent bodies shall designate an investigating officer who shall notify the alleged offender, the European Commission and the flag State's representative to allow them to make statements or provide evidence in their favour at a date and time indicated by them.
 
 7. Settlement
 
@@ -336,7 +336,7 @@ Monitoring
 
 8. Transhipment
 
-8.1. All Community vessels wishing to tranship catches in Mozambique’s ports or port areas shall provide the competent Mozambican authorities with at least 24 hour’s notice and await their prior authorisation.
+8.1. All Community vessels wishing to tranship catches in Mozambique's ports or port areas shall provide the competent Mozambican authorities with at least 24 hour's notice and await their prior authorisation.
 
 8.2. For the purposes of assessing the transhipment request, the shipowners of these vessels shall indicate the following:
 
@@ -348,9 +348,9 @@ Monitoring
 
 - the tonnage by species to be transhipped.
 
-8.3. Transhipment shall be considered as an exit from Mozambique. The vessels shall submit their catch declarations to the Mozambican competent authorities and state whether they intend to continue fishing or leave Mozambique’s fishing zone.
+8.3. Transhipment shall be considered as an exit from Mozambique. The vessels shall submit their catch declarations to the Mozambican competent authorities and state whether they intend to continue fishing or leave Mozambique's fishing zone.
 
-8.4. Any transhipment of catches not covered above shall be prohibited in Mozambique’s fishing zone. Any person infringing this provision shall be liable to the penalties provided for by the Mozambican legislation in force.
+8.4. Any transhipment of catches not covered above shall be prohibited in Mozambique's fishing zone. Any person infringing this provision shall be liable to the penalties provided for by the Mozambican legislation in force.
 
 8.5. The masters of Community vessels engaged in landing and transhipment operations in a Mozambican port shall allow and facilitate the inspection of such operations by Mozambican inspectors. Once the inspection and control in port have been completed, an inspection report shall be issued and a copy thereof given to the master of the vessel.
 
@@ -362,19 +362,19 @@ Appendices
 
 3. VMS Protocol
 
-4. Mozambique’s fishing zone coordinates
+4. Mozambique's fishing zone coordinates
 
 APPENDIX 3
 
 VMS PROTOCOL
 
-Setting out the provisions applicable to satellite monitoring of Community fishing vessels operating in Mozambique’s fishing zone
+Setting out the provisions applicable to satellite monitoring of Community fishing vessels operating in Mozambique's fishing zone
 
-1. The provisions of this Protocol supplement the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Mozambique for the period from 1 January 2007 to 31 December 2011 and apply in accordance with point 5 of "Chapter VIII — Monitoring" in the Annex thereto.
+1. The provisions of this Protocol supplement the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Mozambique for the period from 1 January 2007 to 31 December 2011 and apply in accordance with point 5 of "Chapter VIII - Monitoring" in the Annex thereto.
 
-2. All fishing vessels with an overall length exceeding 15 metres operating under the Fisheries Agreement between the European Community and Mozambique shall be monitored by satellite when fishing in Mozambique’s fishing zone.
+2. All fishing vessels with an overall length exceeding 15 metres operating under the Fisheries Agreement between the European Community and Mozambique shall be monitored by satellite when fishing in Mozambique's fishing zone.
 
-For the purposes of satellite monitoring, the latitude and longitude coordinates of the Mozambique’s fishing zone are given in Appendix 4.
+For the purposes of satellite monitoring, the latitude and longitude coordinates of the Mozambique's fishing zone are given in Appendix 4.
 
 The Mozambican authorities shall transmit this information in electronic form, expressed in decimal degrees in the WGS 84 system.
 
@@ -382,17 +382,17 @@ The Mozambican authorities shall transmit this information in electronic form, e
 
 4. The position of vessels shall be determined with a margin of error of less than 500 metres and a confidence interval of 99 %.
 
-5. When a vessel which is fishing under the Agreement and is the subject of satellite monitoring pursuant to Community legislation enters Mozambique’s fishing zone, the subsequent position reports (vessel identification, longitude, latitude, course and speed) shall be transmitted immediately by the Control Centre of the flag State to Mozambique’s Fisheries Monitoring Centre (FMC) at two-hour intervals. The messages concerned shall be identified as position reports.
+5. When a vessel which is fishing under the Agreement and is the subject of satellite monitoring pursuant to Community legislation enters Mozambique's fishing zone, the subsequent position reports (vessel identification, longitude, latitude, course and speed) shall be transmitted immediately by the Control Centre of the flag State to Mozambique's Fisheries Monitoring Centre (FMC) at two-hour intervals. The messages concerned shall be identified as position reports.
 
 6. The messages referred to in point 5 shall be sent by electronic mail according to the Internet security protocol or other security protocol. They shall be sent in real time in the format set out in Table II.
 
-7. Where the continuous satellite monitoring equipment installed on board a fishing vessel develops a technical fault or breaks down, the master of the vessel shall transmit the information specified in point 5 to the Control Centre of the flag State and Mozambique’s FMC in good time. It will be necessary in those circumstances to send a global position report on a nine-hourly basis. This global position report shall include the position reports as recorded by the master of the vessel on a three-hourly basis in accordance with the requirements laid down in point 5.
+7. Where the continuous satellite monitoring equipment installed on board a fishing vessel develops a technical fault or breaks down, the master of the vessel shall transmit the information specified in point 5 to the Control Centre of the flag State and Mozambique's FMC in good time. It will be necessary in those circumstances to send a global position report on a nine-hourly basis. This global position report shall include the position reports as recorded by the master of the vessel on a three-hourly basis in accordance with the requirements laid down in point 5.
 
-The Control Centre of the flag State shall send these messages to Mozambique’s FMC. The faulty equipment shall be repaired or replaced within a period of not more than thirty calendar days. After this deadline, the vessel in question must leave Mozambique’s fishing zone.
+The Control Centre of the flag State shall send these messages to Mozambique's FMC. The faulty equipment shall be repaired or replaced within a period of not more than thirty calendar days. After this deadline, the vessel in question must leave Mozambique's fishing zone.
 
-8. The Control Centres of the flag States shall monitor the movements of their vessels in Mozambican waters. If the vessels are not being monitored in accordance with the conditions laid down, Mozambique’s FMC shall be informed as soon as this is discovered and the procedure laid down in point 7 shall be applicable.
+8. The Control Centres of the flag States shall monitor the movements of their vessels in Mozambican waters. If the vessels are not being monitored in accordance with the conditions laid down, Mozambique's FMC shall be informed as soon as this is discovered and the procedure laid down in point 7 shall be applicable.
 
-9. If Mozambique’s FMC establishes that the flag State is not transmitting the information specified in point 5, the competent European Commission departments shall be informed immediately.
+9. If Mozambique's FMC establishes that the flag State is not transmitting the information specified in point 5, the competent European Commission departments shall be informed immediately.
 
 10. The monitoring data communicated to the other party in accordance with these provisions is intended solely for the purposes of the Mozambican authorities in controlling and monitoring the Community fleet fishing under the Fisheries Agreement between the European Community and Mozambique. Such data may not under any circumstances be communicated to other parties.
 

@@ -9,9 +9,9 @@ namely Chad, Egypt, Libya and Sudan, represented by their National Coordinators 
 among them the following information:
 Yearly extraction in every extraction site, specifying geographical location and number of
 producing wells and springs in each site.
-• Representative Electrical Conductivity measurements (EC), taken once a year in each
+- Representative Electrical Conductivity measurements (EC), taken once a year in each
 extraction site, followed by a complete chemical analysis if drastic changes in salinity is observed.
-• Water level measurements taken twice a year in tho locations shown in the attached maps
+- Water level measurements taken twice a year in tho locations shown in the attached maps
 and tables. The proposed monitoring network is subject to changes upon the feedback of the
 National Coordinators of the concerned countries.
 These measurements should be undertaken within the Nubian Aquifer System and the Post Nubian aquifer

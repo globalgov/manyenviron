@@ -27,13 +27,13 @@ DONE at Paris, in duplicate, on April 2, 1980.
 Annex I
 1. Coordinates of the points mentioned in Article 2:
 Designation of point Latitude South Longitude East
-P1 18° 17' 11" 55° 30' 20"
-P2 19° 00' 49" 55° 50' 45"
-P3 20° 04' 57" 56° 17' 39"
-P4 20° 35' 55" 56° 27' 44"
-P5 21° 18' 19" 56° 50' 09"
-P6 22° 00' 32" 57° 14' 40"
-P7 23° 48' 05" 58° 14' 23"
+P1 18&#186; 17' 11" 55&#186; 30' 20"
+P2 19&#186; 00' 49" 55&#186; 50' 45"
+P3 20&#186; 04' 57" 56&#186; 17' 39"
+P4 20&#186; 35' 55" 56&#186; 27' 44"
+P5 21&#186; 18' 19" 56&#186; 50' 09"
+P6 22&#186; 00' 32" 57&#186; 14' 40"
+P7 23&#186; 48' 05" 58&#186; 14' 23"
 2. These data are natural geographic (astronomic) coordinates.
 3. The line segments connecting the aforementioned points are rhumb lines.
 Annex II

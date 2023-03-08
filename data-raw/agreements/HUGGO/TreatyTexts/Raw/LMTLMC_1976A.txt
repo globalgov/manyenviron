@@ -39,14 +39,14 @@ salvage operations;
 (d) Claims in respect of the raising, removal, destruction or the rendering harmless
 of a ship which is sunk, wrecked, stranded or abandoned, including anything that
 is or has been on board such ship;
-(é) Claims in respect of the removal, destruction or the rendering harmless of the cargo
+(e) Claims in respect of the removal, destruction or the rendering harmless of the cargo
 of the ship;
 (/) Claims of a person other than the person liable in respect of measures taken in order
 to avert or minimize loss for which the person liable may limit his liability in
 accordance with this Convention, and further loss caused by such measures.
 2. Claims set out in paragraph 1 shall be subject to limitation of liability even if
 brought by way of recourse or for indemnity under a contract or otherwise. However,
-claims set out under paragraph 1 (d), (é) and (/) shall not be subject to limitation of
+claims set out under paragraph 1 (d), (e) and (/) shall not be subject to limitation of
 liability to the extent that they relate to remuneration under a contract with the person
 liable.
 Article 3. CLAIMS EXCEPTED FROM LIMITATION
@@ -138,7 +138,7 @@ may, at the time of signature without reservation as to ratification, acceptance
 or at the time of ratification, acceptance, approval or accession or at any time thereafter,
 declare that the limits of liability provided for in this Convention to be applied in their
 territories shall be fixed as follows:
-(à) In respect of Article 6, paragraph 1 (à) at an amount of:
+(a) In respect of Article 6, paragraph 1 (a) at an amount of:
 (i) 5 million monetary units for a ship with a tonnage not exceeding 500 tons;
 (ii) For a ship with a tonnage in excess thereof, the following amount in addition to
 that mentioned in (i):
@@ -269,7 +269,7 @@ whose release is sought and which does not at the time specified above fly the f
 a State Party.
 2. A State Party may regulate by specific provisions of national law the system
 of limitation of liability to be applied to vessels which are:
-(à) According to the law of that State, ships intended for navigation on inland waterways;
+(a) According to the law of that State, ships intended for navigation on inland waterways;
 (b) Ships of less than 300 tons.
 A State Party which makes use of the option provided for in this paragraph shall
 inform the depositary of the limits of liability adopted in its national legislation or of
@@ -279,14 +279,14 @@ of limitation of liability to be applied to claims arising in cases in which int
 persons who are nationals of other States Parties are in no way involved.
 4. The Courts of a State Party shall not apply this Convention to ships constructed
 for, or adapted to, and engaged in, drilling:
-(à) When that State has established under its national legislation a higher limit of liability
+(a) When that State has established under its national legislation a higher limit of liability
 than that otherwise provided for in Article 6; or
 (b) When that State has become party to an international convention regulating the system
 of liability in respect of such ships.
 In a case to which sub-paragraph (a) applies that State Party shall inform the
 depositary accordingly.
 5. This Convention shall not apply to:
-(à) Air-cushion vehicles;
+(a) Air-cushion vehicles;
 (b) Floating platforms constructed for the purpose of exploring or exploiting the natural
 resources of the sea-bed or the subsoil thereof.
 CHAPTER V. FINAL CLAUSES

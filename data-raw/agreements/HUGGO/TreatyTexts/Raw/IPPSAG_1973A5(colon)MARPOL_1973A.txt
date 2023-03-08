@@ -13,16 +13,16 @@ from which the territorial sea of the territory in question is established in
 accordance with international law except that, for the purposes of the present
 Convention  "from the nearest land " off the north eastern coast of Australia shall
 mean from a line drawn from a point on the coast of Australia in
-latitude 11º00' South, longitude 142º08' East to a point in latitude 10º35' South
-longitude 141º55' East, thence to a point latitude 10º00' South,
-longitude 142º00' East, thence to a point latitude 9º10' South,
-longitude 143º52' East, thence to a point latitude 9º00' South,
-longitude 144º30' East, thence to a point latitude 13º00' South,
-longitude 144º00' East, thence to a point latitude 15º00' South,
-longitude 146º00' East, thence to a point latitude 18º00' South,
-longitude 147º00' East, thence to a point latitude 21º00' South,
-longitude 153º00' East, thence to a point on the coast of Australia
-in latitude 24º42' South, longitude 153º15' East.
+latitude 11 &#186;00' South, longitude 142 &#186;08' East to a point in latitude 10 &#186;35' South
+longitude 141 &#186;55' East, thence to a point latitude 10 &#186;00' South,
+longitude 142 &#186;00' East, thence to a point latitude 9 &#186;10' South,
+longitude 143 &#186;52' East, thence to a point latitude 9 &#186;00' South,
+longitude 144 &#186;30' East, thence to a point latitude 13 &#186;00' South,
+longitude 144 &#186;00' East, thence to a point latitude 15 &#186;00' South,
+longitude 146 &#186;00' East, thence to a point latitude 18 &#186;00' South,
+longitude 147 &#186;00' East, thence to a point latitude 21 &#186;00' South,
+longitude 153 &#186;00' East, thence to a point on the coast of Australia
+in latitude 24 &#186;42' South, longitude 153 &#186;15' East.
 (3)  "Special area " means a sea area where for recognized technical reasons in
 relation to its oceanographical and ecological condition and to the particular
 character of its traffic the adoption of special mandatory methods for the prevention of
@@ -71,19 +71,19 @@ Sea area, the Black Sea area, the Red Sea area and the  "Gulfs area " which are
 defined as follows:
 (a) The Mediterranean Sea area means the Mediterranean Sea proper including the gulfs
 and seas therein with the boundary between the Mediterranean and the Black Sea
-constituded by the 41º parallel and bounded to the west by the Straits of Gibraltar at
-the meridian of 5º36'W.
+constituded by the 41 &#186; parallel and bounded to the west by the Straits of Gibraltar at
+the meridian of 5 &#186;36'W.
 (b) The Baltic Sea area means the Baltic Sea proper with the Gulf of
 Bothnia and the Gulf of Finland and the entrance to the Baltic Sea
-bounded by the parallel of the Skaw in the Skagerrak at 57º44.8'N.
+bounded by the parallel of the Skaw in the Skagerrak at 57 &#186;44.8'N.
 (c) The Black Sea area means the Black Sea proper with the boundary
-between the Mediterranean and the Black Sea constituted by the parallel 41ºN.
+between the Mediterranean and the Black Sea constituted by the parallel 41 &#186;N.
 (d) The Red Sea area means the Red Sea proper including the Gulfs of Suez and
-Aqaba bounded at the South by the rhumb line between Ras si Ane (12º8.5'N, 43º19.6'E) and
-Husn Murad (12º40.40'N, 43º30.2'E).
+Aqaba bounded at the South by the rhumb line between Ras si Ane (12 &#186;8.5'N, 43 &#186;19.6'E) and
+Husn Murad (12 &#186;40.40'N, 43 &#186;30.2'E).
 (e) The  "Gulfs area " means the sea area located north west of the rhumb
-line between Ras al Hadd (22º30'N, 59º48'E) and Ras al Fasteh
-(25º04'N, 61º25'E).
+line between Ras al Hadd (22 &#186;30'N, 59 &#186;48'E) and Ras al Fasteh
+(25 &#186;04'N, 61 &#186;25'E).
 (2) Subject to the provisions of Regulation 6 of this Annex:
 (a) disposal into the sea of the following is prohibited:
 (i) all plastics, including but not limited to synthetic ropes, synthetic

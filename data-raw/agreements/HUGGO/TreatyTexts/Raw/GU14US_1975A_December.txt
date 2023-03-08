@@ -228,9 +228,9 @@ shall be present at any one time between 38030 ' North Latitude and 47'30'
 North Latitude; not more than four will be present at any one time in the
 Gulf of Alaska north of 54030 ' North Latitude between 132000 ' West Longitude
 and 157000 ' West Longitude and north of 53000 ' North Latitude between
-157°00 ' West Longitude and 166°00 ' West Longitude; and not more than four
+157&#186;00 ' West Longitude and 166&#186;00 ' West Longitude; and not more than four
 will be present at any one time in the Northeastern Pacific Ocean and the
-Bering Sea west of 166°00 ' West Longitude.
+Bering Sea west of 166&#186;00 ' West Longitude.
 (j) limit the catch of Pacific hake in the Northeastern Pacific Ocean off the
 United States coast to a level not to exceed 26,000 metric tons. In this
 connection nationals and vessels of Poland shall refrain from fishing in the

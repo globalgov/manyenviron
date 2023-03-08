@@ -539,7 +539,7 @@ taken by consensus of the Parties meeting within the Executive Body and
 shall take effect sixty days after the date of adoption.
 Article 15
 SIGNATURE
-1. The présent Protocol shall be open for signature at Aarhus
+1. The present Protocol shall be open for signature at Aarhus
 (Denmark) from 24 to 25 June 1998, then at United Nations Headquarters
 in New York until 21 December 1998, by States members of the Commission
 as well as States having consultative status with the Commission
@@ -642,7 +642,7 @@ conditions (273.15 K, 101.3 kPa, and dry gas).
 start-up and shutdown procedures, unless specific limit values have been
 defined for those situations.
 4. Sampling and analysis of all pollutants shall be carried out
-according to the standards laid down by the Comité européen de
+according to the standards laid down by the Comite europeen de
 normalisation (CEN), the International Organization for Standardization
 (ISO), or the corresponding United States or Canadian reference methods.
 While awaiting the development of CEN or ISO standards, national
@@ -653,7 +653,7 @@ inaccuracy of the measurement method. A limit value is considered to be
 met if the result of the measurement, from which the inaccuracy of the
 measurement method is subtracted, does not exceed it.
 6. Emissions of different congeners of PCDD/F are given in tdxicity
-equivalents (ТЕ) in comparison to 2,3,7,8-TCDD using the system proposed
+equivalents (TE) in comparison to 2,3,7,8-TCDD using the system proposed
 by the NATO Committee on the Challenges of Modern Society (NATO-CCMS) in
 1988.
 II. LIMIT VALUES FOR MAJOR STATIONARY SOURCES
@@ -742,7 +742,7 @@ II. MAJOR STATIONARY SOURCES OF POP EMISSIONS
 7. PCDD/F are emitted from thermal processes involving organic matter
 and. chlorine as a result of incomplete combustion or chemical reactions.
 Major stationary sources of PCDD/F may be as follows:
-(a) Waste incineration, including со-incineration;
+(a) Waste incineration, including co-incineration;
 (b) Thermal metallurgical processes, e.g. production of
 aluminium and other non-ferrous metals, iron and steel;
 (c) Combustion plants providing energy;
@@ -820,11 +820,11 @@ recycling. This may result in indirect PCDD/F reduction by decreasing
 the waste amounts to be incinerated.
 16. The modification of process techniques to optimize combustion
 conditions is an important and effective measure for the reduction of
-PCDD/F emissions (usually 850*С or higher, assessment of oxygen supply
+PCDD/F emissions (usually 850&#186;C or higher, assessment of oxygen supply
 depending on the heating value and consistency of the wastes, sufficient
-residence time -- 850*С for ca. 2 sec -- and turbulence of the gas,
+residence time -- 850&#186;C for ca. 2 sec -- and turbulence of the gas,
 avoidance of cold gas regions in the incinerator, etc.). Fluidized bed
-incinerators keep a lower temperature than 850*С with adequate emission
+incinerators keep a lower temperature than 850&#186;C with adequate emission
 results. For existing incinerators this would normally involve
 redesigning and/or replacing a plant --an option which may not be
 economically viable in all countries. The carbon content in ashes
@@ -1211,7 +1211,7 @@ is high enough.
 production plants.
 Table 4 : PAH emission control for coke production
 a/ Remaining emission compared to unreduced mode.
-В. Anode production
+B. Anode production
 60. PAH emissions from anode production have to be dealt with in a
 similar fashion as those from coke production.
 61. The following secondary measures for emission reduction of
@@ -1228,7 +1228,7 @@ in the waste gas is high enough. Table 5 summarizes PAH emission
 control measures for anode production.
 Table 5: PAH emission control for anode production
 a/ Remaining emission compared to unreduced mode.
-С. Aluminium industry
+C. Aluminium industry
 63. Aluminium is produced from aluminium oxide (A12O3) by electrolysis
 in pots (cells) electrically connected in series. Pots are classified
 as prebake or Soederberg pots, according to the type of the anode.
@@ -1272,7 +1272,7 @@ gasification of wood, a gas combustion zone with ceramics or other
 material which allow temperatures of some 1000*C, and a convection zone.
 The convection part where the water absorbs the heat should be
 sufficiently long and effective so that the gas temperature can be
-reduced from 1000"С to 250'С or less. There are also several techniques
+reduced from 1000&#186;C to 250&#186;C or less. There are also several techniques
 to supplement old and outdated boilers, for example with water
 accumulation tanks, ceramic inserts and pellet burners.
 69. Optimized burning rates are accompanied by low emissions of carbon
@@ -1317,7 +1317,7 @@ storage sites impermeable to rainwater, roof cover, reuse of
 contaminated water for the impregnation process, quality demands for the
 material produced);
 (b) Measures to reduce atmospheric emissions at impregnation
-plants (e.g. the hot wood should be cooled down from 90*С to 30'С at
+plants (e.g. the hot wood should be cooled down from 90&#186;C to 30&#186;C at
 least before transport to storage sites. However, an alternative method
 using pressure steam under vacuum conditions to impregnate the wood with
 creosote should be highlighted as BAT);
@@ -1334,11 +1334,11 @@ heavier, more toxic PAHs;
 Discouraging the use of carbolineum would also reduce PAH
 emissions;
 (e) Evaluating and then using, as appropriate, alternatives,
-such as those in table 9, that minimize reliance on РАН-based products.
+such as those in table 9, that minimize reliance on PAH-based products.
 76. Burning of impregnated wood gives rise to PAH emissions and other
 harmful substances. If burning does take place, it should be done in
 installations with adequate abatement techniques.
-Table 9: Possible alternatives to wood preservation involving РАН-based
+Table 9: Possible alternatives to wood preservation involving PAH-based
 Products
 Annex VI
 TXMESCALES FOR THE APPLICATION OF LIMIT VALUES AND BEST AVAILABLE
@@ -1369,10 +1369,10 @@ by the engine." The regulation came into force on 15
 December 1995 and its amendment came into force on 5 March
 1997.
 Step 2
-В. Fuel parameters
+B. Fuel parameters
 5. Diesel fuel
 N.S.: Not specified.
-Í/ 1 January of year specified.
+I/ 1 January of year specified.
 **/ Indicative value.
 II. RESTRICTION OF HALOGENATED SCAVENGERS, ADDITIVES IN FUELS AND
 LUBRICANTS
@@ -1452,12 +1452,12 @@ means of regeneration. For proper regeneration of passive system traps
 during normal operation, a burner-assisted regeneration system or the
 use of additives is required.
 (b) Petrol engines
-18. РАН-reduction measures for petrol-fuelled engines are primarily
+18. PAH-reduction measures for petrol-fuelled engines are primarily
 based on the use of a closed-loop three-way catalytic converter, which
 reduces PAHs as part of the HC emission reductions.
 19. Improved cold start behaviour reduces organic emissions in general
 and PAHs in particular (for instance start-up catalysts, improved fuel
-évaporâtion/atomization, heated catalysts).
+evaporation/atomization, heated catalysts).
 20. Table 2 summarizes measures for PAH emission control from the
 exhaust from road transport motor vehicles.
 Table 2: PAH emission control for the exhaust from road transport motor

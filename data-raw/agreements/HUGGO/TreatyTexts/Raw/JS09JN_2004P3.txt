@@ -24,12 +24,12 @@ BEING PARTIES to the Convention of 29 July 1960 on Third Party Liability in the 
 Energy, concluded within the framework of the Organisation for European Economic Co-operation, now the
 Organisation for Economic Co-operation and Development, and as amended by the Additional Protocol concluded
 at Paris on 28 January 1964, by the Protocol concluded at Paris on 16 November 1982 and by the Protocol
-concluded at Paris on 12 February 2004 (hereinafter referred to as the “Paris Convention”);
+concluded at Paris on 12 February 2004 (hereinafter referred to as the "Paris Convention");
 B. Article 2 shall be replaced by the following text:
 Article 2
 a) The system of this Convention shall apply to nuclear damage for which an operator of a nuclear
 installation, used for peaceful purposes, situated in the territory of a Contracting Party to this Convention
-(hereinafter referred to as a “Contracting Party”), is liable under the Paris Convention, and which is suffered:
+(hereinafter referred to as a "Contracting Party"), is liable under the Paris Convention, and which is suffered:
 i) in the territory of a Contracting Party; or
 ii) in or above maritime areas beyond the territorial sea of a Contracting Party
 1. on board or by a ship flying the flag of a Contracting Party, or on board or by an aircraft
@@ -45,7 +45,7 @@ b) Any Signatory or acceding Government may, at the time of signature of or acce
 Convention or on the deposit of its instrument of ratification, acceptance or approval, declare that, for the
 purposes of the application of paragraph (a)(ii) 2 of this Article, individuals or certain categories thereof,
 considered under its law as having their habitual residence in its territory, are assimilated to its own nationals.
-c) In this Article, the expression “a national of a Contracting Party” shall include a Contracting Party or
+c) In this Article, the expression "a national of a Contracting Party" shall include a Contracting Party or
 any of its constituent sub-divisions, or a partnership, or any public or private body whether corporate or not,
 established in the territory of a Contracting Party.
 C. Article 3 shall be replaced by the following text:
@@ -186,7 +186,7 @@ Article 13, provided that for the purposes of this calculation, a reactor shall 
 consideration as from the date when it first reaches criticality and a reactor shall be excluded
 from the calculation when all nuclear fuel has been removed permanently from the reactor core
 and has been stored safely in accordance with approved procedures.
-b) For the purposes of this Convention, “thermal power” means:
+b) For the purposes of this Convention, "thermal power" means:
 i) before the issue of a final operating licence, the planned thermal power;
 ii) after the issue of such licence, the thermal power authorised by the competent national
 authorities.
@@ -327,9 +327,9 @@ II.
 a) The provisions of this Protocol shall, as between the Parties thereto, form an integral part of the
 Convention of 31 January 1963 Supplementary to the Paris Convention of 29 July 1960 on Third Party Liability
 in the Field of Nuclear Energy, as amended by the Additional Protocol of 28 January 1964 and by the Protocol of
-16 November 1982 (hereinafter referred to as the “Convention”), which shall be known as the “Convention of
+16 November 1982 (hereinafter referred to as the "Convention"), which shall be known as the "Convention of
 31 January 1963 Supplementary to the Paris Convention of 29 July 1960, as amended by the Additional Protocol
-of 28 January 1964, by the Protocol of 16 November 1982 and by the Protocol of 12 February 2004”.
+of 28 January 1964, by the Protocol of 16 November 1982 and by the Protocol of 12 February 2004".
 b) This Protocol shall be subject to ratification, acceptance or approval. Instruments of ratification,
 acceptance or approval of this Protocol shall be deposited with the Belgian Government.
 c) The Signatories of this Protocol who have already ratified or acceded to the Convention express their

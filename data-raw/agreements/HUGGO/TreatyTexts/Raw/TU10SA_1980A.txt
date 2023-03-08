@@ -13,14 +13,14 @@ The maritime boundary between Tokelau and the
 United States shall be determined by the geodetic
 lines connecting the following coordinates:
 Latitude (South) / Longitude (West)
-10º01'26" / 168º31'25"
-10º07'52" / 169º46'50"
-10º10'18" / 170º16'10"
-10º15'17" / 171º15'32"
-10º17'50" / 171º50'58"
-10º25'26" / 172º11'01"
-10º46'15" / 173º03'53"
-11º02'17" / 173º44'48"
+10&#186;01'26" / 168&#186;31'25"
+10&#186;07'52" / 169&#186;46'50"
+10&#186;10'18" / 170&#186;16'10"
+10&#186;15'17" / 171&#186;15'32"
+10&#186;17'50" / 171&#186;50'58"
+10&#186;25'26" / 172&#186;11'01"
+10&#186;46'15" / 173&#186;03'53"
+11&#186;02'17" / 173&#186;44'48"
 ARTICLE II
 The geodetic and computational bases used for determining th~ coordinate values in Article I are the World Geodetic System, 1972 (WGS 72) and the following charts and aerial plans: Charts published by the National Ocean Survey of the United States of America; NOS No. 83484, 6th edition, March 26, 1977; Charts published by the Defence Mapping Agency of the United States of America; DMAHTC No. 83473, 7th edition, May 8, 1976;
 Aerial Plans published by the Department of Lands and Survey of New Zealand; No. 1036/7C, 1974 No. 1036/7B2, 1974 No. 1036/Bd, 1975

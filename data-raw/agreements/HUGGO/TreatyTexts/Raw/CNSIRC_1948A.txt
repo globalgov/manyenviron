@@ -86,7 +86,7 @@ of the above-mentioned problems ;
 (h) recommending to the Food and Agriculture Organization the provision
 of technical assistance to member governments in measures directed
 to that end;
-(»') extending its good offices in assisting member governments to secure
+(>>') extending its good offices in assisting member governments to secure
 materials and equipment necessary for improvement of the production,
 conservation, distribution, or consumption of rice;
 (/) reporting annually on its activities to the Council of the Food and

@@ -27,8 +27,8 @@ areas between Sweden and Denmark
 which lie within the area of applicability
 of the Convention on the Marine Envi
 ronment of the Baltic Sea Area.
-From a point with co-ordinates 57° 44'
-48.0" N, 11 ° 06' 59.2" O the boundary be
+From a point with co-ordinates 57&#186; 44'
+48.0" N, 11 &#186; 06' 59.2" O the boundary be
 tween the areas of responsibility shall
 coincide with the boundary of the conti
 nental shelves and the fishery zones be
@@ -39,7 +39,7 @@ ments thereto. The above co-ordinates
 represent the point on the straight line
 between points C and D in the aforemen
 tioned Agreement where the line inter-
-sects the parallel of latitude 57° 44'
+sects the parallel of latitude 57&#186; 44'
   48.0" N, which, according to article 1 of
 the Convention on the Protection of the
 Marine Environment, constitutes the

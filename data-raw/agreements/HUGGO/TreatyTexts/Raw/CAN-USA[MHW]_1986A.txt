@@ -1,7 +1,7 @@
 Agreement Between the Government of Canada and the Government of the United States of America Concerning the Transboundary Movement of Hazardous Waste
 E101229 - CTS 1986 No. 39
 
-The Government of Canada (Canada), and the Government of the United States of America (the United States), hereinafter called “The Parties”:
+The Government of Canada (Canada), and the Government of the United States of America (the United States), hereinafter called "The Parties":
 
 RECOGNIZING that severe health and environmental damage may result from the improper treatment, storage, and disposal of hazardous waste;
 
@@ -24,13 +24,13 @@ Definitions
 
 For the purposes of this Agreement:
 
-“Designated Authority” means, in the case of the United States of America, the Environmental Protection Agency and, in the case of Canada, the Department of the Environment.
-“Hazardous Waste” means with respect to Canada, waste dangerous goods, and with respect to the United States, hazardous waste subject to a manifest requirement in the United States, as defined by their respective national legislations and implementing regulations.
-“Country of Export” means the country from which the shipment of hazardous waste originated.
-“Country of Import” means the country to which hazardous waste is sent for the purpose of treatment, storage (with the exception of short-term storage incidental to transportation) or disposal.
-“Country of Transit” means the country which is neither the country of export nor the country of import, through whose land territory or internal waters hazardous waste is transported, or in whose ports such waste is unloaded for further transportation.
-“Consignee” means the treatment, storage (with the exception of short-term storage incidental to transportation) or disposal facility in the country of import and the name of the person operating the facility.
-“Exporter” means, in the case of the United States, the person defined as exporter, and in the case of Canada, the person defined as consignor, under their respective national laws and regulations governing hazardous waste.
+"Designated Authority" means, in the case of the United States of America, the Environmental Protection Agency and, in the case of Canada, the Department of the Environment.
+"Hazardous Waste" means with respect to Canada, waste dangerous goods, and with respect to the United States, hazardous waste subject to a manifest requirement in the United States, as defined by their respective national legislations and implementing regulations.
+"Country of Export" means the country from which the shipment of hazardous waste originated.
+"Country of Import" means the country to which hazardous waste is sent for the purpose of treatment, storage (with the exception of short-term storage incidental to transportation) or disposal.
+"Country of Transit" means the country which is neither the country of export nor the country of import, through whose land territory or internal waters hazardous waste is transported, or in whose ports such waste is unloaded for further transportation.
+"Consignee" means the treatment, storage (with the exception of short-term storage incidental to transportation) or disposal facility in the country of import and the name of the person operating the facility.
+"Exporter" means, in the case of the United States, the person defined as exporter, and in the case of Canada, the person defined as consignor, under their respective national laws and regulations governing hazardous waste.
 Article 2
 General Obligation
 
@@ -41,7 +41,7 @@ Notification to the Importing Country
 
 The designated authority of the country of export shall notify the designated authority of the country of import of proposed transboundary shipments of hazardous waste.
 The notice referred to in paragraph (a) of this article may cover an individual shipment or a series of shipments extending over a twelve month or lesser period and shall contain the following information:
-The exporter’s name, address and telephone number, and if required in the country of export, the identification number.
+The exporter's name, address and telephone number, and if required in the country of export, the identification number.
 for each hazardous waste type and for each consignee:
 A description of the hazardous waste to be exported, as identified by the waste identification number, the classification and the shipping name as required on the manifest in the country of export;
 The estimated frequency or rate at which such waste is to be exported and the period of time over which such waste is to be exported;

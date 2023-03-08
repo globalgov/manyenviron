@@ -40,12 +40,12 @@ b. Off the Bering Sea coast of the Aleutian Islands:
 (2) from May 1 to December 31 inclusive, west of 176 West Longitude;
 (3) from February 16 to September 14 inclusive, between 165 and 169 West
 Longitude;
-(4) "from July I to October 31 inclusive, between 172° and 176° West
+(4) "from July I to October 31 inclusive, between 172 &#186; and 176 &#186; West
 Longitude.
 c. Off the Pacific Ocean coast of the Aleutian Islands:
-(1) between 169° and 172° West Longitude;
-(2) from May 1 to December 31 inclusive, west of 178°30' West Longitude;
-(3) from July 1 to October 31 inclusive, between 172° and 178°30' West
+(1) between 169 &#186; and 172 &#186; West Longitude;
+(2) from May 1 to December 31 inclusive, west of 178 &#186;30' West Longitude;
+(3) from July 1 to October 31 inclusive, between 172 &#186; and 178 &#186;30' West
 Longitude.
 Fishing effort in these areas will not exceed 1966 levels. In this connection, statistics
 on fishing effort and catches by species in these areas will be provided on a regular
@@ -53,63 +53,63 @@ basis.
 3. In addition, fishing vessels of the Soviet Union may conduct loading
 operations in the following areas within the nine-mile zone contiguous to the
 territorial sea of the United States:
-a. On the north side of Nunivak Island in the Bering Sea between 166°39' and
-166°51' West Longitude, and on the south side of Nunivak Island between
-165°49' and 166°01' West Longitude.
-b. On the north side of St. Matthew Island in the Bering Sea between 172°29' and
-172°46' West Longitude and on the south side of St. Matthew Island between
-172° 17' and 172°35' West Longitude and between 172°54' and 173°04' West
+a. On the north side of Nunivak Island in the Bering Sea between 166 &#186;39' and
+166 &#186;51' West Longitude, and on the south side of Nunivak Island between
+165 &#186;49' and 166 &#186;01' West Longitude.
+b. On the north side of St. Matthew Island in the Bering Sea between 172 &#186;29' and
+172 &#186;46' West Longitude and on the south side of St. Matthew Island between
+172 &#186; 17' and 172 &#186;35' West Longitude and between 172 &#186;54' and 173 &#186;04' West
 Longitude.
-c. On the north side of Unalaska Island between 167°30' and 167°35' West
+c. On the north side of Unalaska Island between 167 &#186;30' and 167 &#186;35' West
 Longitude.
-d. On the west side of Sanak Island in the waters bounded on the north by 54°36'
-North Latitude, on the south by 54°26' North Latitude, on the west by 163°05'
-West Longitude, and on the east by 162°40' West Longitude.
-e. North of Marmot Island in the Gulf of Alaska between 151 °42' and 151 °52'
+d. On the west side of Sanak Island in the waters bounded on the north by 54 &#186;36'
+North Latitude, on the south by 54 &#186;26' North Latitude, on the west by 163 &#186;05'
+West Longitude, and on the east by 162 &#186;40' West Longitude.
+e. North of Marmot Island in the Gulf of Alaska between 151  &#186;42' and 151  &#186;52'
 West Longitude.
-/. On the east side of Kayak Island in the Gulf of Alaska between 59°52' and
-59°56' North Latitude west of 143°53' West Longitude, and on the west side of
-Kayak Island between 59°56' and 60°00' North Latitude.
-g. Near Forrester Island in the waters bounded on the north by 54°54' North
-Latitude, on the east by 133° 16' West Longitude and on the south by 54°44'
+/. On the east side of Kayak Island in the Gulf of Alaska between 59 &#186;52' and
+59 &#186;56' North Latitude west of 143 &#186;53' West Longitude, and on the west side of
+Kayak Island between 59 &#186;56' and 60 &#186;00' North Latitude.
+g. Near Forrester Island in the waters bounded on the north by 54 &#186;54' North
+Latitude, on the east by 133 &#186; 16' West Longitude and on the south by 54 &#186;44'
 North Latitude.
-h. On the south side of Unalaska Island in the waters between 167° 18' West
-Longitude and 167°40' West Longitude.
+h. On the south side of Unalaska Island in the waters between 167 &#186; 18' West
+Longitude and 167 &#186;40' West Longitude.
 4. The Government of the Soviet Union will adopt the measures necessary to
 ensure that nationals and vessels of the Soviet Union:
 a. Refrain from fishing in the waters off the Pacific coast of the United States
-between 46° 14' and 46°56' North Latitude landward of the isobath of 110
+between 46 &#186; 14' and 46 &#186;56' North Latitude landward of the isobath of 110
 meters;
 b. Refrain from concentrating fishing vessels during the period from June 15 to
-September 15 inclusive between 47°54' and 48°28' North Latitude east of
-125°06' West Longitude:
+September 15 inclusive between 47 &#186;54' and 48 &#186;28' North Latitude east of
+125 &#186;06' West Longitude:
 c. During the period from three and three-fourths days before the opening hour of
 the halibut fishing season- to three and one-half days after such opening hour,
 refrain from fishing in the following areas:
 (1) The area enclosed by straight lines connecting the following coordinates in
 the order listed:
 North Latitude West Longitude
-59°28' 150°00'
-59°28' 147°41'
-58°30' 148°30'
-58°42' 150°20'
-59°28' 150°00'
+59 &#186;28' 150 &#186;00'
+59 &#186;28' 147 &#186;41'
+58 &#186;30' 148 &#186;30'
+58 &#186;42' 150 &#186;20'
+59 &#186;28' 150 &#186;00'
 (2) The area enclosed by straight lines connecting the following coordinates in
 the order listed:
 North Latitude West Longitude
-58°05' 150°27'
-58°05' 148°47'
-57°40' 150°05'
-58°05' 150°27'
+58 &#186;05' 150 &#186;27'
+58 &#186;05' 148 &#186;47'
+57 &#186;40' 150 &#186;05'
+58 &#186;05' 150 &#186;27'
 (3) The waters seaward of the nine-mile zone contiguous to the territorial sea
 of the United States in the area enclosed by straight lines connecting the
 following coordinates in the order listed:
 North Latitude West Longitude
-56°24' 156°30'
-56°18' 155°48'
-55°31' 156°04'
-55°30' 156°31'
-56°24' 156°30'
+56 &#186;24' 156 &#186;30'
+56 &#186;18' 155 &#186;48'
+55 &#186;31' 156 &#186;04'
+55 &#186;30' 156 &#186;31'
+56 &#186;24' 156 &#186;30'
 Information as to the opening dates of the halibut fishing season shall be
 provided no less than one month in advance to the Government of the Union of
 Soviet Socialist Republics by the Government of the United States of America.
@@ -118,14 +118,14 @@ in the waters seaward of the nine-mile zone contiguous to the territorial sea of
 the United States in the area enclosed by straight lines connecting the following
 coordinates in the order listed:
 North Latitude West Longitude
-54° 10' 163°04'
-53°28' 166°00'
-54°00' 166°00'
-54°00' 165°00'
-54°33' 164°00'
-54°33' 163°04'
-54° 10' 163°04'
-It is agreed that in the above area west of 164°45' West Longitude trawling
+54 &#186; 10' 163 &#186;04'
+53 &#186;28' 166 &#186;00'
+54 &#186;00' 166 &#186;00'
+54 &#186;00' 165 &#186;00'
+54 &#186;33' 164 &#186;00'
+54 &#186;33' 163 &#186;04'
+54 &#186; 10' 163 &#186;04'
+It is agreed that in the above area west of 164 &#186;45' West Longitude trawling
 may be conducted during the said period of time at depths of 200 meters or
 greater.
 e. Restrict its total catch of flatfish, including yellowfin flounder, in the eastern
@@ -139,21 +139,21 @@ a. Conducting bottom trawl fishing along the coast of the United States of
 America in the northeastern Pacific Ocean between the isobaths of 200 and 600
 meters during the period December 15 to April 30 inclusive in the following
 areas:
-(1) 48° 10'to 47°35'North Latitude
-(2) 47°00' to 46°08' North Latitude
-(3) 45°50' to 45°35' North Latitude
-(4) 45°09' to 44°41' North Latitude
-(5) 44° 10'to 43°37'North Latitude
-(6) 42°00'to 41° 15'North Latitude
-b. Conducting a specialized fishery for rockfish in the waters south of 50°30'
+(1) 48 &#186; 10'to 47 &#186;35'North Latitude
+(2) 47 &#186;00' to 46 &#186;08' North Latitude
+(3) 45 &#186;50' to 45 &#186;35' North Latitude
+(4) 45 &#186;09' to 44 &#186;41' North Latitude
+(5) 44 &#186; 10'to 43 &#186;37'North Latitude
+(6) 42 &#186;00'to 41 &#186; 15'North Latitude
+b. Conducting a specialized fishery for rockfish in the waters south of 50 &#186;30'
 North Latitude. In this connection, the annual incidental catch of rockfish by
-nationals and vessels of the two countries in waters south of 48° 10' North
+nationals and vessels of the two countries in waters south of 48 &#186; 10' North
 Latitude shall not exceed the 1969 level, and the masters of fishing vessels will
 be instructed to avoid conducting fishing operations in areas of rockfish
 concentrations. For purposes of this Agreement, the term "incidental catch"
 means a catch taken unintentionally in the course of conducting a specialized
 fishery for other species.
-c. Conducting a specialized fishery for flounders and soles south of 48° 10' North
+c. Conducting a specialized fishery for flounders and soles south of 48 &#186; 10' North
 Latitude.
 The provisions of this paragraph shall not apply to vessels under 110 feet in
 length.
@@ -173,23 +173,23 @@ additional precautions to avoid gear conflicts during the next seven days in the
 three areas enclosed by straight lines connecting the following coordinates in the
 order listed:
 O. Nonh Latitude West Longitude
-5554°°0444'' 116676°° 1184''
-5544°°3340'' 116667°°1244''
-54°50' 167°38'
-55°04' . 167° 18'
+5554 &#186; &#186;0444'' 116676 &#186; &#186; 1184''
+5544 &#186; &#186;3340'' 116667 &#186; &#186;1244''
+54 &#186;50' 167 &#186;38'
+55 &#186;04' . 167 &#186; 18'
 u. North Latitude Wesi Longitude
-56° 18' 170°24'
-56°20' 169°03'
-56°12' 168°46'
-55°56' 169°10'
-55°56' 170°24'
-56° 18' 170°24'
+56 &#186; 18' 170 &#186;24'
+56 &#186;20' 169 &#186;03'
+56 &#186;12' 168 &#186;46'
+55 &#186;56' 169 &#186;10'
+55 &#186;56' 170 &#186;24'
+56 &#186; 18' 170 &#186;24'
 C. North Latitude West Longitude
-58°32' 174°52'
-58°40' 174°20'
-57°02' 173°00'
-56°52' 173°44'
-58°32' 174°52'
+58 &#186;32' 174 &#186;52'
+58 &#186;40' 174 &#186;20'
+57 &#186;02' 173 &#186;00'
+56 &#186;52' 173 &#186;44'
+58 &#186;32' 174 &#186;52'
 Information as to the opening dates of the halibut fishing season shall be provided
 no less than one month in advance to the Government of the Union of Soviet
 Socialist Republics by the Government of the United States of America.

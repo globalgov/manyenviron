@@ -59,7 +59,7 @@ ship by or on behalf of the shipowner or demise charterer:
 (s) any dispute as to ownership or possession of the ship;
 (t) any dispute between co-owners of the ship as to the employment or
 earnings of the ship;
-(u) a mortgage or a "hyopthèque" or a charge of the same nature on the
+(u) a mortgage or a "hyoptheque" or a charge of the same nature on the
 ship;
 (v) any dispute arising out of a contract for the sale of the ship .
 2. "Arrest" means any detention or restriction on removal of a ship by order
@@ -88,7 +88,7 @@ Exercise of right of arrest
 1. Arrest is permissible of any ship in respect of which a maritime claim is asserted if:
 (a) the person who owned the ship at the time when the maritime claim arose is liable for the claim and is owner of the ship when the arrest is effected; or
 (b) the demise charterer of the ship at the time when the maritime claim arose is liable for the claim and is demise charterer or owner of the ship when the arrest is effected; or
-(c) the claim is based upon a mortgage or a "hypothèque" or a charge of the same nature on the ship; or
+(c) the claim is based upon a mortgage or a "hypotheque" or a charge of the same nature on the ship; or
 (d) the claim relates to the ownership or possession of the ship; or
 (e) the claim is against the owner, demise charterer, manager or operator of the ship and is secured by a maritime lien which is granted or arises under the law of the State where the arrest is applied for.
 2. Arrest is also permissible of any other ship or ships which, when the arrest is effected, is or are owned by the person who is liable for the maritime claim and who was, when the claim arose:

@@ -4,10 +4,10 @@ CANADA
 AND
 THE REPUBLIC OF PANAMA
 PREAMBLE
-CANADA and THE REPUBLIC OF PANAMA (“Panama”), hereinafter referred to as
-“the Parties”:
+CANADA and THE REPUBLIC OF PANAMA ("Panama"), hereinafter referred to as
+"the Parties":
 NOTING their resolve to enter into the Free Trade Agreement between Canada and the
-Republic of Panama (“Canada-Panama FTA”) in a manner that is consistent with
+Republic of Panama ("Canada-Panama FTA") in a manner that is consistent with
 environmental protection and conservation;
 NOTING FURTHER their resolve to enhance and enforce environmental laws and
 regulations, strengthen their cooperation on environmental matters, and promote
@@ -17,7 +17,7 @@ environment in their territories;
 AFFIRMING the Rio Declaration on Environment and Development of 1992, the
 Johannesburg Declaration on Sustainable Development, and the United Nations
 Millennium Development Goals;
-AFFIRMING the Parties’ objective to pursue policies that promote sustainable
+AFFIRMING the Parties' objective to pursue policies that promote sustainable
 development and sound environmental management and the need for the mutual
 reinforcement of trade and environmental policies;
 AFFIRMING the sovereign right of States to exploit their own resources in accordance
@@ -42,14 +42,14 @@ PART ONE
 DEFINITIONS
 Article 1: Definitions
 1. For purposes of this Agreement:
-“administrative ruling of general application” means an administrative ruling or
+"administrative ruling of general application" means an administrative ruling or
 interpretation applying to all persons and fact situations falling generally within its ambit
 and establishing a norm of conduct but does not include:
 (a) a determination or ruling made in an administrative or quasi-judicial
 proceeding that applies to a particular person, good or service of the other
 Party in a specific case; or
 (b) a ruling that adjudicates with respect to a particular act or practice;
-“environmental laws” means statutory or regulatory provisions of a Party, including
+"environmental laws" means statutory or regulatory provisions of a Party, including
 legally binding instruments made pursuant to such provisions, the primary purpose of
 which is the protection of the environment, or the prevention of a danger to human life or
 health, through:
@@ -59,19 +59,19 @@ of pollutants or environmental contaminants,
 materials and wastes, and the dissemination of information related thereto,
 (c) the conservation and protection of wild flora or wildlife, including
 endangered species, their habitat, and specially protected natural areas in
-the Party’s territory, and
+the Party's territory, and
 (d) for the Republic of Panama, the sustainable use of biological diversity,
 but does not include any statute or regulation, or any provision thereof, directly related to
 worker health and safety, and does not include any statute or regulation, or provisions
 thereof, for which the primary purpose is managing the commercial harvest or
 exploitation, or subsistence or aboriginal harvesting, of natural resources;
-“persistent pattern” means a sustained or recurring course of action or inaction
+"persistent pattern" means a sustained or recurring course of action or inaction
 beginning after the date of entry into force of this Agreement;
-“person” means a natural person, or a legal person such as an enterprise or nongovernmental
+"person" means a natural person, or a legal person such as an enterprise or nongovernmental
 organization incorporated pursuant to the laws of a Party;
-“province” means a province of Canada, and includes Yukon, the Northwest Territories
+"province" means a province of Canada, and includes Yukon, the Northwest Territories
 and Nunavut;
-“territory” means:
+"territory" means:
 (a) with respect to Canada,
 (i) the land territory, air space, internal waters and territorial sea of
 Canada,
@@ -85,8 +85,8 @@ consistent with Part VI of UNCLOS;
 sovereignty; the exclusive economic zone, and the continental shelf within
 which it exercises sovereign rights and jurisdiction in accordance with its
 domestic law and international law.
-2. It is understood that a Party has not failed to “effectively enforce its
-environmental laws” in a particular case where the action or inaction in question by
+2. It is understood that a Party has not failed to "effectively enforce its
+environmental laws" in a particular case where the action or inaction in question by
 agencies or officials of that Party:
 (a) reflects a reasonable exercise of discretion in respect of investigatory,
 prosecutorial, regulatory or compliance matters; or
@@ -148,12 +148,12 @@ possible, any such law or regulation that it proposes to adopt, so that the othe
 interested persons can provide comments.
 Article 8: Private Access to Remedies
 1. Each Party shall ensure that interested persons residing in or established in the
-territory of such Party may request the Party’s competent authorities to investigate
+territory of such Party may request the Party's competent authorities to investigate
 alleged violations of its environmental laws and shall give such requests due
 consideration, in accordance with its domestic law.
 2. Each Party shall ensure that persons with a legally recognized interest in a
 particular matter under its environmental laws have appropriate access to administrative,
-quasi-judicial or judicial proceedings for the enforcement of the Party’s environmental
+quasi-judicial or judicial proceedings for the enforcement of the Party's environmental
 laws, and to remedies for violations of those laws.
 Article 9: Procedural Guarantees
 1. Each Party shall ensure that its administrative, quasi-judicial and judicial
@@ -231,13 +231,13 @@ ACCOUNTABILITY
 Article 14: Public Information and Accountability
 1. A person residing or established in the territory of either Party may submit a
 written question to either Party through the National Coordinating Officer, indicating that
-the question is being submitted pursuant to this Article regarding a Party’s obligations
+the question is being submitted pursuant to this Article regarding a Party's obligations
 under Part Three of this Agreement or cooperative activities developed pursuant to this
 Agreement.
 2. The Party receiving the question shall acknowledge the question in writing,
 forward the question to the appropriate authority and provide a response in a timely
 manner.
-3. Where the question is submitted to the Party that is not the Party of the person’s
+3. Where the question is submitted to the Party that is not the Party of the person's
 residence or establishment, the responding Party shall in a timely manner provide to the
 other Party copies of the question and its response.
 4. Each Party shall in a timely manner make publicly available all of the questions it
@@ -304,8 +304,8 @@ Canada-Panama FTA, for its consideration. Such reports may address, among other
 things:
 (a) actions taken by a Party further to its obligations under this Agreement;
 (b) cooperative activities undertaken in accordance with this Agreement;
-(c) recommendations to update Annex 1.06 – Multilateral Environmental
-Agreements of the Canada – Panama FTA.
+(c) recommendations to update Annex 1.06 - Multilateral Environmental
+Agreements of the Canada - Panama FTA.
 5. Summary records and reports of the Committee meetings shall be made public,
 unless otherwise decided by the Parties.
 Article 18: Review
@@ -326,7 +326,7 @@ implement this Agreement.
 PART SEVEN
 GENERAL PROVISIONS
 Article 20: Enforcement
-This Agreement shall not be construed to empower a Party’s authorities to
+This Agreement shall not be construed to empower a Party's authorities to
 undertake enforcement activities under its environmental laws in the territory of another
 Party.
 Article 21: Private Rights
@@ -371,7 +371,7 @@ Procedure.
 8. If the Review Panel determines that there has been a persistent pattern of failure
 by the Party that was the object of the request to effectively enforce its environmental
 laws or that there has been a breach of the obligation set out in Article 5, the Parties may
-decide on a mutually satisfactory action plan to implement the Panel’s recommendations.
+decide on a mutually satisfactory action plan to implement the Panel's recommendations.
 Any action plan decided by the Parties shall be made public without delay.
 Article 25: Application to the Provinces
 The application of this Agreement to the provinces of Canada is subject to
@@ -411,7 +411,7 @@ Initial Report
 the date the last panellist is selected, or as otherwise decided by the Parties.
 2. Such report shall contain:
 (a) findings of fact;
-(b) the Review Panel’s determination as to whether there has been a persistent
+(b) the Review Panel's determination as to whether there has been a persistent
 pattern of failure by the Party to effectively enforce its environmental laws
 or whether there has been a breach of Article 5; and
 (c) in the event of a positive determination under subparagraph (b), its
@@ -473,7 +473,7 @@ that:
 (a) each Party has the opportunity to provide written and oral submissions to
 the Review Panel;
 (b) non-governmental organizations, institutions, and persons with relevant
-information or expertise in the Parties’ territories have the opportunity to
+information or expertise in the Parties' territories have the opportunity to
 provide written submissions to the Review Panel; and
 (c) at least one hearing is held before the panel for each set of Review Panel
 proceedings, which shall be open to the public, subject to Article 22.
@@ -501,7 +501,7 @@ Parties.
 Work Program and Priority Cooperation Areas
 The work program developed by the Committee on the Environment shall reflect
 national priorities of the Parties, and may include:
-(a) strengthening each Party’s capacity building and environmental
+(a) strengthening each Party's capacity building and environmental
 management systems, including reinforcing institutional and legal
 frameworks;
 (b) developing and promoting incentives and other flexible and voluntary
@@ -518,9 +518,9 @@ or subject to international commercial trade;
 (h) facilitating technology development, transfer and training to promote the
 use, proper operation and maintenance of cleaner production technologies;
 (i) promoting environmentally beneficial goods and services;
-(j) strengthening each Party’s capacity to implement and enforce obligations
-under the agreements listed in Annex 1.06 – Multilateral Environmental
-Agreement of the Canada –Panama FTA; and
+(j) strengthening each Party's capacity to implement and enforce obligations
+under the agreements listed in Annex 1.06 - Multilateral Environmental
+Agreement of the Canada -Panama FTA; and
 (k) any other areas for environmental cooperation on which the Parties may
 concur.
 ANNEX III

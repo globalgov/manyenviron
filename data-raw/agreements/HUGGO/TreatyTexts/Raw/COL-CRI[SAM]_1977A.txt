@@ -10,17 +10,17 @@ unimpeded transit through them,
 Mutually interested in the adoption of adequate means for the preservation, conservation, and exploitation of the
 resources existing in those areas, and for the prevention, control, and elimination of their pollution, have decided to conclude a
 Treaty and for that purpose have appointed as their plenipotentiaries:
-The President of the Republic of Colombia: Dr. Heraclio Fern§ndez Sandoval, Ambassador Extraordinary and
+The President of the Republic of Colombia: Dr. Heraclio Fernandez Sandoval, Ambassador Extraordinary and
 Plenipotentiary in Costa Rica;
 The President of the Republic of Costa Rica: Dr. Gonzalo J. Facio, Minister of Foreign Relations,
 Who, after exchanging their respective full powers, found in proper and due form, have agreed as follows:
 Article 1
 To delimit their respective marine and submarine waters which are established or may be established in the future by
 the following lines:
-A. From the intersection of a straight line, drawn with azimuth 225° (45° SW.) from a point located at lat.
-11°00'00"N. and long. 81°15'00"W., with the parallel 10°49'00"N.
-West along the said parallel to its intersection with the meridian 82°14'00"W.
-  B. From the intersection of the parallel 10°49'00"N. and the meridian 82°14'00"W., the boundary shall continue
+A. From the intersection of a straight line, drawn with azimuth 225&#186; (45&#186; SW.) from a point located at lat.
+11&#186;00'00"N. and long. 81&#186;15'00"W., with the parallel 10&#186;49'00"N.
+West along the said parallel to its intersection with the meridian 82&#186;14'00"W.
+  B. From the intersection of the parallel 10&#186;49'00"N. and the meridian 82&#186;14'00"W., the boundary shall continue
 north along the said meridian to where delimitation must be made with a third State.
 N.B. The agreed lines and points are shown on the nautical chart, signed by the plenipotentiaries, which is annexed
 to this Treaty, it being understood that in all cases the wording of the Treaty shall prevail.
@@ -52,6 +52,6 @@ To support the broadest cooperation to promote rapid development of internationa
 sovereignty or jurisdiction of each State.
 Article 8
 This Treaty shall be subject to the constitutional formalities of ratification by the High Contracting Parties and shall
-enter into force upon the exchange of the instruments of ratification which shall take place at Bogotà, Republic of Colombia.
+enter into force upon the exchange of the instruments of ratification which shall take place at Bogota, Republic of Colombia.
 This treaty is signed in two copies, in the Spanish language, both texts being equally authentic.
-Signed at San José, Republic of Costa Rica, on March 17, 1977.
+Signed at San Jose, Republic of Costa Rica, on March 17, 1977.

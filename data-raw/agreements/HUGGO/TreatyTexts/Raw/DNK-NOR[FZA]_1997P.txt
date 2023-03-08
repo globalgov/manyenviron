@@ -15,7 +15,7 @@ Article 1
 From point 4 as described in Article 1 of the Agreement of 18 December 1995, the demarcation line between the Parties'
 parts of the continental shelf and between the fishery zones in the area continues as a straight geodetic line to the point specified
 below:
-Point 5: 69° 35'00" N 13° 16'00" W
+Point 5: 69&#186; 35'00" N 13&#186; 16'00" W
 The above-mentioned point is defined by its geographical latitude and longitude in accordance with the World Geodetic System
 1984 (WGS 84).
 The delimitation line from the above-mentioned point 4 to the above-mentioned point 5 is, for illustrative purposes, drawn on

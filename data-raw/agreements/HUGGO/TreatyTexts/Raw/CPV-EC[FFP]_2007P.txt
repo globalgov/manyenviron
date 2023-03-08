@@ -22,7 +22,7 @@ Highly migratory species (species listed in Annex 1 to the 1982 United Nations C
 
 Article 2
 
-Financial contribution — Methods of payment
+Financial contribution - Methods of payment
 
 1. The financial contribution referred to in Article 7 of the Agreement shall comprise, for the period referred to in Article 1, an annual amount of EUR 325000 equivalent to a reference tonnage of 5000 tonnes per year and a specific amount of EUR 60000 per year for the support and implementation of initiatives taken in the context of the Cape Verde sectoral fisheries policy. This specific amount shall be an integral part of the single financial contribution defined in Article 7 of the Agreement.
 
@@ -40,7 +40,7 @@ Financial contribution — Methods of payment
 
 Article 3
 
-Cooperation on responsible fishing — Annual scientific meeting
+Cooperation on responsible fishing - Annual scientific meeting
 
 1. The parties hereby undertake to promote responsible fishing in Cape Verde waters on the basis of the principles laid down in the FAO's Code of conduct for responsible fisheries and the principle of non-discrimination between the different fleets fishing in those waters.
 
@@ -104,7 +104,7 @@ Cape Verde shall manage the corresponding amount in the light of objectives iden
 
 Article 8
 
-Disputes — suspension of application of the Protocol
+Disputes - suspension of application of the Protocol
 
 1. Any dispute between the parties over the interpretation of this Protocol or its application shall be the subject of consultations between the parties within the Joint Committee provided for in Article 9 of the Agreement, in a special meeting if necessary.
 
@@ -168,7 +168,7 @@ Issue of licences
 
 1. Only eligible vessels may obtain a licence to fish in the Cape Verde fishing zone under the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Cape Verde on fishing off the coast of Cape Verde for the period from 1 September 2006 to 31 August 2011.
 
-2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Cape Verde. They must be in order vis-à-vis the Cape Verde authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in Cape Verde under fisheries agreements concluded with the Community.
+2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Cape Verde. They must be in order vis-a-vis the Cape Verde authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in Cape Verde under fisheries agreements concluded with the Community.
 
 3. All Community vessels applying for a fishing licence may be represented by an agent resident in Cape Verde. The name and address of that agent shall be stated in the licence application. However, any vessel applying for a fishing licence which provides for unloading or transhipment in a Cape Verde port must be represented by an agent resident in Cape Verde.
 
@@ -180,7 +180,7 @@ Issue of licences
 
 - proof of payment of the fee for the period of validity of the licence;
 
-- for all first applications under this Protocol, a recent colour photograph, of at least 15 cm × 10 cm, showing a side view of the vessel in its current state;
+- for all first applications under this Protocol, a recent colour photograph, of at least 15 cm * 10 cm, showing a side view of the vessel in its current state;
 
 - any other documents or certificates required under the specific rules applicable to the type of vessel concerned pursuant to this Protocol.
 
@@ -204,7 +204,7 @@ Issue of licences
 
 Section 2
 
-Licence conditions — fees and advance payments
+Licence conditions - fees and advance payments
 
 1. Licences shall be valid for a period of one year. They shall be renewable.
 
@@ -218,7 +218,7 @@ Licence conditions — fees and advance payments
 
 - EUR 500 per pole-and-line tuna vessel (of which EUR 100 will go towards financing the observer programme), equivalent to the fees due for 16 tonnes of highly migratory species and associated species caught per year.
 
-4. The final statement of the fees due for year n shall be drawn up by the Commission of the European Communities by 31 July of the year n + 1 at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Développement (IRD), the Instituto Español de Oceanografía (IE), the Instituto de Investigação das Pescas e do Mar (IPIMAR) and the Instituto Nacional de Desenvolvimento das Pescas (INDP) of Cape Verde via the Delegation.
+4. The final statement of the fees due for year n shall be drawn up by the Commission of the European Communities by 31 July of the year n + 1 at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Developpement (IRD), the Instituto Espanol de Oceanografia (IE), the Instituto de Investigacao das Pescas e do Mar (IPIMAR) and the Instituto Nacional de Desenvolvimento das Pescas (INDP) of Cape Verde via the Delegation.
 
 5. The statement shall simultaneously be notified to the Ministry responsible for fisheries in Cape Verde and the shipowners for checking and approval. The Cape Verde authorities may, on the basis of duly justified arguments within no more than 30 working days of the date of transmission, contest the statement. In the event of disagreement, the Joint Committee shall be consulted. If no objection is made in the given deadline the statement shall be accepted.
 
@@ -544,7 +544,7 @@ Protocol (VMS)
 
 Provisions applicable to satellite monitoring of Community fishing vessels operating in the Cape Verde EEZ
 
-1. The provisions of this Protocol supplement the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Cape Verde on fishing off the coast of Cape Verde for the period from 1 September 2006 to 31 August 2011 and apply in accordance with point 4.1 of "Chapter VII — Monitoring" in the Annex thereto.
+1. The provisions of this Protocol supplement the Protocol setting out the fishing opportunities and financial contribution provided for in the Fisheries Partnership Agreement between the European Community and the Republic of Cape Verde on fishing off the coast of Cape Verde for the period from 1 September 2006 to 31 August 2011 and apply in accordance with point 4.1 of "Chapter VII - Monitoring" in the Annex thereto.
 
 2. All fishing vessels with an overall length exceeding 15 metres operating under the Fisheries Agreement between the European Community and Cape Verde shall be tracked by satellite when fishing in the Cape Verde EEZ.
 

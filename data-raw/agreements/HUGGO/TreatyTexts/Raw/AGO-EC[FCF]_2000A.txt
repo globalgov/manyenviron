@@ -162,7 +162,7 @@ The fees shall be EUR 25 per tonne caught within Angola's fishing zone.
 
 Licences shall be issued following advance payment to Angola at a flat rate of EUR 4200 a year for each freezer tuna seiner, equivalent to the fees for a catch of 168 tonnes per year, and at a flat rate of EUR 2100 a year for each surface longliner, equivalent to the fees for a catch of 84 tonnes per year.
 
-The final statement of the fees due for the fishing year shall be drawn up by the Commission of the European Communities at the end of the first quarter of the year following that of the catches on the basis of the catch statements made for each vessel and verified by a specialised scientific body in the region, in particular the Institut de Recherche pour le Développement (IRD), the Instituto Español de Oceanografía (IEO) and the Instituto Português de Investigação Marítima (IPIMAR).
+The final statement of the fees due for the fishing year shall be drawn up by the Commission of the European Communities at the end of the first quarter of the year following that of the catches on the basis of the catch statements made for each vessel and verified by a specialised scientific body in the region, in particular the Institut de Recherche pour le Developpement (IRD), the Instituto Espanol de Oceanografia (IEO) and the Instituto Portugues de Investigacao Maritima (IPIMAR).
 
 This statement shall be communicated to the Angolan authorities and to the shipowners at the same time. The shipowners shall make any additional payment, within 30 days of notification of the final statement at the latest, into an account opened with a financial institution or any other body specified by the Angolan authorities.
 
@@ -214,13 +214,13 @@ In the event of failure to comply with this provision, Angola reserves the right
 
 8. FISHING ZONES
 
-8.1. The fishing zones accessible to shrimp vessels shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola north of 12°20' prime and beyond the first 12 nautical miles measured from the base lines.
+8.1. The fishing zones accessible to shrimp vessels shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola north of 12&#186;20' prime and beyond the first 12 nautical miles measured from the base lines.
 
 8.2. The fishing zones accessible to freezer tuna seiners and surface longliners shall comprise all waters under the sovereignty or the jurisdiction of the republic of Angola beyond the first 12 nautical miles measured from the base lines.
 
 8.3. The fishing zones accessible to vessels engaged in demersal fishing shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola:
 
-- trawlers: beyond the first 12 nautical miles measured from the base lines and restricted northwards by 13°00' prime and south and southwards by a line five miles north of the limit between the exclusive economic zones (EEZs) of Angola and Namibia,
+- trawlers: beyond the first 12 nautical miles measured from the base lines and restricted northwards by 13&#186;00' prime and south and southwards by a line five miles north of the limit between the exclusive economic zones (EEZs) of Angola and Namibia,
 
 - other types of vessels: beyond the first eight nautical miles measured from the base lines and restricted northwards by a line five miles north of the limit between the EEZs of Angola and Namibia.
 

@@ -221,7 +221,7 @@ meridian of Longitude 1270 East;
 of Latitude 130219 South, Longitude 129040'
 East;
 (27) thence north along the meridian of Longitude
-129°40' East to its intersection by the
+129&#186;40' East to its intersection by the
 parallel of Latitude 10030' South;
 (28) thence east along that parallel to its
 intersection by the meridian of Longitude
@@ -280,10 +280,10 @@ the point
 the point
 the point
 (46) thence south-easterly along the rhumb line to the
-point of Latitude 9° 13'53" South, Longitude
+point of Latitude 9&#186; 13'53" South, Longitude
 1420 16'26" East;
   (47) thence south-easterly along the rhumb line to the
-  point of Latitude 9°16'04" South, Longitude
+  point of Latitude 9&#186;16'04" South, Longitude
 1420 20'41" East;
 (48) thence south-easterly along the rhumb line to the
 point of Latitude 9022-04 - South, Longitude
@@ -299,7 +299,7 @@ point of Latitude 90 21'25" South, Longitude
   142035'29' East;
   (52) thence easterly along the rhumb line to
   of Latitude 9020'21" South, Longitude
-142°41'43" East;
+142&#186;41'43" East;
 (53) thence easterly along the rhumb line to
 of Latitude 9020*16 - South, Longitude
 142043'53 - East;

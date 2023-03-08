@@ -110,7 +110,7 @@ of that country and the orders issued by its
 authorities. They shall further comply with the
 following provisions:
 
-§ 1. Any person belonging to one Contracting
+ 1. Any person belonging to one Contracting
 State shall, when engaged in fishing
 in the waters of the other, have in
 his possession the following documents
@@ -140,7 +140,7 @@ frontier supervisory service in the
 other country every year, fifteen days before
 the fishing season begins.
 
-§ 2. Every fishing vessel shall bear on
+ 2. Every fishing vessel shall bear on
 the lower part of her hull on the starboard
 side, in large figures (not less than twelve
 centimetres long), the number of the permit
@@ -148,7 +148,7 @@ referred to in paragraph I, together with
 the name of the port of registry in Finnish
 and Russian.
 
-§ 3. Fishermen and sealers of each
+ 3. Fishermen and sealers of each
 State shall have their names placed on
 the register of the competent frontier supervisory
 authority of the other State, at
@@ -159,7 +159,7 @@ State shall communicate to each
 other, in good time, a list of these supervisory
 authorities.
 
-§ 4. Fishing and sealing may not be
+ 4. Fishing and sealing may not be
 carried on by nationals of one State in the
 waters of the other at night-time (from sunset
 to sunrise) within sight of land, except in
@@ -170,7 +170,7 @@ territorial waters of their own State, or
 else put in at one of the landing-places
 referred to in Article 3.
 
-§ 5. Persons on board fishing-vessels
+ 5. Persons on board fishing-vessels
 shall, if required to do so by the competent
 authority of the country in which the
 vessel is situated, produce their papers for
@@ -181,7 +181,7 @@ paragraph i are found, such articles shall
 be confiscated and the facts shall be noted
 on the permit of the person concerned.
 
-§ 6. If a fishing-vessel belonging to one
+ 6. If a fishing-vessel belonging to one
 State goes outside the area of the other
 State referred to in Article i (except in the
 cases referred to in Article 5 of the present
@@ -192,7 +192,7 @@ of the fishing area were crossed intentionally,
 the vessel may be detained and
 the persons on board may be proceeded
 against in the ordinary way.
-§ 7. Persons committing breaches of
+ 7. Persons committing breaches of
 the present Convention, other than those
 referred to in paragraph 6 above, may not
 be arrested by the authorities in the other
@@ -204,7 +204,7 @@ country and in accordance with its laws.
 This provision shall not apply, however,
 to fishermen who are guilty of offences of
 a general nature.
-§ 8. Persons whose permits have been
+ 8. Persons whose permits have been
 so endorsed three times (under the terms
 of paragraphs 5, 6 and 7 of the present
 article) shall forfeit their right to fish for
@@ -218,7 +218,7 @@ present Convention for fishing-vessels of either
 Contracting Party to enter the territorial waters
 or land on the coast of the other Contracting
 Party owing to stress of weather, fog, ice, or
-other perils of the sea (relâche forcée).
+other perils of the sea (relache forcee).
 
 Article 6.
 Nationals, organisations and associations of

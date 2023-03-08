@@ -10,9 +10,9 @@ Period of application and fishing opportunities
 
 Highly migratory species (species listed in Annex 1 to the 1982 United Nations Convention on the Law of the Sea) with the exception of the Alopiidae and Sphyrnidae families, in addition to the following species: Cetorhinus maximus, Rhincodon typus, Carcharodon carcharias, Carcharhinus falciformis, Carcharhinus longimanus;
 
-—   tuna seiners: 42 vessels
+-   tuna seiners: 42 vessels
 
-—   surface longliners: 20 vessels.
+-   surface longliners: 20 vessels.
 
 2.   Paragraph 1 shall apply subject to Articles 5, 6, 7 and 8 of this Protocol.
 
@@ -20,7 +20,7 @@ Highly migratory species (species listed in Annex 1 to the 1982 United Nations C
 
 Article 2
 
-Financial contribution – Methods of payment
+Financial contribution - Methods of payment
 
 1.   For the period referred to in Article 1, the financial contribution referred to in Article 7 of the Fisheries Partnership Agreement shall be EUR 1 800 000.
 
@@ -104,23 +104,23 @@ Exploratory fishing and new fishing opportunities
 
 2.   To this end, the European Union shall communicate to the Comorian authorities the applications for exploratory fishing licences in a technical file specifying:
 
-—
+-
 
 the targeted species;
 
-—
+-
 
 the technical characteristics of the vessel;
 
-—
+-
 
 the experience of the vessel's officers with regard to the fishing activities in question;
 
-—
+-
 
 the technical parameters of the trip (length, gear, regions to be explored, etc.);
 
-—
+-
 
 the type of data collected to ensure scientific monitoring of the fishing activities' impact on the resource and the ecosystems.
 
@@ -254,11 +254,11 @@ GENERAL PROVISIONS
 
 For the purposes of this Annex and unless otherwise stated, any reference to the European Union (EU) or to the Union of the Comoros as a competent authority shall mean:
 
-—
+-
 
 for the European Union: the European Commission, where applicable via the EU delegation in Mauritius;
 
-—
+-
 
 for the Union of the Comoros: The Comorian Ministry responsible for fisheries.
 
@@ -280,7 +280,7 @@ FISHING LICENCES
 
 For the purposes of applying the provisions of this Annex, the term 'fishing licence' means the right to engage in fishing activities for a specific period, in a specific zone or in a specific fishery.
 
-1.   Condition for obtaining a tuna fishing licence – eligible vessels
+1.   Condition for obtaining a tuna fishing licence - eligible vessels
 
 1.1.
 
@@ -308,15 +308,15 @@ ii.
 
 the name, address and contact details of:
 
-—
+-
 
 the owner of the fishing vessel
 
-—
+-
 
 the operator of the fishing vessel
 
-—
+-
 
 the local agent for the vessel;
 
@@ -350,11 +350,11 @@ In the case of renewal of a fishing licence under the Protocol in force for a ve
 
 Fishing licences shall be issued once the following fixed amounts have been paid to the competent national authorities:
 
-—
+-
 
 EUR 4 235 per year per tuna seiner, equivalent to the fees due for 77 tonnes of tuna caught in the Union of the Comoros's fishing zone;
 
-—
+-
 
 EUR 2 475 per year per surface longliner, equivalent to the fees due for 45 tonnes of tuna caught in the Union of the Comoros's fishing zone.
 
@@ -444,15 +444,15 @@ ii.
 
 when leaving the fishing zone of the Union of the Comoros without first passing through a Comorian port, the original of each fishing logbook is to be sent within a period of seven working days after arrival in any other port, and in any case within a period of 15 working days after leaving the fishing zone of the Union of the Comoros:
 
-—
+-
 
 by e-mail, to the e-mail address given by the national body responsible for supervising fishing activities;
 
-—
+-
 
 or by fax, to the number given by the national body responsible for supervising fishing activities;
 
-—
+-
 
 or by letter sent to the national body responsible for supervising fishing activities.
 
@@ -466,15 +466,15 @@ The master shall send a copy of all the fishing logbooks to the EU Delegation in
 
 i.
 
-Institut de recherche pour le développement (IRD);
+Institut de recherche pour le developpement (IRD);
 
 ii.
 
-Instituto Español de Oceanografía (IEO);
+Instituto Espanol de Oceanografia (IEO);
 
 iii.
 
-IPMA (Instituto Português do Mar e da Atmosfèra).
+IPMA (Instituto Portugues do Mar e da Atmosfera).
 
 2.5.
 
@@ -522,23 +522,23 @@ Transhipment at sea is prohibited. Any EU vessel wishing to tranship or land cat
 
 The master of an EU vessel wishing to land or tranship must notify the NFMIC and, at the same time, the port authority concerned in the Union of the Comoros at least 24 hours before the landing or transhipment is to take place, of the following:
 
-—
+-
 
 the names of the fishing vessels involved in the transhipment or landing,
 
-—
+-
 
 the name of the cargo vessel;
 
-—
+-
 
 the tonnage by species to be transhipped or landed;
 
-—
+-
 
 the day of transhipment or landing;
 
-—
+-
 
 the beneficiary of the landed catches.
 
@@ -630,27 +630,27 @@ If the observer is not present at the time and place agreed or within the twelve
 
 An observer shall be treated on board as an officer. He or she shall carry out the following tasks:
 
-—
+-
 
 observe the vessels' fishing activities;
 
-—
+-
 
 verify the position of vessels engaged in fishing operations;
 
-—
+-
 
 note the fishing gear used;
 
-—
+-
 
 verify the data recorded in the logbook for catches taken in the Union of the Comoros's fishing zone;
 
-—
+-
 
 verify the percentages of by-catches and estimate the quantity of discards of species of marketable fin-fish, crustaceans and cephalopods;
 
-—
+-
 
 report fishing data by radio, including the quantity of catches and by-catches on board.
 
@@ -666,11 +666,11 @@ The observer shall be offered every facility needed to carry out their duties. T
 
 While on board, the observer shall:
 
-—
+-
 
 take all appropriate steps to ensure that the conditions of their boarding and presence on the vessel neither interrupt nor hamper fishing operations;
 
-—
+-
 
 respect the material and equipment on board and the confidentiality of all documents belonging to the vessel.
 
@@ -730,9 +730,9 @@ The Union of the Comoros shall send the EU any sighting reports it has on fishin
 
 3.   Satellite-based vessel monitoring system (VMS)
 
-3.1.   Vessel position messages – VMS
+3.1.   Vessel position messages - VMS
 
-EU vessels holding a fishing licence must be equipped with a satellite monitoring system (VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre – FMC) of their flag State.
+EU vessels holding a fishing licence must be equipped with a satellite monitoring system (VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre - FMC) of their flag State.
 
 Each position message must contain:
 
@@ -840,7 +840,7 @@ The penalty for an established infringement shall be established by the Union of
 
 A compromise procedure shall be launched prior to any legal procedures between the Comorian authorities and the owner of the EU vessel in order to settle the issue amicably. A representative of the vessel's flag State may be involved in this compromise procedure. The compromise procedure shall finish at the latest 72 hours after notification of the vessel's detention.
 
-4.   Legal proceedings – Bank guarantee
+4.   Legal proceedings - Bank guarantee
 
 If the compromise procedure referred to above is unsuccessful and the infringement is brought before the competent court, the owner of the vessel which committed the infringement shall deposit a bank guarantee, the amount of which, as established by the Union of the Comoros, shall cover the costs linked to the detention of the vessel, the estimated fine and any compensation. The bank guarantee may not be recovered until the legal proceedings have been concluded.
 
@@ -869,7 +869,7 @@ Fishing licence application form
 
 2.
 
-Communication of VMS messages to the Union of the Comoros – Position report
+Communication of VMS messages to the Union of the Comoros - Position report
 
 3.
 
@@ -1010,7 +1010,7 @@ ERS data which could not be made available to the Union of the Comoros via the E
 
 If the FMC of the Union of the Comoros does not receive ERS data from a vessel for three consecutive days, the Union of the Comoros may instruct the vessel to immediately call at a port of the Union of the Comoros's choosing in order to investigate.
 
-FMC FAILURE – ERS DATA NOT RECEIVED BY THE FMC OF THE UNION OF THE COMOROS
+FMC FAILURE - ERS DATA NOT RECEIVED BY THE FMC OF THE UNION OF THE COMOROS
 
 1.
 

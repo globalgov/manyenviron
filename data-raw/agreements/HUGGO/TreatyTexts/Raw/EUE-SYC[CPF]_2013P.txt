@@ -258,7 +258,7 @@ Only eligible European Union vessels may obtain a fishing authorisation to fish 
 
 2.
 
-‘Fishing authorisation’ means a valid entitlement or license to engage in fishing activities in accordance with the terms of the said fishing authorisation provided under the Protocol.
+'Fishing authorisation' means a valid entitlement or license to engage in fishing activities in accordance with the terms of the said fishing authorisation provided under the Protocol.
 
 3.
 
@@ -324,7 +324,7 @@ The fishing authorisation must be kept on board the vessel at all times, notwith
 
 Section 2
 
-Fishing authorisation conditions – fees and advance payments
+Fishing authorisation conditions - fees and advance payments
 
 1.
 
@@ -444,7 +444,7 @@ The statement shall be sent to the Commission before 31 March of the current yea
 
 7.
 
-Where the shipowners do not agree with the statement submitted by the Seychelles authorities, they may consult the scientific institutes competent for verifying catch statistics such as the IRD (Institut de Recherche pour le Développement), the IEO (Instituto Español de Oceanografia) and IPIMAR (Instituto de Investigação das Pescas e do Mar), and thereafter discuss together with the Seychelles competent authorities, who shall inform the Commission thereof, to establish the final statement before 31 May of the current year. In the absence of observations by the shipowners by that date, the statement submitted by the Seychelles authorities shall be considered as the final one. Where the final statement is less than the advance payment referred to in point 2, the balance shall not be recoverable by the shipowner.
+Where the shipowners do not agree with the statement submitted by the Seychelles authorities, they may consult the scientific institutes competent for verifying catch statistics such as the IRD (Institut de Recherche pour le Developpement), the IEO (Instituto Espanol de Oceanografia) and IPIMAR (Instituto de Investigacao das Pescas e do Mar), and thereafter discuss together with the Seychelles competent authorities, who shall inform the Commission thereof, to establish the final statement before 31 May of the current year. In the absence of observations by the shipowners by that date, the statement submitted by the Seychelles authorities shall be considered as the final one. Where the final statement is less than the advance payment referred to in point 2, the balance shall not be recoverable by the shipowner.
 
 Section 3
 
@@ -494,11 +494,11 @@ While in Seychelles' waters, EU vessels shall report to the competent authority 
 
 As far as the submission of the statement of catch form referred to in points 1.1 and 1.3 is concerned, the European Union vessels shall:
 
-—
+-
 
 in the case they call into Port Victoria, submit the completed form to the Seychelles authorities within five (5) days of arrival, or in any event before they leave port, whichever occurs first;
 
-—
+-
 
 in any other case, send the completed form to the Seychelles authorities within fourteen (14) days of arrival in any port other than Victoria.
 
@@ -508,7 +508,7 @@ Copies of these statement of catch forms must simultaneously be sent to the scie
 
 2.
 
-The words ‘Outside Seychelles' waters’ shall be entered in the abovementioned statement of catch form in respect of periods during which the vessel is not in Seychelles' EEZ.
+The words 'Outside Seychelles' waters' shall be entered in the abovementioned statement of catch form in respect of periods during which the vessel is not in Seychelles' EEZ.
 
 3.
 
@@ -526,15 +526,15 @@ Catch communication: entering and leaving seychelles' waters
 
 For the purposes of this Annex, the duration of a trip by a European Union vessel shall be defined as follows:
 
-—
+-
 
 either the period elapsing between entering and leaving Seychelles' waters;
 
-—
+-
 
 or the period elapsing between entering Seychelles' waters and a transhipment;
 
-—
+-
 
 or the period elapsing between entering Seychelles' waters and a landing in Seychelles.
 
@@ -560,7 +560,7 @@ Landing
 
 1.
 
-The designated port for landing activities in the Seychelles is Victoria, Mahé.
+The designated port for landing activities in the Seychelles is Victoria, Mahe.
 
 2.
 
@@ -830,15 +830,15 @@ In order to facilitate safer inspection procedures, without prejudice to the pro
 
 Seychelles shall make available to the European Union a list with all inspection platforms used for sea inspections in line with FAO UNFSA recommendations. This list should contain inter alia:
 
-—
+-
 
 Fisheries Patrol Vessels (FPV) names;
 
-—
+-
 
 FPV Vessel details;
 
-—
+-
 
 FPV photo.
 
@@ -908,9 +908,9 @@ The vessel shall be released and its master discharged once the obligations aris
 
 Appendices
 
-Appendix 1 – Fishing Authorisation Application form
+Appendix 1 - Fishing Authorisation Application form
 
-Appendix 2 – Geographical Coordinates
+Appendix 2 - Geographical Coordinates
 
 (1)
 
@@ -920,15 +920,15 @@ Seychelles' EEZ
 
 Prohibited or Restricted Areas
 
-Appendix 3 – Fishing Logbook sheet – Tuna Seiners
+Appendix 3 - Fishing Logbook sheet - Tuna Seiners
 
-Appendix 4 – Fishing Logbook sheet – Longliners
+Appendix 4 - Fishing Logbook sheet - Longliners
 
-Appendix 5 – Communication Format Reports
+Appendix 5 - Communication Format Reports
 
-Appendix 6 – ERS Framework Guidelines
+Appendix 6 - ERS Framework Guidelines
 
-Appendix 7 – Seychelles Contact Details
+Appendix 7 - Seychelles Contact Details
 
 (1)
 
@@ -942,9 +942,9 @@ Seychelles Licensing Authority
 
 Seychelles FMC
 
-Appendix 8 – VMS Framework
+Appendix 8 - VMS Framework
 
-Appendix 9 – Guidelines for engaging Seychelles Seamen on EU Purse Seine vessels
+Appendix 9 - Guidelines for engaging Seychelles Seamen on EU Purse Seine vessels
 
 Appendix 6
 
@@ -954,7 +954,7 @@ General Provisions
 
 1.
 
-All EU fishing vessels must be equipped with an electronic system (hereinafter referred to as ‘ERS system’) capable of recording and transmitting data relating to the fishing activity of the vessel (hereinafter referred to as ‘ERS data’) whenever the vessel is operating in the waters of Seychelles.
+All EU fishing vessels must be equipped with an electronic system (hereinafter referred to as 'ERS system') capable of recording and transmitting data relating to the fishing activity of the vessel (hereinafter referred to as 'ERS data') whenever the vessel is operating in the waters of Seychelles.
 
 2.
 
@@ -962,7 +962,7 @@ An EU vessel that is not equipped with an ERS system, or if the ERS system insta
 
 3.
 
-The ERS data is transmitted in accordance with the present guidelines to the Fisheries Monitoring Centre (hereinafter referred to as ‘FMC’) of the flag State, which ensures the automatic provision to the Seychelles FMC.
+The ERS data is transmitted in accordance with the present guidelines to the Fisheries Monitoring Centre (hereinafter referred to as 'FMC') of the flag State, which ensures the automatic provision to the Seychelles FMC.
 
 4.
 
@@ -1272,15 +1272,15 @@ The VMS messages reported shall be identified by using the following 3 letter co
 
 (a)
 
-‘ENT’, first VMS data report transmitted by each vessel upon entering the Seychelles fishing waters;
+'ENT', first VMS data report transmitted by each vessel upon entering the Seychelles fishing waters;
 
 (b)
 
-‘POS’, every VMS data report transmitted by each vessel while within the Seychelles fishing waters;
+'POS', every VMS data report transmitted by each vessel while within the Seychelles fishing waters;
 
 (c)
 
-‘EXI’, first VMS data report transmitted by each vessel after exiting the Seychelles fishing waters;
+'EXI', first VMS data report transmitted by each vessel after exiting the Seychelles fishing waters;
 
 3.
 
@@ -1366,67 +1366,67 @@ Guidelines for the engaging of Seychelles Seamen on EU Purse Seine vessels
 
 The Seychelles authorities shall ensure that personnel engaged to be employed on EU vessels shall meet the following requirements:
 
-—
+-
 
 The minimum age of the seamen shall be 18;
 
-—
+-
 
 Seamen shall be have a valid medical certificate, confirming that they are medically fit to perform their duties they are to carry out at sea. This certificate shall be issued by a duly qualified medical practitioner;
 
-—
+-
 
 Seamen shall have the valid vaccinations required for precautionary health purposes in the region;
 
-—
+-
 
 Seamen shall possess, as a minimum, valid certification for the following basic safety training,
 
-—
+-
 
 personal survival techniques, including the donning of lifejackets
 
-—
+-
 
 fire fighting and fire prevention
 
-—
+-
 
 elementary first aid
 
-—
+-
 
 personal safety and social responsibility; and
 
-—
+-
 
 prevention of marine pollution.
 
-—
+-
 
 With particular regard to large fishing vessels, seamen should:
 
-—
+-
 
 be familiar with the marine terms and order commonly used on fishing vessels;
 
-—
+-
 
 be familiar with the dangers associated with fishing operations;
 
-—
+-
 
 have an understanding of the operating conditions of fishing vessels and the dangers that they may pose;
 
-—
+-
 
 be familiar and have knowledge in the use of the fishing equipment to be used in the execution of the purse seine fishery;
 
-—
+-
 
 have a general understanding and knowledge of the stability and associated seaworthiness of a vessel; and
 
-—
+-
 
 have general knowledge of mooring operations and the handling of mooring ropes and their associated uses.
 

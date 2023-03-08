@@ -12,7 +12,7 @@ Conscious that the populations of high Andean flamingos have been subject to a
 drastic reduction and fragmentation of their habitats and are given a poor state of
 conservation;
 Aware that, according to IUCN, the global conservation status of Phoenicoparrus
-andinus is “Vulnerable” and that of Phoenicoparrus jamesi is “Near Threatened”;
+andinus is \"Vulnerable\" and that of Phoenicoparrus jamesi is \"Near Threatened\";
 Noting also that the species P. andinus and P. jamesi have been included on Appendix
 I of the Convention on the Conservation of Migratory Species of Wild Animals (CMS) in
 order to consider them endangered [I prefer the original!]and, consequently, that CMS Parties,
@@ -32,7 +32,7 @@ Acknowledging that, on a regional scale, the Range States, in form of the Conser
 Group for High Andean Flamingos (GCFA), are taking efforts through governmental
 organisations, which are responsible for the administration of the national system of protected
 areas and the conservation and sustainable use of the wild species in order to ensure these
-species’ conservation, coordinated and concerted actions across the migratory range of these
+species' conservation, coordinated and concerted actions across the migratory range of these
 2
 species are still required to prevent the last populations of these birds from disappearing and
 to improve their conservation status;
@@ -50,7 +50,7 @@ the conservation actions of the signatories and, which should inter alia include
 measures to promote co-ordination of these actions, international cooperation,
 improving the knowledge on these species, management, research, awareness and the
 exchange of information among the signatories. The responsibility for the Action
-Plan’s elaboration will be assumed by the public services of each signatory country
+Plan's elaboration will be assumed by the public services of each signatory country
 with competence over the issue. Doing this, they can make use of the technical
 assistance provided by the GCFA and other public and/or private authorities.
 3. Designate in each country a scientific coordinator to serve as a focal point to
@@ -91,7 +91,7 @@ will enter into force when the signature of the third country has been obtained.
 will enter into force for each state that adheres to the Memorandum upon its signature.
 10. This Memorandum of Understanding will remain open for signature indefinitely, and
 will remain in effect indefinitely subject to the right of any signatory to terminate its
-participation by providing one year’s written notice to all other signatories.
+participation by providing one year's written notice to all other signatories.
 11. The Memorandum of Understanding, including the Action Plan, may be amended by a
 consensus of the signatories.
 12. The original text of this Memorandum of Understanding, in the Spanish and English
@@ -102,7 +102,7 @@ Understanding will be Spanish and, for purposes of paragraph 5, English, dependi
 on the Spanish language capacity of the Secretariat.
 13. The CMS Secretariat will act as the Secretariat to this Memorandum of
 Understanding. It may use the services of any reliable organisation to support the
-Memorandum’s coordination.
+Memorandum's coordination.
 14. The implementation of the Memorandum of Understanding and the Action Plan will
 be subject to the availability of human and financial resources within the relevant
 countries.

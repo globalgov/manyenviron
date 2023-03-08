@@ -226,7 +226,7 @@ shall be sent to the Organization by the Contracting Government granting such
 permission.
 Article VI
 SUSPENSION IN THE CASE OF WAR
-(«) In case of war or other hostilities, a Contracting Government which considers
+(<<) In case of war or other hostilities, a Contracting Government which considers
 that it is affected, whether as a belligerent or as a neutral, may suspend the operation
 of the whole or any part of the Regulations annexed hereto. The suspending Govern
 ment shall immediately give notice of any such suspension to the Organization.
@@ -338,7 +338,7 @@ ciation received and of the date of its receipt.
 specified in the notification after its receipt by the Organization.
 Article XIII
 TERRITORIES
-(«) (i) The United Nations in cases where they are the administering authority
+(<<) (i) The United Nations in cases where they are the administering authority
 for a territory or any Contracting Government responsible for the international rela
 tions of a territory shall as soon as possible consult with such territory in an endeavour
 to extend the present Convention to that territory and may at any time by notifica
@@ -434,7 +434,7 @@ Regulation 4
 EXEMPTIONS
 A ship which is not normally engaged on international voyages but which, in excep
 tional circumstances, is required to undertake a single international voyage may be
-•exempted by the Administration from any of the requirements of the present Regulations
+ exempted by the Administration from any of the requirements of the present Regulations
 provided that it complies with safety requirements which are adequate in the opinion
 of the Administration for the voyage which is to be undertaken by the ship.
 Regulation 5
@@ -695,7 +695,7 @@ laid on or after the date of coming into force of the International Convention f
 Safety of Life at Sea, 1948, the Administration shall ensure that the requirements which
 were applied under Chapter II of that Convention to new ships as defined in that Chapter
 are complied with. In the case of existing passenger ships and cargo ships the keels of
-•which were laid before the date of coming into force of that Convention, the Administra
+ which were laid before the date of coming into force of that Convention, the Administra
 tion shall ensure that the requirements which were applied under Chapter II of that
 Convention to existing ships as defined in that Chapter are complied with. As regards
 those requirements of Chapter II of the present Convention which are not contained in
@@ -727,7 +727,7 @@ requirements of this Chapter, may exempt such ships, when they belong to its cou
 from those requirements on the following conditions :
 (i) That the fullest provision which the circumstances of the trade will permit shall
 be made in the matter of construction.
-(îi) That steps shall be taken to formulate general rules which shall be applicable to the
+(ii) That steps shall be taken to formulate general rules which shall be applicable to the
 particular circumstances of these trades. Such rules shall be formulated in concert
 with such other Contracting Governments, if any, as may be directly interested in the
 carriage of such passengers in such trades.
@@ -780,7 +780,7 @@ teristics of the ship in question.
 is the maximum portion of the length of the ship, having its centre at the point in question,
 which can be flooded under the definite assumptions set forth in Regulation 4 of this
 Chapter without the ship being submerged beyond the margin line.
-(È) (i) In the case of a ship not having a continuous bulkhead deck, the floodable
+(E) (i) In the case of a ship not having a continuous bulkhead deck, the floodable
 length at any point may be determined to an assumed continuous margin line which at
 no point is less than 3 inches (or 76 millimetres) below the top of the deck (at side) to
 which the bulkheads concerned and the shell are carried watertight.
@@ -799,7 +799,7 @@ line:
 (ii) the portion forward of the machinery space ; and
 (iii) the portion abaft the machinery space.
 (b) (i) The uniform average permeability throughout the machinery space shall be
-determined from the formula— 85+10(a-c/v)
+determined from the formula- 85+10(a-c/v)
 where :
 a = volume of the passenger spaces, as defined in Regulation 2 of this Chapter,
 which are situated below the margin line within the limits of the machinery
@@ -813,9 +813,9 @@ the detailed calculated value may be used. For the purpose of such calculation, 
 permeabilities of passenger spaces, as defined in Regulation 2 of this Chapter, shall be
 taken as 95, that of all cargo, coal and store spaces as 60, and that of double bottom,
 oil fuel and other tanks at such values as may be approved in each case.
-(ç) Except as provided in paragraph (d) of this Regulation, the uniform average
+(c) Except as provided in paragraph (d) of this Regulation, the uniform average
 permeability throughout the portion of the ship before (or abaft) the machinery space
-shall be determined from the formula— 63+35(a/v)
+shall be determined from the formula- 63+35(a/v)
 where :
 a = volume of the passenger spaces, as defined in Regulation 2 of this Chapter,
 which are situated below the margin line, before (or abaft) the machinery
@@ -826,7 +826,7 @@ the machinery space.
 of Chapter III to carry a number of persons on board in excess of the lifeboat capacity
 provided, and is required under paragraph (d) of Regulation 1 of this Chapter to comply
 with special provisions, the uniform average permeability throughout the portion of the
-ship before (or abaft) the machinery space shall be determined from the formula— 95-35(b/v)
+ship before (or abaft) the machinery space shall be determined from the formula- 95-35(b/v)
 where :
 b = the volume of the spaces below the margin line and above the tops of floors,
 inner bottom, or peak tanks, as the case may be, which arc appropriated to
@@ -857,12 +857,12 @@ of the service for which they are intended. The degree of subdivision shall vary
 length of the ship and with the service, in such manner that the highest degree of sub
 division corresponds with the ships of greatest length, primarily engaged in the carriage
 of passengers.
-(b) Factor of Subdivision.—The maximum permissible length of a compartment hav
+(b) Factor of Subdivision.-The maximum permissible length of a compartment hav
 ing its centre at any point in the ship's length is obtained from the floodable length by
 multiplying the latter by an appropriate factor called the factor of subdivision.
 The factor of subdivision shall depend on the length of the ship, and for a given length
 shall vary according to the nature of the service for which the ship is intended. It
-shall decrease in a regular and continuous manner—
+shall decrease in a regular and continuous manner-
 (i) as the length of the ship increases, and
 (ii) from a factor A, applicable to ships primarily engaged in the carriage of cargo, to a
 factor B, applicable to ships primarily engaged in the carriage of passengers.
@@ -876,7 +876,7 @@ L in feet
 B = (100/L-138) + 18 (L = 260 and upwards)
 L in metres
 B = (30*3/L-42) + 18 (L = 79 and upwards).. (II)
-(c) Criterion of Service.—For a ship of given length the appropriate factor of sub
+(c) Criterion of Service.-For a ship of given length the appropriate factor of sub
 division shall be determined by the Criterion of Service Numeral (hereinafter called the
 Criterion Numeral) as given by the following formulae (III) and (IV) where :
 Cs = the Criterion Numeral ;
@@ -913,14 +913,14 @@ tactor F obtained by linear interpolation between the factors A and B, using the
 F = A-((A-B)(C-23)/100)..(V)
 Nevertheless, where the criterion numeral is equal to 45 or more and simultaneously the
 computed factor of subdivision as given by formula (V) is -65 or less, but more than
-•50, the subdivision abaft the forepeak shall be governed by the factor -50.
+ 50, the subdivision abaft the forepeak shall be governed by the factor -50.
 Where the factor F is less than 40 and it is shown to the satisfaction of the Ad
 ministration to be impracticable to comply with the factor F in a machinery compart
 ment of the ship, the subdivision of such compartment may be governed by an increased
 factor, which, however, shall not exceed -40.
 (ii) The subdivision abaft the forepeak of ships less than 430 feet (or 131 metres) but
 not less than 260 feet (or 79 metres) in length having a criterion numeral equal to S,
-where —
+where -
 S= (9382-20L)/34 (L in feet) = (3,574-25L)/13 (L in metres)
 shall be governed by the factor unity ; of those having a criterion numeral of 123 or
 more by the factor B given by the formula (II) ; of those having a criterion numeral
@@ -936,7 +936,7 @@ the Administration may allow such relaxation as may appear to be justified, havi
 to all the circumstances.
 (iv) The provisions of sub-paragraph (iii) of this paragraph shall apply also to ships
 of whatever length, which are to be certified to carry a number of passengers exceeding
-12 but not exceeding —
+12 but not exceeding -
 (L^2 (in feet) / 7,000) = (L^2 (in metres) / 650) or 50, whichever is the less.
 (e) Special Standards of Subdivision for Ships which are permitted under paragraph (c)
 of Regulation 27 of Chapter III to carry a number of persons on board in excess of the life
@@ -977,10 +977,10 @@ paragraph ; and of those having a criterion numeral between 23 and 123 by the fa
 obtained by linear interpolation between the factors A and BB, using the formula :
 F = A - ((A-BB)(Cs-23)/100)
 except that if the factor F so obtained is less than -50 the factor to be used shall be either
-•50 or the factor calculated according to the provisions of paragraph (d) (i) of this Regula
+ 50 or the factor calculated according to the provisions of paragraph (d) (i) of this Regula
 tion, whichever is the smaller.
 (4) The subdivision abaft the forepeak of ships less than 430 feet (or 131 metres) but not less than 180 feet (or 55 metres) in length having a criterion numeral equal to
-S1 where—
+S1 where-
 S1 = (1,950-4L)/10 (L in feet)
 S1 = (3,712-25L)/19 (L in metres)
 shall be governed by the factor unity ; of those having a criterion numeral of 123 or more
@@ -1004,7 +1004,7 @@ SPECIAL RULES CONCERNING SUBDIVISION
 (a) Where in a portion or portions of a ship the watertight bulkheads are carried to
 a higher deck than in the remainder of the ship and it is desired to take advantage of this
 higher extension of the bulkheads in. calculating the floodable length, separate margin
-lines may be used for each such portion of the ship provided that—
+lines may be used for each such portion of the ship provided that-
 (i) the sides of the ship are extended throughout the ship's length to the deck corre
 sponding to the upper margin line and all openings in the shell plating below this
 deck throughout the length of the ship are treated as being below a margin line,
@@ -1115,7 +1115,7 @@ breadth of the ship, as defined in Regulation 2 of this Chapter ; and
 (iv) If any damage of lesser extent than that indicated in sub-paragraphs (i), (ii) and
 (iii) of this paragraph would result in a more severe condition regarding heel or loss
 of metacentric height, such damage shall be assumed in the calculations.
-(«) Unsymmetrical flooding is to be kept to a minimum consistent with efficient
+(<<) Unsymmetrical flooding is to be kept to a minimum consistent with efficient
 arrangements. Where it is necessary to correct large angles of heel, the means adopted
 shall, where practicable, be self-acting, but in any case where controls to cross-flooding
 fittings are provided they shall be operable from above the bulkhead deck. These fittings
@@ -1307,7 +1307,7 @@ shall be always accessible, except as provided in subparagraph (ii) of paragraph
 this Regulation for between deck bunker doors.
 (ii) Satisfactory arrangements shall be made by means of screens or otherwise to
 prevent the coal from interfering with the closing of watertight bunker doors.
-(«) Within spaces containing the main and auxiliary propelling machinery including
+(<<) Within spaces containing the main and auxiliary propelling machinery including
 boilers serving the needs of propulsion and all permanent bunkers, not more than one door
 apart from the doors to bunkers and shaft tunnels may be fitted in each main transverse
 bulkhead. Where two or more shafts are fitted the tunnels shall be connected by an
@@ -1324,9 +1324,9 @@ by the action of a dropping weight are not permitted.
 hand operated only, or
 power operated as well as hand operated.
 (iii) Authorized watertight doors may therefore be divided into three Classes :
-Class 1—hinged doors ;
-Class 2—hand operated sliding doors ;
-Class 3—sliding doors which are power operated as well as hand operated.
+Class 1-hinged doors ;
+Class 2-hand operated sliding doors ;
+Class 3-sliding doors which are power operated as well as hand operated.
 (iv) The means of operation of any watertight door whether power operated or not
 shall be capable of closing the door with the ship listed to 15 degrees either way.
 (v) In all classes of watertight doors indicators shall be fitted which show, at all
@@ -1370,7 +1370,7 @@ sources is capable of giving the required service satisfactorily.
 (iii) In the case of hydraulic operation, each power source shall consist of a pump
 capable of closing all doors in not more than 60 seconds. In addition, there shall be for
 the whole installation hydraulic accumulators of sufficient capacity to operate all the
-doors at least three times, i.e., closed—open—closed. The fluid used shall be one which
+doors at least three times, i.e., closed-open-closed. The fluid used shall be one which
 does not freeze at any of the temperatures liable to be encountered by the ship during
 its service.
 (;') (i) Hinged watertight doors (Class 1) in passenger, crew and working spaces are
@@ -1422,7 +1422,7 @@ special consideration of the Administration.
 Such plates shall always be in place before the ship leaves port, and shall not be removed
 during navigation except in case of urgent necessity. The necessary precautions shall
 be taken in replacing them to ensure that the joints shall be watertight.
-(«) All watertight doors shall be kept closed during navigation except when neces
+(<<) All watertight doors shall be kept closed during navigation except when neces
 sarily opened for the working of the ship, and shall always be ready to be immediately
 closed.
 (o) (i) Where trunkways or tunnels for access from crew accommodation to the stoke
@@ -1617,7 +1617,7 @@ least one pump in an undamaged compartment will be available.
 (e) With the exception of additional pumps which may be provided for peak com
 partments only, each required bilge pump shall be arranged to draw water from any space
 required to be drained by paragraph (a) of this Regulation.
-(/) (i) Each power bilge pump shall be capable of giving a speed of water through th«
+(/) (i) Each power bilge pump shall be capable of giving a speed of water through th<<
 required main bilge pipe of not less than 400 feet (or 122 metres) per minute. Indepen
 dent power bilge pumps situated in machinery spaces shall have direct suctions from these
 spaces, except that not more than two such suctions shall be required in any one space.
@@ -1796,7 +1796,7 @@ would be attained.
 (c) The emergency source of power may be either :
 (i) a generator driven by a suitable prime-mover with an independent fuel supply and
 with approved starting arrangements ; the fuel used shall have a flash point of not
-less than 110 °F. (or 43 °C.) ; or
+less than 110  &#186;F. (or 43  &#186;C.) ; or
 (ii) an accumulator (storage) battery capable of carrying the emergency load without
 recharging or excessive voltage drop.
 (d) (i) Where the emergency source of power is a generator there shall be provided
@@ -1855,7 +1855,7 @@ The power shall be adequate for a period of 6 hours.
 recharging or excessive voltage drop ; or
 (2) a generator driven by a suitable prime-mover with an independent fuel supply and
 with starting arrangements to the satisfaction of the Administration. The fuel
-used shall have a flash point of not less than 110 °F. (or 43 °C.).
+used shall have a flash point of not less than 110  &#186;F. (or 43  &#186;C.).
 (iv) Arrangements shall be such that the complete emergency installation will
 function when the ship is inclined 22% degrees and/or when the trim of the ship is 10
 degrees.
@@ -2006,10 +2006,10 @@ marily intended for other services, paragraph (b) (ii) may be waived, provided t
 Administration is satisfied with the protection arrangements.
 (ii) Short circuit protection only shall be provided for motors and power circuits
 of electrically or electrohydraulically operated main steering gear.
-Regulation 31 • • "
+Regulation 31     "
 OIL FUEL USED IN PASSENGER SHIPS
 No internal combustion engine shall be used for any fixed installation in a passenger
-ship if its fuel has a flash point of 110°F. (or 43°C.) or less.
+ship if its fuel has a flash point of 110 &#186;F. (or 43 &#186;C.) or less.
 Regulation 32
 LOCATION OF EMERGENCY INSTALLATIONS IN PASSENGER SHIPS
 The emergency source of electrical power, emergency fire pumps, emergency bilge
@@ -2044,15 +2044,15 @@ of this Chapter, either of the following methods of protection, or a combination
 methods to the satisfaction of the Administration, shall be adopted in accommodation
 and service spaces with a view to preventing the spread of incipient fires from the spaces
 of their origin :
-Method I.—The construction of internal divisional bulkheading of "B" Class
+Method I.-The construction of internal divisional bulkheading of "B" Class
 divisions (as defined in paragraph (d) of Regulation 35 of this Chapter) generally
 without the installation of a detection or sprinkler system in the accommodation
 and service spaces ; or
-Method II.—The fitting of an automatic sprinkler and fire alarm system for
+Method II.-The fitting of an automatic sprinkler and fire alarm system for
 the detection and extinction of fire in all spaces in which a fire might be expected
 to originate, generally with no restriction on the type of internal divisional bulkheading
 in spaces so protected ; or
-Method III.—A system of subdivision within each main vertical zone using "A"
+Method III.-A system of subdivision within each main vertical zone using "A"
 and "B" Class divisions distributed according to the importance, size and nature of
 the various compartments, with an automatic fire detection system in all spaces in
 which a fire might be expected to originate, and with restricted use of combustible
@@ -2066,16 +2066,16 @@ Wherever the phrases defined below occur throughout this Part of this Chapter,
 they shall be interpreted in accordance with the following definitions :
 (a) Incombustible Material means a material which neither burns nor gives off
 inflammable vapours in sufficient quantity to ignite at a pilot flame when heated to ap
-proximately 1,382°F, (or 750°C.). Any other material is a. "Combustible Material".
+proximately 1,382 &#186;F, (or 750 &#186;C.). Any other material is a. "Combustible Material".
 (b) A Standard Fire Test is one in which specimens of the relevant bulkheads or decks,
 having a surface of approximately 50 square feet (or 4-65 square metres) and height of
 8 feet (or 2-44 metres) resembling as closely as possible the intended construction and
 including where appropriate at least one joint, are exposed in a test furnace to a series
 of time temperature relationships, approximately as follows :
-at the end of the first 5 minutes— 1,000°F. (or 538°C.)
-at the end of the first 10 minutes—1,300°F. (or 704°C.)
-at the end of the first 30 minutes—1,550°F. (or 843°C.)
-at the end of the first 60 minutes—1,700°F. (or 927°C.)
+at the end of the first 5 minutes- 1,000 &#186;F. (or 538 &#186;C.)
+at the end of the first 10 minutes-1,300 &#186;F. (or 704 &#186;C.)
+at the end of the first 30 minutes-1,550 &#186;F. (or 843 &#186;C.)
+at the end of the first 60 minutes-1,700 &#186;F. (or 927 &#186;C.)
 (c) "A" Class or Fire-resisting Divisions are those divisions formed by bulkheads
 and decks which comply with the following :
 (i) they shall be constructed of steel or other equivalent material ;
@@ -2088,9 +2088,9 @@ and decks are required to form fire-resisting divisions between spaces either of
 contains adjacent woodwork, wood lining, or other combustible material, they shall
 be so insulated that, if either face is exposed to the standard fire test for one hour,
 the average temperature on the unexposed face will not increase at any time during
-the test by more than 250°F. (or 139°C.) above the initial temperature nor shall
-the temperature at any point on the face, including any joint, rise more than 325°F.
-(or 180°C.) above the initial temperature. Reduced amounts of insulation or none
+the test by more than 250 &#186;F. (or 139 &#186;C.) above the initial temperature nor shall
+the temperature at any point on the face, including any joint, rise more than 325 &#186;F.
+(or 180 &#186;C.) above the initial temperature. Reduced amounts of insulation or none
 at all may be provided where in the opinion of the Administration a reduced fire
 hazard is present. The Administration may require a test of an assembled proto
 type bulkhead or deck to ensure that it meets the above requirements for integrity
@@ -2103,8 +2103,8 @@ nature of the adjacent spaces. In general, where such bulkheads are required to 
 fire-retarding divisions between spaces, they shall be of such material that, if either face
 is exposed for the first one-half hour period of the standard fire test, the average tempera
 ture on the unexposed face will not increase at any time during the test by more than
-250°F. (or 139°C.) above the initial temperature, nor shall the temperature at any
-point on the face including any joint rise more than 405°F. (or 225°C.) above the initial
+250 &#186;F. (or 139 &#186;C.) above the initial temperature, nor shall the temperature at any
+point on the face including any joint rise more than 405 &#186;F. (or 225 &#186;C.) above the initial
 temperature. For panels which are of incombustible materials it will only be necessary
 to comply with the above temperature rise limitation during the first 15-minute period
 of the standard fire test, but the test shall be continued to the end of the one-half hour
@@ -2131,7 +2131,7 @@ to such spaces.
 (k) Machinery Spaces include all spaces used for propelling, auxiliary or refrigerating
 machinery, boilers, pumps, workshops, generators, ventilation and air conditioning ma
 chinery, oil filling stations and similar spaces and trunks to such spaces.
-(/) Steel or Other Equivalent Material.—Where the words "steel or other equivalent
+(/) Steel or Other Equivalent Material.-Where the words "steel or other equivalent
 material" occur, "equivalent material" means any material which, by itself or due to
 insulation provided, has structural and integrity properties equivalent to steel at the end
 of the applicable fire exposure (e.g., aluminium with appropriate insulation).
@@ -2360,7 +2360,7 @@ folio-wing measures shall be taken :
 . other equivalent material permanently attached ;
 (iii) any window permitted by the Administration in casings of such spaces shall be of
 the non-opening type, and shall be fitted with an external shutter of steel or other
-• equivalent material permanently attached ;
+  equivalent material permanently attached ;
 (iv) in the windows and skylights referred to in sub-paragraphs (i), (ii) and (iii) of this
 paragraph, wire reinforced glass shall be used.
 Regulation 47
@@ -2422,7 +2422,7 @@ trunks, &c., shall be closed at each deck.
 (d) The construction of ceiling and bulkheading shall be such that it will be possible,
 without impairing the efficiency of the fire protection, for the fire patrols to detect any
 smoke originating in concealed and inaccessible places, except where in the opinion of
-the Administration there is no risk of fire originating in such places. „• • .-
+the Administration there is no risk of fire originating in such places. ,,    .-
 (e) The concealed surfaces of all bulkheads, linings, panellings, stairways, wood
 grounds, &c., in accommodation spaces shall have low flame spread characteristics.
 (/) Electric radiators, if used, must be fixed in position and so constructed as to reduce
@@ -2500,7 +2500,7 @@ FIRE DETECTION AND EXTINCTION IN PASSENGER
 SHIPS AND CARGO SHIPS
 (Part E applies to passenger ships and cargo ships except that Regulations 59 and
 64 apply only to passenger ships and Regulation 65 applies only to cargo ships.)
-. NOTE.—Regulations 56 to 63 inclusive set forth the conditions with which the appliances
+. NOTE.-Regulations 56 to 63 inclusive set forth the conditions with which the appliances
 mentioned in Regulations 64 and 65 are required to comply.
 Regulation 55
 DEFINITIONS
@@ -2533,7 +2533,7 @@ for pumping oil and that if they are subject to occasional duty for the transfer
 of fuel oil, suitable change-over arrangements are fitted.
 (ii) Each of the required fire pumps (other than any emergency pump required by
 Regulation 65 of this Chapter) shall have a capacity not less than 80 per cent, of the total
-required capacity divided by the number of required fire pumps—and shall in any event
+required capacity divided by the number of required fire pumps-and shall in any event
 be capable of delivering at least the two required jets of water. These fire pumps shall be
 capable of supplying the fire main system under the required conditions.
 Where more pumps than required are installed their capacity shall be to the satis
@@ -2637,7 +2637,7 @@ tetrachloride or similar media may be permitted at the discretion of the Adminis
 subject to such extinguishers being additional to any required by this Part of this Chapter.
 (d) Fire extinguishers shall be periodically examined and subjected to such tests
 as :the Administration may require.
-(«) One of the portable fire extinguishers intended for use in any space shall be stowed
+(<<) One of the portable fire extinguishers intended for use in any space shall be stowed
 near the entrance to that space.
 Regulation 58
 FIRE SMOTHERING GAS OR STEAM FOR MACHINERY AND CARGO SPACES
@@ -2949,7 +2949,7 @@ comply with paragraph (e), of Regulation 58 of this Chapter.
 may be accepted as a suitable alternative to smothering gas or steam. The details of
 such installations shall be to the satisfaction of the Administration.
 (iii) The Administration may exempt from the requirements of sub-paragraphs (i)
-and (ii) of this paragraph the cargo holds of any ship (other than the tanks of a tanker) —
+and (ii) of this paragraph the cargo holds of any ship (other than the tanks of a tanker) -
 (1) if they are provided with steel hatch covers and effective means of closing all venti
 lators and other openings leading to the holds ;
 (2) if the ship is constructed and intended solely for carrying such cargoes as ore, coal
@@ -3100,9 +3100,9 @@ Regulation 1
 APPLICATION
 (a) This Chapter, except where it is otherwise expressly provided, applies as follows
 to new ships engaged on international voyages :
-Part A—Passenger ships and cargo ships.
-Part B—Passenger ships.
-Part C—Cargo ships.
+Part A-Passenger ships and cargo ships.
+Part B-Passenger ships.
+Part C-Cargo ships.
 (b) In the case of existing ships engaged on international voyages and which do not
 already comply with the provisions of this Chapter relating to new ships, the arrangements
 in each ship shall be considered by the Administration with a view to securing, so far as
@@ -3271,12 +3271,12 @@ of persons allowed in lifeboats with very fine ends and in lifeboats very full i
 capacity equal to the product of the length, the breadth and the depth multiplied by
 0-6 if it is evident that this formula does not give a greater capacity than that obtained
 by the above method. The dimensions shall then be measured in the following manner :
-Length.—From the intersection of the outside of the planking with the stem
+Length.-From the intersection of the outside of the planking with the stem
 to the corresponding point at the stern post or, in the case of a square-sterned boat,
 to the after side of the transom.
-Breadth.—From the outside of the planking at the point where the breadth
+Breadth.-From the outside of the planking at the point where the breadth
 of the boat is greatest.
-Depth.—Amidships inside the planking from the keel to the level of the gunwale,
+Depth.-Amidships inside the planking from the keel to the level of the gunwale,
 but the depth used in calculating the cubic capacity may not in any case exceed
 45 per cent, of the breadth.
 In all cases the shipowner has the right to require that the cubic capacity of the
@@ -3363,7 +3363,7 @@ than a motor lifeboat, shall be increased to compensate for the weight of the pr
 gear.
 Regulation 11
 EQUIPMENT OF LIFEBOATS
-(a) The normal equipment of every lifeboat shall consist of : • —ISM
+(a) The normal equipment of every lifeboat shall consist of :   -ISM
 (i) a single banked complement of buoyant oars, two spare buoyant oars, and a
 buoyant steering oar ; one set and a half of thole pins or crutches, attached to the
 lifeboat by lanyard or chain ; a boat hook ;
@@ -3425,9 +3425,9 @@ lifeboats or other approved mechanically propelled lifeboats need not carry a ma
 sails or more than half the complement of oars, but they shall carry two boat hooks.
 (d) All lifeboats shall be fitted with suitable means to enable persons in the water
 to climb into the lifeboat.
-(«) Every motor lifeboat shall carry portable fire-extinguishing equipment of an
+(<<) Every motor lifeboat shall carry portable fire-extinguishing equipment of an
 approved type capable of discharging froth or other suitable substance for extinguishing
-oil fires. • . •••
+oil fires.   .    
 Regulation 12
 SECURITY OF LIFEBOAT EQUIPMENT
 All items of lifeboat equipment, with the exception of the boat hook which shall be
@@ -3531,13 +3531,13 @@ sure.
 (m) The liferaft shall be of approved material and construction, and shall be so
 constructed as to be capable of withstanding exposure for 30 days afloat in all sea con
 ditions.
-(«) No liferaft shall be approved which has a carrying capacity calculated in accord
+(<<) No liferaft shall be approved which has a carrying capacity calculated in accord
 ance with paragraph (/) of this Regulation of less than six persons. The maximum num
 ber of persons calculated in accordance with that paragraph for which an inflatable
 liferaft may be approved shall be at the discretion of the Administration, but shall in
 no case exceed 25.
 (o) The liferaft shall be capable of operating throughout a temperature range of
-150° F. to minus 22° F. (or 66° C. to minus 30° C.).
+150 &#186; F. to minus 22 &#186; F. (or 66 &#186; C. to minus 30 &#186; C.).
 (p) The liferaft shall be so stowed as to be readily available in case of emergency.
 (q) The liferaft shall be fitted with arrangements enabling it to be readily towed,
 Regulation 16
@@ -3690,7 +3690,7 @@ sea voyages.
 (d) Lifebuoys shall be fitted with beckets securely seized. At least one lifebuoy
 on each side of the ship shall be fitted with a buoyant lifeline of at least 15 fathoms
 (or 27-5 metres) in length.
-(«) In passenger ships not less than one-half of the total number of lifebuoys, and in
+(<<) In passenger ships not less than one-half of the total number of lifebuoys, and in
 no case less than six, and in cargo ships at least one-half of the total number of lifebuoys,
 shall be provided with efficient self-igniting lights.
 (/) The self-igniting lights required by paragraph (e) of this Regulation shall be such
@@ -3723,7 +3723,7 @@ on incorrectly, except that it shall be capable of being worn inside out.
 held above the water with the body inclined backwards from its vertical position.
 (v) It shall be capable of turning the body, on entering the water, to a safe floating
 position with the body inclined backwards from its vertical position.
-•(vi) It shall not be adversely affected by oil or oil products.
+ (vi) It shall not be adversely affected by oil or oil products.
 <(vii) It shall be of a highly visible colour,
 (viii) It shall be fitted with an approved whistle, firmly secured by a cord.
 (d) A lifejacket, the buoyancy of which depends on inflation, may be permitted for
@@ -3765,7 +3765,7 @@ craft) and the other life-saving appliances ;
 (iv) the general preparation of the other life-saving appliances ;
 (v) the muster of the passengers ; and
 (vi) the extinction of fire.
-(«) The muster list shall show the several duties assigned to the members of the
+(<<) The muster list shall show the several duties assigned to the members of the
 stewards' department in relation to the passengers in case of emergency. These duties
 shall include :
 (i) warning the passengers ;
@@ -3818,8 +3818,8 @@ Part B
 PASSENGER SHIPS ONLY
 Regulation 27
 LIFEBOATS, LIFERAFTS AND BUOYANT APPARATUS
-(a) Passenger ships shall carry two boats attached to davits—one on each side of the
-ship—for use in an emergency. These boats shall be of an approved type and shall be
+(a) Passenger ships shall carry two boats attached to davits-one on each side of the
+ship-for use in an emergency. These boats shall be of an approved type and shall be
 not more than 28 feet (or 8% metres) in length. They may be counted for the purposes
 of paragraphs (b) and (c) of this Regulation, provided that they comply fully with the
 requirements for lifeboats of this Chapter, and for the purposes of Regulation 8 provided
@@ -3891,7 +3891,7 @@ on board and otherwise comply with the provisions of this paragraph.
 Regulation 28
 TABLE RELATING TO DAVITS AND LIFEBOAT CAPACITY FOR SHIPS ON SHORT
 INTERNATIONAL VOYAGES
-The following table fixes according to the length of the ship—
+The following table fixes according to the length of the ship-
 (A) the minimum number of sets of davits to be provided on a ship engaged on short
 international voyages to each of which must be attached a lifeboat in accordance
 with Regulation 27 of this Chapter ;
@@ -4017,7 +4017,7 @@ From 41 to 61 persons .................... 3
 From 62 to 85 persons .................... 4
 Above 85 persons ...................... 5
 (b) The allocation of the certificated lifeboatmen to each lifeboat remains within the
-•discretion of the master.
+ discretion of the master.
 (p) Certificates of efficiency shall be issued under the authority of the Administra
 tion. In order to obtain such a certificate an applicant shall prove that he has been trained
 in all the operations connected with launching lifeboats and other life-saving appliances
@@ -4068,7 +4068,7 @@ this requirement.
 each side of the ship of such aggregate capacity as will accommodate all persons on board.
 (b) (i) Every ship employed as a whale factory ship, every ship employed as a fish
 processing or canning factory ship and every ship engaged in the carriage of persons em
-ployed in the whaling, fish processing or canning industries shall carry—
+ployed in the whaling, fish processing or canning industries shall carry-
 (1) Lifeboats on each side of such aggregate capacity as will accommodate half the total
 number of persons on board.
 Provided that the Administration may permit the substitution of lifeboats by
@@ -4085,8 +4085,8 @@ and shall have at least the buoyancy and equipment required by this Chapter for
 lifeboats.
 (ii) Every ship employed as a whale factory ship, every ship employed as a fish
 processing or canning factory ship and every ship engaged in the carriage of persons employed
-in the whaling, fish processing or canning industries shall carry two boats—one
-on each side—for use in an emergency. These boats shall be of an approved type and
+in the whaling, fish processing or canning industries shall carry two boats-one
+on each side-for use in an emergency. These boats shall be of an approved type and
 shall be not more than 28 feet (or 8% metres) in length. They may be counted for the
 purposes of this paragraph provided that they comply fully with the requirements for
 lifeboats of this Chapter and for the purposes of Regulation 8 provided that in addition
@@ -4259,7 +4259,7 @@ for granting such exemptions.
 Part B
 WATCHES
 Regulation 6
-WATCHES—RADIOTELEGRAPH
+WATCHES-RADIOTELEGRAPH
 (a) Each ship which in accordance with Regulation 3 or Regulation 4 of this Chapter
 is fitted with a radiotelegraph station shall, while at sea, carry at least one radio officer
 and, if not fitted with a radiotelegraph auto alarm, shall, subject to the provisions of
@@ -4310,7 +4310,7 @@ direction-finding operations.
 by the Administration, should be maintained preferably during periods pro
 scribed for the radiotelegraph service by the Radio Regulations.
 Regulation 7
-WATCHES—RADIOTELEPHONE
+WATCHES-RADIOTELEPHONE
 (a) Each ship which is fitted with a radiotelephone station in accordance with Regu
 lation 4 of this Chapter shall, for safety purposes, carry at least one radiotelephone operator
 (who may be the master, an officer or a member of the crew holding only a certificate
@@ -4375,7 +4375,7 @@ instruments for measuring A. C. volts, D. C. volts and ohms.
 ments of paragraphs (d), (e), (f), (g) and (h) of this Regulation shall apply to it.
 Regulation 9
 RADIOTELEGRAPH INSTALLATIONS
-(a) Except as otherwise expressly provided in this Regulation—
+(a) Except as otherwise expressly provided in this Regulation-
 (i) The radiotelegraph station shall include a main installation and a reserve installation,
 electrically separate and electrically independent of each other.
 (ii) The main installation shall include a main transmitter, main receiver and main
@@ -4431,9 +4431,9 @@ is as low as 100 microvolts.
 energy sufficient to operate the main installation over the normal range required by para
 graph (g) of this Regulation as well as for the purpose of charging any batteries forming
 part of the radiotelegraph station. The voltage of the supply for the main installation
-shall, in the case of new ships, be maintained within ±10 per cent, of the rated voltage.
+shall, in the case of new ships, be maintained within +/-10 per cent, of the rated voltage.
 In the case of existing ships, it shall be maintained as near the rated voltage as possible
-and, if practicable, within ± 10 per cent.
+and, if practicable, within +/- 10 per cent.
 (k) The reserve installation shall be provided with a source of energy independent of
 the propelling power of the ship and of the ship's electrical system. The Administration
 may delay the application of the requirement for a reserve source of energy for a period
@@ -4446,7 +4446,7 @@ with a reserve source of energy.
 which may be charged from the ship's electrical system, and shall under all circumstances
 be capable of being put into operation rapidly and of operating the reserve transmitter
 and receiver for at least six hours continuously under normal working conditions besides
-any of the additional loads mentioned in paragraphs (m) and («) of this Regulation.
+any of the additional loads mentioned in paragraphs (m) and (<<) of this Regulation.
 (m) The reserve source of energy shall be used to supply the reserve installation and
 the automatic alarm signal keying device specified in paragraph (r) of this Regulation
 if it is electrically operated.
@@ -4456,7 +4456,7 @@ The reserve source of energy may also be used to supply :
 iii) the direction-finder ;
 (iv) any device, prescribed by the Radio Regulations, to permit changeover from trans
 mission to reception and vice versa.
-Subject to the provisions of paragraph («) of this Regulation, the reserve source of
+Subject to the provisions of paragraph (<<) of this Regulation, the reserve source of
 energy shall not be used other than for the purposes specified in this paragraph.
 (n) Notwithstanding the provisions of paragraph (m) of this Regulation, the Adminis
 tration may authorise the use in cargo ships of the reserve source of energy for a small
@@ -4698,7 +4698,7 @@ day and under normal conditions and circumstances over this range. (Clearly perc
 signals will normally be received if the R.M.S. value of the field strength produced at the
 receiver by the unmodulated carrier is at least 25 microvolts per metre) :
 (ii) In the case of cargo ships of 300 tons gross tonnage and upwards but less than
-500 tons gross tonnage—
+500 tons gross tonnage-
 for existing installations the transmitter shall have a minimum normal range of
 at least 75 miles ;
 for new installations the transmitter shall produce a power in the aerial of at
@@ -4711,8 +4711,8 @@ case of existing installations for a period not exceeding three years from the d
 into force of the present Convention.
 (e) The device required by paragraph (d) of this Regulation shall comply with the
 following requirements :
-(i) The tolerance of the frequency of each tone shall be ±1-5 per cent. ;
-(ii) The tolerance on the duration of each tone shall be ± 50 milliseconds ;
+(i) The tolerance of the frequency of each tone shall be +/-1-5 per cent. ;
+(ii) The tolerance on the duration of each tone shall be +/- 50 milliseconds ;
 (iii) The interval between successive tones shall not exceed 50 milliseconds ;
 (iv) The ratio of the amplitude of the stronger tone to that of the weaker shall be within
 the range 1 to 1-2.
@@ -4857,16 +4857,16 @@ good reason to believe that a tropical storm is developing or exists in his neig
 was taken.
 (iii) As much of the following information as is practicable should be included in
 the message :
-—barometric pressure, preferably corrected (stating millibars, inches, or millimetres,
+-barometric pressure, preferably corrected (stating millibars, inches, or millimetres,
 and whether corrected or uncorrected) ;
-—barometric tendency (the change in barometric pressure during the past three
+-barometric tendency (the change in barometric pressure during the past three
 hours) ;
-—true wind direction ;
-—wind force (Beaufort scale) ;
-—state of the sea (smooth, moderate, rough, high) ;
-—swell (slight, moderate, heavy) and the true direction from which it comes. Period
+-true wind direction ;
+-wind force (Beaufort scale) ;
+-state of the sea (smooth, moderate, rough, high) ;
+-swell (slight, moderate, heavy) and the true direction from which it comes. Period
 or length of swell (short, average, long) would also be of value ;
-—true course and speed of ship.
+-true course and speed of ship.
 (c) Subsequent Observations. When a master has reported a tropical or other
 dangerous storm, it is desirable, but not obligatory, that further observations be made
 and transmitted hourly, if practicable, but in any case at intervals of not more than
@@ -5008,7 +5008,7 @@ interests.
 (d) The contributing Governments shall have the right by common consent to make
 from time to time such alterations in the provisions of this Regulation and of Regulation 5
 of this Chapter as appear desirable.
-(«) Where this Regulation provides that a measure may be taken after agreement
+(<<) Where this Regulation provides that a measure may be taken after agreement
 among the contributing Governments, proposals made by any Contracting Government
 for effecting such a measure shall be communicated to the managing Government which
 shall approach the other contributing Governments with a view to ascertaining whether
@@ -5041,7 +5041,7 @@ routes, and will do everything in their power to ensure adherence to such routes
 converging areas by all ships, so far as circumstances will permit. They will also induce
 the owners of all ships crossing the Atlantic bound to or from ports of the United States
 or Canada via the vicinity of the Grand Banks of Newfoundland to avoid, as far as prac
-ticable, the fishing banks of Newfoundland north of latitude 43°N. during the fishing
+ticable, the fishing banks of Newfoundland north of latitude 43 &#186;N. during the fishing
 season, and to pass outside regions known or believed to be endangered by ice.
 (d) The Government managing the ice patrol service is requested to report to the
 Administration concerned any passenger ship which is observed not to be on any regular,
@@ -5054,7 +5054,7 @@ The use of an international distress signal, except for the purpose of indicatin
 a ship or aircraft is in distress, and the use of any signal which may be confused with
 an international distress signal, are prohibited on every ship or aircraft.
 Regulation 10
-DISTRESS MESSAGES—OBLIGATIONS AND PROCEDURES
+DISTRESS MESSAGES-OBLIGATIONS AND PROCEDURES
 (a) The master of a ship at sea, on receiving a signal from any source that a ship or
 aircraft or survival craft thereof is in distress, is bound to proceed with all speed to the
 assistance of the persons in distress informing them if possible that he is doing so. If
@@ -5138,7 +5138,7 @@ and closing the throttle or changing the propeller pitch ;
 Repetition of such procedures has the same meaning.
 (ii) The following procedure performed by an aircraft means that the assistance of
 the surface craft to which the signal is directed is no longer required :
-—crossing the wake of the surface craft close astern at a low altitude, opening and
+-crossing the wake of the surface craft close astern at a low altitude, opening and
 closing the throttle or changing the propeller pitch.
 NOTE : Advance notification of changes in these signals will be given by the
 Organization as necessary.
@@ -5410,7 +5410,7 @@ shall produce it for the inspection of the appropriate authority of the port in 
 loading takes place.
 (e) Pending the adoption of international regulations concerning the strength of
 grain fittings and the provision of feeding holes in hatch coamings, a ship loading grain
-•which does not produce a grain loading plan approved by the Administration, or by a
+ which does not produce a grain loading plan approved by the Administration, or by a
 Contracting Government on behalf of the Administration, shall load in accordance with
 detailed rules issued to supplement the provisions of this Chapter by the Contracting
 Government of the country in which the loading port is situated.
@@ -5439,20 +5439,20 @@ precautions necessary in their relation to other cargo.
 Regulation 2
 CLASSIFICATION
 Dangerous goods shall be divided into the following classes :
-Class 1—Explosives.
-Class 2—Gases : compressed, liquefied or dissolved under pressure.
-Class 3—Inflammable liquids.
-Class 4 (a)—Inflammable solids.
-Class 4 (6)—Inflammable solids, or substances, liable to spontaneous combustion.
-Class 4 (c)—Inflammable solids, or substances, which in contact with water emit
+Class 1-Explosives.
+Class 2-Gases : compressed, liquefied or dissolved under pressure.
+Class 3-Inflammable liquids.
+Class 4 (a)-Inflammable solids.
+Class 4 (6)-Inflammable solids, or substances, liable to spontaneous combustion.
+Class 4 (c)-Inflammable solids, or substances, which in contact with water emit
 inflammable gases.
-Class 5 (a)—Oxidizing substances.
-Class 5 (b)—Organic peroxides.
-Class 6 (a)—Poisonous (toxic) substances.
-Class 6 (b)—Infectious substances.
-Class 7—Radioactive substances.
-Class 8—Corrosives.
-Class 9—Miscellaneous dangerous substances, that is any other substance which
+Class 5 (a)-Oxidizing substances.
+Class 5 (b)-Organic peroxides.
+Class 6 (a)-Poisonous (toxic) substances.
+Class 6 (b)-Infectious substances.
+Class 7-Radioactive substances.
+Class 8-Corrosives.
+Class 9-Miscellaneous dangerous substances, that is any other substance which
 experience has shown, or may show, to be of such a dangerous character that
 the provisions of this Chapter should apply to it.
 Regulation 3

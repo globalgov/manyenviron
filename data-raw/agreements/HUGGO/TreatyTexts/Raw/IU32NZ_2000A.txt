@@ -79,7 +79,7 @@ receiving agency unless the sending agency agrees that the receiving agency will
 work.
 3. In the event that any equipment or supplies are damaged beyond repair or not returned, they
 will either be replaced by the receiving agency with new equipment or supplies of the same
-quantity and to the lending agency’s standards, or full replacement cost will be reimburse by
+quantity and to the lending agency's standards, or full replacement cost will be reimburse by
 the receiving agency.
 4. Some specialized equipment may be accompanied by trained technicians and/or operators to
 ensure safe and efficient set up and operation of equipment.
@@ -96,9 +96,9 @@ countries.
 c) Unless otherwise agreed upon between parties to this Agreement, maintenance
 and/or damage to the aircraft is the responsibility of the contractor and/or owner,
 and is not reimbursable. Damage to an aircraft caused as a direct result of agency
-personnel actions are the receiving agency’s responsibility and are reimbursable.
+personnel actions are the receiving agency's responsibility and are reimbursable.
 2. All contract aircraft mobilized to the USA will be reimbursed by the USA.
-3. All aircraft will meet the receiving agency’s specifications for standards and pilot
+3. All aircraft will meet the receiving agency's specifications for standards and pilot
 qualifications and will be inspected prior to being put into service.
 VII. INDEMNITY
 1. The Government of the United Stated of America hereby indemnifies and undertakes
@@ -115,8 +115,8 @@ a request made by the United States National Interagency Multi Agency Coordinati
 Group or any similar request made for and on behalf of the United States. Such
 indemnity will be extended to all agencies listed in schedules 1 & 2 of this agreement
 and to their associated governments officers, employees, servants and agents.
-2. The receiving agency agrees to reimburse to a sending agency all extra workers’
-compensation insurance costs incurred by the sending agency as a result of worker’s
+2. The receiving agency agrees to reimburse to a sending agency all extra workers'
+compensation insurance costs incurred by the sending agency as a result of worker's
 compensation claim being made in respect of any injury occurring during the term of
 this agreement.
 VIII RECALL
@@ -183,7 +183,7 @@ consent of all parties, by the issuance of a written modifications, signed and d
 parties, prior to any changes being performed. The Forest Service, BLM and NRE are not
 obligated to fund any changes not properly approved in advance.
 3. Any one of the parties, in writing, may terminate their portion of this instrument in
-whole, or in part, at any time. Full credit shall be allowed for each party’s expenses and all
+whole, or in part, at any time. Full credit shall be allowed for each party's expenses and all
 non-cancellable obligations properly incurred up to the effective date of termination.
 4. This International Agreement is executed as of the date of the last signature and, unless
 terminated sooner, is effective through five years from that date at which time it will be

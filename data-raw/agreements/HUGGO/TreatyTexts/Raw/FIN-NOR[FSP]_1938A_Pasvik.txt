@@ -39,7 +39,7 @@ conditions that the inspection authorities of the country concerned cannot be as
 of the fact.
 Similarly, the chief of police or the district bailiff shall communicate with each other if they
 are informed by their own authorities that the fishery regulations have been waived in accordance
-with the provisions in § 9 of the regulations.
+with the provisions in section 9 of the regulations.
 
 Article 5.
 As soon as the question of the right to fish in the fishing area of the Pasvik river has been
@@ -56,19 +56,19 @@ Done at Oslo, in duplicate, this 2Ist day of April, 1938.
 
 FISHERY REGULATIONS FOR THE FISHING AREA OF THE PASVIK RIVER.
 
-§ 1.
+ 1.
 Text of Norwegian Regulations.
 The fishing area of the Pasvik river comprises
 the part of the river and of the lakes which
 it forms belonging to Norway.
 
-§ 1.
+ 1.
 Text of Finnish Regulations.
 The fishing area of the Pasvik river comprises
 the part of the river and of the lakes which
 it forms belonging to Finland.
 
-§ 2.
+ 2.
 Within the fishing area it is permitted in fishing for burbot to use bar-nets, seine nets, fyke
 nets, fish traps, hooks and barriers. The use of other tackle, including fish gigs, and also the use
 of lime, explosives, poisonous substances or electric current as means of catching fish are prohibited.
@@ -94,7 +94,7 @@ In the waters from the Jiiniskoski waterfall
 to the Kolttakongds waterfall, the use of seine
 nets is forbidden.
 
-§ 3.
+ 3.
 It is forbidden to use knotted tackle of a smaller mesh than 35 mm. between the knots counting
 from the middle of each knot when the tackle is wet. In the waters from the Hare waterfall down
 to the frontier south of Boris Gleb it is also forbidden to use nets with larger mesh than 45 mm.
@@ -106,13 +106,13 @@ In the case of fyke nets or other tackle made of wooden sticks, branches, roots,
 similar material, the distance between the sticks may not be less than 30 mm. and the distance
 between the straps may not be less than 150 mm.
 Fish traps, including the connecting nets, may not be higher at any part than 1.5 metres.
-§ 4.
+ 4.
 It is at all times forbidden to catch or kill salmon, trout (both sea trout and fresh-water trout),
 gwyniad or grayling less than 25 cm. in length, measured from the tip of the snout to the end of
 the central part of the tail fin.
 Should such fish have been caught, they must be immediately returned to the water.
 
-§ 5.
+ 5.
 Text of Norwegian Regulations.
 All fishing is forbidden:
 1. At the Hare waterfall, within an
@@ -145,7 +145,7 @@ under (1), in the case of fishing with rod or hand
 line, no part of the tackle may enter the closed
 area.
 
-§ 5.
+ 5.
 Text of Finnish Regulations.
 All fishing is forbidden:
 1. At the Hare waterfall, within an
@@ -173,28 +173,28 @@ stone on the opposite bank.
 In the case of fishing with rod or hand line,
 no part of the tackle may enter the closed area.
 
-§ 6.
+ 6.
 In the other parts of the fishing area, it is forbidden to catch salmon, trout (both sea trout
 and fresh-water trout) and gwyniad in the period from September 15th inclusive to October 3st
 inclusive; but these kinds of fish may be caught at all times of the year in the following lakes
 formed by the Pasvik river, i. e., Grensevatn, Fjoervatn, Vaggetemvatn, Hassetjonna, Langvatn,
 Svanvatn, Bjornvatn, and Klistervatn.
-§ 7.
-Besides the lakes mentioned in § 6 and the Fossevatn, in the streams which constitute the
+ 7.
+Besides the lakes mentioned in  6 and the Fossevatn, in the streams which constitute the
 frontier one-sixth of the width lying nearest the frontier at the midsummer level of water shall
 be kept open as a fishing stream. In other waterways, the fishing stream shall be one-third of the
 width of the waterway at the place where it is deepest.
 In the fishing stream it is forbidden to use other fishing tackle than seine nets and hooks.
-In the lakes mentioned in § 6 and also in the Fossevatn, it is forbidden to use standing tackle
+In the lakes mentioned in  6 and also in the Fossevatn, it is forbidden to use standing tackle
 within a distance of 2oo metres from the mouth of the fishing stream.
 
 Text of Norwegian Regulations.
-§ 8.
+ 8.
 Fishing inspectors shall be considered on the
 same footing as police officials in respect of any
 insulting language or action used against them.
 
-§ 9.
+ 9.
 The provisions laid down in the present
 fishery regulations shall not prevent the inspector
 of fresh-water fisheries, while applying
@@ -203,7 +203,7 @@ in order to avoid abuse, from permitting
 fishing for scientific purposes or in order to
 catch fish for breeding in incubators.
 
-§ 10.
+ 10.
 Breaches of the above provisions shall be
 punishable by a fine. Fishing tackle which
 is put to an unlawful use and fish which is caught
@@ -211,7 +211,7 @@ unlawfully, or the value of such tackle or fish,
 may be confiscated.
 
 Text of Finnish Regulations.
-§ 8.
+ 8.
 The person duly instructed to supervise the
 observance of the present regulations shall
 enjoy the same rights and the same legal
@@ -222,7 +222,7 @@ issued by inspectors in general, in virtue
 of Chapter 17, Article 11, of the Code of Legal
 Procedure.
 
-§ 9.
+ 9.
 The provisions laid down in the present
 fishery regulations shall not prevent the Department
 of Agriculture, while applying the
@@ -231,12 +231,12 @@ order to avoid abuse, from permitting fishing
 for scientific purposes or in order to catch
 fish for breeding in incubators.
 
-§ 10.
+ 10.
 Breaches of the provisions of the present
 fishery regulations shall be punishable in
 accordance with the general law.
 
-§ 11.
+ 11.
 With the exception of nets with a smaller mesh than 30 mm. between the knots, fishing tackle
 which is lawful according to the rules applied hitherto, and which is proved to have been procured
 before the issue of the present rules, may be used until the end of the year 1942 notwithstanding

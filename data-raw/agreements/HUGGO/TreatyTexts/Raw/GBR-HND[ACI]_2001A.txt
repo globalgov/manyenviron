@@ -14,9 +14,9 @@ Article 1
 (1) The maritime boundary between the Cayman Islands and the Republic of Honduras shall be formed by geodesic lines
 joining, in the order in which they are given, the following points identified by their geographical coordinates:
 Point / Latitude N / Longitude W
-A  / 19º27'57"  / 83º35'50"
-B  / 17º35'03"  / 82º21'00"
-  C  / 17º35'03" /  80º49'59"
+A  / 19&#186;27'57"  / 83&#186;35'50"
+B  / 17&#186;35'03"  / 82&#186;21'00"
+  C  / 17&#186;35'03" /  80&#186;49'59"
 (2) The geographical coordinates given in this article are expressed in the geodetic reference system WGS 84 (World
 Geodetic System 1984).
 (3) The boundary line has been drawn by way of illustration on the chart at Annex A to this Treaty, which forms an
@@ -56,10 +56,10 @@ the competent authorities of the Cayman Islands, for the purpose of conducting s
 2. The area of Misteriosa and Rosario Banks referred to in this annex is defined by geographical coordinates, expressed in
 the geodetic reference system WGS 84, joined in sequence by geodesic lines as follows:
 Point  / Latitude N  / Longitude W
-1 / 18º57'00"  / 84º02'00"
-2 /  18º57'00"  / 83º38'00"
-3 /  18º25'00"  / 83º56'00"
-4  / 18º25'00"  / 84º12'00"
+1 / 18&#186;57'00"  / 84&#186;02'00"
+2 /  18&#186;57'00"  / 83&#186;38'00"
+3 /  18&#186;25'00"  / 83&#186;56'00"
+4  / 18&#186;25'00"  / 84&#186;12'00"
 The area has been drawn by way of illustration on the chart at Annex A to this Treaty, which forms an integral part thereof.
 3. The following conditions shall apply:
 (a) the length of each fishing vessel shall not exceed 100 feet;

@@ -91,8 +91,8 @@ the Government of the Union of Soviet Socialist Republics agrees to limit the fi
 operations of the vessels of the Union of Soviet Socialist Republics more than 145
 feet in length to mid-water trawling, using mid-water trawl doors, during the period
 from July 1 through December 31 in the area adjacent to the United States coast
-north of 40°20'N and south of 43°17'N, and west of the line drawn between the
-points 68°15'W, 40°20'N and 7q°00'W, 43°17'N. Representatives of both Govern
+north of 40 &#186;20'N and south of 43 &#186;17'N, and west of the line drawn between the
+points 68 &#186;15'W, 40 &#186;20'N and 7q &#186;00'W, 43 &#186;17'N. Representatives of both Govern
 ments will meet prior to the expiration of the period of validity of this Agreement,
 with a view to considering further conservation measures for yellowtail flounder
 stocks. The implementation of this paragraph of the Agreement shall not result in an
@@ -107,29 +107,29 @@ the following areas bounded by straight lines connecting the coordinates in the 
 listed:
 a. During the period from November 15 through May 15:
 North Latitude West Longitude
-40° 44' 00" 72° 27' 00"
-40° 38' 00" 72° 27' 00"
-40° 34' 31" 72° 40' 00"
-40° 32' 41" 72° 46' 26"
-40° 32' 32" 72° 53' 26"
-40° 36' 54" 72° 53' 26"
-40° 40' 55" 72° 40' 00"
+40 &#186; 44' 00" 72 &#186; 27' 00"
+40 &#186; 38' 00" 72 &#186; 27' 00"
+40 &#186; 34' 31" 72 &#186; 40' 00"
+40 &#186; 32' 41" 72 &#186; 46' 26"
+40 &#186; 32' 32" 72 &#186; 53' 26"
+40 &#186; 36' 54" 72 &#186; 53' 26"
+40 &#186; 40' 55" 72 &#186; 40' 00"
 b. During the period from September 15 through May 15:
 North Latitude West Longitude
-39° 40' 00" 74° 00' 00"
-39° 37' 00" 73° 54' 00"
-39° 32' 30" 73° 57' 18"
-39° 35' 30" 74° 04' 00"
+39 &#186; 40' 00" 74 &#186; 00' 00"
+39 &#186; 37' 00" 73 &#186; 54' 00"
+39 &#186; 32' 30" 73 &#186; 57' 18"
+39 &#186; 35' 30" 74 &#186; 04' 00"
 7. Fishing vessels of the Union of Soviet Socialist Republics may fish during
 the period from January 1 through March 31, within the nine-mile fishery zone con
 tiguous to the territorial sea of the United States of America, in the waters bounded
 by straight lines connecting the following coordinates in the order listed:
 North Latitude West Longitude
-40° 40' 55" 72° 40' 00"
-40° 34' 31" 72° 40' 00"
-40° 32' 41" 72° 46' 26"
-40° 32' 32" 72° 53' 26"
-40° 36' 54" 72° 53' 26"
+40 &#186; 40' 55" 72 &#186; 40' 00"
+40 &#186; 34' 31" 72 &#186; 40' 00"
+40 &#186; 32' 41" 72 &#186; 46' 26"
+40 &#186; 32' 32" 72 &#186; 53' 26"
+40 &#186; 36' 54" 72 &#186; 53' 26"
 Each Government shall, within the scope of its domestic laws and regulations,
 facilitate entry into appropriate ports for fishing vessels, fishery research vessels,
 and fishery support vessels. The Government of the United States of America will
@@ -169,7 +169,7 @@ Soviet vessels into any United States port is subject to the applicable laws and
 regulations of the United States.
 g. Each of the above provisions in this paragraph may be modified by mutual con
 sent at any time.
-9. Under conditions oïforce majeure, each Government will, within the scope
+9. Under conditions oiforce majeure, each Government will, within the scope
 of its domestic laws and regulations, facilitate entry of fishing, fishery research, and
 fishery support vessels into its respective open ports after appropriate notification
 has been given.

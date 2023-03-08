@@ -13,9 +13,9 @@ migratory species;
 That it is expedient to delimit their respective marine and submarine areas;
 Have for that purpose appointed as their Plenipotentiaries:
 His Excellency the President of the Republic of Colombia:
-Mr. Indalecio Liévano Aguirre, Minister for Foreign Affairs;
+Mr. Indalecio Lievano Aguirre, Minister for Foreign Affairs;
 His Excellency the President of the Dominican Republic:
-Vice-Admiral Ramòn Emilio Jiménez Jr., Secretary of State for Foreign Affairs;
+Vice-Admiral Ramon Emilio Jimenez Jr., Secretary of State for Foreign Affairs;
 Who, having exchanged their full powers, found to be in good and due form, have agreed as follows:
 Article 1
 The boundary between the marine and submarine areas belonging to each country shall be determined by using, as a
@@ -23,8 +23,8 @@ general rule, the principle of the median line whose points are all equidistant 
 the breadth of the territorial sea of each State is measured.
 Article 2
 In accordance with the procedure established in the preceding article, the boundary shall be constituted by a line drawn
-from a point whose geographical position is at latitude 15°02'00"north and longitude 73°27'30"west through a point at latitude
-15°00'40"north and longitude 71°40'30"west towards another point at latitude 15°18'00"north and longitude 69°29'30"west as far
+from a point whose geographical position is at latitude 15&#186;02'00"north and longitude 73&#186;27'30"west through a point at latitude
+15&#186;00'40"north and longitude 71&#186;40'30"west towards another point at latitude 15&#186;18'00"north and longitude 69&#186;29'30"west as far
 as the point where delimitation with a third State is required.
 PARAGRAPH:
 The line and points agreed upon are shown on nautical chart No. 25,000, of the Defense Mapping Agency of the United
@@ -33,14 +33,14 @@ Article 3
 A Zone of Joint Scientific Research and Fishing Exploitation shall be established which shall be situated within four
 straight lines drawn between the following points, each located at a distance of 20 nautical miles from the line which constitutes
 the marine boundary between the two countries:
-STRAIGHT LINE A: From point 1 (latitude 15° 22' 00" north and longitude 73° 19' 30" west) and point 2
-(latitude 14° 42' 00" north and longitude 73° 20' 30" west).
-STRAIGHT LINE B: From point 2 (latitude 14° 42' 00" north and longitude 73° 20' 30" west) and point 3
-(latitude 14° 40' 30" north and longitude 71° 40' 30" west).
-STRAIGHT LINE C: From point 3 (latitude 14° 40' 30" north and longitude 71° 40' 30" west) and point 4
-(latitude 15° 20' 00" north and longitude 71° 40' 00" west)
-STRAIGHT LINE D: From point 4 (latitude 15° 20' 00" north and longitude
-71° 40' 00" west) and point 1 (latitude 15° 22' 00" north and longtitude 73° 19' 30" west).
+STRAIGHT LINE A: From point 1 (latitude 15&#186; 22' 00" north and longitude 73&#186; 19' 30" west) and point 2
+(latitude 14&#186; 42' 00" north and longitude 73&#186; 20' 30" west).
+STRAIGHT LINE B: From point 2 (latitude 14&#186; 42' 00" north and longitude 73&#186; 20' 30" west) and point 3
+(latitude 14&#186; 40' 30" north and longitude 71&#186; 40' 30" west).
+STRAIGHT LINE C: From point 3 (latitude 14&#186; 40' 30" north and longitude 71&#186; 40' 30" west) and point 4
+(latitude 15&#186; 20' 00" north and longitude 71&#186; 40' 00" west)
+STRAIGHT LINE D: From point 4 (latitude 15&#186; 20' 00" north and longitude
+71&#186; 40' 00" west) and point 1 (latitude 15&#186; 22' 00" north and longtitude 73&#186; 19' 30" west).
 In the area under its sovereignty and jurisdiction within the above-mentioned zone, each country undertakes to adopt the
 following measures:
 (a) To permit nationals of the other State to carry out fishing activities, provided that they are carried out rationally
@@ -54,7 +54,7 @@ area.
 (e) To establish close co-operation for purposes of surveillance of the Zone in order to ensure that nationals of third
 States do not carry out unauthorized fishing activities in it.
 PARAGRAPH:
-The Zone of Joint Scientific Research and Fishing Exploitation established in this Agreement and the régime adopted for
+The Zone of Joint Scientific Research and Fishing Exploitation established in this Agreement and the regime adopted for
 it may be modified by agreement between the Parties or rescinded on the initiative of either Party upon ninety (90) days', prior
 notice to the Ministry of Foreign Affairs of the other State.
 Article 4
@@ -73,7 +73,7 @@ The Parties shall endeavour to resolve any differences which may arise concernin
 application, of this Agreement through the diplomatic channel before using the other methods of peaceful settlement recognized
 under international law.
 This Agreement shall enter into force on the date of the exchange of the respective instruments of ratification, which
-shall take place in the city of Bogot§.
+shall take place in the city of Bogota.
 IN WITNESS WHEREOF, the plenipotentiaries have signed this Agreement in duplicate, both texts being equally
 authentic.
 DONE in the city of Santo Domingo on 13 January 1978.

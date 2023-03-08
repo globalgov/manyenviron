@@ -6,12 +6,12 @@ Recognizing that pollution by hazardous substances causes or may cause damage to
 Have agreed as follows:
 ARTICLE I
 For the purpose of this Agreement:
-(a) A ‘polluting incident' means a discharge or the threat of a discharge of any hazardous substance on one side of the inland international boundary of a magnitude which causes, or threatens to cause, imminent and substantial adverse effects on the public health, welfare, or the environment.
+(a) A 'polluting incident' means a discharge or the threat of a discharge of any hazardous substance on one side of the inland international boundary of a magnitude which causes, or threatens to cause, imminent and substantial adverse effects on the public health, welfare, or the environment.
 (b) 'Environment' means the atmosphere, land, and surface and ground water, including the natural resources therein, such as fish, wildlife forests, crop and rangeland, rivers, streams, aquifers and all other components of the ecosystem.
 (c) 'Hazardous substances' means elements and compounds which if discharged present or may present an imminent and substantial danger to the public health, welfare or the environment. According to the laws of each party and the determination of the Joint Response Team (JRT). The JRT and its responsibilities are defined in Appendix II.
 (d) 'Border area along the joint inland international boundary' means the non-maritime area which is the area situated 100 km on either side of the inland international boundary.
 ARTICLE II
-The Parties agree to establish the 'United States-Mexico Joint Contingency Plan' (hereafter, ‘The Plan’) regarding polluting incidents of the border area along the joint inland international
+The Parties agree to establish the 'United States-Mexico Joint Contingency Plan' (hereafter, 'The Plan') regarding polluting incidents of the border area along the joint inland international
 boundary by discharges of hazardous substances. The object of the Plan is to provide cooperative measures to deal effectively with polluting incidents.
 ARTICLE III
 The Parties, consistent with their means, commit themselves to the development of response plans designed to permit detection of the existence or the imminent possibility of the occurrence of
@@ -40,7 +40,7 @@ For the United Mexican States
 JOINT CONTINGENCY PLAN
 APPENDIX I
 1. On-Scene Coordinator
-1.1 As soon as the Agreement enters into force each party will designate, without waiting for a polluting incident to occurs, officials responsible for exercising in its territory the functions and responsibilities described in Section 1.2. Said officials will have the title of “On-Scene Coordinator” (OSC). Each Party will also designate officials who will have advisory and liaison functions. Said officials will have the title of 'Advisory and Liaison Coordinator' (ALC). Each Party will divide its territory into areas and will designate OSCs the ALCs for each of those areas,
+1.1 As soon as the Agreement enters into force each party will designate, without waiting for a polluting incident to occurs, officials responsible for exercising in its territory the functions and responsibilities described in Section 1.2. Said officials will have the title of "On-Scene Coordinator" (OSC). Each Party will also designate officials who will have advisory and liaison functions. Said officials will have the title of 'Advisory and Liaison Coordinator' (ALC). Each Party will divide its territory into areas and will designate OSCs the ALCs for each of those areas,
   1.2 The functions and responsibilities of the On-Scene Coordinator will be:
     (a) To coordinate and direct measures related to the detection of polluting incidents;
   (b) To coordinate and direct response measures;

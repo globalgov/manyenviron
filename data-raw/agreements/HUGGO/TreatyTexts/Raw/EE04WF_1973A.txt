@@ -93,7 +93,7 @@ Its working languages shall be English, French and German.
 The Council shall determine the extent to which the official and working
 languages shall respectively be used.
 Article 2. 1. The objectives of the Centre shall be:
-(«) to develop dynamic models of the atmosphere with a view to preparing
+(<<) to develop dynamic models of the atmosphere with a view to preparing
 medium-range weather forecasts by means of numerical methods;
 (b) to prepare, on a regular basis, the data necessary for the preparation of
 medium-range weather forecasts;
@@ -102,7 +102,7 @@ quality of these forecasts;
 (el) to collect and store appropriate meteorological data;
 (e) to make available to the meteorological offices of the Member States, in the
 most appropriate form, the results of the studies and research provided for
-in («) and (c) and the data referred to in (b) and (</);
+in (<<) and (c) and the data referred to in (b) and (</);
 (/) to make available to the meteorological offices of the Member States for
 their research, priority being given to the field of numerical weather fore
 casting, a sufficient proportion of its computing capacity, such proportion
@@ -123,7 +123,7 @@ with States which are not members of the Centre and with governmental or
 non-governmental international scientific and technical organisations whose
 activities are related to its objectives.
 2. Moreover, the Centre may conclude co-operation agreements:
-(«) with States, under the conditions laid down in Article 6 (1) (e),
+(<<) with States, under the conditions laid down in Article 6 (1) (e),
 (b) with the national scientific and technical agencies of the Member States and
 with the international organisations referred to in paragraph 1, under the
 conditions laid down in Article 6 (3) (k).
@@ -139,13 +139,13 @@ meetings by advisers.
 A representative of the World Meteorological Organisation shall be invited
 to take part in the work of the Council as an observer.
 3. The Council shall elect from among its members a President and a
-Vice-Président who shall be appointed for one year and who may not be
+Vice-President who shall be appointed for one year and who may not be
 re-elected more than twice in succession.
 4. The Council shall meet at least once a year. It shall be convened at
 the request of the President or at the request of at least one third of the
 Member States. Meetings of the Council shall be held at the headquarters
 of the Centre unless the Council decides otherwise in exceptional cases.
-5. The President and Vice-Président may call on the assistance of the
+5. The President and Vice-President may call on the assistance of the
 Director in the performance of their duties.
 6. The Council may set up advisory committees and shall determine the
 composition and duties thereof.
@@ -173,7 +173,7 @@ of this Convention;
 (b) decide on the admission of new members, in accordance with Article 23,
 and lay down the conditions for such admissions in accordance with
 Article 13 (3);
-(<:•) decide, in accordance with Article 20, on the withdrawal of membership
+(c) decide, in accordance with Article 20, on the withdrawal of membership
 from a State, that State not participating in the vote on this matter;
 (d) decide on the dissolution of the Centre, in accordance with Article 21(1)
 and (2);
@@ -293,7 +293,7 @@ Centre. He shall take part, without the right to vote, in all meetings of the
 Council.
 The Council shall appoint the person who is to act as Director ad interim.
 2. The Director shall:
-(«) take all measures necessary for the proper functioning of the Centre;
+(<<) take all measures necessary for the proper functioning of the Centre;
 (h) exercise the powers accorded to him under the Staff Regulations, subject
 to Article 10 (4);
 (c) submit to the Council the draft programme of the activities of the Centre,
@@ -307,7 +307,7 @@ accordance with the Financial Regulations;
 the implementation of the budget and the balance sheet of assets and
 liabilities, drawn up in each case in accordance with the Financial Regula
 tions, and the report on the activities of the Centre;
-(g) conclude, in accordance with Article 6 (1) («) and Article 6 (3) (k), the
+(g) conclude, in accordance with Article 6 (1) (<<) and Article 6 (3) (k), the
 co-operation agreements necessary for attaining the objectives of the Centre.
 3. In carrying out his tasks, the Director shall be assisted by the other
 staff of the Centre.
@@ -443,7 +443,7 @@ by the Council.
 3: The conditions under which the licences referred to in paragraph 1
 may be extended to applications other than weather forecasting shall be the
 subject of a decision of the Council acting in accordance with Article 6 (3) (/).
-îi t , 1 Article 16. The privileges and immunities which the Centre, the represen
+ii t , 1 Article 16. The privileges and immunities which the Centre, the represen
 tatives of the Member States, the staff and the experts of the Centre enjoy
 in the territories of the Member States shall be determined in a protocol which
 shall be annexed to this Convention and which shall form an integral part
@@ -481,20 +481,20 @@ Article 18. 1. Each Member State may transmit proposals for amending
 this Convention to the Director. The Director shall submit such proposals to
 the other Member States at least three months before they are to be examined
 by the Council. The Council shall examine the proposals and may, acting in
-accordance with Article 6 (3) («), recommend the Member States to accept the
-proposed amendments. .. i ••*
+accordance with Article 6 (3) (<<), recommend the Member States to accept the
+proposed amendments.
 2. Amendments recommended by the Council may only be accepted by
 the Member States in wirting. They shall enter into force thirty days after
 receipt by the Secretary-General of the Council of the European Communities
-of the lasj written notification of acceptance. '"-:•..••••
+of the lasj written notification of acceptance.
 Article 19. 1. Any Member State may denounce this Convention after
 it has.Jbeen. in force for five years by giving notice to the Secretary-General of
 the [Council of the European Communities. Denunciation shall take effect at the
 end^of .the second financial year following the year during which notice is given.
-•~2'. A Member State which has denounced this Convention shall remain
-bound to/coritributè towards. financing all commitments entered into by the
+2. A Member State which has denounced this Convention shall remain
+bound to/coritribute towards. financing all commitments entered into by the
 Centrej before such denunciation and to respect the obligations which it
-contracted itself as a Member State vis-à-vis the Centre before the denunciation.
+contracted itself as a Member State vis-a-vis the Centre before the denunciation.
 3. A Member State which has denounced this Convention shall lose its
 rights to the assets, of the Centre and must indemnify the Centre, under the
 conditions laid down by the Council acting in accordance with Article 6 (2) (d),
@@ -684,7 +684,7 @@ their official capacity and within the limits of their authority; this immunity
 shall not apply in the case of a traffic offence committed by a representative
 of a Member State nor in the case of damage caused by a vehicle belonging
 to or driven by such a person;
-(<:•) inviolability for all their official papers and documents;
+(c) inviolability for all their official papers and documents;
 (d) exemption from all measures restricting aliens' entry and from aliens'
 registration formalities;
 (e) the same customs facilities as regards their personal luggage and the same
@@ -713,7 +713,7 @@ are normally accorded to staff members of international organisations;
 of taking up a post for a period of at least one year in the State concerned
 and the right on the termination of their functions in the said State to
 export free of duty furniture and personal effects, subject in both cases to
-thé conditions considered necessary by the Government of the State in whose
+the conditions considered necessary by the Government of the State in whose
 territory the right is exercised and with the exception of property acquired
 in that State and subject to an export prohibition therein.
 Article 14. Experts who are not staff members and who perform duties
@@ -761,7 +761,7 @@ in the Staff Regulations, the Centre and its staff members shall be exempt from
 all compulsory contributions to national social security shemes, subject to
 agreements to be concluded to that end with the Member States concerned
 under the conditions laid down in Article 22.
-•Article 19. 1. The privileges, immunities and facilities provided for in this
+Article 19. 1. The privileges, immunities and facilities provided for in this
 Protocol are granted solely in the interests of the Centre, and of the Member
 States, and not for the personal advantage of those enjoying them.
 2. The competent authorities have not only the right but also the duty to
@@ -769,9 +769,9 @@ waive an immunity where such immunity is impeding the course of justice and
 where it can be waived without prejudicing the purposes for which it was
 accqrded.
 3. The competent authorities referred to in paragraph 2 are:
-—the Member States, in the case of their representatives,
-—the Council, in [the] case of the Director,
-—the Director, in the case of the other staff members and experts within the
+-the Member States, in the case of their representatives,
+-the Council, in [the] case of the Director,
+-the Director, in the case of the other staff members and experts within the
 meaning of Article 14.
 Article 20. 1. The Centre shall co-operate at all times with the competent
 authorities of the Member States in order to facilitate the proper administration
@@ -788,8 +788,8 @@ Article 22. The Centre may, on decision by the Council acting unanimously,
 conclude supplementary agreements with any Member State to implement this
 Protocol and may make any other arrangements to ensure the smooth running
 of the Centre and the safeguarding of its interests.
-Article 23. 1. The Centre shall be obliged in all written contracts—other
-than those concluded in accordance with the Staff Regulations—into which it
+Article 23. 1. The Centre shall be obliged in all written contracts-other
+than those concluded in accordance with the Staff Regulations-into which it
 enters and relating to matters in which it enjoys immunity from jurisdiction,
 to include an arbitration clause whereby any dispute arising out of the interpre
 tation or execution of the contract shall, at the request of either party, be
@@ -805,9 +805,9 @@ be that of that country. ,
 rules,in force in the State in which the award is to be enforced.
 Article 24. 1. Any Member State may submit to the arbitration tribunal
 provided for in Article 17 of the Convention any dispute:
-—arising out of damage caused by the Centre;
-—involving any other non-contractual liability of the Centre; or
-—involving a staff member or an expert of the Centre and in which the person
+-arising out of damage caused by the Centre;
+-involving any other non-contractual liability of the Centre; or
+-involving a staff member or an expert of the Centre and in which the person
 concerned can claim immunity from jurisdiction under Article 13 or Article 14,
 if this immunity is not waived in accordance with Article 19.
 2. If a Member State intends to submit a dispute to arbitration it shall

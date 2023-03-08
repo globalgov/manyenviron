@@ -1,6 +1,6 @@
 TREATY
 BETWEEN THE GOVERNMENT OF THE REPUBLIC OF MOLDOVA AND THE CABINET OF MINISTERS OF UKRAINE ON COOPERATION IN THE FIELD OF PROTECTION AND SUSTAINABLE DEVELOPMENT OF THE DNIESTER RIVER BASIN
-The Government of the Republic of Moldova and the Cabinet of Ministers of Ukraine, hereinafter referred to as “the Contracting Parties”,
+The Government of the Republic of Moldova and the Cabinet of Ministers of Ukraine, hereinafter referred to as "the Contracting Parties",
 Recognizing the importance of the Dniester River and the natural resources associated with it for the social and economic development of the states of the Contracting Parties,
 Striving towards rational use and adequate protection of water and other natural resources and ecosystems of the Dniester River basin,
 Concerned over the status of water and other natural resources and ecosystems of the Dniester River basin and resulting economic, social and environmental impacts on the states of the Contracting Parties,
@@ -28,16 +28,16 @@ Scope of the Treaty
 Article 3
 Definitions
 For the purposes of the present Treaty:
-“Dniester River basin” means the part of the drainage basin of the Dniester River located within the territory of the states of the Contracting Parties;
-“Drainage basin of the Dniester River” means the catchment area of the Dniester River system representing the body of surface waters and related groundwaters;
-“Aquatic biological resources” means the totality of aquatic organisms (hydrobionts) whose life is constantly or on certain stages of development impossible without remaining in water;
-“Best available technology” (BAT) and “best environmental practices” (BEP) means the technology and practices of environmental control as defined according to Annex IV to the present Treaty;
-“Emissions” means any type of discharges and emissions, effluents or releases of pollutants into water, air or soil;
-“Emission controls” means controls requiring a specific emission limitation, for instance an emission limit value, or otherwise specifying limits or conditions on the effects, nature or other characteristics of an emission or operating conditions which affect emissions;
-“Emission limit values” means the mass, expressed in terms of certain specific parameters, concentration or level of an emission, which may not be exceeded during any one or more periods of time;
-“Environmental quality standard” means the concentration of a particular substance or group of substances in certain components of the environment, such as water, sediment or biota, which should not be exceeded in order to protect human health and the environment;
-“Transboundary impact” means any significant adverse effect on the environment resulting from a change in the conditions of waters of the Dniester River basin caused by a human activity, the physical origin of which is situated wholly or in part within an area under the jurisdiction of a Contracting Party, within an area under the jurisdiction of another Contracting Party. Such effects on the environment include effects on human health and safety, flora, fauna, soil, air, water, climate, landscape, ecosystems and historical monuments or other physical structures or the interaction among these factors; they also include effects on the cultural heritage or social and economic conditions resulting from alterations of those factors;
-“Emergency” means conditions resulting from an accident, natural or other disaster which have caused or likely to cause loss of human life, injury, damage to human welfare, as well as significant material losses or significant harm to the environment.
+"Dniester River basin" means the part of the drainage basin of the Dniester River located within the territory of the states of the Contracting Parties;
+"Drainage basin of the Dniester River" means the catchment area of the Dniester River system representing the body of surface waters and related groundwaters;
+"Aquatic biological resources" means the totality of aquatic organisms (hydrobionts) whose life is constantly or on certain stages of development impossible without remaining in water;
+"Best available technology" (BAT) and "best environmental practices" (BEP) means the technology and practices of environmental control as defined according to Annex IV to the present Treaty;
+"Emissions" means any type of discharges and emissions, effluents or releases of pollutants into water, air or soil;
+"Emission controls" means controls requiring a specific emission limitation, for instance an emission limit value, or otherwise specifying limits or conditions on the effects, nature or other characteristics of an emission or operating conditions which affect emissions;
+"Emission limit values" means the mass, expressed in terms of certain specific parameters, concentration or level of an emission, which may not be exceeded during any one or more periods of time;
+"Environmental quality standard" means the concentration of a particular substance or group of substances in certain components of the environment, such as water, sediment or biota, which should not be exceeded in order to protect human health and the environment;
+"Transboundary impact" means any significant adverse effect on the environment resulting from a change in the conditions of waters of the Dniester River basin caused by a human activity, the physical origin of which is situated wholly or in part within an area under the jurisdiction of a Contracting Party, within an area under the jurisdiction of another Contracting Party. Such effects on the environment include effects on human health and safety, flora, fauna, soil, air, water, climate, landscape, ecosystems and historical monuments or other physical structures or the interaction among these factors; they also include effects on the cultural heritage or social and economic conditions resulting from alterations of those factors;
+"Emergency" means conditions resulting from an accident, natural or other disaster which have caused or likely to cause loss of human life, injury, damage to human welfare, as well as significant material losses or significant harm to the environment.
 II. Principles and Areas of Cooperation
 Article 4
 Principles of cooperation
@@ -67,7 +67,7 @@ Measures to implement the Treaty provisions
 1. To implement the present Treaty, the Contracting Parties shall adopt national and/or international Dniester River basin management plans, action plans, schemes and programs aimed at achieving sustainable water use, control of water pollution, prevention of adverse impacts of water, prevention and elimination of consequences of emergencies, protection of biodiversity, as well as conservation and rational use of aquatic biological resources.
 2. Each Contracting Party in accordance with the national legislation and international obligations of its state shall assist administrative-territorial units and territorial communities within its part of the Dniester River basin in implementing measures foreseen by the Dniester River basin management plans, as well as appropriate action plans, schemes and programs, referred to in paragraph 1 of the present Article.
 3. Provisions of the present Treaty shall not affect the right of each Contracting Party to apply within its state territory more stringent measures than those provided for in the present Treaty.
-4. In order to achieve the objective of the present Treaty, the Contracting Parties shall establish the Commission on Sustainable Use and Protection of the Dniester River basin, hereinafter referred to as “the Commission”.
+4. In order to achieve the objective of the present Treaty, the Contracting Parties shall establish the Commission on Sustainable Use and Protection of the Dniester River basin, hereinafter referred to as "the Commission".
 5. Each Contracting Party shall designate a national body, authorized to coordinate implementation of provisions of the present Treaty within its state territory or under its jurisdiction and represent it in its relations with the other Contracting Party. The Contracting Parties shall notify each other by diplomatic channels about the national bodies authorized to implement provisions of the present Treaty.
 Article 7
 Coordinated guidelines and standards
@@ -271,7 +271,7 @@ The following activities (not prioritised) shall be primarily considered when de
 28. incineration of wastes and disposal of combustion products;
 29. sewage treatment and disposal;
 30. activities leading to alteration of riverside natural conditions or to the destruction of habitats.
-В. Pollutant categories
+B. Pollutant categories
 In developing action plans, programs and measures the Contracting Parties shall be guided by the following pollutant categories defined on the basis of dangerous or otherwise harmful properties thereof:
 1. organohalogen compounds and substances which are likely to form such compounds in an aquatic environment, with primary attention being paid to aldrin, chlordane, DDT, dieldrin, dioxins and furans, endrin, heptachlor, hexachlorobenzene, mirex, polychlorinated biphenyls, toxaphene, as well as trihalomethanes, chloroform, dibromochlormethane and dichlorobrommethane;
 2. organophosphorous compounds and substances which are likely to form such compounds in an aquatic or seaside environment;
@@ -293,7 +293,7 @@ In developing action plans, programs and measures the Contracting Parties shall 
 18. non-toxic substances causing adverse impact on the oxygen balance in an aquatic environment;
 19. non-toxic substances which are likely to impede any lawful use of an aquatic environment;
 20. non-toxic substances which are likely to cause adverse impact on physical or chemical properties of water.
-С. Pollutant properties
+C. Pollutant properties
 In developing action plans, programs and measures the Contracting Parties shall take into account, where appropriate, the following properties and factors:
 1. persistence;
 2. toxicity or other harmful properties (e.g. carcinogenicity, mutagenicity, teratogenicity);
@@ -312,9 +312,9 @@ Annex II
 DIFFUSE POLLUTION SOURCES FROM AGRICULTURE AND FORESTRY
 A. Definitions
 For the purposes of the present Annex:
-1. “Diffuse pollution sources from agriculture” means the dispersed pollution sources related to crop and livestock farming, with the exception of intensive livestock farming operations, which, on the contrary, belong to point pollution sources.
-2. “Diffuse pollution sources from forestry” means the dispersed pollution sources related to forestry.
-3. “Best management practices” means achievable and economically feasible structural and non-structural measures developed for the purposes of prevention, reduction or control of pollutant flows.
+1. "Diffuse pollution sources from agriculture" means the dispersed pollution sources related to crop and livestock farming, with the exception of intensive livestock farming operations, which, on the contrary, belong to point pollution sources.
+2. "Diffuse pollution sources from forestry" means the dispersed pollution sources related to forestry.
+3. "Best management practices" means achievable and economically feasible structural and non-structural measures developed for the purposes of prevention, reduction or control of pollutant flows.
 B. Plans for prevention, reduction, and control of diffuse pollution from agriculture and forestry
 Each Contracting Party shall, within three years after the present Treaty enters into force, develop policy principles and plans, and shall establish legal and economic mechanisms for prevention, control and reduction of water pollution in the Dniester River basin from diffuse sources from agriculture and forestry. Such policy principles, plans and mechanisms shall, inter alia, include the diffuse pollution sources containing biogenic elements (nitrogen and phosphorus), pesticides, sedimentary deposits, and pathogens.
 The plans shall, among others, contain the following elements:
@@ -377,7 +377,7 @@ Annex IV
 BEST AVAILABLE TECHNOLOGY AND BEST ENVIRONMENTAL PRACTICES
 Pursuant to respective provisions of the present Treaty, the Contracting Parties shall employ the best available technology (BAT) and the best environmental practices (BEP) or promote implementation thereof.
 A. Best available technology
-1. The term “best available technology” means the latest stage of development (state of the art) of processes, facilities or methods of operation which indicate the practical suitability of a particular measure for limiting emissions and waste. “Technology” includes both the technology used per se as well as the means and methods of designing, constructing, maintaining, operating and dismantling of an installation.
+1. The term "best available technology" means the latest stage of development (state of the art) of processes, facilities or methods of operation which indicate the practical suitability of a particular measure for limiting emissions and waste. "Technology" includes both the technology used per se as well as the means and methods of designing, constructing, maintaining, operating and dismantling of an installation.
 2. In utilizing the best available technology emphasis shall be made on the use of non-waste technology, if available.
 3. In determining whether a set of processes, facilities and methods of operation constitute the best available technology in general or individual cases, special consideration shall be given to:
 a) comparable processes, facilities or methods of operation which have recently been successfully tried out;
@@ -386,10 +386,10 @@ c) the economic feasibility of such technology;
 d) time limits for installation in both new and existing plants;
 e) the nature and volume of the discharges and emissions concerned; as well as
 f) the precautionary principle.
-4. What is “best available technology” for a particular process will change with time in the light of technological advances, economic and social factors, as well as in the light of changes in scientific knowledge and understanding.
+4. What is "best available technology" for a particular process will change with time in the light of technological advances, economic and social factors, as well as in the light of changes in scientific knowledge and understanding.
 5. If the reduction of discharges resulting from the use of the best available technology does not lead to environmentally acceptable results, additional measures have to be applied.
 B. Best environmental practices
-1. The term “best environmental practices” means the application of the most appropriate combination of environmental control measures and strategies.
+1. The term "best environmental practices" means the application of the most appropriate combination of environmental control measures and strategies.
 2. In selecting for individual cases, at least the following graduated range of measures should be considered:
 a) provision of information and education to the public and to users about the environmental consequences of the choice of particular activities and products, their use and ultimate disposal;
 b) the development and application of codes of good environment practice which cover all aspects of the product's life;
@@ -401,7 +401,7 @@ g) recycling, recovery and re-use;
 h) application of economic instruments to activities, products or groups of products;
 i) a system of licensing, which involves a range of restrictions or a ban.
 3. In determining what combination of measures constitute best environmental practices, in general or in individual cases, particular consideration should be given to:
-a) the environmental hazard of the product and its production, the product’s use and ultimate disposal;
+a) the environmental hazard of the product and its production, the product's use and ultimate disposal;
 b) substitution by less polluting processes or substances;
 c) scale of use;
 d) potential environmental benefit or penalty of substitute materials or activities;
@@ -409,7 +409,7 @@ e) advances and changes in scientific knowledge and understanding;
 f) time limits for implementation;
 g) social and economic implications; as well as
 h) the precautionary principle.
-4. It follows that “best environmental practices” for a particular source will change with time in the light of technological advances, economic and social factors, as well as in the light of changes in scientific knowledge and understanding.
+4. It follows that "best environmental practices" for a particular source will change with time in the light of technological advances, economic and social factors, as well as in the light of changes in scientific knowledge and understanding.
 5. If the reduction of inputs resulting from the use of best environmental practices does not lead to environmentally acceptable results, additional measures have to be applied and best environmental practices reconsidered.
 Annex V
 PROTECTION OF AQUATIC BIOLOGICAL RESOURCES AND REGULATION OF FISHING IN THE DNIESTER RIVER BASIN
@@ -436,7 +436,7 @@ C. Forms of cooperation in the field of protection of aquatic biological resourc
 11. exchange of information on implementation of fish-breeding and ameliorative measures.
 D. Joint Working Group
 1. The Joint Working Group shall:
-а) consider issues regulated by the present Annex;
+a) consider issues regulated by the present Annex;
 b) propose measures for the protection of aquatic biological resources and regulation of fishing in the Dniester River basin;
 c) provide recommendations on stocking of fish and acclimatization;
 d) analyze results of scientific research under coordinated programs, including scientific-research fishing in order to assess the state of aquatic biological resources and ensure control over their natural reproduction;
@@ -458,8 +458,8 @@ F. Periods and areas prohibited for fishing
 1. Fishing for fish and other aquatic biological resources (except for specialized herring fishing) in waters of the Dniester River basin shall be prohibited annually from April 1 to July 15 for a period of not less than 60 consecutive days.
 2. Commencement of the spawning ban and its duration for certain segments of the Dniester River shall be established by relevant provisions of the national legislation of the states of the Contracting Parties and, where appropriate, by agreement between them. On the Dniester estuary the ban period may be extended to July 31.
 3. Specialized herring fishing shall be permitted from April 1 to June 5. During the mass spawning of herring, the phased ban on fishing shall be established in the areas:
-- from the mouth of the Dniester estuary to the village of Palanca (28 km mark) and via the Turunchiuc arm to the border of Odessa region – for at least 5 days;
-- from the village of Palanca (28 km mark) to the dam of Dubosari HPP and via the Turunchiuc arm from the border of Odessa region to the village of Chobruchi – for at least 10 days.
+- from the mouth of the Dniester estuary to the village of Palanca (28 km mark) and via the Turunchiuc arm to the border of Odessa region - for at least 5 days;
+- from the village of Palanca (28 km mark) to the dam of Dubosari HPP and via the Turunchiuc arm from the border of Odessa region to the village of Chobruchi - for at least 10 days.
 4. Permanent and temporary areas prohibited for fishing for fish and other aquatic biological resources, including those within the territories and objects of the nature reserve fund, shall be established by relevant requirements of the national legislation of the states of the Contracting Parties.
 5. The Contracting Parties, following the recommendations of the Joint Working Group and based on the results of scientific research, may shift the ban periods, as well as areas prohibited for fishing in the waters of the Dniester River, falling within the scope of the present Annex.
 G. Protection of fish resources
@@ -485,11 +485,11 @@ I. Sport fishing and recreational fishing
 Sport fishing and recreational fishing for fish and other aquatic biological resources shall be carried out in accordance with requirements of the national legislation of the states of the Contracting Parties.
 J. Prohibited fishing gear and methods
 1. Prohibited fishing gear and methods:
-а) it shall be prohibited to fish and capture other aquatic biological resources:
+a) it shall be prohibited to fish and capture other aquatic biological resources:
 - using explosives and toxic substances, electric current, thrust objects, firearms and airguns (except for spear guns for underwater hunting in specially designated areas for spearfishing), non-industrial fishing gear made of net-tackle materials (net-traps), by harpooning and rut;
 - by constructing dams, traps, guards, except when foreseen by relevant requirements of the national legislation of the states of the Contracting Parties;
 b) when fishing and capturing other aquatic biological resources it shall be prohibited to use nets of filaments (fishing line), except for those intended for commercial fishing, as well as fishing gears with a mesh size below the size foreseen by relevant requirements of the national legislation of the states of the Contracting Parties;
-c) it shall be prohibited to occupy with fishing gear and other constructions for capturing fish and other aquatic biological resources more than 2/3 of the width of the river stream, spring, path, shallow channel, delta, as well as to set nets from opposite banks “into the lock”;
+c) it shall be prohibited to occupy with fishing gear and other constructions for capturing fish and other aquatic biological resources more than 2/3 of the width of the river stream, spring, path, shallow channel, delta, as well as to set nets from opposite banks "into the lock";
 d) it shall be prohibited to place shutter fishing gear in a checkerboard pattern;
 e) it shall be prohibited to use commercial fishing gears made of netting and other materials of all types and names without permitting documents;
 2. National legislation of the states of the Contracting Parties may also provide for other restrictions and bans on fishing gear and methods.
@@ -517,7 +517,7 @@ Pike - 32
 Crayfish - 10
 Gobies - 9
 Fish and other aquatic biological resources, which are smaller than the minimum size mentioned above, should be released into the water alive.
-Commercial fish size shall be determined by measuring the distance between the snout and the base of the caudal fin, the commercial size of crawfish – by the distance between the middle of the eye to the tail end.
+Commercial fish size shall be determined by measuring the distance between the snout and the base of the caudal fin, the commercial size of crawfish - by the distance between the middle of the eye to the tail end.
 2. If relevant requirements of the national legislation of the states of the Contracting Parties provide for more stringent requirements on the minimum size of fish and other aquatic biological resources than those specified in paragraph 1, the requirements of the national legislation shall apply.
 3. It is prohibited to fish for commercial and recreational purposes for the sturgeon and other fish species included into the Red Books of the Republic of Moldova and Ukraine, as well as species of aquatic biological resources, which have special conservation status on the territory of the states of the Contracting Parties. Captured fishes of these species should be released into the water alive or dormant. In case of fishing or loss of these fish species, the perpetrators (natural and legal persons) shall be held liable in accordance with the national legislation of the states of the Contracting Parties.
 4. It shall be prohibited to sell, process and store fish and other aquatic biological resources, whose commercial size is less than specified in paragraph 1.

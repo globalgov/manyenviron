@@ -2,9 +2,9 @@ PROTOCOL
 DANGEROUS GOODS
             
 
-            The Governments of Brunei Darussalam, the Kingdom of Cambodia, the Republic of Indonesia, the Lao People’s Democratic Republic, Malaysia, the Union of Myanmar, the Republic of the Philippines, the Republic of Singapore, the Kingdom of Thailand and the Socialist Republic of Viet Nam, Member States of the Association of Southeast Asian Nations (hereinafter referred to as “Contracting Parties”);
+            The Governments of Brunei Darussalam, the Kingdom of Cambodia, the Republic of Indonesia, the Lao People's Democratic Republic, Malaysia, the Union of Myanmar, the Republic of the Philippines, the Republic of Singapore, the Kingdom of Thailand and the Socialist Republic of Viet Nam, Member States of the Association of Southeast Asian Nations (hereinafter referred to as "Contracting Parties");
  
-            RECALLING the ASEAN Framework Agreement on the Facilitation of Goods in Transit signed on 16 December 1998 in Hanoi, Viet Nam (hereinafter referred to as “the Agreement”);
+            RECALLING the ASEAN Framework Agreement on the Facilitation of Goods in Transit signed on 16 December 1998 in Hanoi, Viet Nam (hereinafter referred to as "the Agreement");
  
             RECOGNISING that Articles 20 and 25 thereof provide for the conclusion of implementing Protocols which shall form integral parts of the Agreement;
  
@@ -15,14 +15,14 @@ Definition
  
 For the purposes of this Protocol,
  
-(a)               “Dangerous Goods”, “Means of Transport” and “Transit Transport” shall have the meanings assigned to them in the Agreement.
-(b)              “UN Model Regulations” means the United Nations Recommendations on the Transport of Dangerous Goods / Model Regulations. 
+(a)               "Dangerous Goods", "Means of Transport" and "Transit Transport" shall have the meanings assigned to them in the Agreement.
+(b)              "UN Model Regulations" means the United Nations Recommendations on the Transport of Dangerous Goods / Model Regulations. 
  
-(c)              “ADR” means the European Agreement Concerning the International Carriage of Dangerous Goods by Road.
+(c)              "ADR" means the European Agreement Concerning the International Carriage of Dangerous Goods by Road.
  
-(d)              “Restructured ADR” means the restructured version of the European Agreement Concerning the International Carriage of Dangerous Goods by Road, applicable from 1 July 2001.
+(d)              "Restructured ADR" means the restructured version of the European Agreement Concerning the International Carriage of Dangerous Goods by Road, applicable from 1 July 2001.
  
-(e)              “Transit Transport Operators” shall have the meaning assigned to it in Protocol 3-Types and Quantity of Road Vehicles pursuant to the Agreement.
+(e)              "Transit Transport Operators" shall have the meaning assigned to it in Protocol 3-Types and Quantity of Road Vehicles pursuant to the Agreement.
  
 Article 2
 Scope of Application

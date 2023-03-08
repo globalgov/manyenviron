@@ -286,7 +286,7 @@ majority of its component members .'.
 Article 10
 Article 145 of the EEC Treaty shall be supplemented by the
 following provision:
-'— confer on the Commission , in the acts which the
+'- confer on the Commission , in the acts which the
 Council adopts, powers for the implementation of
 the rules which the Council lays down. The
 Council may impose certain requirements in
@@ -346,7 +346,7 @@ provisions of Title III of the Statute .'.
 Section II
 Provisions relating to the foundations and the policy of the
 Community
-Sub-section I — Internal market
+Sub-section I - Internal market
 Article 13
 The EEC Treaty shall be supplemented by the following
 provisions :
@@ -500,7 +500,7 @@ analogy.
 referred to in the first subparagraph of paragraph 1 and
 shall submit appropriate proposals in good time to
 allow the Council to act before the end of 1992 .'.
-Sub-section II — Monetary capacity
+Sub-section II - Monetary capacity
 Article 20
 1 . A new Chapter 1 shall be inserted in Part Three,
 Title II of the EEC Treaty reading as follows:
@@ -526,7 +526,7 @@ be consulted regarding institutional changes in the
 monetary area.'.
 2. Chapters 1 , 2 and 3 shall become Chapters 2 , 3 and 4
 respectively.
-Sub-section III — Social policy
+Sub-section III - Social policy
 Article 21
 The EEC Treaty shall be supplemented by the following
 provisions :
@@ -563,7 +563,7 @@ The Commission shall endeavour to develop the
 dialogue between management and labour at European
 level which could , if the two sides consider it desirable ,
 lead to relations based on agreement .'.
-Sub-section IV — Economic and social cohesion
+Sub-section IV - Economic and social cohesion
 Article 23
 A Title V shall be added to Part Three of the EEC Treaty
 reading as follows:
@@ -627,7 +627,7 @@ With regard to the European Agricultural Guidance
 and Guarantee Fund , Guidance Section and the
 European Social Fund , Articles 43 , 126 and 127 remain
 applicable respectively .'.
-Sub-section V — Research and technological development
+Sub-section V - Research and technological development
 Article 24
 A Title VI shall be added to Part Three of the EEC Treaty
 reading as follows:
@@ -760,7 +760,7 @@ referred to in Articles 130k, 1301 , 130m, 130n and
 13Op ( 1 ). The adoption of these supplementary
 programmes shall also require the agreement of the
 Member States concerned .'.
-Sub-section VI — Environment
+Sub-section VI - Environment
 Article 25
 A Title VII shall be added to Part Three of the EEC Treaty
 reading as follows:
@@ -769,10 +769,10 @@ ENVIRONMENT
 Article 130r
 1 . Action by the Community relating to the
 environment shall have the following objectives :
-— to preserve , protect and improve the quality of the
+- to preserve , protect and improve the quality of the
 environment ,
-— to contribute towards protecting human health ,
-— to ensure a prudent and rational utilization of
+- to contribute towards protecting human health ,
+- to ensure a prudent and rational utilization of
 natural resources .
 2 . Action by the Community relating to the
 environment shall be based on the principles that
@@ -783,12 +783,12 @@ requirements shall be a component of the Community's
 other policies .
 3 . In preparing its action relating to the environment,
 the Community shall take account of:
-— available scientific and technical data ,
-— environmental conditions in the various regions of
+- available scientific and technical data ,
+- environmental conditions in the various regions of
 the Community ,
-— the potential benefits and costs of action or of lack
+- the potential benefits and costs of action or of lack
 of action ,
-— the economic and social development of the
+- the economic and social development of the
 Community as a whole and the balanced
 development of its regions .
 4 . The Community shall take action relating to the

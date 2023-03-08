@@ -16,7 +16,7 @@ Hereby consider the Treaty Area as a Special Conservation Area and have agreed o
 following measures:
 ARTICLE I
 1. These Agreed Measures shall apply to the same area to which the Antarctic Treaty is applicable
-(hereinafter referred to as the Treaty Area) namely the area south of 60° South Latitude, including all
+(hereinafter referred to as the Treaty Area) namely the area south of 60&#186; South Latitude, including all
 ice shelves.
 2. However, nothing in these Agreed Measures shall prejudice or in any way affect the rights, or the
 exercise of the rights, of any State under international law with regard to the high seas within the
@@ -26,18 +26,18 @@ inspection.
 the Agreed Measures shall be considered to include the Annexes.
 ARTICLE II
 For the purposes of these Agreed Measures:
-(a) “Native mammal” means any member, at any stage of its life cycle, of any species belonging
+(a) "Native mammal" means any member, at any stage of its life cycle, of any species belonging
 to the Class Mammalia indigenous to the Antarctic or occurring there through natural agencies of
 dispersal, excepting whales.
-(b) “Native bird” means any member, at any stage of its life cycle (including eggs), of any
+(b) "Native bird" means any member, at any stage of its life cycle (including eggs), of any
 species of the Class Aves indigenous to the Antarctic or occurring there through natural agencies
 of dispersal.
-(c) “Native plant” means any kind of vegetation at any stage of its life cycle (including seeds),
+(c) "Native plant" means any kind of vegetation at any stage of its life cycle (including seeds),
 indigenous to the Antarctic or occurring there through natural agencies of dispersal.
-(d) “Appropriate authority” means any person authorised by a Participating Government to issue
+(d) "Appropriate authority" means any person authorised by a Participating Government to issue
 permits under these Agreed Measures.
-(e) “Permit” means a formal permission in writing issued by an appropriate authority.
-(f) “Participating Government” means any Government for which these Agreed Measures have
+(e) "Permit" means a formal permission in writing issued by an appropriate authority.
+(f) "Participating Government" means any Government for which these Agreed Measures have
 become effective in accordance with Article XIIIof these Agreed Measures.
 ARTICLE III
 Each Participating Government shall take appropriate action to carry out these Agreed Measures.
@@ -69,7 +69,7 @@ replaced by natural reproduction in the following breeding season;
 (b) the variety of species and the balance of the natural ecological systems existing within the
 Treaty Area are maintained.
 5. The species of native mammals and birds listed in Annex A of these Measures shall be
-designated “Specially Protected Species”, and shall be accorded special protection by Participating
+designated "Specially Protected Species", and shall be accorded special protection by Participating
 Governments.
 6. A Participating Government shall not authorise an appropriate authority to issue a permit with
 respect to a Specially Protected Species except in accordance with paragraph 7 of this Article.
@@ -97,8 +97,8 @@ to the minimum extent necessary for the establishment, supply and operation of s
 3. Each Participating Government shall take all reasonable steps towards the alleviation of pollution
 of the waters adjacent to the coast and ice shelves.
 ARTICLE VIII
-1. The areas of outstanding scientific interest listed in Annex B shall be designated“Specially
-Protected Areas” and shall be accorded special protection by the Participating Governments in order
+1. The areas of outstanding scientific interest listed in Annex B shall be designated"Specially
+Protected Areas" and shall be accorded special protection by the Participating Governments in order
 to preserve their unique natural ecological system.
 2. In addition to the prohibitions and measures of protection dealt with in other Articles of these
 Agreed Measures, the Participating Governments shall in Specially Protected Areas further prohibit:
@@ -185,14 +185,14 @@ designated Government that they do not accept it.
 ANNEXES TO THESE AGREED MEASURES
 ANNEX A
 Specially protected species
-…………..
-…………..
-…………..
+..............
+..............
+..............
 ANNEX B
 Specially protected areas
-…………..
-…………..
-…………..
+..............
+..............
+..............
 ANNEX C
 Importation of animals and plants
 The following animals and plants may be imported into the Treaty Area in accordance with permits

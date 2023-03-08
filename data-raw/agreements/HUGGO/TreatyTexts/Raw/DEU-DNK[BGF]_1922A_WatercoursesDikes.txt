@@ -9,11 +9,11 @@ portions of which constitute the boundary between Germany and Denmark, i. e.
 (2) The channel between the Jardelund and the Froesle meadows (from frontier posts No. 93 to
 its junction with the Skelboek at frontier stones No. 124) ;
 (3) The Skelboek from frontier stones No. 124 to frontier stones No. 155:
-(4) The Gammelaa from frontier stones No. 157 to its junction with the Sönderaa at frontier stones
+(4) The Gammelaa from frontier stones No. 157 to its junction with the Sonderaa at frontier stones
 No. 191 ;
-(5) The Sönderaa from frontier stones No. 191 to its junction with the Vidaa including the connecting
+(5) The Sonderaa from frontier stones No. 191 to its junction with the Vidaa including the connecting
 canals to and from the Haasberg Lake;
-(6) The Ruderböl Lake, subject however to the provisions of Article 55.
+(6) The Ruderbol Lake, subject however to the provisions of Article 55.
 The provisions shall also apply to the channel and canal systems connected up with watercourses
 Nos. i to 5.
 Article 2.
@@ -23,7 +23,7 @@ matters connected with the watercourses mentioned in Article 1. The Commission s
 for a period of six years and shall, whenever the matter relates to a watercourse within the district (Kreis)
 of Flensburg or South Tondern, consist of a member chosen by the district committee of the district
 of Flensburg or South Tondern, and whenever the matter relates to a watercourse in the Danish County
-(Amt) of Tönder or Aabenraa, of a member chosen by the District Council of Tönder or Aabenraa ;
+(Amt) of Tonder or Aabenraa, of a member chosen by the District Council of Tonder or Aabenraa ;
 it shall further consist of two judges or senior administrative officials appointed by the German and'
 Danish Governments respectively, whose judicial or administrative departments do not lie in any of
 the above districts (Kreise) or counties (Amter).
@@ -264,11 +264,11 @@ Alterations of the frontier.
 In drawing up the regularisation plans for the watercourses mentioned in Article 1, the following
 rules adopted by the International Boundary Commission in its statement of September 3, 1921, with
 regard to the frontier, shall also be observed:
-"Les projets de régularisation des cours d'eau frontières pourront être mis à exécution
-après accord entre les deux États, à condition que les changements envisagés par ces projets
-soient de peu d'importance et n'atteignent pas au total une superficie de plus de 4 héctares
-par kilomètre en moyenne. La ligne frontière suivra alors en général la ligne médiane du cours
-d'eau frontière regularisé"
+"Les projets de regularisation des cours d'eau frontieres pourront etre mis a execution
+apres accord entre les deux Etats, a condition que les changements envisages par ces projets
+soient de peu d'importance et n'atteignent pas au total une superficie de plus de 4 hectares
+par kilometre en moyenne. La ligne frontiere suivra alors en general la ligne mediane du cours
+d'eau frontiere regularise"
 Stretches of watercourses on the frontier, which have been artificially altered, shall be measured
 by surveyors belonging to both Parties on the basis of the frontier survey work. Supplementary official
 records in regard to this matter shall be drawn up in duplicate in the German and Danish languages
@@ -818,7 +818,7 @@ counties respectively.
 (9) Should a vacancy occur before the expiration of the period of six years among the members
 elected by the district committees or county councils or among the deputies, the president will be advised
 of the fact by the head district or head county official concerned. He will then arrange that due
-notice shall be given as prescribed in No. 8. •
+notice shall be given as prescribed in No. 8.
 The newly-elected member or deputy will only hold office for the remainder of the term of office
 ofJthe member or deputy who has retired.
 B. TRANSACTION OF BUSINESS.

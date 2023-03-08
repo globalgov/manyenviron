@@ -146,7 +146,7 @@ Licences shall be issued following payment to the Public Treasury of an annual a
 
 - 25 tonnes per year in the case of surface longliners of 150 grt or less.
 
-The final statement of the fees due for the fishing period shall be drawn up by the European Commission at the end of each calendar year on the basis of the catch statements made for each vessel and confirmed by the scientific institutes competent to verify catch data, such as the Institut de Recherche pour le Développement (IRD), the Instituto Español de Oceanografia (IEO) and the Instituto Português de Investigação Marítima (IPIMAR), in cooperation with the Centre National des Sciences Halieutiques de Boussoura (CNSHB). The statement shall be forwarded to the Fisheries Ministry and to the shipowners at the same time. Any additional payment due shall be made by the shipowners no later than 30 days after notification of the final statement, to be paid into the account opened with the Public Treasury of the Republic of Guinea.
+The final statement of the fees due for the fishing period shall be drawn up by the European Commission at the end of each calendar year on the basis of the catch statements made for each vessel and confirmed by the scientific institutes competent to verify catch data, such as the Institut de Recherche pour le Developpement (IRD), the Instituto Espanol de Oceanografia (IEO) and the Instituto Portugues de Investigacao Maritima (IPIMAR), in cooperation with the Centre National des Sciences Halieutiques de Boussoura (CNSHB). The statement shall be forwarded to the Fisheries Ministry and to the shipowners at the same time. Any additional payment due shall be made by the shipowners no later than 30 days after notification of the final statement, to be paid into the account opened with the Public Treasury of the Republic of Guinea.
 
 However, if the amount of the final statement is lower than the abovementioned amount, the resulting balance shall not be reimbursable.
 
@@ -232,7 +232,7 @@ While on board, observers shall:
 
 - draw up an activity report to be transmitted to the competent Guinean authorities and send a copy to the Delegation of the European Commission.
 
-The terms of observers' embarkation are to be agreed between the shipowner or his agent and the Guinean authorities. Their wages and social insurance contributions are to be paid by the Fisheries Ministry. Shipowners, through their agents, shall pay the Centre National de Surveillance et de Protection des Pêches EUR 15 for each day spent by an observer on board a trawler and EUR 10 for each day spent on board a tuna seiner or surface longliner. Shipowners who are unable to take observers aboard and put them off at a Guinean port agreed by common accord with the Guinean authorities shall bear the cost of taking the observers aboard and putting them ashore.
+The terms of observers' embarkation are to be agreed between the shipowner or his agent and the Guinean authorities. Their wages and social insurance contributions are to be paid by the Fisheries Ministry. Shipowners, through their agents, shall pay the Centre National de Surveillance et de Protection des Peches EUR 15 for each day spent by an observer on board a trawler and EUR 10 for each day spent on board a tuna seiner or surface longliner. Shipowners who are unable to take observers aboard and put them off at a Guinean port agreed by common accord with the Guinean authorities shall bear the cost of taking the observers aboard and putting them ashore.
 
 If the observer is not present at the time and place agreed and during the 12 hours following the time agreed, shipowners shall be automatically absolved of their obligation to take the observer on board.
 
@@ -260,7 +260,7 @@ These mesh sizes also apply to trawls used for fishing with outriggers.
 
 10. Entering and leaving the zone
 
-All Community vessels intending to enter or leaving the Republic of Guinea's fishing zone shall notify the radio station of the Centre National de Surveillance des Pêches (CNSP) thereof at least 24 hours in advance. They shall communicate the date and time and their position each time they enter and leave the Republic of Guinea's fishing zone.
+All Community vessels intending to enter or leaving the Republic of Guinea's fishing zone shall notify the radio station of the Centre National de Surveillance des Peches (CNSP) thereof at least 24 hours in advance. They shall communicate the date and time and their position each time they enter and leave the Republic of Guinea's fishing zone.
 
 The call sign and operating frequencies and times of the station shall be communicated to the shipowners by the CNSP at the time the licence is issued.
 

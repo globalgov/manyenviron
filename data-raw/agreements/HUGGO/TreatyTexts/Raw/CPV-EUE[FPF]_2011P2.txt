@@ -10,15 +10,15 @@ Period of application and fishing opportunities
 
 Highly migratory species (species listed in Annex 1 to the 1982 United Nations Convention on the Law of the Sea):
 
-—
+-
 
 freezer tuna seiners: 28 vessels,
 
-—
+-
 
 pole-and-line tuna vessels: 11 vessels,
 
-—
+-
 
 surface longliners: 35 vessels.
 
@@ -26,7 +26,7 @@ surface longliners: 35 vessels.
 
 Article 2
 
-Financial contribution – Methods of payment
+Financial contribution - Methods of payment
 
 1.   For the period referred to in Article 1, the financial contribution referred to in Article 7 of the Fisheries Partnership Agreement shall be EUR 435 000.
 
@@ -234,11 +234,11 @@ Designation of competent authority
 
 For the purposes of this Annex and unless otherwise indicated, any reference to the European Union (EU) or to Cape Verde as a competent authority shall mean:
 
-—
+-
 
 for the EU: the European Commission, where applicable via the EU Delegation in Cape Verde,
 
-—
+-
 
 for Cape Verde: the Minister for Fisheries.
 
@@ -262,7 +262,7 @@ CHAPTER II
 
 FISHING AUTHORISATIONS
 
-Condition for obtaining a fishing authorisation – eligible vessels
+Condition for obtaining a fishing authorisation - eligible vessels
 
 The Fishing authorisations referred to in Article 6 of the Agreement shall be issued on the condition that the vessel is included in the EU register of fishing vessels and that all previous obligations of the shipowner, the master, or the vessel itself arising out of fishing activities in Cape Verde under the Agreement have been met.
 
@@ -282,7 +282,7 @@ the name and address of the local consignee for the vessel, where there is one;
 
 (iii)
 
-a recent colour photograph of the vessel, showing a lateral view, and at least 15 cm × 10 cm in size;
+a recent colour photograph of the vessel, showing a lateral view, and at least 15 cm * 10 cm in size;
 
 (iv)
 
@@ -380,7 +380,7 @@ The master shall be responsible for the accuracy of the data recorded in the fis
 
 Catch reporting
 
-The master shall notify the vessel’s catch by submitting to Cape Verde its fishing logbooks for the period of its presence in the Cape Verdean fishing zone.
+The master shall notify the vessel's catch by submitting to Cape Verde its fishing logbooks for the period of its presence in the Cape Verdean fishing zone.
 
 The fishing logbooks shall be transmitted in one of the following ways:
 
@@ -412,15 +412,15 @@ The master shall send a copy of all the fishing logbooks to the EU. For tuna-fis
 
 (i)
 
-Institut de recherche pour le développement (IRD);
+Institut de recherche pour le developpement (IRD);
 
 (ii)
 
-Instituto Español de Oceanografía (IEO);
+Instituto Espanol de Oceanografia (IEO);
 
 (iii)
 
-Instituto Português de Investigação Maritima (IPIMAR); or
+Instituto Portugues de Investigacao Maritima (IPIMAR); or
 
 (iv)
 
@@ -534,9 +534,9 @@ CHAPTER VII
 
 SATELLITE MONITORING SYSTEM (VMS)
 
-Vessel position messages – VMS system
+Vessel position messages - VMS system
 
-Whilst they are in the Cape Verdean zone, EU vessels holding a fishing authorisation must be equipped with a satellite monitoring system (Vessel Monitoring System – VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre – FMC) of their flag state.
+Whilst they are in the Cape Verdean zone, EU vessels holding a fishing authorisation must be equipped with a satellite monitoring system (Vessel Monitoring System - VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre - FMC) of their flag state.
 
 Each position message must:
 
@@ -564,7 +564,7 @@ the speed and the course of the vessel;
 
 be configured in accordance with the format included in Appendix 4 to this Annex.
 
-The first position recorded after entry into the Cape Verde zone will be identified by the code ‘ENT’. All subsequent positions will be identified by the code ‘POS’, with the exception of the first position recorded after departure from the Cape Verde zone, which will be identified by the code ‘EXI’.
+The first position recorded after entry into the Cape Verde zone will be identified by the code 'ENT'. All subsequent positions will be identified by the code 'POS', with the exception of the first position recorded after departure from the Cape Verde zone, which will be identified by the code 'EXI'.
 
 The FMC of the flag state shall ensure the automatic processing and, if necessary, the electronic transmission of the position messages. The position messages shall be recorded in a secure manner and kept for a period of 3 years.
 
@@ -588,7 +588,7 @@ Malfunction of the communication system
 
 Cape Verde shall ensure the compatibility of its electronic equipment with that of the FMC of the flag state and inform the EU immediately of any malfunction as regards the communication and receiving of position messages with a view to finding a technical solution as soon as possible. The Joint Committee will deal with any possible dispute arising.
 
-The master will be considered to be responsible for any proven manipulation of the vessel’s VMS system aimed at disturbing its operation or falsifying its position messages. Any infringement will be subject to the penalties provided for by Cape Verdean legislation in force.
+The master will be considered to be responsible for any proven manipulation of the vessel's VMS system aimed at disturbing its operation or falsifying its position messages. Any infringement will be subject to the penalties provided for by Cape Verdean legislation in force.
 
 Revision of the frequency of position messages
 
@@ -604,9 +604,9 @@ Treatment of infringements
 
 Any infringement committed by an EU vessel holding a fishing authorisation in accordance with the provisions of this Annex must be mentioned in an inspection report.
 
-The signature of the inspection report by the master shall be without prejudice to the shipowner’s right of defence in respect of an infringement.
+The signature of the inspection report by the master shall be without prejudice to the shipowner's right of defence in respect of an infringement.
 
-Detention of a vessel – information meeting
+Detention of a vessel - information meeting
 
 Where permitted under the Cape Verdean legislation in force regarding the infringement, any EU vessel having committed an infringement may be forced to cease its fishing activity and, where the vessel is at sea, to return to a Cape Verdean port.
 
@@ -614,13 +614,13 @@ Cape Verde shall notify the EU within 24 hours of any detention of an EU vessel 
 
 Before taking any measure against the vessel, the master, the crew or the cargo, with the exception of measures aimed at protecting evidence, Cape Verde shall organise, at the request of the EU, within 1 working day of notification of the detention of the vessel, an information meeting to clarify the facts which have led to the vessel being detained and to explain what further action may be taken. A representative of the flag state of the vessel may attend this information meeting.
 
-Penalties for infringements – Compromise procedure
+Penalties for infringements - Compromise procedure
 
 The penalty for the infringement shall be set by Cape Verde according to the provisions of the national legislation in force.
 
 Where settling the infringement involves legal proceedings, before these are launched, and provided that the infringement does not involve a criminal act, a compromise procedure shall be undertaken between Cape Verde and the EU in order to determine the terms and level of the sanction. A representative of the flag state of the vessel may participate in this compromise procedure. The compromise procedure shall finish at the latest 3 days after the notification of the detention of the vessel.
 
-Legal proceedings – Bank security
+Legal proceedings - Bank security
 
 If the compromise procedure fails and the infringement is brought before the competent court, the owner of the vessel which committed the infringement shall deposit a bank security at a bank designated by Cape Verde, the amount of which, as set by Cape Verde, covers the costs linked to the detention of the vessel, the estimated fine and any compensation. The bank security may not be recovered until the legal proceedings have been concluded.
 
@@ -668,7 +668,7 @@ Cape Verde holds a list of Cape Verde seamen qualified to be signed on for EU ve
 
 The shipowner, or their consignee, shall choose freely from the list of Cape Verde seamen to be signed on and shall notify Cape Verde of their inclusion in the crew.
 
-Seamen’s contracts
+Seamen's contracts
 
 The employment contract for Cape Verde seamen shall be drawn up by the shipowner or its consignee and the seaman, represented by their union, if necessary. It shall be signed by the Cape Verdean maritime authority. It shall stipulate in particular the date and port of signing on.
 
@@ -678,13 +678,13 @@ A copy of the contract shall be given to the signatories.
 
 The basic working rights laid down in the declaration of the International Labour Organisation (ILO) shall be afforded to Cape Verde seamen. This concerns in particular the freedom of association and the effective recognition of the right to collective bargaining, and the elimination of discrimination in respect of employment and occupation.
 
-Seamen’s wages
+Seamen's wages
 
 The wages of the Cape Verde seamen shall be paid by the shipowner. They shall be set before the fishing authorisation is issued and by mutual agreement between the shipowner and its consignee in Cape Verde.
 
 The wages shall not be lower than those of crews on national vessels, nor the level determined by the ILO.
 
-Seamen’s obligations
+Seamen's obligations
 
 The seamen shall report to the master of the vessel to which they have been appointed the day before the signing-on date stipulated in their contract. The master shall inform the seaman of the date and time of signing on. If the seaman withdraws or does not present himself at the date and time stipulated for his signing on, his contract will be considered to be null and void and the shipowner will be automatically discharged from its obligation to sign him on. In this case the shipowner will not be liable for any financial penalty or compensation payment.
 
@@ -718,7 +718,7 @@ Flat-rate financial contribution
 
 At the time the fee is paid, the shipowner shall pay Cape Verde a flat-rate sum of EUR 100 per year for each vessel.
 
-Observer’s salary
+Observer's salary
 
 The salary and social contributions of the observer shall be borne by the Cape Verdean authorities.
 
@@ -734,7 +734,7 @@ The master shall take all the measures for which he is responsible to guarantee 
 
 Observers shall be offered every facility needed to carry out their duties. They shall have access to means of communication and to documents relating to the fishing activities of the vessel, in particular the fishing logbook and navigation log, and the parts of the vessel directly linked to their duties.
 
-Observer’s obligations
+Observer's obligations
 
 Whilst they are on board observers shall:
 
@@ -760,7 +760,7 @@ If the observer does not arrive to embark within 12 hours of the date and time s
 
 Where the observer is not disembarked in a Cape Verdean port, the shipowner shall bear the costs of repatriation of the observer to Cape Verde as soon as possible.
 
-Observer’s obligations
+Observer's obligations
 
 The observer shall carry out the following duties:
 
@@ -792,9 +792,9 @@ verify the percentages of by-catches and estimate the discarded catches;
 
 communicate observations by radio, fax or e-mail at least once a week while the vessel is fishing in the Cape Verdean zone, including the quantity of catches and by-catches on board.
 
-Observer’s report
+Observer's report
 
-Before leaving the vessel, the observer shall submit a report of his observations to the master of the vessel. The master of the vessel shall have the right to make comments in the observer’s report. The report shall be signed by the observer and the master. The master shall receive a copy of the observer’s report.
+Before leaving the vessel, the observer shall submit a report of his observations to the master of the vessel. The master of the vessel shall have the right to make comments in the observer's report. The report shall be signed by the observer and the master. The master shall receive a copy of the observer's report.
 
 The observer shall send his report to Cape Verde, which shall send a copy of it to the EU within 8 days of the disembarkation of the observer.
 
@@ -816,11 +816,11 @@ Address of shipowner:
 
 3.
 
-Name of shipowner’s representative or local agent:
+Name of shipowner's representative or local agent:
 
 4.
 
-Address of shipowner’s representative or local agent:
+Address of shipowner's representative or local agent:
 
 5.
 

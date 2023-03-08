@@ -402,25 +402,25 @@ Within the sea zone there shall, in addition to fish channels, established in
 conformity with the law of each State, be reserve zones. These shall consist of
 the waters to a distance of 200 metres on each side of the following straight
 lines :
-(a) From Kraaselikari in front of the river mouth bearing 196° to a point
-65°45.85'N, 24°06.45'E, thence to 65°44.0'N,24°10.0'E, thence to 65°40.55'N,
-24°11.95'E, thence between Sarvenkataja and Linnanklupu bearing 193°;
+(a) From Kraaselikari in front of the river mouth bearing 196&#186; to a point
+65&#186;45.85'N, 24&#186;06.45'E, thence to 65&#186;44.0'N,24&#186;10.0'E, thence to 65&#186;40.55'N,
+24&#186;11.95'E, thence between Sarvenkataja and Linnanklupu bearing 193&#186;;
 (b) From the point of intersection of the line running from Kraaselikari as
-indicated in (a) and latitude line 65°46.0'N to 65°46.05'N, 24°02.75'E,
-thence bearing 213.5° to 65°44.0'N, 23°59.50'E, thence to 65°42.0'N,
-24°01.70'E, thence to 65°36.0'N, 23°59.25'E, thence bearing 160°;
-(c) From 65°44.0'N, 23°59.50'E along the 213.5° bearing line referred to in
-(6) to 65°39.0'N, 23°51.50'E, thence to 65°38.0'N, 23°50.65'E, thence
-bearing 171°;
+indicated in (a) and latitude line 65&#186;46.0'N to 65&#186;46.05'N, 24&#186;02.75'E,
+thence bearing 213.5&#186; to 65&#186;44.0'N, 23&#186;59.50'E, thence to 65&#186;42.0'N,
+24&#186;01.70'E, thence to 65&#186;36.0'N, 23&#186;59.25'E, thence bearing 160&#186;;
+(c) From 65&#186;44.0'N, 23&#186;59.50'E along the 213.5&#186; bearing line referred to in
+(6) to 65&#186;39.0'N, 23&#186;51.50'E, thence to 65&#186;38.0'N, 23&#186;50.65'E, thence
+bearing 171&#186;;
 (d) From the point of intersection of the bearing line referred to in (b) and lati
-tude line 65°44.60'N to 65°44.50'N, 23°50.30'E, thence to 65°43.60'N,
-23°48.50'E, thence to 65°42.80'N, 23°48.70'E, thence to 65°41.40'N,
-23°46.85'E, thence bearing 200°;
-(<?) From the 65°44.0'N, 24° 10.0'E deflection point referred to in (a) to 65°43.95'N,
-24°14.15'E, thence to west of Vâhâ Huituri and Iso Huituri bearing 160°;
-(/) From the 65°43.95'N, 24°14.15'E deflection point referred to in (<?) to
-65°43,80'N, 24°19.40'E, thence to 65°42.30'N, 24°22.85'E, thence bearing
-172°.
+tude line 65&#186;44.60'N to 65&#186;44.50'N, 23&#186;50.30'E, thence to 65&#186;43.60'N,
+23&#186;48.50'E, thence to 65&#186;42.80'N, 23&#186;48.70'E, thence to 65&#186;41.40'N,
+23&#186;46.85'E, thence bearing 200&#186;;
+(<?) From the 65&#186;44.0'N, 24&#186; 10.0'E deflection point referred to in (a) to 65&#186;43.95'N,
+24&#186;14.15'E, thence to west of Vaha Huituri and Iso Huituri bearing 160&#186;;
+(/) From the 65&#186;43.95'N, 24&#186;14.15'E deflection point referred to in (<?) to
+65&#186;43,80'N, 24&#186;19.40'E, thence to 65&#186;42.30'N, 24&#186;22.85'E, thence bearing
+172&#186;.
 The co-ordinates refer to Swedish chart No. 417 (Haparanda), all editions
 1960-1967.
 The extent of the reserve zones is indicated on the chart annexed to the
@@ -441,9 +441,9 @@ gear designed for catching salmon or sea trout shall be forbidden within the
 portion of the sea zone lying between the mouth of the river and a line drawn
 from the south shore of the mouth of the bay of Salmis through the southern
 most points of the islands of Kraaseli and Tirro and the northwest point of Sell
-Islands up to the southwest point of Bjôrk Island.
+Islands up to the southwest point of Bjork Island.
 Fishing gear more than 200 metres in length may not be set up on either
-side of the strait between the islands of Stora Tervakari and Hamppuleiviskà.
+side of the strait between the islands of Stora Tervakari and Hamppuleiviska.
 Article 5
 The setting up of fishing gear constructed of timber or other durable
 materials and of a permanent nature "fixed fishing installations" shall, in
@@ -866,7 +866,7 @@ the knowledge of the competent authority so that the latter may take such action
 as may be incumbent upon it.
 Article 3
 The Frontier River Commission shall maintain continuous observation of
-water flow at the point where the River Târento (Târendô) flows out of the
+water flow at the point where the River Tarento (Tarendo) flows out of the
 River Torne. As the basis for this activity the Commission shall have the neces
 sary studies and calculations made as soon as possible in order to determine the
 volume of water flowing in each of the two rivers under prevailing natural condi
@@ -975,13 +975,13 @@ The Agreement shall enter into force on 1 January 1972.
 Article 4
 Upon the entry into force of this Agreement, the following shall cease to
 have effect :
-—The Convention of 10 May 1927 between Finland and Sweden concerning
+-The Convention of 10 May 1927 between Finland and Sweden concerning
 the joint exploitation of the salmon fisheries in the Tornea and Muonio
 Rivers ;
-—The Declaration of 8 September 1966 by Finland and Sweden concerning the
+-The Declaration of 8 September 1966 by Finland and Sweden concerning the
 application of the Convention of 10 May 1927 concerning the joint exploita
 tion of the salmon fisheries in the Tornea and Muonio Rivers ;
-—The Declaration of 10 May 1927 by Finland and Sweden concerning the
+-The Declaration of 10 May 1927 by Finland and Sweden concerning the
 adoption of Regulation for fishing in the fishery zone of the Tornea River.
 Article 5
 If any installation or project referred to in this Agreement is built or carried
@@ -1114,16 +1114,16 @@ REGULATIONS GOVERNING FISHING IN THE FISHERY ZONE
 OF THE RIVER TORNE
 GENERAL PROVISIONS
 The fishery zone of the River Torne shall comprise the following waters :
-— The Rivers Kônkâmâ and Muonio and the portion of the River Torne and the lakes
+- The Rivers Konkama and Muonio and the portion of the River Torne and the lakes
 through which the State frontier between Finland and Sweden runs "frontier
   rivers" ;
-— The lakes and watercourses that form branches of the frontier rivers ;
-— The special effluents formed by the various branches at the mouth of the River
+- The lakes and watercourses that form branches of the frontier rivers ;
+- The special effluents formed by the various branches at the mouth of the River
 Torne;
-— The part of the Gulf of Bothnia lying between the Finnish and Swedish parishes
-of Lower Torne north of latitude 65°35'N.
+- The part of the Gulf of Bothnia lying between the Finnish and Swedish parishes
+of Lower Torne north of latitude 65&#186;35'N.
 The part of the fishery zone of the River Torne lying north of the mouth of the
-river defined as a straight line between the top of Hellâlâ north point on the Finnish side
+river defined as a straight line between the top of Hellala north point on the Finnish side
 and the tip of Virtakari point, the nearest site on the opposite Swedish side, shall be
 called the river zone ; the part lying south of that line shall be called the sea zone.
 The effluents of the River Torne shall be part of the river zone.
@@ -1178,13 +1178,13 @@ or in or above the water whose purpose is to frighten fish into the catching gea
 Fishing with firearms shall be forbidden.
 10
 All fishing shall be forbidden from 15 September to 20 October in the portion of
-the River Kônkâmâ extending from Lake Kilpisjârvi to the point of junction with the
-River Làtaseno.
+the River Konkama extending from Lake Kilpisjarvi to the point of junction with the
+River Lataseno.
 Fishing with fixed gear shall be forbidden from 1 September to 14 September in
-the river zone downstream from the point of junction with the River Làtaseno.
+the river zone downstream from the point of junction with the River Lataseno.
 All fishing for fish other than lamprey shall be forbidden from 15 September to
 15 November in the river zone downstream from the point of junction with the River
-Làtaseno.
+Lataseno.
 11
 Fishing with seines, including goreless seines, elsewhere than in fixed fishing
 installations and fishing with drift nets shall be forbidden in the river zone, from 0800
@@ -1199,8 +1199,8 @@ Fish of the following types may not be caught if they are smaller than the minim
 size indicated below, as measured from tip of nose to extreme end of tailfin :
 (1) Salmon : 50 centimetres;
 with which fish can be speared.
-(2) Sea trout in the case of fishing in Lake Kilpisjârvi and in the portion of the River
-Kônkàmâ extending to the point of junction with the River Làtâseno : 25 centi
+(2) Sea trout in the case of fishing in Lake Kilpisjarvi and in the portion of the River
+Konkama extending to the point of junction with the River Lataseno : 25 centi
 metres; elsewhere in the fishery zone of the River Torne : 35 centimetres;
 (3) Grayling : 25 centimetres.
 14
@@ -1285,30 +1285,30 @@ gear from the water.
 LIABILITY FOR VIOLATIONS AND OTHER MATTERS
 24
 Any person who intentionally
-— Installs and uses fishing gear or other devices in clear violation of the provisions
+- Installs and uses fishing gear or other devices in clear violation of the provisions
 relating to fish channels or reserve zones of chapter 5, article 2 or 3, of the Agree
 ment concerning frontier rivers;
-— Or engages in fishing in clear violation of the prohibition provided for in chapter 5,
+- Or engages in fishing in clear violation of the prohibition provided for in chapter 5,
 article 4, of the Agreement concerning frontier rivers ;
-— Or engages in fishing in a manner prohibited under article 5, 7 or 9 of these regula
+- Or engages in fishing in a manner prohibited under article 5, 7 or 9 of these regula
 tions or in violation of the provisions of article 10-13
 shall be subject to a fine or to imprisonment for a period not exceeding six months.
 25
 A fine shall be imposed on any person who intentionally
-— Fishes with gear prohibited under article 6 or 8 ;
-— Or, with the intention of engaging in or promoting fishing with the gear referred
+- Fishes with gear prohibited under article 6 or 8 ;
+- Or, with the intention of engaging in or promoting fishing with the gear referred
 to in article 6, first paragraph, or article 8, carries such gear while proceeding to
 the fishing site ;
-— Or, with the intention of engaging in or promoting fishing of the kind referred to
+- Or, with the intention of engaging in or promoting fishing of the kind referred to
 in article 9, first or second paragraph, carries substances, objects or devices intended
 for such fishing while proceeding to the fishing site;
-— Or uses, in fixed fishing installations, wickets which do not have the interval
+- Or uses, in fixed fishing installations, wickets which do not have the interval
 between the slats specified in article 16 ;
-— Or fishes with gear prohibited under article 17 or with gear which does not have
+- Or fishes with gear prohibited under article 17 or with gear which does not have
 the mesh sizes specified in article 18 or 19;
-— Or violates regulations issued pursuant to article 20;
-— Or stocks fish without the permission referred to in article 21, second paragraph;
-— Or engages in fishing in violation of .regulations issued pursuant to chapter 5,
+- Or violates regulations issued pursuant to article 20;
+- Or stocks fish without the permission referred to in article 21, second paragraph;
+- Or engages in fishing in violation of .regulations issued pursuant to chapter 5,
 article 5, second paragraph, of the Agreement concerning frontier rivers.
 26
 Any person who wilfully or negligently disregards the provisions of article 15
@@ -1327,9 +1327,9 @@ shall also be forfeit.
 28
 Fishing gear which is used for fishing operations punishable under article 24
 or 25,
-— Or which, even though fishing has not taken place, is carried by a person proceeding
+- Or which, even though fishing has not taken place, is carried by a person proceeding
 to a fishing site under circumstances giving rise to penalties under article 25,
-— Or which is left standing in violation of article 15 or is not marked in accordance
+- Or which is left standing in violation of article 15 or is not marked in accordance
 with article 23,
 shall be declared wholely or partly forfeit if the owner or someone acting in his stead
 wilfully committed the act or assisted therein and if such forfeiture is not clearly

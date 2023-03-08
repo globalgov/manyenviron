@@ -1,6 +1,6 @@
 AGREEMENT BETWEEN THE GOVERNMENT OF AUSTRALIA AND THE GOVERNMENT OF THE REPUBLIC OF KOREA ON THE PROTECTION OF MIGRATORY BIRDS
 
-The Government of the Republic of Korea and the Government of Australia (hereinafter referred to as “the Parties”),
+The Government of the Republic of Korea and the Government of Australia (hereinafter referred to as "the Parties"),
 
 CONSIDERING that birds not only constitute an important element of the natural environment but also play an essential role in enriching the natural environment and that this role may be enhanced by proper management thereof,
 
@@ -16,7 +16,7 @@ Have agreed as follows:
 
 ARTICLE 1
 
-1. For the purposes of this Agreement, the term “migratory birds” means the species and subspecies of birds for which there is reliable evidence of migration between the two countries.
+1. For the purposes of this Agreement, the term "migratory birds" means the species and subspecies of birds for which there is reliable evidence of migration between the two countries.
 
 2. The list of the species defined as migratory birds in accordance with paragraph 1 of this Article is contained in the Annex to this Agreement, which shall form an integral part of this Agreement, and all references to the Agreement shall include references to the Annex.
 
@@ -102,412 +102,323 @@ English Name
 	
 Anas clypeata
 	
-넓적부리
 	
 Shoveler (Northern Shoveler)
 2
 	
 Anas querquedula
 	
-발구지
+
 	
 Garganey 
 3
 	
 Cuculus saturatus
 	
-벙어리뻐꾸기
+
 	
 Oriental Cuckoo
 4
 	
 Chaetura caudacuta (Hirundapus caudacutus)
 	
-바늘꼬리칼새
 	
 White-throated Needle-tailed Swift (White-throated Needletail)
 5
 	
 Apus pacificus
 	
-칼새
+
 	
 White-rumped Swift (Fork-tailed Swift)
 6
 	
 Gallinago hardwickii
 	
-큰꺅도요
+
 	
 Latham's Snipe
 7
 	
 Gallinago stenura
 	
-바늘꼬리도요
+
 	
 Pintail Snipe (Pin-tailed Snipe)
 8
 	
 Gallinago megala
 	
-꺅도요사촌
+
 	
 Swinhoe's Snipe
 9
 	
 Limosa limosa
 	
-흑꼬리도요
+
 	
 Black-tailed Godwit
 10
 	
 Limosa lapponica
 	
-큰뒷부리도요
+
 	
 Bar-tailed Godwit
 11
 	
 Numenius minutus
 	
-쇠부리도요
+
 	
 Little Curlew
 12
 	
 Numenius phaeopus
 	
-중부리도요
+
 	
 Whimbrel 
 13
 	
 Numenius madagascariensis
 	
-알락꼬리마도요
+
 	
 Australian Curlew (Eastern Curlew)
 14
 	
 Tringa totanus
 	
-붉은발도요
+
 	
 Redshank (Common Redshank)
 15
 	
 Tringa stagnatilis
-	
-쇠청다리도요
-	
+
 Marsh Sandpiper
 16
 	
 Tringa nebularia
 	
-청다리도요
+
 	
 Greenshank (Common Greenshank)
 17
 	
 Tringa glareola
 	
-알락도요
-	
 Wood Sandpiper
 18
 	
 Xenus cinereus
-	
-뒷부리도요
 	
 Terek Sandpiper
 19
 	
 Tringa hypoleucos (Acetitis hypoleucos)
 	
-깝작도요
-	
 Common Sandpiper
 20
 	
 Tringa brevipes (Heteroscelus brevipes)
-	
-노랑발도요
 	
 Grey-tailed Tattler
 21
 	
 Arenaria interpres
 	
-꼬까도요
-	
 Turnstone (Ruddy Turnstone)
 22
 	
 Limnodromus semipalmatus
-	
-큰부리도요
 	
 Asian Dowitcher
 23
 	
 Calidris tenuirostris
 	
-붉은어깨도요
-	
 Great Knot
 24
 	
 Calidris canutus
-	
-붉은가슴도요
 	
 Red Knot
 25
 	
 Crocethia alba (Calidris alba)
 	
-세가락도요
-	
 Sanderling 
 26
 	
 Calidris ruficollis
-	
-좀도요
 	
 Red-necked Stint
 27
 	
 Calidris minutilla(subminuta) (Calidris subminuta)
 	
-종달도요
-	
 Long-toed Stint
 28
 	
 Calidris minuta
 	
-작은도요
 	
 Little Stint
 29
 	
 Calidris melanotos
 	
-아메리카메추라기도요
 	
 Pectoral Sandpiper
 30
 	
 Calidris aeuminata
-	
-메추라기도요
-	
+		
 Sharp-tailed Sandpiper
 31
 	
 Calidris alpina
-	
-민물도요
+
 	
 Dunlin 
 32
 	
 Calidris ferruginea
 	
-붉은갯도요
-	
 Curlew Sandpiper
 33
 	
 Tryngites subruficollis
-	
-누른도요
 	
 Buff-breasted Sandpiper
 34
 	
 Limicola falcinellus
 	
-송곳부리도요
-	
 Broad-billed Sandpiper
 35
 	
 Philomachus pugnax
-	
-목도리도요
 	
 Ruff 
 36
 	
 Phalaropus lobatus
 	
-지느러미발도요
-	
 Red-necked (Northern) Phalarope (Red-necked Phalarope)
 37
 	
 Pluvialis fulva
-	
-검은가슴물떼새
 	
 Pacific Golden Plover
 38
 	
 Pluvialis squatarola
 	
-개꿩 
-	
 Grey (Black-bellied) Plover (Grey Plover)
 39
 	
 Charadrius hiaticula
-	
-흰죽지꼬마물떼새
 	
 Common Ringed Plover (Ringed Plover)
 40
 	
 Charadrius dubius
 	
-꼬마물떼새
-	
 Little Ringed Plover
 41
 	
 Charadrius mongolus
-	
-왕눈물떼새
 	
 Mongolian Plover (Lesser Sand Plover)
 42
 	
 Charadrius leschenaultii
 	
-큰왕눈물떼새
-	
 Greater Sand Plover
 43
 	
 Charadrius veredus
-	
-큰물떼새
 	
 Oriental Plover
 44
 	
 Glareola maldivarum
 	
-제비물떼새
-	
 Oriental Pratincole
 45
 	
 Stercorarius parasiticus
-	
-북극도둑갈매기
 	
 Parasitic Jaeger (Arctic Jaeger)
 46
 	
 Sterna hirundo
 	
-제비갈매기
-	
 Common Tern
 47
 	
 Sterna albifrons
-	
-쇠제비갈매기
 	
 Little Tern
 48
 	
 Sterna leucoptera (Chlidonias leucopterus)
 	
-흰죽지갈매기
-	
 White-winged Black Tern
 49
 	
 Sula dactylatra
-	
-검은제비갈매기
 	
 Masked Booby
 50
 	
 Sula leucogaster
 	
-갈색얼가니새
-	
 Brown Booby
 51
 	
 Fregata ariel
-	
-군함조
 	
 Lesser Frigate Bird
 52
 	
 Calonectris leucomelas
 	
-슴새
-	
 Streaked Shearwater
 53
 	
 Puffinus carneipes
-	
-붉은발슴새
 	
 Pale-footed Shearwater (Flesh-footed Shearwater)
 54
 	
 Puffinus tenuirostris
 	
-쇠부리슴새
-	
 Slender-billed Shearwater (Short-tailed Shearwater)
 55
 	
 Hirundo rustica
-	
-제비
 	
 House Swallow(Barn Swallow)
 56
 	
 Hirundo daurica
 	
-귀제비
-	
 Red-rumped Swallow
 57
 	
 Acrocephalus arundinaceus (Acrocephalus orientalis)
 	
-개개비
-	
 Great Reed Warbler (Oriental Reed- Warbler)
 58
 	
 Motacilla flava
-	
-긴발톱할미새
-	
 Yellow Wagtail
 59
 	
-Motacilla cinerea
-	
-노랑할미새
-	
+Motacilla cinerea	
 Grey Wagtail 

@@ -12,27 +12,27 @@ Scope
 
 Tuna and similar species (tuna, bonito, seerfishes, marlin, swordfish), associated species and fisheries under the Indian Ocean Tuna Commission (IOTC) management mandate, excluding
 
-—
+-
 
 species protected by international conventions,
 
-—
+-
 
 species whose retention on board, transhipment, landing or whose full or partial storage is prohibited by the IOTC, in particular species belonging to the Alopiidae or Sphyrnidae families, as well as
 
-—
+-
 
 the following species: Cethorinus maximus, Rhincodon typus, Carcharodon carcharias, Carcharinus falciformis and Carcharinus longimanus,
 
-—
+-
 
 40 tuna seiners, and
 
-—
+-
 
 32 surface longliners with a tonnage greater than 100 GT,
 
-—
+-
 
 22 surface longliners with a tonnage less than or equal to 100 GT.
 
@@ -152,15 +152,15 @@ Exploratory fishing surveys
 
 2.   The European Union shall communicate to the Malagasy authorities the applications for exploratory fishing authorisations on the basis of a technical file specifying:
 
-—
+-
 
 the technical characteristics of the vessel;
 
-—
+-
 
 the vessel's officers' level of expertise in the relevant fishery;
 
-—
+-
 
 the proposal for the technical parameters of the trip (length, gear, exploration regions, etc.).
 
@@ -174,7 +174,7 @@ the proposal for the technical parameters of the trip (length, gear, exploration
 
 Article 10
 
-Conditions governing fishing activities — Exclusivity clause
+Conditions governing fishing activities - Exclusivity clause
 
 1.   The European Union fishing vessels may fish in Madagascar's fishing zone only if named on the IOTC's list of authorised fishing vessels and if they have been granted a fishing authorisation issued by the Malagasy authorities under the Partnership Agreement and this Protocol.
 
@@ -278,7 +278,7 @@ for the Republic of Madagascar: the Ministry responsible for Fishery Resources a
 
 2.   Fishing authorisation
 
-For the purposes of applying the provisions of this Annex, the term ‘fishing authorisation’ shall be equivalent to ‘licence’, as defined in Malagasy legislation.
+For the purposes of applying the provisions of this Annex, the term 'fishing authorisation' shall be equivalent to 'licence', as defined in Malagasy legislation.
 
 3.   Madagascar's fishing zone
 
@@ -316,7 +316,7 @@ Any EU vessel owner wishing to obtain a fishing authorisation under the present 
 
 5.   Bank account for payments by vessel owners
 
-Madagascar shall notify the EU before the date of the provisional application of the Protocol, of the details of the Trésor Public (public treasury) bank account into which the financial sums payable by EU vessel owners should be paid under the Agreement. The associated bank transfer costs shall be borne by the vessel owners.
+Madagascar shall notify the EU before the date of the provisional application of the Protocol, of the details of the Tresor Public (public treasury) bank account into which the financial sums payable by EU vessel owners should be paid under the Agreement. The associated bank transfer costs shall be borne by the vessel owners.
 
 6.   The contacts:
 
@@ -326,7 +326,7 @@ CHAPTER II
 
 FISHING AUTHORISATIONS
 
-1.   Condition for obtaining a fishing authorisation — eligible vessels
+1.   Condition for obtaining a fishing authorisation - eligible vessels
 
 The fishing authorisations referred to in Article 6 of the Agreement shall be issued on the condition that the vessel is listed in the register of EU fishing vessels and is named on the list of fishing vessels authorised by the IOTC. In addition, the master and the vessel may not be prohibited from fishing in Madagascar's fishing zone.
 
@@ -344,15 +344,15 @@ The applications shall be made on the form included in Appendix 1 to this Annex.
 
 Each initial application for a fishing authorisation, or an application submitted due to a change in the technical characteristics of the vessel concerned, shall be accompanied by:
 
-—
+-
 
 proof of payment of the flat-rate advance fee for its period of validity;
 
-—
+-
 
-a recent colour photograph of the vessel, showing a lateral view, and at least 15 cm × 10 cm in size;
+a recent colour photograph of the vessel, showing a lateral view, and at least 15 cm * 10 cm in size;
 
-—
+-
 
 where appropriate, an attestation of the approval or registration of the health of the vessel, issued by the relevant EU authority.
 
@@ -366,11 +366,11 @@ In the case of renewal of a fishing authorisation under the Protocol in force fo
 
 The fee payable for tuna seiners and surface longliners, in EUR per tonne caught in the fishing zone for Madagascar, is established as being the following:
 
-—
+-
 
 EUR 60/tonne for the first two years of implementation;
 
-—
+-
 
 EUR 70/tonne for the last two years of implementation.
 
@@ -382,11 +382,11 @@ Fishing authorisations shall be issued once the following flat-rate advance fees
 
 For tuna seiners
 
-—
+-
 
 EUR 11 400 per tuna seiner, equivalent to the fees due for 190 tonnes per year for the first two years of implementation;
 
-—
+-
 
 EUR 13 300 per tuna seiner, equivalent to the fees due for 190 tonnes per year for the last two years of implementation;
 
@@ -394,11 +394,11 @@ EUR 13 300 per tuna seiner, equivalent to the fees due for 190 tonnes per year f
 
 For surface longliners of a tonnage greater than 100 GT
 
-—
+-
 
 EUR 3 600 per surface longliner, equivalent to the fees due for 60 tonnes per year for the first two years of implementation;
 
-—
+-
 
 EUR 4 200 per surface longliner, equivalent to the fees due for 60 tonnes per year for the last two years of implementation;
 
@@ -406,11 +406,11 @@ EUR 4 200 per surface longliner, equivalent to the fees due for 60 tonnes per ye
 
 For surface longliners with a tonnage less than or equal to 100 GT
 
-—
+-
 
 EUR 2 400 per surface longliner, equivalent to the fees due for 40 tonnes per year for the first two years of implementation;
 
-—
+-
 
 EUR 2 800 per surface longliner, equivalent to the fees due for 40 tonnes per year for the last two years of implementation;
 
@@ -468,15 +468,15 @@ The authorisations shall be renewable.
 
 If the provisional application is not scheduled to start on 1 January 2015, in order to establish the start of the period of validity of the fishing authorisation, annual period shall mean:
 
-—
+-
 
 for the first year of application of the Protocol, the period between the date of its provisional application and 31 December of the same year;
 
-—
+-
 
 and then, each complete calendar year;
 
-—
+-
 
 in the case of the last year of application of the Protocol, the period between 1 January and the date of expiry of the Protocol.
 
@@ -484,15 +484,15 @@ in the case of the last year of application of the Protocol, the period between 
 
 Whilst in Malagasy waters or in a Malagasy port, the following documents must be carried on board the fishing vessel at all times:
 
-—
+-
 
 the original fishing authorisation, however, for a period of 60 calendar days, and pending receipt of the original, a copy of the fishing authorisation referred to in point 4.3 of this section is authentic;
 
-—
+-
 
 the vessel's navigation licence or any equivalent document issued by the flag authority;
 
-—
+-
 
 a plan of the vessel's capacity, in the form of up-to-date drawings or descriptions of the layout of the fishing vessel and in particular, the number of fish holds of the fishing vessels, with the storage capacity expressed in cubic metres.
 
@@ -576,17 +576,17 @@ when passing through a Malagasy port, the original of each fishing logbook shall
 
 when leaving the Malagasy fishing zone without first passing through a Malagasy port, the original of each fishing logbook shall be sent:
 
-—
+-
 
 immediately in a scanned format by email to the email addresses provided by the competent authorities of Madagascar;
 
 or, otherwise,
 
-—
+-
 
 by fax, to the numbers provided by the competent authorities of Madagascar; or
 
-—
+-
 
 within a period of 7 working days after arrival in any other port, and in any case within a period of 15 working days after leaving the fishing zone of Madagascar, by post, to the address given in Appendix 9.
 
@@ -594,25 +594,25 @@ within a period of 7 working days after arrival in any other port, and in any ca
 
 The master shall send a copy of all the fishing logbooks to the EU and the competent flag State authority. The master shall also send a copy of all the fishing logbooks:
 
-—
+-
 
-to the USTA — Antsiranana Tuna Statistical Unit
+to the USTA - Antsiranana Tuna Statistical Unit
 
-—
+-
 
 and to one of the following scientific institutes:
 
-—
+-
 
-Institut de recherche pour le développement (IRD);
+Institut de recherche pour le developpement (IRD);
 
-—
+-
 
-Instituto Español de Oceanografía (IEO);
+Instituto Espanol de Oceanografia (IEO);
 
-—
+-
 
-Instituto Português do Mar e da Atmosfera (IPMA).
+Instituto Portugues do Mar e da Atmosfera (IPMA).
 
 2.4.
 
@@ -738,23 +738,23 @@ The fishing ports designated for these transhipment operations are Antsiranana f
 
 The owner of a European Union fishing vessel, or his representative, wishing to land or tranship in a Malagasy port shall simultaneously provide the FMC and the port authority in Madagascar, with the following information, at least 72 hours in advance:
 
-—
+-
 
 the name and registration number in the IOTC register of fishing vessels of the fishing vessel involved in the transhipment or landing;
 
-—
+-
 
 the port of landing or transhipment and, where applicable, the names of the cargo vessel;
 
-—
+-
 
 the date and time scheduled for the landing or transhipment;
 
-—
+-
 
 the quantity of each species held on board, identified by its FAO 3-alpha code and expressed in kilograms of live weight or, if necessary, the number of individual fish;
 
-—
+-
 
 the destination of the transhipped or landed catches.
 
@@ -786,35 +786,35 @@ SECTION 4
 
 Satellite-based vessel monitoring system (VMS)
 
-1.   Vessel position messages — VMS system
+1.   Vessel position messages - VMS system
 
 1.1.
 
-EU fishing vessels holding a fishing authorisation must be equipped with a satellite monitoring system (Vessel Monitoring System — VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre — FMC) of their flag state.
+EU fishing vessels holding a fishing authorisation must be equipped with a satellite monitoring system (Vessel Monitoring System - VMS) to enable automatic and continuous communication of their position, at all times, to the fishing control centre (Fisheries Monitoring Centre - FMC) of their flag state.
 
 1.2.
 
 Each position message must be configured in accordance with the format set out in Appendix 7 to this Annex and contain:
 
-—
+-
 
 the vessel identification;
 
-—
+-
 
 the vessel's most recent geographical position (longitude, latitude), with a margin of error of less than 500 metres and a confidence interval of 99 %;
 
-—
+-
 
 the date and time the position is recorded;
 
-—
+-
 
 the speed and the course of the vessel.
 
 1.3.
 
-The first position recorded after entry into the Malagasy fishing zone is identified by the code ‘ENT’. All subsequent positions shall be identified by the code ‘POS’, with the exception of the first position recorded after departure from the Madagascar fishing zone, which shall be identified by the code ‘EXI’.
+The first position recorded after entry into the Malagasy fishing zone is identified by the code 'ENT'. All subsequent positions shall be identified by the code 'POS', with the exception of the first position recorded after departure from the Madagascar fishing zone, which shall be identified by the code 'EXI'.
 
 1.4.
 
@@ -952,15 +952,15 @@ Madagascar and the EU shall make every effort, in collaboration with the other c
 
 A European Union fishing vessel designated to take on board an observer in accordance with point 2.1 shall be exempt from complying with this obligation if an observer is already on board and continues to be on board throughout the planned duration, provided that the observer:
 
-—
+-
 
 is recognised by means of a regional observer programme to which Madagascar and the EU are Parties; or
 
-—
+-
 
 was taken on board as a result of obligations equivalent to those referred to in point 1.2.2 of this section and provided for in other Sustainable Fisheries Partnership Agreements between the European Union and other coastal States in the South-West Indian Ocean;
 
-—
+-
 
 is in a position to meet the objectives contained in paragraphs 1.2.1 and 8 of this section and can transmit to the Malagasy FMC his observations at the time that the vessel is present in Madagascar's fishing zone.
 
@@ -1008,15 +1008,15 @@ The observer shall be offered every facility needed to carry out their duties. T
 
 Whilst they are on board observers shall:
 
-—
+-
 
 take all appropriate measures so as not to interrupt or hinder fishing operations;
 
-—
+-
 
 respect on-board property and equipment;
 
-—
+-
 
 respect the confidential nature of any document belonging to the vessel.
 
@@ -1056,19 +1056,19 @@ The observer shall carry out the following duties:
 
 Collating all information relating to the vessel's fishing activities, in particular as regards:
 
-—
+-
 
 the fishing gears used.
 
-—
+-
 
 the position of the vessel during fishing operations;
 
-—
+-
 
 the volumes or, where appropriate, the number of fish caught for each target species and each associated species, as well as the number of accidental catches and by-catches;
 
-—
+-
 
 an estimated number of catches retained on board and discards;
 
@@ -1084,7 +1084,7 @@ The observers shall, on a daily basis, communicate observations by radio, fax or
 
 9.1.
 
-Before leaving the vessel, the observer shall submit a report of his observations to the master of the vessel. The master of the vessel shall have the right to make comments in the observer's report. The report shall be signed by the observer and the master, who will receive a copy of the report. If the master refuses to sign the observer's report, he shall write in the inspection report the reasons of his refusal with the mention ‘refusal to sign’.
+Before leaving the vessel, the observer shall submit a report of his observations to the master of the vessel. The master of the vessel shall have the right to make comments in the observer's report. The report shall be signed by the observer and the master, who will receive a copy of the report. If the master refuses to sign the observer's report, he shall write in the inspection report the reasons of his refusal with the mention 'refusal to sign'.
 
 9.2.
 
@@ -1116,7 +1116,7 @@ The master of the European Union fishing vessel shall allow inspectors to come o
 
 3.3.
 
-At the end of each inspection, the inspectors shall draw up an inspection report. The master of the European Union fishing vessel shall have the right to comment in the inspection report. The inspection report shall be signed by the inspector drawing up the report and the master of the European Union vessel. Should the master refuse to sign the inspection report, they will write the reasons for their refusal in the inspection report with the statement ‘refusal to sign’.
+At the end of each inspection, the inspectors shall draw up an inspection report. The master of the European Union fishing vessel shall have the right to comment in the inspection report. The inspection report shall be signed by the inspector drawing up the report and the master of the European Union vessel. Should the master refuse to sign the inspection report, they will write the reasons for their refusal in the inspection report with the statement 'refusal to sign'.
 
 3.4.
 
@@ -1144,7 +1144,7 @@ A copy of the inspection report and the notification of the infringement shall b
 
 The signature of the inspection report by the master shall be without prejudice to the vessel owner's right of defence in respect of the infringement concerned.
 
-2.   Detention of a vessel — Information meeting
+2.   Detention of a vessel - Information meeting
 
 2.1.
 
@@ -1158,7 +1158,7 @@ Madagascar shall provide electronic notification to the EU, within 24 hours, of 
 
 Before taking any measure against the vessel, the master, the crew or the cargo, with the exception of measures aimed at protecting evidence, Madagascar shall organise, within one working day after notification of the vessel's detention, an information meeting to clarify the events which led to the vessel's detention and explaining what further action may be taken. A representative of the flag State and of the vessel owner may attend this information meeting.
 
-3.   Penalties for infringements — Compromise procedure
+3.   Penalties for infringements - Compromise procedure
 
 3.1.
 
@@ -1172,7 +1172,7 @@ Where settling the infringement involves legal proceedings, before these are ini
 
 A representative of the flag State of the European Union fishing vessel may participate in the compromise procedure.
 
-4.   Legal proceedings — Bank security
+4.   Legal proceedings - Bank security
 
 4.1.
 
@@ -1182,11 +1182,11 @@ If the compromise procedure fails and the infringement is brought before the com
 
 The bank guarantee shall be released and returned to the vessel owner as soon as possible after the judgment has been delivered:
 
-—
+-
 
 in full, if no penalty has been imposed;
 
-—
+-
 
 for the amount of the remaining balance, if the penalty is a fine which is lower than the amount of the bank security.
 
@@ -1258,31 +1258,31 @@ All costs of mobilisation and demobilisation between the port of embarkation or 
 
 LIST OF APPENDICES
 
-Appendix 1 —
+Appendix 1 -
 
 Application form for a fishing authorisation	
-Appendix 2 —
+Appendix 2 -
 
 Technical sheet	
-Appendix 3 —
+Appendix 3 -
 
 Coordinates (latitude and longitude) of Madagascar's fishing zone	
-Appendix 4 —
+Appendix 4 -
 
 Geographical coordinates of the area reserved exclusively for small-scale fishing and traditional Malagasy fishing	
-Appendix 5 —
+Appendix 5 -
 
 Template for quarterly declarations of provisional catches and fishing effort	
-Appendix 6 —
+Appendix 6 -
 
 Forms for declaring entry into/exit from the fishing zone	
-Appendix 7 —
+Appendix 7 -
 
 Format of VMS position message	
-Appendix 8 —
+Appendix 8 -
 
 Guidelines for implementing the electronic reporting system for data relating to fishing activities (ERS)	
-Appendix 9 —
+Appendix 9 -
 
 Contact details in Madagascar
 
@@ -1294,7 +1294,7 @@ Guidelines for implementing the electronic reporting system for fishing activiti
 
 i.
 
-All Union fishing vessels must be equipped with an electronic system, hereinafter referred to as an ‘ERS’, capable of recording and transmitting data on the vessel's fishing activities, hereinafter referred to as ‘ERS data’, when the vessel is operating in the Malagasy fishing zone.
+All Union fishing vessels must be equipped with an electronic system, hereinafter referred to as an 'ERS', capable of recording and transmitting data on the vessel's fishing activities, hereinafter referred to as 'ERS data', when the vessel is operating in the Malagasy fishing zone.
 
 ii.
 
@@ -1412,7 +1412,7 @@ vi.
 
 If the Malagasy FMC does not receive ERS data from a vessel for three consecutive days, Madagascar may instruct a vessel to immediately call at a port of its choosing in order to investigate.
 
-4.   FMC failure — ERS data not received by Malagasy FMC
+4.   FMC failure - ERS data not received by Malagasy FMC
 
 i.
 
@@ -1468,7 +1468,7 @@ Contact details in Madagascar
 
 N.B.: Madagascar will provide all the information set out below by the entry into force of this Protocol at the latest
 
-1.   Ministère des Ressources Halieutiques et de la Pêche (Ministry for Fishery Resources and Fishing)
+1.   Ministere des Ressources Halieutiques et de la Peche (Ministry for Fishery Resources and Fishing)
 
 Name, address, e-mail address, telephone and fax numbers
 
@@ -1496,6 +1496,6 @@ HF: F1 5.283 MHZ; F2 7.3495 MHZ
 
 Postal address, main e-mail address, alternative e-mail address, telephone and fax numbers.
 
-5.   Unité de Statistique Thonière d'Antsiranana (Antsiranana Tuna Statistical Unit)
+5.   Unite de Statistique Thoniere d'Antsiranana (Antsiranana Tuna Statistical Unit)
 
 Postal address, e-mail address, telephone and fax numbers

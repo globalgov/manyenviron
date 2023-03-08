@@ -142,7 +142,7 @@ Licences are to be issued following payment to the Ministry of Fisheries of a lu
 
 - 25 tonnes of tuna caught per year in the case of surface longliners.
 
-The final statement of the fees due for the fishing period is to be drawn up by the Commission at the end of each calendar year on the basis of the catch statements made for each vessel and confirmed by the scientific institutes responsible for verifying catch data, such as the Institut Français de Recherche Scientifique pour le Développement en Coopération (Orstom) and the Instituto Español de Oceanografía (IEO), in cooperation with the Centre National des Sciences Halieutiques de Boussoura (CNSHB). The statement is to be forwarded simultaneously to the Ministry of Fisheries and to the shipowners. No later than 30 days after the final statement is notified, any additional charges due are to be paid by the shipowners to the Ministry of Fisheries using the account opened with the public treasury of Guinea.
+The final statement of the fees due for the fishing period is to be drawn up by the Commission at the end of each calendar year on the basis of the catch statements made for each vessel and confirmed by the scientific institutes responsible for verifying catch data, such as the Institut Francais de Recherche Scientifique pour le Developpement en Cooperation (Orstom) and the Instituto Espanol de Oceanografia (IEO), in cooperation with the Centre National des Sciences Halieutiques de Boussoura (CNSHB). The statement is to be forwarded simultaneously to the Ministry of Fisheries and to the shipowners. No later than 30 days after the final statement is notified, any additional charges due are to be paid by the shipowners to the Ministry of Fisheries using the account opened with the public treasury of Guinea.
 
 However, if the final statement is lower than the abovementioned advance, the resulting balance will not be reimbursed.
 
@@ -214,7 +214,7 @@ The travelling costs of observers taken on board in foreign ports are to be born
 
 4. The wages and social insurance contributions of observers are to be paid by the Ministry of Fisheries.
 
-In the case of trawlers, shipowners are to pay ECU 15 to the Centre National de Surveillance des Pêches (CNSP) for each day an observer spends on board as a contribution towards the expenses arising from the observer's presence on board.
+In the case of trawlers, shipowners are to pay ECU 15 to the Centre National de Surveillance des Peches (CNSP) for each day an observer spends on board as a contribution towards the expenses arising from the observer's presence on board.
 
 5. Should a vessel with a Guinean observer on board leave Guinea's fishing zone, all steps must be taken for his return to Conakry as soon as possible at the expense of the shipowner.
 
@@ -242,7 +242,7 @@ These mesh sizes also apply to trawls used for fishing with outriggers.
 
 J. Entering and leaving the zone
 
-Community vessels fishing under the Agreement in Guinea's fishing zone must report the date and time and their position each time they enter and leave Guinea's fishing zone to the radio station of the Centre National de Surveillance des Pêches (CNSP).
+Community vessels fishing under the Agreement in Guinea's fishing zone must report the date and time and their position each time they enter and leave Guinea's fishing zone to the radio station of the Centre National de Surveillance des Peches (CNSP).
 
 The CNSP will inform the shipowners of the call sign and operating frequencies of the station at the time the licence is issued.
 

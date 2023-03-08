@@ -328,7 +328,7 @@ Agreement.
 under this Agreement may mark any such information, if in English,
 "Australia-Russia-Nuclear-in-Confidence" and, if in
 Russian,
-"конфиденциально".
+"konfidentsial'no".
 A Party receiving information so marked shall protect
 this informationat a level equivalent to the protection applied by
 the supplying Party to such information. Such information

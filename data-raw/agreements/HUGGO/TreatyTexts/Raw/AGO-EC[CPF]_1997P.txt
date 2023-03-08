@@ -81,10 +81,10 @@ In addition, the skipper shall keep a fishing log book, in accordance with Appen
 This form must be completed legibly and be signed by the skipper of the vessel and sent to the Department of Inspection and Monitoring of the Ministry of Fisheries via the Delegation of the European Communities within 45 days of the end of the fishing campaign.
 In the event of failure to comply with this provision, Angola reserves the right to apply the penalties provided for in its legislation.
 H. FISHING ZONES
-(a) The fishing zones accessible to shrimp vessels shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola north of 12° 20' prime and beyond the first 12 nautical miles measured from the base lines.
+(a) The fishing zones accessible to shrimp vessels shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola north of 12&#186; 20' prime and beyond the first 12 nautical miles measured from the base lines.
 (b) The fishing zones accessible to freezer tuna seiners and surface longliners shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola beyond the first 12 nautical miles measured from the base lines.
 (c) The fishing zones accessible to vessels engaged in demersal fishing shall comprise all waters under the sovereignty or the jurisdiction of the Republic of Angola:
-- trawlers: beyond the first 12 nautical miles measured from the base lines and restricted northwards by 13° 00' prime and south and southwards by a line five miles north of the limit between the exclusive economic zones (EEZs) of Angola and Namibia,
+- trawlers: beyond the first 12 nautical miles measured from the base lines and restricted northwards by 13&#186; 00' prime and south and southwards by a line five miles north of the limit between the exclusive economic zones (EEZs) of Angola and Namibia,
 - other types of vessels: beyond the first eight nautical miles measured from the base lines and restricted southwards by a line five miles north of the limit between the EEZs of Angola and Namibia.
 I. SIGNING OF CREWS
 Owners of all vessels, except freezer tuna seiners and surface longliners, to whom fishing licences have been issued under this Agreement shall contribute to the on-the-job vocational training of at least five Angolan seamen on board each vessel, who shall be freely chosen from a list drawn up by the Ministry of Fisheries.
@@ -246,7 +246,7 @@ To be annexed:
 (Date of application)
 (Signature of owner's representative)
 Appendix 3.1
-DAILY CATCH REPORT INSTITUTO DE INVESTIGAÇAO PESQUEIRA
+DAILY CATCH REPORT INSTITUTO DE INVESTIGACAO PESQUEIRA
 (for all demersal trawlers)
 Haul (13)NoNoNoNoNo
 Date (14)
@@ -279,7 +279,7 @@ SpeciesWholeFilletsHeads offSpeciesTotal (kg)
 Appendix 3.2
 IMAGE
 Appendix 4.1
-DAILY CATCH REPORT INSTITUTO DE INVESTIGAÇAO PESQUEIRA
+DAILY CATCH REPORT INSTITUTO DE INVESTIGACAO PESQUEIRA
 (for all shrimp vessels)
 Haul (13)NoNoNoNoNo
 Date (14)

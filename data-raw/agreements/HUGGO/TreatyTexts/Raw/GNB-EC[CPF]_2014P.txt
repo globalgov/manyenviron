@@ -8,7 +8,7 @@ PROTOCOL
   
   1.   For a period of three years, the fishing opportunities granted to vessels of the European Union under Article 5 of the Fisheries Partnership Agreement shall be as follows:
     
-    —
+    -
   
   crustaceans and demersal species:
     
@@ -20,7 +20,7 @@ PROTOCOL
   
   freezer, fin-fish and cephalopod trawlers: 3 500 GRT per year;
   
-  —
+  -
   
   highly migratory species (species listed in Annex 1 to the 1982 United Nations Convention on the Law of the Sea):
     
@@ -36,7 +36,7 @@ PROTOCOL
   
   Article 2
   
-  Financial contribution — Methods of payment
+  Financial contribution - Methods of payment
   
   1.   For the period referred to in Article 1 of the Protocol, the financial contribution referred to in Article 7 of the Fisheries Partnership Agreement shall be EUR 9 200 000 per year.
   
@@ -96,7 +96,7 @@ Scientific cooperation on responsible fishing
   
   Joint Scientific Committee
   
-  1.   The Joint Scientific Committee is composed of scientists, who are appointed in equal number by each of the two parties. If both parties agree, participation in the joint scientific committee can be extended to include observers — particularly representatives of regional fisheries organisations, such as the CECAF.
+  1.   The Joint Scientific Committee is composed of scientists, who are appointed in equal number by each of the two parties. If both parties agree, participation in the joint scientific committee can be extended to include observers - particularly representatives of regional fisheries organisations, such as the CECAF.
   
   2.   The Joint Scientific Committee shall meet at least once a year, in accordance with Article 4(1) of the Fisheries Partnership Agreement. In principle, the meetings should be held alternately in Guinea-Bissau and in the European Union. At the request of one of the parties, other meetings may also be convened. The meetings shall be chaired alternately by the two parties.
   
@@ -142,15 +142,15 @@ Scientific cooperation on responsible fishing
   
   2.   The European Commission shall communicate to the authorities of Guinea-Bissau the applications for exploratory fishing licences on the basis of a technical file indicating:
     
-    —
+    -
   
   the technical characteristics of the vessel;
   
-  —
+  -
   
   the vessel's officers' level of expertise in the relevant fishery;
   
-  —
+  -
   
   the proposal for the technical parameters of the trip (length, gear, exploration regions, etc.).
   
@@ -336,7 +336,7 @@ CHAPTER II
 
 Fishing authorisations
 
-1.   Condition for obtaining a fishing authorisation — eligible vessels
+1.   Condition for obtaining a fishing authorisation - eligible vessels
 
 The fishing authorisations referred to in Article 6 of the Agreement shall be issued on the condition that the vessel is included in the EU register of fishing vessels and that all previous obligations of the vessel owner, the master, or the vessel itself arising out of fishing activities in Guinea-Bissau under the Agreement have been met.
 
@@ -596,15 +596,15 @@ The master shall notify the vessel's catch by submitting to Guinea-Bissau its fi
     
     (i)
   
-  Institut de recherche pour le développement (IRD);
+  Institut de recherche pour le developpement (IRD);
   
   (ii)
   
-  IEO (Instituto Español de Oceanografía); or
+  IEO (Instituto Espanol de Oceanografia); or
   
   (iii)
   
-  INIAP (Instituto Nacional de investigação agrária e das Pescas).
+  INIAP (Instituto Nacional de investigacao agraria e das Pescas).
   
   2.5.
   
@@ -676,11 +676,11 @@ CHAPTER VI
 
 Satellite-based vessel monitoring system (VMS)
 
-1.   Vessel position messages — VMS system
+1.   Vessel position messages - VMS system
 
 1.1.
 
-While they are in the Guinea-Bissau zone, EU vessels holding a fishing authorisation must be equipped with a satellite monitoring system (Vessel Monitoring System — VMS) to enable automatic and continuous communication of their position, at all times, to the fisheries monitoring centre (FMC) of their flag State.
+While they are in the Guinea-Bissau zone, EU vessels holding a fishing authorisation must be equipped with a satellite monitoring system (Vessel Monitoring System - VMS) to enable automatic and continuous communication of their position, at all times, to the fisheries monitoring centre (FMC) of their flag State.
 
 1.2.
 
@@ -712,7 +712,7 @@ be configured in accordance with the format set out in the Appendix.
 
 1.3.
 
-The position recorded after entry into the Guinea-Bissau zone shall be identified by the code ‘ENT’. All subsequent positions shall be identified by the code ‘POS’, with the exception of the first position recorded after departure from the Guinea-Bissau zone, which shall be identified by the code ‘EXI’.
+The position recorded after entry into the Guinea-Bissau zone shall be identified by the code 'ENT'. All subsequent positions shall be identified by the code 'POS', with the exception of the first position recorded after departure from the Guinea-Bissau zone, which shall be identified by the code 'EXI'.
 
 1.4.
 
@@ -828,7 +828,7 @@ The master shall be considered to be responsible for any proven manipulation of 
   
   The signature of the inspection report by the master shall be without prejudice to the vessel owner's right of defence in respect of an infringement.
 
-2.   Detention of a vessel — information meeting
+2.   Detention of a vessel - information meeting
 
 2.1.
 
@@ -842,7 +842,7 @@ Guinea-Bissau shall notify the EU within 48 hours of any detention of an EU vess
 
 Before taking any measure against the vessel, the master, the crew or the cargo, with the exception of measures aimed at protecting evidence, Guinea-Bissau shall organise, at the request of the EU, within one working day of notification of the detention of the vessel, an information meeting to clarify the facts which have led to the vessel being detained and to explain what further action may be taken. A representative of the flag State of the vessel may attend this information meeting.
 
-3.   Penalties for infringements — Compromise procedure
+3.   Penalties for infringements - Compromise procedure
 
 3.1.
 
@@ -852,7 +852,7 @@ The penalty for the infringement shall be set by Guinea-Bissau according to the 
 
 Where settling the infringement involves legal proceedings, before these are launched, a compromise procedure shall be undertaken between Guinea-Bissau and the EU to determine the terms and level of the penalty. A representative of the flag State of the vessel may participate in this compromise procedure. The compromise procedure shall finish at the latest four days after the notification of the detention of the vessel.
 
-4.   Legal proceedings — Bank security
+4.   Legal proceedings - Bank security
 
 4.1.
 
@@ -1083,22 +1083,22 @@ report his observations at least once a week by radio, including the quantity of
   
   Appendices
   
-  1 —
+  1 -
   
   Application form for a fishing licence	
-  2 —
+  2 -
   
   Statistics on catch and fishing effort	
-  3 —
+  3 -
   
   Tuna vessels fishing logbook	
-  4 —
+  4 -
   
   Electronic communication of fishing operations	
-  5 —
+  5 -
   
   Communication of VMS messages to Guinea-Bissau	
-  6 —
+  6 -
   
   Technical sheets by category
   
@@ -1110,7 +1110,7 @@ report his observations at least once a week by radio, including the quantity of
   
   1.
   
-  Every EU vessel fishing under this Protocol must be equipped with a working electronic recording and communication system, hereinafter referred to as an ‘ERS system’ (ERS — Electronic Reporting System), capable of recording and transmitting the data on the fishing activities, hereinafter referred to as ‘ERS data’, throughout the period the vessel is in Guinea-Bissau waters. An EU vessel that is not equipped with an ERS system, or whose ERS system is not working, is not authorised to begin a fishing operation in Guinea-Bissau waters.
+  Every EU vessel fishing under this Protocol must be equipped with a working electronic recording and communication system, hereinafter referred to as an 'ERS system' (ERS - Electronic Reporting System), capable of recording and transmitting the data on the fishing activities, hereinafter referred to as 'ERS data', throughout the period the vessel is in Guinea-Bissau waters. An EU vessel that is not equipped with an ERS system, or whose ERS system is not working, is not authorised to begin a fishing operation in Guinea-Bissau waters.
   
   2.
   

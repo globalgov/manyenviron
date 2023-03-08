@@ -54,7 +54,7 @@ When Finnish and Russian citizens are
 engaged in fishing, outside the territorial
 waters of the Contracting Powers, in the
 portions of the Gulf of Finland lying to the
-east of longitude 27°30' E. of Greenwich,
+east of longitude 27&#186;30' E. of Greenwich,
 the following provisions of the present Convention
 shall-be applicable.
 
@@ -111,7 +111,7 @@ Convention for fishermen of either Contracting
 Party or their boats to enter the territorial
 waters or land on the coast of the other Contracting
 Party owing to stress of weather,
-fog, ice, or other perils of the sea (relâche forcée).
+fog, ice, or other perils of the sea (relache forcee).
 
 Article 8.
 The present Convention shall come into

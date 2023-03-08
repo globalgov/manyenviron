@@ -38,25 +38,25 @@ Use of terms and scope
 
 (a)
 
-‘Convention’ means the United Nations Convention on the Law of the Sea of 10 December 1982;
+'Convention' means the United Nations Convention on the Law of the Sea of 10 December 1982;
 
 (b)
 
-‘conservation and management measures’ means measures to conserve and manage one or more species of living marine resources that are adopted and applied consistent with the relevant rules of international law as reflected in the Convention and this Agreement;
+'conservation and management measures' means measures to conserve and manage one or more species of living marine resources that are adopted and applied consistent with the relevant rules of international law as reflected in the Convention and this Agreement;
 
 (c)
 
-‘fish’ includes molluscs and crustaceans except those belonging to sedentary species as defined in Article 77 of the Convention; and
+'fish' includes molluscs and crustaceans except those belonging to sedentary species as defined in Article 77 of the Convention; and
 
 (d)
 
-‘arrangement’ means a cooperative mechanism established in accordance with the Convention and this Agreement by two or more States for the purpose, inter alia, of establishing conservation and management measures in a subregion or region for one or more straddling fish stocks or highly migratory fish stocks.
+'arrangement' means a cooperative mechanism established in accordance with the Convention and this Agreement by two or more States for the purpose, inter alia, of establishing conservation and management measures in a subregion or region for one or more straddling fish stocks or highly migratory fish stocks.
 
 2.
 
 (a)
 
-‘States Parties’ means States which have consented to be bound by this Agreement and for which the Agreement is in force.
+'States Parties' means States which have consented to be bound by this Agreement and for which the Agreement is in force.
 
 (b)
 
@@ -68,9 +68,9 @@ to any entity referred to in Article 305(1)(c), (d) and (e), of the Convention a
 
 (ii)
 
-subject to Article 47, to any entity referred to as an ‘international organisation’ in Annex IX, Article 1, of the Convention
+subject to Article 47, to any entity referred to as an 'international organisation' in Annex IX, Article 1, of the Convention
 
-which becomes a Party to this Agreement, and to that extent ‘States Parties’ refers to those entities.
+which becomes a Party to this Agreement, and to that extent 'States Parties' refers to those entities.
 
 3.   This Agreement applies mutatis mutandis to other fishing entities whose vessels fish on the high seas.
 
@@ -128,7 +128,7 @@ adopt, where necessary, conservation and management measures for species belongi
 
 (f)
 
-minimise pollution, waste, discards, catch by lost or abandoned gear, catch of non-target species, both fish and non-fish species, (hereinafter referred to as ‘non-target species’) and impacts on associated or dependent species, in particular endangered species, through measures including, to the extent practicable, the development and use of selective, environmentally safe and cost-effective fishing gear and techniques;
+minimise pollution, waste, discards, catch by lost or abandoned gear, catch of non-target species, both fish and non-fish species, (hereinafter referred to as 'non-target species') and impacts on associated or dependent species, in particular endangered species, through measures including, to the extent practicable, the development and use of selective, environmentally safe and cost-effective fishing gear and techniques;
 
 (g)
 
@@ -1286,11 +1286,11 @@ The Community shares competence with its Member States on the following matters 
 
 The following provisions of the Agreement apply both to the Community and to its Member States:
 
-—
+-
 
 general provisions: (Articles 1, 4 and 34 to 50),
 
-—
+-
 
 dispute settlement: (Part VIII).
 
@@ -1300,7 +1300,7 @@ Interpretative declarations to be deposited by the Community and its Member Stat
 
 1.
 
-The European Community and its Member States understand that the terms ‘geographical particularities’, ‘specific characteristics of the sub-region or region’, ‘socioeconomic geographical and environmental factors’, ‘natural characteristics of that sea’ or any other similar terms employed in reference to a geographical region do not prejudice the rights and duties of States under international law.
+The European Community and its Member States understand that the terms 'geographical particularities', 'specific characteristics of the sub-region or region', 'socioeconomic geographical and environmental factors', 'natural characteristics of that sea' or any other similar terms employed in reference to a geographical region do not prejudice the rights and duties of States under international law.
 
 2.
 
@@ -1308,7 +1308,7 @@ The European Community and its Member States understand that no provision of thi
 
 3.
 
-The European Community and its Member States understand that the term ‘States whose nationals fish on the high seas’ shall not provide any new grounds for jurisdiction based on the nationality of persons involved in fishing on the high seas rather than on the principle of flag State jurisdiction.
+The European Community and its Member States understand that the term 'States whose nationals fish on the high seas' shall not provide any new grounds for jurisdiction based on the nationality of persons involved in fishing on the high seas rather than on the principle of flag State jurisdiction.
 
 4.
 
@@ -1320,7 +1320,7 @@ Regarding the application of Article 21, the European Community and its Member S
 
 Any dispute related to this issue shall be settled in accordance with the procedures provided for in Part VIII of the Agreement. No State may invoke this type of dispute to remain in control of a vessel which does not fly its flag.
 
-In addition, the European Community and its Member States consider that the word ‘unlawful’ in Article 21(18) of the Agreement should be interpreted in the light of the whole Agreement, and in particular, Articles 4 and 35 thereof.
+In addition, the European Community and its Member States consider that the word 'unlawful' in Article 21(18) of the Agreement should be interpreted in the light of the whole Agreement, and in particular, Articles 4 and 35 thereof.
 
 6.
 

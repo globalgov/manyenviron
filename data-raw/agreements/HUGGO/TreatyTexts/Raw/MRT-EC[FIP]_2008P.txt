@@ -18,7 +18,7 @@ fishing zones only if they are in possession of a fishing
 licence issued under this Protocol in accordance with the Annexes
 hereto.
 Article 2
-Financial contribution — Methods of payment
+Financial contribution - Methods of payment
 1. The financial contribution under Article 7 of the Agreement
 shall be set at EUR 86 million, EUR 76 million, EUR 73 million
 and EUR 70 million for the first, second, third and fourth years
@@ -28,7 +28,7 @@ third and fourth years respectively shall be allocated by Mauritania
 to financial support for the implementation of the national
 fisheries policy, as provided for in Article 7(1)(b) of the Agreement,
 including EUR 1 million per year for support for the Banc
-d’Arguin National Park (PNBA).
+d'Arguin National Park (PNBA).
 2. In the event of the overall tonnage of 250 000 tonnes per
 year for category 9 (pelagics) being exceeded, the Community
 shall pay an additional contribution of EUR 40 per tonne fished.
@@ -38,7 +38,7 @@ and 13 of this Protocol.
 than 31 August 2008 for the first year and no later than 1 August
 for the following years.
 5. The financial contribution shall be paid into a single account
-held by the Islamic Republic of Mauritania’s Public Treasury with
+held by the Islamic Republic of Mauritania's Public Treasury with
 the Central Bank of Mauritania, the references of which shall be
 communicated by the Ministry.
 6. Subject to Article 6 of this Protocol, the allocation of this
@@ -85,7 +85,7 @@ Review of fishing opportunities
 may be increased by mutual agreement provided that the
 conclusions of the Joint Scientific Committee referred to in
 Article 4(1) of the Agreement confirm that such an increase will
-not endanger the sustainable management of Mauritania’s
+not endanger the sustainable management of Mauritania's
 resources. In this case the financial contribution referred to in
 Article 2(1) of this Protocol shall be increased proportionately and
 pro rata temporis. However, the total amount of the financial contribution
@@ -149,16 +149,16 @@ the two Parties, vessels operating under exploratory fishing
 arrangements shall land all their catches in Mauritania.
 Article 6
 Contribution of the Fisheries Partnership Agreement to
-the implementation of Mauritania’s sectoral fisheries
+the implementation of Mauritania's sectoral fisheries
 policy
 1. The financial support under Article 7(1)(b) of the Agreement
 shall be set at EUR 11 million, EUR 16 million, EUR 18 million
 and EUR 20 million for the first, second, third and fourth
 years respectively in accordance with Article 2(1) of this Protocol.
 This financial support shall contribute to the development
-and implementation of the Stratégie Nationale de Développement
-durable du secteur des Pêches de Mauritanie (national strategy for
-the sustainable development of Mauritania’s fisheries sector) with
+and implementation of the Strategie Nationale de Developpement
+durable du secteur des Peches de Mauritanie (national strategy for
+the sustainable development of Mauritania's fisheries sector) with
 a view to introducing sustainable and responsible fishing in its
 waters in keeping with the strategic objectives of conservation of
 fish stocks and better integration of the sector into the national
@@ -171,47 +171,47 @@ above, in the light of objectives identified by mutual agreement
 between the two Parties, the programming to attain them and the
 indicators enabling such attainment to be assessed.
 3. Without prejudice to the objectives identified by the two
-Parties and in accordance with the priorities of the Stratégie
-Nationale de Développement durable du secteur des Pêches de
+Parties and in accordance with the priorities of the Strategie
+Nationale de Developpement durable du secteur des Peches de
 Mauritanie and with a view to ensuring sustainable and responsible
 management of stocks and promoting the development of
 the sector, the two Parties agree to focus on:
   The following objectives in the context of fisheries development
 and rent optimisation:
-— implementation of fisheries development plans (octopus,
+- implementation of fisheries development plans (octopus,
 prawns, ect.),
-— stepping up of fisheries and oceanographic research,
-— reinforcement of the surveillance authority,
-— control and adjustment of capacities,
-— development of new fisheries (sardines, anchovies, etc.).
+- stepping up of fisheries and oceanographic research,
+- reinforcement of the surveillance authority,
+- control and adjustment of capacities,
+- development of new fisheries (sardines, anchovies, etc.).
 The following objectives in the context of the increased economic
 and social impact of the sector:
-— development of port infrastructure and services,
-— compliance with standards and promotion of quality, particularly
+- development of port infrastructure and services,
+- compliance with standards and promotion of quality, particularly
 in terms of improving health and hygiene conditions
 in the production of fisheries products and strengthening the
 monitoring capacity of the competent Mauritanian
 authorities,
-— promotion of private investment in the sector, particularly by
+- promotion of private investment in the sector, particularly by
 upgrading and modernising production equipment, and promotion
 of global competitiveness factors and comparative
 advantages,
-— development of non-industrial maritime fisheries, inland fisheries
+- development of non-industrial maritime fisheries, inland fisheries
 and aquaculture.
 The following objectives in the context of protection of the
 marine environment, habitats and the coastline:
-— conservation of the marine environment and aquatic habitats,
-— reinforcement of capacity for analysing and combating
+- conservation of the marine environment and aquatic habitats,
+- reinforcement of capacity for analysing and combating
 marine pollution.
 The following objectives in the context of the legal and institutional
 framework:
-— strengthening of the institutional capacity of the Ministry for
+- strengthening of the institutional capacity of the Ministry for
 Fisheries and of the bodies reporting to it,
-— improvement in the legal framework for the pursuit of fisheries
+- improvement in the legal framework for the pursuit of fisheries
 activities and in the institutional environment of the
 sector.
 Article 7
-Methods of implementing the support for Mauritania’s
+Methods of implementing the support for Mauritania's
 sectoral fisheries policy
 1. Without prejudice to Article 6(3) of this Protocol, the European
 Community and the Ministry shall reach agreement, within
@@ -272,7 +272,7 @@ of investment, taking into account the development of
 landing infrastructure, bringing up to standard and modernisation
 of production tools and promotion of marketing channels
 for fisheries products, as well as measures aimed at enhancing
-the sector’s legal and institutional environment and its
+the sector's legal and institutional environment and its
 competitiveness.
 2. The two Parties agree to set up a joint think-tank to periodically
 examine questions relating to the promotion of private
@@ -283,7 +283,7 @@ and appropriate forms of private-public partnership. This
 think-tank shall be able to define a specific annual action plan and
 jointly monitor its implementation, particularly in the context of
 the contribution of the Partnership Agreement to the implementation
-of Mauritania’s sectoral fisheries policy.
+of Mauritania's sectoral fisheries policy.
 3. The two Parties also agree to organise an annual meeting in
 the context of a forum aimed at promoting private partnership in
 the Mauritanian fisheries sector. This annual forum, to which
@@ -297,7 +297,7 @@ or transporting catches made in Mauritanian fishing zones
 by land) a reduction in the amount of fees, in accordance with
 Annex I to this Protocol and with the relevant Mauritanian law.
 Article 9
-Disputes — suspension of application of the Protocol
+Disputes - suspension of application of the Protocol
 1. Any dispute between the Parties over the interpretation of
 this Protocol and its Annexes or its application shall be the subject
 of consultations between the Parties within the Joint Committee

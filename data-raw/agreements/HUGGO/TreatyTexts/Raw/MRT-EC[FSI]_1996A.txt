@@ -1,4 +1,4 @@
-GREEMENT on cooperation in the sea fisheries sector between the European Community and the Islamic Republic of Mauritania
+AGREEMENT on cooperation in the sea fisheries sector between the European Community and the Islamic Republic of Mauritania
 
 THE EUROPEAN COMMUNITY,
 
@@ -12,7 +12,7 @@ hereinafter referred to as 'Mauritania`
 
 hereinafter referred to as the 'Contracting Parties`,
 
-CONSIDERING the close and privileged relations between the Community and Mauritania and both Parties' desire to create an effective partnership in the framework of the Euro-Mediterranean project and taking account of the spirit of cooperation resulting from the Lomé Convention;
+CONSIDERING the close and privileged relations between the Community and Mauritania and both Parties' desire to create an effective partnership in the framework of the Euro-Mediterranean project and taking account of the spirit of cooperation resulting from the Lome Convention;
 
 AWARE of the role played by the sea fisheries sector and related industries in the economic and social development of Mauritania and various regions of the Community and taking account of both Parties' determination to modernize and reorganize their fishing fleets, each for its part;
 
@@ -294,17 +294,17 @@ FISHING CATEGORY: FISHING VESSELS SPECIALIZING IN CRUSTACEANS OTHER THAN CRAWFIS
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: nine nautical miles from the baseline of Cap Blanc-Cap Timiris;
+1.1. north of latitude 19&#186; 21' N: nine nautical miles from the baseline of Cap Blanc-Cap Timiris;
 
 During a period laid down annually by decree of the Minister responsible for sea fishing, fishing is not authorized within the lines between the following points:
 
-20° 46' N - 17° 03' W,
+20&#186; 46' N - 17&#186; 03' W,
 
-19° 50' N - 17° 03' W,
+19&#186; 50' N - 17&#186; 03' W,
 
-19° 21' N - 16° 45' W;
+19&#186; 21' N - 16&#186; 45' W;
 
-1.2. south of latitude 19° 21' N: six nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: six nautical miles from the low-water mark.
 
 2. Authorized gear: Bottom shrimp trawl
 
@@ -332,19 +332,19 @@ FISHING CATEGORY: BLACK HAKE TRAWLERS (1) AND BOTTOM LONGLINERS
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: the lines between the following points:
+1.1. north of latitude 19&#186; 21' N: the lines between the following points:
 
-20° 36' N - 17° 36' W,
+20&#186; 36' N - 17&#186; 36' W,
 
-20° 03' N - 17° 36' W,
+20&#186; 03' N - 17&#186; 36' W,
 
-19° 50' N - 17° 12,8' W,
+19&#186; 50' N - 17&#186; 12,8' W,
 
-19° 50' N - 17° 03' W,
+19&#186; 50' N - 17&#186; 03' W,
 
-19° 04' N - 16° 34' W;
+19&#186; 04' N - 16&#186; 34' W;
 
-1.2. south of latitude 19° 21' N: 18 nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: 18 nautical miles from the low-water mark.
 
 2. Authorized gear: - Bottom longline
 
@@ -376,9 +376,9 @@ FISHING CATEGORY: VESSELS FISHING FOR DEMERSAL SPECIES OTHER THAN BLACK HAKE WIT
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: three nautical miles from the baseline of Cap Blanc-Cap Timiris;
+1.1. north of latitude 19&#186; 21' N: three nautical miles from the baseline of Cap Blanc-Cap Timiris;
 
-1.2. south of latitude 19° 21' N: three nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: three nautical miles from the low-water mark.
 
 2. Authorized gear (1): - Longline
 
@@ -410,19 +410,19 @@ FISHING CATEGORY: TRAWLERS FISHING FOR DEMERSAL SPECIES OTHER THAN BLACK HAKE
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: the lines between the following points:
+1.1. north of latitude 19&#186; 21' N: the lines between the following points:
 
-20° 36' N - 17° 36' W,
+20&#186; 36' N - 17&#186; 36' W,
 
-20° 03' N - 17° 36' W,
+20&#186; 03' N - 17&#186; 36' W,
 
-19° 50' N - 17° 12,8' W,
+19&#186; 50' N - 17&#186; 12,8' W,
 
-19° 50' N - 17° 03' W,
+19&#186; 50' N - 17&#186; 03' W,
 
-19° 04' N - 16° 34' W;
+19&#186; 04' N - 16&#186; 34' W;
 
-1.2. south of latitude 19° 21' N: 18 nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: 18 nautical miles from the low-water mark.
 
 2. Authorized gear: Trawl net.
 
@@ -454,11 +454,11 @@ FISHING CATEGORY: CEPHALOPODS
 
 During a period laid down annually by decree of the Minister responsible for sea fishing, fishing is not authorized within the lines between the following points:
 
-20° 46' N - 17° 03' W,
+20&#186; 46' N - 17&#186; 03' W,
 
-19° 50' N - 17° 03' W,
+19&#186; 50' N - 17&#186; 03' W,
 
-19° 21' N - 16° 45' W,
+19&#186; 21' N - 16&#186; 45' W,
 
 2. Authorized gear: Bottom trawl.
 
@@ -486,9 +486,9 @@ FISHING CATEGORY: CRAWFISH
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: 20 nautical miles from the baseline Cap Blanc-Cap Timiris;
+1.1. north of latitude 19&#186; 21' N: 20 nautical miles from the baseline Cap Blanc-Cap Timiris;
 
-1.2. south of latitude 19° 21' N: 15 nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: 15 nautical miles from the low-water mark.
 
 2. Authorized gear: Pots
 
@@ -512,9 +512,9 @@ FISHING CATEGORY: FREEZER TUNA SEINERS
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: 30 nautical miles from the baseline of Cap Blanc-Cap Timiris;
+1.1. north of latitude 19&#186; 21' N: 30 nautical miles from the baseline of Cap Blanc-Cap Timiris;
 
-1.2. south of latitude 19° 21' N: 30 nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: 30 nautical miles from the low-water mark.
 
 2. Authorized gear: Seine net
 
@@ -536,9 +536,9 @@ FISHING CATEGORY: POLE-AND-LINE TUNA VESSELS AND SURFACE LONGLINERS
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: 15 nautical miles from the baseline of Cap Blanc-Cap Timiris;
+1.1. north of latitude 19&#186; 21' N: 15 nautical miles from the baseline of Cap Blanc-Cap Timiris;
 
-1.2. south of latitude 19° 21' N: 12 nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: 12 nautical miles from the low-water mark.
 
 2. Authorized gear: Pole-and-line and surface longlines
 
@@ -556,9 +556,9 @@ FISHING CATEGORY: POLE-AND-LINE TUNA VESSELS AND SURFACE LONGLINERS
 
 7.1. Fishing zone authorized for live-bait fishing:
 
-- north of latitude 19° 21' N: three nautical miles from the baseline of Cap Blanc-Cap Timiris,
+- north of latitude 19&#186; 21' N: three nautical miles from the baseline of Cap Blanc-Cap Timiris,
 
-- south of latitude 19° 21' N: three nautical miles from the low-water mark.
+- south of latitude 19&#186; 21' N: three nautical miles from the low-water mark.
 
 7.2. Minimum authorized mesh size for live-bait fishing: 8 mm.
 
@@ -568,19 +568,19 @@ FISHING CATEGORY: PELAGIC FREEZER TRAWLERS
 
 1. Fishing zone:
 
-1.1. north of latitude 19° 21' N: the lines between the following points:
+1.1. north of latitude 19&#186; 21' N: the lines between the following points:
 
-20° 46,3' N - 17° 03' W,
+20&#186; 46,3' N - 17&#186; 03' W,
 
-20° 10,7' N - 17° 24,2' W,
+20&#186; 10,7' N - 17&#186; 24,2' W,
 
-19° 50' N - 17° 12,8' W,
+19&#186; 50' N - 17&#186; 12,8' W,
 
-19° 43' N - 16° 58' W,
+19&#186; 43' N - 16&#186; 58' W,
 
-19° 21' N - 16° 45' W;
+19&#186; 21' N - 16&#186; 45' W;
 
-1.2. south of latitude 19° 21' N: 12 nautical miles from the low-water mark.
+1.2. south of latitude 19&#186; 21' N: 12 nautical miles from the low-water mark.
 
 2. Authorized gear: Pelagic trawl
 
@@ -634,7 +634,7 @@ CHAPTER II Licences - application, issue and validity
 
 1.1. Each vessel wishing to fish under this Agreement must be eligible for fishing in Mauritania's fishing zone.
 
-1.2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Mauritania. They must be in order vis-à-vis the Mauritanian authorities in so far as they must have fulfilled all prior obligations arising from their fishing activities in Mauritania under fisheries agreements concluded with the Community.
+1.2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in Mauritania. They must be in order vis-a-vis the Mauritanian authorities in so far as they must have fulfilled all prior obligations arising from their fishing activities in Mauritania under fisheries agreements concluded with the Community.
 
 2. Licence applications
 
@@ -686,15 +686,15 @@ CHAPTER IV Methods of payment
 
 (a) fees:
 
-- by transfer to one of the foreign accounts of the Central Bank of Mauritania payable to the Trésor de la Mauritanie;
+- by transfer to one of the foreign accounts of the Central Bank of Mauritania payable to the Tresor de la Mauritanie;
 
 (b) scientific observers' expenses:
 
-- by transfer to one of the foreign accounts of the Central Bank of Mauritania payable to the Trésor de la Mauritanie;
+- by transfer to one of the foreign accounts of the Central Bank of Mauritania payable to the Tresor de la Mauritanie;
 
 (c) fines:
 
-- by transfer to one of the foreign accounts of the Central Bank of Mauritania payable to the Trésor de la Mauritanie.
+- by transfer to one of the foreign accounts of the Central Bank of Mauritania payable to the Tresor de la Mauritanie.
 
 2. The amounts referred to in point 1 shall be considered as actually received on receipt of confirmation from the Treasury or the Ministry following notification by the Central Bank of Mauritania.
 
@@ -836,7 +836,7 @@ However, on receipt of notification of payment of the advance sent to the Maurit
 
 3. The fee to be paid by the shipowner shall be set at ECU 20 per tonne caught within Mauritania's fishing zone.
 
-4. Licences shall be issued following payment to one of the foreign accounts of the Central Bank of Mauritania, payable to the Trésor de la Mauritanie, of a lump sum corresponding to the advance specified in the data sheets in the Protocol.
+4. Licences shall be issued following payment to one of the foreign accounts of the Central Bank of Mauritania, payable to the Tresor de la Mauritanie, of a lump sum corresponding to the advance specified in the data sheets in the Protocol.
 
 5. A logbook in accordance with the ICCAT model in Appendix 4 to this Annex shall be kept on vessels for each fishing period spent in Mauritanian waters. It shall be filled in even when no catches are made.
 
@@ -850,7 +850,7 @@ Copies of these documents shall be sent to the scientific institutes referred to
 
 The previous year's statement shall reach the Commission by 31 March which shall forward it simultaneously to the shipowners and national authorities of the Member States by 15 April.
 
-Where the shipowners dispute the statement presented by Mauritania, they may request the relevant scientific institutes, e.g. France's Institut de la Recherche Scientifique et Technique d'Outre-Mer (Orstom) and the Instituto Español de Oceanografía (IEO), to verify the catch data before consulting with the Mauritanian authorities with a view to drawing up the final statement by 15 May of the current year. In the absence of any observations from the shipowners by that date, the statement drawn up by the Mauritanian authorities shall be deemed final. Member States shall forward to the Commission the final statements relating to their own fleets.
+Where the shipowners dispute the statement presented by Mauritania, they may request the relevant scientific institutes, e.g. France's Institut de la Recherche Scientifique et Technique d'Outre-Mer (Orstom) and the Instituto Espanol de Oceanografia (IEO), to verify the catch data before consulting with the Mauritanian authorities with a view to drawing up the final statement by 15 May of the current year. In the absence of any observations from the shipowners by that date, the statement drawn up by the Mauritanian authorities shall be deemed final. Member States shall forward to the Commission the final statements relating to their own fleets.
 
 Any payment due in addition to the advance shall be made by the shipowners to Mauritania's fisheries authorities no later than 31 May of that year.
 
@@ -886,7 +886,7 @@ In cases of force majeure, shipowners may, once they have suspended the licence 
 
 Shipowners shall pay a sum of ECU 18 to the Mauritanian public treasury for each tonne caught in excess of the ceiling fixed by type of vessel. Declarations of catch shall be drawn up by common agreement no later than one month after the end of each year.
 
-The fees and any additional amounts due shall be paid to one of the Central Bank of Mauritania's foreign accounts payable to the Trésor de la Mauritanie.
+The fees and any additional amounts due shall be paid to one of the Central Bank of Mauritania's foreign accounts payable to the Tresor de la Mauritanie.
 
 4. In the event of a fall in the world market fob price set in Nouadhibou for the Mauritanian horse mackerel to under US $ 300 or a rise to over US $ 500 per tonne net, the Parties shall open negotiations with a view to adjusting the level of the fees.
 
@@ -1004,9 +1004,9 @@ CHAPTER I Entering and leaving the fishing zone
 
 1. Except for tuna vessels and surface longliners and pelagic freezer trawlers, Community vessels operating under this Agreement must enter and leave Mauritania's fishing zone by one of two passages in the presence of the surveillance authorities:
 
-- the northern passage, the coordinates of which are 20°40'N - 17°04'W,
+- the northern passage, the coordinates of which are 20&#186;40'N - 17&#186;04'W,
 
-- the southern passage, the coordinates of which are 16°20'N - 16°40'W.
+- the southern passage, the coordinates of which are 16&#186;20'N - 16&#186;40'W.
 
 2. Shipowners shall notify the surveillance authorities of their entry into and exit from Mauritania's fishing zone by telex, fax or mail to the numbers or address in Appendix 1 to this Annex.
 
@@ -1298,7 +1298,7 @@ ADDRESS OF THE SURVEILLANCE AUTHORITIES
 
 >START OF GRAPHIC>
 
-1. Address: Boîte postale 260
+1. Address: Boite postale 260
 
 Nouadhibou
 

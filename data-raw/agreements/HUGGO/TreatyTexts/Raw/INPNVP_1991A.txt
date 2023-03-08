@@ -3,28 +3,28 @@ DEFINITIONS
 Article 1
 Definitions
 For the purposes of this Act:
-(i) “this Convention” means the present (1991) Act of the International Convention for the Protection of New Varieties of Plants;
-(ii) “Act of 1961/1972” means the International Convention for the Protection of New Varieties of Plants of December 2, 1961, as amended by the Additional Act of November 10, 1972;
-(iii) “Act of 1978” means the Act of October 23, 1978, of the International Convention for the Protection of New Varieties of Plants;
-(iv) “breeder” means
+(i) "this Convention" means the present (1991) Act of the International Convention for the Protection of New Varieties of Plants;
+(ii) "Act of 1961/1972" means the International Convention for the Protection of New Varieties of Plants of December 2, 1961, as amended by the Additional Act of November 10, 1972;
+(iii) "Act of 1978" means the Act of October 23, 1978, of the International Convention for the Protection of New Varieties of Plants;
+(iv) "breeder" means
 - the person who bred, or discovered and developed, a variety,
-- the person who is the employer of the aforementioned person or who has commissioned the latter’s work, where the laws of the relevant Contracting Party so provide, or
+- the person who is the employer of the aforementioned person or who has commissioned the latter's work, where the laws of the relevant Contracting Party so provide, or
 - the successor in title of the first or second aforementioned person, as the case may be;
-(v) “breeder’s right” means the right of the breeder provided for in this Convention;
-(vi) “variety” means a plant grouping within a single botanical taxon of the lowest known rank, which grouping, irrespective of whether the conditions for the grant of a breeder’s right are fully met, can be
+(v) "breeder's right" means the right of the breeder provided for in this Convention;
+(vi) "variety" means a plant grouping within a single botanical taxon of the lowest known rank, which grouping, irrespective of whether the conditions for the grant of a breeder's right are fully met, can be
 - defined by the expression of the characteristics resulting from a given genotype or combination of genotypes,
 - distinguished from any other plant grouping by the expression of at least one of the said characteristics and
 - considered as a unit with regard to its suitability for being propagated unchanged;
-(vii) “Contracting Party” means a State or an intergovernmental organization party to this Convention;
-(viii) “territory,” in relation to a Contracting Party, means, where the Contracting Party is a State, the territory of that State and, where the Contracting Party is an intergovernmental organization, the territory in which the constituting treaty of that intergovernmental organization applies;
-(ix) “authority” means the authority referred to in Article 30(1)(ii);
-(x) “Union” means the Union for the Protection of New Varieties of Plants founded by the Act of 1961 and further mentioned in the Act of 1972, the Act of 1978 and in this Convention;
-(xi) “member of the Union” means a State party to the Act of 1961/1972 or the Act of 1978, or a Contracting Party.
+(vii) "Contracting Party" means a State or an intergovernmental organization party to this Convention;
+(viii) "territory," in relation to a Contracting Party, means, where the Contracting Party is a State, the territory of that State and, where the Contracting Party is an intergovernmental organization, the territory in which the constituting treaty of that intergovernmental organization applies;
+(ix) "authority" means the authority referred to in Article 30(1)(ii);
+(x) "Union" means the Union for the Protection of New Varieties of Plants founded by the Act of 1961 and further mentioned in the Act of 1972, the Act of 1978 and in this Convention;
+(xi) "member of the Union" means a State party to the Act of 1961/1972 or the Act of 1978, or a Contracting Party.
 CHAPTER II
 GENERAL OBLIGATIONS OF THE CONTRACTING PARTIES
 Article 2
 Basic Obligation of the Contracting Parties
-Each Contracting Party shall grant and protect breeders’ rights.
+Each Contracting Party shall grant and protect breeders' rights.
 Article 3
 Genera and Species to be Protected
 (1) [States already members of the Union] Each Contracting Party which is bound by the Act of 1961/1972 or the Act of 1978 shall apply the provisions of this Convention,
@@ -35,28 +35,28 @@ Genera and Species to be Protected
 (ii) at the latest by the expiration of a period of 10 years from the said date, to all plant genera and species.
 Article 4
 National Treatment
-(1) [Treatment] Without prejudice to the rights specified in this Convention, nationals of a Contracting Party as well as natural persons resident and legal entities having their registered offices within the territory of a Contracting Party shall, insofar as the grant and protection of breeders’ rights are concerned, enjoy within the territory of each other Contracting Party the same treatment as is accorded or may hereafter be accorded by the laws of each such other Contracting Party to its own nationals, provided that the said nationals, natural persons or legal entities comply with the conditions and formalities imposed on the nationals of the said other Contracting Party.
-(2) [“Nationals”] For the purposes of the preceding paragraph, “nationals” means, where the Contracting Party is a State, the nationals of that State and, where the Contracting Party is an intergovernmental organization, the nationals of the States which are members of that organization.
+(1) [Treatment] Without prejudice to the rights specified in this Convention, nationals of a Contracting Party as well as natural persons resident and legal entities having their registered offices within the territory of a Contracting Party shall, insofar as the grant and protection of breeders' rights are concerned, enjoy within the territory of each other Contracting Party the same treatment as is accorded or may hereafter be accorded by the laws of each such other Contracting Party to its own nationals, provided that the said nationals, natural persons or legal entities comply with the conditions and formalities imposed on the nationals of the said other Contracting Party.
+(2) ["Nationals"] For the purposes of the preceding paragraph, "nationals" means, where the Contracting Party is a State, the nationals of that State and, where the Contracting Party is an intergovernmental organization, the nationals of the States which are members of that organization.
 CHAPTER III
-CONDITIONS FOR THE GRANT OF THE BREEDER’S RIGHT
+CONDITIONS FOR THE GRANT OF THE BREEDER'S RIGHT
 Article 5
 Conditions of Protection
-(1) [Criteria to be satisfied] The breeder’s right shall be granted where the variety is
+(1) [Criteria to be satisfied] The breeder's right shall be granted where the variety is
 (i) new,
 (ii) distinct,
 (iii) uniform and
 (iv) stable.
-(2) [Other conditions] The grant of the breeder’s right shall not be subject to any further or different conditions, provided that the variety is designated by a denomination in accordance with the provisions of Article 20, that the applicant complies with the formalities provided for by the law of the Contracting Party with whose authority the application has been filed and that he pays the required fees.
+(2) [Other conditions] The grant of the breeder's right shall not be subject to any further or different conditions, provided that the variety is designated by a denomination in accordance with the provisions of Article 20, that the applicant complies with the formalities provided for by the law of the Contracting Party with whose authority the application has been filed and that he pays the required fees.
 Article 6
 Novelty
-(1) [Criteria] The variety shall be deemed to be new if, at the date of filing of the application for a breeder’s right, propagating or harvested material of the variety has not been sold or otherwise disposed of to others, by or with the consent of the breeder, for purposes of exploitation of the variety
+(1) [Criteria] The variety shall be deemed to be new if, at the date of filing of the application for a breeder's right, propagating or harvested material of the variety has not been sold or otherwise disposed of to others, by or with the consent of the breeder, for purposes of exploitation of the variety
 (i) in the territory of the Contracting Party in which the application has been filed earlier than one year before that date and
 (ii) in a territory other than that of the Contracting Party in which the application has been filed earlier than four years or, in the case of trees or of vines, earlier than six years before the said date.
 (2) [Varieties of recent creation] Where a Contracting Party applies this Convention to a plant genus or species to which it did not previously apply this Convention or an earlier Act, it may consider a variety of recent creation existing at the date of such extension of protection to satisfy the condition of novelty defined in paragraph (1) even where the sale or disposal to others described in that paragraph took place earlier than the time limits defined in that paragraph.
-(3) [“Territory” in certain cases] For the purposes of paragraph (1), all the Contracting Parties which are member States of one and the same intergovernmental organization may act jointly, where the regulations of that organization so require, to assimilate acts done on the territories of the States members of that organization to acts done on their own territories and, should they do so, shall notify the Secretary-General accordingly.
+(3) ["Territory" in certain cases] For the purposes of paragraph (1), all the Contracting Parties which are member States of one and the same intergovernmental organization may act jointly, where the regulations of that organization so require, to assimilate acts done on the territories of the States members of that organization to acts done on their own territories and, should they do so, shall notify the Secretary-General accordingly.
 Article 7
 Distinctness
-The variety shall be deemed to be distinct if it is clearly distinguishable from any other variety whose existence is a matter of common knowledge at the time of the filing of the application. In particular, the filing of an application for the granting of a breeder’s right or for the entering of another variety in an official register of varieties, in any country, shall be deemed to render that other variety a matter of common knowledge from the date of the application, provided that the application leads to the granting of a breeder’s right or to the entering of the said other variety in the official register of varieties, as the case may be.
+The variety shall be deemed to be distinct if it is clearly distinguishable from any other variety whose existence is a matter of common knowledge at the time of the filing of the application. In particular, the filing of an application for the granting of a breeder's right or for the entering of another variety in an official register of varieties, in any country, shall be deemed to render that other variety a matter of common knowledge from the date of the application, provided that the application leads to the granting of a breeder's right or to the entering of the said other variety in the official register of varieties, as the case may be.
 Article 8
 Uniformity
 The variety shall be deemed to be uniform if, subject to the variation that may be expected from the particular features of its propagation, it is sufficiently uniform in its relevant characteristics.
@@ -64,29 +64,29 @@ Article 9
 Stability
 The variety shall be deemed to be stable if its relevant characteristics remain unchanged after repeated propagation or, in the case of a particular cycle of propagation, at the end of each such cycle.
 CHAPTER IV
-APPLICATION FOR THE GRANT OF THE BREEDER’S RIGHT
+APPLICATION FOR THE GRANT OF THE BREEDER'S RIGHT
 Article 10
 Filing of Applications
-(1) [Place of first application] The breeder may choose the Contracting Party with whose authority he wishes to file his first application for a breeder’s right.
-(2) [Time of subsequent applications] The breeder may apply to the authorities of other Contracting Parties for the grant of breeders’ rights without waiting for the grant to him of a breeder’s right by the authority of the Contracting Party with which the first application was filed.
-(3) [Independence of protection] No Contracting Party shall refuse to grant a breeder’s right or limit its duration on the ground that protection for the same variety has not been applied for, has been refused or has expired in any other State or intergovernmental organization.
+(1) [Place of first application] The breeder may choose the Contracting Party with whose authority he wishes to file his first application for a breeder's right.
+(2) [Time of subsequent applications] The breeder may apply to the authorities of other Contracting Parties for the grant of breeders' rights without waiting for the grant to him of a breeder's right by the authority of the Contracting Party with which the first application was filed.
+(3) [Independence of protection] No Contracting Party shall refuse to grant a breeder's right or limit its duration on the ground that protection for the same variety has not been applied for, has been refused or has expired in any other State or intergovernmental organization.
 Article 11
 Right of Priority
-(1) [The right; its period] Any breeder who has duly filed an application for the protection of a variety in one of the Contracting Parties (the “first application”) shall, for the purpose of filing an application for the grant of a breeder’s right for the same variety with the
-authority of any other Contracting Party (the “subsequent application”), enjoy a right of priority for a period of 12 months. This period shall be computed from the date of filing of the first application. The day of filing shall not be included in the latter period.
+(1) [The right; its period] Any breeder who has duly filed an application for the protection of a variety in one of the Contracting Parties (the "first application") shall, for the purpose of filing an application for the grant of a breeder's right for the same variety with the
+authority of any other Contracting Party (the "subsequent application"), enjoy a right of priority for a period of 12 months. This period shall be computed from the date of filing of the first application. The day of filing shall not be included in the latter period.
 (2) [Claiming the right] In order to benefit from the right of priority, the breeder shall, in the subsequent application, claim the priority of the first application. The authority with which the subsequent application has been filed may require the breeder to furnish, within a period of not less than three months from the filing date of the subsequent application, a copy of the documents which constitute the first application, certified to be a true copy by the authority with which that application was filed, and samples or other evidence that the variety which is the subject matter of both applications is the same.
 (3) [Documents and material] The breeder shall be allowed a period of two years after the expiration of the period of priority or, where the first application is rejected or withdrawn, an appropriate time after such rejection or withdrawal, in which to furnish, to the authority of the Contracting Party with which he has filed the subsequent application, any necessary information, document or material required for the purpose of the examination under Article 12, as required by the laws of that Contracting Party.
 (4) [Events occurring during the period] Events occurring within the period provided for in paragraph (1), such as the filing of another application or the publication or use of the variety that is the subject of the first application, shall not constitute a ground for rejecting the subsequent application. Such events shall also not give rise to any third-party right.
 Article 12
 Examination of the Application
-Any decision to grant a breeder’s right shall require an examination for compliance with the conditions under Articles 5 to 9. In the course of the examination, the authority may grow the variety or carry out other necessary tests, cause the growing of the variety or the carrying out of other necessary tests, or take into account the results of growing tests or other trials which have already been carried out. For the purposes of examination, the authority may require the breeder to furnish all the necessary information, documents or material.
+Any decision to grant a breeder's right shall require an examination for compliance with the conditions under Articles 5 to 9. In the course of the examination, the authority may grow the variety or carry out other necessary tests, cause the growing of the variety or the carrying out of other necessary tests, or take into account the results of growing tests or other trials which have already been carried out. For the purposes of examination, the authority may require the breeder to furnish all the necessary information, documents or material.
 Article 13
 Provisional Protection
-Each Contracting Party shall provide measures designed to safeguard the interests of the breeder during the period between the filing or the publication of the application for the grant of a breeder’s right and the grant of that right. Such measures shall have the effect that the holder of a breeder’s right shall at least be entitled to equitable remuneration from any person who, during the said period, has carried out acts which, once the right is granted, require the breeder’s authorization as provided in Article 14. A Contracting Party may provide that the said measures shall only take effect in relation to persons whom the breeder has notified of the filing of the application.
+Each Contracting Party shall provide measures designed to safeguard the interests of the breeder during the period between the filing or the publication of the application for the grant of a breeder's right and the grant of that right. Such measures shall have the effect that the holder of a breeder's right shall at least be entitled to equitable remuneration from any person who, during the said period, has carried out acts which, once the right is granted, require the breeder's authorization as provided in Article 14. A Contracting Party may provide that the said measures shall only take effect in relation to persons whom the breeder has notified of the filing of the application.
 CHAPTER V
 THE RIGHTS OF THE BREEDER
 Article 14
-Scope of the Breeder’s Right
+Scope of the Breeder's Right
 (1) [Acts in respect of the propagating material] (a) Subject to Articles 15 and 16, the following acts in respect of the propagating material of the protected variety shall require the authorization of the breeder:
 (i) production or reproduction (multiplication),
 (ii) conditioning for the purpose of propagation,
@@ -103,70 +103,70 @@ Scope of the Breeder’s Right
 (i) varieties which are essentially derived from the protected variety, where the protected variety is not itself an essentially derived variety,
 (ii) varieties which are not clearly distinguishable in accordance with Article 7 from the protected variety and
 (iii) varieties whose production requires the repeated use of the protected variety.
-(b) For the purposes of subparagraph (a)(i), a variety shall be deemed to be essentially derived from another variety (“the initial variety”) when
+(b) For the purposes of subparagraph (a)(i), a variety shall be deemed to be essentially derived from another variety ("the initial variety") when
 (i) it is predominantly derived from the initial variety, or from a variety that is itself predominantly derived from the initial variety, while retaining the expression of the essential characteristics that result from the genotype or combination of genotypes of the initial variety,
 (ii) it is clearly distinguishable from the initial variety and
 (iii) except for the differences which result from the act of derivation, it conforms to the initial variety in the expression of the essential characteristics that result from the genotype or combination of genotypes of the initial variety.
 (c) Essentially derived varieties may be obtained for example by the selection of a natural or induced mutant, or of a somaclonal variant, the selection of a variant individual from plants of the initial variety, backcrossing, or transformation by genetic engineering.
 Article 15
-Exceptions to the Breeder’s Right
-(1) [Compulsory exceptions] The breeder’s right shall not extend to
+Exceptions to the Breeder's Right
+(1) [Compulsory exceptions] The breeder's right shall not extend to
 (i) acts done privately and for non-commercial purposes,
 (ii) acts done for experimental purposes and
 (iii) acts done for the purpose of breeding other varieties, and, except where the provisions of Article 14(5) apply, acts referred to in Article 14(1) to (4) in respect of such other varieties.
-(2) [Optional exception] Notwithstanding Article 14, each Contracting Party may, within reasonable limits and subject to the safeguarding of the legitimate interests of the breeder, restrict the breeder’s right in relation to any variety in order to permit farmers to use for propagating purposes, on their own holdings, the product of the harvest which they have obtained by planting, on their own holdings, the protected variety or a variety covered by Article 14(5)(a)(i) or (ii).
+(2) [Optional exception] Notwithstanding Article 14, each Contracting Party may, within reasonable limits and subject to the safeguarding of the legitimate interests of the breeder, restrict the breeder's right in relation to any variety in order to permit farmers to use for propagating purposes, on their own holdings, the product of the harvest which they have obtained by planting, on their own holdings, the protected variety or a variety covered by Article 14(5)(a)(i) or (ii).
 Article 16
-Exhaustion of the Breeder’s Right
-(1) [Exhaustion of right] The breeder’s right shall not extend to acts concerning any material of the protected variety, or of a variety covered by the provisions of Article 14(5), which has been sold or otherwise marketed by the breeder or with his consent in the territory of the Contracting Party concerned, or any material derived from the said material, unless such acts
+Exhaustion of the Breeder's Right
+(1) [Exhaustion of right] The breeder's right shall not extend to acts concerning any material of the protected variety, or of a variety covered by the provisions of Article 14(5), which has been sold or otherwise marketed by the breeder or with his consent in the territory of the Contracting Party concerned, or any material derived from the said material, unless such acts
 (i) involve further propagation of the variety in question or
 (ii) involve an export of material of the variety, which enables the propagation of the variety, into a country which does not protect varieties of the plant genus or species to which the variety belongs, except where the exported material is for final consumption purposes.
-(2) [Meaning of “material”] For the purposes of paragraph (1), “material” means, in relation to a variety,
+(2) [Meaning of "material"] For the purposes of paragraph (1), "material" means, in relation to a variety,
 (i) propagating material of any kind,
 (ii) harvested material, including entire plants and parts of plants, and
 (iii) any product made directly from the harvested material.
-(3) [“Territory” in certain cases] For the purposes of paragraph (1), all the Contracting Parties which are member States of one and the same intergovernmental organization may act jointly, where the regulations of that organization so require, to assimilate acts done on the territories of the States members of that organization to acts done on their own territories and, should they do so, shall notify the Secretary-General accordingly.
+(3) ["Territory" in certain cases] For the purposes of paragraph (1), all the Contracting Parties which are member States of one and the same intergovernmental organization may act jointly, where the regulations of that organization so require, to assimilate acts done on the territories of the States members of that organization to acts done on their own territories and, should they do so, shall notify the Secretary-General accordingly.
 Article 17
-Restrictions on the Exercise of the Breeder’s Right
-(1) [Public interest] Except where expressly provided in this Convention, no Contracting Party may restrict the free exercise of a breeder’s right for reasons other than of public interest.
-(2) [Equitable remuneration] When any such restriction has the effect of authorizing a third party to perform any act for which the breeder’s authorization is required, the Contracting Party concerned shall take all measures necessary to ensure that the breeder receives equitable remuneration.
+Restrictions on the Exercise of the Breeder's Right
+(1) [Public interest] Except where expressly provided in this Convention, no Contracting Party may restrict the free exercise of a breeder's right for reasons other than of public interest.
+(2) [Equitable remuneration] When any such restriction has the effect of authorizing a third party to perform any act for which the breeder's authorization is required, the Contracting Party concerned shall take all measures necessary to ensure that the breeder receives equitable remuneration.
 Article 18
 Measures Regulating Commerce
-The breeder’s right shall be independent of any measure taken by a Contracting Party to regulate within its territory the production, certification and marketing of material of varieties or the importing or exporting of such material. In any case, such measures shall not affect the application of the provisions of this Convention.
+The breeder's right shall be independent of any measure taken by a Contracting Party to regulate within its territory the production, certification and marketing of material of varieties or the importing or exporting of such material. In any case, such measures shall not affect the application of the provisions of this Convention.
 Article 19
-Duration of the Breeder’s Right
-(1) [Period of protection] The breeder’s right shall be granted for a fixed period.
-(2) [Minimum period] The said period shall not be shorter than 20 years from the date of the grant of the breeder’s right. For trees and vines, the said period shall not be shorter than 25 years from the said date.
+Duration of the Breeder's Right
+(1) [Period of protection] The breeder's right shall be granted for a fixed period.
+(2) [Minimum period] The said period shall not be shorter than 20 years from the date of the grant of the breeder's right. For trees and vines, the said period shall not be shorter than 25 years from the said date.
 CHAPTER VI
 VARIETY DENOMINATION
 Article 20
 Variety Denomination
 (1) [Designation of varieties by denominations; use of the denomination] (a) The variety shall be designated by a denomination which will be its generic designation.
-(b) Each Contracting Party shall ensure that, subject to paragraph (4), no rights in the designation registered as the denomination of the variety shall hamper the free use of the denomination in connection with the variety, even after the expiration of the breeder’s right.
+(b) Each Contracting Party shall ensure that, subject to paragraph (4), no rights in the designation registered as the denomination of the variety shall hamper the free use of the denomination in connection with the variety, even after the expiration of the breeder's right.
 (2) [Characteristics of the denomination] The denomination must enable the variety to be identified. It may not consist solely of figures except where this is an established practice for designating varieties. It must not be liable to mislead or to cause confusion concerning the characteristics, value or identity of the variety or the identity of the breeder. In particular, it must be different from every denomination which designates, in the territory of any Contracting Party, an existing variety of the same plant species or of a closely related species.
 (3) [Registration of the denomination] The denomination of the variety shall be submitted by the breeder to the authority. If it is found that the denomination does not satisfy the requirements of paragraph (2), the authority shall refuse to register it and shall require the
-breeder to propose another denomination within a prescribed period. The denomination shall be registered by the authority at the same time as the breeder’s right is granted.
+breeder to propose another denomination within a prescribed period. The denomination shall be registered by the authority at the same time as the breeder's right is granted.
 (4) [Prior rights of third persons] Prior rights of third persons shall not be affected. If, by reason of a prior right, the use of the denomination of a variety is forbidden to a person who, in accordance with the provisions of paragraph (7), is obliged to use it, the authority shall require the breeder to submit another denomination for the variety.
 (5) [Same denomination in all Contracting Parties] A variety must be submitted to all Contracting Parties under the same denomination. The authority of each Contracting Party shall register the denomination so submitted, unless it considers the denomination unsuitable within its territory. In the latter case, it shall require the breeder to submit another denomination.
 (6) [Information among the authorities of Contracting Parties] The authority of a Contracting Party shall ensure that the authorities of all the other Contracting Parties are informed of matters concerning variety denominations, in particular the submission, registration and cancellation of denominations. Any authority may address its observations, if any, on the registration of a denomination to the authority which communicated that denomination.
-(7) [Obligation to use the denomination] Any person who, within the territory of one of the Contracting Parties, offers for sale or markets propagating material of a variety protected within the said territory shall be obliged to use the denomination of that variety, even after the expiration of the breeder’s right in that variety, except where, in accordance with the provisions of paragraph (4), prior rights prevent such use.
+(7) [Obligation to use the denomination] Any person who, within the territory of one of the Contracting Parties, offers for sale or markets propagating material of a variety protected within the said territory shall be obliged to use the denomination of that variety, even after the expiration of the breeder's right in that variety, except where, in accordance with the provisions of paragraph (4), prior rights prevent such use.
 (8) [Indications used in association with denominations] When a variety is offered for sale or marketed, it shall be permitted to associate a trademark, trade name or other similar indication with a registered variety denomination. If such an indication is so associated, the denomination must nevertheless be easily recognizable.
 CHAPTER VII
-NULLITY AND CANCELLATION OF THE BREEDER’S RIGHT
+NULLITY AND CANCELLATION OF THE BREEDER'S RIGHT
 Article 21
-Nullity of the Breeder’s Right
-(1) [Reasons of nullity] Each Contracting Party shall declare a breeder’s right granted by it null and void when it is established
-(i) that the conditions laid down in Articles 6 or 7 were not complied with at the time of the grant of the breeder’s right,
-(ii) that, where the grant of the breeder’s right has been essentially based upon information and documents furnished by the breeder, the conditions laid down in Articles 8 or 9 were not complied with at the time of the grant of the breeder’s right, or
-(iii) that the breeder’s right has been granted to a person who is not entitled to it, unless it is transferred to the person who is so entitled.
-(2) [Exclusion of other reasons] No breeder’s right shall be declared null and void for reasons other than those referred to in paragraph (1).
+Nullity of the Breeder's Right
+(1) [Reasons of nullity] Each Contracting Party shall declare a breeder's right granted by it null and void when it is established
+(i) that the conditions laid down in Articles 6 or 7 were not complied with at the time of the grant of the breeder's right,
+(ii) that, where the grant of the breeder's right has been essentially based upon information and documents furnished by the breeder, the conditions laid down in Articles 8 or 9 were not complied with at the time of the grant of the breeder's right, or
+(iii) that the breeder's right has been granted to a person who is not entitled to it, unless it is transferred to the person who is so entitled.
+(2) [Exclusion of other reasons] No breeder's right shall be declared null and void for reasons other than those referred to in paragraph (1).
 Article 22
-Cancellation of the Breeder’s Right
-(1) [Reasons for cancellation] (a) Each Contracting Party may cancel a breeder’s right granted by it if it is established that the conditions laid down in Articles 8 or 9 are no longer fulfilled.
-(b) Furthermore, each Contracting Party may cancel a breeder’s right granted by it if, after being requested to do so and within a prescribed period,
+Cancellation of the Breeder's Right
+(1) [Reasons for cancellation] (a) Each Contracting Party may cancel a breeder's right granted by it if it is established that the conditions laid down in Articles 8 or 9 are no longer fulfilled.
+(b) Furthermore, each Contracting Party may cancel a breeder's right granted by it if, after being requested to do so and within a prescribed period,
 (i) the breeder does not provide the authority with the information, documents or material deemed necessary for verifying the maintenance of the variety,
 (ii) the breeder fails to pay such fees as may be payable to keep his right in force, or
 (iii) the breeder does not propose, where the denomination of the variety is cancelled after the grant of the right, another suitable denomination.
-(2) [Exclusion of other reasons] No breeder’s right shall be cancelled for reasons other than those referred to in paragraph (1).
+(2) [Exclusion of other reasons] No breeder's right shall be cancelled for reasons other than those referred to in paragraph (1).
 CHAPTER VIII
 THE UNION
 Article 23
@@ -233,10 +233,10 @@ IMPLEMENTATION OF THE CONVENTION; OTHER AGREEMENTS
 Article 30
 Implementation of the Convention
 (1) [Measures of implementation] Each Contracting Party shall adopt all measures necessary for the implementation of this Convention; in particular, it shall:
-(i) provide for appropriate legal remedies for the effective enforcement of breeders’ rights;
-(ii) maintain an authority entrusted with the task of granting breeders’ rights or entrust the said task to an authority maintained by another Contracting Party;
+(i) provide for appropriate legal remedies for the effective enforcement of breeders' rights;
+(ii) maintain an authority entrusted with the task of granting breeders' rights or entrust the said task to an authority maintained by another Contracting Party;
 (iii) ensure that the public is informed through the regular publication of information concerning
-- applications for and grants of breeders’ rights, and
+- applications for and grants of breeders' rights, and
 - proposed and approved denominations.
 (2) [Conformity of laws] It shall be understood that, on depositing its instrument of ratification, acceptance, approval or accession, as the case may be, each State or intergovernmental organization must be in a position, under its laws, to give effect to the provisions of this Convention.
 Article 31
@@ -256,7 +256,7 @@ Ratification, Acceptance or Approval; Accession
 (1) [States and certain intergovernmental organizations] (a) Any State may, as provided in this Article, become party to this Convention.
 (b) Any intergovernmental organization may, as provided in this Article, become party to this Convention if it
 (i) has competence in respect of matters governed by this Convention,
-(ii) has its own legislation providing for the grant and protection of breeders’ rights binding on all its member States and
+(ii) has its own legislation providing for the grant and protection of breeders' rights binding on all its member States and
 (iii) has been duly authorized, in accordance with its internal procedures, to accede to this Convention.
 (2) [Instrument of adherence] Any State which has signed this Convention shall become party to this Convention by depositing an instrument of ratification, acceptance or approval of this Convention. Any State which has not signed this Convention and any intergovernmental organization shall become party to this Convention by depositing an instrument of accession to this Convention. Instruments of ratification, acceptance, approval or accession shall be deposited with the Secretary-General.
 (3) [Advice of the Council] Any State which is not a member of the Union and any intergovernmental organization shall, before depositing its instrument of accession, ask the
@@ -264,19 +264,19 @@ Council to advise it in respect of the conformity of its laws with the provision
 Article 35
 Reservations
 (1) [Principle] Subject to paragraph (2), no reservations to this Convention are permitted.
-(2) [Possible exception] (a) Notwithstanding the provisions of Article 3(1), any State which, at the time of becoming party to this Convention, is a party to the Act of 1978 and which, as far as varieties reproduced asexually are concerned, provides for protection by an industrial property title other than a breeder’s right shall have the right to continue to do so without applying this Convention to those varieties.
+(2) [Possible exception] (a) Notwithstanding the provisions of Article 3(1), any State which, at the time of becoming party to this Convention, is a party to the Act of 1978 and which, as far as varieties reproduced asexually are concerned, provides for protection by an industrial property title other than a breeder's right shall have the right to continue to do so without applying this Convention to those varieties.
 (b) Any State making use of the said right shall, at the time of depositing its instrument of ratification, acceptance, approval or accession, as the case may be, notify the Secretary-General accordingly. The same State may, at any time, withdraw the said notification.
 Article 36
 Communications Concerning Legislation and the Genera
 and Species Protected; Information to be Published
 (1) [Initial notification] When depositing its instrument of ratification, acceptance or approval of or accession to this Convention, as the case may be, any State or intergovernmental organization shall notify the Secretary-General of
-(i) its legislation governing breeder’s rights and
+(i) its legislation governing breeder's rights and
 (ii) the list of plant genera and species to which, on the date on which it will become bound by this Convention, it will apply the provisions of this Convention.
 (2) [Notification of changes] Each Contracting Party shall promptly notify the Secretary-General of
-(i) any changes in its legislation governing breeders’ rights and
+(i) any changes in its legislation governing breeders' rights and
 (ii) any extension of the application of this Convention to additional plant genera and species.
 (3) [Publication of the information] The Secretary-General shall, on the basis of communications received from each Contracting Party concerned, publish information on
-(i) the legislation governing breeders’ rights and any changes in that legislation, and
+(i) the legislation governing breeders' rights and any changes in that legislation, and
 (ii) the list of plant genera and species referred to in paragraph (1)(ii) and any extension referred to in paragraph (2)(ii).
 Article 37
 Entry into Force; Closing of Earlier Acts
@@ -295,7 +295,7 @@ Denunciation
 (4) [Acquired rights] The denunciation shall not affect any rights acquired in a variety by reason of this Convention or any earlier Act prior to the date on which the denunciation becomes effective.
 Article 40
 Preservation of Existing Rights
-This Convention shall not limit existing breeders’ rights under the laws of Contracting Parties or by reason of any earlier Act or any agreement other than this Convention concluded between members of the Union.
+This Convention shall not limit existing breeders' rights under the laws of Contracting Parties or by reason of any earlier Act or any agreement other than this Convention concluded between members of the Union.
 Article 41
 Original and Official Texts of the Convention
 (1) [Original] This Convention shall be signed in a single original in the English, French and German languages, the French text prevailing in case of any discrepancy among the various texts. The original shall be deposited with the Secretary-General.

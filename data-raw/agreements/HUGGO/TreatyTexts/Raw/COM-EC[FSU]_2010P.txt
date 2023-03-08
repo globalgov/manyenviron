@@ -16,7 +16,7 @@ Period of application and fishing opportunities
 
 Article 2
 
-Financial contribution – Methods of payment
+Financial contribution - Methods of payment
 
 1. For the period referred to in Article 1, the financial contribution referred to in Article 7 of the Fisheries Partnership Agreement shall be EUR 1845750.
 
@@ -90,7 +90,7 @@ New fishing opportunities
 
 Article 7
 
-Conditions governing fishing activities – Exclusivity clause
+Conditions governing fishing activities - Exclusivity clause
 
 1. Without prejudice to Article 6 of the Agreement, the fishing vessels flying the flag of a Member State of the European Union may fish in Comorian waters only if they are in possession of a fishing authorisation issued under this Protocol in accordance with the Annex hereto.
 
@@ -188,7 +188,7 @@ Issue of fishing authorisations
 
 1. Only eligible European Union vessels may obtain an authorisation to fish in Comorian waters.
 
-2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in the Comoros. They must be in order vis-à-vis the Comorian authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in the Comoros under fisheries agreements concluded with the European Union. Furthermore, they must comply with the provisions of Regulation (EC) No 1006/2008 on fishing authorisations.
+2. For a vessel to be eligible, neither the owner, the master nor the vessel itself must be prohibited from fishing in the Comoros. They must be in order vis-a-vis the Comorian authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in the Comoros under fisheries agreements concluded with the European Union. Furthermore, they must comply with the provisions of Regulation (EC) No 1006/2008 on fishing authorisations.
 
 3. Any European Union vessel applying for a fishing authorisation must be represented by an agent resident in the Comoros. The name and address of that agent shall be stated in the fishing authorisation application.
 
@@ -208,15 +208,15 @@ Issue of fishing authorisations
 
 9. Fishing authorisations for all vessels shall be issued to shipowners or their agents via the Delegation of the European Union in Mauritius within 15 days of receipt of all the documents referred to in point 6 above by the competent Comorian authorities.
 
-10. If a fishing authorisation is signed at a time when the European Union Delegation offices are closed, it shall be sent directly to the vessel’s agent and a copy shall be sent to the Delegation.
+10. If a fishing authorisation is signed at a time when the European Union Delegation offices are closed, it shall be sent directly to the vessel's agent and a copy shall be sent to the Delegation.
 
 11. Fishing authorisations shall be issued for a given vessel and shall not be transferable.
 
-12. However, at the request of the European Union and where force majeure is proven, a vessel’s fishing authorisation shall be replaced by a new fishing authorisation for another vessel with similar characteristics to those of the first vessel, with no further fee due.
+12. However, at the request of the European Union and where force majeure is proven, a vessel's fishing authorisation shall be replaced by a new fishing authorisation for another vessel with similar characteristics to those of the first vessel, with no further fee due.
 
 13. The owner of the first vessel, or the agent, shall return the cancelled fishing authorisation to the competent Comorian authorities via the Delegation of the European Union.
 
-14. The new fishing authorisation shall take effect on the day that the vessel’s owner returns the cancelled fishing authorisation to the competent Comorian authorities. The Delegation of the European Union in Mauritius shall be informed of the transfer of the fishing authorisation.
+14. The new fishing authorisation shall take effect on the day that the vessel's owner returns the cancelled fishing authorisation to the competent Comorian authorities. The Delegation of the European Union in Mauritius shall be informed of the transfer of the fishing authorisation.
 
 15. The fishing authorisation must be kept on board at all times, without prejudice to point 1 of Chapter VI of this Annex.
 
@@ -234,7 +234,7 @@ Fishing authorisation conditions fees and advance payments
 
 - EUR 2200 per year per surface longliner, equivalent to the fees due for 63 tonnes of tuna caught per year.
 
-4. The final statement of the fees due for the fishing year shall be drawn up by the European Commission by 31 July of the following year at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the IRD (Institut de Recherche pour le Développement), the IEO (Instituto Español de Oceanografía) and the IPIMAR (Instituto de Investigação das Pescas e do Mar).
+4. The final statement of the fees due for the fishing year shall be drawn up by the European Commission by 31 July of the following year at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the IRD (Institut de Recherche pour le Developpement), the IEO (Instituto Espanol de Oceanografia) and the IPIMAR (Instituto de Investigacao das Pescas e do Mar).
 
 5. The statement shall simultaneously be notified to the competent Comorian authorities and the shipowners.
 
@@ -408,7 +408,7 @@ EMBARKING SEAMEN
 
 5. The International Labour Organisation (ILO) Declaration on Fundamental Principles and Rights at Work shall apply as of right to seamen signed on by European Union vessels. This concerns in particular the freedom of association and the effective recognition of the right to collective bargaining, and the elimination of discrimination in respect of employment and occupation.
 
-6. Seamen’s employment contracts, a copy of which shall be given to the signatories, shall be drawn up between the shipowners’ agent(s) and the seamen and/or their trade unions or representatives in consultation with the competent Comorian authorities. These contracts shall guarantee the seamen the social security cover applicable to them, including life assurance and sickness and accident insurance.
+6. Seamen's employment contracts, a copy of which shall be given to the signatories, shall be drawn up between the shipowners' agent(s) and the seamen and/or their trade unions or representatives in consultation with the competent Comorian authorities. These contracts shall guarantee the seamen the social security cover applicable to them, including life assurance and sickness and accident insurance.
 
 7. The wages of the ACP seamen shall be paid by the shipowners. They shall be fixed by mutual agreement between the shipowners or their agents and the seamen and/or their trade unions or representatives. However, the wage conditions granted to ACP seamen may not be lower than those applied to crews from their respective countries and may under no circumstances be below ILO standards.
 
@@ -428,7 +428,7 @@ OBSERVERS
 
 1.2. The competent Comorian authority shall draw up a list of vessels designated to take an observer on board and a list of the appointed observers. These lists shall be kept up to date. They shall be forwarded to the European Commission as soon as they have been drawn up and every 3 months thereafter where they have been updated.
 
-1.3. The competent Comorian authorities shall inform the shipowners concerned, or their agents, of the name of the observer appointed to be taken on board their vessel at the time the licence is issued, or no later than 15 days before the observer’s planned embarkation date.
+1.3. The competent Comorian authorities shall inform the shipowners concerned, or their agents, of the name of the observer appointed to be taken on board their vessel at the time the licence is issued, or no later than 15 days before the observer's planned embarkation date.
 
 2. The time spent on board by the observer shall be one fishing trip. However, at the express request of the competent Comorian authorities, this embarkation may be spread over several trips according to the average duration of trip for a particular vessel. This request shall be made by the competent Comorian authorities when the name of the observer appointed to board the vessel in question is notified.
 
@@ -436,9 +436,9 @@ OBSERVERS
 
 4. The observer shall be taken on board at a port chosen by the shipowner at the beginning of the first voyage in Comorian waters after notification of the list of designated vessels.
 
-5. Within 2 weeks and giving 10 days’ notice, the shipowners concerned shall make known at which Comorian ports and on what dates they intend to take observers on board.
+5. Within 2 weeks and giving 10 days' notice, the shipowners concerned shall make known at which Comorian ports and on what dates they intend to take observers on board.
 
-6. Where the observer is taken on board in a foreign country, his travel costs shall be borne by the shipowner. Should a vessel with a Comorian observer on board leave Comorian waters, all measures must be taken to ensure the observer’s return to the Comoros as soon as possible at the expense of the shipowner.
+6. Where the observer is taken on board in a foreign country, his travel costs shall be borne by the shipowner. Should a vessel with a Comorian observer on board leave Comorian waters, all measures must be taken to ensure the observer's return to the Comoros as soon as possible at the expense of the shipowner.
 
 7. If the observer is not present at the time and place agreed or within the 12 hours following the time agreed, the shipowner shall be automatically absolved of his obligation to take the observer on board.
 
@@ -456,9 +456,9 @@ OBSERVERS
 
 8.6. report fishing data by radio, including the quantity of catches and by-catches on board.
 
-9. The master shall do everything in his power to ensure the physical safety and welfare of the observer during the latter’s performance of his duties.
+9. The master shall do everything in his power to ensure the physical safety and welfare of the observer during the latter's performance of his duties.
 
-10. The observer shall be offered every facility needed to carry out his duties. The master shall give him access to the means of communication needed for the discharge of his duties, to documents directly concerned with the vessel’s fishing activities, including in particular the logbook and the navigation log, and to those parts of the vessel necessary to facilitate the exercise of his tasks.
+10. The observer shall be offered every facility needed to carry out his duties. The master shall give him access to the means of communication needed for the discharge of his duties, to documents directly concerned with the vessel's fishing activities, including in particular the logbook and the navigation log, and to those parts of the vessel necessary to facilitate the exercise of his tasks.
 
 11. While on board, the observer shall:
 
@@ -466,7 +466,7 @@ OBSERVERS
 
 11.2. respect the material and equipment on board and the confidentiality of all documents belonging to the vessel.
 
-12. At the end of the observation period and before leaving the vessel, the observer shall draw up an activity report to be transmitted to the competent Comorian authorities, with a copy to the European Commission. He shall sign it in the presence of the master, who may add or cause to be added to it any observations considered relevant, followed by the master’s signature. A copy of the report shall be given to the master of the vessel when the scientific observer is put ashore.
+12. At the end of the observation period and before leaving the vessel, the observer shall draw up an activity report to be transmitted to the competent Comorian authorities, with a copy to the European Commission. He shall sign it in the presence of the master, who may add or cause to be added to it any observations considered relevant, followed by the master's signature. A copy of the report shall be given to the master of the vessel when the scientific observer is put ashore.
 
 13. Shipowners shall bear the cost of accommodating observers in the same conditions as the officers on the vessel, within the confines of the structure of the vessel.
 
@@ -547,4 +547,4 @@ Appendices
 
 4. Declaration form for entering and leaving the zone
 
-5. Communication of VMS messages to the Comoros – Position report
+5. Communication of VMS messages to the Comoros - Position report

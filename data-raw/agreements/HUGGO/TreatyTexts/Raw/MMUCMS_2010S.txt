@@ -22,7 +22,7 @@ States, flag vessels of which are engaged outside national jurisdictional limits
 affect the conservation of sharks;
 ARE MINDFUL of the need to ensure the provisions of this Memorandum of Understanding are
 consistent with other international shark conservation and management initiatives, including the
-Food and Agricultural Organization’s (FAO) voluntary International Plan of Action (IPOA) for
+Food and Agricultural Organization's (FAO) voluntary International Plan of Action (IPOA) for
 sharks, which calls upon States to develop and implement complementary National Plans of Action
 for sharks, and the 2007 United Nations General Assembly Resolution on Sustainable Fisheries;
 NOTE that both the FAO, through IPOA-sharks, and the Convention have embraced a common
@@ -44,9 +44,9 @@ non-binding Memorandum of Understanding and a supporting Conservation Plan under
 IV.4 of the Convention will add value and contribute significantly to the enhanced conservation of
 migratory sharks by: (i) strengthening the political will to implement migratory shark conservation
 measures in a coordinated and timely fashion; (ii) bridging migratory shark fisheries and
-conservation interests; (iii) contributing to the implementation of the FAO’s IPOA for sharks by
+conservation interests; (iii) contributing to the implementation of the FAO's IPOA for sharks by
 linking it to this Memorandum of Understanding and building on it; and (iv) by capitalizing on the
-potential of the Convention’s broad membership to add expertise to global conservation efforts in
+potential of the Convention's broad membership to add expertise to global conservation efforts in
 the areas of science, research, monitoring, compliance, enforcement, species identification, data
 collection and analysis, threat definition and reduction, habitat identification and protection,
 education and public awareness, information exchange, and capacity building;
@@ -74,12 +74,12 @@ Conference of the Parties to the Convention (Geneva, 11-14 October 1988).
 2. This Memorandum of Understanding is intended to apply to all migratory species of sharks
 included in Annex 1 of this Memorandum of Understanding.
 3. For the purpose of this Memorandum of Understanding:
-a) “Conservation Plan” means the Migratory Sharks Conservation Plan to be adopted under
+a) "Conservation Plan" means the Migratory Sharks Conservation Plan to be adopted under
 this Memorandum of Understanding;
-b) “Advisory Committee” means the committee of persons qualified as experts in migratory
+b) "Advisory Committee" means the committee of persons qualified as experts in migratory
 shark science and management established under Section 7 of this Memorandum of
 Understanding;
-c) “Conservation status of migratory sharks” means the sum of all the influences acting on
+c) "Conservation status of migratory sharks" means the sum of all the influences acting on
 migratory sharks that may affect their long-term distribution and abundance;
 d) The conservation status is considered "favourable" when all the following conditions are
 met:
@@ -91,42 +91,42 @@ reduced, nor are they likely to be reduced in the future to levels that affect t
 viability of their populations in the long term; and
 iii) the abundance and structure of populations of migratory sharks remains at levels
 adequate to maintain ecosystem integrity;
-e) Conservation status will be taken as “unfavourable” if any of the conditions set out in sub
+e) Conservation status will be taken as "unfavourable" if any of the conditions set out in sub
 paragraph 3. d) above are not met;
 Nothing in sub-paragraphs d) and e) will affect the obligations under the Convention for Signatories
 that are also Convention Parties with respect to species listed under Appendix II of the Convention.
-f) “Convention” means the Convention on the Conservation of Migratory Species of Wild
+f) "Convention" means the Convention on the Conservation of Migratory Species of Wild
 Animals signed at Bonn, Germany on 23 June 1979;
-g) “Convention Secretariat” means the body established under Article IX of the Convention;
-h) “Cooperating partner” means a non-Range State, an intergovernmental or a nongovernmental
+g) "Convention Secretariat" means the body established under Article IX of the Convention;
+h) "Cooperating partner" means a non-Range State, an intergovernmental or a nongovernmental
 organization, or other body or entity that associates itself with this
 Memorandum of Understanding in accordance with the provisions of paragraph 30;
-i) “Habitat” means any area in the range which contains suitable living conditions, particularly
+i) "Habitat" means any area in the range which contains suitable living conditions, particularly
 known aggregation, feeding and breeding sites, for migratory sharks;
-j) “IPOA-Sharks” means the International Plan of Action for the conservation and
+j) "IPOA-Sharks" means the International Plan of Action for the conservation and
 management of sharks adopted at the 23rd session of the FAO Committee on Fisheries,
 February 1999;
-k) “Range” means all the areas of water that a migratory shark inhabits, stays in temporarily, or
+k) "Range" means all the areas of water that a migratory shark inhabits, stays in temporarily, or
 crosses at any time on its normal migration route;
-l) “Range State” means any State that exercises jurisdiction over any part of the range of
+l) "Range State" means any State that exercises jurisdiction over any part of the range of
 migratory sharks, or a State, flag vessels of which are engaged outside its national
 jurisdictional limits in taking, or which have the potential to take, migratory sharks;
 m) "Regional economic integration organisation" (REIO) means an organisation constituted by
 sovereign States of a given region which has competence in respect of matters governed by
 this Memorandum of Understanding and has been duly authorised, in accordance with its
 internal procedures, to sign this Memorandum of Understanding;
-n) “RFMO” means an intergovernmental fisheries organization or arrangement, as appropriate,
+n) "RFMO" means an intergovernmental fisheries organization or arrangement, as appropriate,
 that has the competence to establish conservation and management measures;
-o) “Secretariat” means the body established under paragraph 27 of this Memorandum of
+o) "Secretariat" means the body established under paragraph 27 of this Memorandum of
 Understanding to assist in its administration, implementation and enforcement;
-p) “Shark” means any of the migratory species, subspecies or populations in the Class
+p) "Shark" means any of the migratory species, subspecies or populations in the Class
 Chondrichthyes (which includes sharks, rays, skates and chimaeras) that are included in
 Annex 1 of this Memorandum of Understanding;
-q) “Shark finning” means the practice of removing any of the fins of a shark (including the tail)
+q) "Shark finning" means the practice of removing any of the fins of a shark (including the tail)
 while at sea and discarding the remainder of the shark at sea;
-r) “Signatory” means a Range State or a REIO that is a Signatory to this Memorandum of
+r) "Signatory" means a Range State or a REIO that is a Signatory to this Memorandum of
 Understanding; and
-s) “Taking” means taking, harvesting, hunting, fishing, capturing, harassing, deliberate killing
+s) "Taking" means taking, harvesting, hunting, fishing, capturing, harassing, deliberate killing
 or attempting to engage in any such conduct.
 4. The Annexes form an integral part of this Memorandum of Understanding.
 Section 2 Objective
@@ -199,7 +199,7 @@ j) In fisheries catching sharks other than those listed in point i above, encour
 bodies to set targets based on the best available science for fish quotas, fishing effort and
 other restrictions to help achieve sustainable use;
 k) Ensure development and implementation of Plans of Action - Sharks in accordance with
-FAO’s voluntary IPOA-Sharks;
+FAO's voluntary IPOA-Sharks;
 l) Ratify or accede to those international instruments relevant to the conservation and
 management of migratory sharks and their habitats in order to enhance the legal protection
 of migratory shark species;
@@ -277,7 +277,7 @@ Signatories from each Region. The Regions and the number of representatives for 
 set out in Annex 2. The Advisory Committee should elect a Chair and Vice-chair. The Advisory
 Committee may invite other experts to attend its meetings.
 26. The Advisory Committee should conduct its work through collaboration by electronic
-means whenever possible, with the Chair of the Committee providing a report on the Committee’s
+means whenever possible, with the Chair of the Committee providing a report on the Committee's
 work to each session of the Meeting of the Signatories. Where the need arises, meetings of the
 Advisory Committee should be convened by the Chair of the Committee in consultation with the
 Secretariat, and where possible, such meetings should be held in conjunction with the sessions of
@@ -310,7 +310,7 @@ the month on which there are at least 10 Range State signatures. Thereafter it w
 any other Signatory on the first day of the month following the date of signature by that Signatory.
 32. This Memorandum of Understanding will remain open for signature indefinitely at the seat
 of the Convention Secretariat. The cooperation of the Signatories should continue indefinitely but
-any Signatory may terminate its participation by providing one year’s written notice to all other
+any Signatory may terminate its participation by providing one year's written notice to all other
 Signatories through the Secretariat.
 33. The Memorandum of Understanding, including the Annexes, may be modified by the
 Meeting of the Signatories. Such modifications should be by consensus.

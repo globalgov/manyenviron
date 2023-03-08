@@ -20,7 +20,7 @@ Highly migratory species (species listed in Annex 1 to the 1982 United Nations C
 
 Article 2
 
-Financial contribution — Methods of payment
+Financial contribution - Methods of payment
 
 1. The financial contribution referred to in Article 7 of the Agreement shall comprise, for the period referred to in Article 1, an annual amount of EUR 715000 equivalent to a reference tonnage of 11000 tonnes per year and a specific amount of EUR 145000 per year for the support and implementation of initiatives taken in the context of the Gabonese sectoral fisheries policy. This specific amount shall be an integral part of the single financial contribution defined in Article 7 of the Agreement.
 
@@ -34,11 +34,11 @@ Financial contribution — Methods of payment
 
 6. Subject to Article 6, the Gabonese authorities shall have full discretion regarding the use to which this financial contribution is put.
 
-7. The financial contribution shall be paid into account No 47069 X, "Pêche Maritime" (Sea Fisheries) in the name of the Public Treasury of Gabon.
+7. The financial contribution shall be paid into account No 47069 X, "Peche Maritime" (Sea Fisheries) in the name of the Public Treasury of Gabon.
 
 Article 3
 
-Cooperation on responsible fishing — Scientific meeting
+Cooperation on responsible fishing - Scientific meeting
 
 1. The Parties hereby undertake to promote responsible fishing in Gabonese waters on the basis of the principles of non-discrimination between the different fleets fishing in those waters.
 
@@ -102,7 +102,7 @@ Gabon shall manage the corresponding amount following the identification by mutu
 
 Article 8
 
-Disputes — suspension of application of the Protocol
+Disputes - suspension of application of the Protocol
 
 1. Any dispute between the Parties over the interpretation of this Protocol or its application shall be the subject of consultations between the Parties within the Joint Committee provided for in Article 9 of the Agreement, in a special meeting if necessary.
 
@@ -166,7 +166,7 @@ Issue of licences
 
 1. Only eligible vessels may obtain a licence to fish in the Gabonese fishing zone.
 
-2. For a vessel to be eligible, neither the owner, the skipper nor the vessel itself must be prohibited from fishing in Gabon. They must be in order vis-à-vis the Gabonese authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in Gabon under fisheries agreements concluded with the Community.
+2. For a vessel to be eligible, neither the owner, the skipper nor the vessel itself must be prohibited from fishing in Gabon. They must be in order vis-a-vis the Gabonese authorities insofar as they must have fulfilled all prior obligations arising from their fishing activities in Gabon under fisheries agreements concluded with the Community.
 
 3. Any Community vessel applying for a fishing licence may be represented by an agent resident in Gabon. The name and address of that representative shall be stated in the licence application.
 
@@ -200,7 +200,7 @@ Issue of licences
 
 SECTION 2
 
-Licence conditions — Fees and advance payments
+Licence conditions - Fees and advance payments
 
 1. Licences shall be valid for a period of one year. They shall be renewable.
 
@@ -214,7 +214,7 @@ Licence conditions — Fees and advance payments
 
 4. No later than 15 May of each year, the Member States shall notify the European Commission, with a copy to the European Commission Delegation and the Gabonese authorities, of the catch tonnages for the past year, as confirmed by the scientific institutes referred to in point 5 below.
 
-5. The final statement of the fees due for year n shall be drawn up by the European Commission by 30 June of year n + 1 at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Développement (IRD), the Instituto Español de Oceanografía (IEO) and the Instituto de Investigação das Pescas e do Mar (IPIMAR) via the European Commission Delegation.
+5. The final statement of the fees due for year n shall be drawn up by the European Commission by 30 June of year n + 1 at the latest on the basis of the catch declarations made by each shipowner and confirmed by the scientific institutes responsible for verifying catch data in the Member States, such as the Institut de Recherche pour le Developpement (IRD), the Instituto Espanol de Oceanografia (IEO) and the Instituto de Investigacao das Pescas e do Mar (IPIMAR) via the European Commission Delegation.
 
 6. This statement shall be sent simultaneously to the Ministry responsible for fisheries in Gabon and to the shipowners.
 
@@ -526,35 +526,35 @@ Position report
 
 Data element | Code | Mandatory/optional | Comments |
 
-Start of record | SR | M | System detail — indicates start of record |
+Start of record | SR | M | System detail - indicates start of record |
 
-Recipient | AD | M | Message detail — recipient. Alpha 3 ISO country code |
+Recipient | AD | M | Message detail - recipient. Alpha 3 ISO country code |
 
-From | FR | M | Message detail — sender. Alpha 3 ISO country code |
+From | FR | M | Message detail - sender. Alpha 3 ISO country code |
 
 Flag State | FS | O | |
 
-Type of message | TM | M | Message detail — Message type "POS" |
+Type of message | TM | M | Message detail - Message type "POS" |
 
-Radio call sign | RC | M | Vessel detail — international radio call sign of vessel |
+Radio call sign | RC | M | Vessel detail - international radio call sign of vessel |
 
-Contracting party internal reference number | IR | O | Vessel detail — unique contracting party number (ISO-3 code of flag State followed by number) |
+Contracting party internal reference number | IR | O | Vessel detail - unique contracting party number (ISO-3 code of flag State followed by number) |
 
-External registration number | XR | M | Vessel detail — number marked on side of vessel |
+External registration number | XR | M | Vessel detail - number marked on side of vessel |
 
-Latitude | LA | M | Vessel position detail — position in degrees and minutes N/S DDMM (WGS-84) |
+Latitude | LA | M | Vessel position detail - position in degrees and minutes N/S DDMM (WGS-84) |
 
-Longitude | LO | M | Vessel position detail — position in degrees and minutes E/W DDMM (WGS-84) |
+Longitude | LO | M | Vessel position detail - position in degrees and minutes E/W DDMM (WGS-84) |
 
-Course | CO | M | Vessel course 360° scale |
+Course | CO | M | Vessel course 360&#186; scale |
 
 Speed | SP | M | Vessel speed in tenths of knots |
 
-Dates | DA | M | Vessel position detail — date of record of UTC position (YYYYMMDD) |
+Dates | DA | M | Vessel position detail - date of record of UTC position (YYYYMMDD) |
 
-Time | TI | M | Vessel position detail — time of record of UTC position (HHMM) |
+Time | TI | M | Vessel position detail - time of record of UTC position (HHMM) |
 
-End of record | ER | M | System detail — indicates end of record |
+End of record | ER | M | System detail - indicates end of record |
 
 Character set: ISO 8859.1
 

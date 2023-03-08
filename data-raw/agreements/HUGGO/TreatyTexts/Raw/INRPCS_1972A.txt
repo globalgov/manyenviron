@@ -247,7 +247,7 @@ does not appreciably change;
 particularly when approaching a very large vessel or a tow or when approaching a
 vessel at close range.
 Rule 8. ACTION TO AVOID COLLISION
-(à) Any action taken to avoid collision shall, if the circumstances of the case admit,
+(a) Any action taken to avoid collision shall, if the circumstances of the case admit,
 be positive, made in ample time and with due regard to the observance of good
 seamanship.
 (b) Any alteration of course and/or speed to avoid collision shall, if the
@@ -853,7 +853,7 @@ The sidelights shall be fitted with inboard screens painted matt black, and meet
 requirements of Section 9 of this Annex. With a combined lantern, using a single vertical filament
 and a very narrow division between the green and red sections, external screens need not be fitted.
 6. Shapes
-(à) Shapes shall be black and of the following sizes:
+(a) Shapes shall be black and of the following sizes:
 (i) a ball shall have a diameter of not less than 0.6 metre;
 (ii) a cone shall have a base diameter of not less than 0.6 metre and a height equal to its diameter;
 (iii) a cylinder shall have a diameter of at least 0.6 metre and a height of twice its diameter;
@@ -890,7 +890,7 @@ For prescribed lights the value ofK shall be 0.8, corresponding to a meteorologi
 approximately 13 nautical miles.
 (b) A selection of figures derived from the formula is given in the following table:
 9. Horizontal sectors
-(à) (i) In the forward direction, sidelights as fitted on the vessel must show the minimum
+(a) (i) In the forward direction, sidelights as fitted on the vessel must show the minimum
 required intensities. The intensities must decrease to reach practical cut-off between 1 degree and
 3 degrees outside the prescribed sectors.
 (ii) For sternlights and masthead lights and at 22.5 degrees abaft the beam for sidelights, the
@@ -945,7 +945,7 @@ in Rule 26(fc)(i) and (c)(i). The lights shall be visible all round the horizon 
 (b) Each vessel engaged in pair trawling may exhibit:
 (i) by night, a searchlight directed forward and in the direction of the other vessel of the pair;
 (ii) when shooting or hauling their nets or when their nets have come fast upon an obstruction, the
-lights prescribed in 2(«) above.
+lights prescribed in 2(<<) above.
 3. Signals for purse seiners
 Vessels engaged in fishing with purse seine gear may exhibit two yellow lights in a vertical
 line. These lights shall flash alternately every second and with equal light and occultation duration.

@@ -42,8 +42,8 @@ and shall help to promote development in the Member States.
 CHAPTER iv. ORGANIZATION AND MANAGEMENT
 Article 6. ORGANS OF THE FUND
 The organs of orientation, decision and management of the Fund are:
-— The Board of Directors,
-— The Executive Secretariat.
+- The Board of Directors,
+- The Executive Secretariat.
 Article 7. THE COUNCIL OF MINISTERS
 1. The Board of Directors of the Fund is the Council of Ministers of the Niger Basin
 Authority.
@@ -88,7 +88,7 @@ President of the United Republic of Cameroon
 H. E. MATHIEU EKRA
 Minister of State
 For and on behalf of the President of Ivory Coast
-H. E. Mr. AHMED SÉKOU TOURÉ
+H. E. Mr. AHMED SEKOU TOURE
 President of the Revolutionary People's Republic of Guinea
 H E. Dr. JOSEPH CONOMBO
 Prime Minister

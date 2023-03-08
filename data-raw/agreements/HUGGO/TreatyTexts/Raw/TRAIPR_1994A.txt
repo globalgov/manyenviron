@@ -230,7 +230,7 @@ addition, Members may afford an opportunity for the registration of a trademark 
 Article 16
 Rights Conferred
 1. The owner of a registered trademark shall have the exclusive right to prevent all third parties
-not having the owner’s consent from using in the course of trade identical or similar signs for goods
+not having the owner's consent from using in the course of trade identical or similar signs for goods
 or services which are identical or similar to those in respect of which the trademark is registered
 where such use would result in a likelihood of confusion. In case of the use of an identical sign for
 identical goods or services, a likelihood of confusion shall be presumed. The rights described above
@@ -373,7 +373,7 @@ the trademark in that Member provided that the trademark has been published by t
 date is earlier than the date on which the adverse use became generally known in that Member,
 provided that the geographical indication is not used or registered in bad faith.
 8. The provisions of this Section shall in no way prejudice the right of any person to use, in the
-course of trade, that person’s name or the name of that person’s predecessor in business, except where
+course of trade, that person's name or the name of that person's predecessor in business, except where
 such name is used in such a manner as to mislead the public.
 9. There shall be no obligation under this Agreement to protect geographical indications which
 are not or cease to be protected in their country of origin, or which have fallen into disuse in that
@@ -393,7 +393,7 @@ industrial design law or through copyright law.
 Article 26
 Protection
 1. The owner of a protected industrial design shall have the right to prevent third parties not
-having the owner’s consent from making, selling or importing articles bearing or embodying a design
+having the owner's consent from making, selling or importing articles bearing or embodying a design
 which is a copy, or substantially a copy, of the protected design, when such acts are undertaken for
 commercial purposes.
 2. Members may provide limited exceptions to the protection of industrial designs, provided that
@@ -428,10 +428,10 @@ Article 28
 Rights Conferred
 1. A patent shall confer on its owner the following exclusive rights:
 (a) where the subject matter of a patent is a product, to prevent third parties not having
-the owner’s consent from the acts of: making, using, offering for sale, selling, or
+the owner's consent from the acts of: making, using, offering for sale, selling, or
 importing6 for these purposes that product;
 (b) where the subject matter of a patent is a process, to prevent third parties not having
-the owner’s consent from the act of using the process, and from the acts of: using,
+the owner's consent from the act of using the process, and from the acts of: using,
 offering for sale, selling, or importing for these purposes at least the product obtained
 directly by that process.
 2. Patent owners shall also have the right to assign, or transfer by succession, the patent and to
@@ -443,7 +443,7 @@ sufficiently clear and complete for the invention to be carried out by a person 
 may require the applicant to indicate the best mode for carrying out the invention known to the
 inventor at the filing date or, where priority is claimed, at the priority date of the application.
 2. Members may require an applicant for a patent to provide information concerning the
-applicant’s corresponding foreign applications and grants.
+applicant's corresponding foreign applications and grants.
 Article 30
 Exceptions to Rights Conferred
 6 This right, like all other rights conferred under this Agreement in respect of the use, sale, importation
@@ -706,7 +706,7 @@ Article 45
 Damages
 1. The judicial authorities shall have the authority to order the infringer to pay the right holder
 damages adequate to compensate for the injury the right holder has suffered because of an
-infringement of that person’s intellectual property right by an infringer who knowingly, or with
+infringement of that person's intellectual property right by an infringer who knowingly, or with
 reasonable grounds to know, engaged in infringing activity.
 2. The judicial authorities shall also have the authority to order the infringer to pay the right
 holder expenses, which may include appropriate attorney's fees. In appropriate cases, Members may
@@ -762,7 +762,7 @@ parte where appropriate, in particular where any delay is likely to cause irrepa
 holder, or where there is a demonstrable risk of evidence being destroyed.
 3. The judicial authorities shall have the authority to require the applicant to provide any
 reasonably available evidence in order to satisfy themselves with a sufficient degree of certainty that
-the applicant is the right holder and that the applicant’s right is being infringed or that such
+the applicant is the right holder and that the applicant's right is being infringed or that such
 infringement is imminent, and to order the applicant to provide a security or equivalent assurance
 sufficient to protect the defendant and to prevent abuse.
 4. Where provisional measures have been adopted inaudita altera parte, the parties affected
@@ -802,7 +802,7 @@ Article 52
 Application
 Any right holder initiating the procedures under Article 51 shall be required to provide
 adequate evidence to satisfy the competent authorities that, under the laws of the country of
-importation, there is prima facie an infringement of the right holder’s intellectual property right and
+importation, there is prima facie an infringement of the right holder's intellectual property right and
 to supply a sufficiently detailed description of the goods to make them readily recognizable by the
 customs authorities. The competent authorities shall inform the applicant within a reasonable period
 whether they have accepted the application and, where determined by the competent authorities, the
@@ -866,7 +866,7 @@ Article 57
 Right of Inspection and Information
 Without prejudice to the protection of confidential information, Members shall provide the
 competent authorities the authority to give the right holder sufficient opportunity to have any goods
-detained by the customs authorities inspected in order to substantiate the right holder’s claims. The
+detained by the customs authorities inspected in order to substantiate the right holder's claims. The
 competent authorities shall also have authority to give the importer an equivalent opportunity to have
 any such goods inspected. Where a positive determination has been made on the merits of a case,
 Members may provide the competent authorities the authority to inform the right holder of the names

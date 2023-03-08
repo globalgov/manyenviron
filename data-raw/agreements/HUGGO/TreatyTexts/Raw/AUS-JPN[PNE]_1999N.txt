@@ -205,7 +205,7 @@ Ningyo Toge Plant
 1.8
 	
 
-Compagnie Générale des Matières Nucléaires (for conversion to U3O8)
+Compagnie Generale des Matieres Nucleaires (for conversion to U3O8)
 	
 
 Pierrelatte Plant
@@ -503,7 +503,7 @@ Tokai Plant
 3.9
 	
 
-Société Franco-Belge de Fabrication de Combustibles
+Societe Franco-Belge de Fabrication de Combustibles
 	
 
 Pierrelatte Plant
@@ -2441,7 +2441,7 @@ Sellafield Plant
 6.2
 	
 
-Compagnie Générale des Matières Nucléaires
+Compagnie Generale des Matieres Nucleaires
 	
 
 La Hague Plant

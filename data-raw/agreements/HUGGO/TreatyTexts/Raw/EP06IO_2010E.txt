@@ -55,27 +55,27 @@ Coastal Environment of the Eastern African Region (1985).
 Have agreed as follows,
 Article 1: Geographical Coverage
 This Convention shall apply to the Western Indian Ocean covering the Eastern and Southern
-Africa region, hereinafter referred to as “the Convention area” as defined in paragraph (b) of
+Africa region, hereinafter referred to as "the Convention area" as defined in paragraph (b) of
 Article 2.
  
 Article 2: Definitions
 For the purposes of this Convention:
- -  “Contracting Party” means any state or regional inter-governmental integration
+ -  "Contracting Party" means any state or regional inter-governmental integration
 organization located within the Convention area as defined in this Convention and which
 is a party to this Convention or its protocols;
- -  The “Convention area” shall comprise the riparian, marine and coastal environment
+ -  The "Convention area" shall comprise the riparian, marine and coastal environment
 including the watershed of the Contracting Parties to this Convention. The extent of the
 watershed and of the coastal environment to be included within the Convention area
 shall be indicated in each protocol to this Convention, taking into account the objectives
 of the protocol concerned;
- -  “Pollution” means the introduction by human intervention, directly or indirectly, or
+ -  "Pollution" means the introduction by human intervention, directly or indirectly, or
 through river flows, of substances, organisms or energy into the marine and coastal
 environment, including estuaries, resulting in such deleterious effects as harm to living
 resources, hazards to human health, hindrance to marine activities, including fishing,
 impairment of quality for use of sea water and reduction of amenities;
- -  “Organization” means the body designated as responsible for carrying out secretariat
+ -  "Organization" means the body designated as responsible for carrying out secretariat
 functions pursuant to article 17 of this Convention; and
- -  “Original Convention” means the Convention for the Protection, Management and
+ -  "Original Convention" means the Convention for the Protection, Management and
 Development of the Marine and Coastal Environment of the Eastern African Region
 adopted in Nairobi in 1985.
  
@@ -297,7 +297,7 @@ plenipotentiaries.
 the Contracting Parties to the Convention, which are present and voting at the
 conference of plenipotentiaries and shall be submitted by the Depositary for acceptance
 by all Contracting Parties to the Convention. Amendments to any protocols shall be
-adopted by a two –thirds majority vote of Contracting Parties to the protocol which are
+adopted by a two -thirds majority vote of Contracting Parties to the protocol which are
 present and voting at the conference of plenipotentiaries and shall be submitted by the
 Depositary for acceptance by all Contracting Parties to the protocol.
 1. Instruments of ratification, acceptance or approval of amendments shall be deposited
@@ -483,7 +483,7 @@ a. all matters relating to new annexes and to the amendment of any annex.
 Depositary, which shall send certified copies thereof to the Signatories, the Contracting
 Parties and the Organization.
 1. As soon as the Convention or any protocol enters into force, the Depositary shall
-transmit a certified copy of the instrument concerned to the Secretary –General of the
+transmit a certified copy of the instrument concerned to the Secretary -General of the
 United Nations for registration and publication in accordance with Article 102 of the
 Charter of the United Nations.
  
@@ -515,14 +515,14 @@ case in any other capacity.
 Article 4
  -  If the chairman of the arbitral tribunal has not been designated within two months of
 the appointment of the second arbitrator, the Secretary-General of the United Nations
-shall, at the request of either party, designate him within a further two months’ period.
+shall, at the request of either party, designate him within a further two months' period.
  -  If one of the parties to the dispute does not appoint an arbitrator within two months of
-receipt of the request, the other party may inform the Secretary –General of the United
+receipt of the request, the other party may inform the Secretary -General of the United
 Nations who shall designate the chairman of the arbitral tribunal within a further two
-months’ period. Upon designation, the chairman of the arbitral tribunal shall request the
+months' period. Upon designation, the chairman of the arbitral tribunal shall request the
 party, which has not appointed an arbitrator to do so within two months. After such
 period he shall inform the Secretary-General of the United Nations, who shall make this
-appointment within a further two months’ period.
+appointment within a further two months' period.
 Article 5
  -  The arbitral tribunal shall render its decision in accordance with international law and in
 accordance with the provisions of the Convention and the protocol or protocols
@@ -541,7 +541,7 @@ of the proceedings.
 the proceedings.
 Article 7
 The arbitral tribunal may hear and determine counterclaims arising directly out of the subject
-–matter of the dispute.
+-matter of the dispute.
 Article 8
 Unless the arbitral tribunal determines otherwise because of the particular circumstances of
 the case, the expenses of the tribunal, including the remuneration of its members, shall be

@@ -22,7 +22,7 @@ System (NAR.lS) in addition to information on developmental aspects including so
 data, management of harsh environment, drilling experiences, meteorological
 data, .. etc. and also agreed to update this system as specified in Agreement #2.
 The sharing of this information will be accomplished according to the setup specified
-below·;
+below;
 In tern et Environment - Server and access through the Internet.
 In this protocol the data will be stored on a server and accessed through internet by the
 four countries through web-based Oracle. A level of security is maintained in this

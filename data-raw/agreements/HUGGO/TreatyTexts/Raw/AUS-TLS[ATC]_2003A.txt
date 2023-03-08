@@ -46,21 +46,21 @@ Definitions
 
 For the purposes of this Agreement, unless the context otherwise requires:
 
-(a) “Apportionment Ratio” means the ratio as set out in Article 7 of this Agreement or such other ratio as applies from time to time as a result of any redetermination under Article 8.
+(a) "Apportionment Ratio" means the ratio as set out in Article 7 of this Agreement or such other ratio as applies from time to time as a result of any redetermination under Article 8.
 
-(b) “Commercial Sale”, in relation to Petroleum, means a transfer of title between parties, whether or not at arm’s length.
+(b) "Commercial Sale", in relation to Petroleum, means a transfer of title between parties, whether or not at arm's length.
 
-(c) “Development Plan” means a description of the proposed petroleum reservoirs development and management program that includes details of the sub-surface evaluation and production facilities, the production profile for the expected life of the project, the estimated capital and non-capital expenditure covering the feasibility, fabrication, installation and pre-production stages of the project, and an evaluation of the commerciality of the development of Petroleum from the Unit Reservoirs.
+(c) "Development Plan" means a description of the proposed petroleum reservoirs development and management program that includes details of the sub-surface evaluation and production facilities, the production profile for the expected life of the project, the estimated capital and non-capital expenditure covering the feasibility, fabrication, installation and pre-production stages of the project, and an evaluation of the commerciality of the development of Petroleum from the Unit Reservoirs.
 
-(d) “Export Pipeline” means any pipeline by which petroleum is discharged from the Unit Area.
+(d) "Export Pipeline" means any pipeline by which petroleum is discharged from the Unit Area.
 
-(e) “Joint Commission” means the Joint Commission of the Joint Petroleum Development Area established under Article 6 of the Timor Sea Treaty.
+(e) "Joint Commission" means the Joint Commission of the Joint Petroleum Development Area established under Article 6 of the Timor Sea Treaty.
 
-(f) “Joint Petroleum Development Area” (“JPDA”) means the area referred to in Article 3 of the Timor Sea Treaty.
+(f) "Joint Petroleum Development Area" ("JPDA") means the area referred to in Article 3 of the Timor Sea Treaty.
 
-(g) “Joint Venturers’ Agreement” means any agreement between all Sunrise Joint Venturers relating to the exploitation of the Unit Reservoirs including a unitisation agreement, a unit operating agreement and any other agreement relating to the exploitation of those reservoirs.
+(g) "Joint Venturers' Agreement" means any agreement between all Sunrise Joint Venturers relating to the exploitation of the Unit Reservoirs including a unitisation agreement, a unit operating agreement and any other agreement relating to the exploitation of those reservoirs.
 
-(h) “Marketable Petroleum Commodity” means any of the following products produced from petroleum:
+(h) "Marketable Petroleum Commodity" means any of the following products produced from petroleum:
 (i) stabilised crude oil;
 (ii) sales gas;
 (iii) condensate;
@@ -69,33 +69,33 @@ For the purposes of this Agreement, unless the context otherwise requires:
 (vi) any other product declared by the Regulatory Authorities to be a marketable petroleum commodity.
 A marketable petroleum commodity cannot be a product produced from another product of a kind referred to in subparagraphs (i) to (vi) inclusive.
 
-(i) “MPC Point” means that point where each Marketable Petroleum Commodity is produced, and may vary between Marketable Petroleum Commodities.
+(i) "MPC Point" means that point where each Marketable Petroleum Commodity is produced, and may vary between Marketable Petroleum Commodities.
 
-(j) “Petroleum” means:
+(j) "Petroleum" means:
 (i) any naturally occurring hydrocarbon, whether in a gaseous, liquid or solid state;
 (ii) any naturally occurring mixture of hydrocarbons, whether in a gaseous, liquid or solid state; or
 (iii) any naturally occurring mixture of one or more hydrocarbons, whether in a gaseous, liquid or solid state, as well as other substances produced in association with such hydrocarbons;
 including any Petroleum as defined in subparagraph (i), (ii) or (iii) that has been returned to a natural reservoir.
 
-(k) “Regulatory Authorities” means the competent authority for administering petroleum activities in that part of the Joint Petroleum Development Area within the Unit Area and the competent Australian authority for administering petroleum activities in that part of the Unit Area outside of the Joint Petroleum Development Area.
+(k) "Regulatory Authorities" means the competent authority for administering petroleum activities in that part of the Joint Petroleum Development Area within the Unit Area and the competent Australian authority for administering petroleum activities in that part of the Unit Area outside of the Joint Petroleum Development Area.
 
-(l) “Sunrise Commission” has the meaning given in Article 9 of this Agreement.
+(l) "Sunrise Commission" has the meaning given in Article 9 of this Agreement.
 
-(m) “Sunrise Joint Venturers” means all those individuals or bodies corporate holding for the time being a licence or contract in respect of an area within the Unit Area under which exploration or exploitation of Petroleum may be carried out.
+(m) "Sunrise Joint Venturers" means all those individuals or bodies corporate holding for the time being a licence or contract in respect of an area within the Unit Area under which exploration or exploitation of Petroleum may be carried out.
 
-(n) “Unit Area” means the area described in Annex I.
+(n) "Unit Area" means the area described in Annex I.
 
-(o) “Unit Installation” means any structure or device installed or to be installed above, on, or under the seabed of the Unit Area for the purpose of extracting Petroleum from the Unit Reservoirs in accordance with the Development Plan. Unit Installations exclude any structure or device after the Valuation Point.
+(o) "Unit Installation" means any structure or device installed or to be installed above, on, or under the seabed of the Unit Area for the purpose of extracting Petroleum from the Unit Reservoirs in accordance with the Development Plan. Unit Installations exclude any structure or device after the Valuation Point.
 
-(p) “Unit Operator” has the meaning given in Article 6 of this Agreement.
+(p) "Unit Operator" has the meaning given in Article 6 of this Agreement.
 
-(q) “Unit Petroleum” means all Petroleum contained in or produced from the Unit Reservoirs, up to the Valuation Point.
+(q) "Unit Petroleum" means all Petroleum contained in or produced from the Unit Reservoirs, up to the Valuation Point.
 
-(r) “Unit Property” means all Unit Installations in the Unit Area.
+(r) "Unit Property" means all Unit Installations in the Unit Area.
 
-(s) “Unit Reservoirs” has the meaning given in Annex I.
+(s) "Unit Reservoirs" has the meaning given in Annex I.
 
-(t) “Valuation Point” means the point of the first commercial sale of Petroleum produced from the Unit Reservoirs, which shall occur no later than the earlier of
+(t) "Valuation Point" means the point of the first commercial sale of Petroleum produced from the Unit Reservoirs, which shall occur no later than the earlier of
 (i) the point where the Petroleum enters an Export Pipeline and
 (ii) the MPC point for the Petroleum.
 
@@ -140,15 +140,15 @@ ARTICLE 5
 Agreements
 
 
-(1) Australia and Timor-Leste shall require Sunrise Joint Venturers, as comprised at the date on which this Agreement enters into force, to conclude Joint Venturers’ Agreements to regulate the exploitation of the Unit Reservoirs in accordance with this Agreement.
+(1) Australia and Timor-Leste shall require Sunrise Joint Venturers, as comprised at the date on which this Agreement enters into force, to conclude Joint Venturers' Agreements to regulate the exploitation of the Unit Reservoirs in accordance with this Agreement.
 
-(2) Any Joint Venturers’ Agreement shall incorporate provisions to ensure that, in the event of a conflict between that Joint Venturers’ Agreement and this Agreement, the terms of this Agreement shall prevail. Any Joint Venturers’ Agreement requires the prior approval of the Regulatory Authorities.
+(2) Any Joint Venturers' Agreement shall incorporate provisions to ensure that, in the event of a conflict between that Joint Venturers' Agreement and this Agreement, the terms of this Agreement shall prevail. Any Joint Venturers' Agreement requires the prior approval of the Regulatory Authorities.
 
-(3) Any Joint Venturers’ Agreement shall incorporate provisions to ensure that, except in so far as the contrary is expressly stated in that Agreement,
+(3) Any Joint Venturers' Agreement shall incorporate provisions to ensure that, except in so far as the contrary is expressly stated in that Agreement,
 
-(a) any agreed proposal to amend, modify, or otherwise change the Joint Venturers’ Agreement, and
+(a) any agreed proposal to amend, modify, or otherwise change the Joint Venturers' Agreement, and
 
-(b) any agreed proposal to waive or depart from any provision of the Joint Venturers’ Agreement
+(b) any agreed proposal to waive or depart from any provision of the Joint Venturers' Agreement
 
 shall require the approval of the Regulatory Authorities before any such proposal may be implemented. The Regulatory Authorities shall acknowledge receipt of notice of any such proposal and shall specify the date of receipt. Approval shall be deemed to have been given unless the Unit Operator has been notified to the contrary by either Regulatory Authority not later than 45 days after the later of the specified dates.
 
@@ -158,7 +158,7 @@ ARTICLE 6
 Unit Operator
 
 
-A single Sunrise Joint Venturer shall be appointed by agreement between the Sunrise Joint Venturers as their agent for the purposes of exploiting the Unit Reservoirs in accordance with this Agreement (“the Unit Operator”). The appointment of and any change of the Unit Operator shall be subject to prior approval of the Regulatory Authorities.
+A single Sunrise Joint Venturer shall be appointed by agreement between the Sunrise Joint Venturers as their agent for the purposes of exploiting the Unit Reservoirs in accordance with this Agreement ("the Unit Operator"). The appointment of and any change of the Unit Operator shall be subject to prior approval of the Regulatory Authorities.
 
 
 ARTICLE 7
@@ -182,7 +182,7 @@ Reapportionment of Unit Petroleum
 
 (c) Any redetermination of the Apportionment Ratio shall not occur within five (5) years of any prior redetermination, except that a redetermination may occur within twelve (12) months of the commencement of production from the Unit Reservoirs.
 
-(d) The Unit Operator shall use only commercially available software in a redetermination of the Apportionment Ratio. Only data that is available to both Governments as at the date the redetermination is requested shall be utilised by the Unit Operator and all data and analyses pursuant to the Unit Operator’s proposal for the redetermined Apportionment Ratio shall be provided to both Governments with the proposal. The Unit Operator shall use all reasonable endeavours to complete the redetermination within 120 days.
+(d) The Unit Operator shall use only commercially available software in a redetermination of the Apportionment Ratio. Only data that is available to both Governments as at the date the redetermination is requested shall be utilised by the Unit Operator and all data and analyses pursuant to the Unit Operator's proposal for the redetermined Apportionment Ratio shall be provided to both Governments with the proposal. The Unit Operator shall use all reasonable endeavours to complete the redetermination within 120 days.
 
 (e) Any change to the Apportionment Ratio arising from a redetermination requested under subparagraph (a) has effect when it is agreed by the Regulatory Authorities or, if referred to an expert for determination, when the expert makes a final decision.
 
@@ -198,7 +198,7 @@ Administration of the Unit Area
 
 (1) For the purposes of this Agreement but not otherwise and unless otherwise provided in this Agreement, the Regulatory Authorities that will regulate petroleum activities in the Unit Area or in relation to Unit Petroleum shall be those Regulatory Authorities established through application of laws as provided in Article 4.
 
-(2) A Sunrise Commission (“the Commission”) shall be established for the purpose of facilitating the implementation of this Agreement and shall consult on issues relating to exploration and exploitation of petroleum in the Unit Area.
+(2) A Sunrise Commission ("the Commission") shall be established for the purpose of facilitating the implementation of this Agreement and shall consult on issues relating to exploration and exploitation of petroleum in the Unit Area.
 
 (3) The Commission shall facilitate coordination between the Regulatory Authorities to promote the development of the petroleum reservoir as a single entity.
 
@@ -229,7 +229,7 @@ For the purposes of company taxation, resource taxation, cost recovery and produ
 
 (a) receipts and expenditures for that part of production attributed to the JPDA in accordance with the Apportionment Ratio shall be taxed in accordance with arrangements specified in the Timor Sea Treaty and elsewhere in this Agreement;
 
-(b) receipts and expenditures for that part of production attributed to Australia in accordance with the Apportionment Ratio shall be taxed in accordance with Australia’s domestic taxation arrangements.
+(b) receipts and expenditures for that part of production attributed to Australia in accordance with the Apportionment Ratio shall be taxed in accordance with Australia's domestic taxation arrangements.
 
 
 ARTICLE 12
@@ -237,7 +237,7 @@ ARTICLE 12
 Development Plan
 
 
-(1) Production of petroleum shall not commence until a Development Plan for the effective exploitation of the Unit Reservoirs, which has been submitted by the Unit Operator and contains a programme and plans agreed in accordance with Joint Venturers’ Agreements, has been approved by the Regulatory Authorities. The Unit Operator shall submit copies of the Development Plan to the Regulatory Authorities for approval.
+(1) Production of petroleum shall not commence until a Development Plan for the effective exploitation of the Unit Reservoirs, which has been submitted by the Unit Operator and contains a programme and plans agreed in accordance with Joint Venturers' Agreements, has been approved by the Regulatory Authorities. The Unit Operator shall submit copies of the Development Plan to the Regulatory Authorities for approval.
 
 (2) The Commission may review, and make recommendations to the Regulatory Authorities with regard to, a Development Plan.
 
@@ -247,7 +247,7 @@ Development Plan
 (b) the contractor or licensee possesses the competence and resources needed to exploit the reservoir to the best commercial advantage;
 (c) the contractor or licensee is seeking to exploit the reservoir to the best commercial advantage consistent with good oilfield practice;
 (d) the contractor or licensee could reasonably be expected to carry out the exploitation of the reservoir during the specified period;
-(e) the contractor or licensee has entered into contracts for the sale of gas from the project which are consistent with arm’s length transactions.
+(e) the contractor or licensee has entered into contracts for the sale of gas from the project which are consistent with arm's length transactions.
 
 (4) The Regulatory Authorities shall specify their reasons for not approving a Development Plan including identification of the criteria in paragraph (2) that the contractor or licensee has failed to meet.
 
@@ -301,9 +301,9 @@ ARTICLE 16
 Valuation of Unit Petroleum for Cost Recovery and Production Sharing Purposes
 
 
-(1) Where Australia and Timor-Leste agree that a licensee or contractor has entered into contracts for the sale of Unit Petroleum which are consistent with arm’s length transactions as outlined in Annex III, then for that part of Unit Petroleum apportioned to the JPDA in accordance with the Apportionment Ratio, the transacted price will be accepted as the Petroleum valuation for cost recovery and production sharing purposes.
+(1) Where Australia and Timor-Leste agree that a licensee or contractor has entered into contracts for the sale of Unit Petroleum which are consistent with arm's length transactions as outlined in Annex III, then for that part of Unit Petroleum apportioned to the JPDA in accordance with the Apportionment Ratio, the transacted price will be accepted as the Petroleum valuation for cost recovery and production sharing purposes.
 
-(2) Where Australia and Timor-Leste do not agree that a licensee or contractor has entered into contracts for the sale of Unit Petroleum which are consistent with arm’s length transactions, then for that part of Unit Petroleum apportioned to the JPDA in accordance with the Apportionment Ratio, Australia and Timor-Leste shall determine the Petroleum valuation for cost recovery and production sharing purposes in accordance with internationally accepted arm’s length principles having due regard to functions performed, assets used and risks assumed, as outlined in Annex III.
+(2) Where Australia and Timor-Leste do not agree that a licensee or contractor has entered into contracts for the sale of Unit Petroleum which are consistent with arm's length transactions, then for that part of Unit Petroleum apportioned to the JPDA in accordance with the Apportionment Ratio, Australia and Timor-Leste shall determine the Petroleum valuation for cost recovery and production sharing purposes in accordance with internationally accepted arm's length principles having due regard to functions performed, assets used and risks assumed, as outlined in Annex III.
 
 
 ARTICLE 17
@@ -429,7 +429,7 @@ Settlement of Disputes
 
 (2) Subject to paragraph (3), if a dispute cannot be resolved in the manner specified in paragraph (1) or by any other agreed procedure, the dispute shall be submitted, at the request of either Government, to an Arbitral Tribunal set out in Annex IV.
 
-(3) If a dispute arises concerning a proposal for a redetermined Apportionment Ratio pursuant to Article 8(1) or concerning the measurement, pursuant to Article 24, of quantities of gas and liquids, an expert shall be appointed by Australia and Timor-Leste to determine the matter in question. The two Governments shall, within 60 days of notification by either of them of such a dispute, try to reach agreement on the appointment of such an expert. If, within this period, no agreement has been reached, the procedures specified in Annex V shall be followed. The expert appointed shall act in accordance with the terms of Annex V. The expert’s decision shall be final and binding on both Governments and on the Sunrise Joint Venturers, save in the event of fraud or manifest error.
+(3) If a dispute arises concerning a proposal for a redetermined Apportionment Ratio pursuant to Article 8(1) or concerning the measurement, pursuant to Article 24, of quantities of gas and liquids, an expert shall be appointed by Australia and Timor-Leste to determine the matter in question. The two Governments shall, within 60 days of notification by either of them of such a dispute, try to reach agreement on the appointment of such an expert. If, within this period, no agreement has been reached, the procedures specified in Annex V shall be followed. The expert appointed shall act in accordance with the terms of Annex V. The expert's decision shall be final and binding on both Governments and on the Sunrise Joint Venturers, save in the event of fraud or manifest error.
 
 
 ARTICLE 27
@@ -462,27 +462,27 @@ ANNEX I
 Delineation of Unit Area and Unit Reservoirs
 
 
-The Unit Area is the area (depicted for illustrative purposes only on the map at Attachment 1) bounded by a line commencing at 9º 50' 00" S, 127º 55' 00" E and running:
+The Unit Area is the area (depicted for illustrative purposes only on the map at Attachment 1) bounded by a line commencing at 9&#186; 50' 00" S, 127&#186; 55' 00" E and running:
 
 (a) successively along the rhumb line to each of the following points in the sequence in which they appear below:
 
-9º 50' 00" S, 128º 20' 00" E
-9º 40' 00" S, 128º 20' 00" E
-9º 40' 00" S, 128º 25' 00" E
-9º 30' 00" S, 128º 25' 00" E
-9º 30' 00" S, 128º 20' 00" E
-9º 25' 00" S, 128º 20' 00" E
-9º 25' 00" S, 128º 00' 00" E
-9º 30' 00" S, 127º 53' 20" E
-9º 30' 00" S, 127º 52' 30" E
-9º 35' 00" S, 127º 52' 30" E
-9º 35' 00" S, 127º 50' 00" E
-9º 37' 30" S, 127º 50' 00" E
-9º 37' 30" S, 127º 45' 00" E
-9º 45' 00" S, 127º 45' 00" E
-9º 45' 00" S, 127º 50' 00" E
-9º 47' 30" S, 127º 50' 00" E
-9º 47' 30" S, 127º 55' 00" E;
+9&#186; 50' 00" S, 128&#186; 20' 00" E
+9&#186; 40' 00" S, 128&#186; 20' 00" E
+9&#186; 40' 00" S, 128&#186; 25' 00" E
+9&#186; 30' 00" S, 128&#186; 25' 00" E
+9&#186; 30' 00" S, 128&#186; 20' 00" E
+9&#186; 25' 00" S, 128&#186; 20' 00" E
+9&#186; 25' 00" S, 128&#186; 00' 00" E
+9&#186; 30' 00" S, 127&#186; 53' 20" E
+9&#186; 30' 00" S, 127&#186; 52' 30" E
+9&#186; 35' 00" S, 127&#186; 52' 30" E
+9&#186; 35' 00" S, 127&#186; 50' 00" E
+9&#186; 37' 30" S, 127&#186; 50' 00" E
+9&#186; 37' 30" S, 127&#186; 45' 00" E
+9&#186; 45' 00" S, 127&#186; 45' 00" E
+9&#186; 45' 00" S, 127&#186; 50' 00" E
+9&#186; 47' 30" S, 127&#186; 50' 00" E
+9&#186; 47' 30" S, 127&#186; 55' 00" E;
 
 (b) thence along the rhumb line to the point of commencement.
 
@@ -549,19 +549,19 @@ ANNEX III
 Petroleum Valuation Principles
 
 
-1. This Annex sets out the principles to be applied in determining the value of petroleum in non-arm’s length transactions under Article 16, for the purposes of cost recovery and production sharing of that part of Unit Petroleum apportioned to the Joint Petroleum Development Area in accordance with the Apportionment Ratio.
+1. This Annex sets out the principles to be applied in determining the value of petroleum in non-arm's length transactions under Article 16, for the purposes of cost recovery and production sharing of that part of Unit Petroleum apportioned to the Joint Petroleum Development Area in accordance with the Apportionment Ratio.
 
-2. An arm’s length transaction is one where the parties to the transaction are dealing at arm’s length with each other in relation to the transaction. Whether the parties are dealing at arm’s length is determined not only by the relationship between the parties but also by the nature of the dealings between those parties, even if they are otherwise independent of each other.
+2. An arm's length transaction is one where the parties to the transaction are dealing at arm's length with each other in relation to the transaction. Whether the parties are dealing at arm's length is determined not only by the relationship between the parties but also by the nature of the dealings between those parties, even if they are otherwise independent of each other.
 
-3. In determining whether an arm’s length transaction has taken place, the Regulatory Authorities shall, amongst other things, have due regard to the functions performed, assets used and risks assumed. In assessing the allocation of risk, and the associated return to those risks, regard shall be had to the outcomes expected of parties acting at arm’s length.
+3. In determining whether an arm's length transaction has taken place, the Regulatory Authorities shall, amongst other things, have due regard to the functions performed, assets used and risks assumed. In assessing the allocation of risk, and the associated return to those risks, regard shall be had to the outcomes expected of parties acting at arm's length.
 
-4. Where there is no arm’s length sale, the petroleum shall be valued with reference to a comparable uncontrolled price (CUP) at the Valuation Point.
+4. Where there is no arm's length sale, the petroleum shall be valued with reference to a comparable uncontrolled price (CUP) at the Valuation Point.
 
 5. If no CUP exists petroleum shall be valued by the application of the pricing methodology set out in paragraph 6. In this methodology:
 
 Calculation Period means the period beginning with the year five years before production of petroleum from Greater Sunrise is scheduled under the Development Plan to commence (t = 0), and ending with the year when production is scheduled under the Development Plan to cease (t = T).
 
-Downstream Facilities means any petroleum processing facilities after the Valuation Point and before the earlier of the first point of arm’s length sale and the first available CUP.
+Downstream Facilities means any petroleum processing facilities after the Valuation Point and before the earlier of the first point of arm's length sale and the first available CUP.
 
 6. The petroleum valuation (PV) shall be:
 
@@ -580,7 +580,7 @@ r = 14% for floating gas-to-liquids technology and 10.5% for an export pipeline;
 
 NCF is net cash flow before tax;
 
-VDP is the total market value of the downstream product, at the first point of arm’s length sale, or the first available CUP, in that year;
+VDP is the total market value of the downstream product, at the first point of arm's length sale, or the first available CUP, in that year;
 
 ECC is expenditures made for items which normally have a useful life of more than one (1) year incurred by the owners of the Downstream Facilities in the year for which NCF is being calculated (including, but not limited to, feasibility and engineering costs and other costs incurred for the purposes of designing and constructing the Downstream Facilities (and in the first year, those costs incurred prior to the start of the Calculation Period)), but only to the extent such are incurred in respect of the Downstream Facilities before the date of commencement of production;
 
@@ -602,7 +602,7 @@ QH is the quantity of undifferentiated hydrocarbons that, in that year, passed t
 
 (b) QH shall exclude the quantity of undifferentiated hydrocarbons which results in production of that condensate or LPG for which tolling fees were paid.
 
-8. All costs and estimates of costs used for the purposes of the calculation in paragraph 6, including any tolling fees charged under paragraph 7, shall be not more than those which would be directly and necessarily incurred by a reasonable and prudent operator in an arm’s length transaction.
+8. All costs and estimates of costs used for the purposes of the calculation in paragraph 6, including any tolling fees charged under paragraph 7, shall be not more than those which would be directly and necessarily incurred by a reasonable and prudent operator in an arm's length transaction.
 
 9. Where the average realised price for downstream product over the previous two years differs by more than 10% from the average price over that period as included in the calculations under paragraph 6, then either Australia or Timor-Leste may initiate a review of these calculations by the Regulatory Authorities, in accordance with the following:
 
@@ -660,7 +660,7 @@ Expert Determination Procedure
 
 4. If a Government fails to respond to any request or notice within the time specified under this Annex, the Government shall be deemed to have waived its rights in respect of the subject of the request or notice but nevertheless shall be bound by the actions of the other Government in selecting an expert and by the decision of the expert.
 
-5. The task of the expert is to reach an independent determination of whatever matters are in question. Where the matter in dispute is in relation to technical redetermination of the Apportionment Ratio pursuant to Article 8, the expert’s decision must be made in accordance with any technical procedures and calculation formula pertaining to redetermination as set out in the relevant Joint Venturers’ Agreement.
+5. The task of the expert is to reach an independent determination of whatever matters are in question. Where the matter in dispute is in relation to technical redetermination of the Apportionment Ratio pursuant to Article 8, the expert's decision must be made in accordance with any technical procedures and calculation formula pertaining to redetermination as set out in the relevant Joint Venturers' Agreement.
 
 6. The expert may engage independent contractors to undertake work which is necessary to enable the expert to reach a decision, provided that any contractor nominated by the expert for that purpose is approved by the Governments and gives an undertaking that neither it nor any of its personnel has a conflict of interest which would prevent it from undertaking the work.
 
@@ -674,11 +674,11 @@ and shall be recoverable from the Unit Operator. The latter shall be required to
 
 8. Except as set out in this Agreement, the expert shall establish its own procedures. The expert shall only meet with a Government jointly with the other Government. All communications between the Governments and the expert outside those meetings shall be conducted in writing and a person making any such communication shall at the same time send a copy of it to the other Government.
 
-9. The expert shall use only commercially available software in a redetermination of the Apportionment Ratio. Only data that was available to both Governments as at the date that the redetermination was requested shall be utilised by the expert and all data and analyses relevant to the expert’s preliminary and final decisions for the redetermined Apportionment Ratio shall be provided to both Governments with those decisions.
+9. The expert shall use only commercially available software in a redetermination of the Apportionment Ratio. Only data that was available to both Governments as at the date that the redetermination was requested shall be utilised by the expert and all data and analyses relevant to the expert's preliminary and final decisions for the redetermined Apportionment Ratio shall be provided to both Governments with those decisions.
 
 10. Forthwith upon the appointment of the expert, the Unit Operator shall supply the expert with its data and analyses. Within 30 days of that appointment, each Government will make an initial submission and provide a copy to the other Government. Within 20 days of receiving a copy of that submission, the Government concerned may make a supplementary submission (again providing a copy to the other Government).
 
-11. The expert shall issue a preliminary decision within a period of 90 days, or such other period as the Governments may decide, commencing from the date the expert was appointed. The preliminary decision shall be accompanied by such supporting documentation as is necessary for the Governments to make a reasoned assessment of that decision. Each Government has the right, within 90 days of receipt of the expert’s preliminary decision, to seek clarification of that decision and the supporting documentation, to request the expert to review its preliminary decision and to make submissions to the expert for its consideration. If such a request is made, the other Government shall, within a period of 15 days after receipt of a copy of those submissions, have the right to make further submissions. The expert shall issue its final decision on the matter in question no later than 140 days from the date of issue of the preliminary decision. The expert’s final decision shall be in writing and the expert shall give detailed reasons for that decision.
+11. The expert shall issue a preliminary decision within a period of 90 days, or such other period as the Governments may decide, commencing from the date the expert was appointed. The preliminary decision shall be accompanied by such supporting documentation as is necessary for the Governments to make a reasoned assessment of that decision. Each Government has the right, within 90 days of receipt of the expert's preliminary decision, to seek clarification of that decision and the supporting documentation, to request the expert to review its preliminary decision and to make submissions to the expert for its consideration. If such a request is made, the other Government shall, within a period of 15 days after receipt of a copy of those submissions, have the right to make further submissions. The expert shall issue its final decision on the matter in question no later than 140 days from the date of issue of the preliminary decision. The expert's final decision shall be in writing and the expert shall give detailed reasons for that decision.
 
 12. The Sunrise Joint Venturers shall cooperate fully in supplying information required by the expert and otherwise in facilitating the expert to reach its decision.
 
