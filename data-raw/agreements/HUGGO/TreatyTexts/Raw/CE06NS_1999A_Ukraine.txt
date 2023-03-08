@@ -222,4 +222,6 @@ ANNEX III
 
 INDICATIVE FEATURES OF A TECHNOLOGY MANAGEMENT PLAN (TMP)
 
-The TMP is a specific agreement to be concluded between the participants, about the implementation of joint research and the respective rights and obligations of the participants. With respect to IPR, the TMP will normally address, inter alia: ownership, protection, user rights for R& D purposes, exploitation and dissemination, including arrangements for joint publication, the rights and obligations of visiting researchers and dispute settlement procedures. The TMP may also address foreground and background information, licensing and deliverables. 
+The TMP is a specific agreement to be concluded between the participants, about the implementation of joint research and the respective rights and obligations of the participants. With respect to IPR, the TMP will normally address, inter alia: ownership, protection, user rights for R& D purposes, exploitation and dissemination, including arrangements for joint publication, the rights and obligations of visiting researchers and dispute settlement procedures. The TMP may also address foreground and background information, licensing and deliverables.
+
+
