@@ -341,6 +341,16 @@ for(i in seq_along(misstxt)){
   HUGGO9[which(HUGGO9$manyID == misstxt[i]), 47] <- 0
 }
 
+# Original data from HUGGO
+# Detect if any row has non-ASCII characters in manyID and 
+# replace it with the corresponding treatyID
+HUGGO_or[which(stringr::str_detect(HUGGO_or$manyID, "[^[:ascii:]]")), 1] <- HUGGO_or[which(stringr::str_detect(HUGGO_or$manyID, "[^[:ascii:]]")), 13]
+
+# Verified and additional data
+# Detect if any row has non-ASCII characters in manyID and 
+# replace it with the corresponding treatyID
+HUGGO9[which(stringr::str_detect(HUGGO9$manyID, "[^[:ascii:]]")), 1] <- HUGGO9[which(stringr::str_detect(HUGGO9$manyID, "[^[:ascii:]]")), 13]
+
 # Merge data frames
 HUGGO_new <- dplyr::full_join(HUGGO_or, HUGGO9, by = c("manyID", "treatyID")) %>%
   dplyr::distinct() %>%
@@ -607,10 +617,6 @@ remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & !is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
-
-## Remove non-ASCII strings in manyID
-HUGGO_new <- HUGGO_new[-(which(str_detect(HUGGO_new$manyID, "[^[:ascii:]]"))), ]
-
 
 # Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
