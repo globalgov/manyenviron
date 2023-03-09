@@ -434,10 +434,13 @@ HUGGO_new <- HUGGO_new %>%
                   References, EnabledBy, AmendedBy, Lit, Data, Coded) %>%
   dplyr::arrange(Beg)
 
+
 # Step two: Clean duplicate rows
 
 # First row NA remove
 HUGGO_new <- HUGGO_new[-(which(is.na(HUGGO_new$manyID))), ]
+
+# Clean rows that share the same manyID
 
 # BAD-CHE[LCT]_1884P
 # Additional Convention Between Switzerland Baden And Alsace-Lorraine Concerning Fishing In Lake Constance And Its Tributaries
@@ -617,6 +620,133 @@ remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 remove <- which(HUGGO_new$manyID == "ID04MN_2004E8" & !is.na(HUGGO_new$url))
 HUGGO_new <- HUGGO_new[-(remove[-1]), ]
+
+# Clean rows that have data about the same agreement, but with
+# different manyID
+
+dups <- HUGGO_new %>% 
+  group_by(Beg, Signature, Title, gengID, ecolexID, ieaID, treatyID) %>% 
+  filter(n() > 1) %>%
+  arrange(.by_group = T)
+
+# Convention Between Finland And Russia With Regard To Fishing And Sealing On Lake Ladoga Helsingfors
+title <- "Convention Between Finland And Russia With Regard To Fishing And Sealing On Lake Ladoga Helsingfors"
+which(HUGGO_new$Title == title)
+## Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Convention Between The Union Of Soviet Socialist Republics And Finland Concerning The Maintenance Of River Channels And The Regulation Of Fishing On Watercourses Forming Part Of The Frontier Between Russia And Finland
+title <- "Convention Between The Union Of Soviet Socialist Republics And Finland Concerning The Maintenance Of River Channels And The Regulation Of Fishing On Watercourses Forming Part Of The Frontier Between Russia And Finland"
+which(HUGGO_new$Title == title)
+## Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Protocol For The Prohibition Of The Use In War Of Asphyxiating Poisonous Or Other Gases And Of Bacteriological Methods Of Warfare
+title <- "Protocol For The Prohibition Of The Use In War Of Asphyxiating Poisonous Or Other Gases And Of Bacteriological Methods Of Warfare"
+which(HUGGO_new$Title == title)
+# Keep row with verified data and manyID matching with treatyID
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "PU04MW_1925P" & HUGGO_new$Title == title)), ]
+
+# Nordic Mutual Emergency Assistance Agreement In Connection With Radiation Accidents
+title <- "Nordic Mutual Emergency Assistance Agreement In Connection With Radiation Accidents"
+which(HUGGO_new$Title == title)
+# Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$TreatyText)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$TreatyText)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$TreatyText))), ]
+
+# Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics Relating To Fishing For King And Tanner Crab
+title <- "Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics Relating To Fishing For King And Tanner Crab"
+which(HUGGO_new$Title == title)
+## Keep row with verified data
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & HUGGO_new$manyID == "RUS-USA[CSC]_1973A")), ]
+
+# Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics Relating To Fishing Operations In The North Eastern Pacific Ocean
+title <- "Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics Relating To Fishing Operations In The North Eastern Pacific Ocean"
+which(HUGGO_new$Title == title & HUGGO_new$treatyID == "RUS-USA[UFO]_1973A")
+# Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$treatyID == "RUS-USA[UFO]_1973A"), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$treatyID == "RUS-USA[UFO]_1973A"), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Agreement Between The Government Of The United States Of America And The Government Of The USSR Relating To The Consideration Of Claims Resulting From Damage To Fishing Vessels Or Gear And Measures To Prevent Fishing Conflicts
+title <- "Agreement Between The Government Of The United States Of America And The Government Of The USSR Relating To The Consideration Of Claims Resulting From Damage To Fishing Vessels Or Gear And Measures To Prevent Fishing Conflicts"
+which(HUGGO_new$Title == title)
+# Keep row with verified data
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & HUGGO_new$manyID == "RUS-USA[CSC]_1973A")), ]
+
+# Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics On Certain Fishery Problems On The High Seas In The Western Areas Of The Middle Atlantic Ocean
+title <- "Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics On Certain Fishery Problems On The High Seas In The Western Areas Of The Middle Atlantic Ocean"
+which(HUGGO_new$Title == title & HUGGO_new$manyID == "RUS-USA[HSA]_1973A")
+# Keep row with verified data
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & HUGGO_new$manyID == "RUS-USA[CSC]_1973A")), ]
+
+# Agreement Between The Government Of The Union Of Soviet Socialist Republics And The Government Of The Peoples Republic Of Bulgaria Concerning Fishing For Anchovies And Sprats In Each Others Territorial Waters In The Black Sea
+title <- "Agreement Between The Government Of The Union Of Soviet Socialist Republics And The Government Of The Peoples Republic Of Bulgaria Concerning Fishing For Anchovies And Sprats In Each Others Territorial Waters In The Black Sea"
+which(HUGGO_new$Title == title)
+## Keep row with verified data, but match manyID to treatyID
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & HUGGO_new$Beg == "1978-10-03" & is.na(HUGGO_new$url))), ]
+
+# Agreement Between The Cabinet Of Ministers Of Belarus And The Government Of The Russian Federation On Cooperation In Fuel And Energy Sector
+title <- "Agreement Between The Cabinet Of Ministers Of Belarus And The Government Of The Russian Federation On Cooperation In Fuel And Energy Sector"
+which(HUGGO_new$Title == title)
+# Keep row with verified data, but match manyID to treatyID
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & HUGGO_new$Beg == "1994-09-01" & is.na(HUGGO_new$url))), ]
+
+# Convention On Conservation And Development Of Fishery Resources In The Border Sections Of The Parana And Paraguay Rivers Between Argentina And Paraguay
+title <- "Convention On Conservation And Development Of Fishery Resources In The Border Sections Of The Parana And Paraguay Rivers Between Argentina And Paraguay"
+which(HUGGO_new$Title == title)
+## Keep row with verified data
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & !(HUGGO_new$manyID == "ARG-PRY[SPR]_1996A"))), ]
+
+# Agreement Between Romania And Hungary Regarding Rapid Notification Of A Nuclear Accident
+title <- "Agreement Between Romania And Hungary Regarding Rapid Notification Of A Nuclear Accident"
+which(HUGGO_new$Title == title)
+## Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Agreement Between The Government Of The Republic Of Lithuania And The Government Of The Russian Federation On The Cooperation In The Field Of Fishing
+title <- "Agreement Between The Government Of The Republic Of Lithuania And The Government Of The Russian Federation On The Cooperation In The Field Of Fishing"
+which(HUGGO_new$Title == title)
+## Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Agreement Between The State Committee Of Energy Saving Of Ukraine And The Committee Of Energetic Efficiency Of Belarus On Cooperation In The Sphere Of Energetic Efficiency And Renewable Energy
+title <- "Agreement Between The State Committee Of Energy Saving Of Ukraine And The Committee Of Energetic Efficiency Of Belarus On Cooperation In The Sphere Of Energetic Efficiency And Renewable Energy"
+which(HUGGO_new$Title == title)
+# Keep row with verified data, but match manyID to treatyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "1999-06-29"), 1] <- HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "1999-06-29"), 13]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Additional Protocol To The Environment Treaty Between The Government Of Argentina And The Government Of The Republic Of Bolivia
+title <- "Additional Protocol To The Environment Treaty Between The Government Of Argentina And The Government Of The Republic Of Bolivia"
+which(HUGGO_new$Title == title)
+## Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Cooperation Agreement Between The Government Of The Republic Of Paraguay And The Government Of The Federative Republic Of Brazil For Sustainable Development And Integrated Management Of The Apa River Basin
+title <- "Cooperation Agreement Between The Government Of The Republic Of Paraguay And The Government Of The Federative Republic Of Brazil For Sustainable Development And Integrated Management Of The Apa River Basin"
+which(HUGGO_new$Title == title)
+# Keep row with verified data
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & !(HUGGO_new$manyID == "ARG-PRY[SPR]_1996A"))), ]
+
+# Agreement Between The Government Of The Russian Federation And The Government Of South Africa In The Sphere Of Water Relations And Forest Management
+title <- "Agreement Between The Government Of The Russian Federation And The Government Of South Africa In The Sphere Of Water Relations And Forest Management"
+which(HUGGO_new$Title == title)
+# Keep row with verified data, but match manyID
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 1]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
+
+# Agreement Between The Cabinet Of Ministers Of Ukraine And The Government Of Belarus On Joint Management And Protection Of Transboundary Waterbodies
+title <- "Agreement Between The Cabinet Of Ministers Of Ukraine And The Government Of Belarus On Joint Management And Protection Of Transboundary Waterbodies"
+which(HUGGO_new$Title == title)
+# Keep row with verified data, but match manyID and treatyID with those in original HUGGO
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
+HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16")), ]
 
 # Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
