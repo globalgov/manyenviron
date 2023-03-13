@@ -744,7 +744,29 @@ for (i in seq_along(rawfiles)){
      HUGGO_new[which(HUGGO_new$treatyID == namefile), 46] <- 1
 }
 
-# Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
+# Add column to indicate the language of the raw treaty text
+
+HUGGO_new <- HUGGO_new %>%
+  dplyr::mutate(Language = NA)
+
+# Load the raw treaty text, determine its language, and assign a value
+# to the Language column
+
+rawtexts <- which(HUGGO_new$TreatyText == 1)
+rawpath <- "data-raw/agreements/HUGGO/TreatyTexts/Raw"
+i <- 0
+for (i in seq_len(nrow(HUGGO_new))){
+  if (!is.na(HUGGO_new[i, 46])){
+    namefile <- paste("treatyID", HUGGO_new[i, 14], sep = "_")
+    namefile <- paste(namefile, "txt", sep = ".")
+    namefile <- stringr::str_replace(namefile, ":", "(colon)")
+    namefile <- paste(rawpath, namefile, sep = "/")
+    rawtext <- readr::read_file(namefile)
+    HUGGO_new[i, 47] <- cld3::detect_language(rawtext)
+  }
+}
+
+# Step four: Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
               dplyr::mutate(Beg = messydates::as_messydate(Beg),
               Signature = messydates::as_messydate(Signature),
