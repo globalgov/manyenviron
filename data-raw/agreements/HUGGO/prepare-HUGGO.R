@@ -317,30 +317,6 @@ HUGGO9 <- rbind(HUGGO7, HUGGO8)
 HUGGO9 <- HUGGO9 %>%
   dplyr::select(-c(Source, Checked_HUGGO, Confirmed_HUGGO, Changes, Modified))
 
-# Add column to indicate if the treaty text has been collected
-HUGGO9 <- HUGGO9 %>%
-  dplyr::mutate(TreatyText = 1)
-HUGGO_or <- HUGGO_or %>%
-  dplyr::mutate(TreatyText = NA)
-
-# Indicate which treaty texts were not/could not be collected
-misstxt <- c("ADDTNR_1979P2", "AGO-EC[PFW]_1999P", "ARG-URY[HHS]_1987A", 
-             "ARG-VEN[ENA]_2000A", "BAD-CHE[LCT]_1884P", "BJ06TP_1995A",
-             "BLR-EGY[QPT]_1998A", "BLR-SYR[SAI]_2003A", "BRA-CRI[CET]_2008P",
-             "CC07AR_1993A", "CE04FU_1987A", "CL07SM_1977A", 
-             "CNSRBE_1995E:CNSRBE_1991A", "CSCBNS_1992A", "CYP-EUE[ION]_2000P5",
-             "DEU-GTM[AML]_2012A", "EGY-ALG[ANH]_1998A", "EGY-JOR[FSH]_1998A",
-             "EGY-MAR[VAH]_1999A", "ELCCDF_1972A", "EP05SP_1998P:EP05SP_1986A",
-             "EUE-SLB[FSH]_2010A", "GNB-EC[FSP]_2008A", "HUN-RUS[RAF]_1950A",
-             "ICAAAN_1944A16", "ID04MN_2004E8", "MNG-RUS[AIF]_2002A",
-             "MU09EM_1998S", "PU05MD_1997A", "RF04RR_1933A", "RUS-USA[UNF]_1975A",
-             "RUS-USA[HSA]_1968E:RUS-USA[HSA]_1967A", "SEN-EC[CFP]_2002A",
-             "SI05SC_2007P", "SYC-EC[CPF]_2011P", "TC10FC_2005A", "TUR-ALG[MAF]_1999A")
-i <- 0
-for(i in seq_along(misstxt)){
-  HUGGO9[which(HUGGO9$manyID == misstxt[i]), 47] <- 0
-}
-
 # Original data from HUGGO
 # Detect if any row has non-ASCII characters in manyID and 
 # replace it with the corresponding treatyID
@@ -367,7 +343,6 @@ HUGGO_new <- HUGGO_new %>%
                 Force = ifelse(!is.na(Force.y), Force.y, Force.x),  
                 url = ifelse(!is.na(url.y), url.y, url.x),
                 Parties = ifelse(!is.na(Parties.y), Parties.y, Parties.x), 
-                TreatyText = ifelse(!is.na(TreatyText.y), TreatyText.y, TreatyText.x),
                 AgreementType = ifelse(!is.na(AgreementType.y), AgreementType.y, AgreementType.x),
                 DocType = ifelse(!is.na(DocType.y), DocType.y, DocType.x),
                 GeogArea = ifelse(!is.na(GeogArea.y), GeogArea.y, GeogArea.x),
@@ -421,10 +396,9 @@ HUGGO_new <- HUGGO_new %>%
                    Website2.x, Website2.y, Secretariat.x, Secretariat.y, SecretariatURL.x,
                    SecretariatURL.y, UNEP.x, UNEP.y,Supersedes.x, Supersedes.y,
                    References.x, References.y, EnabledBy.x, EnabledBy.y, AmendedBy.x,
-                   AmendedBy.y, Lit.x, Lit.y, Data.x, Data.y, Coded.x, Coded.y,
-                   TreatyText.y, TreatyText.x)) %>%   
+                   AmendedBy.y, Lit.x, Lit.y, Data.x, Data.y, Coded.x, Coded.y)) %>%   
   dplyr::mutate(Title = manypkgs::standardise_titles(Title)) %>% ## Standardise Title
-  dplyr::relocate(manyID, Title, Beg, End, Signature, Force, url, TreatyText,
+  dplyr::relocate(manyID, Title, Beg, End, Signature, Force, url,
                   AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID,
                   treatyID, Parties, verified, DocValidUntilDate, Notes, Download,
                   MEA_type, Ambit, Region, subject_ecolex, subject_iea,
@@ -479,7 +453,7 @@ HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 # ELCCDF_1972A
 which(HUGGO_new$manyID == "ELCCDF_1972A")
 # Duplicate rows, keep the one considered when verifying metadata
-HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "ELCCDF_1972A" & is.na(HUGGO_new$TreatyText))), ]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "ELCCDF_1972A" & is.na(HUGGO_new$url))), ]
 
 # RUS-USA[HSA]_1975A
 which(HUGGO_new$manyID == "RUS-USA[HSA]_1975A")
@@ -652,9 +626,9 @@ HUGGO_new <- HUGGO_new[-(which(HUGGO_new$manyID == "PU04MW_1925P" & HUGGO_new$Ti
 # Nordic Mutual Emergency Assistance Agreement In Connection With Radiation Accidents
 title <- "Nordic Mutual Emergency Assistance Agreement In Connection With Radiation Accidents"
 which(HUGGO_new$Title == title)
-# Keep row with verified data, but match manyID
-HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$TreatyText)), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$TreatyText)), 1]
-HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$TreatyText))), ]
+# Duplicated row under different manyID.
+# Keep row with manyID matching treatyID
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & HUGGO_new$manyID == "AR04SN_1963A")), ]
 
 # Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics Relating To Fishing For King And Tanner Crab
 title <- "Agreement Between The Government Of The United States Of America And The Government Of The Union Of Soviet Socialist Republics Relating To Fishing For King And Tanner Crab"
@@ -747,6 +721,28 @@ which(HUGGO_new$Title == title)
 HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
 HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
 HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16")), ]
+
+# Step three: TreatyTexts
+
+# Add column to show if the raw text of the agreements has been collected.
+
+HUGGO_new <- HUGGO_new %>%
+  dplyr::mutate(TreatyText = NA)
+
+# Using treatyID, determine whether the raw text of the agreements has been
+# collected
+
+rawfiles <- list.files("data-raw/agreements/HUGGO/TreatyTexts/Raw")
+rawfiles <- rawfiles[-(which(rawfiles == "manyID"))]
+i <- 0
+for (i in seq_along(rawfiles)){
+  namefile <- rawfiles[i]
+  namefile <- stringr::str_replace(namefile, "treatyID_", "")
+  namefile <- stringr::str_replace(namefile, ".txt", "")
+  namefile <- stringr::str_replace(namefile, "(colon)", ":")
+  namefile <- gsub("[()]", "", namefile)
+     HUGGO_new[which(HUGGO_new$treatyID == namefile), 46] <- 1
+}
 
 # Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
