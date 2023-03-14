@@ -722,78 +722,22 @@ HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg
 HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
 HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16")), ]
 
-# Step three: TreatyTexts
+# Step three: TreatyText and Language columns
 
-# Add column to show if the raw text of the agreements has been collected.
-
-HUGGO_new <- HUGGO_new %>%
-  dplyr::mutate(TreatyText = NA)
-
-# Using treatyID, determine whether the raw text of the agreements has been
-# collected
-
-rawfiles <- list.files("data-raw/agreements/HUGGO/TreatyTexts/Raw")
-rawfiles <- rawfiles[-(which(rawfiles == "manyID"))]
-i <- 0
-for (i in seq_along(rawfiles)){
-  namefile <- rawfiles[i]
-  namefile <- stringr::str_replace(namefile, "treatyID_", "")
-  namefile <- stringr::str_replace(namefile, ".txt", "")
-  namefile <- stringr::str_replace(namefile, "(colon)", ":")
-  namefile <- gsub("[()]", "", namefile)
-     HUGGO_new[which(HUGGO_new$treatyID == namefile), 46] <- 1
-}
-
-# Add column to indicate the language of the raw treaty text
+# Add columns to show if the raw text of the agreements has been collected and
+# to indicate its language
 
 HUGGO_new <- HUGGO_new %>%
+  dplyr::mutate(TreatyText = NA) %>%
   dplyr::mutate(Language = NA)
-
-# Load the raw treaty text, determine its language, and assign a value
-# to the Language column
-
-rawtexts <- which(HUGGO_new$TreatyText == 1)
-rawpath <- "data-raw/agreements/HUGGO/TreatyTexts/Raw"
-i <- 0
-for (i in seq_len(nrow(HUGGO_new))){
-  if (!is.na(HUGGO_new[i, 46])){
-    namefile <- paste("treatyID", HUGGO_new[i, 14], sep = "_")
-    namefile <- paste(namefile, "txt", sep = ".")
-    namefile <- stringr::str_replace(namefile, ":", "(colon)")
-    namefile <- paste(rawpath, namefile, sep = "/")
-    rawtext <- readr::read_file(namefile)
-    HUGGO_new[i, 47] <- cld3::detect_language(rawtext)
-  }
-}
-
-# Add column to show if raw treaty texts in languages other than English
-# have been translated
-
-HUGGO_new <- HUGGO_new %>%
-  dplyr::mutate(Translated = NA) %>%
-  dplyr::mutate(Translated = dplyr::case_when(Language == "en" ~ 0))
-
-# Determine if treaty texts in languages other than English have been
-# translated by reading txt files from Translated subfolder
-
-trnslnts <- list.files("data-raw/agreements/HUGGO/TreatyTexts/Raw/Translated")
-i <- 0
-for (i in seq_along(trnslnts)){
-  namefile <- trnslnts[i]
-  namefile <- stringr::str_replace(namefile, "treatyID_", "")
-  namefile <- stringr::str_replace(namefile, ".txt", "")
-  namefile <- stringr::str_replace(namefile, "(colon)", ":")
-  namefile <- gsub("[()]", "", namefile)
-  HUGGO_new[which(HUGGO_new$treatyID == namefile), 48] <- 1
-}
 
 # Step four: Standardise date columns, arrange by Beg, and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
-              dplyr::mutate(Beg = messydates::as_messydate(Beg),
-              Signature = messydates::as_messydate(Signature),
-              Force = messydates::as_messydate(Force),
-              End = messydates::as_messydate(End)) %>%
-              dplyr::arrange(Beg)
+  dplyr::mutate(Beg = messydates::as_messydate(Beg),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force),
+                End = messydates::as_messydate(End)) %>%
+  dplyr::arrange(Beg)
               
 # Stage four: Connecting data
 # Next run the following line to make HUGGO available
