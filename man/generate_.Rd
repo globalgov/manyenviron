@@ -27,11 +27,15 @@ String vector of fictional agreement names and/or memberships.
 Generate a list of fictional agreements and memberships.
 }
 \examples{
+\donttest{
 generate_agreements(12)
 generate_agreements(12, treaty_type = "bilaterals")
 generate_agreements(12, treaty_type = "multilaterals")
+}
+\donttest{
 generate_memberships(12)
 generate_memberships(12, treaty_type = "bilaterals")
 generate_memberships(12, treaty_type = "multilaterals")
 generate_memberships(12, list = TRUE)
+}
 }

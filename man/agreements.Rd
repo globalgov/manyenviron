@@ -9,6 +9,20 @@ The agreements database is a list that contains the
 following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
+\describe{
+\item{IEADB: }{A dataset with 3666 observations and the following
+10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force, Lineage, treatyID, ieadbID.}
+\item{ECOLEX: }{A dataset with 2174 observations and the following
+10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force, Lineage, treatyID, ecolexID.}
+\item{CIESIN: }{A dataset with 666 observations and the following
+7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
+\item{HEIDI: }{A dataset with 2280 observations and the following
+7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
+\item{HUGGO: }{A dataset with 4084 observations and the following
+48 variables: manyID, Title, Beg, End, Signature, Force, url, AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID, treatyID, Parties, verified, DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices, Depository, DepositoryURL, Published, Abstract, Website1, Website2, Secretariat, SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy, Lit, Data, Coded, TreatyText, Language.}
+\item{AIGGO: }{A dataset with 3815 observations and the following
+13 variables: manyID, treatyID, Title, Beg, End, Signature, Force, action_area, linkage, accessionC, accessionP, termination_type, termination_date.}
+}
 }
 \usage{
 agreements
@@ -83,52 +97,54 @@ agreements database documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |            3904|     0     |       0       |
-#> |      Title      |  character  |            3904|     0     |       0       |
-#> |       Beg       |    mdate    |            3904|    105    |     2.69      |
-#> |       End       |    mdate    |            3904|   3235    |     82.86     |
-#> |    Signature    |    mdate    |            3904|    105    |     2.69      |
-#> |      Force      |    mdate    |            3904|   1745    |     44.7      |
-#> |  AgreementType  |  character  |            3904|   1146    |     29.35     |
-#> |     DocType     |  character  |            3904|   1108    |     28.38     |
-#> |    GeogArea     |  character  |            3904|   1712    |     43.85     |
-#> |     gengID      |  character  |            3904|     0     |       0       |
-#> |      ieaID      |  character  |            3904|   3205    |     82.1      |
-#> |    ecolexID     |  character  |            3904|   3421    |     87.63     |
-#> |    treatyID     |  character  |            3904|     0     |       0       |
-#> |     Parties     |  character  |            3904|   1687    |     43.21     |
-#> |    verified     |  character  |            3904|   3855    |     98.74     |
-#> |DocValidUntilDate|  character  |            3904|   3870    |     99.13     |
-#> |       url       |  character  |            3904|   3132    |     80.23     |
-#> |      Notes      |  character  |            3904|   3856    |     98.77     |
-#> |    Download     |  character  |            3904|   2997    |     76.77     |
-#> |    MEA_type     |  character  |            3904|   3205    |     82.1      |
-#> |      Ambit      |  character  |            3904|   3479    |     89.11     |
-#> |     Region      |  character  |            3904|   3655    |     93.62     |
-#> | subject_ecolex  |  character  |            3904|   3421    |     87.63     |
-#> |   subject_iea   |  character  |            3904|   3205    |     82.1      |
-#> |    Keywords     |  character  |            3904|   3492    |     89.45     |
-#> |     Lineage     |  character  |            3904|   3205    |     82.1      |
-#> |    Sequence     |  character  |            3904|   3206    |     82.12     |
-#> |    AdoptedIn    |  character  |            3904|   3473    |     88.96     |
-#> |    Languages    |  character  |            3904|   3421    |     87.63     |
-#> |   Appendices    |  character  |            3904|   3869    |     99.1      |
-#> |   Depository    |  character  |            3904|   3515    |     90.04     |
-#> |  DepositoryURL  |  character  |            3904|   3888    |     99.59     |
-#> |    Published    |  character  |            3904|   3639    |     93.21     |
-#> |    Abstract     |  character  |            3904|   3878    |     99.33     |
-#> |    Website1     |  character  |            3904|   3520    |     90.16     |
-#> |    Website2     |  character  |            3904|   3834    |     98.21     |
-#> |   Secretariat   |  character  |            3904|   3206    |     82.12     |
-#> | SecretariatURL  |  character  |            3904|   3206    |     82.12     |
-#> |      UNEP       |  character  |            3904|   3703    |     94.85     |
-#> |   Supersedes    |  character  |            3904|   3887    |     99.56     |
-#> |   References    |  character  |            3904|   3868    |     99.08     |
-#> |    EnabledBy    |  character  |            3904|   3796    |     97.23     |
-#> |    AmendedBy    |  character  |            3904|   3812    |     97.64     |
-#> |       Lit       |  character  |            3904|   3352    |     85.86     |
-#> |      Data       |  character  |            3904|   3360    |     86.07     |
-#> |      Coded      |  character  |            3904|   3600    |     92.21     |
+#> |     manyID      |  character  |            4084|     0     |       0       |
+#> |      Title      |  character  |            4084|     0     |       0       |
+#> |       Beg       |    mdate    |            4084|    105    |     2.57      |
+#> |       End       |    mdate    |            4084|   3393    |     83.08     |
+#> |    Signature    |    mdate    |            4084|    105    |     2.57      |
+#> |      Force      |    mdate    |            4084|   1695    |     41.5      |
+#> |       url       |  character  |            4084|   2790    |     68.32     |
+#> |  AgreementType  |  character  |            4084|   1335    |     32.69     |
+#> |     DocType     |  character  |            4084|   1299    |     31.81     |
+#> |    GeogArea     |  character  |            4084|   1899    |     46.5      |
+#> |     gengID      |  character  |            4084|    195    |     4.77      |
+#> |      ieaID      |  character  |            4084|   3388    |     82.96     |
+#> |    ecolexID     |  character  |            4084|   3603    |     88.22     |
+#> |    treatyID     |  character  |            4084|    195    |     4.77      |
+#> |     Parties     |  character  |            4084|   1761    |     43.12     |
+#> |    verified     |  character  |            4084|   4036    |     98.82     |
+#> |DocValidUntilDate|  character  |            4084|   4050    |     99.17     |
+#> |      Notes      |  character  |            4084|   4037    |     98.85     |
+#> |    Download     |  character  |            4084|   3181    |     77.89     |
+#> |    MEA_type     |  character  |            4084|   3388    |     82.96     |
+#> |      Ambit      |  character  |            4084|   3661    |     89.64     |
+#> |     Region      |  character  |            4084|   3836    |     93.93     |
+#> | subject_ecolex  |  character  |            4084|   3603    |     88.22     |
+#> |   subject_iea   |  character  |            4084|   3388    |     82.96     |
+#> |    Keywords     |  character  |            4084|   3674    |     89.96     |
+#> |     Lineage     |  character  |            4084|   3388    |     82.96     |
+#> |    Sequence     |  character  |            4084|   3389    |     82.98     |
+#> |    AdoptedIn    |  character  |            4084|   3653    |     89.45     |
+#> |    Languages    |  character  |            4084|   3603    |     88.22     |
+#> |   Appendices    |  character  |            4084|   4049    |     99.14     |
+#> |   Depository    |  character  |            4084|   3695    |     90.48     |
+#> |  DepositoryURL  |  character  |            4084|   4068    |     99.61     |
+#> |    Published    |  character  |            4084|   3820    |     93.54     |
+#> |    Abstract     |  character  |            4084|   4058    |     99.36     |
+#> |    Website1     |  character  |            4084|   3701    |     90.62     |
+#> |    Website2     |  character  |            4084|   4060    |     99.41     |
+#> |   Secretariat   |  character  |            4084|   3389    |     82.98     |
+#> | SecretariatURL  |  character  |            4084|   3389    |     82.98     |
+#> |      UNEP       |  character  |            4084|   3882    |     95.05     |
+#> |   Supersedes    |  character  |            4084|   4067    |     99.58     |
+#> |   References    |  character  |            4084|   4049    |     99.14     |
+#> |    EnabledBy    |  character  |            4084|   3976    |     97.36     |
+#> |    AmendedBy    |  character  |            4084|   3993    |     97.77     |
+#> |       Lit       |  character  |            4084|   3535    |     86.56     |
+#> |      Data       |  character  |            4084|   3542    |     86.73     |
+#> |      Coded      |  character  |            4084|   3781    |     92.58     |
+#> |   TreatyText    |   numeric   |            4084|   2735    |     66.97     |
+#> |    Language     |  character  |            4084|   2742    |     67.14     |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
