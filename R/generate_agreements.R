@@ -10,14 +10,17 @@
 
 #' @rdname generate_
 #' @examples
+#' \donttest{
 #' generate_agreements(12)
 #' generate_agreements(12, treaty_type = "bilaterals")
 #' generate_agreements(12, treaty_type = "multilaterals")
+#' }
 #' @export
 generate_agreements <- function(n = 10, treaty_type = "any") {
-  partylib <- trimws(paste(rep(c("Between The Parties of "), n),
+  agreements <- NULL
+  partylib <- trimws(paste(rep("Between The Parties of ", n),
                            sample(countryregex$Label, n, replace = TRUE),
-                           rep(c(" and "), n),
+                           rep(" and ", n),
                            sample(countryregex$Label, n, replace = TRUE)))
   typelib <- c("Agreement", "Convention")
   subjlib <- c("On", "For", "Concerning", "Limiting",
@@ -76,19 +79,23 @@ generate_agreements <- function(n = 10, treaty_type = "any") {
 #' @importFrom dplyr %>% select rename
 #' @importFrom plyr ddply .
 #' @examples
+#' \donttest{
 #' generate_memberships(12)
 #' generate_memberships(12, treaty_type = "bilaterals")
 #' generate_memberships(12, treaty_type = "multilaterals")
 #' generate_memberships(12, list = TRUE)
+#' }
 #' @export
 generate_memberships <- function(n = 10, treaty_type = "any", list = FALSE) {
+  nm <- title <- NULL
   membs <- countryregex$StatID
   g_agreements <- data.frame(title = generate_agreements(n = n, treaty_type =
-                                                         treaty_type),
-                           nm = sample(100, n), membs = 0)
-  coment <- sapply(countryregex[, 3], function(x) grepl(x, g_agreements$title,
+                                                           treaty_type),
+                             nm = sample(100, n), membs = 0)
+  coment <- vapply(countryregex[, 3], function(x) grepl(x, g_agreements$title,
                                                         ignore.case = T,
-                                                        perl = T) * 1)
+                                                        perl = T) * 1,
+                   FUN.VALUE = numeric(n))
   colnames(coment) <- countryregex[, 1]
   rownames(coment) <- g_agreements$title
   out <- unname(apply(coment, 1, function(x) paste(names(x[x == 1]),
@@ -96,11 +103,11 @@ generate_memberships <- function(n = 10, treaty_type = "any", list = FALSE) {
   out[out == ""] <- NA
   for (k in seq_len(length(g_agreements$nm))) {
     g_agreements$membs[k] <- ifelse(grepl("Between The Parties of",
-                                        g_agreements$title[k]),
-                                  out[k],
-                                  trimws(paste(sample(membs,
-                                                      as.numeric(g_agreements$nm[k])),
-                                               collapse = ", ")))
+                                          g_agreements$title[k]),
+                                    out[k],
+                                    trimws(paste(sample(membs,
+                                                        as.numeric(g_agreements$nm[k])),
+                                                 collapse = ", ")))
   }
   g_agreements <- dplyr::select(g_agreements, -nm) %>%
     dplyr::rename(membership = membs)
