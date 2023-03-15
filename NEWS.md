@@ -7,7 +7,8 @@
 * Closed #67 by verifying `Beg` `End` `Signature` `Force` in HUGGO dataset
 * Verified `Title`, dates (`Beg`, `End`, `Signature`, Force) and `url` for 465 treaties in HUGGO_verified.csv, then merged into the original HUGGO dataset.
 * Added 196 treaties present in ECOLEX, IEADB, CIEISIN and HEIDI datasets that were not in the original HUGGO dataset to HUGGO_additional.csv, then merged into the original HUGGO dataset. Verified `Title`, dates (`Beg`, `End`, `Signature`, Force) and `url`.
-* Added 657 raw treaty texts and 70 formatted treaty texts, stored in txt files.
+* Added 469 raw treaty texts and 70 formatted treaty texts, stored in ".txt" files.
+* 876 treaty texts present in a previous version of HUGGO were stored in ".txt" files and placed in "Raw" folder.
 
 # manyenviron 0.2.1
 
