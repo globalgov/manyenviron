@@ -367,6 +367,7 @@ HUGGO_new <- HUGGO_new %>%
                 Depository = ifelse(!is.na(Depository.y), Depository.y, Depository.x),
                 DepositoryURL = ifelse(!is.na(DepositoryURL.y), DepositoryURL.y, DepositoryURL.x),
                 Published = ifelse(!is.na(Published.y), Published.y, Published.x),
+                Abstract = ifelse(!is.na(Abstract.y), Abstract.y, Abstract.x),
                 Website1 = ifelse(!is.na(Website1.y), Website1.y, Website1.x),
                 Website2 = ifelse(!is.na(Website2.y), Website2.y, Website2.y),
                 Secretariat = ifelse(!is.na(Secretariat.y), Secretariat.y, Secretariat.x),
@@ -598,11 +599,6 @@ HUGGO_new <- HUGGO_new[-(remove[-1]), ]
 # Clean rows that have data about the same agreement, but with
 # different manyID
 
-dups <- HUGGO_new %>% 
-  group_by(Beg, Signature, Title, gengID, ecolexID, ieaID, treatyID) %>% 
-  filter(n() > 1) %>%
-  arrange(.by_group = T)
-
 # Convention Between Finland And Russia With Regard To Fishing And Sealing On Lake Ladoga Helsingfors
 title <- "Convention Between Finland And Russia With Regard To Fishing And Sealing On Lake Ladoga Helsingfors"
 which(HUGGO_new$Title == title)
@@ -690,8 +686,7 @@ HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url)))
 # Agreement Between The State Committee Of Energy Saving Of Ukraine And The Committee Of Energetic Efficiency Of Belarus On Cooperation In The Sphere Of Energetic Efficiency And Renewable Energy
 title <- "Agreement Between The State Committee Of Energy Saving Of Ukraine And The Committee Of Energetic Efficiency Of Belarus On Cooperation In The Sphere Of Energetic Efficiency And Renewable Energy"
 which(HUGGO_new$Title == title)
-# Keep row with verified data, but match manyID to treatyID
-HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "1999-06-29"), 1] <- HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "1999-06-29"), 13]
+# Keep row with verified data
 HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url))), ]
 
 # Additional Protocol To The Environment Treaty Between The Government Of Argentina And The Government Of The Republic Of Bolivia
@@ -717,10 +712,9 @@ HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$url)))
 # Agreement Between The Cabinet Of Ministers Of Ukraine And The Government Of Belarus On Joint Management And Protection Of Transboundary Waterbodies
 title <- "Agreement Between The Cabinet Of Ministers Of Ukraine And The Government Of Belarus On Joint Management And Protection Of Transboundary Waterbodies"
 which(HUGGO_new$Title == title)
-# Keep row with verified data, but match manyID and treatyID with those in original HUGGO
-HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 1] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
-HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15] <- HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16"), 15]
-HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & !is.na(HUGGO_new$url) & HUGGO_new$Beg == "2001-10-16")), ]
+# Two duplicate rows under different manyID. Remove row with less info, but keep url and Force
+HUGGO_new[which(HUGGO_new$Title == title & is.na(HUGGO_new$url)), 7] <- HUGGO_new[which(HUGGO_new$Title == title & !is.na(HUGGO_new$url)), 7]
+HUGGO_new <- HUGGO_new[-(which(HUGGO_new$Title == title & is.na(HUGGO_new$AgreementType) & HUGGO_new$Beg == "2001-10-16")), ]
 
 # Step three: TreatyText and Language columns
 
