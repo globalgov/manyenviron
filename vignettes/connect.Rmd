@@ -3,10 +3,6 @@ title: "How Do Environmental Treaties Connect?"
 authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{How Do Environmental Treaties Connect?}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}

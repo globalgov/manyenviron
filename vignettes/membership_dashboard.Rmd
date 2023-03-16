@@ -1,10 +1,6 @@
 ---
 title: "Types of Environmental Treaties"
 output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Types of Environmental Treaties}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
 ---
 
 <style>
