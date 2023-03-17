@@ -4,7 +4,7 @@
 
 ## Package
 
-* Added ´generate_memberships()´ function for programmatically creating random, fictional, environmental agreement titles and listing the parties involved in each one.
+* Closed #61 by adding a ´generate_memberships()´ function for programmatically creating random, fictional, environmental agreements, mimicking the distribution of bilateral and multilateral agreements of the real environment, and listing the parties involved in each one.
 
 ## Data
 
