@@ -2,6 +2,10 @@
 
 2023-03-15
 
+## Package
+
+* Added ´generate_memberships()´ function for programmatically creating random, fictional, environmental agreement titles and listing the parties involved in each one.
+
 ## Data
 
 * Closed #67 by verifying `Beg` `End` `Signature` `Force` in HUGGO dataset
