@@ -20,7 +20,8 @@ IEADB <- as_tibble(IEADB)  %>%
                                   "Exchange of Notes" = "X",
                                   "Memorandum of Understanding" = "Y",
                                   "Protocol" = "P")) %>%
-  dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>%
+  dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B",
+                                        "MEA" = "M")) %>%
   dplyr::filter(DocType == "M" | DocType == "B") %>%
   manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
                      Title = manypkgs::standardise_titles(`Treaty Name`,

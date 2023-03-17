@@ -38,7 +38,7 @@ HUGGO_MEM <- as_tibble(HUGGO_MEM) %>%
                 Term, stateWithdrawal, stateWithdrawal2,
                 gengID, ecolexID, ieaID, Comments, Deposit, obsolete,
                 ProvisionalApp, Reservation, verified) %>%
-  dplyr::arrange(Beg) %>% 
+  dplyr::arrange(Beg) %>%
   dplyr::distinct()
 
 # Add treatyID column
@@ -49,8 +49,9 @@ HUGGO_MEM$treatyID <- manypkgs::code_agreements(HUGGO_MEM,
 # Add MEA edges data (MGENG dataset)
 # For some more information about the variables and codes,
 # please see the documentation in the data-raw folder.
-MEA_edges <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Edges v1.0.csv", 
-                               delim = ";", escape_double = FALSE, trim_ws = TRUE)
+MEA_edges <- readr::read_delim("data-raw/agreements/HUGGO/MEA.Edges v1.0.csv",
+                               delim = ";", escape_double = FALSE,
+                               trim_ws = TRUE)
 # Let's wrangle some variables to keep consistent.
 names(MEA_edges) <- gsub("\\.", "", names(MEA_edges))
 names(MEA_edges) <- gsub("^Membership", "", names(MEA_edges))
@@ -75,13 +76,13 @@ MEA_edges <- as_tibble(MEA_edges) %>%
                         Acceptance = messydates::as_messydate(AcceptanceApproval),
                         Accession = messydates::as_messydate(AccessionApprobation),
                         Consolidation = messydates::as_messydate(Consolidation),
-                        Acceptance = messydates::as_messydate(AccessionApprobation2)) %>% 
+                        Acceptance = messydates::as_messydate(AccessionApprobation2)) %>%
   dplyr::distinct()
 
 # Add titles and ID variables from HUGGO agreements data
 agreements <- manyenviron::agreements$HUGGO %>%
   dplyr::select(c(gengID, Title, Beg, End, Signature, Force, ecolexID, ieaID))
-MEA_edges <- dplyr::inner_join(MEA_edges, agreements, by = "gengID") %>% 
+MEA_edges <- dplyr::inner_join(MEA_edges, agreements, by = "gengID") %>%
   dplyr::distinct()
 
 # Add treatyID column
@@ -89,8 +90,8 @@ MEA_edges$treatyID <- manypkgs::code_agreements(MEA_edges,
                                                 MEA_edges$Title,
                                                 MEA_edges$Beg)
 
-# Join Data 
-HUGGO_MEM <- dplyr::full_join(HUGGO_MEM, MEA_edges) %>% 
+# Join Data
+HUGGO_MEM <- dplyr::full_join(HUGGO_MEM, MEA_edges) %>%
   dplyr::distinct()
 
 # Add manyID column
@@ -98,10 +99,11 @@ manyID <- manypkgs::condense_agreements(var = HUGGO_MEM$treatyID)
 HUGGO_MEM <- dplyr::left_join(HUGGO_MEM, manyID, by = "treatyID")
 
 # Reorder variables
-HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID", "Title",
-                                          "Beg", "End", "Signature", "Force")) %>% 
+HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID",
+                                          "Title", "Beg", "End", "Signature",
+                                          "Force")) %>%
   dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
-                                                               NA_character_))) %>% 
+                                                               NA_character_))) %>%
   dplyr::distinct() %>%
   plyr::ddply("manyID", zoo::na.locf, na.rm = FALSE) %>%
   dplyr::distinct() %>%
@@ -111,7 +113,7 @@ HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID", "Titl
   dplyr::distinct() %>%
   tidyr::drop_na(Title) %>%
   tibble::as_tibble() %>%
-  arrange(Beg) %>% 
+  arrange(Beg) %>%
   mutate(Signature = messydates::as_messydate(Signature),
          Force = messydates::as_messydate(Force),
          Beg = messydates::as_messydate(Beg),

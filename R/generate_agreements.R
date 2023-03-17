@@ -1,10 +1,10 @@
 #' Generate agreements
-#' 
+#'
 #' @description Generate a list of fictional agreements and memberships.
 #' @param n Integer number of fictional agreement names to generate.
 #' @param treaty_type What type of treaty would you likebe returned?
 #' By default, "any" treaty.
-#' Other options include "bilaterals" and "multilaterals" 
+#' Other options include "bilaterals" and "multilaterals"
 #' @return String vector of fictional agreement names and/or memberships.
 #' @name generate_
 
@@ -27,7 +27,7 @@ generate_agreements <- function(n = 10, treaty_type = "any") {
                "Regulating", "Regarding", "Relating To",
                "Cooperation In",
                "On Cooperation In The Area Of", "On Cooperation In The Field Of")
-  targetlib <- c("Hydroelectric Power Station and Dams", 
+  targetlib <- c("Hydroelectric Power Station and Dams",
                  "The Brine River", "The Talamasi River",
                  "The Protection Of Migratory Birds And Birds In Danger Of Extinction And Their Environment",
                  "An International Energy Programme",

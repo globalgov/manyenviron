@@ -6,10 +6,10 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force, 
+#' 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force,
 #' Lineage, treatyID, ieadbID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force, 
+#' 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
 #' Lineage, treatyID, ecolexID.}
 #' \item{CIESIN: }{A dataset with 666 observations and the following
 #' 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}

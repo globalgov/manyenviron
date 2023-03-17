@@ -13,12 +13,13 @@ IRD <- readxl::read_excel("data-raw/regimes/IRD/IRD.xlsx")
 IRD <- as_tibble(IRD) %>%
   manydata::transmutate(Beg = messydates::as_messydate(Formation),
                         End = messydates::as_messydate(as.character(Endpoint)),
-                        # Watershed and Watershed2 refer to periods of fundamental change in the regime
+                        # Watershed and Watershed2 refer to periods of
+                        # fundamental change in the regime
                         Wat = messydates::as_messydate(Watershed),
                         Wat2 = messydates::as_messydate(Watershed2)) %>%
   dplyr::arrange(Beg) %>%
-  # RegimeComponent is an institutional arrangement that is part of a given regime,
-  # such as a protocol
+  # RegimeComponent is an institutional arrangement that is
+  # part of a given regime, such as a protocol
   # RegimeElement refers to a regulatory area of a given regime for a given time period
   dplyr::select(Regime, RegimeComponent, Beg, Wat, Wat2, End, RegimeElement)
 # manypkgs includes several functions that should help cleaning
