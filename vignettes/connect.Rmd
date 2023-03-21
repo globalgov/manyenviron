@@ -6,10 +6,8 @@ output: rmarkdown::html_vignette
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
+                      rmarkdown.html_vignette.check_title = FALSE)
 ```
 
 ## Manyenviron Data
@@ -65,7 +63,7 @@ The graph below illustrates a sample of earliest 25 treaties from the references
 library(dplyr)
 library(ggplot2)
 library(migraph)
-
+library(stringr)
 # Get dataset
 references <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
@@ -83,7 +81,7 @@ migraph::gglineage(references[1:25, c(1, 2, 3)]) +
 ```
 
 We can also take a look at a single lineage of Enviromental treaties.
-Let's look at treaties that ammend the Ramsar Convention on Wetlands of International
+Let's look at treaties that either cite or ammend the Ramsar Convention on Wetlands of International
 Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
@@ -91,67 +89,47 @@ Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 ramsa <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
-  dplyr::filter(RefType == "Amends" & treatyID2 == "RAMSA_1971A") %>%
+  dplyr::filter(treatyID2 == "RAMSA_1971A") %>%
   dplyr::arrange(year)
 
-# Get agreement titles
-agreementtitles <- manyenviron::agreements$ECOLEX %>%
+# Get agreement titles, join information, and plot
+manyenviron::agreements$ECOLEX %>%
   dplyr::select(Title, treatyID) %>%
-  dplyr::rename(treatyID1 = treatyID)
-
-# Join information
-ramsa <- dplyr::left_join(ramsa, agreementtitles, by = "treatyID1")
-ramsa$treatyID2 <- "Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat - 1971"
-ramsa$Title <- paste0(ramsa$Title, "-", stringr::str_extract(ramsa$treatyID1, "[:digit:]{4}"))
-ramsa <- dplyr::relocate(ramsa, treatyID2, Title)
-
-# Plot with migraph
-migraph::gglineage(ramsa) +
-  labs(title = "Treaties that Amend the Ramsar Convention",
-       caption = "Source: manyenviron") +
-  theme(plot.title = element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
+  dplyr::rename(treatyID1 = treatyID) %>%
+  dplyr::right_join(ramsa) %>%
+  dplyr::rename(to = treatyID2,
+                from = Title) %>%
+  dplyr::select(to, from, RefType) %>%
+  migraph::as_tidygraph() %>%
+  migraph::activate(edges) %>%
+  migraph::autographr(edge_color = "RefType")
 ```
-
 
 ### Visualising How Agreements Connect by Country Membership
 
-The graph below illustrates the connection between parties and treaties for environmental agreements signed into force in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. treatyIDs are also used to refer to treaty titles.
+The graph below illustrates the connection between parties and treaties for multilateral environmental agreements signed into force in 1980 using the memberships database.
 
 ```{r memberships, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-# Subset dataset
-membership_1960 <- manyenviron::memberships$IEADB_MEM %>%
-  dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
-  dplyr::filter(year == "1960") %>%
-  dplyr::select(treatyID, stateID, Title) %>%
-  migraph::as_tidygraph()
-
-# Plot with migraph
-migraph::autographr(membership_1960) +
-  ggplot2::labs(title = "Membership in Environmental Treaties\nSigned in 1960",
-       caption = "Source: manyenviron") +
-  ggplot2::theme(plot.title = ggplot2::element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
-# Subset dataset
-membership_1980 <- manyenviron::memberships$IEADB_MEM %>%
+# Subset and plot data
+manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
-  dplyr::select(treatyID, stateID, Title) %>%
-  tidyr::drop_na() %>%
-  migraph::as_tidygraph()
-
-# Plot with migraph
-migraph::autographr(membership_1980) +
-  ggplot2::labs(title = "Membership in Environmental Treaties\nSigned in 1980",
-       caption = "Source: manyenviron") +
-  ggplot2::theme(plot.title = ggplot2::element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
+  dplyr::select(treatyID, stateID, year) %>%
+  group_by(treatyID) %>%
+  filter( n() > 2) %>% # keep only multilateral treaties
+  migraph::as_tidygraph() %>%
+  migraph::activate(nodes) %>%
+  dplyr::mutate(color = ifelse(grepl("_", name), 1, 0),
+                size = ifelse(grepl("_", name), 4, 2),
+                shape = ifelse(grepl("_", name), "square", "circle")) %>%
+  migraph::to_undirected() %>%
+  migraph::autographr(node_color = "color", node_size = "size",
+                      node_shape = "shape")
 ```
 
-### Visualising the Plots in 3D
+### Extra Visualisations:
+
+## Visualising the Plots in 3D
 
 Visualising the network in 3D is a neat way of presenting your data in HTML documents.
 This allows you to let the visitors of your site interact with
@@ -203,7 +181,7 @@ graphjs(membership_1980, main = "Membership in Environmental Treaties Signed in 
         top = 1, left = 45, font.main = "18px Arial", brush = TRUE)
 ```
 
-### Projecting the Network on a Globe:
+## Projecting the Network on a Globe:
 
 Let's look at what the "country projection" of the bimodal network above looks like on a globe.
 Note that projections as such can sometimes obscur information about the underlying bimodal network.
