@@ -151,9 +151,9 @@ migraph::autographr(membership_1980) +
                                   hjust = 0.5))
 ```
 
-### Visulaizing the Plots in 3D
+### Visualising the Plots in 3D
 
-Visualizing the network in 3D is a neat way of presenting your data in HTML documents.
+Visualising the network in 3D is a neat way of presenting your data in HTML documents.
 This allows you to let the visitors of your site interact with
 your network by allowing them to move things around.
 To get there, we leverage the [`{threejs}`](https://bwlewis.github.io/rthreejs/) package,
