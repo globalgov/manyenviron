@@ -151,7 +151,7 @@ manyenviron::memberships$IEADB_MEM %>%
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
   migraph::to_waves(attribute = "year") %>% 
-  migr456aph::autographd(delete.vertices = TRUE, node_color = "color",
+  migraph::autographd(delete.vertices = TRUE, node_color = "color",
                       node_size = "size", node_shape = "shape")
 ```
  
