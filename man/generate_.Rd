@@ -11,20 +11,25 @@ generate_agreements(n = 10, treaty_type = "any")
 generate_memberships(n = 10, treaty_type = "any", list = FALSE)
 }
 \arguments{
-\item{n}{Integer number of fictional agreement names to generate.}
+\item{n}{Integer number of fictional agreements to generate.}
 
-\item{treaty_type}{What type of treaty would you likebe returned?
-By default, "any" treaty.
-Other options include "bilaterals" and "multilaterals"}
+\item{treaty_type}{What type of agreements would you like to generate?
+By default, "any" agreements.
+Other options include "bilaterals" or "multilaterals".}
 
-\item{list}{Would you like members to be listed in one observation?
-By default, FALSE.}
+\item{list}{Would you like all members to an agreement be listed in the
+same observation?
+By default, FALSE.
+If TRUE, pastes all members to an agreement together in the same observation
+separating them with commas.}
 }
 \value{
-String vector of fictional agreement names and/or memberships.
+String vector of fictional agreement names and/or memberships
+to agreements.
 }
 \description{
-Generate a list of fictional agreements and memberships.
+Generates a list of fictional agreements or a
+list memberships to agreements.
 }
 \examples{
 \donttest{

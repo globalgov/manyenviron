@@ -1,11 +1,12 @@
 #' Generate agreements
-#'
-#' @description Generate a list of fictional agreements and memberships.
-#' @param n Integer number of fictional agreement names to generate.
-#' @param treaty_type What type of treaty would you likebe returned?
-#' By default, "any" treaty.
-#' Other options include "bilaterals" and "multilaterals"
-#' @return String vector of fictional agreement names and/or memberships.
+#' @description Generates a list of fictional agreements or a
+#' list memberships to agreements.
+#' @param n Integer number of fictional agreements to generate.
+#' @param treaty_type What type of agreements would you like to generate?
+#' By default, "any" agreements.
+#' Other options include "bilaterals" or "multilaterals".
+#' @return String vector of fictional agreement names and/or memberships
+#' to agreements.
 #' @name generate_
 
 #' @rdname generate_
@@ -62,8 +63,8 @@ generate_agreements <- function(n = 10, treaty_type = "any") {
                         sample(targetlib, n, replace = TRUE)))
   } else {
     bilaterals <- round(sum(grepl("between", agreements$HUGGO$Title,
-                                  ignore.case = TRUE)) / length(agreements$HUGGO$Title),
-                        digits = 1)
+                                  ignore.case = TRUE)) /
+                          length(agreements$HUGGO$Title), digits = 1)
     partylib[sample(n*bilaterals)] <- ""
     out <- trimws(paste(sample(typelib, n, replace = TRUE),
                         partylib,
@@ -74,8 +75,11 @@ generate_agreements <- function(n = 10, treaty_type = "any") {
 }
 
 #' @rdname generate_
-#' @param list Would you like members to be listed in one observation?
+#' @param list Would you like all members to an agreement be listed in the
+#' same observation?
 #' By default, FALSE.
+#' If TRUE, pastes all members to an agreement together in the same observation
+#' separating them with commas.
 #' @importFrom dplyr %>% select rename
 #' @importFrom plyr ddply .
 #' @examples
@@ -103,10 +107,10 @@ generate_memberships <- function(n = 10, treaty_type = "any", list = FALSE) {
   out[out == ""] <- NA
   for (k in seq_len(length(g_agreements$nm))) {
     g_agreements$membs[k] <- ifelse(grepl("Between The Parties of",
-                                          g_agreements$title[k]),
-                                    out[k],
-                                    trimws(paste(sample(membs,
-                                                        as.numeric(g_agreements$nm[k])),
+                                          g_agreements$title[k]), out[k],
+                                    trimws(paste(
+                                      sample(membs,
+                                             as.numeric(g_agreements$nm[k])),
                                                  collapse = ", ")))
   }
   g_agreements <- dplyr::select(g_agreements, -nm) %>%
