@@ -14,13 +14,13 @@ TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = messydates::as_messydate(openxlsx::convertToDate(DateSigned))) %>%
   dplyr::mutate(Beg = messydates::as_messydate(as.character(Signature))) %>%
   manydata::transmutate(tfddID = `2016Update ID`,
-                     CountryID = CCODE,
-                     Title = manypkgs::standardise_titles(DocumentName,
-                                                          api_key = api)) %>%
+                        stateID = CCODE,
+                        Title = manypkgs::standardise_titles(DocumentName,
+                                                             api_key = api)) %>%
   # Define Key API
   dplyr::mutate(Memberships = manypkgs::code_states(Signatories)) %>%
-  dplyr::select(CountryID, Title, Beg, Signature,
-                tfddID, Memberships) %>%
+  dplyr::select(stateID, Title, Beg, Signature,
+  tfddID, Memberships) %>%
   dplyr::arrange(Beg)
 
 # Add a treatyID column

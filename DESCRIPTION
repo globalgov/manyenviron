@@ -1,7 +1,7 @@
 Package: manyenviron
 Title: Environmental Agreements for the many Universe
-Version: 0.2.1
-Date: 2022-10-12
+Version: 0.3.0
+Date: 2023-03-21
 Authors@R: 
     c(person(given = "James",
              family = "Hollway",
@@ -23,13 +23,20 @@ Authors@R:
       person(given = "Jael",
              family = "Tan",
              role = "ctb",
-             comment = c("IHEID", ORCID = "0000-0002-6234-9764")))
+             comment = c("IHEID", ORCID = "0000-0002-6234-9764")),
+      person(given = "Diego",
+             family = "del Moral Suárez",
+             role = "ctb",
+             comment = c("IHEID", ORCID = "0009-0000-3849-7903")))
 Description: Ensemble of data on international environmental agreements,
     and states membership in them for research use.
 License: CC BY 4.0
 Depends: 
     R (>= 3.5.0),
     manydata
+Imports:
+    dplyr,
+    plyr
 Suggests:
     pointblank,
     testthat (>= 3.0.0),
@@ -43,6 +50,6 @@ Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Config/testthat/edition: 3
 VignetteBuilder: knitr

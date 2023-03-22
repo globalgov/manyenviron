@@ -1,0 +1,264 @@
+Annex IV of MARPOL 73/78
+Regulations for the Prevention
+of Pollution by Sewage
+from Ships
+Regulation 1
+Definitions
+For the purposes of the present Annex:
+(1) New ship means a ship:
+(a) for which the building contract is placed, or in the absence of a
+building contract, the keel of which is laid, or which is at a
+similar stage of construction, on or after the date of entry into
+force of this Annex; or
+(b) the delivery of which is three years or more after the date of
+entry into force of this Annex.
+(2) Existing ship means a ship which is not a new ship.
+(3) Sewage means:
+(a) drainage and other wastes from any form of toilets, urinals, and
+WC scuppers;
+(b) drainage from medical premises (dispensary, sick bay, etc.) via
+wash basins, wash tubs and scuppers located in such premises;
+(c) drainage from spaces containing living animals; or
+(d) other waste waters when mixed with the drainages defined
+above.
+(4) Holding tank means a tank used for the collection and storage of
+sewage.
+(5) Nearest land. The term "from the nearest land" means from the
+baseline from which the territorial sea of the territory in question is
+established in accordance with international law except that, for the
+purposes of the present Convention, ``from the nearest land'' off the
+north-eastern coast of Australia shall mean from a line drawn from a
+point on the coast of Australia in
+latitude 11800' S, longitude 142808' E
+to a point in latitude 10835' S, longitude 141855' E
+thence to a point latitude 10800' S, longitude 142800' E
+thence to a point latitude 9810' S, longitude 143852' E
+thence to a point latitude 9800' S, longitude 144830' E
+thence to a point latitude 13800' S, longitude 144800' E
+thence to a point latitude 15800' S, longitude 146800' E
+thence to a point latitude 18800' S, longitude 147800' E
+thence to a point latitude 21800' S, longitude 153800' E
+thence to a point on the coast of Australia in
+latitude 24842' S, longitude 153815' E.
+Regulation 2
+Application
+The provisions of this Annex shall apply to:
+(a) (i) new ships of 200 tons gross tonnage and above;
+(ii) new ships of less than 200 tons gross tonnage which are
+certified to carry more than 10 persons;
+(iii) new ships which do not have a measured gross tonnage
+and are certified to carry more than 10 persons; and
+(b) (i) existing ships of 200 tons gross tonnage and above, 10
+years after the date of entry into force of this Annex;
+(ii) existing ships of less than 200 tons gross tonnage which are
+certified to carry more than 10 persons, 10 years after the
+date of entry into force of this Annex; and
+(iii) existing ships which do not have a measured gross tonnage
+and are certified to carry more than 10 persons, 10 years
+after the date of entry into force of this Annex.
+Regulation 3
+Surveys
+(1) Every ship which is required to comply with the provisions of this
+Annex and which is engaged in voyages to ports or offshore terminals
+under the jurisdiction of other Parties to the Convention shall be
+subject to the surveys specified below:
+(a) An initial survey before the ship is put in service or before the
+certificate required under regulation 4 of this Annex is issued for
+the first time, which shall include a survey of the ship which
+shall be such as to ensure:
+(i) when the ship is fitted with a sewage treatment plant the
+plant shall meet operational requirements based on
+standards and the test methods developed by the
+Organization;
+(ii) when the ship is fitted with a system to comminute and
+disinfect the sewage, such a system shall be of a type
+approved by the Administration;
+(iii) when the ship is equipped with a holding tank the capacity
+of such tank shall be to the satisfaction of the Administration
+for the retention of all sewage having regard to the
+operation of the ship, the number of persons on board and
+other relevant factors. The holding tank shall have a means
+to indicate visually the amount of its contents; and
+(iv) that the ship is equipped with a pipeline leading to the
+exterior convenient for the discharge of sewage to a
+reception facility and that such a pipeline is fitted with a
+standard shore connection in compliance with regulation
+11 of this Annex.
+This survey shall be such as to ensure that the equipment,
+fittings, arrangements and material fully comply with the
+applicable requirements of this Annex.
+(b) Periodical surveys at intervals specified by the Administration
+but not exceeding five years which shall be such as to ensure that
+the equipment, fittings, arrangements and material fully comply
+with the applicable requirements of this Annex. However,
+where the duration of the International Sewage Pollution
+Prevention Certificate (1973) is extended as specified in
+regulation 7(2) or (4) of this Annex, the interval of the
+periodical survey may be extended correspondingly.
+(2) The Administration shall establish appropriate measures for ships
+which are not subject to the provisions of paragraph (1) of this
+regulation in order to ensure that the provisions of this Annex are
+complied with.
+(3) Surveys of the ship as regards enforcement of the provisions of this
+Annex shall be carried out by officers of the Administration. The
+Administration may, however, entrust the surveys either to surveyors
+nominated for the purpose or to organizations recognized by it. In
+every case the Administration concerned fully guarantees the
+completeness and efficiency of the surveys.
+(4) After any survey of the ship under this regulation has been completed,
+no significant change shall be made in the equipment, fittings,
+arrangements, or material covered by the survey without the approval
+of the Administration, except the direct replacement of such
+equipment or fittings.
+Regulation 4
+Issue of certificate
+(1) An International Sewage Pollution Prevention Certificate (1973) shall
+be issued, after survey in accordance with the provisions of regulation
+3 of this Annex, to any ship which is engaged in voyages to ports or
+offshore terminals under the jurisdiction of other Parties to the
+Convention.
+(2) Such certificate shall be issued either by the Administration or by any
+persons or organization duly authorized by it. In every case the
+Administration assumes full responsibility for the certificate.
+Regulation 5
+Issue of a certificate by another Government
+(1) The Government of a Party to the Convention may, at the request of
+the Administration, cause a ship to be surveyed and, if satisfied that the
+provisions of this Annex are complied with, shall issue or authorize
+the issue of an International Sewage Pollution Prevention Certificate
+(1973) to the ship in accordance with this Annex.
+(2) A copy of the certificate and a copy of the survey report shall be
+transmitted as early as possible to the Administration requesting the
+survey.
+(3) A certificate so issued shall contain a statement to the effect that it has
+been issued at the request of the Administration and it shall have the
+same force and receive the same recognition as the certificate issued
+under regulation 4 of this Annex.
+(4) No International Sewage Pollution Prevention Certificate (1973) shall
+be issued to a ship which is entitled to fly the flag of a State which is
+not a Party.
+Regulation 6
+Form of certificate
+The International Sewage Pollution Prevention Certificate (1973) shall be
+drawn up in an official language of the issuing country in the form
+corresponding to the model given in the appendix to this Annex. If the
+language used is neither English nor French, the text shall include a
+translation into one of these languages.
+Regulation 7
+Duration of certificate
+(1) The International Sewage Pollution Prevention Certificate (1973)
+shall be issued for a period specified by the Administration, which
+shall not exceed five years from the date of issue, except as provided in
+paragraphs (2), (3) and (4) of this regulation.
+(2) If a ship at the time when the certificate expires is not in a port or
+offshore terminal under the jurisdiction of the Party to the
+Convention whose flag the ship is entitled to fly, the certificate may
+be extended by the Administration, but such extension shall be
+granted only for the purpose of allowing the ship to complete its
+voyage to the State whose flag the ship is entitled to fly or in which it
+is to be surveyed and then only in cases where it appears proper and
+reasonable to do so.
+(3) No certificate shall be thus extended for a period longer than five
+months and a ship to which such extension is granted shall not on its
+arrival in the State whose flag it is entitled to fly or the port in which it
+is to be surveyed, be entitled by virtue of such extension to leave that
+port or State without having obtained a new certificate.
+(4) A certificate which has not been extended under the provisions of
+paragraph (2) of this regulation may be extended by the Administration
+for a period of grace of up to one month from the date of expiry
+stated on it.
+(5) A certificate shall cease to be valid if significant alterations have taken
+place in the equipment, fittings, arrangement or material required
+without the approval of the Administration, except the direct
+replacement of such equipment or fittings.
+(6) A certificate issued to a ship shall cease to be valid upon transfer of such
+a ship to the flag of another State, except as provided in paragraph (7)
+of this regulation.
+(7) Upon transfer of a ship to the flag of another Party, the certificate shall
+remain in force for a period not exceeding five months provided that it
+would not have expired before the end of that period, or until the
+Administration issues a replacement certificate, whichever is earlier.
+As soon as possible after the transfer has taken place the Government
+of the Party whose flag the ship was formerly entitled to fly shall
+transmit to the Administration a copy of the certificate carried by the
+ship before the transfer and, if available, a copy of the relevant survey
+report.
+Regulation 8
+Discharge of sewage
+(1) Subject to the provisions of regulation 9 of this Annex, the discharge
+of sewage into the sea is prohibited, except when:
+(a) the ship is discharging comminuted and disinfected sewage
+using a system approved by the Administration in accordance
+with regulation 3(1)(a) at a distance of more than 4 nautical
+miles from the nearest land, or sewage which is not comminuted
+or disinfected at a distance of more than 12 nautical miles from
+the nearest land, provided that in any case, the sewage that has
+been stored in holding tanks shall not be discharged instantaneously
+but at a moderate rate when the ship is en route and
+proceeding at not less than 4 knots; the rate of discharge shall be
+approved by the Administration based upon standards developed
+by the Organization; or
+(b) the ship has in operation an approved sewage treatment plant
+which has been certified by the Administration to meet the
+operational requirements referred to in regulation 3(1)(a)(i) of
+this Annex, and
+(i) the test results of the plant are laid down in the ship's
+International Sewage Pollution Prevention Certificate
+(1973);
+(ii) additionally, the effluent shall not produce visible floating
+solids in, nor cause discoloration of, the surrounding
+water; or
+(c) the ship is situated in the waters under the jurisdiction of a State
+and is discharging sewage in accordance with such less stringent
+requirements as may be imposed by such State.
+(2) When the sewage is mixed with wastes or waste water having different
+discharge requirements, the more stringent requirements shall apply.
+Regulation 9
+Exceptions
+Regulation 8 of this Annex shall not apply to:
+(a) the discharge of sewage from a ship necessary for the purpose of
+securing the safety of a ship and those on board or saving life at
+sea; or
+(b) the discharge of sewage resulting from damage to a ship or its
+equipment if all reasonable precautions have been taken before
+and after the occurrence of the damage, for the purpose of
+preventing or minimizing the discharge.
+Regulation 10
+Reception facilities
+(1) The Government of each Party to the Convention undertakes to
+ensure the provision of facilities at ports and terminals for the
+reception of sewage, without causing undue delay to ships, adequate
+to meet the needs of the ships using them.
+(2) The Government of each Party shall notify the Organization for
+transmission to the Contracting Governments concerned of all cases
+where the facilities provided under this regulation are alleged to be
+inadequate.
+Regulation 11
+Standard discharge connections
+To enable pipes of reception facilities to be connected with the ship's
+discharge pipeline, both lines shall be fitted with a standard discharge
+connection in accordance with the following table:
+Standard dimensions of flanges for discharge connections
+Description Dimension
+Outside diameter 210 mm
+Inner diameter According to pipe outside diameter
+Bolt circle diameter 170 mm
+Slots in flange 4 holes 18 mm in diameter equidistantly
+placed on a bolt circle of the above
+diameter, slotted to the flange periphery.
+The slot width to be 18 mm
+Flange thickness 16 mm
+Bolts and nuts:
+quantity and diameter
+4, each of 16 mm in diameter and of
+suitable length
+The flange is designed to accept pipes up to a maximum internal
+diameter of 100 mm and shall be of steel or other equivalent
+material having a flat face. This flange, together with a suitable
+gasket, shall be suitable for a service pressure of 6 kg/cm2
+For ships having a moulded depth of 5 m and less, the inner diameter
+of the discharge connection may be 38 mm.
+
+
+Appendix to Annex IV
+Form of Sewage Certificate

@@ -1,0 +1,181 @@
+Convention Concerning Safety In The Use Of Chemicals At Work
+The General Conference of the International Labour Organisation,
+
+Having been convened at Geneva by the Governing Body of the International Labour Office, and having met in its 77th Session on 6 June 1990, and
+
+Noting the relevant international labour Conventions and Recommendations and, in particular, the Benzene Convention and Recommendation, 1971, the Occupational Cancer Convention and Recommendation, 1974, the Working Environment (Air Pollution, Noise and Vibration) Convention and Recommendation, 1977, the Occupational Safety and Health Convention and Recommendation, 1981, the Occupational Health Services Convention and Recommendation, 1985, the Asbestos Convention and Recommendation, 1986, and the list of occupational diseases, as amended in 1980, appended to the Employment Injury Benefits Convention, 1964, and
+
+Noting that the protection of workers from the harmful effects of chemicals also enhances the protection of the general public and the environment, and
+
+Noting that workers have a need for, and right to, information about the chemicals they use at work, and
+
+Considering that it is essential to prevent or reduce the incidence of chemically induced illnesses and injuries at work by:
+
+(a) ensuring that all chemicals are evaluated to determine their hazards;
+(b) providing employers with a mechanism to obtain from suppliers information about the chemicals used at work so that they can implement effective programmes to protect workers from chemical hazards;
+(c) providing workers with information about the chemicals at their workplaces, and about appropriate preventive measures so that they can effectively participate in protective programmes;
+(d) establishing principles for such programmes to ensure that chemicals are used safely, and
+Having regard to the need for co-operation within the International Programme on Chemical Safety between the International Labour Organisation, the United Nations Environment Programme and the World Health Organisation as well as with the Food and Agriculture Organisation of the United Nations and the United Nations Industrial Development Organisation, and noting the relevant instruments, codes and guide-lines promulgated by these organisations, and
+
+Having decided upon the adoption of certain proposals with regard to safety in the use of chemicals at work, which is the fifth item on the agenda of the session, and
+
+Having determined that these proposals shall take the form of an international Convention;
+
+adopts this twenty-fifth day of June of the year one thousand nine hundred and ninety the following Convention, which may be cited as the Chemicals Convention, 1990:
+
+PART I. SCOPE AND DEFINITIONS
+Article 1
+1. This Convention applies to all branches of economic activity in which chemicals are used.
+2. The competent authority of a Member ratifying this Convention, after consulting the most representative organisations of employers and workers concerned, and on the basis of an assessment of the hazards involved and the protective measures to be applied:
+(a) may exclude particular branches of economic activity, undertakings or products from the application of the Convention, or certain provisions thereof, when:
+(i) special problems of a substantial nature arise; and
+(ii) the overall protection afforded in pursuance of national law and practice is not inferior to that which would result from the full application of the provisions of the Convention;
+(b) shall make special provision to protect confidential information whose disclosure to a competitor would be liable to cause harm to an employer's business so long as the safety and health of workers are not compromised thereby.
+3. This Convention does not apply to articles which will not expose workers to a hazardous chemical under normal or reasonably foreseeable conditions of use.
+4. This Convention does not apply to organisms, but does apply to chemicals derived from organisms.
+Article 2
+For the purposes of this Convention:
+
+(a) the term chemicals means chemical elements and compounds, and mixtures thereof, whether natural or synthetic;
+(b) the term hazardous chemical includes any chemical which has been classified as hazardous in accordance with Article 6 or for which relevant information exists to indicate that the chemical is hazardous;
+(c) the term use of chemicals at work means any work activity which may expose a worker to a chemical, including:
+(i) the production of chemicals;
+(ii) the handling of chemicals;
+(iii) the storage of chemicals;
+(iv) the transport of chemicals;
+(v) the disposal and treatment of waste chemicals;
+(vi) the release of chemicals resulting from work activities;
+(vii) the maintenance, repair and cleaning of equipment and containers for chemicals;
+(d) the term branches of economic activity means all branches in which workers are employed, including the public service;
+(e) the term article means an object which is formed to a specific shape or design during its manufacture or which is in its natural shape, and whose use in that form is dependent in whole or in part on its shape or design;
+(f) the term workers' representatives means persons who are recognised as such by national law or practice, in accordance with the Workers' Representatives Convention, 1971.
+PART II. GENERAL PRINCIPLES
+Article 3
+The most representative organisations of employers and workers concerned shall be consulted on the measures to be taken to give effect to the provisions of this Convention.
+
+Article 4
+In the light of national conditions and practice and in consultation with the most representative organisations of employers and workers, each Member shall formulate, implement and periodically review a coherent policy on safety in the use of chemicals at work.
+
+Article 5
+The competent authority shall have the power, if justified on safety and health grounds, to prohibit or restrict the use of certain hazardous chemicals, or to require advance notification and authorisation before such chemicals are used.
+
+PART III. CLASSIFICATION AND RELATED MEASURES
+Article 6
+CLASSIFICATION SYSTEMS
+1. Systems and specific criteria appropriate for the classification of all chemicals according to the type and degree of their intrinsic health and physical hazards and for assessing the relevance of the information required to determine whether a chemical is hazardous shall be established by the competent authority, or by a body approved or recognised by the competent authority, in accordance with national or international standards.
+2. The hazardous properties of mixtures composed of two or more chemicals may be determined by assessments based on the intrinsic hazards of their component chemicals.
+3. In the case of transport, such systems and criteria shall take into account the United Nations Recommendations on the transport of dangerous goods.
+4. The classification systems and their application shall be progressively extended.
+Article 7
+LABELLING AND MARKING
+1. All chemicals shall be marked so as to indicate their identity.
+2. Hazardous chemicals shall in addition be labelled, in a way easily understandable to the workers, so as to provide essential information regarding their classification, the hazards they present and the safety precautions to be observed.
+3.
+(1) Requirements for marking or labelling chemicals pursuant to paragraphs 1 and 2 of this Article shall be established by the competent authority, or by a body approved or recognised by the competent authority, in accordance with national or international standards.
+(2) In the case of transport, such requirements shall take into account the United Nations Recommendations on the transport of dangerous goods.
+Article 8
+CHEMICAL SAFETY DATA SHEETS
+1. For hazardous chemicals, chemical safety data sheets containing detailed essential information regarding their identity, supplier, classification, hazards, safety precautions and emergency procedures shall be provided to employers.
+2. Criteria for the preparation of chemical safety data sheets shall be established by the competent authority, or by a body approved or recognised by the competent authority, in accordance with national or international standards.
+3. The chemical or common name used to identify the chemical on the chemical safety data sheet shall be the same as that used on the label.
+Article 9
+RESPONSIBILITIES OF SUPPLIERS
+1. Suppliers of chemicals, whether manufacturers, importers or distributors, shall ensure that:
+(a) such chemicals have been classified in accordance with Article 6 on the basis of knowledge of their properties and a search of available information or assessed in accordance with paragraph 3 below;
+(b) such chemicals are marked so as to indicate their identity in accordance with Article 7, paragraph 1;
+(c) hazardous chemicals they supply are labelled in accordance with Article 7, paragraph 2;
+(d) chemical safety data sheets are prepared for such hazardous chemicals in accordance with Article 8, paragraph 1, and provided to employers.
+2. Suppliers of hazardous chemicals shall ensure that revised labels and chemical safety data sheets are prepared and provided to employers, by a method which accords with national law and practice, whenever new relevant safety and health information becomes available.
+3. Suppliers of chemicals which have not yet been classified in accordance with Article 6 shall identify the chemicals they supply and assess the properties of these chemicals on the basis of a search of available information in order to determine whether they are hazardous chemicals.
+PART IV. RESPONSIBILITIES OF EMPLOYERS
+Article 10
+IDENTIFICATION
+1. Employers shall ensure that all chemicals used at work are labelled or marked as required by Article 7 and that chemical safety data sheets have been provided as required by Article 8 and are made available to workers and their representatives.
+2. Employers receiving chemicals that have not been labelled or marked as required under Article 7, or for which chemical safety data sheets have not been provided as required under Article 8, shall obtain the relevant information from the supplier or from other reasonably available sources, and shall not use the chemicals until such information is obtained.
+3. Employers shall ensure that only chemicals which are classified in accordance with Article 6 or identified and assessed in accordance with Article 9, paragraph 3, and labelled or marked in accordance with Article 7 are used and that any necessary precautions are taken when they are used.
+4. Employers shall maintain a record of hazardous chemicals used at the workplace, cross-referenced to the appropriate chemical safety data sheets. This record shall be accessible to all workers concerned and their representatives.
+Article 11
+TRANSFER OF CHEMICALS
+Employers shall ensure that when chemicals are transferred into other containers or equipment, the contents are indicated in a manner which will make known to workers their identity, any hazards associated with their use and any safety precautions to be observed.
+
+Article 12
+EXPOSURE
+Employers shall:
+
+(a) ensure that workers are not exposed to chemicals to an extent which exceeds exposure limits or other exposure criteria for the evaluation and control of the working environment established by the competent authority, or by a body approved or recognised by the competent authority, in accordance with national or international standards;
+(b) assess the exposure of workers to hazardous chemicals;
+(c) monitor and record the exposure of workers to hazardous chemicals when this is necessary to safeguard their safety and health or as may be prescribed by the competent authority;
+(d) ensure that the records of the monitoring of the working environment and of the exposure of workers using hazardous chemicals are kept for a period prescribed by the competent authority and are accessible to the workers and their representatives.
+Article 13
+OPERATIONAL CONTROL
+1. Employers shall make an assessment of the risks arising from the use of chemicals at work, and shall protect workers against such risks by appropriate means, such as:
+(a) the choice of chemicals that eliminate or minimise the risk;
+(b) the choice of technology that eliminates or minimises the risk;
+(c) the use of adequate engineering control measures;
+(d) the adoption of working systems and practices that eliminate or minimise the risk;
+(e) the adoption of adequate occupational hygiene measures;
+(f) where recourse to the above measures does not suffice, the provision and proper maintenance of personal protective equipment and clothing at no cost to the worker, and the implementation of measures to ensure their use.
+2. Employers shall:
+(a) limit exposure to hazardous chemicals so as to protect the safety and health of workers;
+(b) provide first aid;
+(c) make arrangements to deal with emergencies.
+Article 14
+DISPOSAL
+Hazardous chemicals which are no longer required and containers which have been emptied but which may contain residues of hazardous chemicals, shall be handled or disposed of in a manner which eliminates or minimises the risk to safety and health and to the environment, in accordance with national law and practice.
+
+Article 15
+INFORMATION AND TRAINING
+Employers shall:
+
+(a) inform the workers of the hazards associated with exposure to chemicals used at the workplace;
+(b) instruct the workers how to obtain and use the information provided on labels and chemical safety data sheets;
+(c) use the chemical safety data sheets, along with information specific to the workplace, as a basis for the preparation of instructions to workers, which should be written if appropriate;
+(d) train the workers on a continuing basis in the practices and procedures to be followed for safety in the use of chemicals at work.
+Article 16
+CO-OPERATION
+Employers, in discharging their responsibilities, shall co-operate as closely as possible with workers or their representatives with respect to safety in the use of chemicals at work.
+
+PART V. DUTIES OF WORKERS
+Article 17
+1. Workers shall co-operate as closely as possible with their employers in the discharge by the employers of their responsibilities and comply with all procedures and practices relating to safety in the use of chemicals at work.
+2. Workers shall take all reasonable steps to eliminate or minimise risk to themselves and to others from the use of chemicals at work.
+PART VI. RIGHTS OF WORKERS AND THEIR REPRESENTATIVES
+Article 18
+1. Workers shall have the right to remove themselves from danger resulting from the use of chemicals when they have reasonable justification to believe there is an imminent and serious risk to their safety or health, and shall inform their supervisor immediately.
+2. Workers who remove themselves from danger in accordance with the provisions of the previous paragraph or who exercise any other rights under this Convention shall be protected against undue consequences.
+3. Workers concerned and their representatives shall have the right to:
+(a) information on the identity of chemicals used at work, the hazardous properties of such chemicals, precautionary measures, education and training;
+(b) the information contained in labels and markings;
+(c) chemical safety data sheets;
+(d) any other information required to be kept by this Convention.
+4. Where disclosure of the specific identity of an ingredient of a chemical mixture to a competitor would be liable to cause harm to the employer's business, the employer may, in providing the information required under paragraph 3 above, protect that identity in a manner approved by the competent authority under Article 1, paragraph 2 (b).
+PART VII. RESPONSIBILITY OF EXPORTING STATES
+Article 19
+When in an exporting member State all or some uses of hazardous chemicals are prohibited for reasons of safety and health at work, this fact and the reasons for it shall be communicated by the exporting member State to any importing country.
+
+Article 20
+The formal ratifications of this Convention shall be communicated to the Director-General of the International Labour Office for registration.
+
+Article 21
+1. This Convention shall be binding only upon those Members of the International Labour Organisation whose ratifications have been registered with the Director-General.
+2. It shall come into force twelve months after the date on which the ratifications of two Members have been registered with the Director-General.
+3. Thereafter, this Convention shall come into force for any Member twelve months after the date on which its ratification has been registered.
+Article 22
+1. A Member which has ratified this Convention may denounce it after the expiration of ten years from the date on which the Convention first comes into force, by an act communicated to the Director-General of the International Labour Office for registration. Such denunciation shall not take effect until one year after the date on which it is registered.
+2. Each Member which has ratified this Convention and which does not, within the year following the expiration of the period of ten years mentioned in the preceding paragraph, exercise the right of denunciation provided for in this Article, will be bound for another period of ten years and, thereafter, may denounce this Convention at the expiration of each period of ten years under the terms provided for in this Article.
+Article 23
+1. The Director-General of the International Labour Office shall notify all Members of the International Labour Organisation of the registration of all ratifications and denunciations communicated to him by the Members of the Organisation.
+2. When notifying the Members of the Organisation of the registration of the second ratification communicated to him, the Director-General shall draw the attention of the Members of the Organisation to the date upon which the Convention will come into force.
+Article 24
+The Director-General of the International Labour Office shall communicate to the Secretary-General of the United Nations for registration in accordance with Article 102 of the Charter of the United Nations full particulars of all ratifications and acts of denunciation registered by him in accordance with the provisions of the preceding Articles.
+
+Article 25
+At such times as it may consider necessary the Governing Body of the International Labour Office shall present to the General Conference a report on the working of this Convention and shall examine the desirability of placing on the agenda of the Conference the question of its revision in whole or in part.
+
+Article 26
+1. Should the Conference adopt a new Convention revising this Convention in whole or in part, then, unless the new Convention otherwise provides:
+(a) the ratification by a Member of the new revising Convention shall ipso jure involve the immediate denunciation of this Convention, notwithstanding the provisions of Article 22 above, if and when the new revising Convention shall have come into force;
+(b) as from the date when the new revising Convention comes into force this Convention shall cease to be open to ratification by the Members.
+2. This Convention shall in any case remain in force in its actual form and content for those Members which have ratified it but have not ratified the revising Convention.
+Article 27
+The English and French versions of the text of this Convention are equally authoritative.

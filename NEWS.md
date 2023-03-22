@@ -1,3 +1,19 @@
+# manyenviron 0.3.0
+
+2023-03-21
+
+## Package
+
+* Closed #61 by adding a ´generate_memberships()´ function for programmatically creating random, fictional, environmental agreements and members to those agreements
+
+## Data
+
+* Closed #67 by verifying `Beg`, `End`, `Signature`, and `Force` in HUGGO dataset
+* Verified `Title`, `Beg`, `End`, `Signature`, `Force`, and `url` for 465 treaties in HUGGO dataset (see HUGGO_verified.csv)
+* Verified `Title`, `Beg`, `End`, `Signature`, `Force`, and `url` for 196 treaties present in ECOLEX, IEADB, CIEISIN, and HEIDI datasets added to HUGGO dataset (see HUGGO_additional.csv)
+* Added 70 formatted treaty texts in 'TreatyTexts' folder
+* Added 469 new raw treaty texts, along with other 876 unformatted texts from previous versions of HUGGO, in 'TreatyTexts' folder
+
 # manyenviron 0.2.1
 
 2022-10-11

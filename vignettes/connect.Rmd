@@ -4,16 +4,14 @@ authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{How Do Environmental Treaties Connect?}
   %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{How Do Environmental Treaties Connect?}
   %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+options(rmarkdown.html_vignette.check_title = FALSE)
 ```
 
 ## Manyenviron Data
@@ -69,7 +67,7 @@ The graph below illustrates a sample of earliest 25 treaties from the references
 library(dplyr)
 library(ggplot2)
 library(migraph)
-
+library(stringr)
 # Get dataset
 references <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
@@ -87,7 +85,7 @@ migraph::gglineage(references[1:25, c(1, 2, 3)]) +
 ```
 
 We can also take a look at a single lineage of Enviromental treaties.
-Let's look at treaties that ammend the Ramsar Convention on Wetlands of International
+Let's look at treaties that either cite or ammend the Ramsar Convention on Wetlands of International
 Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
@@ -95,165 +93,65 @@ Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 ramsa <- manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
-  dplyr::filter(RefType == "Amends" & treatyID2 == "RAMSA_1971A") %>%
+  dplyr::filter(treatyID2 == "RAMSA_1971A") %>%
   dplyr::arrange(year)
 
-# Get agreement titles
-agreementtitles <- manyenviron::agreements$ECOLEX %>%
+# Get agreement titles, join information, and plot
+manyenviron::agreements$ECOLEX %>%
   dplyr::select(Title, treatyID) %>%
-  dplyr::rename(treatyID1 = treatyID)
-
-# Join information
-ramsa <- dplyr::left_join(ramsa, agreementtitles, by = "treatyID1")
-ramsa$treatyID2 <- "Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat - 1971"
-ramsa$Title <- paste0(ramsa$Title, "-", stringr::str_extract(ramsa$treatyID1, "[:digit:]{4}"))
-ramsa <- dplyr::relocate(ramsa, treatyID2, Title)
-
-# Plot with migraph
-migraph::gglineage(ramsa) +
-  labs(title = "Treaties that Amend the Ramsar Convention",
-       caption = "Source: manyenviron") +
-  theme(plot.title = element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
+  dplyr::rename(treatyID1 = treatyID) %>%
+  dplyr::right_join(ramsa) %>%
+  dplyr::rename(to = treatyID2,
+                from = Title) %>%
+  dplyr::select(to, from, RefType) %>%
+  migraph::as_tidygraph() %>%
+  migraph::activate(edges) %>%
+  migraph::autographr(edge_color = "RefType")
 ```
-
 
 ### Visualising How Agreements Connect by Country Membership
 
-The graph below illustrates the connection between parties and treaties for environmental agreements signed into force in two points in time, 1960 and 1980, using the memberships database. In the graph, countries are represented by the dots, the treaties by the squares, and memberships by the edges. treatyIDs are also used to refer to treaty titles.
+The graph below illustrates the connection between parties and treaties for multilateral environmental agreements signed into force in 1980 using the memberships database.
 
 ```{r memberships, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-# Subset dataset
-membership_1960 <- manyenviron::memberships$IEADB_MEM %>%
-  dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
-  dplyr::filter(year == "1960") %>%
-  dplyr::select(treatyID, CountryID, Title) %>%
-  migraph::as_tidygraph()
-
-# Plot with migraph
-migraph::autographr(membership_1960) +
-  ggplot2::labs(title = "Membership in Environmental Treaties\nSigned in 1960",
-       caption = "Source: manyenviron") +
-  ggplot2::theme(plot.title = ggplot2::element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
-# Subset dataset
-membership_1980 <- manyenviron::memberships$IEADB_MEM %>%
+# Subset and plot data
+manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
-  dplyr::select(treatyID, CountryID, Title) %>%
-  tidyr::drop_na() %>%
-  migraph::as_tidygraph()
-
-# Plot with migraph
-migraph::autographr(membership_1980) +
-  ggplot2::labs(title = "Membership in Environmental Treaties\nSigned in 1980",
-       caption = "Source: manyenviron") +
-  ggplot2::theme(plot.title = ggplot2::element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
+  dplyr::select(treatyID, stateID, year) %>%
+  group_by(treatyID) %>%
+  filter( n() > 2) %>% # keep only multilateral treaties
+  migraph::as_tidygraph() %>%
+  migraph::activate(nodes) %>%
+  dplyr::mutate(color = ifelse(grepl("_", name), 1, 0),
+                size = ifelse(grepl("_", name), 4, 2),
+                shape = ifelse(grepl("_", name), "square", "circle")) %>%
+  migraph::to_undirected() %>%
+  migraph::autographr(node_color = "color", node_size = "size",
+                      node_shape = "shape")
 ```
 
-### Visulaizing the Plots in 3D
+### Extra: dynamic visualisation
 
-Visualizing the network in 3D is a neat way of presenting your data in HTML documents.
-This allows you to let the visitors of your site interact with
-your network by allowing them to move things around.
-To get there, we leverage the [`{threejs}`](https://bwlewis.github.io/rthreejs/) package,
-an interface between R and the eponymous JS library.
+For events or panel network data, `{migraph}` allows users to visualise how networks evolve over time as animations.
 
-We will use the membership data for agreements signed in 1980 from above and
-set a node attribute `lvl` identifying the set a node belongs to.
-We then move on to subsetting the graph by only retaining the biggest component
-and applying the `layout_as_multilevel()` function.
-We finally make some cosmetic adjustments before rendering the graph.
-(Note that you can hover over a node to display its name!)
-
-```{r memberships3D, eval=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-library(igraph)
-library(threejs)
-library(graphlayouts)
-# Set node attribute "type" to separate between countries and agreements
-V(membership_1980)$type <- ifelse(nchar(V(membership_1980)$name) == 3 |
-                                    V(membership_1980)$name == "GRC_EC",
-                                   TRUE,
-                                   FALSE)
-# Save a clean version for the globe plot
-membership_1980_globe <- membership_1980
-# Set node attribute "lvl" to separate between countries and agreements
-V(membership_1980)$lvl <- ifelse(nchar(V(membership_1980)$name) == 3, 2, 1)
-
-# Subset the graph to only include the biggest component
-components <- igraph::components(membership_1980)
-biggest_component_id <- which.max(components$csize)
-vert_ids <- V(membership_1980)[components$membership == biggest_component_id]
-membership_1980 <- igraph::induced_subgraph(membership_1980, vert_ids)
-
-# Define the 3D layout
-membership_1980$layout <- graphlayouts::layout_as_multilevel(membership_1980,
-                                                             type = "all",
-                                                             alpha = 25,
-                                                             beta = 45,
-                                                             project2D = FALSE)
-V(membership_1980)$color <- c("#014D23", "#36648A")[V(membership_1980)$lvl]
-V(membership_1980)$vertex.label <- V(membership_1980)$name
-
-# Render the graph
-graphjs(membership_1980, main = "Membership in Environmental Treaties Signed in 1980",
-        bg = "white", vertex.label = V(membership_1980)$vertex.label,
-        vertex.size = ifelse(V(membership_1980)$lvl == 1, 0.8, 2),
-        vertex.shape = ifelse(V(membership_1980)$lvl == 1, "square", "sphere"),
-        top = 1, left = 45, font.main = "18px Arial", brush = TRUE)
+```{r dynamic, eval=FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+# Install the development version of migraph, for now
+remotes::install_github("snlab-ch/migraph", ref = "develop")
+# Subset and plot data
+manyenviron::memberships$IEADB_MEM %>%
+  dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+  dplyr::filter(year == "1980" | year == "1981") %>%
+  dplyr::select(treatyID, stateID, year) %>%
+  group_by(treatyID) %>%
+  filter( n() > 2) %>% # keep only multilateral treaties
+  migraph::as_tidygraph() %>%
+  migraph::activate(nodes) %>%
+  dplyr::mutate(color = ifelse(grepl("_", name), "blue", "red"),
+                size = ifelse(grepl("_", name), 4, 2),
+                shape = ifelse(grepl("_", name), "square", "circle")) %>%
+  migraph::to_waves(attribute = "year") %>% 
+  migraph::autographd(delete.vertices = TRUE, node_color = "color",
+                      node_size = "size", node_shape = "shape")
 ```
-
-### Projecting the Network on a Globe:
-
-Let's look at what the "country projection" of the bimodal network above looks like on a globe.
-Note that projections as such can sometimes obscur information about the underlying bimodal network.
-There are essentially two elements we need for this visualization.
-First, the country projection of treaties signed in 1980 which we computed before.
-Second, a dataframe of the centroids of every country in the world which we get
-from the `{rgeos}` and the `{rworldmap}` packages.
-Once we have these elements, we merge them to create dataframe
-for the arcs to be displayed in the `globejs()` visualization.
-Finally, we adjust colors and inital longitude and latitude for the plotted globe.
-
-``` {r, membershipsGlobe, eval=FALSE, fig.align='center', fig.asp=1, fig.width=9}
-library(rgeos)
-library(rworldmap)
-library(tidyr)
-
-# Create the projection
-membership_1980 <- migraph::project_cols(membership_1980_globe)
-membership_1980 <- igraph::get.data.frame(membership_1980, "edges")
-
-# Get the coordinates of the centroids of each territory
-wmap <- getMap(resolution="high")
-centroids <- gCentroid(wmap, byid = TRUE)
-centroids$ID <- countrycode::countrycode(rownames(as.data.frame(centroids)),
-                                         "country.name", "cowc")
-centroids <- dplyr::as_tibble(centroids) %>%
-  dplyr::rename(lat = y, long = x) %>%
-  tidyr::drop_na(ID)
-
-# Merge centroids and links dataframes
-merged <- merge(centroids, membership_1980, by.x = "ID", by.y = "from")
-merged <- dplyr::rename(merged, origin_long = long, origin_lat = lat)
-merged <- merge(centroids, merged, by.x = "ID", by.y = "to")
-merged <- dplyr::rename(merged, dest_lat = lat, dest_long = long,
-                        ID_from = ID, ID_to = ID.y) %>%
-  dplyr::relocate(ID_from, ID_to, origin_lat, origin_long, dest_lat, dest_long)
-
-# Create arcs dataframe
-keeps <- c("origin_lat", "origin_long", "dest_lat", "dest_long")
-arcs <- merged[keeps]
-
-# Visualize
-threejs::globejs(lat=merged$dest_lat, long=merged$dest_long,
-        arcs = arcs, bodycolor = "#aaaaff",
-        rotationlong = 200, rotationlat = -100,
-        arcsHeight = 0.3, arcsLwd = 2.5,
-        arcsColor = "#2fff00", arcsOpacity = 0.15,
-        atmosphere = TRUE, color="#00aaff", pointsize = 0.5)
-```
+ 

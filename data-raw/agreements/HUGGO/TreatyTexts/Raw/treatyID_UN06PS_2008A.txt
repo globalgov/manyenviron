@@ -1,0 +1,1128 @@
+UNITED NATIONS CONVENTION ON CONTRACTS FOR THE INTERNATIONAL CARRIAGE OF GOODS WHOLLY OR PARTLY BY SEA
+The States Parties to this Convention,
+
+Reaffirming their belief that international trade on the basis of equality and mutual benefit is an important element in promoting friendly relations among States,
+
+Convinced that the progressive harmonization and unification of inter- national trade law, in reducing or removing legal obstacles to the flow of inter- national trade, significantly contributes to universal economic cooperation among all States on a basis of equality, equity and common interest, and to the well-being of all peoples,
+
+Recognizing the significant contribution of the International Convention for the Unification of Certain Rules of Law relating to Bills of Lading, signed in Brussels on 25 August 1924, and its Protocols, and of the United Nations Convention on the Carriage of Goods by Sea, signed in Hamburg on 31 March 1978, to the harmonization of the law governing the carriage of goods by sea,
+
+Mindful of the technological and commercial developments that have taken place since the adoption of those conventions and of the need to consoli- date and modernize them,
+
+Noting that shippers and carriers do not have the benefit of a binding universal regime to support the operation of contracts of maritime carriage involving other modes of transport,
+
+Believing that the adoption of uniform rules to govern international con- tracts of carriage wholly or partly by sea will promote legal certainty, improve the efficiency of international carriage of goods and facilitate new access opportunities for previously remote parties and markets, thus playing a funda- mental role in promoting trade and economic development, both domestically and internationally,
+
+Have agreed as follows:
+ 
+
+
+
+Chapter 1 General provisions
+Article 1 Definitions
+For the purposes of this Convention:
+
+1.	"Contract of carriage" means a contract in which a carrier, against the pay- ment of freight, undertakes to carry goods from one place to another. The con- tract shall provide for carriage by sea and may provide for carriage by other modes of transport in addition to the sea carriage.
+
+2.	"Volume contract" means a contract of carriage that provides for the car- riage of a specified quantity of goods in a series of shipments during an agreed period of time. The specification of the quantity may include a minimum, a maximum or a certain range.
+
+3.	"Liner transportation" means a transportation service that is offered to the public through publication or similar means and includes transportation by ships operating on a regular schedule between specified ports in accordance with publicly available timetables of sailing dates.
+
+4.	"Non-liner transportation" means any transportation that is not liner transportation.
+
+5.	"Carrier" means a person that enters into a contract of carriage with a shipper.
+
+6.	(a) "Performing party" means a person other than the carrier that per- forms or undertakes to perform any of the carrier's obligations under a contract of carriage with respect to the receipt, loading, handling, stowage, carriage, keeping, care, unloading or delivery of the goods, to the extent that such person acts, either directly or indirectly, at the carrier's request or under the carrier's supervision or control.
+
+(b) "Performing party" does not include any person that is retained, directly or indirectly, by a shipper, by a documentary shipper, by the controlling party or by the consignee instead of by the carrier.
+ 
+7.	"Maritime performing party" means a performing party to the extent that it performs or undertakes to perform any of the carrier's obligations during the period between the arrival of the goods at the port of loading of a ship and their departure from the port of discharge of a ship. An inland carrier is a maritime performing party only if it performs or undertakes to perform its services exclusively within a port area.
+
+8.	"Shipper" means a person that enters into a contract of carriage with a carrier.
+
+9.	"Documentary shipper" means a person, other than the shipper, that accepts to be named as "shipper" in the transport document or electronic transport record.
+
+10.	"Holder" means:
+
+(a)	A person that is in possession of a negotiable transport document; and (i) if the document is an order document, is identified in it as the shipper or the consignee, or is the person to which the document is duly endorsed; or (ii) if the document is a blank endorsed order document or bearer document, is the bearer thereof; or
+(b)	The person to which a negotiable electronic transport record has been issued or transferred in accordance with the procedures referred to in article 9, paragraph 1.
+11.	"Consignee" means a person entitled to delivery of the goods under a contract of carriage or a transport document or electronic transport record.
+
+12.	"Right of control" of the goods means the right under the contract of car- riage to give the carrier instructions in respect of the goods in accordance with chapter 10.
+
+13.	"Controlling party" means the person that pursuant to article 51 is entitled to exercise the right of control.
+
+14.	"Transport document" means a document issued under a contract of carriage by the carrier that:
+
+(a)	Evidences the carrier's or a performing party's receipt of goods under a contract of carriage; and
+(b)	Evidences or contains a contract of carriage.
+
+15.	"Negotiable transport document" means a transport document that indi- cates, by wording such as "to order" or "negotiable" or other appropriate
+ 
+wording recognized as having the same effect by the law applicable to the doc- ument, that the goods have been consigned to the order of the shipper, to the order of the consignee, or to bearer, and is not explicitly stated as being "non- negotiable" or "not negotiable".
+
+16.	"Non-negotiable transport document" means a transport document that is not a negotiable transport document.
+
+17.	"Electronic communication" means information generated, sent, received or stored by electronic, optical, digital or similar means with the result that the information communicated is accessible so as to be usable for subsequent reference.
+
+18.	"Electronic transport record" means information in one or more messages issued by electronic communication under a contract of carriage by a carrier, including information logically associated with the electronic transport record by attachments or otherwise linked to the electronic transport record contem- poraneously with or subsequent to its issue by the carrier, so as to become part of the electronic transport record, that:
+
+(a)	Evidences the carrier's or a performing party's receipt of goods under a contract of carriage; and
+(b)	Evidences or contains a contract of carriage.
+
+19.	"Negotiable electronic transport record" means an electronic transport record:
+
+(a)	That indicates, by wording such as "to order", or "negotiable", or other appropriate wording recognized as having the same effect by the law applicable to the record, that the goods have been consigned to the order of the shipper or to the order of the consignee, and is not explicitly stated as being "non-negotiable" or "not negotiable"; and
+(b)	The use of which meets the requirements of article 9, paragraph 1.
+
+20.	"Non-negotiable electronic transport record" means an electronic trans- port record that is not a negotiable electronic transport record.
+
+21.	The "issuance" of a negotiable electronic transport record means the issu- ance of the record in accordance with procedures that ensure that the record is subject to exclusive control from its creation until it ceases to have any effect or validity.
+
+22.	The "transfer" of a negotiable electronic transport record means the trans- fer of exclusive control over the record.
+ 
+23.	"Contract particulars" means any information relating to the contract of carriage or to the goods (including terms, notations, signatures and endorse- ments) that is in a transport document or an electronic transport record.
+
+24.	"Goods" means the wares, merchandise, and articles of every kind what- soever that a carrier undertakes to carry under a contract of carriage and includes the packing and any equipment and container not supplied by or on behalf of the carrier.
+
+25.	"Ship" means any vessel used to carry goods by sea.
+
+26.	"Container" means any type of container, transportable tank or flat, swap- body, or any similar unit load used to consolidate goods, and any equipment ancillary to such unit load.
+
+27.	"Vehicle" means a road or railroad cargo vehicle.
+
+28.	"Freight" means the remuneration payable to the carrier for the carriage of goods under a contract of carriage.
+
+29.	"Domicile" means (a) a place where a company or other legal person or association of natural or legal persons has its (i) statutory seat or place of incorporation or central registered office, whichever is applicable, (ii) central administration or (iii) principal place of business, and (b) the habitual residence of a natural person.
+
+30.	"Competent court" means a court in a Contracting State that, according to the rules on the internal allocation of jurisdiction among the courts of that State, may exercise jurisdiction over the dispute.
+
+Article 2 Interpretation of this Convention
+In the interpretation of this Convention, regard is to be had to its interna- tional character and to the need to promote uniformity in its application and the observance of good faith in international trade.
+
+Article 3 Form requirements
+The notices, confirmation, consent, agreement, declaration and other com- munications referred to in articles 19, paragraph 2; 23, paragraphs 1 to 4; 36,
+subparagraphs 1 (b), (c) and (d); 40, subparagraph 4 (b); 44; 48, paragraph 3;
+51, subparagraph 1 (b); 59, paragraph 1; 63; 66; 67, paragraph 2; 75, paragraph
+4; and 80, paragraphs 2 and 5, shall be in writing. Electronic communications
+ 
+may be used for these purposes, provided that the use of such means is with the consent of the person by which it is communicated and of the person to which it is communicated.
+
+Article 4
+Applicability of defences and limits of liability
+
+1.	Any provision of this Convention that may provide a defence for, or limit the liability of, the carrier applies in any judicial or arbitral proceeding, whether founded in contract, in tort, or otherwise, that is instituted in respect of loss of, damage to, or delay in delivery of goods covered by a contract of carriage or for the breach of any other obligation under this Convention against:
+
+(a)	The carrier or a maritime performing party;
+(b)	The master, crew or any other person that performs services on board the ship; or
+(c)	Employees of the carrier or a maritime performing party.
+
+2.	Any provision of this Convention that may provide a defence for the ship- per or the documentary shipper applies in any judicial or arbitral proceeding, whether founded in contract, in tort, or otherwise, that is instituted against the shipper, the documentary shipper, or their subcontractors, agents or employees.
+
+
+Chapter 2 Scope of application
+
+Article 5
+General scope of application
+
+1.	Subject to article 6, this Convention applies to contracts of carriage in which the place of receipt and the place of delivery are in different States, and the port of loading of a sea carriage and the port of discharge of the same sea carriage are in different States, if, according to the contract of carriage, any one of the following places is located in a Contracting State:
+
+(a)	The place of receipt;
+(b)	The port of loading;
+(c)	The place of delivery; or
+(d)	The port of discharge.
+ 
+2.	This Convention applies without regard to the nationality of the vessel, the carrier, the performing parties, the shipper, the consignee, or any other interested parties.
+
+Article 6 Specific exclusions
+1.	This Convention does not apply to the following contracts in liner transportation:
+
+(a)	Charter parties; and
+(b)	Other contracts for the use of a ship or of any space thereon.
+
+2.	This Convention does not apply to contracts of carriage in non-liner trans- portation except when:
+
+(a)	There is no charter party or other contract between the parties for the use of a ship or of any space thereon; and
+(b)	A transport document or an electronic transport record is issued.
+
+Article 7 Application to certain parties
+Notwithstanding article 6, this Convention applies as between the carrier and the consignee, controlling party or holder that is not an original party to the charter party or other contract of carriage excluded from the application of this Convention. However, this Convention does not apply as between the original parties to a contract of carriage excluded pursuant to article 6.
+
+
+Chapter 3 Electronic transport records
+
+Article 8
+Use and effect of electronic transport records
+
+Subject to the requirements set out in this Convention:
+
+(a)	Anything that is to be in or on a transport document under this Convention may be recorded in an electronic transport record, provided the issuance and subsequent use of an electronic transport record is with the consent of the carrier and the shipper; and
+ 
+(b)	The issuance, exclusive control, or transfer of an electronic transport record has the same effect as the issuance, possession, or transfer of a transport document.
+
+
+Article 9
+Procedures for use of negotiable electronic transport records
+
+1.	The use of a negotiable electronic transport record shall be subject to procedures that provide for:
+
+(a)	The method for the issuance and the transfer of that record to an intended holder;
+(b)	An assurance that the negotiable electronic transport record retains its integrity;
+(c)	The manner in which the holder is able to demonstrate that it is the holder; and
+(d)	The manner of providing confirmation that delivery to the holder has been effected, or that, pursuant to articles 10, paragraph 2, or 47, subparagraphs 1 (a) (ii) and (c), the electronic transport record has ceased to have any effect or validity.
+
+2.	The procedures in paragraph 1 of this article shall be referred to in the contract particulars and be readily ascertainable.
+
+Article 10
+Replacement of negotiable transport document or negotiable electronic transport record
+1.	If a negotiable transport document has been issued and the carrier and the holder agree to replace that document by a negotiable electronic transport record:
+
+(a)	The holder shall surrender the negotiable transport document, or all of them if more than one has been issued, to the carrier;
+(b)	The carrier shall issue to the holder a negotiable electronic trans- port record that includes a statement that it replaces the negotiable transport document; and
+(c)	The negotiable transport document ceases thereafter to have any effect or validity.
+ 
+2.	If a negotiable electronic transport record has been issued and the carrier and the holder agree to replace that electronic transport record by a negotiable transport document:
+
+(a)	The carrier shall issue to the holder, in place of the electronic trans- port record, a negotiable transport document that includes a statement that it replaces the negotiable electronic transport record; and
+(b)	The electronic transport record ceases thereafter to have any effect or validity.
+
+
+Chapter 4 Obligations of the carrier
+
+Article 11
+Carriage and delivery of the goods
+
+The carrier shall, subject to this Convention and in accordance with the terms of the contract of carriage, carry the goods to the place of destination and deliver them to the consignee.
+
+Article 12
+Period of responsibility of the carrier
+
+1.	The period of responsibility of the carrier for the goods under this Convention begins when the carrier or a performing party receives the goods for carriage and ends when the goods are delivered.
+
+2.	(a) If the law or regulations of the place of receipt require the goods to be handed over to an authority or other third party from which the carrier may collect them, the period of responsibility of the carrier begins when the carrier collects the goods from the authority or other third party.
+(b)  If the law or regulations of the place of delivery require the carrier to hand over the goods to an authority or other third party from which the con- signee may collect them, the period of responsibility of the carrier ends when the carrier hands the goods over to the authority or other third party.
+
+3.	For the purpose of determining the carrier's period of responsibility, the parties may agree on the time and location of receipt and delivery of the goods, but a provision in a contract of carriage is void to the extent that it provides that:
+ 
+(a)	The time of receipt of the goods is subsequent to the beginning of their initial loading under the contract of carriage; or
+(b)	The time of delivery of the goods is prior to the completion of their final unloading under the contract of carriage.
+
+
+Article 13 Specific obligations
+1.	The carrier shall during the period of its responsibility as defined in article 12, and subject to article 26, properly and carefully receive, load, handle, stow, carry, keep, care for, unload and deliver the goods.
+
+2.	Notwithstanding paragraph 1 of this article, and without prejudice to the other provisions in chapter 4 and to chapters 5 to 7, the carrier and the shipper may agree that the loading, handling, stowing or unloading of the goods is to be performed by the shipper, the documentary shipper or the consignee. Such an agreement shall be referred to in the contract particulars.
+
+
+Article 14
+Specific obligations applicable to the voyage by sea
+
+The carrier is bound before, at the beginning of, and during the voyage by sea to exercise due diligence to:
+
+(a)	Make and keep the ship seaworthy;
+(b)	Properly crew, equip and supply the ship and keep the ship so crewed, equipped and supplied throughout the voyage; and
+(c)	Make and keep the holds and all other parts of the ship in which the goods are carried, and any containers supplied by the carrier in or upon which the goods are carried, fit and safe for their reception, carriage and preservation.
+
+
+Article 15
+Goods that may become a danger
+
+Notwithstanding articles 11 and 13, the carrier or a performing party may decline to receive or to load, and may take such other measures as are rea- sonable, including unloading, destroying, or rendering goods harmless, if the goods are, or reasonably appear likely to become during the carrier's period of responsibility, an actual danger to persons, property or the environment.
+ 
+Article 16
+Sacrifice of the goods during the voyage by sea
+
+Notwithstanding articles 11, 13, and 14, the carrier or a performing party may sacrifice goods at sea when the sacrifice is reasonably made for the com- mon safety or for the purpose of preserving from peril human life or other property involved in the common adventure.
+
+
+Chapter 5
+Liability of the carrier for loss, damage or delay
+
+Article 17 Basis of liability
+1.	The carrier is liable for loss of or damage to the goods, as well as for delay in delivery, if the claimant proves that the loss, damage, or delay, or the event or circumstance that caused or contributed to it took place during the period of the carrier's responsibility as defined in chapter 4.
+
+2.	The carrier is relieved of all or part of its liability pursuant to paragraph 1 of this article if it proves that the cause or one of the causes of the loss, damage, or delay is not attributable to its fault or to the fault of any person referred to in article 18.
+
+3.	The carrier is also relieved of all or part of its liability pursuant to para- graph 1 of this article if, alternatively to proving the absence of fault as pro- vided in paragraph 2 of this article, it proves that one or more of the following events or circumstances caused or contributed to the loss, damage, or delay:
+
+(a)	Act of God;
+(b)	Perils, dangers, and accidents of the sea or other navigable waters;
+(c)	War, hostilities, armed conflict, piracy, terrorism, riots, and civil commotions;
+(d)	Quarantine restrictions; interference by or impediments created by governments, public authorities, rulers, or people including detention, arrest, or seizure not attributable to the carrier or any person referred to in article 18;
+(e)	Strikes, lockouts, stoppages, or restraints of labour;
+(f)	Fire on the ship;
+(g)	Latent defects not discoverable by due diligence;
+ 
+(h)	Act or omission of the shipper, the documentary shipper, the control- ling party, or any other person for whose acts the shipper or the documentary shipper is liable pursuant to article 33 or 34;
+(i)	Loading, handling, stowing, or unloading of the goods performed pursuant to an agreement in accordance with article 13, paragraph 2, unless the carrier or a performing party performs such activity on behalf of the shipper, the documentary shipper or the consignee;
+(j)	Wastage in bulk or weight or any other loss or damage arising from inherent defect, quality, or vice of the goods;
+(k)	Insufficiency or defective condition of packing or marking not performed by or on behalf of the carrier;
+(l)	Saving or attempting to save life at sea;
+(m)	Reasonable measures to save or attempt to save property at sea;
+(n)	Reasonable measures to avoid or attempt to avoid damage to the environment; or
+(o)	Acts of the carrier in pursuance of the powers conferred by articles 15 and 16.
+
+4.	Notwithstanding paragraph 3 of this article, the carrier is liable for all or part of the loss, damage, or delay:
+
+(a)	If the claimant proves that the fault of the carrier or of a person referred to in article 18 caused or contributed to the event or circumstance on which the carrier relies; or
+
+(b)	If the claimant proves that an event or circumstance not listed in para- graph 3 of this article contributed to the loss, damage, or delay, and the carrier cannot prove that this event or circumstance is not attributable to its fault or to the fault of any person referred to in article 18.
+
+5.	The carrier is also liable, notwithstanding paragraph 3 of this article, for all or part of the loss, damage, or delay if:
+
+(a)	The claimant proves that the loss, damage, or delay was or was prob- ably caused by or contributed to by (i) the unseaworthiness of the ship; (ii) the improper crewing, equipping, and supplying of the ship; or (iii) the fact that the holds or other parts of the ship in which the goods are carried, or any containers supplied by the carrier in or upon which the goods are carried, were not fit and safe for reception, carriage, and preservation of the goods; and
+ 
+(b)	The carrier is unable to prove either that: (i) none of the events or circumstances referred to in subparagraph 5 (a) of this article caused the loss, damage, or delay; or (ii) it complied with its obligation to exercise due diligence pursuant to article 14.
+
+6.	When the carrier is relieved of part of its liability pursuant to this article, the carrier is liable only for that part of the loss, damage or delay that is attribut- able to the event or circumstance for which it is liable pursuant to this article.
+
+
+Article 18
+Liability of the carrier for other persons
+
+The carrier is liable for the breach of its obligations under this Convention caused by the acts or omissions of:
+
+(a)	Any performing party;
+(b)	The master or crew of the ship;
+(c)	Employees of the carrier or a performing party; or
+(d)	Any other person that performs or undertakes to perform any of the carrier's obligations under the contract of carriage, to the extent that the person acts, either directly or indirectly, at the carrier's request or under the carrier's supervision or control.
+
+
+Article 19
+Liability of maritime performing parties
+
+1.	A maritime performing party is subject to the obligations and liabilities imposed on the carrier under this Convention and is entitled to the carrier's defences and limits of liability as provided for in this Convention if:
+
+(a)	The maritime performing party received the goods for carriage in a Contracting State, or delivered them in a Contracting State, or performed its activities with respect to the goods in a port in a Contracting State; and
+
+(b)	The occurrence that caused the loss, damage or delay took place:
+(i) during the period between the arrival of the goods at the port of loading of the ship and their departure from the port of discharge from the ship and either
+(ii) while the maritime performing party had custody of the goods or (iii) at any other time to the extent that it was participating in the performance of any of the activities contemplated by the contract of carriage.
+ 
+2.	If the carrier agrees to assume obligations other than those imposed on the carrier under this Convention, or agrees that the limits of its liability are higher than the limits specified under this Convention, a maritime performing party is not bound by this agreement unless it expressly agrees to accept such obligations or such higher limits.
+
+3.	A maritime performing party is liable for the breach of its obligations under this Convention caused by the acts or omissions of any person to which it has entrusted the performance of any of the carrier's obligations under the contract of carriage under the conditions set out in paragraph 1 of this article.
+
+4.	Nothing in this Convention imposes liability on the master or crew of the ship or on an employee of the carrier or of a maritime performing party.
+
+
+Article 20
+Joint and several liability
+
+1.	If the carrier and one or more maritime performing parties are liable for the loss of, damage to, or delay in delivery of the goods, their liability is joint and several but only up to the limits provided for under this Convention.
+
+2.	Without prejudice to article 61, the aggregate liability of all such persons shall not exceed the overall limits of liability under this Convention.
+
+
+Article 21 Delay
+Delay in delivery occurs when the goods are not delivered at the place of destination provided for in the contract of carriage within the time agreed.
+
+
+Article 22 Calculation of compensation
+1.	Subject to article 59, the compensation payable by the carrier for loss of or damage to the goods is calculated by reference to the value of such goods at the place and time of delivery established in accordance with article 43.
+
+2.	The value of the goods is fixed according to the commodity exchange price or, if there is no such price, according to their market price or, if there is no commodity exchange price or market price, by reference to the normal value of the goods of the same kind and quality at the place of delivery.
+ 
+3.	In case of loss of or damage to the goods, the carrier is not liable for pay- ment of any compensation beyond what is provided for in paragraphs 1 and 2 of this article except when the carrier and the shipper have agreed to calculate compensation in a different manner within the limits of chapter 16.
+
+
+
+Article 23
+Notice in case of loss, damage or delay
+
+1.	The carrier is presumed, in absence of proof to the contrary, to have deliv- ered the goods according to their description in the contract particulars unless notice of loss of or damage to the goods, indicating the general nature of such loss or damage, was given to the carrier or the performing party that delivered the goods before or at the time of the delivery, or, if the loss or damage is not apparent, within seven working days at the place of delivery after the delivery of the goods.
+
+2.	Failure to provide the notice referred to in this article to the carrier or the performing party shall not affect the right to claim compensation for loss of or damage to the goods under this Convention, nor shall it affect the allocation of the burden of proof set out in article 17.
+
+3.	The notice referred to in this article is not required in respect of loss or damage that is ascertained in a joint inspection of the goods by the person to which they have been delivered and the carrier or the maritime performing party against which liability is being asserted.
+
+4.	No compensation in respect of delay is payable unless notice of loss due to delay was given to the carrier within twenty-one consecutive days of delivery of the goods.
+
+5.	When the notice referred to in this article is given to the performing party that delivered the goods, it has the same effect as if that notice was given to the carrier, and notice given to the carrier has the same effect as a notice given to a maritime performing party.
+
+6.	In the case of any actual or apprehended loss or damage, the parties to the dispute shall give all reasonable facilities to each other for inspecting and tally- ing the goods and shall provide access to records and documents relevant to the carriage of the goods.
+ 
+Chapter 6
+Additional provisions relating to particular stages of carriage
+
+Article 24 Deviation
+When pursuant to applicable law a deviation constitutes a breach of the carrier's obligations, such deviation of itself shall not deprive the carrier or a maritime performing party of any defence or limitation of this Convention, except to the extent provided in article 61.
+
+
+Article 25 Deck cargo on ships
+1.	Goods may be carried on the deck of a ship only if:
+
+(a)	Such carriage is required by law;
+
+(b)	They are carried in or on containers or vehicles that are fit for deck carriage, and the decks are specially fitted to carry such containers or vehicles; or
+
+(c)	The carriage on deck is in accordance with the contract of carriage, or the customs, usages or practices of the trade in question.
+
+2.	The provisions of this Convention relating to the liability of the carrier apply to the loss of, damage to or delay in the delivery of goods carried on deck pursuant to paragraph 1 of this article, but the carrier is not liable for loss of or damage to such goods, or delay in their delivery, caused by the special risks involved in their carriage on deck when the goods are carried in accordance with subparagraphs 1 (a) or (c) of this article.
+
+3.	If the goods have been carried on deck in cases other than those permitted pursuant to paragraph 1 of this article, the carrier is liable for loss of or damage to the goods or delay in their delivery that is exclusively caused by their carriage on deck, and is not entitled to the defences provided for in article 17.
+
+4.	The carrier is not entitled to invoke subparagraph 1 (c) of this article against a third party that has acquired a negotiable transport document or a negotiable electronic transport record in good faith, unless the contract particulars state that the goods may be carried on deck.
+ 
+5.	If the carrier and shipper expressly agreed that the goods would be carried under deck, the carrier is not entitled to the benefit of the limitation of liability for any loss of, damage to or delay in the delivery of the goods to the extent that such loss, damage, or delay resulted from their carriage on deck.
+
+Article 26
+Carriage preceding or subsequent to sea carriage
+
+When loss of or damage to goods, or an event or circumstance causing a delay in their delivery, occurs during the carrier's period of responsibility but solely before their loading onto the ship or solely after their discharge from the ship, the provisions of this Convention do not prevail over those provisions of another international instrument that, at the time of such loss, damage or event or circumstance causing delay:
+
+(a)	Pursuant to the provisions of such international instrument would have applied to all or any of the carrier's activities if the shipper had made a separate and direct contract with the carrier in respect of the particular stage of carriage where the loss of, or damage to goods, or an event or circumstance causing delay in their delivery occurred;
+
+(b)	Specifically provide for the carrier's liability, limitation of liability, or time for suit; and
+
+(c)	Cannot be departed from by contract either at all or to the detriment of the shipper under that instrument.
+
+
+Chapter 7
+Obligations of the shipper to the carrier
+
+Article 27 Delivery for carriage
+1.	Unless otherwise agreed in the contract of carriage, the shipper shall deliver the goods ready for carriage. In any event, the shipper shall deliver the goods in such condition that they will withstand the intended carriage, including their loading, handling, stowing, lashing and securing, and unloading, and that they will not cause harm to persons or property.
+
+2.	The shipper shall properly and carefully perform any obligation assumed under an agreement made pursuant to article 13, paragraph 2.
+ 
+3.	When a container is packed or a vehicle is loaded by the shipper, the ship- per shall properly and carefully stow, lash and secure the contents in or on the container or vehicle, and in such a way that they will not cause harm to persons or property.
+
+Article 28
+Cooperation of the shipper and the carrier in providing information and instructions
+The carrier and the shipper shall respond to requests from each other to provide information and instructions required for the proper handling and car- riage of the goods if the information is in the requested party's possession or the instructions are within the requested party's reasonable ability to provide and they are not otherwise reasonably available to the requesting party.
+
+Article 29
+Shipper's obligation to provide information, instructions and documents
+1.	The shipper shall provide to the carrier in a timely manner such informa- tion, instructions and documents relating to the goods that are not otherwise reasonably available to the carrier, and that are reasonably necessary:
+
+(a)	For the proper handling and carriage of the goods, including precautions to be taken by the carrier or a performing party; and
+
+(b)	For the carrier to comply with law, regulations or other requirements of public authorities in connection with the intended carriage, provided that the carrier notifies the shipper in a timely manner of the information, instructions and documents it requires.
+
+2.	Nothing in this article affects any specific obligation to provide certain information, instructions and documents related to the goods pursuant to law, regulations or other requirements of public authorities in connection with the intended carriage.
+
+Article 30
+Basis of shipper's liability to the carrier
+
+1.	The shipper is liable for loss or damage sustained by the carrier if the car- rier proves that such loss or damage was caused by a breach of the shipper's obligations under this Convention.
+ 
+2.	Except in respect of loss or damage caused by a breach by the shipper of its obligations pursuant to articles 31, paragraph 2, and 32, the shipper is relieved of all or part of its liability if the cause or one of the causes of the loss or damage is not attributable to its fault or to the fault of any person referred to in article 34.
+
+3.	When the shipper is relieved of part of its liability pursuant to this article, the shipper is liable only for that part of the loss or damage that is attributable to its fault or to the fault of any person referred to in article 34.
+
+Article 31
+Information for compilation of contract particulars
+
+1.	The shipper shall provide to the carrier, in a timely manner, accurate infor- mation required for the compilation of the contract particulars and the issuance of the transport documents or electronic transport records, including the par- ticulars referred to in article 36, paragraph 1; the name of the party to be identi- fied as the shipper in the contract particulars; the name of the consignee, if any; and the name of the person to whose order the transport document or electronic transport record is to be issued, if any.
+
+2.	The shipper is deemed to have guaranteed the accuracy at the time of receipt by the carrier of the information that is provided according to paragraph 1 of this article. The shipper shall indemnify the carrier against loss or damage resulting from the inaccuracy of such information.
+
+Article 32
+Special rules on dangerous goods
+
+When goods by their nature or character are, or reasonably appear likely to become, a danger to persons, property or the environment:
+
+(a)	The shipper shall inform the carrier of the dangerous nature or char- acter of the goods in a timely manner before they are delivered to the carrier or a performing party. If the shipper fails to do so and the carrier or performing party does not otherwise have knowledge of their dangerous nature or character, the shipper is liable to the carrier for loss or damage resulting from such failure to inform; and
+
+(b)	The shipper shall mark or label dangerous goods in accordance with any law, regulations or other requirements of public authorities that apply dur- ing any stage of the intended carriage of the goods. If the shipper fails to do so, it is liable to the carrier for loss or damage resulting from such failure.
+ 
+Article 33
+Assumption of shipper's rights and obligations by the documentary shipper
+1.	A documentary shipper is subject to the obligations and liabilities imposed on the shipper pursuant to this chapter and pursuant to article 55, and is entitled to the shipper's rights and defences provided by this chapter and by chapter 13.
+
+2.	Paragraph 1 of this article does not affect the obligations, liabilities, rights or defences of the shipper.
+
+Article 34
+Liability of the shipper for other persons
+
+The shipper is liable for the breach of its obligations under this Convention caused by the acts or omissions of any person, including employees, agents and subcontractors, to which it has entrusted the performance of any of its obliga- tions, but the shipper is not liable for acts or omissions of the carrier or a per- forming party acting on behalf of the carrier, to which the shipper has entrusted the performance of its obligations.
+
+
+Chapter 8
+Transport documents and electronic transport records
+
+Article 35
+Issuance of the transport document or the electronic transport record
+
+Unless the shipper and the carrier have agreed not to use a transport docu- ment or an electronic transport record, or it is the custom, usage or practice of the trade not to use one, upon delivery of the goods for carriage to the carrier or performing party, the shipper or, if the shipper consents, the documentary shipper, is entitled to obtain from the carrier, at the shipper's option:
+
+(a)	A non-negotiable transport document or, subject to article 8, subpara- graph (a), a non-negotiable electronic transport record; or
+
+(b)	An appropriate negotiable transport document or, subject to article 8, subparagraph (a), a negotiable electronic transport record, unless the ship- per and the carrier have agreed not to use a negotiable transport document or negotiable electronic transport record, or it is the custom, usage or practice of the trade not to use one.
+ 
+Article 36 Contract particulars
+
+1.	The contract particulars in the transport document or electronic trans- port record referred to in article 35 shall include the following information, as furnished by the shipper:
+
+(a)	A description of the goods as appropriate for the transport;
+(b)	The leading marks necessary for identification of the goods;
+(c)	The number of packages or pieces, or the quantity of goods; and
+(d)	The weight of the goods, if furnished by the shipper.
+
+2.	The contract particulars in the transport document or electronic transport record referred to in article 35 shall also include:
+
+(a)	A statement of the apparent order and condition of the goods at the time the carrier or a performing party receives them for carriage;
+
+(b)	The name and address of the carrier;
+
+(c)	The date on which the carrier or a performing party received the goods, or on which the goods were loaded on board the ship, or on which the transport document or electronic transport record was issued; and
+
+(d)	If the transport document is negotiable, the number of originals of the negotiable transport document, when more than one original is issued.
+
+3.	The contract particulars in the transport document or electronic transport record referred to in article 35 shall further include:
+
+ 
+
+
+
+
+
+and
+ 
+(a)	The name and address of the consignee, if named by the shipper;
+
+(b)	The name of a ship, if specified in the contract of carriage;
+
+(c)	The place of receipt and, if known to the carrier, the place of delivery;
+
+
+(d)	The port of loading and the port of discharge, if specified in the
+ 
+contract of carriage.
+
+4.	For the purposes of this article, the phrase "apparent order and condition of the goods" in subparagraph 2 (a) of this article refers to the order and condition of the goods based on:
+ 
+(a)	A reasonable external inspection of the goods as packaged at the time the shipper delivers them to the carrier or a performing party; and
+
+(b)	Any additional inspection that the carrier or a performing party actu- ally performs before issuing the transport document or electronic transport record.
+
+
+Article 37 Identity of the carrier
+
+1.	If a carrier is identified by name in the contract particulars, any other infor- mation in the transport document or electronic transport record relating to the identity of the carrier shall have no effect to the extent that it is inconsistent with that identification.
+
+2.	If no person is identified in the contract particulars as the carrier as required pursuant to article 36, subparagraph 2 (b), but the contract particulars indicate that the goods have been loaded on board a named ship, the registered owner of that ship is presumed to be the carrier, unless it proves that the ship was under a bareboat charter at the time of the carriage and it identifies this bareboat char- terer and indicates its address, in which case this bareboat charterer is presumed to be the carrier. Alternatively, the registered owner may rebut the presumption of being the carrier by identifying the carrier and indicating its address. The bareboat charterer may rebut any presumption of being the carrier in the same manner.
+
+3.	Nothing in this article prevents the claimant from proving that any person other than a person identified in the contract particulars or pursuant to paragraph 2 of this article is the carrier.
+
+
+Article 38 Signature
+
+1.	A transport document shall be signed by the carrier or a person acting on its behalf.
+
+2.	An electronic transport record shall include the electronic signature of the carrier or a person acting on its behalf. Such electronic signature shall identify the signatory in relation to the electronic transport record and indicate the carrier's authorization of the electronic transport record.
+ 
+Article 39
+Deficiencies in the contract particulars
+
+1.	The absence or inaccuracy of one or more of the contract particulars referred to in article 36, paragraphs 1, 2 or 3, does not of itself affect the legal character or validity of the transport document or of the electronic transport record.
+
+2.	If the contract particulars include the date but fail to indicate its signifi- cance, the date is deemed to be:
+
+(a)	The date on which all of the goods indicated in the transport docu- ment or electronic transport record were loaded on board the ship, if the con- tract particulars indicate that the goods have been loaded on board a ship; or
+
+(b)	The date on which the carrier or a performing party received the goods, if the contract particulars do not indicate that the goods have been loaded on board a ship.
+
+3.	If the contract particulars fail to state the apparent order and condition of the goods at the time the carrier or a performing party receives them, the con- tract particulars are deemed to have stated that the goods were in apparent good order and condition at the time the carrier or a performing party received them.
+
+Article 40
+Qualifying the information relating to the goods in the contract particulars
+1.	The carrier shall qualify the information referred to in article 36, paragraph 1, to indicate that the carrier does not assume responsibility for the accuracy of the information furnished by the shipper if:
+
+(a)	The carrier has actual knowledge that any material statement in the transport document or electronic transport record is false or misleading; or
+
+(b)	The carrier has reasonable grounds to believe that a material statement in the transport document or electronic transport record is false or misleading.
+
+2.	Without prejudice to paragraph 1 of this article, the carrier may qualify the information referred to in article 36, paragraph 1, in the circumstances and in the manner set out in paragraphs 3 and 4 of this article to indicate that the carrier does not assume responsibility for the accuracy of the information furnished by the shipper.
+ 
+3.	When the goods are not delivered for carriage to the carrier or a performing party in a closed container or vehicle, or when they are delivered in a closed container or vehicle and the carrier or a performing party actually inspects them, the carrier may qualify the information referred to in article 36, paragraph 1, if:
+
+(a)	The carrier had no physically practicable or commercially reasonable means of checking the information furnished by the shipper, in which case it may indicate which information it was unable to check; or
+(b)	The carrier has reasonable grounds to believe the information fur- nished by the shipper to be inaccurate, in which case it may include a clause providing what it reasonably considers accurate information.
+
+4.	When the goods are delivered for carriage to the carrier or a performing party in a closed container or vehicle, the carrier may qualify the information referred to in:
+
+(a)	Article 36, subparagraphs 1 (a), (b), or (c), if:
+(i)	The goods inside the container or vehicle have not actually been inspected by the carrier or a performing party; and
+(ii)	Neither the carrier nor a performing party otherwise has actual knowl- edge of its contents before issuing the transport document or the electronic transport record; and
+(b)	Article 36, subparagraph 1 (d), if:
+(i)	Neither the carrier nor a performing party weighed the container or vehicle, and the shipper and the carrier had not agreed prior to the shipment that the container or vehicle would be weighed and the weight would be included in the contract particulars; or
+(ii)	There was no physically practicable or commercially reasonable means of checking the weight of the container or vehicle.
+
+Article 41
+Evidentiary effect of the contract particulars
+
+Except to the extent that the contract particulars have been qualified in the circumstances and in the manner set out in article 40:
+
+(a)	A transport document or an electronic transport record is prima facie evidence of the carrier's receipt of the goods as stated in the contract particulars;
+
+(b)	Proof to the contrary by the carrier in respect of any contract
+ 
+particulars shall not be admissible, when such contract particulars are included in:
+(i)	A negotiable transport document or a negotiable electronic transport record that is transferred to a third party acting in good faith; or
+(ii)	A non-negotiable transport document that indicates that it must be surrendered in order to obtain delivery of the goods and is transferred to the consignee acting in good faith;
+(c)	Proof to the contrary by the carrier shall not be admissible against a consignee that in good faith has acted in reliance on any of the following contract particulars included in a non-negotiable transport document or a non negotiable electronic transport record:
+(i)	The contract particulars referred to in article 36, paragraph 1, when such contract particulars are furnished by the carrier;
+(ii)	The number, type and identifying numbers of the containers, but not the identifying numbers of the container seals; and
+(iii)	The contract particulars referred to in article 36, paragraph 2.
+
+Article 42 "Freight prepaid"
+If the contract particulars contain the statement "freight prepaid" or a state- ment of a similar nature, the carrier cannot assert against the holder or the con- signee the fact that the freight has not been paid. This article does not apply if the holder or the consignee is also the shipper.
+
+
+Chapter 9 Delivery of the goods
+
+Article 43 Obligation to accept delivery
+When the goods have arrived at their destination, the consignee that demands delivery of the goods under the contract of carriage shall accept deliv- ery of the goods at the time or within the time period and at the location agreed in the contract of carriage or, failing such agreement, at the time and location at which, having regard to the terms of the contract, the customs, usages or practices of the trade and the circumstances of the carriage, delivery could reasonably be expected.
+ 
+Article 44
+Obligation to acknowledge receipt
+
+On request of the carrier or the performing party that delivers the goods, the consignee shall acknowledge receipt of the goods from the carrier or the per- forming party in the manner that is customary at the place of delivery. The car- rier may refuse delivery if the consignee refuses to acknowledge such receipt.
+
+
+Article 45
+Delivery when no negotiable transport document or negotiable electronic transport record is issued
+When neither a negotiable transport document nor a negotiable electronic transport record has been issued:
+
+(a)	The carrier shall deliver the goods to the consignee at the time and location referred to in article 43. The carrier may refuse delivery if the person claiming to be the consignee does not properly identify itself as the consignee on the request of the carrier;
+
+(b)	If the name and address of the consignee are not referred to in the contract particulars, the controlling party shall prior to or upon the arrival of the goods at the place of destination advise the carrier of such name and address;
+
+(c)	Without prejudice to article 48, paragraph 1, if the goods are not deliverable because (i) the consignee, after having received a notice of arrival, does not, at the time or within the time period referred to in article 43, claim delivery of the goods from the carrier after their arrival at the place of desti- nation, (ii) the carrier refuses delivery because the person claiming to be the consignee does not properly identify itself as the consignee, or (iii) the carrier is, after reasonable effort, unable to locate the consignee in order to request delivery instructions, the carrier may so advise the controlling party and request instructions in respect of the delivery of the goods. If, after reasonable effort, the carrier is unable to locate the controlling party, the carrier may so advise the shipper and request instructions in respect of the delivery of the goods. If, after reasonable effort, the carrier is unable to locate the shipper, the carrier may so advise the documentary shipper and request instructions in respect of the deliv- ery of the goods;
+
+(d)	The carrier that delivers the goods upon instruction of the control- ling party, the shipper or the documentary shipper pursuant to subparagraph (c) of this article is discharged from its obligations to deliver the goods under the contract of carriage.
+ 
+Article 46
+Delivery when a non-negotiable transport document that requires surrender is issued
+When a non-negotiable transport document has been issued that indicates that it shall be surrendered in order to obtain delivery of the goods:
+
+(a)	The carrier shall deliver the goods at the time and location referred to in article 43 to the consignee upon the consignee properly identifying itself on the request of the carrier and surrender of the non-negotiable document. The carrier may refuse delivery if the person claiming to be the consignee fails to properly identify itself on the request of the carrier, and shall refuse delivery if the non-negotiable document is not surrendered. If more than one original of the non-negotiable document has been issued, the surrender of one original will suffice and the other originals cease to have any effect or validity;
+(b)	Without prejudice to article 48, paragraph 1, if the goods are not deliverable because (i) the consignee, after having received a notice of arrival, does not, at the time or within the time period referred to in article 43, claim delivery of the goods from the carrier after their arrival at the place of destina- tion, (ii) the carrier refuses delivery because the person claiming to be the con- signee does not properly identify itself as the consignee or does not surrender the document, or (iii) the carrier is, after reasonable effort, unable to locate the consignee in order to request delivery instructions, the carrier may so advise the shipper and request instructions in respect of the delivery of the goods. If, after reasonable effort, the carrier is unable to locate the shipper, the carrier may so advise the documentary shipper and request instructions in respect of the deliv- ery of the goods;
+(c)	The carrier that delivers the goods upon instruction of the shipper or the documentary shipper pursuant to subparagraph (b) of this article is discharged from its obligation to deliver the goods under the contract of carriage, irrespective of whether the non-negotiable transport document has been surrendered to it.
+
+
+Article 47
+Delivery when a negotiable transport document or negotiable electronic transport record is issued
+1.	When a negotiable transport document or a negotiable electronic transport record has been issued:
+
+(a)	The holder of the negotiable transport document or negotiable electronic transport record is entitled to claim delivery of the goods from the
+ 
+carrier after they have arrived at the place of destination, in which event the carrier shall deliver the goods at the time and location referred to in article 43 to the holder:
+
+(i)	Upon surrender of the negotiable transport document and, if the holder is one of the persons referred to in article 1, subparagraph 10 (a) (i), upon the holder properly identifying itself; or
+
+(ii)	Upon demonstration by the holder, in accordance with the procedures referred to in article 9, paragraph 1, that it is the holder of the negotiable electronic transport record;
+
+(b)	The carrier shall refuse delivery if the requirements of subparagraph
+(a) (i) or (a) (ii) of this paragraph are not met;
+
+(c)	If more than one original of the negotiable transport document has been issued, and the number of originals is stated in that document, the surrender of one original will suffice and the other originals cease to have any effect or validity. When a negotiable electronic transport record has been used, such electronic transport record ceases to have any effect or validity upon delivery to the holder in accordance with the procedures required by article 9, paragraph 1.
+
+2.	Without prejudice to article 48, paragraph 1, if the negotiable transport document or the negotiable electronic transport record expressly states that the goods may be delivered without the surrender of the transport document or the electronic transport record, the following rules apply:
+
+(a)	If the goods are not deliverable because (i) the holder, after having received a notice of arrival, does not, at the time or within the time period referred to in article 43, claim delivery of the goods from the carrier after their arrival at the place of destination, (ii) the carrier refuses delivery because the person claiming to be a holder does not properly identify itself as one of the persons referred to in article 1, subparagraph 10 (a) (i), or (iii) the carrier is, after reasonable effort, unable to locate the holder in order to request delivery instructions, the carrier may so advise the shipper and request instructions in respect of the delivery of the goods. If, after reasonable effort, the carrier is unable to locate the shipper, the carrier may so advise the documentary shipper and request instructions in respect of the delivery of the goods;
+
+(b)	The carrier that delivers the goods upon instruction of the shipper or the documentary shipper in accordance with subparagraph 2 (a) of this article is discharged from its obligation to deliver the goods under the contract of car- riage to the holder, irrespective of whether the negotiable transport document has been surrendered to it, or the person claiming delivery under a negotiable
+ 
+electronic transport record has demonstrated, in accordance with the proce- dures referred to in article 9, paragraph 1, that it is the holder;
+(c)	The person giving instructions under subparagraph 2 (a) of this arti- cle shall indemnify the carrier against loss arising from its being held liable to the holder under subparagraph 2 (e) of this article. The carrier may refuse to follow those instructions if the person fails to provide adequate security as the carrier may reasonably request;
+
+(d)	A person that becomes a holder of the negotiable transport document or the negotiable electronic transport record after the carrier has delivered the goods pursuant to subparagraph 2 (b) of this article, but pursuant to contractual or other arrangements made before such delivery acquires rights against the carrier under the contract of carriage, other than the right to claim delivery of the goods;
+
+(e)	Notwithstanding subparagraphs 2 (b) and 2 (d) of this article, a holder that becomes a holder after such delivery, and that did not have and could not reasonably have had knowledge of such delivery at the time it became a holder, acquires the rights incorporated in the negotiable transport document or negotiable electronic transport record. When the contract particulars state the expected time of arrival of the goods, or indicate how to obtain information as to whether the goods have been delivered, it is presumed that the holder at the time that it became a holder had or could reasonably have had knowledge of the delivery of the goods.
+
+
+Article 48
+Goods remaining undelivered
+
+1.	For the purposes of this article, goods shall be deemed to have remained undelivered only if, after their arrival at the place of destination:
+
+(a)	The consignee does not accept delivery of the goods pursuant to this chapter at the time and location referred to in article 43;
+
+(b)	The controlling party, the holder, the shipper or the documentary shipper cannot be found or does not give the carrier adequate instructions pursuant to articles 45, 46 and 47;
+
+(c)	The carrier is entitled or required to refuse delivery pursuant to articles 44, 45, 46 and 47;
+
+(d)	The carrier is not allowed to deliver the goods to the consignee pursuant to the law or regulations of the place at which delivery is requested; or
+ 
+(e)	The goods are otherwise undeliverable by the carrier.
+
+2.	Without prejudice to any other rights that the carrier may have against the shipper, controlling party or consignee, if the goods have remained undelivered, the carrier may, at the risk and expense of the person entitled to the goods, take such action in respect of the goods as circumstances may reasonably require, including:
+
+(a)	To store the goods at any suitable place;
+(b)	To unpack the goods if they are packed in containers or vehicles, or to act otherwise in respect of the goods, including by moving them; and
+(c)	To cause the goods to be sold or destroyed in accordance with the practices or pursuant to the law or regulations of the place where the goods are located at the time.
+
+3.	The carrier may exercise the rights under paragraph 2 of this article only after it has given reasonable notice of the intended action under paragraph 2 of this article to the person stated in the contract particulars as the person, if any, to be notified of the arrival of the goods at the place of destination, and to one of the following persons in the order indicated, if known to the carrier: the consignee, the controlling party or the shipper.
+
+4.	If the goods are sold pursuant to subparagraph 2 (c) of this article, the car- rier shall hold the proceeds of the sale for the benefit of the person entitled to the goods, subject to the deduction of any costs incurred by the carrier and any other amounts that are due to the carrier in connection with the carriage of those goods.
+
+5.	The carrier shall not be liable for loss of or damage to goods that occurs during the time that they remain undelivered pursuant to this article unless the claimant proves that such loss or damage resulted from the failure by the carrier to take steps that would have been reasonable in the circumstances to preserve the goods and that the carrier knew or ought to have known that the loss or damage to the goods would result from its failure to take such steps.
+
+
+Article 49 Retention of goods
+
+Nothing in this Convention affects a right of the carrier or a performing party that may exist pursuant to the contract of carriage or the applicable law to retain the goods to secure the payment of sums due.
+ 
+Chapter 10
+Rights of the controlling party
+
+Article 50
+Exercise and extent of right of control
+
+1.	The right of control may be exercised only by the controlling party and is limited to:
+
+(a)	The right to give or modify instructions in respect of the goods that do not constitute a variation of the contract of carriage;
+
+(b)	The right to obtain delivery of the goods at a scheduled port of call or, in respect of inland carriage, any place en route; and
+
+(c)	The right to replace the consignee by any other person including the controlling party.
+
+2.	The right of control exists during the entire period of responsibility of the carrier, as provided in article 12, and ceases when that period expires.
+
+Article 51
+Identity of the controlling party and transfer of the right of control
+
+1.	Except in the cases referred to in paragraphs 2, 3 and 4 of this article:
+
+(a)	The shipper is the controlling party unless the shipper, when the contract of carriage is concluded, designates the consignee, the documentary shipper or another person as the controlling party;
+
+(b)	The controlling party is entitled to transfer the right of control to another person. The transfer becomes effective with respect to the carrier upon its notification of the transfer by the transferor, and the transferee becomes the controlling party; and
+
+(c)	The controlling party shall properly identify itself when it exercises the right of control.
+
+2.	When a non-negotiable transport document has been issued that indicates that it shall be surrendered in order to obtain delivery of the goods:
+
+(a)	The shipper is the controlling party and may transfer the right of control to the consignee named in the transport document by transferring the
+ 
+document to that person without endorsement. If more than one original of the document was issued, all originals shall be transferred in order to effect a transfer of the right of control; and
+(b)	In order to exercise its right of control, the controlling party shall produce the document and properly identify itself. If more than one original of the document was issued, all originals shall be produced, failing which the right of control cannot be exercised.
+
+3.	When a negotiable transport document is issued:
+
+(a)	The holder or, if more than one original of the negotiable transport document is issued, the holder of all originals is the controlling party;
+(b)	The holder may transfer the right of control by transferring the nego- tiable transport document to another person in accordance with article 57. If more than one original of that document was issued, all originals shall be trans- ferred to that person in order to effect a transfer of the right of control; and
+(c)	In order to exercise the right of control, the holder shall produce the negotiable transport document to the carrier, and if the holder is one of the per- sons referred to in article 1, subparagraph 10 (a) (i), the holder shall properly identify itself. If more than one original of the document was issued, all origi- nals shall be produced, failing which the right of control cannot be exercised.
+
+4.	When a negotiable electronic transport record is issued:
+
+(a)	The holder is the controlling party;
+(b)	The holder may transfer the right of control to another person by transferring the negotiable electronic transport record in accordance with the procedures referred to in article 9, paragraph 1; and
+(c)	In order to exercise the right of control, the holder shall demonstrate, in accordance with the procedures referred to in article 9, paragraph 1, that it is the holder.
+
+
+Article 52
+Carrier's execution of instructions
+
+1.	Subject to paragraphs 2 and 3 of this article, the carrier shall execute the instructions referred to in article 50 if:
+
+(a)	The person giving such instructions is entitled to exercise the right of control;
+ 
+(b)	The instructions can reasonably be executed according to their terms at the moment that they reach the carrier; and
+
+(c)	The instructions will not interfere with the normal operations of the carrier, including its delivery practices.
+
+2.	In any event, the controlling party shall reimburse the carrier for any reasonable additional expense that the carrier may incur and shall indemnify the carrier against loss or damage that the carrier may suffer as a result of diligently executing any instruction pursuant to this article, including compen- sation that the carrier may become liable to pay for loss of or damage to other goods being carried.
+
+3.	The carrier is entitled to obtain security from the controlling party for the amount of additional expense, loss or damage that the carrier reasonably expects will arise in connection with the execution of an instruction pursuant to this article. The carrier may refuse to carry out the instructions if no such security is provided.
+
+4.	The carrier's liability for loss of or damage to the goods or for delay in delivery resulting from its failure to comply with the instructions of the control- ling party in breach of its obligation pursuant to paragraph 1 of this article shall be subject to articles 17 to 23, and the amount of the compensation payable by the carrier shall be subject to articles 59 to 61.
+
+
+Article 53 Deemed delivery
+Goods that are delivered pursuant to an instruction in accordance with arti- cle 52, paragraph 1, are deemed to be delivered at the place of destination, and the provisions of chapter 9 relating to such delivery apply to such goods.
+
+
+Article 54
+Variations to the contract of carriage
+
+1.	The controlling party is the only person that may agree with the carrier to variations to the contract of carriage other than those referred to in article 50, subparagraphs 1 (b) and (c).
+
+2.	Variations to the contract of carriage, including those referred to in arti- cle 50, subparagraphs 1 (b) and (c), shall be stated in a negotiable transport document or in a non-negotiable transport document that requires surrender,
+ 
+or incorporated in a negotiable electronic transport record, or, upon the request of the controlling party, shall be stated in a non-negotiable transport document or incorporated in a non-negotiable electronic transport record. If so stated or incorporated, such variations shall be signed in accordance with article 38.
+
+Article 55
+Providing additional information, instructions or documents to carrier
+
+1.	The controlling party, on request of the carrier or a performing party, shall provide in a timely manner information, instructions or documents relating to the goods not yet provided by the shipper and not otherwise reasonably available to the carrier that the carrier may reasonably need to perform its obligations under the contract of carriage.
+
+2.	If the carrier, after reasonable effort, is unable to locate the controlling party or the controlling party is unable to provide adequate information, instructions or documents to the carrier, the shipper shall provide them. If the carrier, after reasonable effort, is unable to locate the shipper, the documentary shipper shall provide such information, instructions or documents.
+
+Article 56 Variation by agreement
+The parties to the contract of carriage may vary the effect of articles 50, subparagraphs 1 (b) and (c), 50, paragraph 2, and 52. The parties may also restrict or exclude the transferability of the right of control referred to in article 51, subparagraph 1 (b).
+
+
+Chapter 11 Transfer of rights
+
+Article 57
+When a negotiable transport document or negotiable electronic transport record is issued
+1.	When a negotiable transport document is issued, the holder may transfer the rights incorporated in the document by transferring it to another person:
+
+(a)	Duly endorsed either to such other person or in blank, if an order document; or
+ 
+(b)	Without endorsement, if: (i) a bearer document or a blank endorsed document; or (ii) a document made out to the order of a named person and the transfer is between the first holder and the named person.
+
+2.	When a negotiable electronic transport record is issued, its holder may transfer the rights incorporated in it, whether it be made out to order or to the order of a named person, by transferring the electronic transport record in accordance with the procedures referred to in article 9, paragraph 1.
+
+Article 58 Liability of holder
+1.	Without prejudice to article 55, a holder that is not the shipper and that does not exercise any right under the contract of carriage does not assume any liability under the contract of carriage solely by reason of being a holder.
+
+2.	A holder that is not the shipper and that exercises any right under the con- tract of carriage assumes any liabilities imposed on it under the contract of car- riage to the extent that such liabilities are incorporated in or ascertainable from the negotiable transport document or the negotiable electronic transport record.
+
+3.	For the purposes of paragraphs 1 and 2 of this article, a holder that is not the shipper does not exercise any right under the contract of carriage solely because:
+
+(a)	It agrees with the carrier, pursuant to article 10, to replace a negotia- ble transport document by a negotiable electronic transport record or to replace a negotiable electronic transport record by a negotiable transport document; or
+
+(b)	It transfers its rights pursuant to article 57.
+
+
+Chapter 12 Limits of liability
+Article 59 Limits of liability
+1.	Subject to articles 60 and 61, paragraph 1, the carrier's liability for breaches of its obligations under this Convention is limited to 875 units of account per package or other shipping unit, or 3 units of account per kilogram of the gross weight of the goods that are the subject of the claim or dispute, whichever amount is the higher, except when the value of the goods has been declared by
+ 
+the shipper and included in the contract particulars, or when a higher amount than the amount of limitation of liability set out in this article has been agreed upon between the carrier and the shipper.
+
+2.	When goods are carried in or on a container, pallet or similar article of transport used to consolidate goods, or in or on a vehicle, the packages or ship- ping units enumerated in the contract particulars as packed in or on such article of transport or vehicle are deemed packages or shipping units. If not so enu- merated, the goods in or on such article of transport or vehicle are deemed one shipping unit.
+
+3.	The unit of account referred to in this article is the Special Drawing Right as defined by the International Monetary Fund. The amounts referred to in this article are to be converted into the national currency of a State according to the value of such currency at the date of judgement or award or the date agreed upon by the parties. The value of a national currency, in terms of the Special Drawing Right, of a Contracting State that is a member of the International Monetary Fund is to be calculated in accordance with the method of valuation applied by the International Monetary Fund in effect at the date in question for its operations and transactions. The value of a national currency, in terms of the Special Drawing Right, of a Contracting State that is not a member of the International Monetary Fund is to be calculated in a manner to be determined by that State.
+
+
+Article 60
+Limits of liability for loss caused by delay
+
+Subject to article 61, paragraph 2, compensation for loss of or damage to the goods due to delay shall be calculated in accordance with article 22 and lia- bility for economic loss due to delay is limited to an amount equivalent to two and one-half times the freight payable on the goods delayed. The total amount payable pursuant to this article and article 59, paragraph 1, may not exceed the limit that would be established pursuant to article 59, paragraph 1, in respect of the total loss of the goods concerned.
+
+
+Article 61
+Loss of the benefit of limitation of liability
+
+1.	Neither the carrier nor any of the persons referred to in article 18 is entitled to the benefit of the limitation of liability as provided in article 59, or as provided in the contract of carriage, if the claimant proves that the loss resulting from the breach of the carrier's obligation under this Convention was attributable to
+ 
+a personal act or omission of the person claiming a right to limit done with the intent to cause such loss or recklessly and with knowledge that such loss would probably result.
+
+2.	Neither the carrier nor any of the persons mentioned in article 18 is entitled to the benefit of the limitation of liability as provided in article 60 if the claim- ant proves that the delay in delivery resulted from a personal act or omission of the person claiming a right to limit done with the intent to cause the loss due to delay or recklessly and with knowledge that such loss would probably result.
+
+
+
+Chapter 13 Time for suit
+
+Article 62 Period of time for suit
+
+1.	No judicial or arbitral proceedings in respect of claims or disputes arising from a breach of an obligation under this Convention may be instituted after the expiration of a period of two years.
+
+2.	The period referred to in paragraph 1 of this article commences on the day on which the carrier has delivered the goods or, in cases in which no goods have been delivered or only part of the goods have been delivered, on the last day on which the goods should have been delivered. The day on which the period commences is not included in the period.
+
+3.	Notwithstanding the expiration of the period set out in paragraph 1 of this article, one party may rely on its claim as a defence or for the purpose of set-off against a claim asserted by the other party.
+
+
+Article 63 Extension of time for suit
+
+The period provided in article 62 shall not be subject to suspension or interruption, but the person against which a claim is made may at any time dur- ing the running of the period extend that period by a declaration to the claimant. This period may be further extended by another declaration or declarations.
+ 
+Article 64 Action for indemnity
+An action for indemnity by a person held liable may be instituted after the expiration of the period provided in article 62 if the indemnity action is instituted within the later of:
+
+(a)	The time allowed by the applicable law in the jurisdiction where proceedings are instituted; or
+(b)	Ninety days commencing from the day when the person instituting the action for indemnity has either settled the claim or been served with process in the action against itself, whichever is earlier.
+
+Article 65
+Actions against the person identified as the carrier
+
+An action against the bareboat charterer or the person identified as the car- rier pursuant to article 37, paragraph 2, may be instituted after the expiration of the period provided in article 62 if the action is instituted within the later of:
+
+(a)	The time allowed by the applicable law in the jurisdiction where proceedings are instituted; or
+(b)	Ninety days commencing from the day when the carrier has been identified, or the registered owner or bareboat charterer has rebutted the presumption that it is the carrier, pursuant to article 37, paragraph 2.
+
+
+Chapter 14 Jurisdiction
+Article 66
+Actions against the carrier
+
+Unless the contract of carriage contains an exclusive choice of court agree- ment that complies with article 67 or 72, the plaintiff has the right to institute judicial proceedings under this Convention against the carrier:
+
+(a)	In a competent court within the jurisdiction of which is situated one of the following places:
+(i)	The domicile of the carrier;
+(ii)	The place of receipt agreed in the contract of carriage;
+ 
+(iii)	The place of delivery agreed in the contract of carriage; or
+(iv)	The port where the goods are initially loaded on a ship or the port where the goods are finally discharged from a ship; or
+(b)	In a competent court or courts designated by an agreement between the shipper and the carrier for the purpose of deciding claims against the carrier that may arise under this Convention.
+
+Article 67
+Choice of court agreements
+
+1.	The jurisdiction of a court chosen in accordance with article 66, subpara- graph (b), is exclusive for disputes between the parties to the contract only if the parties so agree and the agreement conferring jurisdiction:
+
+(a)	Is contained in a volume contract that clearly states the names and addresses of the parties and either (i) is individually negotiated or (ii) contains a prominent statement that there is an exclusive choice of court agreement and specifies the sections of the volume contract containing that agreement; and
+(b)	Clearly designates the courts of one Contracting State or one or more specific courts of one Contracting State.
+
+2.	A person that is not a party to the volume contract is bound by an exclusive choice of court agreement concluded in accordance with paragraph 1 of this article only if:
+
+(a)	The court is in one of the places designated in article 66, subpara- graph (a);
+(b)	That agreement is contained in the transport document or electronic transport record;
+(c)	That person is given timely and adequate notice of the court where the action shall be brought and that the jurisdiction of that court is exclusive; and
+(d)	The law of the court seized recognizes that that person may be bound by the exclusive choice of court agreement.
+
+Article 68
+Actions against the maritime performing party
+
+The plaintiff has the right to institute judicial proceedings under this Convention against the maritime performing party in a competent court within the jurisdiction of which is situated one of the following places:
+ 
+(a)	The domicile of the maritime performing party; or
+(b)	The port where the goods are received by the maritime performing party, the port where the goods are delivered by the maritime performing party or the port in which the maritime performing party performs its activities with respect to the goods.
+
+Article 69
+No additional bases of jurisdiction
+
+Subject to articles 71 and 72, no judicial proceedings under this Conven- tion against the carrier or a maritime performing party may be instituted in a court not designated pursuant to article 66 or 68.
+
+Article 70
+Arrest and provisional or protective measures
+
+Nothing in this Convention affects jurisdiction with regard to provisional or protective measures, including arrest. A court in a State in which a provi- sional or protective measure was taken does not have jurisdiction to determine the case upon its merits unless:
+
+(a)	The requirements of this chapter are fulfilled; or
+(b)	An international convention that applies in that State so provides.
+
+Article 71 Consolidation and removal of actions
+1.	Except when there is an exclusive choice of court agreement that is binding pursuant to article 67 or 72, if a single action is brought against both the car- rier and the maritime performing party arising out of a single occurrence, the action may be instituted only in a court designated pursuant to both article 66 and article 68. If there is no such court, such action may be instituted in a court designated pursuant to article 68, subparagraph (b), if there is such a court.
+
+2.	Except when there is an exclusive choice of court agreement that is bind- ing pursuant to article 67 or 72, a carrier or a maritime performing party that institutes an action seeking a declaration of non-liability or any other action that would deprive a person of its right to select the forum pursuant to article 66 or 68 shall, at the request of the defendant, withdraw that action once the defendant has chosen a court designated pursuant to article 66 or 68, whichever is applicable, where the action may be recommenced.
+ 
+Article 72
+Agreement after a dispute has arisen and jurisdiction when the defendant has entered an appearance
+1.	After a dispute has arisen, the parties to the dispute may agree to resolve it in any competent court.
+
+2.	A competent court before which a defendant appears, without contesting jurisdiction in accordance with the rules of that court, has jurisdiction.
+
+Article 73 Recognition and enforcement
+1.	A decision made in one Contracting State by a court having jurisdiction under this Convention shall be recognized and enforced in another Contracting State in accordance with the law of such latter Contracting State when both States have made a declaration in accordance with article 74.
+
+2.	A court may refuse recognition and enforcement based on the grounds for the refusal of recognition and enforcement available pursuant to its law.
+
+3.	This chapter shall not affect the application of the rules of a regional eco- nomic integration organization that is a party to this Convention, as concerns the recognition or enforcement of judgements as between member States of the regional economic integration organization, whether adopted before or after this Convention.
+
+Article 74 Application of chapter 14
+The provisions of this chapter shall bind only Contracting States that declare in accordance with article 91 that they will be bound by them.
+
+
+Chapter 15 Arbitration
+Article 75 Arbitration agreements
+1.	Subject to this chapter, parties may agree that any dispute that may arise relating to the carriage of goods under this Convention shall be referred to arbitration.
+ 
+2.	The arbitration proceedings shall, at the option of the person asserting a claim against the carrier, take place at:
+
+(a)	Any place designated for that purpose in the arbitration agreement; or
+(b)	Any other place situated in a State where any of the following places is located:
+(i)	The domicile of the carrier;
+(ii)	The place of receipt agreed in the contract of carriage;
+(iii)	The place of delivery agreed in the contract of carriage; or
+(iv)	The port where the goods are initially loaded on a ship or the port where the goods are finally discharged from a ship.
+
+3.	The designation of the place of arbitration in the agreement is binding for disputes between the parties to the agreement if the agreement is contained in a volume contract that clearly states the names and addresses of the parties and either:
+
+(a)	Is individually negotiated; or
+(b)	Contains a prominent statement that there is an arbitration agreement and specifies the sections of the volume contract containing the arbitration agreement.
+
+4.	When an arbitration agreement has been concluded in accordance with paragraph 3 of this article, a person that is not a party to the volume contract is bound by the designation of the place of arbitration in that agreement only if:
+
+(a)	The place of arbitration designated in the agreement is situated in one of the places referred to in subparagraph 2 (b) of this article;
+(b)	The agreement is contained in the transport document or electronic transport record;
+(c)	The person to be bound is given timely and adequate notice of the place of arbitration; and
+(d)	Applicable law permits that person to be bound by the arbitration agreement.
+
+5.	The provisions of paragraphs 1, 2, 3 and 4 of this article are deemed to be part of every arbitration clause or agreement, and any term of such clause or agreement to the extent that it is inconsistent therewith is void.
+ 
+Article 76
+Arbitration agreement in non-liner transportation
+1.	Nothing in this Convention affects the enforceability of an arbitration agreement in a contract of carriage in non-liner transportation to which this Convention or the provisions of this Convention apply by reason of:
+(a)	The application of article 7; or
+
+(b)	The parties' voluntary incorporation of this Convention in a contract of carriage that would not otherwise be subject to this Convention.
+2.	Notwithstanding paragraph 1 of this article, an arbitration agreement in a transport document or electronic transport record to which this Convention applies by reason of the application of article 7 is subject to this chapter unless such a transport document or electronic transport record:
+(a)	Identifies the parties to and the date of the charter party or other contract excluded from the application of this Convention by reason of the application of article 6; and
+(b)	Incorporates by specific reference the clause in the charter party or other contract that contains the terms of the arbitration agreement.
+
+Article 77
+Agreement to arbitrate after a dispute has arisen
+Notwithstanding the provisions of this chapter and chapter 14, after a dis- pute has arisen the parties to the dispute may agree to resolve it by arbitration in any place.
+
+Article 78 Application of chapter 15
+The provisions of this chapter shall bind only Contracting States that declare in accordance with article 91 that they will be bound by them.
+
+Chapter 16
+Validity of contractual terms
+
+Article 79 General provisions
+1.	Unless otherwise provided in this Convention, any term in a contract of carriage is void to the extent that it:
+ 
+(a)	Directly or indirectly excludes or limits the obligations of the carrier or a maritime performing party under this Convention;
+
+(b)	Directly or indirectly excludes or limits the liability of the carrier or a maritime performing party for breach of an obligation under this Convention; or
+
+(c)	Assigns a benefit of insurance of the goods in favour of the carrier or a person referred to in article 18.
+
+2.	Unless otherwise provided in this Convention, any term in a contract of carriage is void to the extent that it:
+
+(a)	Directly or indirectly excludes, limits or increases the obligations under this Convention of the shipper, consignee, controlling party, holder or documentary shipper; or
+
+(b)	Directly or indirectly excludes, limits or increases the liability of the shipper, consignee, controlling party, holder or documentary shipper for breach of any of its obligations under this Convention.
+
+
+Article 80
+Special rules for volume contracts
+1.	Notwithstanding article 79, as between the carrier and the shipper, a vol- ume contract to which this Convention applies may provide for greater or lesser rights, obligations and liabilities than those imposed by this Convention.
+
+2.	A derogation pursuant to paragraph 1 of this article is binding only when:
+
+(a)	The volume contract contains a prominent statement that it derogates from this Convention;
+
+(b)	The volume contract is (i) individually negotiated or (ii) prominently specifies the sections of the volume contract containing the derogations;
+
+(c)	The shipper is given an opportunity and notice of the opportunity to conclude a contract of carriage on terms and conditions that comply with this Convention without any derogation under this article; and
+
+(d)	The derogation is neither (i) incorporated by reference from another document nor (ii) included in a contract of adhesion that is not subject to negotiation.
+ 
+3.	A carrier's public schedule of prices and services, transport document, electronic transport record or similar document is not a volume contract pursu- ant to paragraph 1 of this article, but a volume contract may incorporate such documents by reference as terms of the contract.
+
+4.	Paragraph 1 of this article does not apply to rights and obligations provided in articles 14, subparagraphs (a) and (b), 29 and 32 or to liability arising from the breach thereof, nor does it apply to any liability arising from an act or omission referred to in article 61.
+
+5.	The terms of the volume contract that derogate from this Convention, if the volume contract satisfies the requirements of paragraph 2 of this article, apply between the carrier and any person other than the shipper provided that:
+
+(a)	Such person received information that prominently states that the volume contract derogates from this Convention and gave its express consent to be bound by such derogations; and
+(b)	Such consent is not solely set forth in a carrier's public schedule of prices and services, transport document or electronic transport record.
+
+6.	The party claiming the benefit of the derogation bears the burden of proof that the conditions for derogation have been fulfilled.
+
+Article 81
+Special rules for live animals and certain other goods
+
+Notwithstanding article 79 and without prejudice to article 80, the contract of carriage may exclude or limit the obligations or the liability of both the carrier and a maritime performing party if:
+
+(a)	The goods are live animals, but any such exclusion or limitation will not be effective if the claimant proves that the loss of or damage to the goods, or delay in delivery, resulted from an act or omission of the carrier or of a person referred to in article 18, done with the intent to cause such loss of or damage to the goods or such loss due to delay or done recklessly and with knowledge that such loss or damage or such loss due to delay would probably result; or
+
+(b)	The character or condition of the goods or the circumstances and terms and conditions under which the carriage is to be performed are such as reasonably to justify a special agreement, provided that such contract of car- riage is not related to ordinary commercial shipments made in the ordinary course of trade and that no negotiable transport document or negotiable electronic transport record is issued for the carriage of the goods.
+ 
+Chapter 17
+Matters not governed by this Convention
+
+Article 82
+International conventions governing the carriage of goods by other modes of transport
+Nothing in this Convention affects the application of any of the following international conventions in force at the time this Convention enters into force, including any future amendment to such conventions, that regulate the liability of the carrier for loss of or damage to the goods:
+
+(a)	Any convention governing the carriage of goods by air to the extent that such convention according to its provisions applies to any part of the contract of carriage;
+
+(b)	Any convention governing the carriage of goods by road to the extent that such convention according to its provisions applies to the carriage of goods that remain loaded on a road cargo vehicle carried on board a ship;
+
+(c)	Any convention governing the carriage of goods by rail to the extent that such convention according to its provisions applies to carriage of goods by sea as a supplement to the carriage by rail; or
+
+(d)	Any convention governing the carriage of goods by inland water- ways to the extent that such convention according to its provisions applies to a carriage of goods without trans-shipment both by inland waterways and sea.
+
+
+Article 83
+Global limitation of liability
+
+Nothing in this Convention affects the application of any international con- vention or national law regulating the global limitation of liability of vessel owners.
+
+
+Article 84 General average
+Nothing in this Convention affects the application of terms in the contract of carriage or provisions of national law regarding the adjustment of general average.
+ 
+Article 85 Passengers and luggage
+This Convention does not apply to a contract of carriage for passengers and their luggage.
+
+Article 86
+Damage caused by nuclear incident
+No liability arises under this Convention for damage caused by a nuclear incident if the operator of a nuclear installation is liable for such damage:
+
+(a)	Under the Paris Convention on Third Party Liability in the Field of Nuclear Energy of 29 July 1960 as amended by the Additional Protocol of 28 January 1964 and by the Protocols of 16 November 1982 and 12 February 2004, the Vienna Convention on Civil Liability for Nuclear Damage of 21 May 1963 as amended by the Joint Protocol Relating to the Application of the Vienna Con- vention and the Paris Convention of 21 September 1988 and as amended by the Protocol to Amend the 1963 Vienna Convention on Civil Liability for Nuclear Damage of 12 September 1997, or the Convention on Supplementary Compen- sation for Nuclear Damage of 12 September 1997, including any amendment to these conventions and any future convention in respect of the liability of the operator of a nuclear installation for damage caused by a nuclear incident; or
+(b)	Under national law applicable to the liability for such damage, provided that such law is in all respects as favourable to persons that may suffer damage as either the Paris or Vienna Conventions or the Convention on Supplementary Compensation for Nuclear Damage.
+
+
+Chapter 18 Final clauses
+Article 87 Depositary
+The Secretary-General of the United Nations is hereby designated as the depositary of this Convention.
+
+Article 88
+Signature, ratification, acceptance, approval or accession
+
+1.	This Convention is open for signature by all States at Rotterdam, the Netherlands, on 23 September 2009, and thereafter at the Headquarters of the United Nations in New York.
+ 
+2.	This Convention is subject to ratification, acceptance or approval by the signatory States.
+
+3.	This Convention is open for accession by all States that are not signatory States as from the date it is open for signature.
+
+4.	Instruments of ratification, acceptance, approval and accession are to be deposited with the Secretary-General of the United Nations.
+
+
+
+Article 89 Denunciation of other conventions
+
+1.	A State that ratifies, accepts, approves or accedes to this Convention and is a party to the International Convention for the Unification of certain Rules of Law relating to Bills of Lading signed at Brussels on 25 August 1924, to the Protocol to amend the International Convention for the Unification of certain Rules of Law relating to Bills of Lading, signed at Brussels on 23 February 1968, or to the Protocol to amend the International Convention for the Unifi- cation of certain Rules of Law relating to Bills of Lading as Modified by the Amending Protocol of 23 February 1968, signed at Brussels on 21 December 1979, shall at the same time denounce that Convention and the protocol or pro- tocols thereto to which it is a party by notifying the Government of Belgium to that effect, with a declaration that the denunciation is to take effect as from the date when this Convention enters into force in respect of that State.
+
+2.	A State that ratifies, accepts, approves or accedes to this Convention and is a party to the United Nations Convention on the Carriage of Goods by Sea concluded at Hamburg on 31 March 1978 shall at the same time denounce that Convention by notifying the Secretary-General of the United Nations to that effect, with a declaration that the denunciation is to take effect as from the date when this Convention enters into force in respect of that State.
+
+3.	For the purposes of this article, ratifications, acceptances, approvals and accessions in respect of this Convention by States parties to the instruments listed in paragraphs 1 and 2 of this article that are notified to the depositary after this Convention has entered into force are not effective until such denunciations as may be required on the part of those States in respect of these instruments have become effective. The depositary of this Convention shall consult with the Government of Belgium, as the depositary of the instruments referred to in paragraph 1 of this article, so as to ensure necessary coordination in this respect.
+ 
+Article 90 Reservations
+No reservation is permitted to this Convention.
+
+Article 91
+Procedure and effect of declarations
+
+1.	The declarations permitted by articles 74 and 78 may be made at any time. The initial declarations permitted by article 92, paragraph 1, and article 93, paragraph 2, shall be made at the time of signature, ratification, acceptance, approval or accession. No other declaration is permitted under this Convention.
+
+2.	Declarations made at the time of signature are subject to confirmation upon ratification, acceptance or approval.
+
+3.	Declarations and their confirmations are to be in writing and to be formally notified to the depositary.
+
+4.	A declaration takes effect simultaneously with the entry into force of this Convention in respect of the State concerned. However, a declaration of which the depositary receives formal notification after such entry into force takes effect on the first day of the month following the expiration of six months after the date of its receipt by the depositary.
+
+5.	Any State that makes a declaration under this Convention may withdraw it at any time by a formal notification in writing addressed to the depositary. The withdrawal of a declaration, or its modification where permitted by this Convention, takes effect on the first day of the month following the expiration of six months after the date of the receipt of the notification by the depositary.
+
+Article 92
+Effect in domestic territorial units
+
+1.	If a Contracting State has two or more territorial units in which differ- ent systems of law are applicable in relation to the matters dealt with in this Convention, it may, at the time of signature, ratification, acceptance, approval or accession, declare that this Convention is to extend to all its territorial units or only to one or more of them, and may amend its declaration by submitting another declaration at any time.
+
+2.	These declarations are to be notified to the depositary and are to state expressly the territorial units to which the Convention extends.
+ 
+3.	When a Contracting State has declared pursuant to this article that this Convention extends to one or more but not all of its territorial units, a place located in a territorial unit to which this Convention does not extend is not considered to be in a Contracting State for the purposes of this Convention.
+
+4.	If a Contracting State makes no declaration pursuant to paragraph 1 of this article, the Convention is to extend to all territorial units of that State.
+
+Article 93
+Participation by regional economic integration organizations
+
+1.	A regional economic integration organization that is constituted by sovereign States and has competence over certain matters governed by this Convention may similarly sign, ratify, accept, approve or accede to this Convention. The regional economic integration organization shall in that case have the rights and obligations of a Contracting State, to the extent that that organization has competence over matters governed by this Convention. When the number of Contracting States is relevant in this Convention, the regional economic integration organization does not count as a Contracting State in addition to its member States which are Contracting States.
+
+2.	The regional economic integration organization shall, at the time of sig- nature, ratification, acceptance, approval or accession, make a declaration to the depositary specifying the matters governed by this Convention in respect of which competence has been transferred to that organization by its member States. The regional economic integration organization shall promptly notify the depositary of any changes to the distribution of competence, including new transfers of competence, specified in the declaration pursuant to this paragraph.
+
+3.	Any reference to a "Contracting State" or "Contracting States" in this Con- vention applies equally to a regional economic integration organization when the context so requires.
+
+Article 94 Entry into force
+1.	This Convention enters into force on the first day of the month following the expiration of one year after the date of deposit of the twentieth instrument of ratification, acceptance, approval or accession.
+
+2.	For each State that becomes a Contracting State to this Convention after the date of the deposit of the twentieth instrument of ratification, acceptance, approval or accession, this Convention enters into force on the first day of the
+ 
+month following the expiration of one year after the deposit of the appropriate instrument on behalf of that State.
+
+3.	Each Contracting State shall apply this Convention to contracts of carriage concluded on or after the date of the entry into force of this Convention in respect of that State.
+
+Article 95 Revision and amendment
+1.	At the request of not less than one third of the Contracting States to this Convention, the Secretary-General of the United Nations shall convene a conference of the Contracting States for revising or amending it.
+
+2.	Any instrument of ratification, acceptance, approval or accession depos- ited after the entry into force of an amendment to this Convention is deemed to apply to the Convention as amended.
+
+Article 96 Denunciation of this Convention
+1.	A Contracting State may denounce this Convention at any time by means of a notification in writing addressed to the depositary.
+
+2.	The denunciation takes effect on the first day of the month following the expiration of one year after the notification is received by the depositary. If a longer period is specified in the notification, the denunciation takes effect upon the expiration of such longer period after the notification is received by the depositary.
+
+DONE at New York, this eleventh day of December two thousand and eight, in a single original, of which the Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic.
+
+IN WITNESS WHEREOF the undersigned plenipotentiaries, being duly authorized by their respective Governments, have signed this Convention.
+

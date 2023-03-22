@@ -1,0 +1,42 @@
+Agreement# I
+Terms of Reference
+For the Monitoring and Exchange of Groundwater Information
+of the Nubian Sandstone Aquifer System
+Consolidated data throughout the implementation of the "Programme for the
+  Development of a Regional Strategy for the Utilisation of the Nubian Sandstone Aquifer
+  System" was achieved through a Regional Infonnation System called the Nubian Aquifer
+Regional Information System (N'ARlS). This integrated Information System is conceived
+to fulfill the following tasks:
+-  Storing and documenting the different data, covering all fields relevant to the
+Nubian Sandstone Aquifer System.
+- Processing, analysis and display of basic data.
+- Preparing the input parameters which are needed for the modeling at different
+scales, and calibration of the groundwater model and comparison of the results
+of modeling with other data for planning and decision making.
+- Provide an easy link betvteen the participating countries through a system
+ensuring the exchange and flow of infonnation.
+Therefore it is herewith agreed that the four countries namely; Chad, Egypt, Libya and
+Sudan share the data that was consolidated throughout the implementation of the
+Programme mentioned above and included in the Nubian Aquifer Regional Information
+System (NAR.lS) in addition to information on developmental aspects including socioeconomic
+data, management of harsh environment, drilling experiences, meteorological
+data, .. etc. and also agreed to update this system as specified in Agreement #2.
+The sharing of this information will be accomplished according to the setup specified
+below;
+In tern et Environment - Server and access through the Internet.
+In this protocol the data will be stored on a server and accessed through internet by the
+four countries through web-based Oracle. A level of security is maintained in this
+technique, so that access is enabled only to the four countries.
+Requirements:
+Unix Workstation (Server)
+Oracle Engine, Developer Server and Oracle Web Server
+Lease Line
+Regional Data Exchange
+Data is shared and accessed by the four countries only. Any update by one of the four
+institutions will be online viewed by the other parties.
+Within this mechanism, CEDARE could be hosting the data on its server for one year as
+a testing and transition phase, at a certain annual cost which will include all the technical
+support for running the System on its workstation, Software and Hardware maintenance,
+and Internet leased line. After this first year, the same setup could be founded in the Joint
+Authority of the NSAS.
+

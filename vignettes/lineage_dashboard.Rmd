@@ -2,8 +2,8 @@
 title: "Lineage of Environmental Treaties"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Lineage of Environmental Treaties}
   %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Lineage of Environmental Treaties}
   %\VignetteEncoding{UTF-8}
 ---
 

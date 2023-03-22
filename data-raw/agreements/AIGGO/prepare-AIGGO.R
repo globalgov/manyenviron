@@ -28,14 +28,16 @@ AIGGO$termination_date <- manypkgs::code_term_date(AIGGO$Title,
 # Remove duplicates and convert NAs
 AIGGO <- AIGGO %>%
   dplyr::select(manyID, treatyID, Title, Beg, End, Signature,
-                Force, action_area, linkage, accessionC, accessionP, 
+                Force, action_area, linkage, accessionC, accessionP,
                 termination_type, termination_date) %>%
-  mutate(across(everything(), ~stringr::str_replace_all(., "^NA$", NA_character_))) %>% 
-  mutate(linkage = ifelse(linkage == "" , NA_character_, linkage)) %>% 
+  mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
+                                                        NA_character_))) %>%
+  mutate(linkage = ifelse(linkage == "" ,
+                          NA_character_, linkage)) %>%
   mutate(Signature = messydates::as_messydate(Signature),
          Force = messydates::as_messydate(Force),
          Beg = messydates::as_messydate(Beg),
-         End = messydates::as_messydate(End)) %>% 
+         End = messydates::as_messydate(End)) %>%
   dplyr::distinct()
 
 # Stage three: Connecting data
