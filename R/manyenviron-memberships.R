@@ -14,13 +14,14 @@
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
 #' 8 variables: manyID, stateID, Title, Beg, Signature, tfddID, Memberships,
 #' treatyID.}
-#' \item{HUGGO_MEM: }{A dataset with 73005 observations and the following
+#' \item{HUGGO_MEM: }{A dataset with 52462 observations and the following
 #' 31 variables: manyID, treatyID, stateID, Title, Beg, End, Signature, Force,
 #' stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term,
 #' stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments,
 #' Deposit, obsolete, ProvisionalApp, Reservation, verified, Notes,
 #' stateForce_ecolex, stateForce_iea, Consent, Acceptance, Accession.}
 #' }
+
 #'
 #' @details
 #' ``` {r, echo = FALSE, warning = FALSE}

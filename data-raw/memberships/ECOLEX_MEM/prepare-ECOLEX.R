@@ -12,6 +12,7 @@ manypkgs::retain("ECOLEX_MEM")
 # In this stage you will want to correct the variable names and
 # formats of the 'ECOLEX_MEM' object until the object created
 # below (in stage three) passes all the tests.
+library(dplyr)
 ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
   dplyr::rename(For = Force,
                 Rati = Rat) %>%

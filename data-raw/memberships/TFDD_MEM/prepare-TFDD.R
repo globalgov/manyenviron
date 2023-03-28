@@ -10,14 +10,13 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # In this stage you will want to correct the variable names and
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
+library(dplyr)
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = messydates::as_messydate(openxlsx::convertToDate(DateSigned))) %>%
   dplyr::mutate(Beg = messydates::as_messydate(as.character(Signature))) %>%
   manydata::transmutate(tfddID = `2016Update ID`,
                         stateID = CCODE,
-                        Title = manypkgs::standardise_titles(DocumentName,
-                                                             api_key = api)) %>%
-  # Define Key API
+                        Title = manypkgs::standardise_titles(DocumentName)) %>%
   dplyr::mutate(Memberships = manypkgs::code_states(Signatories)) %>%
   dplyr::select(stateID, Title, Beg, Signature,
   tfddID, Memberships) %>%

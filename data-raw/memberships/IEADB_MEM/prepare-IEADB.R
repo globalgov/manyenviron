@@ -10,11 +10,12 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # In this stage you will want to correct the variable names and
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests.
+library(dplyr)
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
-  manydata::transmutate(stateID = manystates::code_states(country),
-                        Title = manypkgs::standardise_titles(treatyname,
-                                                          api_key = api),
-                       # Define Key API
+  manydata::transmutate(stateID = manypkgs::code_states(country,
+                                                        activity = FALSE,
+                                                        replace = "ID"),
+                        Title = manypkgs::standardise_titles(treatyname),
                        Signature = messydates::as_messydate(tsig),
                        stateSignature = messydates::as_messydate(csig),
                        Rat = messydates::as_messydate(crat),

@@ -19,7 +19,7 @@ Rat, Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
 8 variables: manyID, stateID, Title, Beg, Signature, tfddID, Memberships,
 treatyID.}
-\item{HUGGO_MEM: }{A dataset with 73005 observations and the following
+\item{HUGGO_MEM: }{A dataset with 52462 observations and the following
 31 variables: manyID, treatyID, stateID, Title, Beg, End, Signature, Force,
 stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term,
 stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments,
@@ -80,7 +80,7 @@ memberships database documentation
 #> |      Beg      |    mdate    |            2118|    133    |     6.28      |
 #> |   Signature   |    mdate    |            2118|    133    |     6.28      |
 #> |    tfddID     |   numeric   |            2118|     2     |     0.09      |
-#> |  Memberships  |  character  |            2118|    28     |     1.32      |
+#> |  Memberships  |  character  |            2118|    843    |     39.8      |
 #> |   treatyID    |  character  |            2118|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
@@ -89,37 +89,37 @@ memberships database documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |           73005|     0     |       0       |
-#> |    treatyID     |  character  |           73005|     0     |       0       |
-#> |     stateID     |  character  |           73005|     1     |       0       |
-#> |      Title      |  character  |           73005|     0     |       0       |
-#> |       Beg       |    mdate    |           73005|    12     |     0.02      |
-#> |       End       |    mdate    |           73005|   56776   |     77.77     |
-#> |    Signature    |    mdate    |           73005|    14     |     0.02      |
-#> |      Force      |    mdate    |           73005|   4837    |     6.63      |
-#> | stateSignature  |  character  |           73005|   15900   |     21.78     |
-#> |    stateRat     |  character  |           73005|   37054   |     50.76     |
-#> |   stateForce    |  character  |           73005|   26127   |     35.79     |
-#> |   stateForce2   |  character  |           73005|   64581   |     88.46     |
-#> |   stateForce3   |  character  |           73005|   69189   |     94.77     |
-#> |      Term       |  character  |           73005|   71651   |     98.15     |
-#> | stateWithdrawal |  character  |           73005|   55306   |     75.76     |
-#> |stateWithdrawal2 |  character  |           73005|   69163   |     94.74     |
-#> |     gengID      |  character  |           73005|     0     |       0       |
-#> |    ecolexID     |  character  |           73005|   40801   |     55.89     |
-#> |      ieaID      |  character  |           73005|   11815   |     16.18     |
-#> |    Comments     |  character  |           73005|   69669   |     95.43     |
-#> |     Deposit     |  character  |           73005|   69978   |     95.85     |
-#> |    obsolete     |  character  |           73005|   49825   |     68.25     |
-#> | ProvisionalApp  |  character  |           73005|   72096   |     98.75     |
-#> |   Reservation   |  character  |           73005|   71152   |     97.46     |
-#> |    verified     |  character  |           73005|   69733   |     95.52     |
-#> |      Notes      |  character  |           73005|   71863   |     98.44     |
-#> |stateForce_ecolex|  character  |           73005|   33267   |     45.57     |
-#> | stateForce_iea  |  character  |           73005|   33267   |     45.57     |
-#> |     Consent     |  character  |           73005|   72696   |     99.58     |
-#> |   Acceptance    |  character  |           73005|   72783   |     99.7      |
-#> |    Accession    |  character  |           73005|   59073   |     80.92     |
+#> |     manyID      |  character  |           52462|     0     |       0       |
+#> |    treatyID     |  character  |           52462|     0     |       0       |
+#> |     stateID     |  character  |           52462|     0     |       0       |
+#> |      Title      |  character  |           52462|     0     |       0       |
+#> |       Beg       |    mdate    |           52462|    12     |     0.02      |
+#> |       End       |    mdate    |           52462|   40433   |     77.07     |
+#> |    Signature    |    mdate    |           52462|    14     |     0.03      |
+#> |      Force      |    mdate    |           52462|   3538    |     6.74      |
+#> | stateSignature  |  character  |           52462|   11488   |     21.9      |
+#> |    stateRat     |  character  |           52462|   27944   |     53.27     |
+#> |   stateForce    |  character  |           52462|   21420   |     40.83     |
+#> |   stateForce2   |  character  |           52462|   45852   |     87.4      |
+#> |   stateForce3   |  character  |           52462|   48743   |     92.91     |
+#> |      Term       |  character  |           52462|   51288   |     97.76     |
+#> | stateWithdrawal |  character  |           52462|   39438   |     75.17     |
+#> |stateWithdrawal2 |  character  |           52462|   48737   |     92.9      |
+#> |     gengID      |  character  |           52462|     0     |       0       |
+#> |    ecolexID     |  character  |           52462|   31035   |     59.16     |
+#> |      ieaID      |  character  |           52462|   8469    |     16.14     |
+#> |    Comments     |  character  |           52462|   49199   |     93.78     |
+#> |     Deposit     |  character  |           52462|   50622   |     96.49     |
+#> |    obsolete     |  character  |           52462|   39300   |     74.91     |
+#> | ProvisionalApp  |  character  |           52462|   51648   |     98.45     |
+#> |   Reservation   |  character  |           52462|   51658   |     98.47     |
+#> |    verified     |  character  |           52462|   49234   |     93.85     |
+#> |      Notes      |  character  |           52462|   52276   |     99.65     |
+#> |stateForce_ecolex|  character  |           52462|   33011   |     62.92     |
+#> | stateForce_iea  |  character  |           52462|   33011   |     62.92     |
+#> |     Consent     |  character  |           52462|   52163   |     99.43     |
+#> |   Acceptance    |  character  |           52462|   52373   |     99.83     |
+#> |    Accession    |  character  |           52462|   46400   |     88.44     |
 #> ------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
