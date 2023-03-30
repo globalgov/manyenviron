@@ -41,10 +41,9 @@ IEADB_MEM$treatyID <- manypkgs::code_agreements(IEADB_MEM,
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::memberships)
-IEADB_MEM <- dplyr::left_join(IEADB_MEM, manyID, by = "treatyID")
-
-# Re-order the columns
-IEADB_MEM <- dplyr::relocate(IEADB_MEM, manyID)
+IEADB_MEM <- dplyr::left_join(IEADB_MEM, manyID, by = "treatyID") %>% 
+  dplyr::distinct() %>%
+  dplyr::relocate(manyID)
 
 # manypkgs includes several functions that should help
 # cleaning and standardising your data.
