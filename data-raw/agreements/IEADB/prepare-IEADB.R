@@ -10,44 +10,40 @@ IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
 # In this stage you will want to correct the variable names and
 # formats of the 'IEADB' object until the object created
 # below (in stage three) passes all the tests.
+library(dplyr)
 IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(AgreementType = dplyr::recode(`Agreement Type (level 2)`,
-                                  "Agreement" = "A",
-                                  "Amendment" = "E",
-                                  "Agreed Minute (non-binding)" = "Q",
-                                  "Declaration" = "V",
-                                  "Resolution" = "W",
-                                  "Exchange of Notes" = "X",
-                                  "Memorandum of Understanding" = "Y",
-                                  "Protocol" = "P")) %>%
-  dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B",
-                                        "MEA" = "M")) %>%
+                                              "Agreement" = "A", "Amendment" = "E",
+                                              "Agreed Minute (non-binding)" = "Q",
+                                              "Declaration" = "V", "Resolution" = "W",
+                                              "Exchange of Notes" = "X",
+                                              "Memorandum of Understanding" = "Y",
+                                              "Protocol" = "P")) %>%
+  dplyr::mutate(DocType = dplyr::recode(Inclusion, "BEA" = "B", "MEA" = "M")) %>%
   dplyr::filter(DocType == "M" | DocType == "B") %>%
   manydata::transmutate(ieadbID = as.character(`IEA# (click for add'l info)`),
-                     Title = manypkgs::standardise_titles(`Treaty Name`,
-                                                          api_key = api),
-                     # Define Key API
-                     Signature = messydates::as_messydate(`Signature Date`),
-                     Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
+                        Title = manypkgs::standardise_titles(`Treaty Name`),
+                        Signature = messydates::as_messydate(`Signature Date`),
+                        Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType,
-                Signature, Force) %>%
+  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
+  dplyr::mutate(Beg = ifelse(is.na(Beg), "9999-12-31", Beg)) %>%
+  # Add future date in cases where beg and force are missing
   dplyr::arrange(Beg)
 
 # Add treatyID column
-IEADB$treatyID <- manypkgs::code_agreements(IEADB,
-                                            IEADB$Title,
-                                            IEADB$Beg)
+IEADB$treatyID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 # Add Lineage column
 IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 
 # Add manyID column
-manyID <- manypkgs::condense_agreements(manyenviron::agreements)
-IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID")
+# manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+# IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
+#   dplyr::distinct()
 
 # Re-order the columns
 IEADB <- IEADB %>%
-  dplyr::select(manyID, Title, Beg, DocType, AgreementType, Signature,
+  dplyr::select(Title, Beg, DocType, AgreementType, Signature,
                 Force, Lineage, treatyID, ieadbID) %>%
   dplyr::arrange(Beg)
 
