@@ -45,9 +45,8 @@ agreements database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            3666|     0     |       0       |
 #> |     Title     |  character  |            3666|     0     |       0       |
-#> |      Beg      |    mdate    |            3666|    65     |     1.77      |
+#> |      Beg      |  character  |            3666|     0     |       0       |
 #> |    DocType    |  character  |            3666|     0     |       0       |
 #> | AgreementType |  character  |            3666|     0     |       0       |
 #> |   Signature   |    mdate    |            3666|    65     |     1.77      |
