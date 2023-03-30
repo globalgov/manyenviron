@@ -8,7 +8,7 @@
 #' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
 #' 10 variables: manyID, stateID, Title, Beg, End, stateSignature, Force, Rat,
 #' ecolexID, treatyID.}
-#' \item{IEADB_MEM: }{A dataset with 15466 observations and the following
+#' \item{IEADB_MEM: }{A dataset with 15463 observations and the following
 #' 12 variables: manyID, stateID, Title, Beg, End, stateSignature, Signature,
 #' Rat, Force, DocType, ieadbID, treatyID.}
 #' \item{TFDD_MEM: }{A dataset with 2118 observations and the following

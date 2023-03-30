@@ -14,8 +14,8 @@ please use the \code{data_source()} and \code{data_contrast()} functions.
 10 variables: manyID, stateID, Title, Beg, End, stateSignature, Force, Rat,
 ecolexID, treatyID.}
 \item{IEADB_MEM: }{A dataset with 15466 observations and the following
-12 variables: manyID, stateID, Title, Beg, End, stateSignature, Signature,
-Rat, Force, DocType, ieadbID, treatyID.}
+11 variables: stateID, Title, Beg, End, stateSignature, Signature, Rat,
+Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
 8 variables: manyID, stateID, Title, Beg, Signature, tfddID, Memberships,
 treatyID.}
@@ -55,18 +55,18 @@ memberships database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |           15466|     0     |       0       |
-#> |    stateID    |  character  |           15466|     0     |       0       |
-#> |     Title     |  character  |           15466|     0     |       0       |
-#> |      Beg      |    mdate    |           15466|     0     |       0       |
-#> |      End      |    mdate    |           15466|   14595   |     94.37     |
-#> |stateSignature |    mdate    |           15466|   5799    |     37.5      |
-#> |   Signature   |    mdate    |           15466|     0     |       0       |
-#> |      Rat      |    mdate    |           15466|   5486    |     35.47     |
-#> |     Force     |    mdate    |           15466|     0     |       0       |
-#> |    DocType    |  character  |           15466|     0     |       0       |
-#> |    ieadbID    |   numeric   |           15466|     0     |       0       |
-#> |   treatyID    |  character  |           15466|     0     |       0       |
+#> |    manyID     |  character  |           15463|     0     |       0       |
+#> |    stateID    |  character  |           15463|     0     |       0       |
+#> |     Title     |  character  |           15463|     0     |       0       |
+#> |      Beg      |    mdate    |           15463|     0     |       0       |
+#> |      End      |    mdate    |           15463|   14593   |     94.37     |
+#> |stateSignature |    mdate    |           15463|   5797    |     37.49     |
+#> |   Signature   |    mdate    |           15463|     0     |       0       |
+#> |      Rat      |    mdate    |           15463|   5485    |     35.47     |
+#> |     Force     |    mdate    |           15463|     0     |       0       |
+#> |    DocType    |  character  |           15463|     0     |       0       |
+#> |    ieadbID    |   numeric   |           15463|     0     |       0       |
+#> |   treatyID    |  character  |           15463|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
