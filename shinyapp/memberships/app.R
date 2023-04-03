@@ -1,6 +1,7 @@
 # library(shiny)
 # library(shinydashboard)
 # library(dplyr)
+# library(ggplot2)
 
 # Prepare memberships dataset
 memberships <- manyenviron::memberships$IEADB_MEM[,c(1,2,3)]
@@ -13,7 +14,7 @@ memberships$agr_type <- ifelse(stringr::str_detect(memberships$type, "A"), "Agre
                                                                (ifelse(stringr::str_detect(memberships$type, "R"), "Resolution",NA)))))))))))
 
 memberships <- memberships %>%
-  mutate(category = NA)
+  dplyr::mutate(category = NA)
 
 i <- 0
 manyID <- NA
@@ -31,8 +32,8 @@ for(i in 1:nrow(memberships)){
 }
 
 titles <- memberships %>%
-  distinct(manyID, .keep_all = TRUE) %>%
-  select(manyID, Title)
+  dplyr::distinct(manyID, .keep_all = TRUE) %>%
+  dplyr::select(manyID, Title)
 
 
 # Define UI 
@@ -106,16 +107,16 @@ server <- function(input, output){
     })
     
     coords1 <- reactive({
-      ggdata1 <- ggplot_build(migraph::autographr(filteredData()))$data[[1]]
+      ggdata1 <- ggplot2::ggplot_build(migraph::autographr(filteredData()))$data[[1]]
     })
     coords2 <- reactive({
-      ggdata2 <- ggplot_build(migraph::autographr(filteredData2()))$data[[1]]
+      ggdata2 <- ggplot2::ggplot_build(migraph::autographr(filteredData2()))$data[[1]]
     })
     coords3 <- reactive({
-      ggdata3 <- ggplot_build(migraph::autographr(filteredData3()))$data[[1]]
+      ggdata3 <- ggplot2::ggplot_build(migraph::autographr(filteredData3()))$data[[1]]
     })
     coords4 <- reactive({
-      ggdata4 <- ggplot_build(migraph::autographr(filteredData4()))$data[[1]]
+      ggdata4 <- ggplot2::ggplot_build(migraph::autographr(filteredData4()))$data[[1]]
     })
     
     output$distPlot <- renderPlot({
