@@ -21,9 +21,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                                   "Global" = "G",
                                   "Regional/restricted" = "R")) %>%
   manydata::transmutate(ecolexID = `EcolexID`,
-                     Title = manypkgs::standardise_titles(title,
-                                                          api_key = api),
-                     # Define Key API
+                     Title = manypkgs::standardise_titles(title),
                      Signature = messydates::as_messydate(Date,
                                                           resequence = "mdy"),
                      Force = messydates::as_messydate(`Entry.into.force`,

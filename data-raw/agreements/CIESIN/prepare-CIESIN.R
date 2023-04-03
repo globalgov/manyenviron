@@ -11,9 +11,7 @@ CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
 # formats of the 'CIESIN' object until the object created
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
-  manydata::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`,
-                                                             api_key = api),
-                        # Define Key API
+  manydata::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`),
                      Signature = messydates::as_messydate(`Year of Agreement`),
                      Force = messydates::as_messydate(`Year of Entry into Force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
