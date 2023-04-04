@@ -2,6 +2,7 @@
 # library(shinydashboard)
 # library(dplyr)
 # library(ggplot2)
+# library(tidygraph)
 
 # Prepare memberships dataset
 memberships <- manyenviron::memberships$IEADB_MEM[,c(1,2,3)]
@@ -57,7 +58,8 @@ ui <- shinydashboard::dashboardPage(
                       choices = c("choose" = "", "Bilateral", "Multilateral", "Other"),
                       selected = "choose",
                       multiple = T),
-          shinydashboard::menuItem(shiny::sliderInput("num", "Dates", value = 1960, min = 1950, max = 2020, width = 350))
+          shinydashboard::menuItem(shiny::sliderInput("range", "Dates", value = c(1951, 1952),
+                                                      min = 1950, max = 2020, width = 350, sep = ""))
         ),
         wellPanel(
           style = " background: #222D32; border-color: #222D32; margin-left: 20px",
@@ -75,35 +77,43 @@ server <- function(input, output){
     filteredData <- shiny::reactive({
         memberships <- memberships %>% 
             dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-            dplyr::filter(year %in% input$num) %>% 
+            dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
             dplyr::filter(agr_type %in% input$agr_type) %>% 
-            migraph::as_tidygraph()
+            migraph::as_tidygraph() %>%
+            tidygraph::activate(nodes) %>%
+            dplyr::mutate(color = "blue")
 })
     
     filteredData2 <- shiny::reactive({
       memberships <- memberships %>% 
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-        dplyr::filter(year %in% input$num) %>% 
+        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(category %in% input$category) %>%
-      migraph::as_tidygraph()
+        migraph::as_tidygraph() %>%
+        tidygraph::activate(nodes) %>%
+        mutate(color = "blue")
     })
     filteredData3 <- shiny::reactive({
       memberships <- memberships %>% 
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-        dplyr::filter(year %in% input$num) %>% 
+        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(stateID %in% input$country) %>%
-      migraph::as_tidygraph()
+        migraph::as_tidygraph() %>%
+        tidygraph::activate(nodes) %>%
+        dplyr::mutate(color = "blue")
     })
     filteredData4 <- shiny::reactive({
       memberships <- memberships %>% 
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-        dplyr::filter(year %in% input$num) %>% 
+        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(category %in% input$category) %>%
         dplyr::filter(stateID %in% input$country) %>%
-      migraph::as_tidygraph()
+        migraph::as_tidygraph() %>%
+        tidygraph::activate(nodes) %>%
+        dplyr::mutate(color = "blue")
     })
     
     coords1 <- reactive({
@@ -121,18 +131,18 @@ server <- function(input, output){
     
     output$distPlot <- renderPlot({
       if(is.null(input$country) & is.null(input$category)){
-        migraph::autographr(filteredData())
+        migraph::autographr(filteredData(), node_color = "color")
         
       }
       else if(is.null(input$country) & !is.null(input$category)){
-        migraph::autographr(filteredData2())
+        migraph::autographr(filteredData2(), node_color = "color")
         
       }
       else if(!is.null(input$country) & is.null(input$category)){
-        migraph::autographr(filteredData3())
+        migraph::autographr(filteredData3(), node_color = "color")
       }
       else if(!is.null(input$country) & !is.null(input$category)){
-        migraph::autographr(filteredData4())
+        migraph::autographr(filteredData4(), node_color = "color")
       }
     })
     
