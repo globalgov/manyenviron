@@ -6,24 +6,24 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 10 variables: manyID, Title, Beg, DocType, AgreementType, Signature, Force,
-#' Lineage, treatyID, ieadbID.}
+#' 10 variables: manyID, treatyID, Title, Beg, DocType, AgreementType,
+#' Signature, Force, Lineage, ieadbID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 10 variables: manyID, Title, Beg, DocType, GeogArea, Signature, Force,
-#' Lineage, treatyID, ecolexID.}
-#' \item{CIESIN: }{A dataset with 666 observations and the following
-#' 7 variables: manyID, Title, Beg, Signature, Force, Lineage, treatyID.}
+#' 10 variables: manyID, treatyID, Title, Beg, DocType, GeogArea,
+#' Signature, Force, Lineage, ecolexID.}
+#' \item{CIESIN: }{A dataset with 662 observations and the following
+#' 7 variables: manyID, treatyID, Title, Beg, Signature, Force, Lineage.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
-#' 7 variables: manyID, Title, Beg, Signature, Lineage, treatyID, heidiID.}
-#' \item{HUGGO: }{A dataset with 4085 observations and the following
-#' 48 variables: manyID, Title, Beg, End, Signature, Force, url, AgreementType,
-#' DocType, GeogArea, gengID, ieaID, ecolexID, treatyID, Parties, verified,
+#' 7 variables: manyID, treatyID, Title, Beg, Signature, Lineage, heidiID.}
+#' \item{HUGGO: }{A dataset with 4036 observations and the following
+#' 48 variables: manyID, treatyID, Title, Beg, End, Signature, Force, url,
+#' AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID, Parties, verified,
 #' DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
 #' subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
 #' Depository, DepositoryURL, Published, Website1, Website2, Secretariat,
 #' SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy, Lit,
 #' Data, Coded, Abstract, TreatyText, Language.}
-#' \item{AIGGO: }{A dataset with 3815 observations and the following
+#' \item{AIGGO: }{A dataset with 3778 observations and the following
 #' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
 #' action_area, linkage, accessionC, accessionP, termination_type,
 #' termination_date.}
