@@ -37,12 +37,9 @@ IEADB$treatyID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 
 # Add manyID column
-# manyID <- manypkgs::condense_agreements(manyenviron::agreements)
-# IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
-#   dplyr::distinct()
-
-# Re-order the columns
-IEADB <- IEADB %>%
+manyID <- manypkgs::condense_agreements(manyenviron::agreements)
+IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
+   dplyr::distinct() %>%
   dplyr::select(Title, Beg, DocType, AgreementType, Signature,
                 Force, Lineage, treatyID, ieadbID) %>%
   dplyr::arrange(Beg)
