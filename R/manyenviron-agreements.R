@@ -9,8 +9,8 @@
 #' 10 variables: manyID, treatyID, Title, Beg, DocType, AgreementType,
 #' Signature, Force, Lineage, ieadbID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 10 variables: manyID, treatyID, Title, Beg, DocType, GeogArea,
-#' Signature, Force, Lineage, ecolexID.}
+#' 10 variables: manyID, treatyID, Title, Beg, DocType, GeogArea, Signature,
+#' Force, Lineage, ecolexID.}
 #' \item{CIESIN: }{A dataset with 662 observations and the following
 #' 7 variables: manyID, treatyID, Title, Beg, Signature, Force, Lineage.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
@@ -24,7 +24,7 @@
 #' SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy, Lit,
 #' Data, Coded, Abstract, TreatyText, Language.}
 #' \item{AIGGO: }{A dataset with 3778 observations and the following
-#' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
+#' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force, 
 #' action_area, linkage, accessionC, accessionP, termination_type,
 #' termination_date.}
 #' }

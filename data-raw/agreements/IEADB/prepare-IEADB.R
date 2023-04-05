@@ -27,9 +27,9 @@ IEADB <- as_tibble(IEADB)  %>%
                         Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
-  dplyr::mutate(Beg = ifelse(is.na(Beg), "9999-12-31", Beg)) %>%
+  dplyr::mutate(Beg = messydates::as_messydate(ifelse(is.na(Beg), "9999-12-31", Beg))) %>%
   # Add future date in cases where beg and force are missing
-  dplyr::arrange(Beg)
+  dplyr::arrange(Signature)
 
 # Add treatyID column
 IEADB$treatyID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
