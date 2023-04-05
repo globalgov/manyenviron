@@ -5,7 +5,8 @@
 # library(tidygraph)
 
 # Prepare memberships dataset
-memberships <- manyenviron::memberships$IEADB_MEM[,c(1,2,3)]
+memberships <- manyenviron::memberships$IEADB_MEM[,c(1,3,5)] %>%
+  dplyr::select("manyID", "stateID", "Title")
 memberships$type <- manypkgs::code_type(memberships$Title)
 memberships$agr_type <- ifelse(stringr::str_detect(memberships$type, "A"), "Agreement",
                                (ifelse(stringr::str_detect(memberships$type, "P"), "Protocol",
@@ -75,15 +76,20 @@ visibility: visible}"))
 # Define server
 server <- function(input, output){
     filteredData <- shiny::reactive({
-        memberships <- memberships %>% 
-            dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-            dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
-            dplyr::filter(agr_type %in% input$agr_type) %>% 
+        membershipsag <- memberships %>% 
+            dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+            dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+            dplyr::filter(agr_type %in% input$agr_type) %>%
             migraph::as_tidygraph() %>%
             tidygraph::activate(nodes) %>%
-            dplyr::mutate(color = "blue")
+            dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+            dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+            dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))
 })
-    
+    migraph::autographr(membershipsag)
     filteredData2 <- shiny::reactive({
       memberships <- memberships %>% 
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
@@ -92,7 +98,12 @@ server <- function(input, output){
         dplyr::filter(category %in% input$category) %>%
         migraph::as_tidygraph() %>%
         tidygraph::activate(nodes) %>%
-        mutate(color = "blue")
+        dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                               TRUE ~ "black")) %>%
+        dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                              TRUE ~ 1.5)) %>%
+        dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                               TRUE ~ "square"))
     })
     filteredData3 <- shiny::reactive({
       memberships <- memberships %>% 
@@ -102,7 +113,12 @@ server <- function(input, output){
         dplyr::filter(stateID %in% input$country) %>%
         migraph::as_tidygraph() %>%
         tidygraph::activate(nodes) %>%
-        dplyr::mutate(color = "blue")
+        dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                               TRUE ~ "black")) %>%
+        dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                              TRUE ~ 1.5)) %>%
+        dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                               TRUE ~ "square"))
     })
     filteredData4 <- shiny::reactive({
       memberships <- memberships %>% 
@@ -113,7 +129,12 @@ server <- function(input, output){
         dplyr::filter(stateID %in% input$country) %>%
         migraph::as_tidygraph() %>%
         tidygraph::activate(nodes) %>%
-        dplyr::mutate(color = "blue")
+        dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                               TRUE ~ "black")) %>%
+        dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                              TRUE ~ 1.5)) %>%
+        dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                               TRUE ~ "square"))
     })
     
     coords1 <- reactive({
@@ -131,18 +152,22 @@ server <- function(input, output){
     
     output$distPlot <- renderPlot({
       if(is.null(input$country) & is.null(input$category)){
-        migraph::autographr(filteredData(), node_color = "color")
+        migraph::autographr(filteredData(), node_color = "color", node_size = "size",
+                            node_shape = "shape")
         
       }
       else if(is.null(input$country) & !is.null(input$category)){
-        migraph::autographr(filteredData2(), node_color = "color")
+        migraph::autographr(filteredData2(), node_color = "color", node_size = "size",
+                            node_shape = "shape")
         
       }
       else if(!is.null(input$country) & is.null(input$category)){
-        migraph::autographr(filteredData3(), node_color = "color")
+        migraph::autographr(filteredData3(), node_color = "color", node_size = "size",
+                            node_shape = "shape")
       }
       else if(!is.null(input$country) & !is.null(input$category)){
-        migraph::autographr(filteredData4(), node_color = "color")
+        migraph::autographr(filteredData4(), node_color = "color", node_size = "size",
+                            node_shape = "shape")
       }
     })
     
@@ -152,7 +177,7 @@ server <- function(input, output){
                             addDist = TRUE)
         title <- as.character(titles[titles$manyID %in% point$label, 2])
         if(title == "character(0)"){
-          print("Please click on a node representing a treaty to display its title.")
+          print("Please click on a node representing a treaty (red circle) to display its title.")
         }
         else if(!(title == "character(0)")){
           print(title)
@@ -163,7 +188,7 @@ server <- function(input, output){
                             addDist = TRUE)
         title <- as.character(titles[titles$manyID %in% point$label, 2])
         if(title == "character(0)"){
-          print("Please click on a node representing a treaty to display its title.")
+          print("Please click on a node representing a treaty (red circle) to display its title.")
         }
         else if(!(title == "character(0)")){
           print(title)
@@ -175,7 +200,7 @@ server <- function(input, output){
                             addDist = TRUE)
         title <- as.character(titles[titles$manyID %in% point$label, 2])
         if(title == "character(0)"){
-          print("Please click on a node representing a treaty to display its title.")
+          print("Please click on a node representing a treaty (red circle) to display its title.")
         }
         else if(!(title == "character(0)")){
           print(title)
@@ -186,7 +211,7 @@ server <- function(input, output){
                             addDist = TRUE)
         title <- as.character(titles[titles$manyID %in% point$label, 2])
         if(title == "character(0)"){
-          print("Please click on a node representing a treaty to display its title.")
+          print("Please click on a node representing a treaty (red circle) to display its title.")
         }
         else if(!(title == "character(0)")){
           print(title)
