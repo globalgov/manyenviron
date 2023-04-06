@@ -14,10 +14,10 @@ memberships$agr_type <- ifelse(stringr::str_detect(memberships$type, "A"), "Agre
                                                (ifelse(stringr::str_detect(memberships$type, "N"), "Notes",
                                                        (ifelse(stringr::str_detect(memberships$type, "S"), "Strategy",
                                                                (ifelse(stringr::str_detect(memberships$type, "R"), "Resolution",NA)))))))))))
-
+# Determine whether treaties are bilateral or multilateral, or other (most
+# likely accessions)
 memberships <- memberships %>%
   dplyr::mutate(category = NA)
-
 i <- 0
 manyID <- NA
 for(i in 1:nrow(memberships)){
@@ -32,10 +32,6 @@ for(i in 1:nrow(memberships)){
   memberships[i, 6] <- "Other"
 }
 }
-
-titles <- memberships %>%
-  dplyr::distinct(manyID, .keep_all = TRUE) %>%
-  dplyr::select(manyID, Title)
 
 
 # Define UI 
@@ -60,8 +56,9 @@ ui <- shinydashboard::dashboardPage(
                       selected = "choose",
                       multiple = T),
           shinydashboard::menuItem(shiny::sliderInput("range", "Dates", value = c(1951, 1952),
-                                                      min = 1950, max = 2020, width = 350, sep = ""))
-        ),
+                                                      min = 1950, max = 2020, width = 350, sep = "")),
+          checkboxInput("treatylabel", "Display treaty node labels", TRUE),
+          checkboxInput("countrylabel", "Display country node labels", TRUE)),
         wellPanel(
           style = " background: #222D32; border-color: #222D32; margin-left: 20px",
           textOutput("click_info"),
@@ -75,8 +72,17 @@ visibility: visible}"))
 )
 # Define server
 server <- function(input, output){
+  # Save a data frame of titles of agreements
+  titles <- memberships %>%
+    dplyr::distinct(manyID, .keep_all = TRUE) %>%
+    dplyr::select(manyID, Title)
+  # filteredData for each combination of inputs
+  # Four possibilities for each combination of inputs due to possible
+  # combinations of display labels checkboxes
+  # Preserve memberships dataframe for later use with coordinates
     filteredData <- shiny::reactive({
-        membershipsag <- memberships %>% 
+      if(input$treatylabel == TRUE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
             dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
             dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
             dplyr::filter(agr_type %in% input$agr_type) %>%
@@ -88,25 +94,142 @@ server <- function(input, output){
                                                 TRUE ~ 1.5)) %>%
             dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
                                                  TRUE ~ "square"))
+      }
+      else if(input$treatylabel == FALSE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ ""))
+      }
+      else if(input$treatylabel == TRUE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ name,
+                                                TRUE ~ ""))
+      }
+      else if(input$treatylabel == FALSE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ name))
+      }
 })
-    migraph::autographr(membershipsag)
     filteredData2 <- shiny::reactive({
-      memberships <- memberships %>% 
-        dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
-        dplyr::filter(agr_type %in% input$agr_type) %>% 
-        dplyr::filter(category %in% input$category) %>%
-        migraph::as_tidygraph() %>%
-        tidygraph::activate(nodes) %>%
-        dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
-                                               TRUE ~ "black")) %>%
-        dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
-                                              TRUE ~ 1.5)) %>%
-        dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
-                                               TRUE ~ "square"))
+      if(input$treatylabel == TRUE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))
+      }
+      else if (input$treatylabel == FALSE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ ""))
+      }
+      else if (input$treatylabel == TRUE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ name,
+                                                TRUE ~ ""))
+      }
+      else if (input$treatylabel == FALSE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ name))
+      }
     })
     filteredData3 <- shiny::reactive({
-      memberships <- memberships %>% 
+      if (input$treatylabel == TRUE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))
+      }
+      else if (input$treatylabel == FALSE & input$countrylabel == FALSE){
+      memberships1 <- memberships %>% 
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
         dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
@@ -118,36 +241,162 @@ server <- function(input, output){
         dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
                                               TRUE ~ 1.5)) %>%
         dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
-                                               TRUE ~ "square"))
+                                               TRUE ~ "square")) %>%
+        dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ ""))
+      }
+      else if (input$treatylabel == TRUE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ name,
+                                                TRUE ~ ""))
+      }
+      else if (input$treatylabel == FALSE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square")) %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ name))
+      }
     })
     filteredData4 <- shiny::reactive({
-      memberships <- memberships %>% 
+      if(input$treatylabel == TRUE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))
+      }
+      else if(input$treatylabel == FALSE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))  %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ ""))
+      }
+      else if(input$treatylabel == TRUE & input$countrylabel == FALSE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))  %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ name,
+                                                TRUE ~ ""))
+      }
+      else if(input$treatylabel == FALSE & input$countrylabel == TRUE){
+        memberships1 <- memberships %>% 
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+          dplyr::filter(agr_type %in% input$agr_type) %>% 
+          dplyr::filter(category %in% input$category) %>%
+          dplyr::filter(stateID %in% input$country) %>%
+          migraph::as_tidygraph() %>%
+          tidygraph::activate(nodes) %>%
+          dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
+                                                 TRUE ~ "black")) %>%
+          dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
+                                                TRUE ~ 1.5)) %>%
+          dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
+                                                 TRUE ~ "square"))  %>%
+          dplyr::mutate(name = dplyr::case_when(grepl("[0-9]", name) ~ "",
+                                                TRUE ~ name))
+      }
+    })
+    # Create a plot object, whose coordinates will serve as reference
+    # for the click interactivity on the plot that will be rendered.
+    # Using the original memberships data frame instead of the tidygraph object
+    # created after filtering data allows to display titles of agreements even
+    # if their labels are not rendered on the actual plot.
+    coords1 <- reactive({
+      ggdata1 <- memberships %>% 
+        dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+        dplyr::filter(agr_type %in% input$agr_type) %>%
+        migraph::as_tidygraph() %>%
+        migraph::autographr()
+      ggdata1 <- ggplot2::ggplot_build(ggdata1)$data[[1]]
+    })
+    coords2 <- reactive({
+      ggdata2 <- memberships %>% 
+        dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+        dplyr::filter(agr_type %in% input$agr_type) %>% 
+        dplyr::filter(category %in% input$category) %>%
+        migraph::as_tidygraph() %>%
+        migraph::autographr()
+      ggdata2 <- ggplot2::ggplot_build(ggdata2)$data[[1]]
+        
+    })
+    coords3 <- reactive({
+      ggdata3 <- memberships %>% 
+        dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
+        dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
+        dplyr::filter(agr_type %in% input$agr_type) %>% 
+        dplyr::filter(stateID %in% input$country) %>%
+        migraph::as_tidygraph() %>%
+        migraph::autographr()
+      ggdata3 <- ggplot2::ggplot_build(ggdata3)$data[[1]]
+    })
+    coords4 <- reactive({
+      ggdata4 <- memberships %>% 
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
         dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(category %in% input$category) %>%
         dplyr::filter(stateID %in% input$country) %>%
         migraph::as_tidygraph() %>%
-        tidygraph::activate(nodes) %>%
-        dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
-                                               TRUE ~ "black")) %>%
-        dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
-                                              TRUE ~ 1.5)) %>%
-        dplyr::mutate(shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle",
-                                               TRUE ~ "square"))
-    })
-    
-    coords1 <- reactive({
-      ggdata1 <- ggplot2::ggplot_build(migraph::autographr(filteredData()))$data[[1]]
-    })
-    coords2 <- reactive({
-      ggdata2 <- ggplot2::ggplot_build(migraph::autographr(filteredData2()))$data[[1]]
-    })
-    coords3 <- reactive({
-      ggdata3 <- ggplot2::ggplot_build(migraph::autographr(filteredData3()))$data[[1]]
-    })
-    coords4 <- reactive({
-      ggdata4 <- ggplot2::ggplot_build(migraph::autographr(filteredData4()))$data[[1]]
+        migraph::autographr()
+      ggdata4 <- ggplot2::ggplot_build(ggdata4)$data[[1]]
     })
     
     output$distPlot <- renderPlot({
@@ -170,7 +419,8 @@ server <- function(input, output){
                             node_shape = "shape")
       }
     })
-    
+    # Add interactivity to display the titles of agreements the user
+    # clicks on, according to possible input combinations.
     output$click_info <- renderText({
       if(is.null(input$country) & is.null(input$category)){
         point <- nearPoints(coords1(), input$plot_click, 
