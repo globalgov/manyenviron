@@ -24,7 +24,7 @@
 #' SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy, Lit,
 #' Data, Coded, Abstract, TreatyText, Language.}
 #' \item{AIGGO: }{A dataset with 3778 observations and the following
-#' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force, 
+#' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
 #' action_area, linkage, accessionC, accessionP, termination_type,
 #' termination_date.}
 #' }
