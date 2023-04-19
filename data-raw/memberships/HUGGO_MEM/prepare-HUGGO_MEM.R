@@ -119,6 +119,142 @@ HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID",
          Beg = messydates::as_messydate(Beg),
          End = messydates::as_messydate(End))
 
+# Remove duplicates
+# Step one: keep one row for each combination of manyID, treatyID and Title
+members <- manyenviron::memberships$HUGGO_MEM %>%
+  distinct(manyID, treatyID, Title, Beg, Signature, Force, .keep_all = TRUE)
+
+# Step two: determine which rows have a duplicated manyID
+duplicate_manyID <- data.frame(table(members$manyID))
+duplicate_manyID <- duplicate_manyID[duplicate_manyID$Freq > 1,]
+duplicate_manyID <- members[members$manyID %in% duplicate_manyID$Var1[duplicate_manyID$Freq > 1],]
+
+# Step three: remove fully duplicate rows
+HUGGO_MEM <- manyenviron::memberships$HUGGO_MEM
+
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "BI07WA_1991A" &
+                                HUGGO_MEM$Title == "Bamako Convention On The Ban Of The Import Into Africa And The Control Of Transboundary Movement And Management Of Hazardous Wastes Within Africa"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "ERDWCP_1968A" &
+                                HUGGO_MEM$Title == "European Agreement On The Restriction Of The Use Of Certain Detergents In Washing And Cleaning Products (CETS No 064)"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "ESAPFC_1948A" &
+                                HUGGO_MEM$Title == "Agreement For The Establishment Of The Asia Pacific Fisheries Council"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "EST-RUS[RFF]_1994A" &
+                                HUGGO_MEM$Title == "International Agreement Between The Government Of The Russian Federation And The Government Of The Republic Of Estonia Regarding Cooperation In The Sphere Of Fisheries (1994)"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "IR04SS_1979P:IR04SS_1957A" &
+                                HUGGO_MEM$Title == "Protocol Amending The International Convention Relating To The Limitation Of The Liability Of Owners Of Sea-going Ships"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PRTSBS_1972P:PRTSBS_1962A" &
+                                HUGGO_MEM$Title == "Protocol Amending The Agreement Concerning Protection Of The Salmon Stock In The Baltic Sea"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "UNCLOS_1982A" &
+                                HUGGO_MEM$Title == "Agreement Relating To The Implementation Of Part 11 Of The United Nations Convention On The Law Of The Sea"),]
+
+# Match titles and dates of verified treaties
+# Step one: load data frame of verified treaties
+verified <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
+# Step two: 
+df <- data.frame()
+i <- 0
+for(i in nrow(verified)){
+  manyID <- verified[i, 1]
+  treatyID <- verified[i, 13]
+  title <- verified[i, 2]
+  y <- 0
+  y <- which(HUGGO_MEM$manyID == manyID & HUGGO_MEM$treatyID == treatyID &
+                         HUGGO_MEM$Title == title)
+  # Match dates
+  # Beg
+  HUGGO_MEM[y, 4] <- messydates::as_messydate(verified[i, 3])
+  # End
+  HUGGO_MEM[y, 6] <- messydates::as_messydate(verified[i, 4])
+  # Signature
+  HUGGO_MEM[y, 7] <- messydates::as_messydate(verified[i, 5])
+  # Force
+  HUGGO_MEM[y, 8] <- messydates::as_messydate(verified[i, 6])
+  }
+
+
+# Confirm dates are not incorrect
+# Step one: Determine if stateRat is after stateSignature
+
+ratdates <- HUGGO_MEM %>%
+  dplyr::mutate(Correct = dplyr::case_when(stateRat >= stateSignature ~ 1,
+                                           stateRat < stateSignature ~ 0)) %>%
+  dplyr::filter(Correct == 0)
+
+# Step two: Determine if stateSignature is after general Signature date
+
+signdates <- HUGGO_MEM %>%
+  dplyr::mutate(Correct = dplyr::case_when(stateSignature >= Signature ~ 1,
+                                           stateSignature < Signature ~ 0)) %>%
+  dplyr::filter(Correct == 0)
+
+# Messydates
+HUGGO_MEM$stateSignature <- messydates::as_messydate(HUGGO_MEM$stateSignature)
+HUGGO_MEM$stateRat <- messydates::as_messydate(HUGGO_MEM$stateRat)
+HUGGO_MEM$stateForce <- messydates::as_messydate(HUGGO_MEM$stateForce)
+HUGGO_MEM$stateForce2 <- messydates::as_messydate(HUGGO_MEM$stateForce2)
+HUGGO_MEM$stateForce3 <- messydates::as_messydate(HUGGO_MEM$stateForce3)
+HUGGO_MEM$stateWithdrawal <- messydates::as_messydate(HUGGO_MEM$stateWithdrawal)
+HUGGO_MEM$stateWithdrawal2 <- messydates::as_messydate(HUGGO_MEM$stateWithdrawal2)
+
+# CC09DM_1954A
+# Correct stateSignature
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CC09DM_1954A"), 9] <- messydates::as_messydate("1954-12-04")
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CC09DM_1954A" & HUGGO_MEM$stateID == "CHL"), 10] <-
+  NA
+
+# CS18PS_1954A 
+# Corrrect Beg and Signature (must change dates in HUGGO too)
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A"), 4] <- messydates::as_messydate("1954-08-18")
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A"), 7] <- messydates::as_messydate("1954-08-18")
+# Add stateSignature
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A"), 9] <- messydates::as_messydate("1954-08-18")
+# Add stateRat: Chile
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A" & HUGGO_MEM$stateID == "CHL"), 10] <-
+  messydates::as_messydate("1954-09-23")
+# Add stateRat: Ecuador
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A" & HUGGO_MEM$stateID == "ECU"), 10] <-
+  messydates::as_messydate("1956-01-24")
+# Add stateRat: Peru
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A" & HUGGO_MEM$stateID == "PER"), 10] <-
+  messydates::as_messydate("1956-05-10")
+
+# DOM-PAN[CPC]_1989A
+# Add stateSignature
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CC09DM_1954A"), 9] <- messydates::as_messydate("1989-10-23")
+# Add stateRat: Nicaragua
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A" & HUGGO_MEM$stateID == "NIC"), 10] <-
+  messydates::as_messydate("1990-12-13")
+
+# INTRTT_1994A
+# Beg and Signature dates correspond to the 1994 agreement, but stateSignature,
+# stateRat, stateForce, stateWithdrawal and ProvisionalApp correspond to the
+# 1983 agreement, which is not in HUGGO nor HUGGO_MEM
+
+# TTICPO_2008A
+# Correct Beg and Signature (must change dates in HUGGO too)
+HUGGO_MEM[which(HUGGO_MEM$manyID == "TTICPO_2008A"), 4] <- messydates::as_messydate("2008-06-25")
+HUGGO_MEM[which(HUGGO_MEM$manyID == "TTICPO_2008A"), 7] <- messydates::as_messydate("2008-06-25")
+
+# VB13GV_2008O
+# Correct Beg and Signature (must change dates in HUGGO too)
+HUGGO_MEM[which(HUGGO_MEM$manyID == "VB13GV_2008O"), 4] <- messydates::as_messydate("2008-06-25")
+HUGGO_MEM[which(HUGGO_MEM$manyID == "VB13GV_2008O"), 7] <- messydates::as_messydate("2008-06-25")
+
+# NCMFCI_1982A
+# Duplication of rows with stateRat date for stateSignature
+# Remove duplicated rows
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "NCMFCI_1982A" & HUGGO_MEM$stateSignature != "1982-02-11"), ]
+
+# CAN-USA[LOE]_2005N5
+# Duplicated rows and one set with incorrect stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CAN-USA[LOE]_2005N5" & HUGGO_MEM$stateSignature != "2005-12-05"),] 
+
+# AA04CC_2012E3:UNFCCC_1992A
+# Remove duplicate rows
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "AA04CC_2012E3:UNFCCC_1992A" & HUGGO_MEM$stateID == "ARE" &
+                                is.na(HUGGO_MEM$stateForce_ecolex)),]
+
+
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
 # within the package.
