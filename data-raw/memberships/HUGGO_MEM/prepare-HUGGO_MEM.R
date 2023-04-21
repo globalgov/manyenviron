@@ -274,7 +274,71 @@ HUGGO_MEM[which(HUGGO_MEM$manyID == "PE09EP_1990P" & HUGGO_MEM$stateID == "IRQ")
 
 ## EC09CS_1991A
 ## Remove duplicate rows with incorrect information
-HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "EC09CS_1991A" & HUGGO_MEM$stateSignature != "1991-02-01"),] 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "EC09CS_1991A" & HUGGO_MEM$stateSignature != "1991-02-01"),]
+
+# CHN-KAZ[HUK]_2013A
+# Remove rows including Finland and Norway as parties
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CHN-KAZ[HUK]_2013A" & is.na(HUGGO_MEM$End)),]
+
+# CMNTBT_1996A
+# Correct stateSignature: Djibouti
+HUGGO_MEM[which(HUGGO_MEM$manyID == "CMNTBT_1996A"), 9] <- messydates::as_messydate("1996-10-21")
+
+# FC10NP_1993A
+# Add stateSignature date: 1993-02-22
+HUGGO_MEM[which(HUGGO_MEM$manyID == "FC10NP_1993A"), 9] <- messydates::as_messydate("1993-02-22")
+
+
+# ACPEEC_1989A
+# Correct stateSignature: Cote d'Ivoire
+HUGGO_MEM[which(HUGGO_MEM$manyID == "ACPEEC_1989A" & HUGGO_MEM$stateID == "CIV"), 9] <- 
+  messydates::as_messydate("1989-12-15")
+
+# INPPSA_1978P1:MARPOL_1973A
+# Remove duplicate row with incorrect stateSignature date: Australia
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INPPSA_1978P1:MARPOL_1973A" &
+                                HUGGO_MEM$stateID == "AUS" & HUGGO_MEM$stateSignature != "1978-02-17"),]
+
+# INTCPE_1991P:INTCPE_1990A
+# Remove extra rows
+# Czechoslovakia
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" & 
+                                HUGGO_MEM$stateID == "CSK" & !is.na(HUGGO_MEM$End)),]
+# Czechia
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" & 
+                                HUGGO_MEM$stateID == "CZE" & HUGGO_MEM$stateSignature != "1993-08-13"),]
+# Federal Republic of Germany
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" & 
+                                HUGGO_MEM$stateID == "DEU" & !is.na(HUGGO_MEM$End)), ]
+# European Union
+# According to Treaty of Lisbon, the European Union is to be deemed contracting
+# party to all treaties the European Community was part of
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" & 
+                                HUGGO_MEM$stateID == "EUE"),]
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                                HUGGO_MEM$stateID == "EUU" & HUGGO_MEM$stateRat == "1993-07-14"), ]
+# Slovakia
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                                HUGGO_MEM$stateID == "SVK" & HUGGO_MEM$stateRat != "1993-05-27"),]
+# Correct End (Treaty is still in force between DEU and CZE)
+HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A"), 6] <- NA
+# Correct stateSignature
+# CZE and SVK stateSignature
+HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                  HUGGO_MEM$stateID == c("CZE", "SVK")), 9] <- NA
+# Correct stateRat
+# CZE and SVK stateRat
+HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                  HUGGO_MEM$stateID == "CZE"), 10] <- NA
+HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                  HUGGO_MEM$stateID == "SVK"), 10] <- NA
+# Correct stateWithdrawal
+# CSK stateWithdrawal: date of dissolution
+HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                  HUGGO_MEM$stateID == c("CSK")), 15] <- messydates::as_messydate("1992-12-31")
+# CZE has not withdrawn
+HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
+                  HUGGO_MEM$stateID == c("CZE")), 15] <- NA
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
