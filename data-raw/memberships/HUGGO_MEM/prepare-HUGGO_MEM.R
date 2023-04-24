@@ -192,9 +192,9 @@ HUGGO_MEM[which(HUGGO_MEM$manyID == "CC09DM_1954A" & HUGGO_MEM$stateID == "CHL")
 
 # DOM-PAN[CPC]_1989A
 # Add stateSignature
-HUGGO_MEM[which(HUGGO_MEM$manyID == "CC09DM_1954A"), 9] <- messydates::as_messydate("1989-10-23")
+HUGGO_MEM[which(HUGGO_MEM$manyID == "DOM-PAN[CPC]_1989A"), 9] <- messydates::as_messydate("1989-10-23")
 # Add stateRat: Nicaragua
-HUGGO_MEM[which(HUGGO_MEM$manyID == "CS18PS_1954A" & HUGGO_MEM$stateID == "NIC"), 10] <-
+HUGGO_MEM[which(HUGGO_MEM$manyID == "DOM-PAN[CPC]_1989A" & HUGGO_MEM$stateID == "NIC"), 10] <-
   messydates::as_messydate("1990-12-13")
 
 # INTRTT_1994A
@@ -339,6 +339,248 @@ HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
 # CZE has not withdrawn
 HUGGO_MEM[which(HUGGO_MEM$manyID == "INTCPE_1991P:INTCPE_1990A" &
                   HUGGO_MEM$stateID == c("CZE")), 15] <- NA
+
+# PD04WD_1992A
+# Remove duplicate row: New Zealand
+duplicate <- which(HUGGO_MEM$manyID == "PD04WD_1992A" & HUGGO_MEM$stateID == "NZL")
+HUGGO_MEM <- HUGGO_MEM[-(duplicate[-1]),]
+
+# MNSDOL_1997E
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateSignature < "1997-09-17"),]
+# Afghanistan
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateSignature == "2014-07-14"),]
+# United Arab Emirates (ARE)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ARE" &
+                                HUGGO_MEM$stateSignature != "2005-02-16"),]
+# Argentina (ARG)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ARG" &
+                                HUGGO_MEM$stateRat != "2001-02-15"),]
+# Armenia (ARM)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ARM" &
+                                HUGGO_MEM$stateRat != "2008-12-18"),]
+# Austria (AUT) 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "AUT" &
+                                HUGGO_MEM$stateRat != "2000-08-07"),]
+# Azerbaijan (AZE)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "AZE" &
+                                HUGGO_MEM$stateRat != "2000-09-28"),]
+# Belgium (BEL)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "BEL" &
+                                HUGGO_MEM$stateRat != "2004-08-11"),]
+# Benin (BEN) 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "BEN" &
+                                HUGGO_MEM$stateRat != "2007-11-16"),]
+# Bulgaria (BGR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "BGR" &
+                                HUGGO_MEM$stateRat != "1999-11-24"),]
+# Bosnia and Herzegovina (BIH)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "BIH" &
+                                HUGGO_MEM$stateRat != "2003-08-11"),]
+# Belize (Belize)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "BLZ" &
+                                HUGGO_MEM$stateRat != "2008-01-17"),]
+# Brazil (BRA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "BRA" &
+                                HUGGO_MEM$stateRat != "2004-06-30"),]
+# Chile (CHL)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CHL" &
+                                HUGGO_MEM$stateRat != "1998-06-17"),]
+# China (CHN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CHN" &
+                                HUGGO_MEM$stateRat != "2010-05-19"),]
+# Cote d'Ivoire (CIV) 	
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CIV" &
+                                HUGGO_MEM$stateRat != "2012-06-28"),]
+# Cabo Verde (CPV)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CPV" &
+                                HUGGO_MEM$stateRat != "2001-07-31"),]
+# Costa Rica (CRI) 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CRI" &
+                                HUGGO_MEM$stateRat != "2005-12-01"),]
+# Cuba (CUB)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CUB" &
+                                HUGGO_MEM$stateRat != "2005-09-12"),]
+# Cyprus (CYP) 	
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "CYP" &
+                                HUGGO_MEM$stateRat != "2003-06-02"),]
+# Germany (DEU)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "DEU" &
+                                HUGGO_MEM$stateRat != "1999-01-05"),]
+# Djibouti (DJI)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "DJI" &
+                                HUGGO_MEM$stateRat != "1999-07-30"),]
+# Dominican Republic (DOM)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "DOM" &
+                                HUGGO_MEM$stateRat != "2009-10-01"),]
+# Algeria (DZA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "DZA" &
+                                HUGGO_MEM$stateRat != "2007-08-06"),]
+# Ecuador (ECU)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ECU" &
+                                HUGGO_MEM$stateRat != "2007-02-16"),]
+# Egypt (EGY)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "EGY" &
+                                HUGGO_MEM$stateRat != "2000-07-20"),]
+# Estonia (EST)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "EST" &
+                                HUGGO_MEM$stateRat != "2003-04-11"),]
+# Fiji (FJI)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "FJI" &
+                                HUGGO_MEM$stateRat != "2007-02-19"),]
+# Honduras (HND)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "HND" &
+                                HUGGO_MEM$stateRat != "2007-09-14"),]
+# Croatia (HRV)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "HRV" &
+                                HUGGO_MEM$stateRat != "2000-09-08"),]
+# Indonesia (IDN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "IDN" &
+                                HUGGO_MEM$stateRat != "2006-01-26"),]
+# Iran (IRN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "IRN" &
+                                HUGGO_MEM$stateRat != "2001-10-17"),]
+# Iceland (ISL)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ISL" &
+                                HUGGO_MEM$stateRat != "2000-02-08"),]
+# Israel (ISR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ISR" &
+                                HUGGO_MEM$stateRat != "2003-05-28"),]
+# Italy (ITA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "ITA" &
+                                HUGGO_MEM$stateRat != "2001-05-01"),]
+# Jamaica (JAM)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "JAM" &
+                                HUGGO_MEM$stateRat != "2003-09-24"),]
+# Jordan (JOR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "JOR" &
+                                HUGGO_MEM$stateRat != "1999-02-03"),]
+# Kazakhstan (KAZ)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "KAZ" &
+                                HUGGO_MEM$stateRat != "2011-06-28"),]
+# Kyrgyzstan (KGZ)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "KGZ" &
+                                HUGGO_MEM$stateRat != "2003-05-13"),]
+# Saint Kitts and Nevis (KNA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "KNA" &
+                                HUGGO_MEM$stateRat != "1999-02-25"),]
+# Saint Lucia (LCA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "LCA" &
+                                HUGGO_MEM$stateRat != "1999-08-24"),]
+# Sri Lanka (LKA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "LKA" &
+                                HUGGO_MEM$stateRat != "1999-08-20"),]
+# Lithuania (LTU)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "LTU" &
+                                HUGGO_MEM$stateRat != "2004-03-17"),]
+# Luxembourg (LUX)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "LUX" &
+                                HUGGO_MEM$stateRat != "1999-02-08"),]
+# Latvia (LVA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "LVA" &
+                                HUGGO_MEM$stateRat != "2002-06-14"),]
+# North Macedonia (MKD)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "MKD" &
+                                HUGGO_MEM$stateRat != "1999-08-31"),]
+# Myanmar (MMR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "MMR" &
+                                HUGGO_MEM$stateRat != "2012-01-30"),]
+# Mongolia (MNG) 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "MNG" &
+                                HUGGO_MEM$stateRat != "2002-03-28"),]
+# Niger (NER)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "NER" &
+                                HUGGO_MEM$stateRat != "1999-10-08"),]
+# Nigeria (NGA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "NER" &
+                                HUGGO_MEM$stateRat != "2001-09-27"),]
+# Nicaragua (NIC)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "NIC" &
+                                HUGGO_MEM$stateRat != "2012-11-07"),]
+# Norway (NOR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "NOR" &
+                                HUGGO_MEM$stateRat != "1998-12-30"),]
+# New Zealand (NZL)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "NZL" &
+                                HUGGO_MEM$stateRat != "1999-06-03"),]
+# Oman (OMN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "OMN" &
+                                HUGGO_MEM$stateRat != "2005-01-19"),]
+# Panama (PAN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "PAN" &
+                                HUGGO_MEM$stateRat != "1999-03-05"),]
+# Peru (PER)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "PER" &
+                                HUGGO_MEM$stateRat != "2008-05-20"),]
+# Philippines (PHL)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "PHL" &
+                                HUGGO_MEM$stateRat != "2006-05-23"),]
+# Papua New Guinea (PNG)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "PNG" &
+                                HUGGO_MEM$stateRat != "2013-11-12"),]
+# Polonia (POL)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "POL" &
+                                HUGGO_MEM$stateRat != "1999-12-06"),]
+# North Korea (PRK)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "PRK" &
+                                HUGGO_MEM$stateRat != "2001-12-13"),]
+# Portugal (PRT)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "PRT" &
+                                HUGGO_MEM$stateRat != "2003-10-03"),]
+# Sudan (SDN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SDN" &
+                                HUGGO_MEM$stateRat != "2004-05-18"),]
+# Senegal (SEN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SEN" &
+                                HUGGO_MEM$stateRat != "1999-08-12"),]
+# Solomon Islands (SLB)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SLB" &
+                                HUGGO_MEM$stateRat != "1999-08-17"),]
+# South Sudan (SSD)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SSD" &
+                                HUGGO_MEM$stateRat != "2012-10-16"),]
+# Slovakia (SVK)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SVK" &
+                                HUGGO_MEM$stateRat != "1999-11-03"),]
+# Slovenia (SVN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SVN" &
+                                HUGGO_MEM$stateRat != "1999-11-15"),]
+# Sweden (SWE)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SWE" &
+                                HUGGO_MEM$stateRat != "1999-07-12"),]
+# Syria (SYR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "SYR" &
+                                HUGGO_MEM$stateRat != "1999-11-30"),]
+# Chad (TCD)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "TCD" &
+                                HUGGO_MEM$stateRat != "2001-05-30"),]
+# Togo (TGO)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "TGO" &
+                                HUGGO_MEM$stateRat != "2001-11-26"),]
+# Thailand (THA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "THA" &
+                                HUGGO_MEM$stateRat != "2003-06-23"),]
+# Tajikistan (TJK)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "TJK" &
+                                HUGGO_MEM$stateRat != "2009-05-07"),]
+# Trinidad and Tobago (TTO)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "TTO" &
+                                HUGGO_MEM$stateRat != "1999-06-10"),]
+# Uganda (UGA)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "UGA" &
+                                HUGGO_MEM$stateRat != "1999-11-23"),]
+# Ukraine (UKR)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "UKR" &
+                                HUGGO_MEM$stateRat != "2007-05-04"),]
+# Uruguay (URY) 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "URY" &
+                                HUGGO_MEM$stateRat != "2000-02-16"),]
+# Uzbekistan (UZB)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "UZB" &
+                                HUGGO_MEM$stateRat != "2006-10-31"),]
+# Venezuela (VEN)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "VEN" &
+                                HUGGO_MEM$stateRat != "2002-05-13"),]
+# 
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
