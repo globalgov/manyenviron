@@ -5,12 +5,17 @@
 
 # Stage one: Collecting data
 HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
-HEIDI$signature.date <- openxlsx::convertToDate(HEIDI1$signature.date)
+HEIDI$signature.date <- ifelse(stringr::str_detect(HEIDI$signature.date,
+                                                   "^([:digit:]{2})-([:digit:]{2})-([:digit:]{4})$|^([:digit:]{4})-([:digit:]{2})-([:digit:]{2})$"),
+                               as.Date(HEIDI$signature.date),
+                               openxlsx::convertToDate(HEIDI$signature.date))
+HEIDI$signature.date <- as.Date(HEIDI$signature.date, origin = "1970-01-01")
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'HEIDI' object until the object created
 # below (in stage three) passes all the tests.
+library(dplyr)
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
                         Signature = messydates::as_messydate(`signature.date`)) %>%
