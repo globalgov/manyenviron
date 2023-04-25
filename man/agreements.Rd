@@ -45,15 +45,14 @@ agreements database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            3666|     0     |       0       |
-#> |   treatyID    |  character  |            3666|     0     |       0       |
 #> |     Title     |  character  |            3666|     0     |       0       |
-#> |      Beg      |  character  |            3666|     0     |       0       |
+#> |      Beg      |    mdate    |            3666|     0     |       0       |
 #> |    DocType    |  character  |            3666|     0     |       0       |
 #> | AgreementType |  character  |            3666|     0     |       0       |
 #> |   Signature   |    mdate    |            3666|    65     |     1.77      |
 #> |     Force     |    mdate    |            3666|    867    |     23.65     |
 #> |    Lineage    |  character  |            3666|     0     |       0       |
+#> |   treatyID    |  character  |            3666|     0     |       0       |
 #> |    ieadbID    |  character  |            3666|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
