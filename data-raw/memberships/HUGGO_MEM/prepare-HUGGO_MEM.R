@@ -193,6 +193,9 @@ HUGGO_MEM[which(HUGGO_MEM$manyID == "CC09DM_1954A" & HUGGO_MEM$stateID == "CHL")
 # DOM-PAN[CPC]_1989A
 # Add stateSignature
 HUGGO_MEM[which(HUGGO_MEM$manyID == "DOM-PAN[CPC]_1989A"), 9] <- messydates::as_messydate("1989-10-23")
+# Add NA in stateRat
+HUGGO_MEM[which(HUGGO_MEM$manyID == "DOM-PAN[CPC]_1989A"), 10] <-
+  NA
 # Add stateRat: Nicaragua
 HUGGO_MEM[which(HUGGO_MEM$manyID == "DOM-PAN[CPC]_1989A" & HUGGO_MEM$stateID == "NIC"), 10] <-
   messydates::as_messydate("1990-12-13")
@@ -580,7 +583,104 @@ HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$sta
 # Venezuela (VEN)
 HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MNSDOL_1997E" & HUGGO_MEM$stateID == "VEN" &
                                 HUGGO_MEM$stateRat != "2002-05-13"),]
-# 
+
+# SIASFO_1999A
+# Remove duplicate rows with no information for stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "SIASFO_1999A" &
+                                HUGGO_MEM$stateSignature != "1999-04-09"),]
+# Add NAs to stateRat
+HUGGO_MEM[which(HUGGO_MEM$manyID == "SIASFO_1999A"), 10] <- NA
+
+# AI08ZP_1989A
+# It appears no such arrangement was signed in 1989.
+# If its nonexistence is verified, should be removed from HUGGO too.
+
+# PE05SA_1976P
+# Slovenia: Remove duplicate row with incorrect accession date
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "SVN" &
+                                HUGGO_MEM$Accession != "1993-09-16"),]
+# Syria: Remove duplicate row with incorrect accession date
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "SYR" &
+                                HUGGO_MEM$Accession != "1978-12-26"),]
+# Add NA to stateSignature
+HUGGO_MEM[which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "SYR"), 9] <- 
+  NA
+# Algeria: Remove duplicate row with incorrect accession date
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "DZA" &
+                                HUGGO_MEM$Accession != "1981-03-16"),]
+# Albania: Remove duplicate row with no accession date
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "ALB" &
+                                is.na(HUGGO_MEM$Accession)),]
+# Bosnia and Herzegovina: Remove duplicate row with incorrect stateForce_ecolex
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "BIH" &
+                                HUGGO_MEM$stateForce_ecolex == "1994-11-21"),]
+
+# Croatia: Remove duplicate row with incorrect stateForce_ecolex
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "HRV" &
+                                HUGGO_MEM$stateForce_ecolex == "1992-07-12"),]
+# Lebanon: Remove duplicate row with incorrect accession date
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "PE05SA_1976P" & HUGGO_MEM$stateID == "LBN" &
+                                HUGGO_MEM$Accession != "1977-11-08"),]
+# MRT-SEN[SCW]_1978A
+# Remove duplicate rows with no stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "MRT-SEN[SCW]_1978A" &
+                                HUGGO_MEM$stateSignature != "1978-12-21"),]
+# Add NA to stateRat
+HUGGO_MEM[which(HUGGO_MEM$manyID == "MRT-SEN[SCW]_1978A"), 10] <- NA
+
+# CP06AR_1981A
+# Benin: remove duplicate row
+duplicate <- which(HUGGO_MEM$manyID == "CP06AR_1981A" & HUGGO_MEM$stateID == "BEN")
+HUGGO_MEM <- HUGGO_MEM[-duplicate[-1],]
+# Liberia: remove duplicate row
+duplicate <- which(HUGGO_MEM$manyID == "CP06AR_1981A" & HUGGO_MEM$stateID == "LBR")
+HUGGO_MEM <- HUGGO_MEM[-duplicate[-1],]
+# Gambia: remove row with incorrect signatureState
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CP06AR_1981A" & HUGGO_MEM$stateID == "GMB" &
+                                HUGGO_MEM$stateSignature !="1981-03-23"),]
+# Nigeria: remove row with incorrect signatureState 
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CP06AR_1981A" & HUGGO_MEM$stateID == "NGA" &
+                                HUGGO_MEM$stateSignature !="1981-03-23"),]
+# Cameroon: add stateSignature (representatives present)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CP06AR_1981A" & HUGGO_MEM$stateID == "CMR" &
+                                HUGGO_MEM$stateSignature !="1981-03-23"),]
+# Dem. Republic of Congo: add stateSignature (representatives present)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CP06AR_1981A" & HUGGO_MEM$stateID == "COD" &
+                                HUGGO_MEM$stateSignature !="1981-03-23"),]
+
+# SSTDLV_1985P
+# Remove duplicate rows (match ecolexID to the one this treaty has in HUGGO agreements)
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "SSTDLV_1985P" & HUGGO_MEM$ecolexID == "TRE-002034"),]
+## Add NAs to stateSignature and stateRat
+HUGGO_MEM[which(HUGGO_MEM$manyID == "SSTDLV_1985P"), 9] <- NA
+HUGGO_MEM[which(HUGGO_MEM$manyID == "SSTDLV_1985P"), 10] <- NA
+
+# FNNRNA_1987R
+# Remove duplicate rows with no stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "FNNRNA_1987R" &
+                                HUGGO_MEM$stateSignature != "1987-10-27"),]
+# Add NAs to stateRat
+HUGGO_MEM[which(HUGGO_MEM$manyID == "FNNRNA_1987R"), 10] <- NA
+
+# CU07PP_1991A
+# Remove duplicate rows with incorrect stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "CU07PP_1991A" &
+                                HUGGO_MEM$stateSignature != "1991-10-20"),]
+
+# ICIPPS_2007E:MARPOL_1973A
+# Remove rows in which stateSignature is before Signature.
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "ICIPPS_2007E:MARPOL_1973A" & HUGGO_MEM$stateSignature < HUGGO_MEM$Signature),]
+
+# DC08MS_1993A
+# Remove duplicate rows with no stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "DC08MS_1993A" &
+                                HUGGO_MEM$stateSignature !="1993-07-14"),]
+
+# ESTRCF_1993E:ESTRCF_1985A
+# Remove duplicate rows with no stateSignature
+HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "ESTRCF_1993E:ESTRCF_1985A" &
+                                HUGGO_MEM$stateSignature !="1993-07-14"),]
+
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available

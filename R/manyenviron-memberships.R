@@ -11,7 +11,7 @@
 #' 12 variables: manyID, treatyID, Title, Beg, stateID, End, stateSignature, Signature, Rat, Force, DocType, ieadbID.}
 #' \item{TFDD_MEM: }{A dataset with 1832 observations and the following
 #' 8 variables: manyID, treatyID, Title, Beg, stateID, Signature, tfddID, Memberships.}
-#' \item{HUGGO_MEM: }{A dataset with 52140 observations and the following
+#' \item{HUGGO_MEM: }{A dataset with 51740 observations and the following
 #' 31 variables: manyID, treatyID, Title, Beg, stateID, End, Signature, Force, stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term, stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp, Reservation, verified, Notes, stateForce_ecolex, stateForce_iea, Consent, Acceptance, Accession.}
 #' }
 
