@@ -39,8 +39,8 @@ IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
-  dplyr::select(Title, Beg, DocType, AgreementType, Signature,
-                Force, Lineage, treatyID, ieadbID) %>%
+  dplyr::select(manyID, treatyID, Title, Beg, Signature,
+                Force, Lineage, DocType, AgreementType, ieadbID) %>%
   dplyr::distinct() %>%
   dplyr::arrange(messydates::as_messydate(Beg))
 
