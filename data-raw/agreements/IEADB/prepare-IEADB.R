@@ -42,7 +42,7 @@ IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
   dplyr::select(Title, Beg, DocType, AgreementType, Signature,
                 Force, Lineage, treatyID, ieadbID) %>%
   dplyr::distinct() %>%
-  dplyr::arrange(Beg)
+  dplyr::arrange(messydates::as_messydate(Beg))
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
