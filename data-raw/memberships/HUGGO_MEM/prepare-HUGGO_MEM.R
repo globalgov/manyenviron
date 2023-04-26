@@ -119,7 +119,7 @@ HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID",
          Beg = messydates::as_messydate(Beg),
          End = messydates::as_messydate(End))
 
-# Match titles and dates of verified treaties
+# Match titles and dates of verified treaties from agreements$HUGGO
 # Step one: load data frame of verified treaties
 verified <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
 HUGGO_MEM <- manyenviron::memberships$HUGGO_MEM
@@ -143,23 +143,20 @@ for(i in nrow(verified)){
   HUGGO_MEM[y, 8] <- messydates::as_messydate(verified[i, 6])
   }
 
-
-# Confirm dates are not incorrect
+# Confirm dates are not incorrect in rows
 # Step one: Determine if stateRat is after stateSignature
-
 ratdates <- HUGGO_MEM %>%
   dplyr::mutate(Correct = dplyr::case_when(stateRat >= stateSignature ~ 1,
                                            stateRat < stateSignature ~ 0)) %>%
   dplyr::filter(Correct == 0)
 
 # Step two: Determine if stateSignature is after general Signature date
-
 signdates <- HUGGO_MEM %>%
   dplyr::mutate(Correct = dplyr::case_when(stateSignature >= Signature ~ 1,
                                            stateSignature < Signature ~ 0)) %>%
   dplyr::filter(Correct == 0)
 
-# Messydates
+# Convert to mdate class
 HUGGO_MEM$stateSignature <- messydates::as_messydate(HUGGO_MEM$stateSignature)
 HUGGO_MEM$stateRat <- messydates::as_messydate(HUGGO_MEM$stateRat)
 HUGGO_MEM$stateForce <- messydates::as_messydate(HUGGO_MEM$stateForce)
