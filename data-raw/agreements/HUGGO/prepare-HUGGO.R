@@ -856,8 +856,98 @@ HUGGO <- HUGGO_new %>%
                 Force = messydates::as_messydate(Force),
                 End = messydates::as_messydate(End)) %>%
   dplyr::arrange(Beg)
-          
-# Stage four: Connecting data
+
+# Stage four: Matching agreements with titles in different languages
+noneng <- HUGGO %>%
+  # subset agreements with non-English titles but match a row with an English title
+  dplyr::filter(manyID == "UB08IB_1893A" | manyID == "ESP-FRA[DGP]_1900A" |
+                  manyID == "ED19DL_1905A" | manyID == "CHE-FRA[DDK]_1930A" |
+                  manyID == "ARG-PRY[DRP]_1939A" | manyID == "CP09RP_1971A" |
+                  manyID == "CP09RP_1971A" | manyID == "TRTDDY_1973A" |
+                  manyID == "AS13DH_1978A" | manyID == "AT24JD_1979A" |
+                  manyID == "AD25ED_1979A" | manyID == "MAR-ROU[SDR]_1979A" |
+                  manyID == "BEL-LUX[EDL]_1980A" | manyID == "COL-ECU[SPA]_1994A" |
+                  manyID == "FRA-NOR[PLM]_1995A" | manyID == "AS32AS_1995A" |
+                  manyID == "AM17LS_1996A" | manyID == "ARG-PRY[LPN]_1996A" |
+                  manyID == "AE21LM_1997A" | manyID == "AM17LD_1997A" |
+                  manyID == "ARG-BOL[RDB]_1998A" | manyID == "TD13DP_1998A" |
+                  manyID == "AP17RT_2002A" | manyID == "CHN-TUN[DTM]_2002A" |
+                  manyID == "DZA-TUR[RDT]_2002A" | manyID == "AM23AE_2002A" |
+                  manyID == "AE38LD_2002A" | manyID == "AE19DL_2003A" |
+                  manyID == "AE24LJ_2003A"| manyID == "EL50LJ_2004A" |
+                  manyID == "ARG-BOL[RDB]_2004P" | manyID == "AB22LA_2005A" |
+                  manyID == "HND-MEX[EUM]_2005A" | manyID == "CHL-DZA[RDC]_2005A" |
+                  manyID == "DZA-PER[RDP]_2005A" | manyID == "AC46LJ_2005A" |
+                  manyID == "CD34RM_2005N1" | manyID == "MD19CC_2005S" |
+                  manyID == "AM15DC_2006A" | manyID == "AC43LO_2006A" |
+                  manyID == "NIC-VEN[LRD]_2007A" | manyID == "AC33LJ_2007A"|
+                  manyID == "ARG-ECU[LHE]_2007A" | manyID == "AC11PB_2007A" |
+                  manyID == "AD33LN_2007A" | manyID == "AC34LD_2007A" |
+                  manyID == "AD25LF_2008A" | manyID == "BRA-CRI[DSL]_2008A"|
+                  manyID == "BRA-CRI[PDB]_2008A" | manyID == "BRA-CRI[DCE]_2008P" |
+                  manyID == "AE22LE_2008A" | manyID == "AS35LO_2008A" |
+                  manyID == "CP09LA_2012O"| manyID == "CC09DM_1954A" |
+                  manyID == "VB13GV_2008O" | manyID == "CS18PS_1954A"|
+                  manyID == "CS18PS_1954A")
+noneng <- noneng %>%
+  dplyr::rename(match = manyID, Orig_noneng_title = Title) %>%
+  dplyr::arrange(match) %>%
+  # add in matching list of manyIDs of agreements with English titles
+  dplyr::mutate(manyID = c("FRA-URY[CCM]_2005A", "SI04DB_2007P", "FRA-USA[PPP]_2007A",
+                           "UKR-ALG[PPA]_2007A", "FRA-TUN[CCT]_2006P:UNFCCC_1992A",
+                           "BRA-FRA[MKP]_2005P", "ESP-SEN[FAD]_1979A", "FRA-ZAF[ECT]_2008A",
+                           "CHN-FRA[NEB]_2007A", "FRA-GAB[HWD]_2003A", "FRA-TUR[FEP]_1997A",
+                           "VEN-ZAF[ENR]_2008A", "GF13JT_2003A", "FRA-KIR[EZT]_2002A",
+                           "COG-ALG[MRD]_2006A", "FRA-LVA[MFR]_1997A", "FRA-TUR[MFP]_1996A",
+                           "ARG-ALG[DSI]_2002A", "TUN-ALG[MBD]_2002A", "ARG-BOL[EIB]_1998A",
+                           "ARG-BOL[ENB]_2004P", "ARG-ECU[SHE]_2007A", "ARG-PRY[LRP]_1939A",
+                           "ARG-PRY[PNP]_1996A", "COL-HTI[MSA]_1978A", "CHE-FRA[LGP]_1995A",
+                           "DEU-FRA[SFP]_2008A",
+                           "ESP-MAR[MFR]_1979A","KB04WS_1980A","BRA-CRI[MCT]_2008P",
+                           "BRA-CRI[ASL]_2008P","BRA-CRI[ABP]_2008P","CDSMZM_1954P20",
+                           "ESP-PRT[ISM]_2005N","CHE-FRA[BDK]_1930A","CHL-ALG[EMD]_2005A",
+                           "CHN-TUN[PMT]_2002A","COL-ECU[ARF]_1994A","ESTANA_2012A",
+                           "STDYPR_1971A", "INVEPR_1971A", "ES06SP_1954A","PER-ALG[EMD]_2005A",
+                           "TUR-ALG[END]_2002A","CF08CL_1905N11","FRA-MCO[TMS]_2004A",
+                           "FS10PJ_1900A","FRA-NOR[SSP]_1995A","HND-MEX[MDM]_2005A",
+                           "MAR-ROU[TMS]_1979A","ESP-GTM[ECC]_2005S","NIC-VEN[ENS]_2007A",
+                           "ECU-PER[CMG]_1998A","YCYRTT_1973A","AH12IF_1893A", "TTICPO_2008A"
+  ))
+noneng <- dplyr::select(noneng, manyID, Orig_noneng_title, Beg, match)
+# Non-English titles of the same agreement with an English title added in variable 'Orig_noneng_title'
+HUGGO <- dplyr::left_join(HUGGO, noneng, by = c("manyID", "Beg"))
+# remove rows with non-English titles identified above
+HUGGO <- HUGGO[-which(HUGGO$manyID == "UB08IB_1893A" | HUGGO$manyID == "ESP-FRA[DGP]_1900A" |
+                         HUGGO$manyID == "ED19DL_1905A" | HUGGO$manyID == "CHE-FRA[DDK]_1930A" |
+                         HUGGO$manyID == "ARG-PRY[DRP]_1939A" | HUGGO$manyID == "CP09RP_1971A" |
+                         HUGGO$manyID == "CP09RP_1971A" | HUGGO$manyID == "TRTDDY_1973A" |
+                         HUGGO$manyID == "AS13DH_1978A" | HUGGO$manyID == "AT24JD_1979A" |
+                         HUGGO$manyID == "AD25ED_1979A" | HUGGO$manyID == "MAR-ROU[SDR]_1979A" |
+                         HUGGO$manyID == "BEL-LUX[EDL]_1980A" | HUGGO$manyID == "COL-ECU[SPA]_1994A" |
+                         HUGGO$manyID == "FRA-NOR[PLM]_1995A" | HUGGO$manyID == "AS32AS_1995A" |
+                         HUGGO$manyID == "AM17LS_1996A" | HUGGO$manyID == "ARG-PRY[LPN]_1996A" |
+                         HUGGO$manyID == "AE21LM_1997A" | HUGGO$manyID == "AM17LD_1997A" |
+                         HUGGO$manyID == "ARG-BOL[RDB]_1998A" | HUGGO$manyID == "TD13DP_1998A" |
+                         HUGGO$manyID == "AP17RT_2002A" | HUGGO$manyID == "CHN-TUN[DTM]_2002A" |
+                         HUGGO$manyID == "DZA-TUR[RDT]_2002A" | HUGGO$manyID == "AM23AE_2002A" |
+                         HUGGO$manyID == "AE38LD_2002A" | HUGGO$manyID == "AE19DL_2003A" |
+                         HUGGO$manyID == "AE24LJ_2003A"| HUGGO$manyID == "EL50LJ_2004A" |
+                         HUGGO$manyID == "ARG-BOL[RDB]_2004P" | HUGGO$manyID == "AB22LA_2005A" |
+                         HUGGO$manyID == "HND-MEX[EUM]_2005A" | HUGGO$manyID == "CHL-DZA[RDC]_2005A" |
+                         HUGGO$manyID == "DZA-PER[RDP]_2005A" | HUGGO$manyID == "AC46LJ_2005A" |
+                         HUGGO$manyID == "CD34RM_2005N1" | HUGGO$manyID == "MD19CC_2005S" |
+                         HUGGO$manyID == "AM15DC_2006A" | HUGGO$manyID == "AC43LO_2006A" |
+                         HUGGO$manyID == "NIC-VEN[LRD]_2007A" | HUGGO$manyID == "AC33LJ_2007A"|
+                         HUGGO$manyID == "ARG-ECU[LHE]_2007A" | HUGGO$manyID == "AC11PB_2007A" |
+                         HUGGO$manyID == "AD33LN_2007A" | HUGGO$manyID == "AC34LD_2007A" |
+                         HUGGO$manyID == "AD25LF_2008A" | HUGGO$manyID == "BRA-CRI[DSL]_2008A"|
+                         HUGGO$manyID == "BRA-CRI[PDB]_2008A" | HUGGO$manyID == "BRA-CRI[DCE]_2008P" |
+                         HUGGO$manyID == "AE22LE_2008A" | HUGGO$manyID == "AS35LO_2008A" |
+                         HUGGO$manyID == "CP09LA_2012O"| HUGGO$manyID == "CC09DM_1954A" |
+                         HUGGO$manyID == "VB13GV_2008O" | HUGGO$manyID == "CS18PS_1954A"|
+                         HUGGO$manyID == "CS18PS_1954A"),]
+
+# Stage five: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
 manypkgs::export_data(HUGGO, database = "agreements",
