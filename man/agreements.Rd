@@ -48,7 +48,7 @@ agreements database documentation
 #> |    manyID     |  character  |            3666|     0     |       0       |
 #> |   treatyID    |  character  |            3666|     0     |       0       |
 #> |     Title     |  character  |            3666|     0     |       0       |
-#> |      Beg      |  character  |            3666|     0     |       0       |
+#> |      Beg      |    mdate    |            3666|     0     |       0       |
 #> |    DocType    |  character  |            3666|     0     |       0       |
 #> | AgreementType |  character  |            3666|     0     |       0       |
 #> |   Signature   |    mdate    |            3666|    65     |     1.77      |
@@ -107,54 +107,56 @@ agreements database documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |            4036|     0     |       0       |
-#> |    treatyID     |  character  |            4036|     0     |       0       |
-#> |      Title      |  character  |            4036|     0     |       0       |
-#> |       Beg       |    mdate    |            4036|    57     |     1.41      |
-#> |       End       |    mdate    |            4036|   3344    |     82.85     |
-#> |    Signature    |    mdate    |            4036|    57     |     1.41      |
-#> |      Force      |    mdate    |            4036|   1647    |     40.81     |
-#> |       url       |  character  |            4036|   2743    |     67.96     |
-#> |  AgreementType  |  character  |            4036|   1334    |     33.05     |
-#> |     DocType     |  character  |            4036|   1298    |     32.16     |
-#> |    GeogArea     |  character  |            4036|   1897    |      47       |
-#> |     gengID      |  character  |            4036|    195    |     4.83      |
-#> |      ieaID      |  character  |            4036|   3340    |     82.76     |
-#> |    ecolexID     |  character  |            4036|   3555    |     88.08     |
-#> |     Parties     |  character  |            4036|   1713    |     42.44     |
-#> |    verified     |  character  |            4036|   3988    |     98.81     |
-#> |DocValidUntilDate|  character  |            4036|   4002    |     99.16     |
-#> |      Notes      |  character  |            4036|   3989    |     98.84     |
-#> |    Download     |  character  |            4036|   3133    |     77.63     |
-#> |    MEA_type     |  character  |            4036|   3340    |     82.76     |
-#> |      Ambit      |  character  |            4036|   3613    |     89.52     |
-#> |     Region      |  character  |            4036|   3788    |     93.86     |
-#> | subject_ecolex  |  character  |            4036|   3555    |     88.08     |
-#> |   subject_iea   |  character  |            4036|   3340    |     82.76     |
-#> |    Keywords     |  character  |            4036|   3626    |     89.84     |
-#> |     Lineage     |  character  |            4036|   3340    |     82.76     |
-#> |    Sequence     |  character  |            4036|   3341    |     82.78     |
-#> |    AdoptedIn    |  character  |            4036|   3605    |     89.32     |
-#> |    Languages    |  character  |            4036|   3555    |     88.08     |
-#> |   Appendices    |  character  |            4036|   4001    |     99.13     |
-#> |   Depository    |  character  |            4036|   3647    |     90.36     |
-#> |  DepositoryURL  |  character  |            4036|   4020    |     99.6      |
-#> |    Published    |  character  |            4036|   3772    |     93.46     |
-#> |    Website1     |  character  |            4036|   3653    |     90.51     |
-#> |    Website2     |  character  |            4036|   4012    |     99.41     |
-#> |   Secretariat   |  character  |            4036|   3341    |     82.78     |
-#> | SecretariatURL  |  character  |            4036|   3341    |     82.78     |
-#> |      UNEP       |  character  |            4036|   3834    |      95       |
-#> |   Supersedes    |  character  |            4036|   4019    |     99.58     |
-#> |   References    |  character  |            4036|   4001    |     99.13     |
-#> |    EnabledBy    |  character  |            4036|   3928    |     97.32     |
-#> |    AmendedBy    |  character  |            4036|   3945    |     97.75     |
-#> |       Lit       |  character  |            4036|   3487    |     86.4      |
-#> |      Data       |  character  |            4036|   3494    |     86.57     |
-#> |      Coded      |  character  |            4036|   3733    |     92.49     |
-#> |    Abstract     |  character  |            4036|   4010    |     99.36     |
-#> |   TreatyText    |   numeric   |            4036|   2688    |     66.6      |
-#> |    Language     |  character  |            4036|   2688    |     66.6      |
+#> |     manyID      |  character  |            3980|     0     |       0       |
+#> |    treatyID     |  character  |            3980|     0     |       0       |
+#> |      Title      |  character  |            3980|     0     |       0       |
+#> |       Beg       |    mdate    |            3980|    57     |     1.43      |
+#> |       End       |    mdate    |            3980|   3291    |     82.69     |
+#> |    Signature    |    mdate    |            3980|    57     |     1.43      |
+#> |      Force      |    mdate    |            3980|   1616    |     40.6      |
+#> |       url       |  character  |            3980|   2688    |     67.54     |
+#> |  AgreementType  |  character  |            3980|   1279    |     32.14     |
+#> |     DocType     |  character  |            3980|   1243    |     31.23     |
+#> |    GeogArea     |  character  |            3980|   1842    |     46.28     |
+#> |     gengID      |  character  |            3980|    195    |      4.9      |
+#> |      ieaID      |  character  |            3980|   3284    |     82.51     |
+#> |    ecolexID     |  character  |            3980|   3503    |     88.02     |
+#> |     Parties     |  character  |            3980|   1709    |     42.94     |
+#> |    verified     |  character  |            3980|   3932    |     98.79     |
+#> |DocValidUntilDate|  character  |            3980|   3946    |     99.15     |
+#> |      Notes      |  character  |            3980|   3933    |     98.82     |
+#> |    Download     |  character  |            3980|   3081    |     77.41     |
+#> |    MEA_type     |  character  |            3980|   3284    |     82.51     |
+#> |      Ambit      |  character  |            3980|   3561    |     89.47     |
+#> |     Region      |  character  |            3980|   3733    |     93.79     |
+#> | subject_ecolex  |  character  |            3980|   3503    |     88.02     |
+#> |   subject_iea   |  character  |            3980|   3284    |     82.51     |
+#> |    Keywords     |  character  |            3980|   3573    |     89.77     |
+#> |     Lineage     |  character  |            3980|   3284    |     82.51     |
+#> |    Sequence     |  character  |            3980|   3285    |     82.54     |
+#> |    AdoptedIn    |  character  |            3980|   3553    |     89.27     |
+#> |    Languages    |  character  |            3980|   3503    |     88.02     |
+#> |   Appendices    |  character  |            3980|   3945    |     99.12     |
+#> |   Depository    |  character  |            3980|   3593    |     90.28     |
+#> |  DepositoryURL  |  character  |            3980|   3964    |     99.6      |
+#> |    Published    |  character  |            3980|   3719    |     93.44     |
+#> |    Website1     |  character  |            3980|   3598    |     90.4      |
+#> |    Website2     |  character  |            3980|   3956    |     99.4      |
+#> |   Secretariat   |  character  |            3980|   3285    |     82.54     |
+#> | SecretariatURL  |  character  |            3980|   3285    |     82.54     |
+#> |      UNEP       |  character  |            3980|   3778    |     94.92     |
+#> |   Supersedes    |  character  |            3980|   3963    |     99.57     |
+#> |   References    |  character  |            3980|   3945    |     99.12     |
+#> |    EnabledBy    |  character  |            3980|   3873    |     97.31     |
+#> |    AmendedBy    |  character  |            3980|   3889    |     97.71     |
+#> |       Lit       |  character  |            3980|   3435    |     86.31     |
+#> |      Data       |  character  |            3980|   3442    |     86.48     |
+#> |      Coded      |  character  |            3980|   3681    |     92.49     |
+#> |    Abstract     |  character  |            3980|   3954    |     99.35     |
+#> |   TreatyText    |   numeric   |            3980|   2632    |     66.13     |
+#> |    Language     |  character  |            3980|   2632    |     66.13     |
+#> |Orig_noneng_title|  character  |            3980|   3924    |     98.59     |
+#> |      match      |  character  |            3980|   3924    |     98.59     |
 #> ------------------------------------------------------------------------------
 #> 
 #> 
