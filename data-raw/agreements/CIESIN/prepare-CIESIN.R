@@ -35,6 +35,10 @@ CIESIN <- CIESIN %>%
                 Force, Lineage, treatyID) %>%
   dplyr::arrange(Beg)
 
+## Rename Beg column
+CIESIN <- CIESIN %>%
+  rename("Begin" = "Beg")
+
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
 # Please see the vignettes or website for more details.

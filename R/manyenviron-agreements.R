@@ -12,7 +12,7 @@
 #' 10 variables: manyID, treatyID, Title, Beg, DocType, GeogArea, Signature,
 #' Force, Lineage, ecolexID.}
 #' \item{CIESIN: }{A dataset with 662 observations and the following
-#' 7 variables: manyID, treatyID, Title, Beg, Signature, Force, Lineage.}
+#' 7 variables: manyID, treatyID, Title, Begin, Signature, Force, Lineage.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, treatyID, Title, Beg, Signature, Lineage, heidiID.}
 #' \item{HUGGO: }{A dataset with 3980 observations and the following
