@@ -987,6 +987,10 @@ for (i in 1:nrow(HUGGO)){
   }
 }
 
+## Stage six: rename Beg column
+HUGGO <- HUGGO %>%
+  dplyr::rename("Begin" = "Beg")
+
 # Stage six: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
@@ -1009,3 +1013,4 @@ manypkgs::export_data(HUGGO, database = "agreements",
 # 2. Delete 'agreements.rda' in 'data' folder.
 # 3. Run `usethis::use_data(agreements, internal = F, overwrite = T, compress = "xz")`
 # to save compressed text data.
+

@@ -6,8 +6,8 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 10 variables: manyID, treatyID, Title, Beg, DocType, AgreementType, Signature,
-#' Force, Lineage, ieadbID.}
+#' 10 variables: manyID, treatyID, Title, Beg, DocType, AgreementType,
+#' Signature, Force, Lineage, ieadbID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
 #' 10 variables: manyID, treatyID, Title, Beg, DocType, GeogArea, Signature,
 #' Force, Lineage, ecolexID.}
@@ -16,13 +16,14 @@
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, treatyID, Title, Beg, Signature, Lineage, heidiID.}
 #' \item{HUGGO: }{A dataset with 3980 observations and the following
-#' 50 variables: manyID, treatyID, Title, Beg, End, Signature, Force, url,
-#' AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID, Parties, verified,
-#' DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
-#' subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
-#' Depository, DepositoryURL, Published, Website1, Website2, Secretariat,
-#' SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy, Lit,
-#' Data, Coded, Abstract, TreatyText, Language, Orig_noneng_title, match.}
+#' 50 variables: manyID, treatyID, Title, Begin, End, Signature, Force, url,
+#' AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID, Parties,
+#' verified, DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region,
+#' subject_ecolex, subject_iea, Keywords, Lineage, Sequence, AdoptedIn,
+#' Languages, Appendices, Depository, DepositoryURL, Published, Website1,
+#' Website2, Secretariat, SecretariatURL, UNEP, Supersedes, References,
+#' EnabledBy, AmendedBy, Lit, Data, Coded, Abstract, TreatyText, Language,
+#' Orig_noneng_title, match.}
 #' \item{AIGGO: }{A dataset with 3778 observations and the following
 #' 13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
 #' action_area, linkage, accessionC, accessionP, termination_type,
