@@ -947,7 +947,47 @@ HUGGO <- HUGGO[-which(HUGGO$manyID == "UB08IB_1893A" | HUGGO$manyID == "ESP-FRA[
                          HUGGO$manyID == "VB13GV_2008O" | HUGGO$manyID == "CS18PS_1954A"|
                          HUGGO$manyID == "CS18PS_1954A"),]
 
-# Stage five: Connecting data
+## Stage five: update End variable
+## Recoded 9999-12-31 for treaties still in force
+HUGGO_ver <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
+for (i in 1:nrow(HUGGO)){
+  title <- as.character(HUGGO[i, "Title"])
+  manyID <- as.character(HUGGO[i, "manyID"])
+  beg <- as.character(HUGGO[i, "Beg"])
+  End_verified <- HUGGO_ver[which(HUGGO_ver$manyID == manyID &
+                                    HUGGO_ver$Title == title &
+                                    HUGGO_ver$Begin == beg), "End"]
+  Force_verified <- HUGGO_ver[which(HUGGO_ver$manyID == manyID &
+                                      HUGGO_ver$Title == title &
+                                      HUGGO_ver$Begin == beg), "Force"]
+  if (length(End_verified) > 0){
+    HUGGO[i, "End"] <- messydates::as_messydate(End_verified)
+  }
+  if (length(Force_verified) > 0){
+    HUGGO[i, "Force"] <- messydates::as_messydate(Force_verified)
+  }
+}
+
+HUGGO_add <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv")
+for (i in 1:nrow(HUGGO)){
+  title <- as.character(HUGGO[i, "Title"])
+  manyID <- as.character(HUGGO[i, "manyID"])
+  beg <- as.character(HUGGO[i, "Beg"])
+  End_add <- HUGGO_add[which(HUGGO_add$manyID == manyID &
+                               HUGGO_add$Title == title &
+                               HUGGO_add$Begin == beg), "End"]
+  Force_add<- HUGGO_ver[which(HUGGO_add$manyID == manyID &
+                                HUGGO_add$Title == title &
+                                HUGGO_add$Begin == beg), "Force"]
+  if (length(End_add) > 0){
+    HUGGO[i, "End"] <- messydates::as_messydate(End_add)
+  }
+  if (length(Force_add) > 0){
+    HUGGO[i, "Force"] <- messydates::as_messydate(Force_add)
+  }
+}
+
+# Stage six: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
 manypkgs::export_data(HUGGO, database = "agreements",
