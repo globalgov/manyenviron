@@ -678,8 +678,11 @@ HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "DC08MS_1993A" &
 HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "ESTRCF_1993E:ESTRCF_1985A" &
                                 HUGGO_MEM$stateSignature !="1993-07-14"),]
 
+## Stage three: rename Beg column
+HUGGO_MEM <- HUGGO_MEM %>%
+  dplyr::rename("Begin" = "Beg")
 
-# Stage three: Connecting data
+# Stage four: Connecting data
 # Next run the following line to make HUGGO_MEM available
 # within the package.
 manypkgs::export_data(HUGGO_MEM, database = "memberships",

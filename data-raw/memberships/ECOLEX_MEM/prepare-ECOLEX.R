@@ -22,10 +22,10 @@ ECOLEX_MEM <- as_tibble(ECOLEX_MEM) %>%
                         Rat = messydates::as_messydate(Rati),
                         stateID = StatID,
                         ecolexID = EcolexID) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(stateSignature, Rat, Force)) %>%
+  dplyr::mutate(Begin = dplyr::coalesce(stateSignature, Rat, Force)) %>%
   # Check Signature date is for the country and not document signature date
-  dplyr::select(stateID, Beg, End, stateSignature, Force, Rat, ecolexID) %>%
-  dplyr::arrange(Beg)
+  dplyr::select(stateID, Begin, End, stateSignature, Force, Rat, ecolexID) %>%
+  dplyr::arrange(Begin)
 
 # Add a Title column
 ECOLEX <- manyenviron::agreements$ECOLEX %>%
@@ -35,7 +35,7 @@ ECOLEX_MEM <- dplyr::left_join(ECOLEX_MEM, ECOLEX, by = "ecolexID")
 #Add a treatyID column
 ECOLEX_MEM$treatyID <- manypkgs::code_agreements(ECOLEX_MEM,
                                                  ECOLEX_MEM$Title,
-                                                 ECOLEX_MEM$Beg)
+                                                 ECOLEX_MEM$Begin)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::memberships)
