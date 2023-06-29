@@ -25,7 +25,7 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                      Signature = messydates::as_messydate(Date,
                                                           resequence = "mdy"),
                      Force = messydates::as_messydate(`Entry.into.force`,
-                                                      resequence = "mdy"))
+                                                      resequence = "mdy")) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(ecolexID, Title, Beg, DocType, GeogArea, Signature, Force) %>%
   dplyr::arrange(Beg)
