@@ -5,7 +5,7 @@
 
 # Stage one: Collecting data
 HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
-HEIDI$signature.date <- openxlsx::convertToDate(HEIDI$signature.date)
+HEIDI$signature.date <- openxlsx::convertToDate(HEIDI1$signature.date)
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
@@ -14,13 +14,13 @@ HEIDI$signature.date <- openxlsx::convertToDate(HEIDI$signature.date)
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
                         Signature = messydates::as_messydate(`signature.date`)) %>%
-  dplyr::mutate(Begin = Signature) %>%
+  dplyr::mutate(Beg = Signature) %>%
   dplyr::rename(heidiID = ID) %>%
-  dplyr::select(heidiID, Title, Begin, Signature) %>%
-  dplyr::arrange(Begin)
+  dplyr::select(heidiID, Title, Beg, Signature) %>%
+  dplyr::arrange(Beg)
 
 # Add treaty_ID column
-HEIDI$treatyID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Begin)
+HEIDI$treatyID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Beg)
 
 # Add Lineage column
 HEIDI$Lineage <- manypkgs::code_lineage(HEIDI$Title)
@@ -31,9 +31,9 @@ HEIDI <- dplyr::left_join(HEIDI, manyID, by = "treatyID")
 
 # Re-order the columns
 HEIDI <- HEIDI %>%
-  dplyr::select(manyID, Title, Begin, Signature,
+  dplyr::select(manyID, Title, Beg, Signature,
                 Lineage, treatyID, heidiID) %>%
-  dplyr::arrange(Begin)
+  dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.

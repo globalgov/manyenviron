@@ -25,14 +25,14 @@ IEADB <- as_tibble(IEADB)  %>%
                         Title = manypkgs::standardise_titles(`Treaty Name`),
                         Signature = messydates::as_messydate(`Signature Date`),
                         Force = messydates::as_messydate(`Date IEA entered into force`)) %>%
-  dplyr::mutate(Begin = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ieadbID, Title, Begin, DocType, AgreementType, Signature, Force) %>%
-  dplyr::mutate(Begin = messydates::as_messydate(ifelse(is.na(Begin), "9999-12-31", Begin))) %>%
-  # Add future date in cases where Begin and force are missing
+  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(ieadbID, Title, Beg, DocType, AgreementType, Signature, Force) %>%
+  dplyr::mutate(Beg = messydates::as_messydate(ifelse(is.na(Beg), "9999-12-31", Beg))) %>%
+  # Add future date in cases where beg and force are missing
   dplyr::arrange(Signature)
 
 # Add treatyID column
-IEADB$treatyID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Begin)
+IEADB$treatyID <- manypkgs::code_agreements(IEADB, IEADB$Title, IEADB$Beg)
 # Add Lineage column
 IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 
@@ -40,9 +40,9 @@ IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
    dplyr::distinct() %>%
-  dplyr::relocate(manyID, Title, Begin, DocType, AgreementType, Signature,
+  dplyr::select(Title, Beg, DocType, AgreementType, Signature,
                 Force, Lineage, treatyID, ieadbID) %>%
-  dplyr::arrange(Begin)
+  dplyr::arrange(Beg)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.

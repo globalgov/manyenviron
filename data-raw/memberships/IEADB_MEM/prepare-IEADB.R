@@ -29,15 +29,15 @@ IEADB_MEM <- as_tibble(IEADB_MEM) %>%
                 Force2, stateSignature, DocType, ieadbID) %>%
   tidyr::pivot_longer(c(Force2, Force), values_to = "Force") %>%
   dplyr::filter(!is.na(Force) & name != "Force2") %>%
-  dplyr::mutate(Begin = dplyr::coalesce(stateSignature, Rat, Force)) %>%
-  dplyr::select(stateID, Title, Begin, End, stateSignature,
+  dplyr::mutate(Beg = dplyr::coalesce(stateSignature, Rat, Force)) %>%
+  dplyr::select(stateID, Title, Beg, End, stateSignature,
                 Signature, Rat, Force, DocType, ieadbID) %>%
-  dplyr::arrange(Begin)
+  dplyr::arrange(Beg)
 
 # Add a treatyID column
 IEADB_MEM$treatyID <- manypkgs::code_agreements(IEADB_MEM,
                                                 IEADB_MEM$Title,
-                                                IEADB_MEM$Begin)
+                                                IEADB_MEM$Beg)
 
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::memberships)

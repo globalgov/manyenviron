@@ -23,13 +23,9 @@ ECOLEX <- as_tibble(ECOLEX) %>%
   manydata::transmutate(ecolexID = `EcolexID`,
                      Title = manypkgs::standardise_titles(title),
                      Signature = messydates::as_messydate(Date,
-                                                          resequence = "mdy"))
-
-messydates::as_messydate(ECOLEX[2, "Date"], resequence = "mdy")
-a <- messydates::as_messydate("Oct 15, 2016", resequence = "mdy")
-?as_messydate
+                                                          resequence = "mdy"),
                      Force = messydates::as_messydate(`Entry.into.force`,
-                                                      resequence = "mdy")
+                                                      resequence = "mdy")) %>%
   dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
   dplyr::select(ecolexID, Title, Beg, DocType, GeogArea, Signature, Force) %>%
   dplyr::arrange(Beg)
