@@ -37,7 +37,7 @@ CIESIN <- CIESIN %>%
 
 ## Rename Beg column
 CIESIN <- CIESIN %>%
-  rename("Begin" = "Beg")
+  dplyr::rename("Begin" = "Beg")
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
