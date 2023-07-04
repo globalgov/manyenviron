@@ -26,14 +26,14 @@ ECOLEX <- as_tibble(ECOLEX) %>%
                                                           resequence = "mdy"),
                      Force = messydates::as_messydate(`Entry.into.force`,
                                                       resequence = "mdy")) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(ecolexID, Title, Beg, DocType, GeogArea, Signature, Force) %>%
-  dplyr::arrange(Beg)
+  dplyr::mutate(Begin = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(ecolexID, Title, Begin, DocType, GeogArea, Signature, Force) %>%
+  dplyr::arrange(Begin)
 
 # Add treatyID column
 ECOLEX$treatyID <- manypkgs::code_agreements(ECOLEX,
                                              ECOLEX$Title,
-                                             ECOLEX$Beg)
+                                             ECOLEX$Begin)
 # Add Lineage column
 ECOLEX$Lineage <- manypkgs::code_lineage(ECOLEX$Title)
 
@@ -43,9 +43,9 @@ ECOLEX <- dplyr::left_join(ECOLEX, manyID, by = "treatyID")
 
 # Re-order the columns
 ECOLEX <- ECOLEX %>%
-  dplyr::select(manyID, Title, Beg, DocType, GeogArea, Signature,
+  dplyr::select(manyID, Title, Begin, DocType, GeogArea, Signature,
                 Force, Lineage, treatyID, ecolexID) %>%
-  dplyr::arrange(Beg)
+  dplyr::arrange(Begin)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
