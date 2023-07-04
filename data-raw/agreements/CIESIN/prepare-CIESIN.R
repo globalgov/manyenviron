@@ -14,14 +14,14 @@ CIESIN <- as_tibble(CIESIN) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`),
                      Signature = messydates::as_messydate(`Year of Agreement`),
                      Force = messydates::as_messydate(`Year of Entry into Force`)) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(Title, Beg, Signature, Force) %>%
-  dplyr::arrange(Beg)
+  dplyr::mutate(Begin = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(Title, Begin, Signature, Force) %>%
+  dplyr::arrange(Begin)
 
 # Add treatyID column
 CIESIN$treatyID <- manypkgs::code_agreements(CIESIN,
                                              CIESIN$Title,
-                                             CIESIN$Beg)
+                                             CIESIN$Begin)
 #Add Lineage column
 CIESIN$Lineage <- manypkgs::code_lineage(CIESIN$Title)
 
@@ -31,13 +31,9 @@ CIESIN <- dplyr::left_join(CIESIN, manyID, by = "treatyID")
 
 # Re-order the columns
 CIESIN <- CIESIN %>%
-  dplyr::select(manyID, Title, Beg, Signature,
+  dplyr::select(manyID, Title, Begin, Signature,
                 Force, Lineage, treatyID) %>%
-  dplyr::arrange(Beg)
-
-## Rename Beg column
-CIESIN <- CIESIN %>%
-  dplyr::rename("Begin" = "Beg")
+  dplyr::arrange(Begin)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.

@@ -6,13 +6,13 @@
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
 #' \item{IEADB: }{A dataset with 3666 observations and the following
-#' 10 variables: manyID, Title, Begin, DocType, AgreementType, Signature, Force,
-#' Lineage, treatyID, ieadbID.}
+#' 10 variables: manyID, Title, Begin, DocType, AgreementType, Signature,
+#' Force, Lineage, treatyID, ieadbID.}
 #' \item{ECOLEX: }{A dataset with 2174 observations and the following
-#' 10 variables: manyID, Title, Begin, DocType, GeogArea, Signature, Force, 
+#' 10 variables: manyID, Title, Begin, DocType, GeogArea, Signature, Force,
 #' Lineage, treatyID, ecolexID.}
-#' \item{CIESIN: }{A dataset with 662 observations and the following
-#' 7 variables: manyID, treatyID, Title, Begin, Signature, Force, Lineage.}
+#' \item{CIESIN: }{A dataset with 666 observations and the following
+#' 7 variables: manyID, Title, Begin, Signature, Force, Lineage, treatyID.}
 #' \item{HEIDI: }{A dataset with 2280 observations and the following
 #' 7 variables: manyID, Title, Begin, Signature, Lineage, treatyID, heidiID.}
 #' \item{HUGGO: }{A dataset with 3980 observations and the following
@@ -28,7 +28,6 @@
 #' action_area, linkage, accessionC, accessionP, termination_type,
 #' termination_date.}
 #' }
-
 #'
 #' @details
 #' ``` {r, echo = FALSE, warning = FALSE}
