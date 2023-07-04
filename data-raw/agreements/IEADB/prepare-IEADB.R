@@ -5,12 +5,25 @@
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
+# Add Agreement under the United Nations Convention on the Law of the Sea on
+# the conservation and sustainable use of marine biological diversity of areas
+# beyond national jurisdiction (BBNJ agreement), adopted on June 20, 2023
+bbnj <- cbind(9112, "MEA", 2023, "2023-06-23", NA,
+              paste("Agreement under the", "United Nations Convention on the",
+              "Law of the Sea on the conservation and", "sustainable use of marine",
+              "biological diversity of areas beyond national", "jurisdiction",
+              sep = " "), "TreatyText**", "Members", "Agreement",
+              "Biological Diversity Beyond National Jurisdiction", 100.000, NA,
+              NA, "Secretariat not yet identified", NA)
+colnames(bbnj) <- colnames(IEADB)
+IEADB <- rbind(IEADB, bbnj)
+
 
 # Stage two: Correcting data
 # In this stage you will want to correct the variable names and
 # formats of the 'IEADB' object until the object created
 # below (in stage three) passes all the tests.
-library(dplyr)
+
 IEADB <- as_tibble(IEADB)  %>%
   dplyr::mutate(AgreementType = dplyr::recode(`Agreement Type (level 2)`,
                                               "Agreement" = "A", "Amendment" = "E",
