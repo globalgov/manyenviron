@@ -11,7 +11,7 @@ IRD <- readxl::read_excel("data-raw/regimes/IRD/IRD.xlsx")
 # formats of the 'IRD' object until the object created
 # below (in stage three) passes all the tests.
 IRD <- as_tibble(IRD) %>%
-  manydata::transmutate(Beg = messydates::as_messydate(Formation),
+  manydata::transmutate(Begin = messydates::as_messydate(Formation),
                         End = messydates::as_messydate(as.character(Endpoint)),
                         # Watershed and Watershed2 refer to periods of
                         # fundamental change in the regime
