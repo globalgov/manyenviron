@@ -11,7 +11,13 @@ For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
 \item{IRD: }{A dataset with 92 observations and the following
-7 variables: Regime, RegimeComponent, Beg, Wat, Wat2, End, RegimeElement.}
+7 variables: Regime, RegimeComponent, Begin, Wat, Wat2, End, RegimeElement.}
+}
+}
+\source{
+\itemize{
+\item{IRD: }{
+\link{1} O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticatedtool for institutional analysis”. In: \emph{Global Environmental Politics} 6.3 (2006), pp. 121-143.}
 }
 }
 \usage{
@@ -27,7 +33,7 @@ regimes database documentation
 #> ----------------------------------------------------------------------------
 #> |    Regime     |  character  |              92|     0     |       0       |
 #> |RegimeComponent|  character  |              92|    33     |     35.87     |
-#> |      Beg      |    mdate    |              92|    36     |     39.13     |
+#> |     Begin     |    mdate    |              92|    36     |     39.13     |
 #> |      Wat      |   messydt   |              92|    34     |     36.96     |
 #> |     Wat2      |   messydt   |              92|    78     |     84.78     |
 #> |      End      |    mdate    |              92|    36     |     39.13     |
@@ -35,4 +41,28 @@ regimes database documentation
 #> ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
+\section{URL}{
+
+\itemize{
+\item{IRD: }{ \url https://direct.mit.edu/glep/article-abstract/6/3/121/14360/The-International-Regimes-Database-Designing-and}
+}
+}
+
+\section{Mapping}{
+
+\itemize{
+\item{IRD: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   Formation \tab Begin \cr
+   Endpoint \tab End \cr
+   Watershed \tab Wat \cr
+   Watershed2 \tab Wat2 \cr
+}
+
+
+}
+}
+}
+
 \keyword{datasets}

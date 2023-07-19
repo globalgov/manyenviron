@@ -10,14 +10,21 @@ following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
-\item{ECOLEX_MEM: }{A dataset with 24975 observations and the following
-10 variables: manyID, treatyID, Title, Beg, stateID, End, stateSignature, Force, Rat, ecolexID.}
+\item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
+10 variables: manyID, stateID, Title, Begin, End, stateSignature, Force, Rat,
+ecolexID, treatyID.}
 \item{IEADB_MEM: }{A dataset with 15463 observations and the following
-12 variables: manyID, treatyID, Title, Beg, stateID, End, stateSignature, Signature, Rat, Force, DocType, ieadbID.}
-\item{TFDD_MEM: }{A dataset with 1832 observations and the following
-8 variables: manyID, treatyID, Title, Beg, stateID, Signature, tfddID, Memberships.}
+12 variables: manyID, stateID, Title, Begin, End, stateSignature, Signature,
+Rat, Force, DocType, ieadbID, treatyID.}
+\item{TFDD_MEM: }{A dataset with 2118 observations and the following
+8 variables: manyID, stateID, Title, Begin, Signature, tfddID, Memberships,
+treatyID.}
 \item{HUGGO_MEM: }{A dataset with 51740 observations and the following
-31 variables: manyID, treatyID, Title, Beg, stateID, End, Signature, Force, stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term, stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments, Deposit, obsolete, ProvisionalApp, Reservation, verified, Notes, stateForce_ecolex, stateForce_iea, Consent, Acceptance, Accession.}
+31 variables: manyID, treatyID, Title, Begin, stateID, End, Signature, Force,
+stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term,
+stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments,
+Deposit, obsolete, ProvisionalApp, Reservation, verified, Notes,
+stateForce_ecolex, stateForce_iea, Consent, Acceptance, Accession.}
 }
 }
 \usage{
@@ -31,16 +38,16 @@ memberships database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |           24975|     0     |       0       |
-#> |   treatyID    |  character  |           24975|     0     |       0       |
-#> |     Title     |  character  |           24975|     0     |       0       |
-#> |      Beg      |    mdate    |           24975|   3421    |     13.7      |
-#> |    stateID    |  character  |           24975|    21     |     0.08      |
-#> |      End      |    mdate    |           24975|   24511   |     98.14     |
-#> |stateSignature |    mdate    |           24975|   15313   |     61.31     |
-#> |     Force     |    mdate    |           24975|   5783    |     23.16     |
-#> |      Rat      |    mdate    |           24975|   6993    |      28       |
-#> |   ecolexID    |  character  |           24975|     0     |       0       |
+#> |    manyID     |  character  |           25003|   3447    |     13.79     |
+#> |    stateID    |  character  |           25003|    22     |     0.09      |
+#> |     Title     |  character  |           25003|     0     |       0       |
+#> |     Begin     |    mdate    |           25003|   3447    |     13.79     |
+#> |      End      |    mdate    |           25003|   24539   |     98.14     |
+#> |stateSignature |    mdate    |           25003|   15339   |     61.35     |
+#> |     Force     |    mdate    |           25003|   5809    |     23.23     |
+#> |      Rat      |    mdate    |           25003|   7021    |     28.08     |
+#> |   ecolexID    |  character  |           25003|     0     |       0       |
+#> |   treatyID    |  character  |           25003|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -49,10 +56,9 @@ memberships database documentation
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
 #> |    manyID     |  character  |           15463|     0     |       0       |
-#> |   treatyID    |  character  |           15463|     0     |       0       |
-#> |     Title     |  character  |           15463|     0     |       0       |
-#> |      Beg      |    mdate    |           15463|     0     |       0       |
 #> |    stateID    |  character  |           15463|     0     |       0       |
+#> |     Title     |  character  |           15463|     0     |       0       |
+#> |     Begin     |    mdate    |           15463|     0     |       0       |
 #> |      End      |    mdate    |           15463|   14593   |     94.37     |
 #> |stateSignature |    mdate    |           15463|   5797    |     37.49     |
 #> |   Signature   |    mdate    |           15463|     0     |       0       |
@@ -60,6 +66,7 @@ memberships database documentation
 #> |     Force     |    mdate    |           15463|     0     |       0       |
 #> |    DocType    |  character  |           15463|     0     |       0       |
 #> |    ieadbID    |   numeric   |           15463|     0     |       0       |
+#> |   treatyID    |  character  |           15463|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -67,14 +74,14 @@ memberships database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            1832|     0     |       0       |
-#> |   treatyID    |  character  |            1832|     0     |       0       |
-#> |     Title     |  character  |            1832|     1     |     0.05      |
-#> |      Beg      |    mdate    |            1832|    102    |     5.57      |
-#> |    stateID    |  character  |            1832|     1     |     0.05      |
-#> |   Signature   |    mdate    |            1832|    102    |     5.57      |
-#> |    tfddID     |   numeric   |            1832|     1     |     0.05      |
-#> |  Memberships  |  character  |            1832|    805    |     43.94     |
+#> |    manyID     |  character  |            2118|    133    |     6.28      |
+#> |    stateID    |  character  |            2118|     2     |     0.09      |
+#> |     Title     |  character  |            2118|     2     |     0.09      |
+#> |     Begin     |    mdate    |            2118|    133    |     6.28      |
+#> |   Signature   |    mdate    |            2118|    133    |     6.28      |
+#> |    tfddID     |   numeric   |            2118|     2     |     0.09      |
+#> |  Memberships  |  character  |            2118|    843    |     39.8      |
+#> |   treatyID    |  character  |            2118|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -85,7 +92,7 @@ memberships database documentation
 #> |     manyID      |  character  |           51740|     0     |       0       |
 #> |    treatyID     |  character  |           51740|     0     |       0       |
 #> |      Title      |  character  |           51740|     0     |       0       |
-#> |       Beg       |    mdate    |           51740|    12     |     0.02      |
+#> |      Begin      |    mdate    |           51740|    12     |     0.02      |
 #> |     stateID     |  character  |           51740|     0     |       0       |
 #> |       End       |    mdate    |           51740|   39723   |     76.77     |
 #> |    Signature    |    mdate    |           51740|    14     |     0.03      |

@@ -10,28 +10,44 @@ following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
-\item{IEADB: }{A dataset with 3666 observations and the following
-10 variables: manyID, treatyID, Title, Beg, DocType, AgreementType,
-Signature, Force, Lineage, ieadbID.}
+\item{IEADB: }{A dataset with 3667 observations and the following
+10 variables: manyID, Title, Begin, DocType, AgreementType, Signature, Force,
+Lineage, treatyID, ieadbID.}
 \item{ECOLEX: }{A dataset with 2174 observations and the following
-10 variables: manyID, treatyID, Title, Beg, DocType, GeogArea, Signature,
-Force, Lineage, ecolexID.}
-\item{CIESIN: }{A dataset with 662 observations and the following
-7 variables: manyID, treatyID, Title, Beg, Signature, Force, Lineage.}
+10 variables: manyID, Title, Begin, DocType, GeogArea, Signature, Force,
+Lineage, treatyID, ecolexID.}
+\item{CIESIN: }{A dataset with 666 observations and the following
+7 variables: manyID, Title, Begin, Signature, Force, Lineage, treatyID.}
 \item{HEIDI: }{A dataset with 2280 observations and the following
-7 variables: manyID, treatyID, Title, Beg, Signature, Lineage, heidiID.}
-\item{HUGGO: }{A dataset with 4036 observations and the following
-48 variables: manyID, treatyID, Title, Beg, End, Signature, Force, url,
+7 variables: manyID, Title, Begin, Signature, Lineage, treatyID, heidiID.}
+\item{HUGGO: }{A dataset with 3980 observations and the following
+50 variables: manyID, treatyID, Title, Begin, End, Signature, Force, url,
 AgreementType, DocType, GeogArea, gengID, ieaID, ecolexID, Parties, verified,
 DocValidUntilDate, Notes, Download, MEA_type, Ambit, Region, subject_ecolex,
 subject_iea, Keywords, Lineage, Sequence, AdoptedIn, Languages, Appendices,
 Depository, DepositoryURL, Published, Website1, Website2, Secretariat,
 SecretariatURL, UNEP, Supersedes, References, EnabledBy, AmendedBy, Lit,
-Data, Coded, Abstract, TreatyText, Language.}
-\item{AIGGO: }{A dataset with 3778 observations and the following
-13 variables: manyID, treatyID, Title, Beg, End, Signature, Force,
+Data, Coded, Abstract, TreatyText, Language, Orig_noneng_title, match.}
+\item{AIGGO: }{A dataset with 3923 observations and the following
+13 variables: manyID, treatyID, Title, Begin, End, Signature, Force,
 action_area, linkage, accessionC, accessionP, termination_type,
 termination_date.}
+}
+}
+\source{
+\itemize{
+\item{IEADB: }{
+\link{1} R. B. Mitchell et al. "What we know (and could know) about international environmental agreements". In: \emph{Global Environmental Politics} 20.1 (2020), pp. 103-121.}
+\item{ECOLEX: }{
+\link{1} J. Sommer. “Global governance in forestry: a cross-national analysis”. In: \emph{International Journal ofSustainable Development & World Ecology} 27.6 (2020), pp. 481-495.}
+\item{CIESIN: }{
+\link{1} Centre for International Earth Science Information Network. In: \emph{Socioeconomic Data and Applications Center (SEDAC) Collection of Treaty Texts} (2002).}
+\item{HEIDI: }{
+\link{1} J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: \emph{Globalization and health} 15.1 (2019), pp. 1-8.}
+\item{HUGGO: }{
+\link{1} J. Hollway. "Environmental agreements for manydata". (2021).}
+\item{AIGGO: }{
+\link{1} J. Hollway. "Environmental agreements for manydata". (2021).}
 }
 }
 \usage{
@@ -45,16 +61,16 @@ agreements database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            3666|     0     |       0       |
-#> |   treatyID    |  character  |            3666|     0     |       0       |
-#> |     Title     |  character  |            3666|     0     |       0       |
-#> |      Beg      |    mdate    |            3666|     0     |       0       |
-#> |    DocType    |  character  |            3666|     0     |       0       |
-#> | AgreementType |  character  |            3666|     0     |       0       |
-#> |   Signature   |    mdate    |            3666|    65     |     1.77      |
-#> |     Force     |    mdate    |            3666|    867    |     23.65     |
-#> |    Lineage    |  character  |            3666|     0     |       0       |
-#> |    ieadbID    |  character  |            3666|     0     |       0       |
+#> |    manyID     |  character  |            3667|     0     |       0       |
+#> |     Title     |  character  |            3667|     0     |       0       |
+#> |     Begin     |    mdate    |            3667|     0     |       0       |
+#> |    DocType    |  character  |            3667|     0     |       0       |
+#> | AgreementType |  character  |            3667|     0     |       0       |
+#> |   Signature   |    mdate    |            3667|    65     |     1.77      |
+#> |     Force     |    mdate    |            3667|    868    |     23.67     |
+#> |    Lineage    |  character  |            3667|     0     |       0       |
+#> |   treatyID    |  character  |            3667|     0     |       0       |
+#> |    ieadbID    |  character  |            3667|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -63,14 +79,14 @@ agreements database documentation
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
 #> |    manyID     |  character  |            2174|     0     |       0       |
-#> |   treatyID    |  character  |            2174|     0     |       0       |
 #> |     Title     |  character  |            2174|     0     |       0       |
-#> |      Beg      |    mdate    |            2174|     0     |       0       |
+#> |     Begin     |    mdate    |            2174|     0     |       0       |
 #> |    DocType    |  character  |            2174|     0     |       0       |
 #> |   GeogArea    |  character  |            2174|    90     |     4.14      |
 #> |   Signature   |    mdate    |            2174|     0     |       0       |
 #> |     Force     |    mdate    |            2174|   1066    |     49.03     |
 #> |    Lineage    |  character  |            2174|     0     |       0       |
+#> |   treatyID    |  character  |            2174|     0     |       0       |
 #> |   ecolexID    |  character  |            2174|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
@@ -79,13 +95,13 @@ agreements database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |             662|     0     |       0       |
-#> |   treatyID    |  character  |             662|     0     |       0       |
-#> |     Title     |  character  |             662|     0     |       0       |
-#> |      Beg      |    mdate    |             662|     0     |       0       |
-#> |   Signature   |    mdate    |             662|     0     |       0       |
-#> |     Force     |    mdate    |             662|     0     |       0       |
-#> |    Lineage    |  character  |             662|     0     |       0       |
+#> |    manyID     |  character  |             666|     0     |       0       |
+#> |     Title     |  character  |             666|     0     |       0       |
+#> |     Begin     |    mdate    |             666|     0     |       0       |
+#> |   Signature   |    mdate    |             666|     0     |       0       |
+#> |     Force     |    mdate    |             666|     0     |       0       |
+#> |    Lineage    |  character  |             666|     0     |       0       |
+#> |   treatyID    |  character  |             666|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -93,12 +109,12 @@ agreements database documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            2280|     0     |       0       |
-#> |   treatyID    |  character  |            2280|     0     |       0       |
+#> |    manyID     |  character  |            2280|    27     |     1.18      |
 #> |     Title     |  character  |            2280|     0     |       0       |
-#> |      Beg      |    mdate    |            2280|    27     |     1.18      |
+#> |     Begin     |    mdate    |            2280|    27     |     1.18      |
 #> |   Signature   |    mdate    |            2280|    27     |     1.18      |
 #> |    Lineage    |  character  |            2280|     0     |       0       |
+#> |   treatyID    |  character  |            2280|     0     |       0       |
 #> |    heidiID    |   numeric   |            2280|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
@@ -110,10 +126,10 @@ agreements database documentation
 #> |     manyID      |  character  |            3980|     0     |       0       |
 #> |    treatyID     |  character  |            3980|     0     |       0       |
 #> |      Title      |  character  |            3980|     0     |       0       |
-#> |       Beg       |    mdate    |            3980|    57     |     1.43      |
-#> |       End       |    mdate    |            3980|   3291    |     82.69     |
+#> |      Begin      |    mdate    |            3980|    57     |     1.43      |
+#> |       End       |    mdate    |            3980|   3047    |     76.56     |
 #> |    Signature    |    mdate    |            3980|    57     |     1.43      |
-#> |      Force      |    mdate    |            3980|   1616    |     40.6      |
+#> |      Force      |    mdate    |            3980|   1582    |     39.75     |
 #> |       url       |  character  |            3980|   2688    |     67.54     |
 #> |  AgreementType  |  character  |            3980|   1279    |     32.14     |
 #> |     DocType     |  character  |            3980|   1243    |     31.23     |
@@ -164,20 +180,83 @@ agreements database documentation
 #> -----------------------------------------------------------------------------
 #> |  Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> -----------------------------------------------------------------------------
-#> |     manyID     |  character  |            3778|     0     |       0       |
-#> |    treatyID    |  character  |            3778|     0     |       0       |
-#> |     Title      |  character  |            3778|     0     |       0       |
-#> |      Beg       |    mdate    |            3778|    47     |     1.24      |
-#> |      End       |    mdate    |            3778|   3112    |     82.37     |
-#> |   Signature    |    mdate    |            3778|    47     |     1.24      |
-#> |     Force      |    mdate    |            3778|   1646    |     43.57     |
-#> |  action_area   |  character  |            3778|    415    |     10.98     |
-#> |    linkage     |  character  |            3778|   2401    |     63.55     |
-#> |   accessionC   |  character  |            3778|    610    |     16.15     |
-#> |   accessionP   |  character  |            3778|   3516    |     93.07     |
-#> |termination_type|  character  |            3778|   3375    |     89.33     |
-#> |termination_date|  character  |            3778|   3685    |     97.54     |
+#> |     manyID     |  character  |            3923|     0     |       0       |
+#> |    treatyID    |  character  |            3923|     0     |       0       |
+#> |     Title      |  character  |            3923|     0     |       0       |
+#> |     Begin      |    mdate    |            3923|    47     |      1.2      |
+#> |      End       |    mdate    |            3923|   2998    |     76.42     |
+#> |   Signature    |    mdate    |            3923|    47     |      1.2      |
+#> |     Force      |    mdate    |            3923|   1548    |     39.46     |
+#> |  action_area   |  character  |            3923|    452    |     11.52     |
+#> |    linkage     |  character  |            3923|   3283    |     83.69     |
+#> |   accessionC   |  character  |            3923|    708    |     18.05     |
+#> |   accessionP   |  character  |            3923|   3923    |      100      |
+#> |termination_type|  character  |            3923|   3828    |     97.58     |
+#> |termination_date|  character  |            3923|   3828    |     97.58     |
 #> -----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
+\section{URL}{
+
+\itemize{
+\item{IEADB: }{ \url https://iea.uoregon.edu/base-agreement-list}
+\item{ECOLEX: }{ \url https://www.ecolex.org/result/?type=treaty}
+\item{CIESIN: }{ \url https://sedac.ciesin.columbia.edu/entri/}
+\item{HEIDI: }{ \url https://www.chaire-epi.ulaval.ca/en/data/heidi}
+\item{HUGGO: }{ \url https://github.com/globalgov/manyenviron}
+\item{AIGGO: }{ \url https://github.com/globalgov/manyenviron}
+}
+}
+
+\section{Mapping}{
+
+\itemize{
+\item{IEADB: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   'IEA# (click for add'l info)' \tab ieadbID \cr
+   'Treaty Name' \tab Title \cr
+   'Signature Date' \tab Signature \cr
+   'Date IEA entered into force' \tab Force \cr
+   'Agreement Type (level 2)' \tab AgreementType \cr
+   Inclusion \tab DocType \cr
+}
+
+
+}
+\item{ECOLEX: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   EcolexID \tab ecolexID \cr
+   title \tab Title \cr
+   Date \tab Signature \cr
+   'Entry.into.Force' \tab Force \cr
+   Document.Type \tab DocType \cr
+   Field.of.application \tab GeogArea \cr
+}
+
+
+}
+\item{CIESIN: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   'Treaty Title' \tab Title \cr
+   'Year of Agreement' \tab Signature \cr
+   'Year of Entry into Force' \tab Force \cr
+}
+
+
+}
+\item{HEIDI: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   ID \tab heidiID \cr
+   'Name.of.the.agreement' \tab Title \cr
+   signature.date \tab Signature \cr
+}
+
+
+}
+}
+
 \keyword{datasets}
