@@ -3,9 +3,9 @@
 \docType{data}
 \name{agreements}
 \alias{agreements}
-\title{agreements database documentation}
+\title{agreements datacube documentation}
 \format{
-The agreements database is a list that contains the
+The agreements datacube is a list that contains the
 following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
@@ -38,7 +38,7 @@ termination_date.}
 agreements
 }
 \description{
-agreements database documentation
+agreements datacube documentation
 }
 \details{
 \if{html}{\out{<div class="sourceCode">}}\preformatted{#> $IEADB
