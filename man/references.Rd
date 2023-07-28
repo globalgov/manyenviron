@@ -3,9 +3,9 @@
 \docType{data}
 \name{references}
 \alias{references}
-\title{references datacube documentation}
+\title{references database documentation}
 \format{
-The references datacube is a list that contains the
+The references database is a list that contains the
 following 1 datasets: ECOLEX_REF.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
@@ -18,7 +18,7 @@ please use the \code{data_source()} and \code{data_contrast()} functions.
 references
 }
 \description{
-references datacube documentation
+references database documentation
 }
 \details{
 \if{html}{\out{<div class="sourceCode">}}\preformatted{#> $ECOLEX_REF

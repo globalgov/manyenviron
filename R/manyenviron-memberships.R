@@ -1,6 +1,6 @@
-#' memberships datacube documentation
+#' memberships database documentation
 #'
-#' @format The memberships datacube is a list that contains the
+#' @format The memberships database is a list that contains the
 #' following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
