@@ -1,6 +1,6 @@
-#' agreements database documentation
+#' agreements datacube documentation
 #'
-#' @format The agreements database is a list that contains the
+#' @format The agreements datacube is a list that contains the
 #' following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.

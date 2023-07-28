@@ -1,7 +1,7 @@
 # IRD Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 IRD <- readxl::read_excel("data-raw/regimes/IRD/IRD.xlsx")
@@ -42,5 +42,5 @@ IRD <- as_tibble(IRD) %>%
 # that you're including in the package.
 # To add a template of .bib file to package,
 # run `manypkgs::add_bib(regimes, IRD)`.
-manypkgs::export_data(IRD, database = "regimes",
+manypkgs::export_data(IRD, datacube = "regimes",
                      URL = "https://direct.mit.edu/glep/article-abstract/6/3/121/14360/The-International-Regimes-Database-Designing-and")

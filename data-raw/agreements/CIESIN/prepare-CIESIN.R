@@ -1,7 +1,7 @@
 # CIESIN Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
@@ -43,7 +43,7 @@ CIESIN <- CIESIN %>%
 # Next run the following line to make CIESIN available
 # within the package.
 manypkgs::export_data(CIESIN,
-                      database = "agreements",
+                      datacube = "agreements",
                       URL = "https://sedac.ciesin.columbia.edu/entri/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

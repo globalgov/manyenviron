@@ -1,7 +1,7 @@
 # HEIDI Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
@@ -42,7 +42,7 @@ HEIDI <- HEIDI %>%
 # Stage three: Connecting data
 # Next run the following line to make IEADB available
 # within the package.
-manypkgs::export_data(HEIDI, database = "agreements",
+manypkgs::export_data(HEIDI, datacube = "agreements",
                       URL = "https://www.chaire-epi.ulaval.ca/en/data/heidi")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

@@ -1,7 +1,7 @@
 # ECOLEX_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 ECOLEX_MEM <- load("data-raw/memberships/ECOLEX_MEM/ecomembs.RData")
@@ -52,7 +52,7 @@ ECOLEX_MEM <- dplyr::relocate(ECOLEX_MEM,
 # Stage three: Connecting data
 # Next run the following line to make ECOLEX_MEM available
 # within the package.
-manypkgs::export_data(ECOLEX_MEM, database = "memberships",
+manypkgs::export_data(ECOLEX_MEM, datacube = "memberships",
                       URL = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

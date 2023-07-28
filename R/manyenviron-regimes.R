@@ -1,6 +1,6 @@
-#' regimes database documentation
+#' regimes datacube documentation
 #'
-#' @format The regimes database is a list that contains the
+#' @format The regimes datacube is a list that contains the
 #' following 1 datasets: IRD.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.

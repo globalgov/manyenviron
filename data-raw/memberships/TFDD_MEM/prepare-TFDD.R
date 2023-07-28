@@ -1,7 +1,7 @@
 # TFDD_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
@@ -42,7 +42,7 @@ TFDD_MEM <- dplyr::relocate(TFDD_MEM, manyID)
 # Next run the following line to make TFDD_MEM available
 # within the package.
 manypkgs::export_data(TFDD_MEM,
-                      database = "memberships",
+                      datacube = "memberships",
                       URL = "https://transboundarywaters.science.oregonstate.edu/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

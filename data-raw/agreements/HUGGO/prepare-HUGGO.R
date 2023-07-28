@@ -1,7 +1,7 @@
 # HUGGO Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 HUGGO1 <- readr::read_csv("data-raw/agreements/HUGGO/EnvGov Nodes-Table 1 VERS2.csv")
@@ -994,7 +994,7 @@ HUGGO <- HUGGO %>%
 # Stage six: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
-manypkgs::export_data(HUGGO, database = "agreements",
+manypkgs::export_data(HUGGO, datacube = "agreements",
                       URL = "Hand-coded data by the GGO team")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

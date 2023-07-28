@@ -1,7 +1,7 @@
 # IEA_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
@@ -53,7 +53,7 @@ IEADB_MEM <- dplyr::left_join(IEADB_MEM, manyID, by = "treatyID") %>%
 # Next run the following line to make IEA_MEM available
 # within the package.
 manypkgs::export_data(IEADB_MEM,
-                      database = "memberships",
+                      datacube = "memberships",
                       URL = "https://iea.uoregon.edu/country-members")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

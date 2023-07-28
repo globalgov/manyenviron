@@ -1,7 +1,7 @@
 # AIGGO Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Start with HUGGO dataset
 AIGGO <- manyenviron::agreements$HUGGO
@@ -41,7 +41,7 @@ AIGGO <- AIGGO %>%
   dplyr::distinct()
 
 # Stage three: Connecting data
-manypkgs::export_data(AIGGO, database = "agreements",
+manypkgs::export_data(AIGGO, datacube = "agreements",
                       URL = "Programatically coded data by the GGO team")
 
 # This function also does two additional things.

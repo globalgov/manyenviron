@@ -1,7 +1,7 @@
 # IEADB Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")
@@ -64,7 +64,7 @@ IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
 # Stage three: Connecting data
 # Next run the following line to make IEADB available
 # within the package.
-manypkgs::export_data(IEADB, database = "agreements",
+manypkgs::export_data(IEADB, datacube = "agreements",
                       URL = "https://iea.uoregon.edu/base-agreement-list")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

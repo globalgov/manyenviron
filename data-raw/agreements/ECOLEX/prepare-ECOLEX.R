@@ -1,7 +1,7 @@
 # ECOLEX Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 load("data-raw/agreements/ECOLEX/ecoagree.RData")
@@ -55,7 +55,7 @@ ECOLEX <- ECOLEX %>%
 # Next run the following line to make ECOLEX available
 # within the package.
 manypkgs::export_data(ECOLEX,
-                      database = "agreements",
+                      datacube = "agreements",
                       URL = "https://www.ecolex.org/result/?type=treaty")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
