@@ -1,7 +1,7 @@
 #' agreements datacube documentation
 #'
 #' @format The agreements datacube is a list that contains the
-#' following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
+#' following 7 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO, IRD.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
 #'\describe{
@@ -27,6 +27,9 @@
 #' 13 variables: manyID, treatyID, Title, Begin, End, Signature, Force,
 #' action_area, linkage, accessionC, accessionP, termination_type,
 #' termination_date.}
+#' \item{IRD: }{A dataset with 92 observations and the following
+#' 9 variables: manyID, treatyID, Title, Begin, RegimeComponent, Wat, Wat2, End,
+#' RegimeElement.}
 #' }
 #' @source
 #'\itemize{
@@ -42,6 +45,8 @@
 #' [1] J. Hollway. "Environmental agreements for manydata". (2021).}
 #' \item{AIGGO: }{
 #' [1] J. Hollway. "Environmental agreements for manydata". (2021).}
+#' \item{IRD: }{
+#' [1] O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: _Global Environmental Politics_ 6.3 (2006), pp. 121-143.}
 #' }
 #' @section URL:
 #'\itemize{
@@ -99,6 +104,19 @@
 #' | 'Name.of.the.agreement' | Title |
 #' | signature.date | Signature |
 #' 
+#' }
+#' \item{IRD: }{
+#' Variable Mapping
+#'
+#' |  *from*  | *to*
+#' |:------------:|:------------:|
+#' | Regime | Title |
+#' | Formation | Begin |
+#' | Endpoint | End |
+#' | Watershed | Wat |
+#' | Watershed2 | Wat2 |
+#' 
+#' }
 #' }
 #' @md
 #' @details

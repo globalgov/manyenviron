@@ -6,7 +6,7 @@
 \title{agreements datacube documentation}
 \format{
 The agreements datacube is a list that contains the
-following 6 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO.
+following 7 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO, IRD.
 For more information and references to each of the datasets used,
 please use the \code{data_source()} and \code{data_contrast()} functions.
 \describe{
@@ -32,6 +32,9 @@ Data, Coded, Abstract, TreatyText, Language, Orig_noneng_title, match.}
 13 variables: manyID, treatyID, Title, Begin, End, Signature, Force,
 action_area, linkage, accessionC, accessionP, termination_type,
 termination_date.}
+\item{IRD: }{A dataset with 92 observations and the following
+9 variables: manyID, treatyID, Title, Begin, RegimeComponent, Wat, Wat2, End,
+RegimeElement.}
 }
 }
 \source{
@@ -48,6 +51,8 @@ termination_date.}
 \link{1} J. Hollway. "Environmental agreements for manydata". (2021).}
 \item{AIGGO: }{
 \link{1} J. Hollway. "Environmental agreements for manydata". (2021).}
+\item{IRD: }{
+\link{1} O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: \emph{Global Environmental Politics} 6.3 (2006), pp. 121-143.}
 }
 }
 \usage{
@@ -62,6 +67,7 @@ agreements datacube documentation
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
 #> |    manyID     |  character  |            3667|     0     |       0       |
+#> |   treatyID    |  character  |            3667|     0     |       0       |
 #> |     Title     |  character  |            3667|     0     |       0       |
 #> |     Begin     |    mdate    |            3667|     0     |       0       |
 #> |    DocType    |  character  |            3667|     0     |       0       |
@@ -69,7 +75,6 @@ agreements datacube documentation
 #> |   Signature   |    mdate    |            3667|    65     |     1.77      |
 #> |     Force     |    mdate    |            3667|    868    |     23.67     |
 #> |    Lineage    |  character  |            3667|     0     |       0       |
-#> |   treatyID    |  character  |            3667|     0     |       0       |
 #> |    ieadbID    |  character  |            3667|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
@@ -79,6 +84,7 @@ agreements datacube documentation
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
 #> |    manyID     |  character  |            2174|     0     |       0       |
+#> |   treatyID    |  character  |            2174|     0     |       0       |
 #> |     Title     |  character  |            2174|     0     |       0       |
 #> |     Begin     |    mdate    |            2174|     0     |       0       |
 #> |    DocType    |  character  |            2174|     0     |       0       |
@@ -86,7 +92,6 @@ agreements datacube documentation
 #> |   Signature   |    mdate    |            2174|     0     |       0       |
 #> |     Force     |    mdate    |            2174|   1066    |     49.03     |
 #> |    Lineage    |  character  |            2174|     0     |       0       |
-#> |   treatyID    |  character  |            2174|     0     |       0       |
 #> |   ecolexID    |  character  |            2174|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
@@ -95,13 +100,13 @@ agreements datacube documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |             666|     0     |       0       |
-#> |     Title     |  character  |             666|     0     |       0       |
-#> |     Begin     |    mdate    |             666|     0     |       0       |
-#> |   Signature   |    mdate    |             666|     0     |       0       |
-#> |     Force     |    mdate    |             666|     0     |       0       |
-#> |    Lineage    |  character  |             666|     0     |       0       |
-#> |   treatyID    |  character  |             666|     0     |       0       |
+#> |    manyID     |  character  |             662|     0     |       0       |
+#> |   treatyID    |  character  |             662|     0     |       0       |
+#> |     Title     |  character  |             662|     0     |       0       |
+#> |     Begin     |    mdate    |             662|     0     |       0       |
+#> |   Signature   |    mdate    |             662|     0     |       0       |
+#> |     Force     |    mdate    |             662|     0     |       0       |
+#> |    Lineage    |  character  |             662|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -109,12 +114,12 @@ agreements datacube documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            2280|    27     |     1.18      |
+#> |    manyID     |  character  |            2280|     0     |       0       |
+#> |   treatyID    |  character  |            2280|     0     |       0       |
 #> |     Title     |  character  |            2280|     0     |       0       |
 #> |     Begin     |    mdate    |            2280|    27     |     1.18      |
 #> |   Signature   |    mdate    |            2280|    27     |     1.18      |
 #> |    Lineage    |  character  |            2280|     0     |       0       |
-#> |   treatyID    |  character  |            2280|     0     |       0       |
 #> |    heidiID    |   numeric   |            2280|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
@@ -194,6 +199,22 @@ agreements datacube documentation
 #> |termination_type|  character  |            3923|   3828    |     97.58     |
 #> |termination_date|  character  |            3923|   3828    |     97.58     |
 #> -----------------------------------------------------------------------------
+#> 
+#> 
+#> $IRD
+#> ----------------------------------------------------------------------------
+#> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
+#> ----------------------------------------------------------------------------
+#> |    manyID     |  character  |              92|     0     |       0       |
+#> |   treatyID    |  character  |              92|     0     |       0       |
+#> |     Title     |  character  |              92|     0     |       0       |
+#> |     Begin     |    mdate    |              92|    36     |     39.13     |
+#> |RegimeComponent|  character  |              92|    33     |     35.87     |
+#> |      Wat      |    mdate    |              92|    34     |     36.96     |
+#> |     Wat2      |    mdate    |              92|    78     |     84.78     |
+#> |      End      |    mdate    |              92|    36     |     39.13     |
+#> | RegimeElement |  character  |              92|     0     |       0       |
+#> ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
 \section{URL}{
@@ -256,6 +277,19 @@ Variable Mapping\tabular{cc}{
 }
 
 
+}
+\item{IRD: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   Regime \tab Title \cr
+   Formation \tab Begin \cr
+   Endpoint \tab End \cr
+   Watershed \tab Wat \cr
+   Watershed2 \tab Wat2 \cr
+}
+
+
+}
 }
 }
 
