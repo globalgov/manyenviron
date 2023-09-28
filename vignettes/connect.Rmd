@@ -30,16 +30,15 @@ For a quick overview of the database and dataset in `{manyenviron}`, we can use 
 
 ```{r, eval=FALSE}
 library(manydata)
-manydata::data_contrast("manyenviron", "agreements", "IEADB")
-manydata::data_contrast("manyenviron", "memberships")
+manydata::compare_dimensions("manyenviron", "agreements")
+manydata::compare_dimensions("manyenviron", "memberships")
 ```
 
 To view the bibliographic references for a dataset, a database, or the whole package, we can also use `code_source()` from `{manydata}`.
 
 ```{r, eval=FALSE}
-manydata::data_source("manyenviron", "agreements", "IEADB")
-manydata::data_source("manyenviron", "memberships")
-manydata::data_source("manyenviron")
+manydata::call_sources("manyenviron", "agreements", "IEADB")
+manydata::call_sources("manyenviron", "memberships")
 ```
 
 ## Connecting Environmental Treaties
@@ -56,8 +55,8 @@ on the `{manypkgs}` website.
 
 Below are two examples of how to visualise treaty linkages for the references and the
 memberships databases in `{manyenviron}`.
-We use `{migraph}` to create the network plots, more information about the package can be found
-[here](https://snlab-ch.github.io/migraph/).
+We use `{manynet}` to create the network plots, more information about the package can be found
+[here](https://snlab-ch.github.io/manynet/).
 
 ### Visualising How Agreements Connect by References
 
@@ -66,7 +65,7 @@ The graph below illustrates a sample of earliest 25 treaties from the references
 ```{r lineage, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 library(dplyr)
 library(ggplot2)
-library(migraph)
+library(manynet)
 library(stringr)
 # Get dataset
 references <- manyenviron::references$ECOLEX_REF %>%
@@ -75,8 +74,8 @@ references <- manyenviron::references$ECOLEX_REF %>%
   dplyr::filter(RefType == "Cites") %>%
   dplyr::arrange(year)
 
-# Plot with migraph
-migraph::gglineage(references[1:25, c(1, 2, 3)]) +
+# Plot with manynet
+manynet::autographr(references[1:25, c(1, 2, 3)]) +
   labs(title = "Treaty Lineage of Selected Agreements",
        caption = "Source: manyenviron") +
   theme(plot.title = element_text(family = "sans",
@@ -104,9 +103,9 @@ manyenviron::agreements$ECOLEX %>%
   dplyr::rename(to = treatyID2,
                 from = Title) %>%
   dplyr::select(to, from, RefType) %>%
-  migraph::as_tidygraph() %>%
-  migraph::activate(edges) %>%
-  migraph::autographr(edge_color = "RefType")
+  manynet::as_tidygraph() %>%
+  manynet::activate(edges) %>%
+  manynet::autographr(edge_color = "RefType")
 ```
 
 ### Visualising How Agreements Connect by Country Membership
@@ -121,23 +120,21 @@ manyenviron::memberships$IEADB_MEM %>%
   dplyr::select(treatyID, stateID, year) %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
-  migraph::as_tidygraph() %>%
-  migraph::activate(nodes) %>%
+  manynet::as_tidygraph() %>%
+  manynet::activate(nodes) %>%
   dplyr::mutate(color = ifelse(grepl("_", name), 1, 0),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
-  migraph::to_undirected() %>%
-  migraph::autographr(node_color = "color", node_size = "size",
+  manynet::to_undirected() %>%
+  manynet::autographr(node_color = "color", node_size = "size",
                       node_shape = "shape")
 ```
 
 ### Extra: dynamic visualisation
 
-For events or panel network data, `{migraph}` allows users to visualise how networks evolve over time as animations.
+For events or panel network data, `{manynet}` allows users to visualise how networks evolve over time as animations.
 
 ```{r dynamic, eval=FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-# Install the development version of migraph, for now
-remotes::install_github("snlab-ch/migraph", ref = "develop")
 # Subset and plot data
 manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
@@ -145,13 +142,13 @@ manyenviron::memberships$IEADB_MEM %>%
   dplyr::select(treatyID, stateID, year) %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
-  migraph::as_tidygraph() %>%
-  migraph::activate(nodes) %>%
+  manynet::as_tidygraph() %>%
+  manynet::activate(nodes) %>%
   dplyr::mutate(color = ifelse(grepl("_", name), "blue", "red"),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
-  migraph::to_waves(attribute = "year") %>% 
-  migraph::autographd(delete.vertices = TRUE, node_color = "color",
+  manynet::to_waves(attribute = "year") %>% 
+  manynet::autographd(keep_isolates = FALSE, node_color = "color",
                       node_size = "size", node_shape = "shape")
 ```
  
