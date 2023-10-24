@@ -34,28 +34,48 @@
 #' @source
 #'\itemize{
 #' \item{IEADB: }{
-#' [1] R. B. Mitchell et al. "What we know (and could know) about international environmental agreements". In: _Global Environmental Politics_ 20.1 (2020), pp. 103-121.}
+#' R. B. Mitchell et al. "What we know (and could know) about international environmental agreements". In: _Global Environmental Politics_ 20.1 (2020), pp. 103-121.
+#' }
 #' \item{ECOLEX: }{
-#' [1] J. Sommer. “Global governance in forestry: a cross-national analysis”. In: _International Journal ofSustainable Development & World Ecology_ 27.6 (2020), pp. 481-495.}
+#' J. Sommer. “Global governance in forestry: a cross-national analysis”. In: _International Journal ofSustainable Development & World Ecology_ 27.6 (2020), pp. 481-495.
+#' }
 #' \item{CIESIN: }{
-#' [1] Centre for International Earth Science Information Network. In: _Socioeconomic Data and Applications Center (SEDAC) Collection of Treaty Texts_ (2002).}
+#' Centre for International Earth Science Information Network. In: _Socioeconomic Data and Applications Center (SEDAC) Collection of Treaty Texts_ (2002).
+#' }
 #' \item{HEIDI: }{
-#' [1] J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: _Globalization and health_ 15.1 (2019), pp. 1-8.}
+#' J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: _Globalization and health_ 15.1 (2019), pp. 1-8.
+#' }
 #' \item{HUGGO: }{
-#' [1] J. Hollway. "Environmental agreements for manydata". (2021).}
+#' J. Hollway. "Environmental agreements for manydata". (2021).}
 #' \item{AIGGO: }{
-#' [1] J. Hollway. "Environmental agreements for manydata". (2021).}
+#' J. Hollway. "Environmental agreements for manydata". (2021).}
 #' \item{IRD: }{
-#' [1] O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: _Global Environmental Politics_ 6.3 (2006), pp. 121-143.}
+#' O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: _Global Environmental Politics_ 6.3 (2006), pp. 121-143.
+#' }
 #' }
 #' @section URL:
 #'\itemize{
-#' \item{IEADB: }{ \url https://iea.uoregon.edu/base-agreement-list}
-#' \item{ECOLEX: }{ \url https://www.ecolex.org/result/?type=treaty}
-#' \item{CIESIN: }{ \url https://sedac.ciesin.columbia.edu/entri/}
-#' \item{HEIDI: }{ \url https://www.chaire-epi.ulaval.ca/en/data/heidi}
-#' \item{HUGGO: }{ \url https://github.com/globalgov/manyenviron}
-#' \item{AIGGO: }{ \url https://github.com/globalgov/manyenviron}
+#' \item{IEADB: }{
+#' \url https://iea.uoregon.edu/base-agreement-list
+#' }
+#' \item{ECOLEX: }{
+#' \url https://www.ecolex.org/result/?type=treaty
+#' }
+#' \item{CIESIN: }{
+#' \url https://sedac.ciesin.columbia.edu/entri/
+#' }
+#' \item{HEIDI: }{
+#' \url https://www.chaire-epi.ulaval.ca/en/data/heidi
+#' }
+#' \item{HUGGO: }{
+#' \url https://github.com/globalgov/manyenviron
+#' }
+#' \item{AIGGO: }{
+#' \url https://github.com/globalgov/manyenviron
+#' }
+#' \item{IRD: }{
+#' \url https://iea.uoregon.edu/ird
+#' }
 #' }
 #' @section Mapping:
 #'\itemize{
@@ -104,6 +124,21 @@
 #' | 'Name.of.the.agreement' | Title |
 #' | signature.date | Signature |
 #' 
+#' }
+#' \item{HUGGO: }{
+#' Variable Mapping
+#'
+#' |  *from*  | *to*
+#' |:------------:|:------------:|
+#' | NA | NA |
+#' 
+#' }
+#' \item{AIGGO: }{
+#' Variable Mapping
+#'
+#' |  *from*  | *to*
+#' |:------------:|:------------:|
+#' | NA | NA |
 #' }
 #' \item{IRD: }{
 #' Variable Mapping
