@@ -4,7 +4,7 @@
 #' following 7 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO, IRD.
 #' For more information and references to each of the datasets used,
 #' please use the `data_source()` and `data_contrast()` functions.
-#'\describe{
+#' \describe{
 #' \item{IEADB: }{A dataset with 3667 observations and the following
 #' 10 variables: manyID, Title, Begin, DocType, AgreementType, Signature, Force,
 #' Lineage, treatyID, ieadbID.}
@@ -32,7 +32,7 @@
 #' RegimeElement.}
 #' }
 #' @source
-#'\itemize{
+#' \itemize{
 #' \item{IEADB: }{
 #' R. B. Mitchell et al. "What we know (and could know) about international environmental agreements". In: _Global Environmental Politics_ 20.1 (2020), pp. 103-121.
 #' }
@@ -46,39 +46,41 @@
 #' J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: _Globalization and health_ 15.1 (2019), pp. 1-8.
 #' }
 #' \item{HUGGO: }{
-#' J. Hollway. "Environmental agreements for manydata". (2021).}
+#' J. Hollway. "Environmental agreements for manydata". (2021).
+#' }
 #' \item{AIGGO: }{
-#' J. Hollway. "Environmental agreements for manydata". (2021).}
+#' J. Hollway. "Environmental agreements for manydata". (2021).
+#' }
 #' \item{IRD: }{
 #' O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: _Global Environmental Politics_ 6.3 (2006), pp. 121-143.
 #' }
 #' }
 #' @section URL:
-#'\itemize{
+#' \itemize{
 #' \item{IEADB: }{
-#' \url https://iea.uoregon.edu/base-agreement-list
+#' \url{https://iea.uoregon.edu/base-agreement-list}
 #' }
 #' \item{ECOLEX: }{
-#' \url https://www.ecolex.org/result/?type=treaty
+#' \url{https://www.ecolex.org/result/?type=treaty}
 #' }
 #' \item{CIESIN: }{
-#' \url https://sedac.ciesin.columbia.edu/entri/
+#' \url{https://sedac.ciesin.columbia.edu/entri/}
 #' }
 #' \item{HEIDI: }{
-#' \url https://www.chaire-epi.ulaval.ca/en/data/heidi
+#' \url{https://www.chaire-epi.ulaval.ca/en/data/heidi}
 #' }
 #' \item{HUGGO: }{
-#' \url https://github.com/globalgov/manyenviron
+#' \url{https://github.com/globalgov/manyenviron}
 #' }
 #' \item{AIGGO: }{
-#' \url https://github.com/globalgov/manyenviron
+#' \url{https://github.com/globalgov/manyenviron}
 #' }
 #' \item{IRD: }{
-#' \url https://iea.uoregon.edu/ird
+#' \url{https://iea.uoregon.edu/ird}
 #' }
 #' }
 #' @section Mapping:
-#'\itemize{
+#' \itemize{
 #' \item{IEADB: }{
 #' Variable Mapping
 #'

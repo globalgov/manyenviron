@@ -52,9 +52,11 @@ Centre for International Earth Science Information Network. In: \emph{Socioecono
 J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: \emph{Globalization and health} 15.1 (2019), pp. 1-8.
 }
 \item{HUGGO: }{
-J. Hollway. "Environmental agreements for manydata". (2021).}
+J. Hollway. "Environmental agreements for manydata". (2021).
+}
 \item{AIGGO: }{
-J. Hollway. "Environmental agreements for manydata". (2021).}
+J. Hollway. "Environmental agreements for manydata". (2021).
+}
 \item{IRD: }{
 O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: \emph{Global Environmental Politics} 6.3 (2006), pp. 121-143.
 }
@@ -226,25 +228,25 @@ agreements datacube documentation
 
 \itemize{
 \item{IEADB: }{
-\url https://iea.uoregon.edu/base-agreement-list
+\url{https://iea.uoregon.edu/base-agreement-list}
 }
 \item{ECOLEX: }{
-\url https://www.ecolex.org/result/?type=treaty
+\url{https://www.ecolex.org/result/?type=treaty}
 }
 \item{CIESIN: }{
-\url https://sedac.ciesin.columbia.edu/entri/
+\url{https://sedac.ciesin.columbia.edu/entri/}
 }
 \item{HEIDI: }{
-\url https://www.chaire-epi.ulaval.ca/en/data/heidi
+\url{https://www.chaire-epi.ulaval.ca/en/data/heidi}
 }
 \item{HUGGO: }{
-\url https://github.com/globalgov/manyenviron
+\url{https://github.com/globalgov/manyenviron}
 }
 \item{AIGGO: }{
-\url https://github.com/globalgov/manyenviron
+\url{https://github.com/globalgov/manyenviron}
 }
 \item{IRD: }{
-\url https://iea.uoregon.edu/ird
+\url{https://iea.uoregon.edu/ird}
 }
 }
 }
