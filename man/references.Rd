@@ -17,7 +17,7 @@ please use the \code{data_source()} and \code{data_contrast()} functions.
 \source{
 \itemize{
 \item{ECOLEX_REF: }{
-\link{1} R. E. Kim and B. Mackey. “International environmental law as a complex adaptive system”. In: \emph{International Environmental Agreements: Politics, Law and Economics} 14.1 (2014), pp. 5-24.}
+R. E. Kim and B. Mackey. “International environmental law as a complex adaptive system”. In: \emph{International Environmental Agreements: Politics, Law and Economics} 14.1 (2014), pp. 5-24.}
 }
 }
 \usage{
@@ -40,7 +40,7 @@ references datacube documentation
 \section{URL}{
 
 \itemize{
-\item{ECOLEX_REF: }{ \url NA}
+\item{ECOLEX_REF: }{NA}
 }
 }
 
@@ -50,7 +50,7 @@ references datacube documentation
 \item{ECOLEX_REF: }{
 Variable Mapping\tabular{cc}{
    \emph{from} \tab \emph{to} \cr
-   NA \tab  \cr
+   NA \tab NA \cr
 }
 
 

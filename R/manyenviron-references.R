@@ -9,22 +9,22 @@
 #' 3 variables: treatyID1, treatyID2, RefType.}
 #' }
 #' @source
-#'\itemize{
+#' \itemize{
 #' \item{ECOLEX_REF: }{
-#' [1] R. E. Kim and B. Mackey. “International environmental law as a complex adaptive system”. In: _International Environmental Agreements: Politics, Law and Economics_ 14.1 (2014), pp. 5-24.}
+#' R. E. Kim and B. Mackey. “International environmental law as a complex adaptive system”. In: _International Environmental Agreements: Politics, Law and Economics_ 14.1 (2014), pp. 5-24.}
 #' }
 #' @section URL:
-#'\itemize{
-#' \item{ECOLEX_REF: }{ \url NA}
+#' \itemize{
+#' \item{ECOLEX_REF: }{NA}
 #' }
 #' @section Mapping:
-#'\itemize{
+#' \itemize{
 #' \item{ECOLEX_REF: }{
 #' Variable Mapping
-#'
+#' 
 #' |  *from*  | *to*
 #' |:------------:|:------------:|
-#' | NA |
+#' | NA | NA |
 #' 
 #' }
 #' }

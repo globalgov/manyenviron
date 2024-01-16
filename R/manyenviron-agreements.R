@@ -46,10 +46,10 @@
 #' J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: _Globalization and health_ 15.1 (2019), pp. 1-8.
 #' }
 #' \item{HUGGO: }{
-#' J. Hollway. "Environmental agreements for manydata". (2021).
+#' NA
 #' }
 #' \item{AIGGO: }{
-#' J. Hollway. "Environmental agreements for manydata". (2021).
+#' NA
 #' }
 #' \item{IRD: }{
 #' O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: _Global Environmental Politics_ 6.3 (2006), pp. 121-143.
@@ -69,12 +69,8 @@
 #' \item{HEIDI: }{
 #' \url{https://www.chaire-epi.ulaval.ca/en/data/heidi}
 #' }
-#' \item{HUGGO: }{
-#' \url{https://github.com/globalgov/manyenviron}
-#' }
-#' \item{AIGGO: }{
-#' \url{https://github.com/globalgov/manyenviron}
-#' }
+#' \item{HUGGO: }{Hand-coded data by the GGO team.}
+#' \item{AIGGO: }{Machine-generated data by the GGO team.}
 #' \item{IRD: }{
 #' \url{https://iea.uoregon.edu/ird}
 #' }
@@ -83,7 +79,7 @@
 #' \itemize{
 #' \item{IEADB: }{
 #' Variable Mapping
-#'
+#' 
 #' |  *from*  | *to*
 #' |:------------:|:------------:|
 #' | 'IEA# (click for add'l info)' | ieadbID |
@@ -96,7 +92,7 @@
 #' }
 #' \item{ECOLEX: }{
 #' Variable Mapping
-#'
+#' 
 #' |  *from*  | *to*
 #' |:------------:|:------------:|
 #' | EcolexID | ecolexID |
@@ -109,7 +105,7 @@
 #' }
 #' \item{CIESIN: }{
 #' Variable Mapping
-#'
+#' 
 #' |  *from*  | *to*
 #' |:------------:|:------------:|
 #' | 'Treaty Title' | Title |
@@ -119,7 +115,7 @@
 #' }
 #' \item{HEIDI: }{
 #' Variable Mapping
-#'
+#' 
 #' |  *from*  | *to*
 #' |:------------:|:------------:|
 #' | ID | heidiID |
@@ -127,24 +123,9 @@
 #' | signature.date | Signature |
 #' 
 #' }
-#' \item{HUGGO: }{
-#' Variable Mapping
-#'
-#' |  *from*  | *to*
-#' |:------------:|:------------:|
-#' | NA | NA |
-#' 
-#' }
-#' \item{AIGGO: }{
-#' Variable Mapping
-#'
-#' |  *from*  | *to*
-#' |:------------:|:------------:|
-#' | NA | NA |
-#' }
 #' \item{IRD: }{
 #' Variable Mapping
-#'
+#' 
 #' |  *from*  | *to*
 #' |:------------:|:------------:|
 #' | Regime | Title |

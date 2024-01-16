@@ -8,7 +8,7 @@
 The memberships datacube is a list that contains the
 following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
-please use the \code{data_source()} and \code{data_contrast()} functions.
+please use the \code{manydata::call_sources()} and \code{manydata::compare_dimensions()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
 10 variables: manyID, stateID, Title, Begin, End, stateSignature, Force, Rat,
@@ -19,12 +19,24 @@ Rat, Force, DocType, ieadbID, treatyID.}
 \item{TFDD_MEM: }{A dataset with 2118 observations and the following
 8 variables: manyID, stateID, Title, Begin, Signature, tfddID, Memberships,
 treatyID.}
-\item{HUGGO_MEM: }{A dataset with 51740 observations and the following
-31 variables: manyID, treatyID, Title, Begin, stateID, End, Signature, Force,
-stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term,
-stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments,
-Deposit, obsolete, ProvisionalApp, Reservation, verified, Notes,
-stateForce_ecolex, stateForce_iea, Consent, Acceptance, Accession.}
+\item{HUGGO_MEM: }{A dataset with 51042 observations and the following
+31 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
+StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
+Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
+stateForce_ecolex, stateForce_iea, Consent, Acceptance.}
+}
+}
+\source{
+\itemize{
+\item{ECOLEX_MEM: }{
+J. Sommer. “Global governance in forestry: a cross-national analysis”. In: \emph{International Journal ofSustainable Development & World Ecology} 27.6 (2020), pp. 481-495.}
+\item{IEADB_MEM: }{
+R. B. Mitchell, L. B. Andonova, M. Axelrod, et al. “What we know (and could know) about internationalenvironmental agreements”. In: \emph{Global Environmental Politics} 20.1 (2020), pp. 103-121.}
+\item{TFDD_MEM: }{
+O. College of Earth and O. S. U. Atmospheric Science. \emph{Product of the Transboundary Freshwater DisputeDatabase}. \url{http://transboundarywaters.science.oregonstate.edu.}. 2021.}
+\item{HUGGO_MEM: }{
+NA}
 }
 }
 \usage{
@@ -89,38 +101,102 @@ memberships datacube documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |           51740|     0     |       0       |
-#> |    treatyID     |  character  |           51740|     0     |       0       |
-#> |      Title      |  character  |           51740|     0     |       0       |
-#> |      Begin      |    mdate    |           51740|    12     |     0.02      |
-#> |     stateID     |  character  |           51740|     0     |       0       |
-#> |       End       |    mdate    |           51740|   39723   |     76.77     |
-#> |    Signature    |    mdate    |           51740|    14     |     0.03      |
-#> |      Force      |    mdate    |           51740|   3529    |     6.82      |
-#> | stateSignature  |    mdate    |           51740|   11488   |     22.2      |
-#> |    stateRat     |    mdate    |           51740|   27610   |     53.36     |
-#> |   stateForce    |    mdate    |           51740|   21359   |     41.28     |
-#> |   stateForce2   |    mdate    |           51740|   45130   |     87.22     |
-#> |   stateForce3   |    mdate    |           51740|   48021   |     92.81     |
-#> |      Term       |  character  |           51740|   50566   |     97.73     |
-#> | stateWithdrawal |    mdate    |           51740|   38725   |     74.85     |
-#> |stateWithdrawal2 |    mdate    |           51740|   48015   |     92.8      |
-#> |     gengID      |  character  |           51740|     0     |       0       |
-#> |    ecolexID     |  character  |           51740|   30677   |     59.29     |
-#> |      ieaID      |  character  |           51740|   8175    |     15.8      |
-#> |    Comments     |  character  |           51740|   48481   |     93.7      |
-#> |     Deposit     |  character  |           51740|   49900   |     96.44     |
-#> |    obsolete     |  character  |           51740|   38703   |     74.8      |
-#> | ProvisionalApp  |  character  |           51740|   50926   |     98.43     |
-#> |   Reservation   |  character  |           51740|   50936   |     98.45     |
-#> |    verified     |  character  |           51740|   48516   |     93.77     |
-#> |      Notes      |  character  |           51740|   51554   |     99.64     |
-#> |stateForce_ecolex|  character  |           51740|   32357   |     62.54     |
-#> | stateForce_iea  |  character  |           51740|   32357   |     62.54     |
-#> |     Consent     |  character  |           51740|   51441   |     99.42     |
-#> |   Acceptance    |  character  |           51740|   51651   |     99.83     |
-#> |    Accession    |  character  |           51740|   45685   |     88.3      |
+#> |     manyID      |  character  |           51042|     0     |       0       |
+#> |    treatyID     |  character  |           51042|     0     |       0       |
+#> |      Title      |  character  |           51042|     0     |       0       |
+#> |      Begin      |    mdate    |           51042|    12     |     0.02      |
+#> |     stateID     |  character  |           51042|     0     |       0       |
+#> |    Signature    |    mdate    |           51042|    14     |     0.03      |
+#> |      Force      |    mdate    |           51042|   3537    |     6.93      |
+#> |       End       |    mdate    |           51042|   38689   |     75.8      |
+#> | StateSignature  |    mdate    |           51042|   11889   |     23.29     |
+#> |StateRatification|    mdate    |           51042|   27634   |     54.14     |
+#> |   StateForce    |    mdate    |           51042|   18871   |     36.97     |
+#> |   StateForce2   |    mdate    |           51042|   44319   |     86.83     |
+#> |   StateForce3   |    mdate    |           51042|   47337   |     92.74     |
+#> |    StateEnd     |    mdate    |           51042|   32876   |     64.41     |
+#> |    StateEnd2    |    mdate    |           51042|   47331   |     92.73     |
+#> |     gengID      |  character  |           51042|     0     |       0       |
+#> |      ieaID      |  character  |           51042|   8629    |     16.91     |
+#> |    ecolexID     |  character  |           51042|   30963   |     60.66     |
+#> |    Accession    |    mdate    |           51042|   43027   |     84.3      |
+#> |   Succession    |   numeric   |           51042|   46987   |     92.06     |
+#> |      Term       |    mdate    |           51042|   49864   |     97.69     |
+#> |    Comments     |  character  |           51042|   47760   |     93.57     |
+#> |     Deposit     |  character  |           51042|   49385   |     96.75     |
+#> |    obsolete     |  character  |           51042|   38414   |     75.26     |
+#> | ProvisionalApp  |  character  |           51042|   50268   |     98.48     |
+#> |   Reservation   |  character  |           51042|   50268   |     98.48     |
+#> |      Notes      |  character  |           51042|   50856   |     99.64     |
+#> |stateForce_ecolex|    mdate    |           51042|   32518   |     63.71     |
+#> | stateForce_iea  |    mdate    |           51042|   32518   |     63.71     |
+#> |     Consent     |  character  |           51042|   50817   |     99.56     |
+#> |   Acceptance    |  character  |           51042|   50515   |     98.97     |
 #> ------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
+\section{URL}{
+
+\itemize{
+\item{ECOLEX_MEM: }{
+\url{https://www.ecolex.org/result/?type=treaty}
+}
+\item{IEADB_MEM: }{
+\url{https://iea.uoregon.edu/country-members}
+}
+\item{TFDD_MEM: }{
+\url{https://transboundarywaters.science.oregonstate.edu/}
+}
+\item{HUGGO_MEM: }{Hand-coded data by the GGO team.}
+}
+}
+
+\section{Mapping}{
+
+\itemize{
+\item{ECOLEX_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   For \tab Force \cr
+   Rati \tab Rat \cr
+   Sign \tab stateSignature \cr
+   Term \tab End \cr
+   StatID \tab stateID \cr
+   EcolexID \tab ecolexID \cr
+}
+
+
+}
+\item{IEADB_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   country \tab stateID \cr
+   treatyname \tab Title \cr
+   tsig \tab Signature \cr
+   csig \tab stateSignature \cr
+   crat \tab Rat \cr
+   tterm \tab End \cr
+   ceif3 \tab Force \cr
+   ceif4 \tab Force2 \cr
+   mitch_id \tab ieadbID \cr
+   inclusion \tab DocType \cr
+}
+
+
+}
+\item{TFDD_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   DateSigned \tab Signature \cr
+   '2016Update ID' \tab tfddID \cr
+   CCODE \tab stateID \cr
+   DocumentName \tab Title \cr
+   Signatories \tab Memberships \cr
+}
+
+
+}
+}
+}
+
 \keyword{datasets}
