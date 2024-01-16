@@ -52,10 +52,10 @@ Centre for International Earth Science Information Network. In: \emph{Socioecono
 J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: \emph{Globalization and health} 15.1 (2019), pp. 1-8.
 }
 \item{HUGGO: }{
-J. Hollway. "Environmental agreements for manydata". (2021).
+NA
 }
 \item{AIGGO: }{
-J. Hollway. "Environmental agreements for manydata". (2021).
+NA
 }
 \item{IRD: }{
 O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: \emph{Global Environmental Politics} 6.3 (2006), pp. 121-143.
@@ -239,12 +239,8 @@ agreements datacube documentation
 \item{HEIDI: }{
 \url{https://www.chaire-epi.ulaval.ca/en/data/heidi}
 }
-\item{HUGGO: }{
-\url{https://github.com/globalgov/manyenviron}
-}
-\item{AIGGO: }{
-\url{https://github.com/globalgov/manyenviron}
-}
+\item{HUGGO: }{Hand-coded data by the GGO team.}
+\item{AIGGO: }{Machine-generated data by the GGO team.}
 \item{IRD: }{
 \url{https://iea.uoregon.edu/ird}
 }
@@ -300,23 +296,8 @@ Variable Mapping\tabular{cc}{
 
 
 }
-\item{HUGGO: }{
+\item{IRD: }{
 Variable Mapping\tabular{cc}{
-   \emph{from} \tab \emph{to} \cr
-   NA \tab NA \cr
-}
-
-
-}
-\item{AIGGO: }{
-Variable Mapping\tabular{cc}{
-   \emph{from} \tab \emph{to} \cr
-   NA \tab NA \cr
-   } \tab  \cr
-   \item{IRD: }{ \tab  \cr
-   Variable Mapping \tab  \cr
-}
-\tabular{cc}{
    \emph{from} \tab \emph{to} \cr
    Regime \tab Title \cr
    Formation \tab Begin \cr

@@ -10,7 +10,7 @@ test_that("missing observations are reported correctly", {
   expect_false(any(grepl("n\\.a\\.$", memberships[["HUGGO_MEM"]])))
 })
 
-# Uniformity tests (agreements have a countryID and Begin columns)
+# Uniformity tests (agreements have a stateID and Begin columns)
 test_that("datasets have the required variables", {
   pointblank::expect_col_exists(memberships[["HUGGO_MEM"]],
                                 pointblank::vars(stateID))

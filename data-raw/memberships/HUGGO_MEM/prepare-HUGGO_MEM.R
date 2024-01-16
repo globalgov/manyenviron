@@ -176,6 +176,7 @@ HUGGO_MEM$Succession <- NA
 yugos <- c("Serbia", "Bosnia and Herzegovina", "North Macedonia", "Slovenia",
            "Montenegro", "Croatia")
 czechos <- c("Czech Republic", "Slovakia")
+### Add for former soviet states too
 
 
 # CDSMMZ_1954P20
@@ -1111,12 +1112,126 @@ HUGGO_MEM[which(HUGGO_MEM$manyID == "ENFFEC_1923A"), "Verified_HUGGO"] <- "state
 HUGGO_MEM[which(HUGGO_MEM$manyID == "ENFFEC_1923A"), "Checked_HUGGO"] <- 1
 
 # After running scripts to verify dates from files, web, and ecolex
-HUGGO_MEM_verified <- dplyr::filter(HUGGO_MEM, Checked_HUGGO == 1)
+HUGGO_MEM_reconciled <- dplyr::filter(HUGGO_MEM, Checked_HUGGO == 1)
+
+######## Merging HUGGO_MEM_original, HUGGO_MEM_reconciled, and HUGGO_MEM_additional
+HUGGO_MEM_reconciled <- readr::read_csv("data-raw/memberships/HUGGO_MEM/HUGGO_MEM_reconciled.csv")
+HUGGO_MEM_additional <- readr::read_csv("data-raw/memberships/HUGGO_MEM/HUGGO_MEM_additional.csv")
+HUGGO_MEM_new <- dplyr::bind_rows(HUGGO_MEM_reconciled, HUGGO_MEM_additional) %>%
+  dplyr::arrange(Begin, manyID)
+
+HUGGO_MEM_org <- manyenviron::memberships$HUGGO_MEM
+HUGGO_MEM <- dplyr::full_join(HUGGO_MEM_org, HUGGO_MEM_new,
+                              by = c("manyID", "treatyID", "Title", "stateID"))
+HUGGO_MEM <- HUGGO_MEM %>%
+  manydata::transmutate(Begin = ifelse(!is.na(Begin.y), Begin.y, Begin.x),
+                        End = ifelse(!is.na(End.y), End.y, End.x),
+                        Signature = ifelse(!is.na(Signature.y), Signature.y,
+                                           Signature.x),
+                        Force = ifelse(!is.na(Force.y), Force.y, Force.x),
+                        StateSignature = ifelse(!is.na(stateSignature.y),
+                                                stateSignature.y,
+                                                stateSignature.x),
+                        StateRatification = ifelse(!is.na(stateRat.y),
+                                                   stateRat.y,
+                                                   stateRat.x),
+                        StateForce = ifelse(!is.na(stateForce.y),
+                                            stateForce.y, stateForce.x),
+                        StateForce2 = ifelse(!is.na(stateForce2.y),
+                                             stateForce2.y, stateForce2.x),
+                        StateForce3 = ifelse(!is.na(stateForce3.y),
+                                             stateForce3.y, stateForce3.x),
+                        StateEnd = ifelse(!is.na(stateWithdrawal.y),
+                                          stateWithdrawal.y, stateWithdrawal.x),
+                        StateEnd2 = ifelse(!is.na(stateWithdrawal2.y),
+                                          stateWithdrawal2.y, stateWithdrawal2.x),
+                        Term = ifelse(!is.na(Term.y), Term.y, Term.x),
+                        gengID = ifelse(!is.na(gengID.y), gengID.y, gengID.x),
+                        ieaID = ifelse(!is.na(ieaID.y), ieaID.y, ieaID.x),
+                        ecolexID = ifelse(!is.na(ecolexID.y), ecolexID.y, ecolexID.x),
+                        Comments = ifelse(!is.na(Comments.y), Comments.y, Comments.x),
+                        Deposit = ifelse(!is.na(Deposit.y), Deposit.y, Deposit.x),
+                        obsolete = ifelse(!is.na(obsolete.y), obsolete.y, obsolete.x),
+                        ProvisionalApp = ifelse(!is.na(ProvisionalApp.y),
+                                                ProvisionalApp.y, ProvisionalApp.x),
+                        Reservation = ifelse(!is.na(Reservation.y),
+                                             Reservation.y, Reservation.x),
+                        verified = ifelse(!is.na(verified.y), verified.y,
+                                          verified.x),
+                        Notes = ifelse(!is.na(Notes.y), Notes.y, Notes.x),
+                        stateForce_ecolex = ifelse(!is.na(stateForce_ecolex.y),
+                                                   stateForce_ecolex.y,
+                                                   stateForce_ecolex.x),
+                        stateForce_iea = ifelse(!is.na(stateForce_iea.y),
+                                                stateForce_iea.y,
+                                                stateForce_iea.x),
+                        Consent = ifelse(!is.na(Consent.y),
+                                         Consent.y,
+                                         Consent.x),
+                        Acceptance = ifelse(!is.na(Acceptance.y),
+                                            Acceptance.y,
+                                            Acceptance.x),
+                        Accession= ifelse(!is.na(Accession.y),
+                                          Accession.y,
+                                          Accession.x)) %>%
+  dplyr::relocate(manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+                  StateSignature, StateRatification, StateForce, StateForce2,
+                  StateForce3, StateEnd, StateEnd2,
+                  gengID, ieaID, ecolexID, Accession, Succession) %>%
+  dplyr::mutate(Begin = messydates::as_messydate(Begin),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force),
+                End = messydates::as_messydate(End),
+                StateRatification = messydates::as_messydate(StateRatification),
+                StateSignature = messydates::as_messydate(StateSignature),
+                StateForce = messydates::as_messydate(StateForce),
+                StateForce2 = messydates::as_messydate(StateForce2),
+                StateForce3 = messydates::as_messydate(StateForce3),
+                StateEnd = messydates::as_messydate(StateEnd),
+                StateEnd2 = messydates::as_messydate(StateEnd2),
+                stateForce_ecolex = messydates::as_messydate(stateForce_ecolex),
+                stateForce_iea = messydates::as_messydate(stateForce_iea),
+                Term = messydates::as_messydate(Term),
+                Accession = messydates::as_messydate(Accession)) %>%
+  dplyr::distinct()
+
+# Add successor states from Soviet Union into Succession variable
+repstateIDs <- manypkgs::code_states(c("Armenia", "Azerbaijan", "Belarus",
+                                       "Estonia", "Georgia", "Kazakhstan",
+                                       "Kyrgyzstan", "Latvia", "Lithuania",
+                                       "Moldova", "Russia", "Tajikistan",
+                                       "Turkmenistan", "Ukraine", "Uzbekistan"),
+                                     activity = FALSE,
+                                     replace = "ID")
+
+HUGGO_MEM <- HUGGO_MEM %>%
+  dplyr::mutate(Succession = ifelse(stateID %in% repstateIDs, 1, Succession))
+
+# Format data correctly
+HUGGO_MEM <- HUGGO_MEM %>%
+  dplyr::mutate(across(everything(),
+                      ~stringr::str_replace_all(., "^NA$", NA_character_))) %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(Begin = messydates::as_messydate(Begin),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force),
+                End = messydates::as_messydate(End),
+                StateRatification = messydates::as_messydate(StateRatification),
+                StateSignature = messydates::as_messydate(StateSignature),
+                StateForce = messydates::as_messydate(StateForce),
+                StateForce2 = messydates::as_messydate(StateForce2),
+                StateForce3 = messydates::as_messydate(StateForce3),
+                StateEnd = messydates::as_messydate(StateEnd),
+                StateEnd2 = messydates::as_messydate(StateEnd2),
+                Term = messydates::as_messydate(Term),
+                Accession = messydates::as_messydate(Accession)) %>%
+  dplyr::arrange(Begin) %>%
+  dplyr::select(-c(Changes_HUGGO, Verified_HUGGO, Checked_HUGGO, verified))
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
 # within the package.
-manypkgs::export_data(HUGGO_MEM, database = "memberships",
+manypkgs::export_data(HUGGO_MEM, datacube = "memberships",
                       URL = "Hand-coded by the GGO team")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure
