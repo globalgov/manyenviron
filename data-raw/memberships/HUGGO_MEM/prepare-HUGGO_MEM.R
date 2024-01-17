@@ -121,7 +121,7 @@ HUGGO_MEM <- dplyr::relocate(HUGGO_MEM, c("manyID", "treatyID", "stateID",
 
 # Match titles and dates of verified treaties from agreements$HUGGO
 # Step one: load data frame of verified treaties
-verified <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
+verified <- read.csv("data-raw/agreements/HUGGO/HUGGO_reconciled.csv")
 # Step two: 
 i <- 0
 for(i in nrow(verified)){
@@ -176,8 +176,6 @@ HUGGO_MEM$Succession <- NA
 yugos <- c("Serbia", "Bosnia and Herzegovina", "North Macedonia", "Slovenia",
            "Montenegro", "Croatia")
 czechos <- c("Czech Republic", "Slovakia")
-### Add for former soviet states too
-
 
 # CDSMMZ_1954P20
 # Correct stateSignature for all countries
@@ -1118,9 +1116,28 @@ HUGGO_MEM_reconciled <- dplyr::filter(HUGGO_MEM, Checked_HUGGO == 1)
 HUGGO_MEM_reconciled <- readr::read_csv("data-raw/memberships/HUGGO_MEM/HUGGO_MEM_reconciled.csv")
 HUGGO_MEM_additional <- readr::read_csv("data-raw/memberships/HUGGO_MEM/HUGGO_MEM_additional.csv")
 HUGGO_MEM_new <- dplyr::bind_rows(HUGGO_MEM_reconciled, HUGGO_MEM_additional) %>%
-  dplyr::arrange(Begin, manyID)
+  dplyr::arrange(Begin, manyID) %>%
+  dplyr::mutate(Begin = messydates::as_messydate(Begin),
+                End = messydates::as_messydate(End),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force),
+                stateSignature = messydates::as_messydate(stateSignature),
+                stateRat = messydates::as_messydate(stateRat),
+                stateForce = messydates::as_messydate(stateForce),
+                stateForce2 = messydates::as_messydate(stateForce2),
+                stateForce3 = messydates::as_messydate(as.character(stateForce3)),
+                Term = messydates::as_messydate(Term),
+                stateWithdrawal = messydates::as_messydate(stateWithdrawal),
+                stateWithdrawal2 = messydates::as_messydate(as.character(stateWithdrawal2)),
+                Deposit = messydates::as_messydate(Deposit),
+                ProvisionalApp = messydates::as_messydate(ProvisionalApp),
+                Reservation = messydates::as_messydate(Reservation),
+                Consent = messydates::as_messydate(Consent),
+                Acceptance = messydates::as_messydate(Acceptance),
+                Accession = messydates::as_messydate(Accession),
+                Succession = ifelse(!is.na(Succession), 1, 0))
 
-HUGGO_MEM_org <- manyenviron::memberships$HUGGO_MEM
+HUGGO_MEM_org <- readr::read_csv("data-raw/memberships/HUGGO_MEM/HUGGO_MEM_original.csv")
 HUGGO_MEM <- dplyr::full_join(HUGGO_MEM_org, HUGGO_MEM_new,
                               by = c("manyID", "treatyID", "Title", "stateID"))
 HUGGO_MEM <- HUGGO_MEM %>%
@@ -1227,6 +1244,9 @@ HUGGO_MEM <- HUGGO_MEM %>%
                 Accession = messydates::as_messydate(Accession)) %>%
   dplyr::arrange(Begin) %>%
   dplyr::select(-c(Changes_HUGGO, Verified_HUGGO, Checked_HUGGO, verified))
+
+# Add coder name
+HUGGO_MEM$Coder <- "Diego"
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available

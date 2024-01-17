@@ -20,11 +20,11 @@ Rat, Force, DocType, ieadbID, treatyID.}
 8 variables: manyID, stateID, Title, Begin, Signature, tfddID, Memberships,
 treatyID.}
 \item{HUGGO_MEM: }{A dataset with 51042 observations and the following
-31 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+32 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
 StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
 StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
 Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
-stateForce_ecolex, stateForce_iea, Consent, Acceptance.}
+stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder.}
 }
 }
 \source{
@@ -50,16 +50,16 @@ memberships datacube documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |           25003|   3447    |     13.79     |
-#> |    stateID    |  character  |           25003|    22     |     0.09      |
-#> |     Title     |  character  |           25003|     0     |       0       |
-#> |     Begin     |    mdate    |           25003|   3447    |     13.79     |
-#> |      End      |    mdate    |           25003|   24539   |     98.14     |
-#> |stateSignature |    mdate    |           25003|   15339   |     61.35     |
-#> |     Force     |    mdate    |           25003|   5809    |     23.23     |
-#> |      Rat      |    mdate    |           25003|   7021    |     28.08     |
-#> |   ecolexID    |  character  |           25003|     0     |       0       |
-#> |   treatyID    |  character  |           25003|     0     |       0       |
+#> |    manyID     |  character  |           24975|     0     |       0       |
+#> |   treatyID    |  character  |           24975|     0     |       0       |
+#> |     Title     |  character  |           24975|     0     |       0       |
+#> |     Begin     |    mdate    |           24975|   3421    |     13.7      |
+#> |    stateID    |  character  |           24975|    21     |     0.08      |
+#> |      End      |    mdate    |           24975|   24511   |     98.14     |
+#> |stateSignature |    mdate    |           24975|   15313   |     61.31     |
+#> |     Force     |    mdate    |           24975|   5783    |     23.16     |
+#> |      Rat      |    mdate    |           24975|   6993    |      28       |
+#> |   ecolexID    |  character  |           24975|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -68,9 +68,10 @@ memberships datacube documentation
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
 #> |    manyID     |  character  |           15463|     0     |       0       |
-#> |    stateID    |  character  |           15463|     0     |       0       |
+#> |   treatyID    |  character  |           15463|     0     |       0       |
 #> |     Title     |  character  |           15463|     0     |       0       |
 #> |     Begin     |    mdate    |           15463|     0     |       0       |
+#> |    stateID    |  character  |           15463|     0     |       0       |
 #> |      End      |    mdate    |           15463|   14593   |     94.37     |
 #> |stateSignature |    mdate    |           15463|   5797    |     37.49     |
 #> |   Signature   |    mdate    |           15463|     0     |       0       |
@@ -78,7 +79,6 @@ memberships datacube documentation
 #> |     Force     |    mdate    |           15463|     0     |       0       |
 #> |    DocType    |  character  |           15463|     0     |       0       |
 #> |    ieadbID    |   numeric   |           15463|     0     |       0       |
-#> |   treatyID    |  character  |           15463|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -86,14 +86,14 @@ memberships datacube documentation
 #> ----------------------------------------------------------------------------
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
-#> |    manyID     |  character  |            2118|    133    |     6.28      |
-#> |    stateID    |  character  |            2118|     2     |     0.09      |
-#> |     Title     |  character  |            2118|     2     |     0.09      |
-#> |     Begin     |    mdate    |            2118|    133    |     6.28      |
-#> |   Signature   |    mdate    |            2118|    133    |     6.28      |
-#> |    tfddID     |   numeric   |            2118|     2     |     0.09      |
-#> |  Memberships  |  character  |            2118|    843    |     39.8      |
-#> |   treatyID    |  character  |            2118|     0     |       0       |
+#> |    manyID     |  character  |            1832|     0     |       0       |
+#> |   treatyID    |  character  |            1832|     0     |       0       |
+#> |     Title     |  character  |            1832|     1     |     0.05      |
+#> |     Begin     |    mdate    |            1832|    102    |     5.57      |
+#> |    stateID    |  character  |            1832|     1     |     0.05      |
+#> |   Signature   |    mdate    |            1832|    102    |     5.57      |
+#> |    tfddID     |   numeric   |            1832|     1     |     0.05      |
+#> |  Memberships  |  character  |            1832|    805    |     43.94     |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -120,7 +120,7 @@ memberships datacube documentation
 #> |      ieaID      |  character  |           51042|   8629    |     16.91     |
 #> |    ecolexID     |  character  |           51042|   30963   |     60.66     |
 #> |    Accession    |    mdate    |           51042|   43027   |     84.3      |
-#> |   Succession    |   numeric   |           51042|   46987   |     92.06     |
+#> |   Succession    |  character  |           51042|   39337   |     77.07     |
 #> |      Term       |    mdate    |           51042|   49864   |     97.69     |
 #> |    Comments     |  character  |           51042|   47760   |     93.57     |
 #> |     Deposit     |  character  |           51042|   49385   |     96.75     |
@@ -128,10 +128,11 @@ memberships datacube documentation
 #> | ProvisionalApp  |  character  |           51042|   50268   |     98.48     |
 #> |   Reservation   |  character  |           51042|   50268   |     98.48     |
 #> |      Notes      |  character  |           51042|   50856   |     99.64     |
-#> |stateForce_ecolex|    mdate    |           51042|   32518   |     63.71     |
-#> | stateForce_iea  |    mdate    |           51042|   32518   |     63.71     |
+#> |stateForce_ecolex|  character  |           51042|   32518   |     63.71     |
+#> | stateForce_iea  |  character  |           51042|   32518   |     63.71     |
 #> |     Consent     |  character  |           51042|   50817   |     99.56     |
 #> |   Acceptance    |  character  |           51042|   50515   |     98.97     |
+#> |      Coder      |  character  |           51042|     0     |       0       |
 #> ------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }

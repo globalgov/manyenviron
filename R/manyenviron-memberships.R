@@ -15,11 +15,11 @@
 #' 8 variables: manyID, stateID, Title, Begin, Signature, tfddID, Memberships,
 #' treatyID.}
 #' \item{HUGGO_MEM: }{A dataset with 51042 observations and the following
-#' 31 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+#' 32 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
 #' StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
 #' StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
 #' Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
-#' stateForce_ecolex, stateForce_iea, Consent, Acceptance.}
+#' stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder.}
 #' }
 #' @source
 #' \itemize{
