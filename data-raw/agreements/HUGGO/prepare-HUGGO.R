@@ -313,7 +313,7 @@ HUGGO$Changes <- NA
 HUGGO_or <- manyenviron::agreements$HUGGO
 
 # Load data frame with verified metadata (of treaties present in HUGGO)
-HUGGO7 <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
+HUGGO7 <- read.csv("data-raw/agreements/HUGGO/HUGGO_reconciled.csv")
 
 # Load data frame with verified metadata (of treaties not present in HUGGO)
 HUGGO8 <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv")
@@ -949,7 +949,7 @@ HUGGO <- HUGGO[-which(HUGGO$manyID == "UB08IB_1893A" | HUGGO$manyID == "ESP-FRA[
 
 ## Stage five: update End variable
 ## Recoded 9999-12-31 for treaties still in force
-HUGGO_ver <- read.csv("data-raw/agreements/HUGGO/HUGGO_verified.csv")
+HUGGO_ver <- read.csv("data-raw/agreements/HUGGO/HUGGO_reconciled.csv")
 for (i in 1:nrow(HUGGO)){
   title <- as.character(HUGGO[i, "Title"])
   manyID <- as.character(HUGGO[i, "manyID"])
@@ -987,11 +987,13 @@ for (i in 1:nrow(HUGGO)){
   }
 }
 
-## Stage six: rename Beg column
+## Stage six: rename Beg column and add coder name
 HUGGO <- HUGGO %>%
   dplyr::rename("Begin" = "Beg")
 
-# Stage six: Connecting data
+HUGGO$Coder <- "Diego"
+
+# Stage seven: Connecting data
 # Next run the following line to make HUGGO available
 # within the package.
 manypkgs::export_data(HUGGO, datacube = "agreements",
