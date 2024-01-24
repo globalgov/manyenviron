@@ -1,11 +1,11 @@
-# library(shiny)
-# library(shinydashboard)
-# library(dplyr)
-# library(ggplot2)
-# library(tidygraph)
+library(shiny)
+library(shinydashboard)
+library(dplyr)
+library(ggplot2)
+library(tidygraph)
 
 # Prepare memberships dataset
-memberships <- manyenviron::memberships$IEADB_MEM[,c(1,3,5)] %>%
+memberships <- manyenviron::memberships$IEADB_MEM %>%
   dplyr::select("manyID", "stateID", "Title")
 memberships$type <- manypkgs::code_type(memberships$Title)
 memberships$agr_type <- ifelse(stringr::str_detect(memberships$type, "A"), "Agreement",
@@ -33,7 +33,6 @@ for(i in 1:nrow(memberships)){
 }
 }
 
-
 # Define UI 
 ui <- shinydashboard::dashboardPage(
   shinydashboard::dashboardHeader(title = "Type of Environmental Treaties", titleWidth = "400"),
@@ -47,8 +46,8 @@ ui <- shinydashboard::dashboardPage(
                       multiple = T),
           shiny::checkboxGroupInput("agr_type", 
                                "Select treaty type:",
-                               choices = c("Agreement", "Protocol",
-                                           "Amendment", "Notes", "Strategy", "Resolution"),
+                               choices = c("Agreement", "Protocol", "Amendment",
+                                           "Notes", "Strategy", "Resolution"),
                                selected = "Agreement"),
           selectInput("category",
                       "Select category:",
@@ -86,8 +85,7 @@ server <- function(input, output){
             dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
             dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
             dplyr::filter(agr_type %in% input$agr_type) %>%
-            migraph::as_tidygraph() %>%
-            tidygraph::activate(nodes) %>%
+            manynet::as_tidygraph() %>%
             dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
             dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -100,8 +98,7 @@ server <- function(input, output){
           dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
           dplyr::filter(agr_type %in% input$agr_type) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -116,8 +113,7 @@ server <- function(input, output){
           dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
           dplyr::filter(agr_type %in% input$agr_type) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -132,8 +128,7 @@ server <- function(input, output){
           dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
           dplyr::filter(agr_type %in% input$agr_type) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -151,8 +146,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(category %in% input$category) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -166,8 +160,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(category %in% input$category) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -183,8 +176,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(category %in% input$category) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -200,8 +192,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(category %in% input$category) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -219,8 +210,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -234,8 +224,7 @@ server <- function(input, output){
         dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(stateID %in% input$country) %>%
-        migraph::as_tidygraph() %>%
-        tidygraph::activate(nodes) %>%
+        manynet::as_tidygraph() %>%
         dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                TRUE ~ "black")) %>%
         dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -251,8 +240,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -268,8 +256,7 @@ server <- function(input, output){
           dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
           dplyr::filter(agr_type %in% input$agr_type) %>% 
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -282,14 +269,13 @@ server <- function(input, output){
     })
     filteredData4 <- shiny::reactive({
       if(input$treatylabel == TRUE & input$countrylabel == TRUE){
-        memberships1 <- memberships %>% 
-          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
-          dplyr::filter(agr_type %in% input$agr_type) %>% 
+        memberships1 <- memberships %>%
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
           dplyr::filter(category %in% input$category) %>%
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -298,14 +284,14 @@ server <- function(input, output){
                                                  TRUE ~ "square"))
       }
       else if(input$treatylabel == FALSE & input$countrylabel == FALSE){
-        memberships1 <- memberships %>% 
-          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
-          dplyr::filter(agr_type %in% input$agr_type) %>% 
+        memberships1 <- memberships %>%
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
           dplyr::filter(category %in% input$category) %>%
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
+          
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -316,14 +302,13 @@ server <- function(input, output){
                                                 TRUE ~ ""))
       }
       else if(input$treatylabel == TRUE & input$countrylabel == FALSE){
-        memberships1 <- memberships %>% 
-          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
-          dplyr::filter(agr_type %in% input$agr_type) %>% 
+        memberships1 <- memberships %>%
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
           dplyr::filter(category %in% input$category) %>%
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -334,14 +319,13 @@ server <- function(input, output){
                                                 TRUE ~ ""))
       }
       else if(input$treatylabel == FALSE & input$countrylabel == TRUE){
-        memberships1 <- memberships %>% 
-          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>% 
-          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
-          dplyr::filter(agr_type %in% input$agr_type) %>% 
+        memberships1 <- memberships %>%
+          dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
+          dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
+          dplyr::filter(agr_type %in% input$agr_type) %>%
           dplyr::filter(category %in% input$category) %>%
           dplyr::filter(stateID %in% input$country) %>%
-          migraph::as_tidygraph() %>%
-          tidygraph::activate(nodes) %>%
+          manynet::as_tidygraph() %>%
           dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red",
                                                  TRUE ~ "black")) %>%
           dplyr::mutate(size = dplyr::case_when(grepl("[0-9]", name) ~ 2,
@@ -358,12 +342,12 @@ server <- function(input, output){
     # created after filtering data allows to display titles of agreements even
     # if their labels are not rendered on the actual plot.
     coords1 <- reactive({
-      ggdata1 <- memberships %>% 
+      ggdata1 <- memberships %>%
         dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
         dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>%
         dplyr::filter(agr_type %in% input$agr_type) %>%
-        migraph::as_tidygraph() %>%
-        migraph::autographr()
+        manynet::as_tidygraph() %>%
+        manynet::autographr()
       ggdata1 <- ggplot2::ggplot_build(ggdata1)$data[[1]]
     })
     coords2 <- reactive({
@@ -372,8 +356,8 @@ server <- function(input, output){
         dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(category %in% input$category) %>%
-        migraph::as_tidygraph() %>%
-        migraph::autographr()
+        manynet::as_tidygraph() %>%
+        manynet::autographr()
       ggdata2 <- ggplot2::ggplot_build(ggdata2)$data[[1]]
         
     })
@@ -383,8 +367,8 @@ server <- function(input, output){
         dplyr::filter(year >= input$range[1] & year <= input$range[2]) %>% 
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(stateID %in% input$country) %>%
-        migraph::as_tidygraph() %>%
-        migraph::autographr()
+        manynet::as_tidygraph() %>%
+        manynet::autographr()
       ggdata3 <- ggplot2::ggplot_build(ggdata3)$data[[1]]
     })
     coords4 <- reactive({
@@ -394,28 +378,28 @@ server <- function(input, output){
         dplyr::filter(agr_type %in% input$agr_type) %>% 
         dplyr::filter(category %in% input$category) %>%
         dplyr::filter(stateID %in% input$country) %>%
-        migraph::as_tidygraph() %>%
-        migraph::autographr()
+        manynet::as_tidygraph() %>%
+        manynet::autographr()
       ggdata4 <- ggplot2::ggplot_build(ggdata4)$data[[1]]
     })
     
     output$distPlot <- renderPlot({
       if(is.null(input$country) & is.null(input$category)){
-        migraph::autographr(filteredData(), node_color = "color", node_size = "size",
-                            node_shape = "shape")
+        manynet::autographr(filteredData(), node_color = "color",
+                            node_size = "size", node_shape = "shape")
         
       }
       else if(is.null(input$country) & !is.null(input$category)){
-        migraph::autographr(filteredData2(), node_color = "color", node_size = "size",
+        manynet::autographr(filteredData2(), node_color = "color", node_size = "size",
                             node_shape = "shape")
         
       }
       else if(!is.null(input$country) & is.null(input$category)){
-        migraph::autographr(filteredData3(), node_color = "color", node_size = "size",
+        manynet::autographr(filteredData3(), node_color = "color", node_size = "size",
                             node_shape = "shape")
       }
       else if(!is.null(input$country) & !is.null(input$category)){
-        migraph::autographr(filteredData4(), node_color = "color", node_size = "size",
+        manynet::autographr(filteredData4(), node_color = "color", node_size = "size",
                             node_shape = "shape")
       }
     })
