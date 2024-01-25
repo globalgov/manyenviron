@@ -121,189 +121,6 @@ manyID <- manypkgs::condense_agreements(manyenviron::agreements,
 
 HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
 
-# Extract treaty texts
-# Create a texs "database" to apply consolidate()
-texts <- list(HUGGO, IEADB, ECOLEX, CIESIN, HEIDI)
-texts <- manydata::consolidate(texts, "any", "any",
-                               resolve = "coalesce", key = "manyID")
-
-# Step two: extract treaty texts from IEADB website
-# This requires the original IEADB dataset with the ieadbID column
-IEADB_original <- readr::read_csv("data-raw/agreements/IEADB/treaties.csv")
-IEADB_original <- dplyr::as_tibble(IEADB_original) %>%
-  dplyr::rename(ieadbID = `IEA# (click for add'l info)`,
-                TreatyText = `Treaty Text`) %>%
-  dplyr::select(ieadbID, TreatyText) %>%
-  dplyr::filter(TreatyText == "Treaty Text**") %>%
-  dplyr::arrange(ieadbID)
-IEADB_original$ieadbID <- as.character(IEADB_original$ieadbID)
-
-# Then, rvest package is used to web scrap IEADB treaty texts pages
-base <- "https://iea.uoregon.edu/treaty-text/"
-IEADB_original$TreatyText <- lapply(IEADB_original$ieadbID,
-                                    function(s) tryCatch(rvest::read_html(paste0(base, s)) %>%
-                                                           rvest::html_nodes(".even") %>%
-                                                           rvest::html_text(),
-                                                         error = function(e) {
-                                                           as.character("Not found")
-                                                         } %>%
-                                                           paste(collapse = ",")))
-# A source column is also added
-IEADB_original$Source <- lapply(IEADB_original$ieadbID,
-                                function(s) tryCatch(rvest::read_html(paste0(base, s)) %>%
-                                                       rvest::html_nodes(".views-field-views-conditional") %>%
-                                                       rvest::html_text(),
-                                                     error = function(e) {
-                                                       as.character("Not found")
-                                                     } %>%
-                                                       paste(collapse = ",")))
-
-# Step three: join IEADB text column with the consolidated version of
-# manyenviron
-texts <- dplyr::left_join(texts,
-                          IEADB_original,
-                          by = "ieadbID")
-texts <- as_tibble(texts) %>%
-  dplyr::select(treatyID, ieadbID, gengID, ecolexID,
-                manyID, Title, Beg, TreatyText, Source, url)
-
-# Step four: complement the dataset with ECOLEX treaty texts (TO BE IMPROVED)
-# Filter observations with text = NULL and with an ecolexID
-ecolex_text <- texts %>%
-  dplyr::filter(!is.na(ecolexID) & TreatyText == "NULL")
-
-ecolex_text$ecolexID2 <- stringr::str_remove_all(ecolex_text$ecolexID, "-")
-
-# Use pdftools package to extract treaty texts
-base <- "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/"
-ecolex_text$TreatyText <- lapply(ecolex_text$ecolexID,
-                                 function(s) tryCatch(pdftools::pdf_text(paste0(base, s, ".pdf")),
-                                                      error = function(e) {
-                                                        as.character("Not found")
-                                                      }))
-ecolex_text$TreatyTextb <- lapply(ecolex_text$ecolexID2,
-                                  function(s) tryCatch(pdftools::pdf_text(paste0(base, s, ".pdf")),
-                                                       error = function(e) {
-                                                         as.character("Not found")
-                                                       }))
-
-
-base2 <- "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/"
-ecolex_text$TreatyText2 <- lapply(ecolex_text$ecolexID,
-                                  function(s) tryCatch(pdftools::pdf_text(paste0(base2, s, ".pdf")),
-                                                       error = function(e) {
-                                                         as.character("Not found")
-                                                       }))
-ecolex_text$TreatyText2b <- lapply(ecolex_text$ecolexID2,
-                                   function(s) tryCatch(pdftools::pdf_text(paste0(base2, s, ".pdf")),
-                                                        error = function(e) {
-                                                          as.character("Not found")
-                                                        }))
-
-# base3 = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Fr/"
-# ecolex_text$TreatyText3 <- lapply(ecolex_text$ecolexID,
-#                                   function(s) tryCatch(pdftools::pdf_text(paste0(base3, s, ".pdf")),
-#                                                        error = function(e){as.character("Not found")}))
-# ecolex_text$TreatyText3b <- lapply(ecolex_text$ecolexID2,
-#                                    function(s) tryCatch(pdftools::pdf_text(paste0(base3, s, ".pdf")),
-#                                                         error = function(e){as.character("Not found")}))
-#
-# base4 = "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Sp/"
-# ecolex_text$TreatyText4 <- lapply(ecolex_text$ecolexID,
-#                                   function(s) tryCatch(pdftools::pdf_text(paste0(base4, s, ".pdf")),
-#                                                        error = function(e){as.character("Not found")}))
-# ecolex_text$TreatyText4b <- lapply(ecolex_text$ecolexID2,
-#                                    function(s) tryCatch(pdftools::pdf_text(paste0(base4, s, ".pdf")),
-#                                                         error = function(e){as.character("Not found")}))
-
-ecolex_text$TreatyText <- dplyr::na_if(ecolex_text$TreatyText, "Not found")
-ecolex_text$TreatyTextb <- dplyr::na_if(ecolex_text$TreatyTextb, "Not found")
-ecolex_text$TreatyText2 <- dplyr::na_if(ecolex_text$TreatyText2, "Not found")
-ecolex_text$TreatyText2b <- dplyr::na_if(ecolex_text$TreatyText2b, "Not found")
-
-ecolex_text$Text <- dplyr::coalesce(ecolex_text$TreatyText,
-                                    ecolex_text$TreatyTextb,
-                                    ecolex_text$TreatyText2,
-                                    ecolex_text$TreatyText2b)
-
-ecolex_text$url <- ifelse(!is.na(ecolex_text$TreatyText), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/",
-                                    ifelse(!is.na(ecolex_text$TreatyTextb), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/En/",
-                                           ifelse(!is.na(ecolex_text$TreatyText2), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/",
-                                                  ifelse(!is.na(ecolex_text$TreatyText2b), "http://www.ecolex.org/server2neu.php/libcat/docs/TRE/Full/Other/",
-                                                         NA))))
-
-ecolex_text <- ecolex_text %>%
-  dplyr::filter(!is.na(Text)) %>%
-  dplyr::select(ecolexID, Title, Beg, Text, url) %>%
-  dplyr::rename(TreatyText = Text)
-
-# Step five: join ECOLEX texts to the agreements dataset
-texts <- dplyr::left_join(texts,  ecolex_text, by = c("ecolexID", "Title",
-                                                      "Beg","TreatyText",
-                                                      "url"))
-
-# Step six: Clean texts
-# manypkgs includes several functions that should help cleaning
-# and standardizing your data.
-# Please see the vignettes or website for more details.
-texts <- texts %>%
-  dplyr::mutate(TreatyText = manypkgs::standardise_treaty_text(TreatyText))
-
-texts <- dplyr::as_tibble(texts) %>%
-  dplyr::select(manyID, Title, Beg, TreatyText, url, Source)
-
-# Bind data
-HUGGO <- dplyr::left_join(HUGGO, texts, by = c("manyID", "Title", "Beg", "url"))
-
-# reorder variables
-HUGGO <- dplyr::relocate(HUGGO, manyID, Title, Beg, End, Signature,
-                         Force, AgreementType, DocType, GeogArea,
-                         gengID, ieaID, ecolexID, treatyID)
-
-# make sure all vars are correctly coded as NA if necessary
-HUGGO <- HUGGO %>%
-  dplyr::mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
-                                                               NA_character_))) %>%
-  dplyr::distinct() %>%
-  mutate(Signature = messydates::as_messydate(Signature),
-         Force = messydates::as_messydate(Force),
-         Beg = messydates::as_messydate(Beg),
-         End = messydates::as_messydate(End)) %>%
-  dplyr::distinct() %>%
-  dplyr::arrange(Beg)
-
-# Standardising treaty texts
-HUGGO <- HUGGO %>%
-  dplyr::mutate(MainText = ifelse(!grepl("APPENDIX | ANNEX", unlist(TreatyText), perl = T),
-                                  TreatyText,
-                                  stringr::str_remove(HUGGO$TreatyText,
-                                                      "APPENDIX.* | ANNEX.*")))
-HUGGO <- HUGGO %>%
-  dplyr::mutate(AppendixText = ifelse(grepl("APPENDIX", unlist(TreatyText), perl = T),
-                                      stringr::str_extract(HUGGO$TreatyText,
-                                                           "APPENDIX.*"),
-                                      NA))
-HUGGO <- HUGGO %>%
-  dplyr::mutate(AnnexText = ifelse(grepl("ANNEX", unlist(TreatyText), perl = T),
-                                   stringr::str_extract(HUGGO$TreatyText,
-                                                        "ANNEX.*"),
-                                   NA))
-
-# Checked_HUGGO and Confirmed_HUGGO variables to
-# track progress on manually correcting entries
-# Checked_HUGGO: code 1 when the entire row's
-# observations have been verified and updated
-# Confirmed_HUGGO: list variables for which the
-# observation could be verified and confirmed.
-# Eg. List 'Signature' in `Confirmed_HUGGO` if
-# the Signature date was found and verified in
-# the treaty text or in a manual online search.
-HUGGO$Checked_HUGGO <- NA
-HUGGO$Confirmed_HUGGO <- NA
-
-# Add Changes var to log changes that are manually added for each agreement.
-HUGGO$Changes <- NA
-
 # Stage three: Merging verified data and additional treaties into HUGGO dataset
 
 # Step one: Merge data frames with verified metadata of treaties within and
@@ -915,6 +732,7 @@ noneng <- noneng %>%
   ))
 noneng <- dplyr::select(noneng, manyID, Orig_noneng_title, Beg, match)
 # Non-English titles of the same agreement with an English title added in variable 'Orig_noneng_title'
+# manyID of the non-English agreement added in variable 'match'
 HUGGO <- dplyr::left_join(HUGGO, noneng, by = c("manyID", "Beg"))
 # remove rows with non-English titles identified above
 HUGGO <- HUGGO[-which(HUGGO$manyID == "UB08IB_1893A" | HUGGO$manyID == "ESP-FRA[DGP]_1900A" |
@@ -987,11 +805,17 @@ for (i in 1:nrow(HUGGO)){
   }
 }
 
-## Stage six: rename Beg column and add coder name
+# Stage six: format data correctly for exporting
 HUGGO <- HUGGO %>%
+  dplyr::mutate(across(everything(),
+                       ~stringr::str_replace_all(., "^NA$", NA_character_))) %>%
+  dplyr::distinct() %>%
   dplyr::rename("Begin" = "Beg")
-
-HUGGO$Coder <- "Diego"
+  dplyr::mutate(Begin = messydates::as_messydate(Begin),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force),
+                End = messydates::as_messydate(End)) %>%
+  dplyr::arrange(Begin)
 
 # Stage seven: Connecting data
 # Next run the following line to make HUGGO available
@@ -1008,11 +832,3 @@ manypkgs::export_data(HUGGO, datacube = "agreements",
 # Second, it also creates a documentation file for you to fill in.
 # Please make sure that you cite any sources appropriately and
 # fill in as much detail about the variables etc as possible.
-
-# To reduce size of text data stored in package:
-# 1. after exporting HUGGO to agreements database,
-# load 'agreements.rda' in environment.
-# 2. Delete 'agreements.rda' in 'data' folder.
-# 3. Run `usethis::use_data(agreements, internal = F, overwrite = T, compress = "xz")`
-# to save compressed text data.
-
