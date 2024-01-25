@@ -386,21 +386,29 @@ server <- function(input, output){
     output$distPlot <- renderPlot({
       if(is.null(input$country) & is.null(input$category)){
         manynet::autographr(filteredData(), node_color = "color",
-                            node_size = "size", node_shape = "shape")
+                            node_size = "size", node_shape = "shape") +
+          ggplot2::scale_color_manual(values = c("black" = "black",
+                                                 "red" = "red"))
         
       }
       else if(is.null(input$country) & !is.null(input$category)){
-        manynet::autographr(filteredData2(), node_color = "color", node_size = "size",
-                            node_shape = "shape")
+        manynet::autographr(filteredData2(), node_color = "color",
+                            node_size = "size", node_shape = "shape") +
+          ggplot2::scale_color_manual(values = c("black" = "black",
+                                                 "red" = "red"))
         
       }
       else if(!is.null(input$country) & is.null(input$category)){
-        manynet::autographr(filteredData3(), node_color = "color", node_size = "size",
-                            node_shape = "shape")
+        manynet::autographr(filteredData3(), node_color = "color",
+                            node_size = "size", node_shape = "shape") +
+          ggplot2::scale_color_manual(values = c("black" = "black",
+                                                 "red" = "red"))
       }
       else if(!is.null(input$country) & !is.null(input$category)){
-        manynet::autographr(filteredData4(), node_color = "color", node_size = "size",
-                            node_shape = "shape")
+        manynet::autographr(filteredData4(), node_color = "color",
+                            node_size = "size", node_shape = "shape") +
+          ggplot2::scale_color_manual(values = c("black" = "black",
+                                                 "red" = "red"))
       }
     })
     # Add interactivity to display the titles of agreements the user
