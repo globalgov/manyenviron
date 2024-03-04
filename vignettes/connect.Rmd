@@ -125,7 +125,7 @@ manyenviron::memberships$IEADB_MEM %>%
 
 For events or panel network data, `{manynet}` allows users to visualise how networks evolve over time as animations.
 
-```{r dynamic, eval=FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+```{r dynamic, eval=FALSE, warning=FALSE, message=FALSE}
 manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1950" | year == "1951") %>%
@@ -139,3 +139,7 @@ manyenviron::memberships$IEADB_MEM %>%
                       node_size = 3)
 ```
  
+```{r gif, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+knitr::include_graphics("~/man/figures/dynamic-1.gif")
+```
+  
