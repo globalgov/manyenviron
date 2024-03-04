@@ -54,9 +54,9 @@ in a datacube, please visit this [article](https://globalgov.github.io/manypkgs/
 on the `{manypkgs}` website.
 
 Below are two examples of how to visualise treaty linkages for the references and the
-memberships databases in `{manyenviron}`.
+memberships datacubes in `{manyenviron}`.
 We use `{manynet}` to create the network plots, more information about the package can be found
-[here](https://snlab-ch.github.io/manynet/).
+[here](https://stocnet.github.io/manynet/).
 
 ### Visualising How Agreements Connect by References
 
@@ -103,7 +103,6 @@ manyenviron::agreements$ECOLEX %>%
                 from = Title) %>%
   dplyr::select(to, from, RefType) %>%
   manynet::as_tidygraph() %>%
-  manynet::activate(edges) %>%
   manynet::autographr(edge_color = "RefType")
 ```
 
@@ -120,7 +119,6 @@ manyenviron::memberships$IEADB_MEM %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
   manynet::as_tidygraph() %>%
-  manynet::activate(nodes) %>%
   dplyr::mutate(color = ifelse(grepl("_", name), 1, 0),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
@@ -133,7 +131,7 @@ manyenviron::memberships$IEADB_MEM %>%
 
 For events or panel network data, `{manynet}` allows users to visualise how networks evolve over time as animations.
 
-```{r dynamic, eval=FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
+```{r dynamic, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
 # Subset and plot data
 manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
@@ -142,12 +140,11 @@ manyenviron::memberships$IEADB_MEM %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
   manynet::as_tidygraph() %>%
-  manynet::activate(nodes) %>%
-  dplyr::mutate(color = ifelse(grepl("_", name), "blue", "red"),
+  mutate(color = ifelse(grepl("_", name), "blue", "red"),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
   manynet::to_waves(attribute = "year") %>% 
   manynet::autographd(keep_isolates = FALSE, node_color = "color",
                       node_size = "size", node_shape = "shape")
 ```
- 
+  
