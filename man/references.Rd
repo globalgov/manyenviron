@@ -3,9 +3,9 @@
 \docType{data}
 \name{references}
 \alias{references}
-\title{references database documentation}
+\title{references datacube documentation}
 \format{
-The references database is a list that contains the
+The references datacube is a list that contains the
 following 1 datasets: ECOLEX_REF.
 For more information and references to each of the datasets used,
 please use the \code{manydata::call_sources()} and \code{manydata::compare_dimensions()} functions.
@@ -14,11 +14,17 @@ please use the \code{manydata::call_sources()} and \code{manydata::compare_dimen
 3 variables: treatyID1, treatyID2, RefType.}
 }
 }
+\source{
+\itemize{
+\item{ECOLEX_REF: }{
+R. E. Kim and B. Mackey. “International environmental law as a complex adaptive system”. In: \emph{International Environmental Agreements: Politics, Law and Economics} 14.1 (2014), pp. 5-24.}
+}
+}
 \usage{
 references
 }
 \description{
-references database documentation
+references datacube documentation
 }
 \details{
 \if{html}{\out{<div class="sourceCode">}}\preformatted{#> $ECOLEX_REF
@@ -31,4 +37,25 @@ references database documentation
 #> ----------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
+\section{URL}{
+
+\itemize{
+\item{ECOLEX_REF: }{NA}
+}
+}
+
+\section{Mapping}{
+
+\itemize{
+\item{ECOLEX_REF: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   NA \tab NA \cr
+}
+
+
+}
+}
+}
+
 \keyword{datasets}

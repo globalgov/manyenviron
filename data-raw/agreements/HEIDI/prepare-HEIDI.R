@@ -1,7 +1,7 @@
 # HEIDI Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for many packages universe.
+# ready for the many package.
 
 # Stage one: Collecting data
 HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")
@@ -19,13 +19,13 @@ library(dplyr)
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
                         Signature = messydates::as_messydate(`signature.date`)) %>%
-  dplyr::mutate(Beg = Signature) %>%
+  dplyr::mutate(Begin = Signature) %>%
   dplyr::rename(heidiID = ID) %>%
-  dplyr::select(heidiID, Title, Beg, Signature) %>%
-  dplyr::arrange(Beg)
+  dplyr::select(heidiID, Title, Begin, Signature) %>%
+  dplyr::arrange(Begin)
 
 # Add treaty_ID column
-HEIDI$treatyID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Beg)
+HEIDI$treatyID <- manypkgs::code_agreements(HEIDI, HEIDI$Title, HEIDI$Begin)
 
 # Add Lineage column
 HEIDI$Lineage <- manypkgs::code_lineage(HEIDI$Title)
@@ -36,9 +36,9 @@ HEIDI <- dplyr::left_join(HEIDI, manyID, by = "treatyID")
 
 # Re-order the columns
 HEIDI <- HEIDI %>%
-  dplyr::select(manyID, Title, Beg, Signature,
+  dplyr::select(manyID, Title, Begin, Signature,
                 Lineage, treatyID, heidiID) %>%
-  dplyr::arrange(Beg)
+  dplyr::arrange(Begin)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
@@ -47,7 +47,7 @@ HEIDI <- HEIDI %>%
 # Stage three: Connecting data
 # Next run the following line to make IEADB available
 # within the package.
-manypkgs::export_data(HEIDI, database = "agreements",
+manypkgs::export_data(HEIDI, datacube = "agreements",
                       URL = "https://www.chaire-epi.ulaval.ca/en/data/heidi")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

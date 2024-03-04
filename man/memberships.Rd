@@ -3,35 +3,48 @@
 \docType{data}
 \name{memberships}
 \alias{memberships}
-\title{memberships database documentation}
+\title{memberships datacube documentation}
 \format{
-The memberships database is a list that contains the
+The memberships datacube is a list that contains the
 following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
 please use the \code{manydata::call_sources()} and \code{manydata::compare_dimensions()} functions.
 \describe{
 \item{ECOLEX_MEM: }{A dataset with 24975 observations and the following
-10 variables: manyID, treatyID, Title, Beg, stateID, End, stateSignature,
+10 variables: manyID, treatyID, Title, Begin, stateID, End, stateSignature,
 Force, Rat, ecolexID.}
 \item{IEADB_MEM: }{A dataset with 15463 observations and the following
-12 variables: manyID, treatyID, Title, Beg, stateID, End, stateSignature,
+12 variables: manyID, treatyID, Title, Begin, stateID, End, stateSignature,
 Signature, Rat, Force, DocType, ieadbID.}
 \item{TFDD_MEM: }{A dataset with 1832 observations and the following
-8 variables: manyID, treatyID, Title, Beg, stateID, Signature, tfddID,
+8 variables: manyID, treatyID, Title, Begin, stateID, Signature, tfddID,
 Memberships.}
-\item{HUGGO_MEM: }{A dataset with 52462 observations and the following
-31 variables: manyID, treatyID, Title, Beg, stateID, End, Signature, Force,
-stateSignature, stateRat, stateForce, stateForce2, stateForce3, Term,
-stateWithdrawal, stateWithdrawal2, gengID, ecolexID, ieaID, Comments,
-Deposit, obsolete, ProvisionalApp, Reservation, verified, Notes,
-stateForce_ecolex, stateForce_iea, Consent, Acceptance, Accession.}
+\item{HUGGO_MEM: }{A dataset with 50982 observations and the following
+34 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
+StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
+Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
+stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder,
+Orig_noneng_title, match.}
+}
+}
+\source{
+\itemize{
+\item{ECOLEX_MEM: }{
+J. Sommer. “Global governance in forestry: a cross-national analysis”. In: \emph{International Journal ofSustainable Development & World Ecology} 27.6 (2020), pp. 481-495.}
+\item{IEADB_MEM: }{
+R. B. Mitchell, L. B. Andonova, M. Axelrod, et al. “What we know (and could know) about internationalenvironmental agreements”. In: \emph{Global Environmental Politics} 20.1 (2020), pp. 103-121.}
+\item{TFDD_MEM: }{
+O. College of Earth and O. S. U. Atmospheric Science. \emph{Product of the Transboundary Freshwater DisputeDatabase}. \url{http://transboundarywaters.science.oregonstate.edu.}. 2021.}
+\item{HUGGO_MEM: }{
+NA}
 }
 }
 \usage{
 memberships
 }
 \description{
-memberships database documentation
+memberships datacube documentation
 }
 \details{
 \if{html}{\out{<div class="sourceCode">}}\preformatted{#> $ECOLEX_MEM
@@ -41,7 +54,7 @@ memberships database documentation
 #> |    manyID     |  character  |           24975|     0     |       0       |
 #> |   treatyID    |  character  |           24975|     0     |       0       |
 #> |     Title     |  character  |           24975|     0     |       0       |
-#> |      Beg      |    mdate    |           24975|   3421    |     13.7      |
+#> |     Begin     |    mdate    |           24975|   3421    |     13.7      |
 #> |    stateID    |  character  |           24975|    21     |     0.08      |
 #> |      End      |    mdate    |           24975|   24511   |     98.14     |
 #> |stateSignature |    mdate    |           24975|   15313   |     61.31     |
@@ -58,7 +71,7 @@ memberships database documentation
 #> |    manyID     |  character  |           15463|     0     |       0       |
 #> |   treatyID    |  character  |           15463|     0     |       0       |
 #> |     Title     |  character  |           15463|     0     |       0       |
-#> |      Beg      |    mdate    |           15463|     0     |       0       |
+#> |     Begin     |    mdate    |           15463|     0     |       0       |
 #> |    stateID    |  character  |           15463|     0     |       0       |
 #> |      End      |    mdate    |           15463|   14593   |     94.37     |
 #> |stateSignature |    mdate    |           15463|   5797    |     37.49     |
@@ -77,7 +90,7 @@ memberships database documentation
 #> |    manyID     |  character  |            1832|     0     |       0       |
 #> |   treatyID    |  character  |            1832|     0     |       0       |
 #> |     Title     |  character  |            1832|     1     |     0.05      |
-#> |      Beg      |    mdate    |            1832|    102    |     5.57      |
+#> |     Begin     |    mdate    |            1832|    102    |     5.57      |
 #> |    stateID    |  character  |            1832|     1     |     0.05      |
 #> |   Signature   |    mdate    |            1832|    102    |     5.57      |
 #> |    tfddID     |   numeric   |            1832|     1     |     0.05      |
@@ -89,38 +102,105 @@ memberships database documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |           52462|     0     |       0       |
-#> |    treatyID     |  character  |           52462|     0     |       0       |
-#> |      Title      |  character  |           52462|     0     |       0       |
-#> |       Beg       |    mdate    |           52462|    12     |     0.02      |
-#> |     stateID     |  character  |           52462|     0     |       0       |
-#> |       End       |    mdate    |           52462|   40433   |     77.07     |
-#> |    Signature    |    mdate    |           52462|    14     |     0.03      |
-#> |      Force      |    mdate    |           52462|   3538    |     6.74      |
-#> | stateSignature  |  character  |           52462|   11488   |     21.9      |
-#> |    stateRat     |  character  |           52462|   27944   |     53.27     |
-#> |   stateForce    |  character  |           52462|   21420   |     40.83     |
-#> |   stateForce2   |  character  |           52462|   45852   |     87.4      |
-#> |   stateForce3   |  character  |           52462|   48743   |     92.91     |
-#> |      Term       |  character  |           52462|   51288   |     97.76     |
-#> | stateWithdrawal |  character  |           52462|   39438   |     75.17     |
-#> |stateWithdrawal2 |  character  |           52462|   48737   |     92.9      |
-#> |     gengID      |  character  |           52462|     0     |       0       |
-#> |    ecolexID     |  character  |           52462|   31035   |     59.16     |
-#> |      ieaID      |  character  |           52462|   8469    |     16.14     |
-#> |    Comments     |  character  |           52462|   49199   |     93.78     |
-#> |     Deposit     |  character  |           52462|   50622   |     96.49     |
-#> |    obsolete     |  character  |           52462|   39300   |     74.91     |
-#> | ProvisionalApp  |  character  |           52462|   51648   |     98.45     |
-#> |   Reservation   |  character  |           52462|   51658   |     98.47     |
-#> |    verified     |  character  |           52462|   49234   |     93.85     |
-#> |      Notes      |  character  |           52462|   52276   |     99.65     |
-#> |stateForce_ecolex|  character  |           52462|   33011   |     62.92     |
-#> | stateForce_iea  |  character  |           52462|   33011   |     62.92     |
-#> |     Consent     |  character  |           52462|   52163   |     99.43     |
-#> |   Acceptance    |  character  |           52462|   52373   |     99.83     |
-#> |    Accession    |  character  |           52462|   46400   |     88.44     |
+#> |     manyID      |  character  |           50982|     0     |       0       |
+#> |    treatyID     |  character  |           50982|     0     |       0       |
+#> |      Title      |  character  |           50982|     0     |       0       |
+#> |      Begin      |    mdate    |           50982|    12     |     0.02      |
+#> |     stateID     |  character  |           50982|     0     |       0       |
+#> |    Signature    |    mdate    |           50982|    14     |     0.03      |
+#> |      Force      |    mdate    |           50982|   3529    |     6.92      |
+#> |       End       |    mdate    |           50982|   38637   |     75.79     |
+#> | StateSignature  |    mdate    |           50982|   11887   |     23.32     |
+#> |StateRatification|    mdate    |           50982|   27623   |     54.18     |
+#> |   StateForce    |    mdate    |           50982|   18861   |      37       |
+#> |   StateForce2   |    mdate    |           50982|   44277   |     86.85     |
+#> |   StateForce3   |    mdate    |           50982|   47292   |     92.76     |
+#> |    StateEnd     |    mdate    |           50982|   32864   |     64.46     |
+#> |    StateEnd2    |    mdate    |           50982|   47286   |     92.75     |
+#> |     gengID      |  character  |           50982|     0     |       0       |
+#> |      ieaID      |  character  |           50982|   8626    |     16.92     |
+#> |    ecolexID     |  character  |           50982|   30960   |     60.73     |
+#> |    Accession    |    mdate    |           50982|   42976   |     84.3      |
+#> |   Succession    |  character  |           50982|   37798   |     74.14     |
+#> |      Term       |    mdate    |           50982|   49804   |     97.69     |
+#> |    Comments     |  character  |           50982|   47702   |     93.57     |
+#> |     Deposit     |  character  |           50982|   49332   |     96.76     |
+#> |    obsolete     |  character  |           50982|   38387   |     75.3      |
+#> | ProvisionalApp  |  character  |           50982|   50210   |     98.49     |
+#> |   Reservation   |  character  |           50982|   50208   |     98.48     |
+#> |      Notes      |  character  |           50982|   50796   |     99.64     |
+#> |stateForce_ecolex|  character  |           50982|   32462   |     63.67     |
+#> | stateForce_iea  |  character  |           50982|   32462   |     63.67     |
+#> |     Consent     |  character  |           50982|   50758   |     99.56     |
+#> |   Acceptance    |  character  |           50982|   50457   |     98.97     |
+#> |      Coder      |  character  |           50982|     0     |       0       |
+#> |Orig_noneng_title|  character  |           50982|   50978   |     99.99     |
+#> |      match      |  character  |           50982|   50978   |     99.99     |
 #> ------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
+\section{URL}{
+
+\itemize{
+\item{ECOLEX_MEM: }{
+\url{https://www.ecolex.org/result/?type=treaty}
+}
+\item{IEADB_MEM: }{
+\url{https://iea.uoregon.edu/country-members}
+}
+\item{TFDD_MEM: }{
+\url{https://transboundarywaters.science.oregonstate.edu/}
+}
+\item{HUGGO_MEM: }{Hand-coded data by the GGO team.}
+}
+}
+
+\section{Mapping}{
+
+\itemize{
+\item{ECOLEX_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   For \tab Force \cr
+   Rati \tab Rat \cr
+   Sign \tab stateSignature \cr
+   Term \tab End \cr
+   StatID \tab stateID \cr
+   EcolexID \tab ecolexID \cr
+}
+
+
+}
+\item{IEADB_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   country \tab stateID \cr
+   treatyname \tab Title \cr
+   tsig \tab Signature \cr
+   csig \tab stateSignature \cr
+   crat \tab Rat \cr
+   tterm \tab End \cr
+   ceif3 \tab Force \cr
+   ceif4 \tab Force2 \cr
+   mitch_id \tab ieadbID \cr
+   inclusion \tab DocType \cr
+}
+
+
+}
+\item{TFDD_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   DateSigned \tab Signature \cr
+   '2016Update ID' \tab tfddID \cr
+   CCODE \tab stateID \cr
+   DocumentName \tab Title \cr
+   Signatories \tab Memberships \cr
+}
+
+
+}
+}
+}
+
 \keyword{datasets}

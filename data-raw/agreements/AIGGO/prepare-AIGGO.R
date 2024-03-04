@@ -1,7 +1,7 @@
 # AIGGO Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# ready for the many package.
 
 # Start with HUGGO dataset
 AIGGO <- manyenviron::agreements$HUGGO
@@ -10,7 +10,7 @@ AIGGO <- manyenviron::agreements$HUGGO
 AIGGO$action_area <- manypkgs::code_lineage(AIGGO$Title)
 
 # Add linkage column
-AIGGO$linkage <- manypkgs::code_linkage(AIGGO$Title, AIGGO$Beg)
+AIGGO$linkage <- manypkgs::code_linkage(AIGGO$Title, AIGGO$Begin)
 
 # Code accession conditions and procedures
 AIGGO$accessionC <- manypkgs::code_accession_terms(AIGGO$TreatyText,
@@ -27,7 +27,7 @@ AIGGO$termination_date <- manypkgs::code_term_date(AIGGO$Title,
 
 # Remove duplicates and convert NAs
 AIGGO <- AIGGO %>%
-  dplyr::select(manyID, treatyID, Title, Beg, End, Signature,
+  dplyr::select(manyID, treatyID, Title, Begin, End, Signature,
                 Force, action_area, linkage, accessionC, accessionP,
                 termination_type, termination_date) %>%
   mutate(across(everything(), ~stringr::str_replace_all(., "^NA$",
@@ -36,12 +36,12 @@ AIGGO <- AIGGO %>%
                           NA_character_, linkage)) %>%
   mutate(Signature = messydates::as_messydate(Signature),
          Force = messydates::as_messydate(Force),
-         Beg = messydates::as_messydate(Beg),
+         Begin = messydates::as_messydate(Begin),
          End = messydates::as_messydate(End)) %>%
   dplyr::distinct()
 
 # Stage three: Connecting data
-manypkgs::export_data(AIGGO, database = "agreements",
+manypkgs::export_data(AIGGO, datacube = "agreements",
                       URL = "Programatically coded data by the GGO team")
 
 # This function also does two additional things.
