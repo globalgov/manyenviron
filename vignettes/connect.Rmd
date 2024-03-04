@@ -30,8 +30,8 @@ For a quick overview of the database and dataset in `{manyenviron}`, we can use 
 
 ```{r, eval=FALSE}
 library(manydata)
-manydata::compare_dimensions("manyenviron", "agreements")
-manydata::compare_dimensions("manyenviron", "memberships")
+manydata::compare_dimensions(manyenviron::agreements)
+manydata::compare_dimensions(manyenviron::memberships)
 ```
 
 To view the bibliographic references for a dataset, a database, or the whole package, we can also use `code_source()` from `{manydata}`.
@@ -130,7 +130,7 @@ For events or panel network data, `{manynet}` allows users to visualise how netw
 # Subset and plot data
 manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
-  dplyr::filter(year == "1980" | year == "1981") %>%
+  dplyr::filter(year == "1950" | year == "1951") %>%
   dplyr::select(treatyID, stateID, year) %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
