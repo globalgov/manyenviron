@@ -5,21 +5,22 @@
 #' For more information and references to each of the datasets used,
 #' please use the `manydata::call_sources()` and `manydata::compare_dimensions()` functions.
 #'\describe{
-#' \item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-#' 10 variables: manyID, stateID, Title, Begin, End, stateSignature, Force, Rat,
-#' ecolexID, treatyID.}
+#' \item{ECOLEX_MEM: }{A dataset with 24975 observations and the following
+#' 10 variables: manyID, treatyID, Title, Begin, stateID, End, stateSignature,
+#' Force, Rat, ecolexID.}
 #' \item{IEADB_MEM: }{A dataset with 15463 observations and the following
-#' 12 variables: manyID, stateID, Title, Begin, End, stateSignature, Signature,
-#' Rat, Force, DocType, ieadbID, treatyID.}
-#' \item{TFDD_MEM: }{A dataset with 2118 observations and the following
-#' 8 variables: manyID, stateID, Title, Begin, Signature, tfddID, Memberships,
-#' treatyID.}
-#' \item{HUGGO_MEM: }{A dataset with 51042 observations and the following
-#' 32 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+#' 12 variables: manyID, treatyID, Title, Begin, stateID, End, stateSignature,
+#' Signature, Rat, Force, DocType, ieadbID.}
+#' \item{TFDD_MEM: }{A dataset with 1832 observations and the following
+#' 8 variables: manyID, treatyID, Title, Begin, stateID, Signature, tfddID,
+#' Memberships.}
+#' \item{HUGGO_MEM: }{A dataset with 50982 observations and the following
+#' 34 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
 #' StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
 #' StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
 #' Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
-#' stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder.}
+#' stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder,
+#' Orig_noneng_title, match.}
 #' }
 #' @source
 #' \itemize{

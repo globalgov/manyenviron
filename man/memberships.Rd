@@ -10,21 +10,22 @@ following 4 datasets: ECOLEX_MEM, IEADB_MEM, TFDD_MEM, HUGGO_MEM.
 For more information and references to each of the datasets used,
 please use the \code{manydata::call_sources()} and \code{manydata::compare_dimensions()} functions.
 \describe{
-\item{ECOLEX_MEM: }{A dataset with 25003 observations and the following
-10 variables: manyID, stateID, Title, Begin, End, stateSignature, Force, Rat,
-ecolexID, treatyID.}
+\item{ECOLEX_MEM: }{A dataset with 24975 observations and the following
+10 variables: manyID, treatyID, Title, Begin, stateID, End, stateSignature,
+Force, Rat, ecolexID.}
 \item{IEADB_MEM: }{A dataset with 15463 observations and the following
-12 variables: manyID, stateID, Title, Begin, End, stateSignature, Signature,
-Rat, Force, DocType, ieadbID, treatyID.}
-\item{TFDD_MEM: }{A dataset with 2118 observations and the following
-8 variables: manyID, stateID, Title, Begin, Signature, tfddID, Memberships,
-treatyID.}
-\item{HUGGO_MEM: }{A dataset with 51042 observations and the following
-32 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
+12 variables: manyID, treatyID, Title, Begin, stateID, End, stateSignature,
+Signature, Rat, Force, DocType, ieadbID.}
+\item{TFDD_MEM: }{A dataset with 1832 observations and the following
+8 variables: manyID, treatyID, Title, Begin, stateID, Signature, tfddID,
+Memberships.}
+\item{HUGGO_MEM: }{A dataset with 50982 observations and the following
+34 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
 StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
 StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
 Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
-stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder.}
+stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder,
+Orig_noneng_title, match.}
 }
 }
 \source{
@@ -101,38 +102,40 @@ memberships datacube documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |           51042|     0     |       0       |
-#> |    treatyID     |  character  |           51042|     0     |       0       |
-#> |      Title      |  character  |           51042|     0     |       0       |
-#> |      Begin      |    mdate    |           51042|    12     |     0.02      |
-#> |     stateID     |  character  |           51042|     0     |       0       |
-#> |    Signature    |    mdate    |           51042|    14     |     0.03      |
-#> |      Force      |    mdate    |           51042|   3537    |     6.93      |
-#> |       End       |    mdate    |           51042|   38689   |     75.8      |
-#> | StateSignature  |    mdate    |           51042|   11889   |     23.29     |
-#> |StateRatification|    mdate    |           51042|   27634   |     54.14     |
-#> |   StateForce    |    mdate    |           51042|   18871   |     36.97     |
-#> |   StateForce2   |    mdate    |           51042|   44319   |     86.83     |
-#> |   StateForce3   |    mdate    |           51042|   47337   |     92.74     |
-#> |    StateEnd     |    mdate    |           51042|   32876   |     64.41     |
-#> |    StateEnd2    |    mdate    |           51042|   47331   |     92.73     |
-#> |     gengID      |  character  |           51042|     0     |       0       |
-#> |      ieaID      |  character  |           51042|   8629    |     16.91     |
-#> |    ecolexID     |  character  |           51042|   30963   |     60.66     |
-#> |    Accession    |    mdate    |           51042|   43027   |     84.3      |
-#> |   Succession    |  character  |           51042|   39337   |     77.07     |
-#> |      Term       |    mdate    |           51042|   49864   |     97.69     |
-#> |    Comments     |  character  |           51042|   47760   |     93.57     |
-#> |     Deposit     |  character  |           51042|   49385   |     96.75     |
-#> |    obsolete     |  character  |           51042|   38414   |     75.26     |
-#> | ProvisionalApp  |  character  |           51042|   50268   |     98.48     |
-#> |   Reservation   |  character  |           51042|   50268   |     98.48     |
-#> |      Notes      |  character  |           51042|   50856   |     99.64     |
-#> |stateForce_ecolex|  character  |           51042|   32518   |     63.71     |
-#> | stateForce_iea  |  character  |           51042|   32518   |     63.71     |
-#> |     Consent     |  character  |           51042|   50817   |     99.56     |
-#> |   Acceptance    |  character  |           51042|   50515   |     98.97     |
-#> |      Coder      |  character  |           51042|     0     |       0       |
+#> |     manyID      |  character  |           50982|     0     |       0       |
+#> |    treatyID     |  character  |           50982|     0     |       0       |
+#> |      Title      |  character  |           50982|     0     |       0       |
+#> |      Begin      |    mdate    |           50982|    12     |     0.02      |
+#> |     stateID     |  character  |           50982|     0     |       0       |
+#> |    Signature    |    mdate    |           50982|    14     |     0.03      |
+#> |      Force      |    mdate    |           50982|   3529    |     6.92      |
+#> |       End       |    mdate    |           50982|   38637   |     75.79     |
+#> | StateSignature  |    mdate    |           50982|   11887   |     23.32     |
+#> |StateRatification|    mdate    |           50982|   27623   |     54.18     |
+#> |   StateForce    |    mdate    |           50982|   18861   |      37       |
+#> |   StateForce2   |    mdate    |           50982|   44277   |     86.85     |
+#> |   StateForce3   |    mdate    |           50982|   47292   |     92.76     |
+#> |    StateEnd     |    mdate    |           50982|   32864   |     64.46     |
+#> |    StateEnd2    |    mdate    |           50982|   47286   |     92.75     |
+#> |     gengID      |  character  |           50982|     0     |       0       |
+#> |      ieaID      |  character  |           50982|   8626    |     16.92     |
+#> |    ecolexID     |  character  |           50982|   30960   |     60.73     |
+#> |    Accession    |    mdate    |           50982|   42976   |     84.3      |
+#> |   Succession    |  character  |           50982|   37798   |     74.14     |
+#> |      Term       |    mdate    |           50982|   49804   |     97.69     |
+#> |    Comments     |  character  |           50982|   47702   |     93.57     |
+#> |     Deposit     |  character  |           50982|   49332   |     96.76     |
+#> |    obsolete     |  character  |           50982|   38387   |     75.3      |
+#> | ProvisionalApp  |  character  |           50982|   50210   |     98.49     |
+#> |   Reservation   |  character  |           50982|   50208   |     98.48     |
+#> |      Notes      |  character  |           50982|   50796   |     99.64     |
+#> |stateForce_ecolex|  character  |           50982|   32462   |     63.67     |
+#> | stateForce_iea  |  character  |           50982|   32462   |     63.67     |
+#> |     Consent     |  character  |           50982|   50758   |     99.56     |
+#> |   Acceptance    |  character  |           50982|   50457   |     98.97     |
+#> |      Coder      |  character  |           50982|     0     |       0       |
+#> |Orig_noneng_title|  character  |           50982|   50978   |     99.99     |
+#> |      match      |  character  |           50982|   50978   |     99.99     |
 #> ------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }
