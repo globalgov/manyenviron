@@ -52,7 +52,7 @@ IEADB$Lineage <- manypkgs::code_lineage(IEADB$Title)
 # Add manyID column
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 IEADB <- dplyr::left_join(IEADB, manyID, by = "treatyID") %>%
-   dplyr::distinct() %>%
+  dplyr::distinct() %>%
   dplyr::relocate(manyID, Title, Begin, DocType, AgreementType, Signature,
                 Force, Lineage, treatyID, ieadbID) %>%
   dplyr::arrange(Begin)

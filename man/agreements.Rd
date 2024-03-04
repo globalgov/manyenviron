@@ -8,7 +8,7 @@
 The agreements datacube is a list that contains the
 following 7 datasets: IEADB, ECOLEX, CIESIN, HEIDI, HUGGO, AIGGO, IRD.
 For more information and references to each of the datasets used,
-please use the \code{data_source()} and \code{data_contrast()} functions.
+please use the \code{manydata::call_sources()} and \code{manydata::compare_dimensions()} functions.
 \describe{
 \item{IEADB: }{A dataset with 3667 observations and the following
 10 variables: manyID, Title, Begin, DocType, AgreementType, Signature, Force,
