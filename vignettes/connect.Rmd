@@ -14,7 +14,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 options(rmarkdown.html_vignette.check_title = FALSE)
 ```
 
-## Manyenviron Data
+## manyenviron Data
 
 `{manyenviron}` stores several datasets on various aspects of environmental treaties in different datacubes.
 For example, the **Agreements** datacube is made of multiple datasets of environmental treaty titles with
@@ -31,7 +31,7 @@ For a quick overview of the datacube and dataset in `{manyenviron}`, we can use 
 ```{r, eval=FALSE}
 library(manydata)
 manydata::compare_dimensions(manyenviron::agreements)
-manydata::compare_dimensions("manyenviron", "memberships")
+manydata::compare_dimensions(manyenviron::memberships)
 ```
 
 To view the bibliographic references for a dataset, a datacube, or the whole package, we can also use `code_source()` from `{manydata}`.
@@ -68,17 +68,18 @@ library(ggplot2)
 library(manynet)
 library(tidygraph)
 library(stringr)
-# Get dataset and plot with manynet
-manyenviron::references$ECOLEX_REF %>%
-  distinct() %>%
-  filter(RefType == "Cites", !grepl(":", treatyID1),
-         !grepl(":", treatyID2)) %>%
+# Get dataset
+references <- manyenviron::references$ECOLEX_REF %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(year = as.numeric(stringr::str_extract(treatyID2, "[:digit:]{4}"))) %>%
+  dplyr::filter(RefType == "Cites") %>%
+  dplyr::arrange(year)
+
+# Plot with manynet
+references[1:25,] %>%
   as_tidygraph() %>%
-  mutate(year = as.numeric(stringr::str_extract(name, "[:digit:]{4}"))) %>%
-  filter(year > 1979, year < 2000) %>%
-  to_no_isolates() %>%
-  autographr(layout = "lineage", rank = "year", node_size = 3,
-             node_color = "year") +
+  mutate(rank = c(rep(1, 20), rep(2, 13))) %>%
+  autographr(layout = "lineage", rank = "rank") +
   labs(title = "Treaty Lineage of Selected Agreements",
        caption = "Source: manyenviron") +
   theme(plot.title = element_text(family = "sans", size = 18, hjust = 0.5))
