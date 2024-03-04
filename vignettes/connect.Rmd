@@ -30,7 +30,7 @@ For a quick overview of the datacube and dataset in `{manyenviron}`, we can use 
 
 ```{r, eval=FALSE}
 library(manydata)
-manydata::compare_dimensions("manyenviron", "agreements")
+manydata::compare_dimensions(manyenviron::agreements)
 manydata::compare_dimensions("manyenviron", "memberships")
 ```
 
@@ -66,44 +66,37 @@ The graph below illustrates a sample of earliest 25 treaties from the references
 library(dplyr)
 library(ggplot2)
 library(manynet)
+library(tidygraph)
 library(stringr)
-# Get dataset
-references <- manyenviron::references$ECOLEX_REF %>%
-  dplyr::distinct() %>%
-  dplyr::mutate(year = as.numeric(stringr::str_extract(treatyID2, "[:digit:]{4}"))) %>%
-  dplyr::filter(RefType == "Cites") %>%
-  dplyr::arrange(year)
-
-# Plot with manynet
-manynet::autographr(references[1:25, c(1, 2, 3)]) +
+# Get dataset and plot with manynet
+manyenviron::references$ECOLEX_REF %>%
+  distinct() %>%
+  filter(RefType == "Cites", !grepl(":", treatyID1),
+         !grepl(":", treatyID2)) %>%
+  as_tidygraph() %>%
+  mutate(year = as.numeric(stringr::str_extract(name, "[:digit:]{4}"))) %>%
+  filter(year > 1979, year < 2000) %>%
+  to_no_isolates() %>%
+  autographr(layout = "lineage", rank = "year", node_size = 3,
+             node_color = "year") +
   labs(title = "Treaty Lineage of Selected Agreements",
        caption = "Source: manyenviron") +
-  theme(plot.title = element_text(family = "sans",
-                                  size = 18,
-                                  hjust = 0.5))
+  theme(plot.title = element_text(family = "sans", size = 18, hjust = 0.5))
 ```
 
 We can also take a look at a single lineage of Enviromental treaties.
 Let's look at treaties that either cite or ammend the United Nations Framework Convention On Climate Change ("UNFCCC_1992A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
-# Subset dataset
-unf <- manyenviron::references$ECOLEX_REF %>%
+manyenviron::references$ECOLEX_REF %>%
   dplyr::distinct() %>%
   dplyr::mutate(year = stringr::str_extract(treatyID2, "[:digit:]{4}")) %>%
-  dplyr::filter(treatyID2 == "UNFCCC_1992A") %>%
-  dplyr::arrange(year)
-
-# Get agreement titles, join information, and plot
-manyenviron::agreements$ECOLEX %>%
-  dplyr::select(Title, treatyID) %>%
-  dplyr::rename(treatyID1 = treatyID) %>%
-  dplyr::right_join(unf) %>%
-  dplyr::rename(to = treatyID2,
-                from = Title) %>%
-  dplyr::select(to, from, RefType) %>%
+  dplyr::filter(treatyID2 == "RAMSA_1971A") %>%
+  dplyr::arrange(year) %>% 
   manynet::as_tidygraph() %>%
-  manynet::autographr(edge_color = "RefType")
+  mutate(center = ifelse(name == "RAMSA_1971A", 1, 0)) %>%
+  manynet::autographr(edge_color = "RefType",
+                      node_shape = "center")
 ```
 
 ### Visualising How Agreements Connect by Country Membership
@@ -119,32 +112,29 @@ manyenviron::memberships$IEADB_MEM %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
   manynet::as_tidygraph() %>%
-  dplyr::mutate(color = ifelse(grepl("_", name), 1, 0),
+  activate(nodes) %>%
+  dplyr::mutate(color = ifelse(grepl("_", name), "Treaty", "Country"),
                 size = ifelse(grepl("_", name), 4, 2),
                 shape = ifelse(grepl("_", name), "square", "circle")) %>%
   manynet::to_undirected() %>%
-  manynet::autographr(node_color = "color", node_size = "size",
-                      node_shape = "shape")
+  manynet::autographr(node_color = "color", node_size = "size")
 ```
 
 ### Extra: dynamic visualisation
 
 For events or panel network data, `{manynet}` allows users to visualise how networks evolve over time as animations.
 
-```{r dynamic, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-# Subset and plot data
+```{r dynamic, eval=FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1, fig.width=7}
 manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
-  dplyr::filter(year == "1980" | year == "1981") %>%
+  dplyr::filter(year == "1950" | year == "1951") %>%
   dplyr::select(treatyID, stateID, year) %>%
   group_by(treatyID) %>%
   filter( n() > 2) %>% # keep only multilateral treaties
   manynet::as_tidygraph() %>%
-  mutate(color = ifelse(grepl("_", name), "blue", "red"),
-                size = ifelse(grepl("_", name), 4, 2),
-                shape = ifelse(grepl("_", name), "square", "circle")) %>%
+  mutate(color = ifelse(grepl("_", name), "blue", "red")) %>%
   manynet::to_waves(attribute = "year") %>% 
-  manynet::autographd(keep_isolates = FALSE, node_color = "color",
-                      node_size = "size", node_shape = "shape")
+  manynet::autographd(keep_isolates = FALSE, node_color = "color", 
+                      node_size = 3)
 ```
-  
+ 
