@@ -65,22 +65,21 @@ The graph below illustrates a sample of earliest 25 treaties from the references
 ```{r lineage, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 library(dplyr)
 library(ggplot2)
-library(manynet)
 library(tidygraph)
 library(stringr)
+library(manynet)
 
-# Get dataset
-references <- manyenviron::references$ECOLEX_REF %>%
-  dplyr::distinct() %>%
-  dplyr::mutate(year = as.numeric(stringr::str_extract(treatyID2, "[:digit:]{4}"))) %>%
-  dplyr::filter(RefType == "Cites") %>%
-  dplyr::arrange(year)
-
-# Plot with manynet
-references[1:25,] %>%
+# Get dataset and plot with manynet
+manyenviron::references$ECOLEX_REF %>%
+  distinct() %>%
+  filter(RefType == "Cites", !grepl(":", treatyID1),
+         !grepl(":", treatyID2)) %>%
   as_tidygraph() %>%
-  mutate(rank = c(rep(1, 20), rep(2, 13))) %>%
-  autographr(layout = "lineage", rank = "rank") +
+  mutate(year = as.numeric(stringr::str_extract(name, "[:digit:]{4}"))) %>%
+  filter(year > 1979, year < 2000) %>%
+  to_no_isolates() %>%
+  autographr(layout = "lineage", rank = "year", node_size = 3,
+             node_color = "year") +
   labs(title = "Treaty Lineage of Selected Agreements",
        caption = "Source: manyenviron") +
   theme(plot.title = element_text(family = "sans", size = 18, hjust = 0.5))
@@ -125,6 +124,6 @@ manyenviron::memberships$IEADB_MEM %>%
 ```
  
 ```{r gif, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.asp=1, fig.width=7}
-knitr::include_graphics("~/man/figures/dynamic-1.gif")
+knitr::include_graphics("dynamic-1.gif")
 ```
   
