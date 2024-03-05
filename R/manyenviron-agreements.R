@@ -34,22 +34,26 @@
 #' @source
 #' \itemize{
 #' \item{IEADB: }{
-#' R. B. Mitchell et al. "What we know (and could know) about international environmental agreements". In: _Global Environmental Politics_ 20.1 (2020), pp. 103-121.
+#' R. B. Mitchell et al. "What we know (and could know) about international environmental agreements".
+#' _Global Environmental Politics_ 20.1 (2020), pp. 103-121.
 #' }
 #' \item{ECOLEX: }{
-#' J. Sommer. “Global governance in forestry: a cross-national analysis”. In: _International Journal ofSustainable Development & World Ecology_ 27.6 (2020), pp. 481-495.
+#' J. Sommer. “Global governance in forestry: a cross-national analysis”.
+#' _International Journal ofSustainable Development & World Ecology_ 27.6 (2020), pp. 481-495.
 #' }
 #' \item{CIESIN: }{
-#' Centre for International Earth Science Information Network. In: _Socioeconomic Data and Applications Center (SEDAC) Collection of Treaty Texts_ (2002).
+#' Centre for International Earth Science Information Network.
+#' _Socioeconomic Data and Applications Center (SEDAC) Collection of Treaty Texts_ (2002).
 #' }
 #' \item{HEIDI: }{
-#' J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance". In: _Globalization and health_ 15.1 (2019), pp. 1-8.
+#' J-F. Morin, and C. Blouin. "How environmental treaties contribute to global health governance".
+#' _Globalization and health_ 15.1 (2019), pp. 1-8.
 #' }
 #' \item{HUGGO: }{
-#' NA
+#' J. Hollway. Environmental agreements for manydata. 2021.
 #' }
 #' \item{AIGGO: }{
-#' NA
+#' J. Hollway. Environmental agreements for manydata. 2021.
 #' }
 #' \item{IRD: }{
 #' O. R. Young and M. Zürn. “The international regimes database: Designing and using a sophisticated tool for institutional analysis”. In: _Global Environmental Politics_ 6.3 (2006), pp. 121-143.
@@ -133,6 +137,22 @@
 #' | Endpoint | End |
 #' | Watershed | Wat |
 #' | Watershed2 | Wat2 |
+#' 
+#' }
+#' \item{HUGGO: }{
+#' Variable Mapping
+#' 
+#' |  *from*  | *to*
+#' |:------------:|:------------:|
+#' | NA | NA |
+#' 
+#' }
+#' \item{AIGGO: }{
+#' Variable Mapping
+#' 
+#' |  *from*  | *to*
+#' |:------------:|:------------:|
+#' | NA | NA |
 #' 
 #' }
 #' }

@@ -25,13 +25,16 @@
 #' @source
 #' \itemize{
 #' \item{ECOLEX_MEM: }{
-#' J. Sommer. “Global governance in forestry: a cross-national analysis”. In: _International Journal ofSustainable Development & World Ecology_ 27.6 (2020), pp. 481-495.}
+#' J. Sommer. “Global governance in forestry: a cross-national analysis”.
+#' _International Journal of Sustainable Development & World Ecology_ 27.6 (2020), pp. 481-495.}
 #' \item{IEADB_MEM: }{
-#' R. B. Mitchell, L. B. Andonova, M. Axelrod, et al. “What we know (and could know) about internationalenvironmental agreements”. In: _Global Environmental Politics_ 20.1 (2020), pp. 103-121.}
+#' R. B. Mitchell, L. B. Andonova, M. Axelrod, et al. “What we know (and could know) about internationalenvironmental agreements”.
+#' _Global Environmental Politics_ 20.1 (2020), pp. 103-121.}
 #' \item{TFDD_MEM: }{
-#' O. College of Earth and O. S. U. Atmospheric Science. _Product of the Transboundary Freshwater DisputeDatabase_. <http://transboundarywaters.science.oregonstate.edu.>. 2021.}
+#' O. College of Earth and O. S. U. Atmospheric Science.
+#' _Product of the Transboundary Freshwater DisputeDatabase_. <http://transboundarywaters.science.oregonstate.edu.>. 2021.}
 #' \item{HUGGO_MEM: }{
-#' NA}
+#' J. Hollway. Environmental agreements for manydata. 2021.}
 #' }
 #' @section URL:
 #' \itemize{
@@ -88,6 +91,14 @@
 #' | CCODE | stateID |
 #' | DocumentName | Title |
 #' | Signatories | Memberships |
+#' 
+#' }
+#' \item{HUGGO_MEM: }{
+#' Variable Mapping
+#' 
+#' |  *from*  | *to*
+#' |:------------:|:------------:|
+#' | NA | NA |
 #' 
 #' }
 #' }

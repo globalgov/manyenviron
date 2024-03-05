@@ -31,13 +31,16 @@ Orig_noneng_title, match.}
 \source{
 \itemize{
 \item{ECOLEX_MEM: }{
-J. Sommer. “Global governance in forestry: a cross-national analysis”. In: \emph{International Journal ofSustainable Development & World Ecology} 27.6 (2020), pp. 481-495.}
+J. Sommer. “Global governance in forestry: a cross-national analysis”.
+\emph{International Journal of Sustainable Development & World Ecology} 27.6 (2020), pp. 481-495.}
 \item{IEADB_MEM: }{
-R. B. Mitchell, L. B. Andonova, M. Axelrod, et al. “What we know (and could know) about internationalenvironmental agreements”. In: \emph{Global Environmental Politics} 20.1 (2020), pp. 103-121.}
+R. B. Mitchell, L. B. Andonova, M. Axelrod, et al. “What we know (and could know) about internationalenvironmental agreements”.
+\emph{Global Environmental Politics} 20.1 (2020), pp. 103-121.}
 \item{TFDD_MEM: }{
-O. College of Earth and O. S. U. Atmospheric Science. \emph{Product of the Transboundary Freshwater DisputeDatabase}. \url{http://transboundarywaters.science.oregonstate.edu.}. 2021.}
+O. College of Earth and O. S. U. Atmospheric Science.
+\emph{Product of the Transboundary Freshwater DisputeDatabase}. \url{http://transboundarywaters.science.oregonstate.edu.}. 2021.}
 \item{HUGGO_MEM: }{
-NA}
+J. Hollway. Environmental agreements for manydata. 2021.}
 }
 }
 \usage{
@@ -196,6 +199,14 @@ Variable Mapping\tabular{cc}{
    CCODE \tab stateID \cr
    DocumentName \tab Title \cr
    Signatories \tab Memberships \cr
+}
+
+
+}
+\item{HUGGO_MEM: }{
+Variable Mapping\tabular{cc}{
+   \emph{from} \tab \emph{to} \cr
+   NA \tab NA \cr
 }
 
 
