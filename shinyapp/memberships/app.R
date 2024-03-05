@@ -20,7 +20,7 @@ memberships <- memberships %>%
   dplyr::mutate(category = NA)
 i <- 0
 manyID <- NA
-for(i in 1:nrow(memberships)){
+for(i in seq_len(nrow(memberships))){
   manyID <- as.character(memberships[i, 1])
   if(sum(memberships$manyID == manyID) > 2) {
     memberships[i, 6] <- "Multilateral"
