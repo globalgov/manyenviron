@@ -10,7 +10,6 @@ IEADB_MEM <- readxl::read_excel("data-raw/memberships/IEADB_MEM/iea-memb.xlsx")
 # In this stage you will want to correct the variable names and
 # formats of the 'IEA_MEM' object until the object created
 # below (in stage three) passes all the tests.
-library(dplyr)
 IEADB_MEM <- as_tibble(IEADB_MEM) %>%
   manydata::transmutate(stateID = manypkgs::code_states(country,
                                                         activity = FALSE,

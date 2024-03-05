@@ -1,8 +1,8 @@
-library(shiny)
-library(shinydashboard)
-library(dplyr)
-library(ggplot2)
-library(tidygraph)
+# library(shiny)
+# library(shinydashboard)
+# library(dplyr)
+# library(ggplot2)
+# library(tidygraph)
 
 # Prepare memberships dataset
 memberships <- manyenviron::memberships$IEADB_MEM %>%

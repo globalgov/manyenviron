@@ -15,7 +15,6 @@ HEIDI$signature.date <- as.Date(HEIDI$signature.date, origin = "1970-01-01")
 # In this stage you will want to correct the variable names and
 # formats of the 'HEIDI' object until the object created
 # below (in stage three) passes all the tests.
-library(dplyr)
 HEIDI <- as_tibble(HEIDI) %>%
   manydata::transmutate(Title = manypkgs::standardise_titles(`Name.of.the.agreement`),
                         Signature = messydates::as_messydate(`signature.date`)) %>%

@@ -10,7 +10,6 @@ TFDD_MEM <- readxl::read_excel("data-raw/memberships/TFDD_MEM/TFDD.xlsx")
 # In this stage you will want to correct the variable names and
 # formats of the 'TFDD_MEM' object until the object created
 # below (in stage three) passes all the tests.
-library(dplyr)
 TFDD_MEM <- as_tibble(TFDD_MEM) %>%
   dplyr::mutate(Signature = messydates::as_messydate(openxlsx::convertToDate(DateSigned))) %>%
   dplyr::mutate(Begin = messydates::as_messydate(as.character(Signature))) %>%
