@@ -1,7 +1,8 @@
 # First step: load packages
-# library(shiny)
-# library(shinydashboard)
-# library(dplyr)
+library(shiny)
+library(shinydashboard)
+library(dplyr)
+library(manynet)
 
 references <- manyenviron::references$ECOLEX_REF
 # references <- references[, -1]
