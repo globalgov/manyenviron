@@ -1,6 +1,6 @@
 ---
 title: "How Do Environmental Treaties Connect?"
-authors: "James Hollway, Esther Peev, Henrique Sposito, and Bernhard Bieri"
+authors: "James Hollway, Henrique Sposito, Jael Tan, Esther Peev, and Bernhard Bieri"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -53,7 +53,7 @@ as well as the benefits of using treatyID to spot the relationships between the 
 in a datacube, please visit this [article](https://globalgov.github.io/manypkgs/articles/agreements.html)
 on the `{manypkgs}` website.
 
-Below are two examples of how to visualise treaty linkages for the references and the
+Below are three examples of how to visualise treaty linkages for the references and the
 memberships datacubes in `{manyenviron}`.
 We use `{manynet}` to create the network plots, more information about the package can be found
 [here](https://stocnet.github.io/manynet/).
@@ -68,8 +68,7 @@ library(ggplot2)
 library(tidygraph)
 library(stringr)
 library(manynet)
-
-# Get dataset and plot with manynet
+# Get the dataset and plot with manynet
 manyenviron::references$ECOLEX_REF %>%
   distinct() %>%
   filter(RefType == "Cites", !grepl(":", treatyID1),
@@ -86,10 +85,29 @@ manyenviron::references$ECOLEX_REF %>%
 ```
 
 We can also take a look at a single lineage of Enviromental treaties.
-Let's look at treaties that either cite or ammend the United Nations Framework Convention On Climate Change ("UNFCCC_1992A").
+Let's look at treaties that either cite or ammend the Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
-# Subset and plot data
+manyenviron::references$ECOLEX_REF %>%
+  dplyr::filter(treatyID2 == "RAMSA_1971A") %>%
+  manynet::as_tidygraph() %>%
+  mutate(year = as.numeric(stringr::str_extract(name, "[:digit:]{4}")),
+         center = ifelse(name == "RAMSA_1971A", 1, 2)) %>%
+  manynet::autographr(layout = "lineage", rank = "year",
+                      edge_color = "RefType", node_color = "center")  +
+  scale_color_sdgs(guide = "none") +
+  scale_edge_color_centres() +
+  labs(title = "Treaties that cite or ammend the Ramsar Convention 1971",
+       caption = "Source: manyenviron") +
+  theme_iheid()
+```
+
+### Visualising How Agreements Connect by Country Membership and by Year
+
+Or we can look at countries part of Enviromental treaties for certain years.
+The graph below illustrates the connection between parties and treaties for multilateral environmental agreements signed into force in the year of 1980 using the memberships database.
+
+```{r 1980, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 manyenviron::memberships$IEADB_MEM %>%
   dplyr::mutate(year = stringr::str_extract(manyID, "[:digit:]{4}")) %>%
   dplyr::filter(year == "1980") %>%
@@ -99,10 +117,11 @@ manyenviron::memberships$IEADB_MEM %>%
   manynet::as_tidygraph() %>%
   activate(nodes) %>%
   dplyr::mutate(color = ifelse(grepl("_", name), "Treaty", "Country"),
-                size = ifelse(grepl("_", name), 4, 2),
-                shape = ifelse(grepl("_", name), "square", "circle")) %>%
+                size = ifelse(grepl("_", name), 6, 3),
+                shape = ifelse(grepl("_", name), "triangle", "circle")) %>%
   manynet::to_undirected() %>%
-  manynet::autographr(node_color = "color", node_size = "size")
+  manynet::autographr(node_color = "color", node_size = "size", node_shape = "shape") +
+  manynet::scale_color_sdgs(guide = "none")
 ```
 
 ### Extra: dynamic visualisation
