@@ -7,7 +7,7 @@ library(tidygraph)
 library(manynet)
 # get memberships dataset
 memberships <- manyenviron::memberships$IEADB_MEM |>
-  dplyr::select("manyID", "stateID", "Title") |>
+  dplyr::select("stateID", "manyID", "Title") |>
   dplyr::mutate(type = manypkgs::code_type(Title),
                 agr_type = case_when(stringr::str_detect(type, "A") ~ "Agreement",
                                      stringr::str_detect(type, "P") ~ "Protocol",
@@ -45,7 +45,8 @@ ui <- shinydashboard::dashboardPage(
                       choices = c("choose" = "", "UNCLOS", "CBD", "CCAMLR", "CITES",
                                   "CLC", "CRAMRA", "CECE", "LRTAP", "MARPOL", "NAAEC",
                                   "OLDEPESCA", "OPRC", "OSPAR", "PARIS", "PIC", "RAMSA",
-                                  "UNCCD", "UNFCCC", "VIENNA"), selected = "choose", multiple = T),
+                                  "UNCCD", "UNFCCC", "VIENNA"),
+                      selected = "choose", multiple = T),
           shinydashboard::menuItem(shiny::sliderInput("range", "Dates",
                                                       value = c(1951, 1952),
                                                       min = 1950, max = 2020,

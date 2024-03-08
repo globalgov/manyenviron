@@ -3,6 +3,7 @@ library(shiny)
 library(shinydashboard)
 library(dplyr)
 library(manynet)
+library(ggplot2)
 # get main data
 references <- manyenviron::references$ECOLEX_REF |>
   dplyr::mutate(year = as.numeric(ifelse(RefType == "Amended by" | RefType == "Cited by" |
