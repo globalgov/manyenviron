@@ -41,7 +41,7 @@ references <- dplyr::left_join(references, agr_action,
                                   RefType == "Enabled by", action2, action1)) |>
   dplyr::select(treatyID1, treatyID2, RefType, known_agr, action, year, year_range) |>
   dplyr::distinct()
-# get titles
+# get titles for hoovering
 titles <- manyenviron::agreements$ECOLEX |> 
   dplyr::select(manyID, Title) |>
   bind_rows(dplyr::select(manyenviron::agreements$HUGGO, manyID, Title)) |>
