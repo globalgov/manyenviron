@@ -71,21 +71,23 @@ server <- function(input, output) {
                       year >= input$range[1] & year <= input$range[2],
                       agr_type %in% input$agr_type) |>
         manynet::as_tidygraph() |>
-        dplyr::mutate(color = dplyr::case_when(grepl("[0-9]", name) ~ "red", TRUE ~ "black"),
+        dplyr::mutate(type = ifelse(grepl("[0-9]", name), TRUE, FALSE),
+                      color = dplyr::case_when(grepl("[0-9]", name) ~ "red", TRUE ~ "black"),
                       size = dplyr::case_when(grepl("[0-9]", name) ~ 3, TRUE ~ 2),
                       shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle", TRUE ~ "square"),
-                      namet = ifelse(grepl("[0-9]", name), "treatyt", "countryt"),
-                      name = case_when(input$treatylabel == FALSE & namet == "treatyt" ~ "",
-                                       input$countrylabel == FALSE & namet == "countryt" ~ "",
+                      name = case_when(input$treatylabel == FALSE & type == TRUE ~ "",
+                                       input$countrylabel == FALSE & type == FALSE ~ "",
                                        .default = name))
     })
     output$distPlot <- renderPlot({
-      manynet::autographr(filteredData(), node_color = "color",
+      manynet::autographr(layout = "hierarchy", center = "events",
+                          filteredData(), node_color = "color",
                           node_size = "size", node_shape = "shape") +
-          scale_color_iheid(guide = "none")
+        scale_color_iheid(guide = "none")
     })
     output$click_info <- renderText({
-      ggdata <- manynet::autographr(filteredData(), node_color = "color",
+      ggdata <- manynet::autographr(layout = "hierarchy", center = "events",
+                                    filteredData(), node_color = "color",
                                     node_size = "size", node_shape = "shape") +
         scale_color_iheid(guide = "none")
       point <- nearPoints(ggplot2::ggplot_build(ggdata)$data[[1]],
