@@ -86,17 +86,26 @@ server <- function(input, output) {
                     if (!is.null(input$actions)) action %in% input$actions  else TRUE,
                     if (!is.null(input$known)) known_agr %in% input$known  else TRUE) |>
       manynet::as_tidygraph() |>
-      manynet::mutate(nyear = as.numeric(stringr::str_extract(name, "[:digit:]{4}")))
+      manynet::mutate(nyear = as.numeric(stringr::str_extract(name, "[:digit:]{4}")),
+                      year_range = case_when(nyear <= 1969 ~ "Before 1970",
+                                             nyear <= 1980 & nyear >= 1970 ~ "1970-1980",
+                                             nyear <= 1990 & nyear >= 1981 ~ "1981-1990",
+                                             nyear <= 2000 & nyear >= 1991 ~ "1991-2000",
+                                             nyear <= 2010 & nyear >= 2001 ~ "2001-2010",
+                                             nyear <= 2020 & nyear >= 2011 ~ "2011-2020",
+                                             .default = NA))
     })
     output$distPlot <- shiny::renderPlot({
       manynet::autographr(filteredData(), layout = "lineage", rank = "nyear",
-                          edge_color = "RefType") +
+                          node_color = "year_range", edge_color = "RefType",
+                          node_size = 3) +
+        scale_color_ethz() +
         theme(legend.position = "bottom")
     })
     output$hover_info <- renderUI({
       hover <- input$plot_hover
       ggdata <- manynet::autographr(filteredData(), layout = "lineage",
-                                    rank = "nyear", edge_color = "RefType") +
+                                    rank = "nyear", node_size = 3) +
         theme(legend.position = "bottom")
       point <- nearPoints(ggplot2::ggplot_build(ggdata)$data[[1]],
                           hover, addDist = TRUE)
