@@ -68,13 +68,13 @@ ui <- shinydashboard::dashboardPage(
                                     "UNCCD", "UNFCCC", "VIENNA"), selected = "choose", multiple = T),
     shiny::checkboxGroupInput("year_choices", "Select period:",
                                choices = c("Before 1970","1970-1980","1981-1990","1991-2000","2001-2010", "2011-2020"),
-                               selected = "Before 1970")),
-    wellPanel(style = " background: #222D32; border-color: #222D32; margin-left: 20px",
-              textOutput("click_info"), tags$head(tags$style(".shiny-output-error{visibility: hidden}")),
-              tags$head(tags$style(".shiny-output-error:after{content: 'Title not found, please try another node.';
-visibility: visible}")))),
-  shinydashboard::dashboardBody(shiny::plotOutput("distPlot", height = "550px", click = "plot_click"))
-)
+                               selected = "Before 1970"))),
+  shinydashboard::dashboardBody(div(style = "position:relative",
+                                    plotOutput("distPlot", height = "700px",
+                                               hover = hoverOpts("plot_hover",
+                                                                 delay = 50,
+                                                                 delayType = "throttle")),
+                                    uiOutput("hover_info"))))
 
 # Step three: connect with the data
 server <- function(input, output) {
@@ -88,19 +88,23 @@ server <- function(input, output) {
       manynet::mutate(nyear = as.numeric(stringr::str_extract(name, "[:digit:]{4}")))
     })
     output$distPlot <- shiny::renderPlot({
-      manynet::autographr(filteredData(), layout = "lineage", rank = "nyear", edge_color = "RefType") +
+      manynet::autographr(filteredData(), layout = "lineage", rank = "nyear",
+                          edge_color = "RefType") +
         theme(legend.position = "bottom")
     })
-    output$click_info <- renderText({
-      ggdata <- manynet::autographr(filteredData(), layout = "lineage", rank = "nyear",
-                                    edge_color = "RefType") +
+    output$hover_info <- renderUI({
+      hover <- input$plot_hover
+      ggdata <- manynet::autographr(filteredData(), layout = "lineage",
+                                    rank = "nyear", edge_color = "RefType") +
         theme(legend.position = "bottom")
       point <- nearPoints(ggplot2::ggplot_build(ggdata)$data[[1]],
-                          input$plot_click, addDist = TRUE)
+                          hover, addDist = TRUE)
       titlet <- as.character(titles[titles$name %in% point$label, 2])
-      if (titlet == "character(0)") {
-        print("Please click on a node representing a treaty to display its title.")
-      } else print(titlet)
+      wellPanel(style = "position:relative; background: #F0F8FF; border-color: #FFFFFF; ",
+                if (titlet == "character(0)") "Hoover over nodes to see the treaty title" else titlet,
+                tags$head(tags$style(".shiny-output-error{visibility: hidden}")),
+                tags$head(tags$style(".shiny-output-error:after{content: 'Title not found, please try another node.';
+visibility: visible}")))
     })
 }
 
