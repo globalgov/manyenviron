@@ -72,29 +72,26 @@ server <- function(input, output) {
                       agr_type %in% input$agr_type) |>
         manynet::as_tidygraph() |>
         dplyr::mutate(type = ifelse(grepl("[0-9]", name), TRUE, FALSE),
-                      color = dplyr::case_when(grepl("[0-9]", name) ~ "red", TRUE ~ "black"),
-                      size = dplyr::case_when(grepl("[0-9]", name) ~ 3, TRUE ~ 2),
-                      shape = dplyr::case_when(grepl("[0-9]", name) ~ "circle", TRUE ~ "square"),
                       name = case_when(input$treatylabel == FALSE & type == TRUE ~ "",
                                        input$countrylabel == FALSE & type == FALSE ~ "",
                                        .default = name))
     })
     output$distPlot <- renderPlot({
-      manynet::autographr(layout = "hierarchy", center = "events",
-                          filteredData(), node_color = "color",
-                          node_size = "size", node_shape = "shape") +
+      manynet::autographr(filteredData(),
+                          layout = "hierarchy", center = "events",
+                          node_color = "type", node_size = 3) +
         scale_color_iheid(guide = "none")
     })
     output$click_info <- renderText({
-      ggdata <- manynet::autographr(layout = "hierarchy", center = "events",
-                                    filteredData(), node_color = "color",
-                                    node_size = "size", node_shape = "shape") +
+      ggdata <- manynet::autographr(filteredData(), 
+                                    layout = "hierarchy", center = "events",
+                                    node_color = "color", node_size = 3) +
         scale_color_iheid(guide = "none")
       point <- nearPoints(ggplot2::ggplot_build(ggdata)$data[[1]],
                           input$plot_click, addDist = TRUE)
       titlet <- as.character(titles[titles$manyID %in% point$label, 2])
       if (titlet == "character(0)") {
-        print("Please click on a node representing a treaty (red circle) to display its title.")
+        print("Please click on a node representing a treaty to display its title.")
       } else if (!(titlet == "character(0)")) {
         print(titlet)
       }
