@@ -29,10 +29,23 @@ CIESIN$Lineage <- manypkgs::code_lineage(CIESIN$Title)
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 CIESIN <- dplyr::left_join(CIESIN, manyID, by = "treatyID")
 
+
+# Recode '--' as NA for dates
+CIESIN <- CIESIN %>%
+  dplyr::mutate(Begin = ifelse(grepl("--", Begin), NA, Begin),
+                Signature = ifelse(grepl("--", Signature), NA, Signature),
+                Force = ifelse(grepl("--", Force), NA, Force))
+
 # Re-order the columns
 CIESIN <- CIESIN %>%
   dplyr::select(manyID, Title, Begin, Signature,
                 Force, Lineage, treatyID) %>%
+  dplyr::mutate(across(everything(),
+                       ~stringr::str_replace_all(., "^NA$", NA_character_))) %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(Begin = messydates::as_messydate(Begin),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force)) %>%
   dplyr::arrange(Begin)
 
 # manypkgs includes several functions that should help cleaning

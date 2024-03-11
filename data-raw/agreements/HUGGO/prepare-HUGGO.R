@@ -123,8 +123,7 @@ HUGGO <- dplyr::left_join(HUGGO, manyID, by = "treatyID")
 
 # Stage three: Merging verified data and additional treaties into HUGGO dataset
 
-# Step one: Merge data frames with verified metadata of treaties within and
-# without HUGGO
+# Step one: Merge original HUGGO data with verified metadata of treaties in the agreements datacube
 
 # Load original HUGGO
 HUGGO_or <- manyenviron::agreements$HUGGO
@@ -259,7 +258,7 @@ HUGGO_new <- HUGGO_new %>%
                   Data, Coded, Abstract) %>%
   dplyr::arrange(Beg)
 
-# Step two: Clean duplicate rows
+# Step two: Remove duplicate rows
 
 # First row NA remove
 HUGGO_new <- HUGGO_new[-(which(is.na(HUGGO_new$manyID))), ]
@@ -656,7 +655,7 @@ HUGGO_new <- HUGGO_new[-(which(grepl(title, HUGGO_new$Title) &
                                  is.na(HUGGO_new$AgreementType) &
                                  HUGGO_new$Beg == "2001-10-16")), ]
 
-# Step three: TreatyText and Language columns
+# Step three: Add TreatyText and Language columns
 
 # Add columns to show if the raw text of the agreements has been collected and
 # to indicate its language
@@ -665,14 +664,14 @@ HUGGO_new <- HUGGO_new %>%
   dplyr::mutate(TreatyText = NA) %>%
   dplyr::mutate(Language = NA)
 
-# Step four: Standardise date columns, arrange by Beg,
+# Step four: Standardise date columns, arrange by Begin,
 # and push HUGGO_new to HUGGO
 HUGGO <- HUGGO_new %>%
-  dplyr::mutate(Beg = messydates::as_messydate(Beg),
+  dplyr::mutate(Begin = messydates::as_messydate(Beg),
                 Signature = messydates::as_messydate(Signature),
                 Force = messydates::as_messydate(Force),
                 End = messydates::as_messydate(End)) %>%
-  dplyr::arrange(Beg)
+  dplyr::arrange(Begin)
 
 # Stage four: Matching agreements with titles in different languages
 noneng <- HUGGO %>%
@@ -730,10 +729,10 @@ noneng <- noneng %>%
                            "MAR-ROU[TMS]_1979A","ESP-GTM[ECC]_2005S","NIC-VEN[ENS]_2007A",
                            "ECU-PER[CMG]_1998A","YCYRTT_1973A","AH12IF_1893A", "TTICPO_2008A"
   ))
-noneng <- dplyr::select(noneng, manyID, Orig_noneng_title, Beg, match)
+noneng <- dplyr::select(noneng, manyID, Orig_noneng_title, Begin, match)
 # Non-English titles of the same agreement with an English title added in variable 'Orig_noneng_title'
 # manyID of the non-English agreement added in variable 'match'
-HUGGO <- dplyr::left_join(HUGGO, noneng, by = c("manyID", "Beg"))
+HUGGO <- dplyr::left_join(HUGGO, noneng, by = c("manyID", "Begin"))
 # remove rows with non-English titles identified above
 HUGGO <- HUGGO[-which(HUGGO$manyID == "UB08IB_1893A" | HUGGO$manyID == "ESP-FRA[DGP]_1900A" |
                          HUGGO$manyID == "ED19DL_1905A" | HUGGO$manyID == "CHE-FRA[DDK]_1930A" |
@@ -765,52 +764,17 @@ HUGGO <- HUGGO[-which(HUGGO$manyID == "UB08IB_1893A" | HUGGO$manyID == "ESP-FRA[
                          HUGGO$manyID == "VB13GV_2008O" | HUGGO$manyID == "CS18PS_1954A"|
                          HUGGO$manyID == "CS18PS_1954A"),]
 
-## Stage five: update End variable
-## Recoded 9999-12-31 for treaties still in force
-HUGGO_ver <- read.csv("data-raw/agreements/HUGGO/HUGGO_reconciled.csv")
-for (i in 1:nrow(HUGGO)){
-  title <- as.character(HUGGO[i, "Title"])
-  manyID <- as.character(HUGGO[i, "manyID"])
-  beg <- as.character(HUGGO[i, "Beg"])
-  End_verified <- HUGGO_ver[which(HUGGO_ver$manyID == manyID &
-                                    HUGGO_ver$Title == title &
-                                    HUGGO_ver$Begin == beg), "End"]
-  Force_verified <- HUGGO_ver[which(HUGGO_ver$manyID == manyID &
-                                      HUGGO_ver$Title == title &
-                                      HUGGO_ver$Begin == beg), "Force"]
-  if (length(End_verified) > 0){
-    HUGGO[i, "End"] <- messydates::as_messydate(End_verified)
-  }
-  if (length(Force_verified) > 0){
-    HUGGO[i, "Force"] <- messydates::as_messydate(Force_verified)
-  }
-}
-
-HUGGO_add <- read.csv("data-raw/agreements/HUGGO/HUGGO_additional.csv")
-for (i in 1:nrow(HUGGO)){
-  title <- as.character(HUGGO[i, "Title"])
-  manyID <- as.character(HUGGO[i, "manyID"])
-  beg <- as.character(HUGGO[i, "Beg"])
-  End_add <- HUGGO_add[which(HUGGO_add$manyID == manyID &
-                               HUGGO_add$Title == title &
-                               HUGGO_add$Begin == beg), "End"]
-  Force_add<- HUGGO_ver[which(HUGGO_add$manyID == manyID &
-                                HUGGO_add$Title == title &
-                                HUGGO_add$Begin == beg), "Force"]
-  if (length(End_add) > 0){
-    HUGGO[i, "End"] <- messydates::as_messydate(End_add)
-  }
-  if (length(Force_add) > 0){
-    HUGGO[i, "Force"] <- messydates::as_messydate(Force_add)
-  }
-}
+# Stage five: Recode "9999-XX-XX-" Force date for PF07BS_1897A, RM04LF_1937A,
+# IP07TS_1971E, CPRAEM_2005P:CPRAEM_1999A, EF04GG_2007A
+# since this coding is no longer used for Force dates in HUGGO dataset.
+HUGGO <- HUGGO %>%
+  dplyr::mutate(Force = ifelse(grepl("9999-XX-XX-", Force), NA, Force))
 
 # Stage six: format data correctly for exporting
 HUGGO <- HUGGO %>%
   dplyr::mutate(across(everything(),
                        ~stringr::str_replace_all(., "^NA$", NA_character_))) %>%
   dplyr::distinct() %>%
-  dplyr::rename("Begin" = "Beg")
   dplyr::mutate(Begin = messydates::as_messydate(Begin),
                 Signature = messydates::as_messydate(Signature),
                 Force = messydates::as_messydate(Force),
