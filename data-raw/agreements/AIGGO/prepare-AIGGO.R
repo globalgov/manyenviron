@@ -1,7 +1,7 @@
 # AIGGO Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many package.
+# for the 'many' packages.
 
 # Start with HUGGO dataset
 AIGGO <- manyenviron::agreements$HUGGO

@@ -1,7 +1,7 @@
 # IEADB Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many package.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 IEADB <- readr::read_delim("data-raw/agreements/IEADB/treaties.csv", ",")

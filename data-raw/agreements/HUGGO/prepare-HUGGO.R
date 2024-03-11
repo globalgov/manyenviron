@@ -1,7 +1,7 @@
 # HUGGO Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many package.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 HUGGO1 <- readr::read_csv("data-raw/agreements/HUGGO/EnvGov Nodes-Table 1 VERS2.csv")

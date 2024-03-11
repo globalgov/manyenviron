@@ -1,7 +1,7 @@
 # HEIDI Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many package.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 HEIDI <- readxl::read_excel("data-raw/agreements/HEIDI/heidi_dataset.xlsx")

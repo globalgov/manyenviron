@@ -1,7 +1,7 @@
 # HUGGO_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 HUGGO_MEM <- readr::read_csv("data-raw/memberships/HUGGO_MEM/gnevar.csv")

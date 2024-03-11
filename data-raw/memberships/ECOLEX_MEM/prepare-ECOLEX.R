@@ -1,7 +1,7 @@
 # ECOLEX_MEM Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many package.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 ECOLEX_MEM <- load("data-raw/memberships/ECOLEX_MEM/ecomembs.RData")
