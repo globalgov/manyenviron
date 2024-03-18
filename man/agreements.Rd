@@ -112,12 +112,12 @@ agreements datacube documentation
 #> |  Column Name  |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ----------------------------------------------------------------------------
 #> |    manyID     |  character  |             662|     0     |       0       |
-#> |   treatyID    |  character  |             662|     0     |       0       |
 #> |     Title     |  character  |             662|     0     |       0       |
 #> |     Begin     |    mdate    |             662|     0     |       0       |
 #> |   Signature   |    mdate    |             662|     0     |       0       |
-#> |     Force     |    mdate    |             662|     0     |       0       |
-#> |    Lineage    |  character  |             662|     0     |       0       |
+#> |     Force     |    mdate    |             662|    182    |     27.49     |
+#> |    Lineage    |  character  |             662|    208    |     31.42     |
+#> |   treatyID    |  character  |             662|     0     |       0       |
 #> ----------------------------------------------------------------------------
 #> 
 #> 
@@ -145,7 +145,7 @@ agreements datacube documentation
 #> |      Begin      |    mdate    |            3982|    57     |     1.43      |
 #> |       End       |    mdate    |            3982|   3047    |     76.52     |
 #> |    Signature    |    mdate    |            3982|    57     |     1.43      |
-#> |      Force      |    mdate    |            3982|   1582    |     39.73     |
+#> |      Force      |    mdate    |            3982|   1587    |     39.85     |
 #> |       url       |  character  |            3982|   2688    |     67.5      |
 #> |  AgreementType  |  character  |            3982|   1279    |     32.12     |
 #> |     DocType     |  character  |            3982|   1243    |     31.22     |
@@ -185,7 +185,7 @@ agreements datacube documentation
 #> |      Data       |  character  |            3982|   3444    |     86.49     |
 #> |      Coded      |  character  |            3982|   3683    |     92.49     |
 #> |    Abstract     |  character  |            3982|   3956    |     99.35     |
-#> |   TreatyText    |   numeric   |            3982|   2632    |     66.1      |
+#> |   TreatyText    |  character  |            3982|   2632    |     66.1      |
 #> |    Language     |  character  |            3982|   2632    |     66.1      |
 #> |Orig_noneng_title|  character  |            3982|   3926    |     98.59     |
 #> |      match      |  character  |            3982|   3926    |     98.59     |
