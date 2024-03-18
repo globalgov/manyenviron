@@ -1,21 +1,21 @@
 # load packages
-library(shiny)
-library(shinydashboard)
-library(dplyr)
-library(ggplot2)
-library(tidygraph)
-library(manynet)
+# library(shiny)
+# library(shinydashboard)
+# library(dplyr)
+# library(ggplot2)
+# library(tidygraph)
+# library(manynet)
 # get memberships dataset
 memberships <- manyenviron::memberships$IEADB_MEM |>
   dplyr::select("stateID", "manyID", "Title") |>
   dplyr::mutate(type = manypkgs::code_type(Title),
-                agr_type = case_when(stringr::str_detect(type, "A") ~ "Agreement",
-                                     stringr::str_detect(type, "P") ~ "Protocol",
-                                     stringr::str_detect(type, "E") ~ "Amendment",
-                                     stringr::str_detect(type, "N") ~ "Notes",
-                                     stringr::str_detect(type, "S") ~ "Strategy",
-                                     stringr::str_detect(type, "R") ~"Resolution",
-                                     .default = NA),
+                agr_type = dplyr::case_when(stringr::str_detect(type, "A") ~ "Agreement",
+                                            stringr::str_detect(type, "P") ~ "Protocol",
+                                            stringr::str_detect(type, "E") ~ "Amendment",
+                                            stringr::str_detect(type, "N") ~ "Notes",
+                                            stringr::str_detect(type, "S") ~ "Strategy",
+                                            stringr::str_detect(type, "R") ~"Resolution",
+                                            .default = NA),
                 category = ifelse(stringr::str_detect(manyID, "-"),
                                   "Bilateral", "Multilateral"),
                 known_agr = stringr::str_extract(manyID, "UNCLOS|CBD|CCAMLR|CITES|CLC|CRAMRA|
@@ -72,9 +72,9 @@ server <- function(input, output) {
                       agr_type %in% input$agr_type) |>
         manynet::as_tidygraph() |>
         dplyr::mutate(type = ifelse(grepl("[0-9]", name), TRUE, FALSE),
-                      name = case_when(input$treatylabel == FALSE & type == TRUE ~ "",
-                                       input$countrylabel == FALSE & type == FALSE ~ "",
-                                       .default = name))
+                      name = dplyr::case_when(input$treatylabel == FALSE & type == TRUE ~ "",
+                                              input$countrylabel == FALSE & type == FALSE ~ "",
+                                              .default = name))
     })
     output$distPlot <- renderPlot({
       manynet::autographr(filteredData(),
