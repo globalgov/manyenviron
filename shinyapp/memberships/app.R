@@ -4,28 +4,31 @@
 # library(dplyr)
 # library(ggplot2)
 # library(tidygraph)
-# library(manynet)
+library(manynet)
+library(Rgraphviz)
 # get memberships dataset
-memberships <- manyenviron::memberships$IEADB_MEM |>
-  dplyr::select("stateID", "manyID", "Title") |>
-  dplyr::mutate(type = manypkgs::code_type(Title),
-                agr_type = dplyr::case_when(stringr::str_detect(type, "A") ~ "Agreement",
-                                            stringr::str_detect(type, "P") ~ "Protocol",
-                                            stringr::str_detect(type, "E") ~ "Amendment",
-                                            stringr::str_detect(type, "N") ~ "Notes",
-                                            stringr::str_detect(type, "S") ~ "Strategy",
-                                            stringr::str_detect(type, "R") ~"Resolution",
-                                            .default = NA),
-                category = ifelse(stringr::str_detect(manyID, "-"),
-                                  "Bilateral", "Multilateral"),
-                known_agr = stringr::str_extract(manyID, "UNCLOS|CBD|CCAMLR|CITES|CLC|CRAMRA|
-                                                 |CECE|LRTAP|MARPOL|NAAEC|OLDEPESCA|OPRC|OSPAR|
-                                                 |PARIS|PIC|RAMSA|UNCCD|UNFCCC|VIENNA"))
+memberships <- readRDS("memberships.Rds")
+# memberships <- manyenviron::memberships$IEADB_MEM |>
+#   dplyr::select("stateID", "manyID", "Title") |>
+#   dplyr::mutate(type = manypkgs::code_type(Title),
+#                 agr_type = dplyr::case_when(stringr::str_detect(type, "A") ~ "Agreement",
+#                                             stringr::str_detect(type, "P") ~ "Protocol",
+#                                             stringr::str_detect(type, "E") ~ "Amendment",
+#                                             stringr::str_detect(type, "N") ~ "Notes",
+#                                             stringr::str_detect(type, "S") ~ "Strategy",
+#                                             stringr::str_detect(type, "R") ~"Resolution",
+#                                             .default = NA),
+#                 category = ifelse(stringr::str_detect(manyID, "-"),
+#                                   "Bilateral", "Multilateral"),
+#                 known_agr = stringr::str_extract(manyID, "UNCLOS|CBD|CCAMLR|CITES|CLC|CRAMRA|
+#                                                  |CECE|LRTAP|MARPOL|NAAEC|OLDEPESCA|OPRC|OSPAR|
+#                                                  |PARIS|PIC|RAMSA|UNCCD|UNFCCC|VIENNA"))
 # get titles for clicking
-titles <- memberships |>
-  dplyr::distinct(manyID, .keep_all = TRUE) |>
-  dplyr::select(manyID, Title) |>
-  dplyr::distinct()
+titles <- readRDS("titles.Rds")
+# titles <- memberships |>
+#   dplyr::distinct(manyID, .keep_all = TRUE) |>
+#   dplyr::select(manyID, Title) |>
+#   dplyr::distinct()
 # Define UI 
 ui <- shinydashboard::dashboardPage(
   shinydashboard::dashboardHeader(title = "Type of Environmental Treaties",
@@ -80,13 +83,13 @@ server <- function(input, output) {
       manynet::autographr(filteredData(),
                           layout = "hierarchy", center = "events",
                           node_color = "type", node_size = 3) +
-        scale_color_iheid(guide = "none")
+        manynet::scale_color_iheid(guide = "none")
     })
     output$click_info <- renderText({
       ggdata <- manynet::autographr(filteredData(), 
                                     layout = "hierarchy", center = "events",
                                     node_color = "color", node_size = 3) +
-        scale_color_iheid(guide = "none")
+        manynet::scale_color_iheid(guide = "none")
       point <- nearPoints(ggplot2::ggplot_build(ggdata)$data[[1]],
                           input$plot_click, addDist = TRUE)
       titlet <- as.character(titles[titles$manyID %in% point$label, 2])
