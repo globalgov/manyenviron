@@ -1,11 +1,11 @@
-# load packages
-# library(shiny)
-# library(shinydashboard)
-# library(dplyr)
-# library(ggplot2)
-# library(tidygraph)
-library(manynet)
-library(Rgraphviz)
+# # load packages
+# # library(shiny)
+# # library(shinydashboard)
+# # library(dplyr)
+# # library(ggplot2)
+# # library(tidygraph)
+# library(manynet) # needs to be loaded
+# library(Rgraphviz)  # needs to be loaded
 # get memberships dataset
 memberships <- readRDS("memberships.Rds")
 # memberships <- manyenviron::memberships$IEADB_MEM |>
