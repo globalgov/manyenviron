@@ -11,7 +11,7 @@ output: github_document
 
 manyenviron is a data package in the many universe of packages.
 It currently includes an ensemble of datasets on international environmental agreements,
-and [states](https://github.com/globalgov/qStates)' membership or other relationships to those agreements.
+and [states](https://github.com/globalgov/manystates)' membership or other relationships to those agreements.
 
 Please also check out [`{manydata}`](https://github.com/globalgov) for more information about the other packages in the many universe. 
 
