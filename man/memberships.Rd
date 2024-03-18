@@ -105,40 +105,40 @@ memberships datacube documentation
 #> ------------------------------------------------------------------------------
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
-#> |     manyID      |  character  |           50982|     0     |       0       |
-#> |    treatyID     |  character  |           50982|     0     |       0       |
-#> |      Title      |  character  |           50982|     0     |       0       |
-#> |      Begin      |    mdate    |           50982|    12     |     0.02      |
-#> |     stateID     |  character  |           50982|     0     |       0       |
-#> |    Signature    |    mdate    |           50982|    14     |     0.03      |
-#> |      Force      |    mdate    |           50982|   3529    |     6.92      |
-#> |       End       |    mdate    |           50982|   38637   |     75.79     |
-#> | StateSignature  |    mdate    |           50982|   11887   |     23.32     |
-#> |StateRatification|    mdate    |           50982|   27623   |     54.18     |
-#> |   StateForce    |    mdate    |           50982|   18861   |      37       |
-#> |   StateForce2   |    mdate    |           50982|   44277   |     86.85     |
-#> |   StateForce3   |    mdate    |           50982|   47292   |     92.76     |
-#> |    StateEnd     |    mdate    |           50982|   32864   |     64.46     |
-#> |    StateEnd2    |    mdate    |           50982|   47286   |     92.75     |
-#> |     gengID      |  character  |           50982|     0     |       0       |
-#> |      ieaID      |  character  |           50982|   8626    |     16.92     |
-#> |    ecolexID     |  character  |           50982|   30960   |     60.73     |
-#> |    Accession    |    mdate    |           50982|   42976   |     84.3      |
-#> |   Succession    |  character  |           50982|   37798   |     74.14     |
-#> |      Term       |    mdate    |           50982|   49804   |     97.69     |
-#> |    Comments     |  character  |           50982|   47702   |     93.57     |
-#> |     Deposit     |  character  |           50982|   49332   |     96.76     |
-#> |    obsolete     |  character  |           50982|   38387   |     75.3      |
-#> | ProvisionalApp  |  character  |           50982|   50210   |     98.49     |
-#> |   Reservation   |  character  |           50982|   50208   |     98.48     |
-#> |      Notes      |  character  |           50982|   50796   |     99.64     |
-#> |stateForce_ecolex|  character  |           50982|   32462   |     63.67     |
-#> | stateForce_iea  |  character  |           50982|   32462   |     63.67     |
-#> |     Consent     |  character  |           50982|   50758   |     99.56     |
-#> |   Acceptance    |  character  |           50982|   50457   |     98.97     |
-#> |      Coder      |  character  |           50982|     0     |       0       |
-#> |Orig_noneng_title|  character  |           50982|   50978   |     99.99     |
-#> |      match      |  character  |           50982|   50978   |     99.99     |
+#> |     manyID      |  character  |           50979|     0     |       0       |
+#> |    treatyID     |  character  |           50979|     0     |       0       |
+#> |      Title      |  character  |           50979|     0     |       0       |
+#> |      Begin      |    mdate    |           50979|    12     |     0.02      |
+#> |     stateID     |  character  |           50979|     0     |       0       |
+#> |    Signature    |    mdate    |           50979|    14     |     0.03      |
+#> |      Force      |    mdate    |           50979|   3526    |     6.92      |
+#> |       End       |    mdate    |           50979|   38634   |     75.78     |
+#> | StateSignature  |    mdate    |           50979|   11901   |     23.34     |
+#> |StateRatification|    mdate    |           50979|   27691   |     54.32     |
+#> |   StateForce    |    mdate    |           50979|   18858   |     36.99     |
+#> |   StateForce2   |    mdate    |           50979|   44274   |     86.85     |
+#> |   StateForce3   |    mdate    |           50979|   47289   |     92.76     |
+#> |    StateEnd     |    mdate    |           50979|   32861   |     64.46     |
+#> |    StateEnd2    |    mdate    |           50979|   47283   |     92.75     |
+#> |     gengID      |  character  |           50979|     0     |       0       |
+#> |      ieaID      |  character  |           50979|   8626    |     16.92     |
+#> |    ecolexID     |  character  |           50979|   30960   |     60.73     |
+#> |    Accession    |    mdate    |           50979|   42973   |     84.3      |
+#> |   Succession    |  character  |           50979|   37798   |     74.14     |
+#> |      Term       |    mdate    |           50979|   49801   |     97.69     |
+#> |    Comments     |  character  |           50979|   47699   |     93.57     |
+#> |     Deposit     |  character  |           50979|   49329   |     96.76     |
+#> |    obsolete     |  character  |           50979|   38384   |     75.29     |
+#> | ProvisionalApp  |  character  |           50979|   50207   |     98.49     |
+#> |   Reservation   |  character  |           50979|   50205   |     98.48     |
+#> |      Notes      |  character  |           50979|   50793   |     99.64     |
+#> |stateForce_ecolex|  character  |           50979|   32462   |     63.68     |
+#> | stateForce_iea  |  character  |           50979|   32462   |     63.68     |
+#> |     Consent     |  character  |           50979|   50755   |     99.56     |
+#> |   Acceptance    |  character  |           50979|   50454   |     98.97     |
+#> |      Coder      |  character  |           50979|     0     |       0       |
+#> |Orig_noneng_title|  character  |           50979|   50975   |     99.99     |
+#> |      match      |  character  |           50979|   50975   |     99.99     |
 #> ------------------------------------------------------------------------------
 }\if{html}{\out{</div>}}
 }

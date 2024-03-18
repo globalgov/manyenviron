@@ -469,7 +469,16 @@ HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "IE05PD_2003P:IE05PD_1971A" & 
 # remove extra row for SVN
 HUGGO_MEM <- HUGGO_MEM[-which(HUGGO_MEM$manyID == "IE05PD_2003P:IE05PD_1971A" & HUGGO_MEM$stateID == "SVN" & is.na(HUGGO_MEM$obsolete)),]
 
-# Format data correctly
+# Stage five: Format data correctly for export
+
+# Correct StateSignature dates coded #### as missing
+HUGGO_MEM <- HUGGO_MEM %>%
+  dplyr::mutate(StateSignature = ifelse(grepl("######", StateSignature),
+                                        NA, StateSignature),
+                StateRatification = ifelse(grepl("######", StateRatification),
+                                        NA, StateRatification))
+
+# Make sure all data are in correct class
 HUGGO_MEM <- HUGGO_MEM %>%
   dplyr::mutate(across(everything(),
                       ~stringr::str_replace_all(., "^NA$", NA_character_))) %>%
