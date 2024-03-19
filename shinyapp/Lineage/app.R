@@ -3,9 +3,9 @@
 # # library(shinydashboard)
 # # library(dplyr)
 # # library(ggplot2)
-library(manynet) # needs to be loaded
-library(Rgraphviz) # needs to be loaded
-library(RSiena) # needs to be loaded
+# library(manynet) # needs to be loaded
+# library(Rgraphviz) # needs to be loaded
+# library(RSiena) # needs to be loaded
 # get main data
 references <- readRDS("references.Rds")
 # references <- manyenviron::references$ECOLEX_REF |>
@@ -111,12 +111,12 @@ server <- function(input, output) {
     })
     output$distPlot <- shiny::renderPlot({filteredData()})
     output$hover_info <- renderUI({
-      hover <- input$plot_hover
       point <- nearPoints(ggplot2::ggplot_build(filteredData())$data[[1]],
-                          hover, addDist = TRUE)
+                          input$plot_hover, addDist = TRUE)
       titlet <- as.character(titles[titles$name %in% point$label, 2])
       wellPanel(style = "position:relative; background: #F0F8FF; border-color: #FFFFFF; ",
-                ifelse(titlet == "character(0)", "Hover over nodes to see the treaty title", titlet),
+                ifelse(titlet == "character(0)" | is.na(titlet),
+                       "Hover over nodes to see the treaty title", titlet),
                 tags$head(tags$style(".shiny-output-error{visibility: hidden}")),
                 tags$head(tags$style(".shiny-output-error:after{content: 'Title not found, please try another node.';
 visibility: visible}")))

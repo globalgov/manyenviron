@@ -5,7 +5,7 @@ account: genevaglobalgov
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5709359
-bundleId: 8387148
+bundleId: 8389605
 url: https://genevaglobalgov.shinyapps.io/memberships/
 asMultiple: FALSE
 asStatic: FALSE
