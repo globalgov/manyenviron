@@ -16,7 +16,7 @@ test_that("datasets have the required variables", {
   pointblank::expect_col_exists(agreements[["AIGGO"]],
                                 pointblank::vars(Title))
   pointblank::expect_col_exists(agreements[["AIGGO"]],
-                                pointblank::vars(Beg))
+                                pointblank::vars(Begin))
   expect_true(any(grepl("ID$", colnames(agreements[["AIGGO"]]))))
   pointblank::expect_col_exists(agreements[["AIGGO"]],
                                 pointblank::vars(Signature))
@@ -30,17 +30,17 @@ test_that("Columns are not in date, POSIXct or POSIXlt class", {
 })
 
 # Dates are standardized for mandatory column
-test_that("Column `Beg` has standardised dates", {
-  expect_equal(class(agreements[["AIGGO"]]$Beg), "mdate")
-  expect_false(any(grepl("/", agreements[["AIGGO"]]$Beg)))
+test_that("Column `Begin` has standardised dates", {
+  expect_equal(class(agreements[["AIGGO"]]$Begin), "mdate")
+  expect_false(any(grepl("/", agreements[["AIGGO"]]$Begin)))
   expect_false(any(grepl("^[:alpha:]$",
-                         agreements[["AIGGO"]]$Beg)))
+                         agreements[["AIGGO"]]$Begin)))
   expect_false(any(grepl("^[:digit:]{2}$",
-                         agreements[["AIGGO"]]$Beg)))
+                         agreements[["AIGGO"]]$Begin)))
   expect_false(any(grepl("^[:digit:]{3}$",
-                         agreements[["AIGGO"]]$Beg)))
+                         agreements[["AIGGO"]]$Begin)))
   expect_false(any(grepl("^[:digit:]{1}$",
-                         agreements[["AIGGO"]]$Beg)))
+                         agreements[["AIGGO"]]$Begin)))
 })
 
 test_that("Column `Signature` has standardised dates", {
@@ -56,12 +56,12 @@ test_that("Column `Signature` has standardised dates", {
                          agreements[["AIGGO"]]$Signature)))
 })
 
-# Dataset should be ordered according to the "Beg" column
+# Dataset should be ordered according to the "Begin" column
 test_that("dataset is arranged by date variable", {
-  expect_true(agreements[["AIGGO"]]$Beg[1] <
-                agreements[["AIGGO"]]$Beg[10])
-  expect_true(agreements[["AIGGO"]]$Beg[50] <
-                agreements[["AIGGO"]]$Beg[75])
-  expect_true(agreements[["AIGGO"]]$Beg[100] <
-                agreements[["AIGGO"]]$Beg[120])
+  expect_true(agreements[["AIGGO"]]$Begin[1] <
+                agreements[["AIGGO"]]$Begin[10])
+  expect_true(agreements[["AIGGO"]]$Begin[50] <
+                agreements[["AIGGO"]]$Begin[75])
+  expect_true(agreements[["AIGGO"]]$Begin[100] <
+                agreements[["AIGGO"]]$Begin[120])
 })

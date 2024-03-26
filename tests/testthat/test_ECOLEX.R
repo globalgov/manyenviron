@@ -13,14 +13,16 @@ test_that("missing observations are reported correctly", {
 # Uniformity tests (agreements have a source ID, a string title, a signature and
 # entry into force date)
 test_that("datasets have the required variables", {
-  pointblank::expect_col_exists(agreements[["ECOLEX"]], pointblank::vars(Title))
-  pointblank::expect_col_exists(agreements[["ECOLEX"]], pointblank::vars(Beg))
+  pointblank::expect_col_exists(agreements[["ECOLEX"]],
+                                pointblank::vars(Title))
+  pointblank::expect_col_exists(agreements[["ECOLEX"]],
+                                pointblank::vars(Begin))
   expect_true(any(grepl("ID$", colnames(agreements[["ECOLEX"]]))))
   pointblank::expect_col_exists(agreements[["ECOLEX"]],
                                 pointblank::vars(Signature))
 })
 
-# Date columns should be in messydt class
+# Date columns should be in mdate class
 test_that("Columns are not in date, POSIXct or POSIXlt class", {
   expect_false(any(lubridate::is.Date(agreements[["ECOLEX"]])))
   expect_false(any(lubridate::is.POSIXct(agreements[["ECOLEX"]])))
@@ -28,17 +30,17 @@ test_that("Columns are not in date, POSIXct or POSIXlt class", {
 })
 
 # Dates are standardized for mandatory column
-test_that("Column `Beg` has standardised dates", {
-  expect_equal(class(agreements[["ECOLEX"]]$Beg), "mdate")
-  expect_false(any(grepl("/", agreements[["ECOLEX"]]$Beg)))
+test_that("Column `Begin` has standardised dates", {
+  expect_equal(class(agreements[["ECOLEX"]]$Begin), "mdate")
+  expect_false(any(grepl("/", agreements[["ECOLEX"]]$Begin)))
   expect_false(any(grepl("^[:alpha:]$",
-                         agreements[["ECOLEX"]]$Beg)))
+                         agreements[["ECOLEX"]]$Begin)))
   expect_false(any(grepl("^[:digit:]{2}$",
-                         agreements[["ECOLEX"]]$Beg)))
+                         agreements[["ECOLEX"]]$Begin)))
   expect_false(any(grepl("^[:digit:]{3}$",
-                         agreements[["ECOLEX"]]$Beg)))
+                         agreements[["ECOLEX"]]$Begin)))
   expect_false(any(grepl("^[:digit:]{1}$",
-                         agreements[["ECOLEX"]]$Beg)))
+                         agreements[["ECOLEX"]]$Begin)))
 })
 
 test_that("Column `Signature` has standardised dates", {
@@ -54,12 +56,12 @@ test_that("Column `Signature` has standardised dates", {
                          agreements[["ECOLEX"]]$Signature)))
 })
 
-# Dataset should be ordered according to the "Beg" column
+# Dataset should be ordered according to the "Begin" column
 test_that("dataset is arranged by date variable", {
-  expect_true(agreements[["ECOLEX"]]$Beg[1] <
-                agreements[["ECOLEX"]]$Beg[10])
-  expect_true(agreements[["ECOLEX"]]$Beg[50] <
-                agreements[["ECOLEX"]]$Beg[75])
-  expect_true(agreements[["ECOLEX"]]$Beg[100] <
-                agreements[["ECOLEX"]]$Beg[120])
+  expect_true(agreements[["ECOLEX"]]$Begin[1] <
+                agreements[["ECOLEX"]]$Begin[10])
+  expect_true(agreements[["ECOLEX"]]$Begin[50] <
+                agreements[["ECOLEX"]]$Begin[75])
+  expect_true(agreements[["ECOLEX"]]$Begin[100] <
+                agreements[["ECOLEX"]]$Begin[120])
 })

@@ -53,7 +53,6 @@ reference:
     - agreements
     - memberships
     - references
-    - regimes
   - title: "Functions"
     desc: "The following functions are contained in manyenviron"
     contents:

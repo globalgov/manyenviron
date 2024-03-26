@@ -8,6 +8,15 @@
 \description{
 Ensemble of data on international environmental agreements, and states membership in them for research use.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://globalgov.github.io/manyenviron/}
+  \item \url{https://github.com/globalgov/manyenviron}
+  \item Report bugs at \url{https://github.com/globalgov/manyenviron/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: James Hollway \email{james.hollway@graduateinstitute.ch} (\href{https://orcid.org/0000-0002-8361-9647}{ORCID}) (IHEID) [contributor]
 
