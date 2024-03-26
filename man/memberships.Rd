@@ -19,13 +19,13 @@ Signature, Rat, Force, DocType, ieadbID.}
 \item{TFDD_MEM: }{A dataset with 1832 observations and the following
 8 variables: manyID, treatyID, Title, Begin, stateID, Signature, tfddID,
 Memberships.}
-\item{HUGGO_MEM: }{A dataset with 50982 observations and the following
-34 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
-StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
-StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
-Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
-stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder,
-Orig_noneng_title, match.}
+\item{HUGGO_MEM: }{A dataset with 50979 observations and the following
+34 variables:manyID, Title, Begin, stateID, StateSignature,
+StateRatification, StateForce, StateEnd, Accession, Succession, treatyID,
+Signature, Force, End, gengID, ieaID, ecolexID, Coder, StateForce2,
+StateForce3, StateEnd2, Term, Comments, Deposit, obsolete, ProvisionalApp,
+Reservation, Notes, stateForce_ecolex, stateForce_iea, Consent, Acceptance,
+Orig_noneng_title match.}
 }
 }
 \source{
@@ -106,25 +106,26 @@ memberships datacube documentation
 #> |   Column Name   |  Data Type  |  Observations  |  Missing  |  Missing (\%)  |
 #> ------------------------------------------------------------------------------
 #> |     manyID      |  character  |           50979|     0     |       0       |
-#> |    treatyID     |  character  |           50979|     0     |       0       |
 #> |      Title      |  character  |           50979|     0     |       0       |
 #> |      Begin      |    mdate    |           50979|    12     |     0.02      |
 #> |     stateID     |  character  |           50979|     0     |       0       |
-#> |    Signature    |    mdate    |           50979|    14     |     0.03      |
-#> |      Force      |    mdate    |           50979|   3526    |     6.92      |
-#> |       End       |    mdate    |           50979|   38634   |     75.78     |
 #> | StateSignature  |    mdate    |           50979|   11901   |     23.34     |
 #> |StateRatification|    mdate    |           50979|   27691   |     54.32     |
 #> |   StateForce    |    mdate    |           50979|   18858   |     36.99     |
-#> |   StateForce2   |    mdate    |           50979|   44274   |     86.85     |
-#> |   StateForce3   |    mdate    |           50979|   47289   |     92.76     |
 #> |    StateEnd     |    mdate    |           50979|   32861   |     64.46     |
-#> |    StateEnd2    |    mdate    |           50979|   47283   |     92.75     |
+#> |    Accession    |    mdate    |           50979|   42973   |     84.3      |
+#> |   Succession    |  character  |           50979|     0     |       0       |
+#> |    treatyID     |  character  |           50979|     0     |       0       |
+#> |    Signature    |    mdate    |           50979|    14     |     0.03      |
+#> |      Force      |    mdate    |           50979|   3526    |     6.92      |
+#> |       End       |    mdate    |           50979|   38634   |     75.78     |
 #> |     gengID      |  character  |           50979|     0     |       0       |
 #> |      ieaID      |  character  |           50979|   8626    |     16.92     |
 #> |    ecolexID     |  character  |           50979|   30960   |     60.73     |
-#> |    Accession    |    mdate    |           50979|   42973   |     84.3      |
-#> |   Succession    |  character  |           50979|   37798   |     74.14     |
+#> |      Coder      |  character  |           50979|     0     |       0       |
+#> |   StateForce2   |    mdate    |           50979|   44274   |     86.85     |
+#> |   StateForce3   |    mdate    |           50979|   47289   |     92.76     |
+#> |    StateEnd2    |    mdate    |           50979|   47283   |     92.75     |
 #> |      Term       |    mdate    |           50979|   49801   |     97.69     |
 #> |    Comments     |  character  |           50979|   47699   |     93.57     |
 #> |     Deposit     |  character  |           50979|   49329   |     96.76     |
@@ -136,7 +137,6 @@ memberships datacube documentation
 #> | stateForce_iea  |  character  |           50979|   32462   |     63.68     |
 #> |     Consent     |  character  |           50979|   50755   |     99.56     |
 #> |   Acceptance    |  character  |           50979|   50454   |     98.97     |
-#> |      Coder      |  character  |           50979|     0     |       0       |
 #> |Orig_noneng_title|  character  |           50979|   50975   |     99.99     |
 #> |      match      |  character  |           50979|   50975   |     99.99     |
 #> ------------------------------------------------------------------------------

@@ -14,13 +14,13 @@
 #' \item{TFDD_MEM: }{A dataset with 1832 observations and the following
 #' 8 variables: manyID, treatyID, Title, Begin, stateID, Signature, tfddID,
 #' Memberships.}
-#' \item{HUGGO_MEM: }{A dataset with 50982 observations and the following
-#' 34 variables: manyID, treatyID, Title, Begin, stateID, Signature, Force, End,
-#' StateSignature, StateRatification, StateForce, StateForce2, StateForce3,
-#' StateEnd, StateEnd2, gengID, ieaID, ecolexID, Accession, Succession, Term,
-#' Comments, Deposit, obsolete, ProvisionalApp, Reservation, Notes,
-#' stateForce_ecolex, stateForce_iea, Consent, Acceptance, Coder,
-#' Orig_noneng_title, match.}
+#' \item{HUGGO_MEM: }{A dataset with 50979 observations and the following
+#' 34 variables:manyID, Title, Begin, stateID, StateSignature,
+#' StateRatification, StateForce, StateEnd, Accession, Succession, treatyID,
+#' Signature, Force, End, gengID, ieaID, ecolexID, Coder, StateForce2,
+#' StateForce3, StateEnd2, Term, Comments, Deposit, obsolete, ProvisionalApp,
+#' Reservation, Notes, stateForce_ecolex, stateForce_iea, Consent, Acceptance,
+#' Orig_noneng_title match.}
 #' }
 #' @source
 #' \itemize{

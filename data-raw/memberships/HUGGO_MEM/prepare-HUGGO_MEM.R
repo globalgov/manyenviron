@@ -304,6 +304,9 @@ repstateIDs <- manypkgs::code_states(c("Armenia", "Azerbaijan", "Belarus",
 HUGGO_MEM <- HUGGO_MEM %>%
   dplyr::mutate(Succession = ifelse(stateID %in% repstateIDs, 1, Succession))
 
+HUGGO_MEM <- HUGGO_MEM %>%
+  dplyr::mutate(Succession = ifelse(is.na(Succession), 0, Succession))
+
 # Match non-English treaty titles to English treaty titles
 noneng <- HUGGO_MEM %>%
   dplyr::filter(manyID == "UB08IB_1893A")
@@ -495,8 +498,15 @@ HUGGO_MEM <- HUGGO_MEM %>%
                 StateEnd = messydates::as_messydate(StateEnd),
                 StateEnd2 = messydates::as_messydate(StateEnd2),
                 Term = messydates::as_messydate(Term),
-                Accession = messydates::as_messydate(Accession)) %>%
-  dplyr::arrange(Begin)
+                Accession = messydates::as_messydate(Accession))
+
+# Reorder variables for clarity
+HUGGO_MEM <- HUGGO_MEM %>%
+  dplyr::relocate(manyID, Title, Begin, stateID, StateSignature,
+                  StateRatification, StateForce, StateEnd, Accession,
+                  Succession, treatyID, Signature, Force, End,
+                  gengID, ieaID, ecolexID, Coder) %>%
+  dplyr::arrange(Begin, manyID, stateID)
 
 # Stage three: Connecting data
 # Next run the following line to make HUGGO_MEM available
