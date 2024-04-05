@@ -1,7 +1,7 @@
 # CIESIN Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
@@ -11,19 +11,17 @@ CIESIN <- readxl::read_excel("data-raw/agreements/CIESIN/CIESIN.xls")
 # formats of the 'CIESIN' object until the object created
 # below (in stage three) passes all the tests.
 CIESIN <- as_tibble(CIESIN) %>%
-  manydata::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`,
-                                                             api_key = api),
-                        # Define Key API
+  manydata::transmutate(Title = manypkgs::standardise_titles(`Treaty Title`),
                      Signature = messydates::as_messydate(`Year of Agreement`),
                      Force = messydates::as_messydate(`Year of Entry into Force`)) %>%
-  dplyr::mutate(Beg = dplyr::coalesce(Signature, Force)) %>%
-  dplyr::select(Title, Beg, Signature, Force) %>%
-  dplyr::arrange(Beg)
+  dplyr::mutate(Begin = dplyr::coalesce(Signature, Force)) %>%
+  dplyr::select(Title, Begin, Signature, Force) %>%
+  dplyr::arrange(Begin)
 
 # Add treatyID column
 CIESIN$treatyID <- manypkgs::code_agreements(CIESIN,
                                              CIESIN$Title,
-                                             CIESIN$Beg)
+                                             CIESIN$Begin)
 #Add Lineage column
 CIESIN$Lineage <- manypkgs::code_lineage(CIESIN$Title)
 
@@ -31,11 +29,24 @@ CIESIN$Lineage <- manypkgs::code_lineage(CIESIN$Title)
 manyID <- manypkgs::condense_agreements(manyenviron::agreements)
 CIESIN <- dplyr::left_join(CIESIN, manyID, by = "treatyID")
 
+
+# Recode '--' as NA for dates
+CIESIN <- CIESIN %>%
+  dplyr::mutate(Begin = ifelse(grepl("--", Begin), NA, Begin),
+                Signature = ifelse(grepl("--", Signature), NA, Signature),
+                Force = ifelse(grepl("--", Force), NA, Force))
+
 # Re-order the columns
 CIESIN <- CIESIN %>%
-  dplyr::select(manyID, Title, Beg, Signature,
+  dplyr::select(manyID, Title, Begin, Signature,
                 Force, Lineage, treatyID) %>%
-  dplyr::arrange(Beg)
+  dplyr::mutate(across(everything(),
+                       ~stringr::str_replace_all(., "^NA$", NA_character_))) %>%
+  dplyr::distinct() %>%
+  dplyr::mutate(Begin = messydates::as_messydate(Begin),
+                Signature = messydates::as_messydate(Signature),
+                Force = messydates::as_messydate(Force)) %>%
+  dplyr::arrange(Begin)
 
 # manypkgs includes several functions that should help cleaning
 # and standardising your data.
@@ -45,7 +56,7 @@ CIESIN <- CIESIN %>%
 # Next run the following line to make CIESIN available
 # within the package.
 manypkgs::export_data(CIESIN,
-                      database = "agreements",
+                      datacube = "agreements",
                       URL = "https://sedac.ciesin.columbia.edu/entri/")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

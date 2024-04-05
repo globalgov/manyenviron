@@ -1,7 +1,7 @@
 # ECOLEX References Preparation Script
 
 # This is a template for importing, cleaning, and exporting data
-# ready for the many packages universe.
+# for the 'many' packages.
 
 # Stage one: Collecting data
 load("data-raw/references/ECOLEX_REF/ecorefer.RData")
@@ -57,7 +57,7 @@ ECOLEX_REF
 # Next run the following line to make ref available
 # within the package.
 manypkgs::export_data(ECOLEX_REF,
-                      database = "references",
+                      datacube = "references",
                       URL = "NA")
 # This function also does two additional things.
 # First, it creates a set of tests for this object to ensure

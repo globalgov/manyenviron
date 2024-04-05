@@ -1,3 +1,20 @@
+# manyenviron 0.4.0
+
+2024-03-05
+
+## Package
+
+* Closed #54 and #87 by updating shiny dashboards and vignettes to use updated memberships data and to reflect changes to plotting graphs using `manynet::autographr()`
+
+## Data
+
+* Closed #60 and #66 by downloading, formatting, and storing texts of environmental agreements in plain text format in "~/data-raw/agreements/HUGGO/TreatyTexts" folder.
+* Closed #72 by updating how manyIDs are generated and updated for agreements across datasets.
+* Closed #83 and #84 by moving `IRD` dataset into the `agreements` database and reconciling new conflicts generated between the `IRD` dataset and other datasets in the `agreements` database.
+* Closed #68, #75, and #86 by merging data of reconciled conflicts and verified information on states' memberships in international environmental agreements into HUGGO_MEM.
+* Closed #76 and #79 by matching the observations for non-English titles of agreements to their English titles in the HUGGO and HUGGO_MEM datasets.
+* Closed #78 by renaming 'Beg' variables 'Begin' across all datasets.
+
 # manyenviron 0.3.0
 
 2023-03-21
