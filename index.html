@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">manyenviron</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.0</span>
       </span>
     </div>
 
@@ -116,120 +116,44 @@
 <div class="page-header"><h1 id="manyenviron-">manyenviron <img src="reference/figures/manyenviron_hexlogo.png" align="right" width="220"><a class="anchor" aria-label="anchor" href="#manyenviron-"></a>
 </h1></div>
 <!-- badges: start -->
-<p>manyenviron is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and <a href="https://github.com/globalgov/qStates" class="external-link">states</a>’ membership or other relationships to those agreements.</p>
+<p>manyenviron is a data package in the many universe of packages. It currently includes an ensemble of datasets on international environmental agreements, and <a href="https://github.com/globalgov/manystates" class="external-link">states</a>’ membership or other relationships to those agreements.</p>
 <p>Please also check out <a href="https://github.com/globalgov" class="external-link"><code>{manydata}</code></a> for more information about the other packages in the many universe.</p>
 <div class="section level2">
 <h2 id="how-to-install">How to install<a class="anchor" aria-label="anchor" href="#how-to-install"></a>
 </h2>
 <p>We’ve made it easier than ever to install and start analysing global governance data in R. Simply install the core package, <a href="https://github.com/globalgov/manydata" class="external-link">manydata</a>, as follows, and then you can discover, install and update various “many” packages from the console.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">manydata</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/manydata/man/get_packages.html" class="external-link">get_packages</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># this prints a list of the publicly available data packages currently available</span></span></code></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">## # A tibble: 7 × 6</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="co">##   name        full_name            </span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">##   &lt;chr&gt;       &lt;chr&gt;                </span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="co">## 1 manydata    globalgov/manydata   </span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="co">## 2 manyenviron globalgov/manyenviron</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">## 3 manyhealth  globalgov/manyhealth </span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">## 4 manypkgs    globalgov/manypkgs   </span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">## 5 manystates  globalgov/manystates </span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co">## 6 manytrade   globalgov/manytrade  </span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="co">## 7 messydates  globalgov/messydates </span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co">##   description                                                          </span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="co">##   &lt;chr&gt;                                                                </span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="co">## 1 An R portal for ensembled global governance data                     </span></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="co">## 2 R Package for ensembled data on environmental agreements             </span></span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="co">## 3 An R package for ensembled data on international health organisations</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="co">## 4 Support for creating new manyverse packages                          </span></span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="co">## 5 An R package for ensembled data on sovereign states                  </span></span>
-<span id="cb2-18"><a href="#cb2-18"></a><span class="co">## 6 An R package for ensembled data on trade agreements                  </span></span>
-<span id="cb2-19"><a href="#cb2-19"></a><span class="co">## 7 An R package for ISO's Extended Date/Time Format (EDTF)              </span></span>
-<span id="cb2-20"><a href="#cb2-20"></a><span class="co">##   installed latest updated   </span></span>
-<span id="cb2-21"><a href="#cb2-21"></a><span class="co">##   &lt;chr&gt;     &lt;chr&gt;  &lt;date&gt;    </span></span>
-<span id="cb2-22"><a href="#cb2-22"></a><span class="co">## 1 0.7.5     0.7.5  2022-06-07</span></span>
-<span id="cb2-23"><a href="#cb2-23"></a><span class="co">## 2 0.1.3     0.1.2  2022-03-16</span></span>
-<span id="cb2-24"><a href="#cb2-24"></a><span class="co">## 3 0.1.1     0.1.1  2022-02-15</span></span>
-<span id="cb2-25"><a href="#cb2-25"></a><span class="co">## 4 0.2.2     0.2.2  2022-07-21</span></span>
-<span id="cb2-26"><a href="#cb2-26"></a><span class="co">## 5 0.1.1     0.0.6  2021-12-06</span></span>
-<span id="cb2-27"><a href="#cb2-27"></a><span class="co">## 6 0.1.2     0.1.2  2022-07-14</span></span>
-<span id="cb2-28"><a href="#cb2-28"></a><span class="co">## 7 0.3.1     0.3.1  2022-07-21</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">#manydata::get_packages("manyenviron") # this downloads and installs the named package</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"globalgov/manydata"</span><span class="op">)</span> <span class="co"># this installs our core package, the only one you need to do independently</span></span>
+<span><span class="fu">manydata</span><span class="fu">::</span><span class="fu"><a href="https://globalgov.github.io/manydata/reference/call_packages.html" class="external-link">call_packages</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># this prints a list of the publicly available data packages currently available</span></span>
+<span><span class="fu">manydata</span><span class="fu">::</span><span class="fu"><a href="https://globalgov.github.io/manydata/reference/call_packages.html" class="external-link">call_packages</a></span><span class="op">(</span><span class="st">"manyenviron"</span><span class="op">)</span> <span class="co"># this downloads and installs the named package</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="data-included">Data included<a class="anchor" aria-label="anchor" href="#data-included"></a>
 </h2>
-<p>Once you have installed the package, you can see the different databases and datasets included in the <code>{manyenviron}</code> package using the following function.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>manydata<span class="op">::</span><span class="kw">data_contrast</span>(<span class="st">"manyenviron"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2"></a></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="co">## agreements :</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co">##        Unique ID Missing Data Rows Columns        Beg        End</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">## IEADB          0       2.72 % 3666      10 1351-08-01         NA</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">## GNEVAR         0      50.64 % 7273      14 1351-08-01 1371-07-31</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="co">## ECOLEX         0       5.32 % 2174      10 1868-10-17         NA</span></span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="co">## CIESIN         0          0 %  666       7 1868-01-01         NA</span></span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="co">## HEIDI          0       0.34 % 2280       7 1900-05-11         NA</span></span>
-<span id="cb4-10"><a href="#cb4-10"></a><span class="co">##                                                   URL</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a><span class="co">## IEADB     https://iea.uoregon.edu/base-agreement-list</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a><span class="co">## GNEVAR                                             NA</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a><span class="co">## ECOLEX     https://www.ecolex.org/result/?type=treaty</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a><span class="co">## CIESIN       https://sedac.ciesin.columbia.edu/entri/</span></span>
-<span id="cb4-15"><a href="#cb4-15"></a><span class="co">## HEIDI  https://www.chaire-epi.ulaval.ca/en/data/heidi</span></span>
-<span id="cb4-16"><a href="#cb4-16"></a><span class="co">## </span></span>
-<span id="cb4-17"><a href="#cb4-17"></a><span class="co">## memberships :</span></span>
-<span id="cb4-18"><a href="#cb4-18"></a><span class="co">##            Unique ID Missing Data  Rows Columns        Beg End</span></span>
-<span id="cb4-19"><a href="#cb4-19"></a><span class="co">## ECOLEX_MEM         0      22.47 % 25003      10 1192-06-12  NA</span></span>
-<span id="cb4-20"><a href="#cb4-20"></a><span class="co">## GNEVAR_MEM         0       26.4 % 35671      13 1192-06-12  NA</span></span>
-<span id="cb4-21"><a href="#cb4-21"></a><span class="co">## IEADB_MEM          0      13.94 % 15466      12 1901-02-22  NA</span></span>
-<span id="cb4-22"><a href="#cb4-22"></a><span class="co">## TFDD_MEM           0       1.77 %  2118       8 1900-01-03  NA</span></span>
-<span id="cb4-23"><a href="#cb4-23"></a><span class="co">##                                                             URL</span></span>
-<span id="cb4-24"><a href="#cb4-24"></a><span class="co">## ECOLEX_MEM           https://www.ecolex.org/result/?type=treaty</span></span>
-<span id="cb4-25"><a href="#cb4-25"></a><span class="co">## GNEVAR_MEM                                                   NA</span></span>
-<span id="cb4-26"><a href="#cb4-26"></a><span class="co">## IEADB_MEM               https://iea.uoregon.edu/country-members</span></span>
-<span id="cb4-27"><a href="#cb4-27"></a><span class="co">## TFDD_MEM   https://transboundarywaters.science.oregonstate.edu/</span></span>
-<span id="cb4-28"><a href="#cb4-28"></a><span class="co">## </span></span>
-<span id="cb4-29"><a href="#cb4-29"></a><span class="co">## organizations :</span></span>
-<span id="cb4-30"><a href="#cb4-30"></a><span class="co">##     Unique ID Missing Data  Rows Columns        Beg End</span></span>
-<span id="cb4-31"><a href="#cb4-31"></a><span class="co">## MIA         0         25 %    78       4 1831-01-01  NA</span></span>
-<span id="cb4-32"><a href="#cb4-32"></a><span class="co">## YIO         0       26.8 % 75115       4 1997-01-01  NA</span></span>
-<span id="cb4-33"><a href="#cb4-33"></a><span class="co">##                                                             URL</span></span>
-<span id="cb4-34"><a href="#cb4-34"></a><span class="co">## MIA https://garymarks.web.unc.edu/data/international-authority/</span></span>
-<span id="cb4-35"><a href="#cb4-35"></a><span class="co">## YIO                                        https://uia.org/ybio</span></span>
-<span id="cb4-36"><a href="#cb4-36"></a><span class="co">## </span></span>
-<span id="cb4-37"><a href="#cb4-37"></a><span class="co">## references :</span></span>
-<span id="cb4-38"><a href="#cb4-38"></a><span class="co">##            Unique ID Missing Data Rows Columns Beg End URL</span></span>
-<span id="cb4-39"><a href="#cb4-39"></a><span class="co">## ECOLEX_REF         0          0 % 1164       3  NA  NA  NA</span></span>
-<span id="cb4-40"><a href="#cb4-40"></a><span class="co">## </span></span>
-<span id="cb4-41"><a href="#cb4-41"></a><span class="co">## regimes :</span></span>
-<span id="cb4-42"><a href="#cb4-42"></a><span class="co">##     Unique ID Missing Data Rows Columns        Beg  End</span></span>
-<span id="cb4-43"><a href="#cb4-43"></a><span class="co">## IRD         0       33.7 %   92       7 1946-01-01 -Inf</span></span>
-<span id="cb4-44"><a href="#cb4-44"></a><span class="co">##                                                                                                             URL</span></span>
-<span id="cb4-45"><a href="#cb4-45"></a><span class="co">## IRD https://direct.mit.edu/glep/article-abstract/6/3/121/14360/The-International-Regimes-Database-Designing-and</span></span>
-<span id="cb4-46"><a href="#cb4-46"></a><span class="co">## </span></span>
-<span id="cb4-47"><a href="#cb4-47"></a><span class="co">## texts :</span></span>
-<span id="cb4-48"><a href="#cb4-48"></a><span class="co">##            Unique ID Missing Data Rows Columns        Beg End URL</span></span>
-<span id="cb4-49"><a href="#cb4-49"></a><span class="co">## GNEVAR_TXT         0      38.03 % 6377       8 1351-08-01  NA  NA</span></span></code></pre></div>
+<p>Once you have installed the package, you can see the different datasets included in a specific datacube in the {<code>manyenviron</code>} package using the following function.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">manydata</span><span class="fu">::</span><span class="fu"><a href="https://globalgov.github.io/manydata/reference/call_sources.html" class="external-link">call_sources</a></span><span class="op">(</span><span class="st">"manyenviron"</span>, <span class="st">"agreements"</span><span class="op">)</span></span></code></pre></div>
 <p>Working with an ensemble of related data has many advantages for robust analysis. Just take a look at our vignettes <a href="https://globalgov.github.io/manydata/articles/user.html" class="external-link">here</a>.</p>
 </div>
 <div class="section level2">
-<h2 id="the-many-packages-universe">The many packages universe<a class="anchor" aria-label="anchor" href="#the-many-packages-universe"></a>
+<h2 id="many-packages">Many packages<a class="anchor" aria-label="anchor" href="#many-packages"></a>
 </h2>
-<p>The <a href="https://github.com/globalgov/manydata" class="external-link">many universe of packages</a> is aimed at collecting, connecting, and correcting network data across issue-domains of global governance.</p>
+<p>The development of <a href="https://github.com/globalgov/manydata" class="external-link">many packages</a> is aimed at collecting, connecting, and correcting network data across issue-domains of global governance.</p>
 <p>While some many packages can and do include novel data, much of what they offer involves standing on the shoulders of giants. Many packages endeavour to be as transparent as possible about where data comes from, how it has been coded and/or relabeled, and who has done the work. As such, we make it easy to cite both the particular datasets you use by listing the official references in the function above, as well as the package providers for their work assembling the data by using the function below.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">citation</span>(<span class="st">"manyenviron"</span>)</span>
-<span id="cb5-2"><a href="#cb5-2"></a></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="co">## </span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="co">## To cite manyenviron in publications use:</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="co">## </span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="co">##   J. Hollway. Environmental agreements for manydata. 2021.</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="co">## </span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="co">## A BibTeX entry for LaTeX users is</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="co">## </span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="co">##   @Manual{,</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="co">##     title = {Manyenviron: Environmental agreements for manydata},</span></span>
-<span id="cb5-12"><a href="#cb5-12"></a><span class="co">##     author = {James Hollway},</span></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="co">##     year = {2021},</span></span>
-<span id="cb5-14"><a href="#cb5-14"></a><span class="co">##     url = {https://github.com/globalgov/manyenviron},</span></span>
-<span id="cb5-15"><a href="#cb5-15"></a><span class="co">##   }</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"manyenviron"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">## To cite manyenviron in publications use:</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co">## </span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">##   J. Hollway. Environmental agreements for manydata. 2021.</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">## </span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">## A BibTeX entry for LaTeX users is</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">## </span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">##   @Manual{,</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co">##     title = {Manyenviron: Environmental agreements for manydata},</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="co">##     author = {James Hollway},</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="co">##     year = {2021},</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="co">##     url = {https://github.com/globalgov/manyenviron},</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="co">##   }</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="contributing">Contributing<a class="anchor" aria-label="anchor" href="#contributing"></a>
@@ -243,7 +167,15 @@
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="license">
+    <div class="links">
+<h2 data-toc-skip>Links</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/globalgov/manyenviron/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/globalgov/manyenviron/issues" class="external-link">Report a bug</a></li>
+</ul>
+</div>
+
+<div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>

@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">manyenviron</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.0</span>
       </span>
     </div>
 
@@ -85,18 +85,35 @@
   <div class="col-md-9 contents">
     <div class="page-header">
       <h1 data-toc-skip>Changelog <small></small></h1>
-      
+      <small>Source: <a href="https://github.com/globalgov/manyenviron/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="page-header" data-toc-text="0.4.0" id="manyenviron-040">manyenviron 0.4.0<a class="anchor" aria-label="anchor" href="#manyenviron-040"></a></h2>
+<p>2024-03-05</p>
+<div class="section level3">
+<h3 id="package-0-4-0">Package<a class="anchor" aria-label="anchor" href="#package-0-4-0"></a></h3>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/54" class="external-link">#54</a> and <a href="https://github.com/globalgov/manyenviron/issues/87" class="external-link">#87</a> by updating shiny dashboards and vignettes to use updated memberships data and to reflect changes to plotting graphs using <code><a href="https://stocnet.github.io/manynet/reference/autographr.html" class="external-link">manynet::autographr()</a></code>
+</li></ul></div>
+<div class="section level3">
+<h3 id="data-0-4-0">Data<a class="anchor" aria-label="anchor" href="#data-0-4-0"></a></h3>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/60" class="external-link">#60</a> and <a href="https://github.com/globalgov/manyenviron/issues/66" class="external-link">#66</a> by downloading, formatting, and storing texts of environmental agreements in plain text format in “~/data-raw/agreements/HUGGO/TreatyTexts” folder.</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/72" class="external-link">#72</a> by updating how manyIDs are generated and updated for agreements across datasets.</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/83" class="external-link">#83</a> and <a href="https://github.com/globalgov/manyenviron/issues/84" class="external-link">#84</a> by moving <code>IRD</code> dataset into the <code>agreements</code> database and reconciling new conflicts generated between the <code>IRD</code> dataset and other datasets in the <code>agreements</code> database.</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/68" class="external-link">#68</a>, <a href="https://github.com/globalgov/manyenviron/issues/75" class="external-link">#75</a>, and <a href="https://github.com/globalgov/manyenviron/issues/86" class="external-link">#86</a> by merging data of reconciled conflicts and verified information on states’ memberships in international environmental agreements into HUGGO_MEM.</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/76" class="external-link">#76</a> and <a href="https://github.com/globalgov/manyenviron/issues/79" class="external-link">#79</a> by matching the observations for non-English titles of agreements to their English titles in the HUGGO and HUGGO_MEM datasets.</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/78" class="external-link">#78</a> by renaming ‘Beg’ variables ‘Begin’ across all datasets.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="page-header" data-toc-text="0.3.0" id="manyenviron-030">manyenviron 0.3.0<a class="anchor" aria-label="anchor" href="#manyenviron-030"></a></h2>
 <p>2023-03-21</p>
 <div class="section level3">
 <h3 id="package-0-3-0">Package<a class="anchor" aria-label="anchor" href="#package-0-3-0"></a></h3>
-<ul><li>Closed #61 by adding a ´generate_memberships()´ function for programmatically creating random, fictional, environmental agreements and members to those agreements</li></ul></div>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/61" class="external-link">#61</a> by adding a ´generate_memberships()´ function for programmatically creating random, fictional, environmental agreements and members to those agreements</li></ul></div>
 <div class="section level3">
 <h3 id="data-0-3-0">Data<a class="anchor" aria-label="anchor" href="#data-0-3-0"></a></h3>
-<ul><li>Closed #67 by verifying <code>Beg</code>, <code>End</code>, <code>Signature</code>, and <code>Force</code> in HUGGO dataset</li>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/67" class="external-link">#67</a> by verifying <code>Beg</code>, <code>End</code>, <code>Signature</code>, and <code>Force</code> in HUGGO dataset</li>
 <li>Verified <code>Title</code>, <code>Beg</code>, <code>End</code>, <code>Signature</code>, <code>Force</code>, and <code>url</code> for 465 treaties in HUGGO dataset (see HUGGO_verified.csv)</li>
 <li>Verified <code>Title</code>, <code>Beg</code>, <code>End</code>, <code>Signature</code>, <code>Force</code>, and <code>url</code> for 196 treaties present in ECOLEX, IEADB, CIEISIN, and HEIDI datasets added to HUGGO dataset (see HUGGO_additional.csv)</li>
 <li>Added 70 formatted treaty texts in ‘TreatyTexts’ folder</li>
@@ -120,7 +137,7 @@
 <ul><li>Added ´generate_agreements()´ function for programmatically creating random, fictional, environmental agreement titles</li></ul></div>
 <div class="section level3">
 <h3 id="data-0-2-0">Data<a class="anchor" aria-label="anchor" href="#data-0-2-0"></a></h3>
-<ul><li>Closed #59 by dividing coded datasets into HUGGO and AIGGO</li>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/59" class="external-link">#59</a> by dividing coded datasets into HUGGO and AIGGO</li>
 <li>Added MEA edges and nodes data to HUGGO_MEM and HUGGO respectively</li>
 </ul></div>
 </div>
@@ -129,7 +146,7 @@
 <p>2022-08-16</p>
 <div class="section level3">
 <h3 id="package-0-1-3">Package<a class="anchor" aria-label="anchor" href="#package-0-1-3"></a></h3>
-<ul><li>Closed #57 by switching back to original logo size.</li>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/57" class="external-link">#57</a> by switching back to original logo size.</li>
 <li>Updated workflow files to include package caching.</li>
 </ul></div>
 <div class="section level3">
@@ -144,11 +161,11 @@
 <p>2022-03-16</p>
 <div class="section level3">
 <h3 id="package-0-1-2">Package<a class="anchor" aria-label="anchor" href="#package-0-1-2"></a></h3>
-<ul><li>Closed #53 by adding Shinyapp folders, dashboard vignette and connecting to a Shinyapp account.</li></ul></div>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/53" class="external-link">#53</a> by adding Shinyapp folders, dashboard vignette and connecting to a Shinyapp account.</li></ul></div>
 <div class="section level3">
 <h3 id="data-0-1-2">Data<a class="anchor" aria-label="anchor" href="#data-0-1-2"></a></h3>
-<ul><li>Closed #15 by adding <code>International Regimes Database</code> to the <code>regimes</code> database.</li>
-<li>Fixed #55 by renaming variables in database to avoid ambiguity<ul><li>Renamed variables “L”, “D”, and “J” in the agreements database “DocType”, “AgreementType”, and “GeogArea” respectively</li>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/15" class="external-link">#15</a> by adding <code>International Regimes Database</code> to the <code>regimes</code> database.</li>
+<li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/55" class="external-link">#55</a> by renaming variables in database to avoid ambiguity<ul><li>Renamed variables “L”, “D”, and “J” in the agreements database “DocType”, “AgreementType”, and “GeogArea” respectively</li>
 <li>Renamed variables “L” and “SignatureC” in memberships database “DocType” and “SignatureCountry” respectively</li>
 </ul></li>
 </ul></div>
@@ -158,15 +175,15 @@
 <p>2022-02-03</p>
 <div class="section level3">
 <h3 id="package-0-1-1">Package<a class="anchor" aria-label="anchor" href="#package-0-1-1"></a></h3>
-<ul><li>Fixed #46 by simplifying tests for texts database</li>
-<li>Fixed #48 by moving to bootstrap 5 in pkgdown file</li>
-<li>Closed #43 by using treaty texts to create <code>code_lineage</code>
+<ul><li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/46" class="external-link">#46</a> by simplifying tests for texts database</li>
+<li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/48" class="external-link">#48</a> by moving to bootstrap 5 in pkgdown file</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/43" class="external-link">#43</a> by using treaty texts to create <code>code_lineage</code>
 </li>
 </ul></div>
 <div class="section level3">
 <h3 id="data-0-1-1">Data<a class="anchor" aria-label="anchor" href="#data-0-1-1"></a></h3>
-<p><strong>Added datasets</strong> * Closed #13 by web scraping YIO pages * Added HEIDI dataset</p>
-<p><strong>Added columns in datasets</strong> * Closed #42 by adding Lineage column in datasets in agreements database * Closed #44 by adding membership column</p>
+<p><strong>Added datasets</strong> * Closed <a href="https://github.com/globalgov/manyenviron/issues/13" class="external-link">#13</a> by web scraping YIO pages * Added HEIDI dataset</p>
+<p><strong>Added columns in datasets</strong> * Closed <a href="https://github.com/globalgov/manyenviron/issues/42" class="external-link">#42</a> by adding Lineage column in datasets in agreements database * Closed <a href="https://github.com/globalgov/manyenviron/issues/44" class="external-link">#44</a> by adding membership column</p>
 </div>
 </div>
     <div class="section level2">
@@ -174,22 +191,22 @@
 <p>2021-11-23</p>
 <div class="section level3">
 <h3 id="package-0-1-0">Package<a class="anchor" aria-label="anchor" href="#package-0-1-0"></a></h3>
-<ul><li>Closed #39 by renaming qEnviron to manyenviron</li>
-<li>Added a vignette about connecting environmental treaties<ul><li>Closed #38 by adding memberships plot to vignette</li>
-<li>Closed #37 by adding lineage plot to vignette</li>
-<li>Closed #35 by fixing issues with lineage plots</li>
+<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/39" class="external-link">#39</a> by renaming qEnviron to manyenviron</li>
+<li>Added a vignette about connecting environmental treaties<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/38" class="external-link">#38</a> by adding memberships plot to vignette</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/37" class="external-link">#37</a> by adding lineage plot to vignette</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/35" class="external-link">#35</a> by fixing issues with lineage plots</li>
 </ul></li>
-<li>Fixed #32 by deleting “Title.rda” file</li>
+<li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/32" class="external-link">#32</a> by deleting “Title.rda” file</li>
 </ul></div>
 <div class="section level3">
 <h3 id="data-0-1-0">Data<a class="anchor" aria-label="anchor" href="#data-0-1-0"></a></h3>
-<ul><li>Modified the ways in which treaty texts are gathered and stored<ul><li>Closed #41 by setting up a scraping script for treaty text to avoid storing raw data</li>
+<ul><li>Modified the ways in which treaty texts are gathered and stored<ul><li>Closed <a href="https://github.com/globalgov/manyenviron/issues/41" class="external-link">#41</a> by setting up a scraping script for treaty text to avoid storing raw data</li>
 <li>Treaty texts data are stored in one dataset from multiple sources to avoid redundancy</li>
 </ul></li>
-<li>Fixed #40 by correcting the class and order in which variables appear in datasets</li>
-<li>Closed #36 by re-ordering the datasets columns in all databases</li>
-<li>Fixed #34 by putting id column first in references dataset</li>
-<li>Fixed #33 by making sure all datasets are in tibble format</li>
+<li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/40" class="external-link">#40</a> by correcting the class and order in which variables appear in datasets</li>
+<li>Closed <a href="https://github.com/globalgov/manyenviron/issues/36" class="external-link">#36</a> by re-ordering the datasets columns in all databases</li>
+<li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/34" class="external-link">#34</a> by putting id column first in references dataset</li>
+<li>Fixed <a href="https://github.com/globalgov/manyenviron/issues/33" class="external-link">#33</a> by making sure all datasets are in tibble format</li>
 </ul></div>
 </div>
   </div>
