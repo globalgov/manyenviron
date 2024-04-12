@@ -1,11 +1,11 @@
-# # load packages
-# # library(shiny)
-# # library(shinydashboard)
-# # library(dplyr)
-# # library(ggplot2)
-# library(manynet) # needs to be loaded
-# library(Rgraphviz) # needs to be loaded
-# library(RSiena) # needs to be loaded
+# load packages
+# library(shiny)
+# library(shinydashboard)
+# library(dplyr)
+# library(ggplot2)
+library(manynet) # needs to be loaded
+library(Rgraphviz) # needs to be loaded
+library(RSiena) # needs to be loaded
 # get main data
 references <- readRDS("references.Rds")
 # references <- manyenviron::references$ECOLEX_REF |>
@@ -77,13 +77,13 @@ ui <- shinydashboard::dashboardPage(
                                     "UNCCD", "UNFCCC", "VIENNA"), selected = "choose", multiple = T),
     shiny::checkboxGroupInput("year_choices", "Select period:",
                                choices = c("Before 1970","1970-1980","1981-1990","1991-2000","2001-2010", "2011-2020"),
-                               selected = "Before 1970"))),
-  shinydashboard::dashboardBody(div(style = "position:relative",
-                                    plotOutput("distPlot", height = "650px",
-                                               hover = hoverOpts("plot_hover",
-                                                                 delay = 50,
-                                                                 delayType = "throttle")),
-                                    uiOutput("hover_info"))))
+                               selected = "Before 1970")),
+    wellPanel(style = "background: #222D32; border-color: #222D32",
+              textOutput("click_info"), tags$head(tags$style(".shiny-output-error{visibility: hidden}")),
+              tags$head(tags$style(".shiny-output-error:after{content: 'Treaty title not found, please try again with another node.';
+visibility: visible}")))),
+  shinydashboard::dashboardBody(shiny::plotOutput("distPlot", height = "650px",
+                                                  click = "plot_click")))
 
 # Step three: connect with the data
 server <- function(input, output) {
@@ -109,18 +109,17 @@ server <- function(input, output) {
       manynet::scale_color_ethz() +
       ggplot2::theme(legend.position = "bottom")
     })
-    output$distPlot <- shiny::renderPlot({filteredData()})
-    output$hover_info <- renderUI({
-      point <- nearPoints(ggplot2::ggplot_build(filteredData())$data[[1]],
-                          input$plot_hover, addDist = TRUE)
-      titlet <- as.character(titles[titles$name %in% point$label, 2])
-      wellPanel(style = "position:relative; background: #F0F8FF; border-color: #FFFFFF; ",
-                ifelse(titlet == "character(0)" | is.na(titlet),
-                       "Hover over nodes to see the treaty title", titlet),
-                tags$head(tags$style(".shiny-output-error{visibility: hidden}")),
-                tags$head(tags$style(".shiny-output-error:after{content: 'Title not found, please try another node.';
-visibility: visible}")))
-    })
+  output$distPlot <- renderPlot({filteredData()})
+  output$click_info <- renderText({
+    point <- nearPoints(ggplot2::ggplot_build(filteredData())$data[[1]],
+                        input$plot_click, addDist = TRUE)
+    titlet <- as.character(titles[titles$name %in% point$label, 2])
+    if (titlet == "character(0)" | is.na(titlet)) {
+      print("Please click on a node representing a treaty to display its title.")
+    } else if (!(titlet == "character(0)")) {
+      print(titlet)
+    }
+  })
 }
 
 shiny::shinyApp(ui = ui, server = server)

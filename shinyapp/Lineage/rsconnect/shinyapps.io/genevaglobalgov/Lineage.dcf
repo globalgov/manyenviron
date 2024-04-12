@@ -5,7 +5,5 @@ account: genevaglobalgov
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5708965
-bundleId: 8389599
+bundleId: 8484678
 url: https://genevaglobalgov.shinyapps.io/lineage/
-asMultiple: FALSE
-asStatic: FALSE
