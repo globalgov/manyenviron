@@ -87,7 +87,7 @@ manyenviron::references$ECOLEX_REF %>%
 ```
 
 We can also take a look at a single lineage of Enviromental treaties.
-Let's look at treaties that either cite or ammend the Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
+Let's look at treaties that either cite or amend the Ramsar Convention on Wetlands of International Importance Especially as Waterfowl Habitat ("RAMSA_1971A").
 
 ```{r ramsar, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
 manyenviron::references$ECOLEX_REF %>%
@@ -99,14 +99,14 @@ manyenviron::references$ECOLEX_REF %>%
                       edge_color = "RefType", node_color = "center")  +
   scale_color_sdgs(guide = "none") +
   scale_edge_color_centres() +
-  labs(title = "Treaties that cite or ammend the Ramsar Convention 1971",
+  labs(title = "Treaties that cite or amend the Ramsar Convention 1971",
        caption = "Source: manyenviron") +
   theme_iheid()
 ```
 
 ### Visualising How Agreements Connect by Country Membership and by Year
 
-Or we can look at countries part of Enviromental treaties for certain years.
+Or we can look at countries part of environmental treaties for certain years.
 The graph below illustrates the connection between parties and treaties for multilateral environmental agreements signed into force in the year of 1980 using the memberships database.
 
 ```{r 1980, warning=FALSE, message=FALSE, fig.align='center', fig.asp=1.2, fig.width=7}
@@ -124,7 +124,7 @@ manyenviron::memberships$IEADB_MEM %>%
   manynet::to_undirected() %>%
   manynet::autographr(node_color = "color", node_size = "size", node_shape = "shape") +
   manynet::scale_color_sdgs(guide = "none") +
-  labs(title = "Countries part of environemntal treaties signed into force in 1980",
+  labs(title = "Countries part of environmental treaties signed into force in 1980",
        subtitle = "Sized by degree centrality (e.g. number of edges for each node)",
        caption = "Source: manynenviron") +
   theme_uzh()
